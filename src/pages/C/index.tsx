@@ -8,7 +8,7 @@
 //      1.1.
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const a = () => {
-  return <h1 className={styles.eksperymentalny}> Hejka Seksiaczku c:</h1>;
+const StronaC = () => {
+  return <h1 className={styles.eksperymentalny}> C </h1>;
 };
-export default a;
+export default StronaC;
