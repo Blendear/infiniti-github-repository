@@ -1,0 +1,78 @@
+//
+// Trap1 - żeby classy działały, np. ".body{}" & ".container{}" - musisz adekwatny css element stworzyc w JSX, np.
+// <body className={styles.container}>  siemaneczko, to jest body </body>
+//
+//  1. Variables - ogólno-apkowe
+//
+//      1.1. Kolory
+//
+//      1.2. Czcionki
+//
+//      1.3. Breakpointy - graniczne momenty pod zmianę rozmiarów, pod np. 4 wielkości ekranów
+//
+//  2. Ustawienia wizualne - ogólno-apkowe
+//
+
+//
+//  1. Variables - ogólno-apkowe
+//
+//      1.1. Kolory
+//
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+//
+//      1.2. Czcionki
+//
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+//
+//      1.3. Breakpointy - graniczne momenty pod zmianę rozmiarów, pod np. 4 wielkości ekranów
+//
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+//
+//  2. Ustawienia wizualne - ogólno-apkowe
+//     Np. Boxing-size - "jakiego typu kalkulacji mam użyć, licząc properties rozmiarowe?"
+//
+.ogolno-apkowy-styl {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//
+//hook1 - /\ to zrobilem jako alternatywa dla \/, bo \/ error wywala, bo -> globalne style (*, html, powinny być w "global.css", ale jak to zrobić w SASS, skoro tam jet dedykowanyu plik, jeden?
+// *,
+// *::before,
+// *::after {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box; //żeby nie pisać w każdym class'sie "box-sizing: border-box"
+//   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+// }
+
+// html {
+//   //hook1 - dlaczego tylko jedna @media tu napisane? Nie trzeba wszystich typów media queries wpisac w "hmtl"?
+//   @media only screen and (max-width: $bp-largest) {
+//     font-size: 50%;
+//   }
+// }
+
+// body {
+//   font-family: $font-primary;
+//   color: $color-grey-dark-2;
+//   font-weight: 300;
+//   line-height: 1.6;
+// }

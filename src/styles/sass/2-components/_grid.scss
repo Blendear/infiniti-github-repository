@@ -1,0 +1,32 @@
+//
+//  1. Gridy
+//
+//      1.1. Warianty rozmiaryu gridu
+//
+//      1.2. Warianty wizualne elementów
+//
+
+.grid {
+  &--1row-2col {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, min-content);
+  }
+  &__typ-rozmiaru {
+    &--6rows-1col {
+      //
+      // sss - Każda wartość odnosi się do osobnego row'u / koluny. Np. "80vh min-content", znaczy 80 viuewport heigh dla pierwszje kolmnu & "min-c0ontnet", czyli tyle ile potrzebue minimalnie, dla drugiej.
+      //
+      display: grid;
+      grid-template-columns: min-content 80px 1fr repeat(3, min-content);
+    }
+  }
+  &__element {
+    &--1 {
+      background-color: rgb(70, 181, 22);
+    }
+    &--2 {
+      background-color: rgb(70, 22, 181);
+    }
+  }
+}

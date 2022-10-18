@@ -7,8 +7,37 @@
 //
 //      1.1.
 import styles from "src/styles/sass/styles-all.module.scss";
+import Image from "next/image";
+
+const stringiZdjecDoStronyGlownej = [
+  {
+    id: 1,
+    filepath: "LOGO_INFINITI_RGB.png",
+  },
+  { id: 2, filepath: "pig.png" },
+];
 
 const StronaA = () => {
-  return <h1 className={styles.eksperymentalny}> A </h1>;
+  return (
+    <div className={styles["ogolno-apkowy-styl"]}>
+      <div className={styles["sliding-images"]}>
+        {/* //
+//  1. sss - tyle ile mam obrazków w arr[], tyle stworze <Image>'es
+// */}
+        {stringiZdjecDoStronyGlownej.map((aktualnaFota) => (
+          <div className={styles["sliding-images"]} key={aktualnaFota.id}>
+            <Image
+              src={`/images/strona-glowna-animowane-zdjecia/${aktualnaFota.filepath}`}
+              alt={`filepath : ${aktualnaFota.filepath}`}
+              // width={638}
+              // height={577}
+              width={100}
+              height={100}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 export default StronaA;

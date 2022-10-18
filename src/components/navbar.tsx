@@ -13,6 +13,27 @@ const Navbar = () => {
   return (
     <div>
       <nav className={styles.navbar}>
+        <div className={styles["parent-Y"]}>
+          parent Y<div className={styles["child-X"]}> child x</div>
+        </div>
+
+        {/* 
+        
+        
+        
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        .*/}
         <h1> Logo </h1>
         <Link href="/"> Strona Główna</Link>
         <Link href="/A"> Strona A</Link>

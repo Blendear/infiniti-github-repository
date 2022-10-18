@@ -1,0 +1,20 @@
+
+W osobnych terminalach:
+
+npx tsc --watch 
+
+npm run compile:sass
+
+npm run build   &   npm run start
+
+npm run dev
+
+
+
+
+Kolejno robi to:
+1. autocompilowanie Typescripta
+2. autocompilowanie SCSS do CSS
+3. (GDY DEVELOPUJESZ - NIE MUSISZ TEGO PISAĆ) odpal PRODUCTION version
+   (wczesniej musisz "npm run build") compilowanie & działanie kodu
+4. server lokalny odpal

@@ -1,1 +1,10 @@
+//trap1 - MUSISZ TU IMPORTOWAĆ file, żeby był w ogóle skompilowany. inaczej masz miliard fileów, któe nic nie robią.
+
+@use "./1-base/base";
+
+@use "./2-components/animation-slidein";
+@use "./2-components/grid";
+@use "./2-components/image";
 @use "./2-components/test-scss";
+
+@use "./3-layout/rozlozenie-elementow-wzledem-siebie";

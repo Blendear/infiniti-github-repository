@@ -1,7 +1,111 @@
+.ogolno-apkowy-styl {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.animation__slide-in {
+  width: 800px;
+  height: 400px;
+  animation: slidein 20s;
+  animation-iteration-count: 1;
+}
+.animation__slide-in2 {
+  width: 800px;
+  height: 400px;
+  animation: slidein 20s;
+  animation-iteration-count: 1;
+}
+.animation__slide-in3 {
+  width: 800px;
+  height: 400px;
+  animation: slidein 20s;
+  animation-iteration-count: 1;
+}
+.animation__slide-in4 {
+  width: 800px;
+  height: 400px;
+  animation: slidein 20s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+.grid--1row-2col {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(2, min-content);
+}
+.grid__typ-rozmiaru--6rows-1col {
+  display: grid;
+  grid-template-columns: min-content 80px 1fr repeat(3, min-content);
+}
+.grid__element--1 {
+  background-color: rgb(70, 181, 22);
+}
+.grid__element--2 {
+  background-color: rgb(70, 22, 181);
+}
+
+.image__modified-color--darken {
+  background-color: black;
+}
+
 .eksperymentalny {
-  padding: 0.25em;
-  line-height: 0;
-  background-color: rgb(68, 202, 63);
+  background-color: rgb(224, 123, 60);
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  transition: all 2s;
+  background-color: rgb(115, 219, 157);
+}
+.box--violet {
+  transition: all 2s;
+  background-color: rgb(125, 14, 97);
+}
+.box--animated {
+  animation: mymove 2s;
+}
+
+@keyframes mymove {
+  0% {
+    height: 100px;
+  }
+  50% {
+    height: 200px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+.navbar {
+  background-color: rgb(159, 37, 159);
+}
+
+.footer {
+  background-color: rgb(14, 163, 126);
+}
+
+.parent-Y {
+  height: 400px;
+  width: 1000px;
+  position: relative;
+  background-color: rgb(228, 195, 167);
+}
+
+.child-X {
+  position: absolute;
+  top: 40vh;
+  left: 10%;
+  background-color: rgb(187, 228, 167);
 }
 
 /*# sourceMappingURL=styles-all.css.map */
