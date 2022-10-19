@@ -22,14 +22,92 @@
 
 import { createSlice, configureStore, PayloadAction } from "@reduxjs/toolkit";
 
+//sss \/
 //
-//      0.1. Initial state'y
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 
-interface typeOfSumyKaloriiState {
-  aktualnieKalorie: number;
-  maxDziennieKalorie: number;
-}
+//
+//~~ A.  Timer liczący upływający czas & w momencie X robiący Y
+//
+//      1.  Biblioteka pod kontrolę czasu - "date-fns" library
+//
+//      2.  Pokaż ile czassu minęło od startu timera - useEffect "start timera = stwórz czas teraz & co sekundę twórz drugi czas teraz, porównując różnicę wg pierwszego"
+//
+//               2.1. Rozpocznij timer aka od teraz do X, co sekunde dodawaj cyfrę 1 do timera
+//
+//               1.1. Zaciągnięcie czasu dla Polski w momencie "start timera"
+//
+//               1.2. Przerobienie danych zaciągniętyhc na ładny visual timer'a
+//
+//      2. "Redux" - niech zapisze te dane
+//
+//          2.1.
+//
+//          2.1.
+//
+//          2.1.
+//
+
+//
+//
+
+import { format, compareAsc } from "date-fns";
+
+const initialTimersState = {
+  czyTimerIsAktywny: false,
+  czasStartuTimera: 0,
+  czasNaliczonyOnStartuTimera: 0,
+  czasZaIleSekundMaSieSkonczycTimer: 0,
+};
+
+const timersSlice = createSlice({
+  name: "timersSlice",
+  initialState: initialTimersState,
+  reducers: {
+    // 2.1. Rozpocznij timer aka od teraz do X, co sekunde dodawaj cyfrę 1 do timera
+    addJednaSekundeDoTimera(state) {
+      state.czasNaliczonyOnStartuTimera += 1;
+      console.log(`aktualny czas = ${state.czasNaliczonyOnStartuTimera}`);
+    },
+    // 2.1. Rozpocznij timer aka od teraz do X, co sekunde dodawaj cyfrę 1 do timera
+    rozpocznijTimerODlugosciX(state, action) {
+      state.czyTimerIsAktywny = true;
+      console.log(`timer aktywowany`);
+      setTimeout(() => {
+        setInterval(() => {
+          store.dispatch(timersSliceActions.addJednaSekundeDoTimera());
+        }, 1000);
+      }, 250 * action.payload);
+    },
+    //
+  },
+});
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+//      0.1. Initial state'y
+//
 
 interface typeOfAuthState {
   isAuthenticated: boolean;
@@ -39,32 +117,7 @@ interface typeOfAuthState {
 //      1.1. Initial state'y
 //
 
-const initialSumyKaloriiState: typeOfSumyKaloriiState = {
-  aktualnieKalorie: 0,
-  maxDziennieKalorie: 1700,
-};
-
 const initialAuthState: typeOfAuthState = { isAuthenticated: false };
-
-//
-//      1.2. Sumy Kalorii slice
-//
-const sumyKaloriiSlice = createSlice({
-  name: "sumyKaloriiSlice",
-  initialState: initialSumyKaloriiState,
-  reducers: {
-    //  hook0--POWTÓRZWNIOSKI - action musi być konkretnego typu. Tu podajemy precyzyjny object "{ dodamTyleKalorii: number }" akurat.
-    addDoSumyKaloriiAktualnej(
-      state,
-      action: PayloadAction<{ dodamTyleKalorii: number }>
-    ) {
-      state.aktualnieKalorie += action.payload.dodamTyleKalorii;
-    },
-    consoleLogTest(state) {
-      console.log("Odpaliłem dispatch, reducer zadziałał");
-    },
-  },
-});
 
 //
 //      1.3. Auth slice
@@ -88,8 +141,8 @@ const authSlice = createSlice({
 
 const store = configureStore({
   reducer: {
-    sumyKaloriiReducer: sumyKaloriiSlice.reducer,
     authReducer: authSlice.reducer,
+    timersReducer: timersSlice.reducer,
   },
 });
 
@@ -102,7 +155,7 @@ export type AppDispatch = typeof store.dispatch;
 //  3.  Action Packs - Redux Toolkit way
 //
 
-export const sumyKaloriiSliceActions = sumyKaloriiSlice.actions;
 export const authSliceActions = authSlice.actions;
+export const timersSliceActions = timersSlice.actions;
 
 export default store;

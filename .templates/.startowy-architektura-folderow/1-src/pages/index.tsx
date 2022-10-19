@@ -1,11 +1,14 @@
+////  Problemy do rozwiązania poniższymi rozdziałami liczbowymi:
+////
+////~~ A.  Śledzę upływ czasu real life
+////
+////       A.a. ...
 // //
-// //  1.
+// //           1.  Moments.js library
 // //
-
+// //               1.1. Zaciągnięcie czasu dla Polski
 // //
-// //  1.  Klepsydra całego dnia
-// //
-// //      1.1.
+// //               1.2. Przerobienie danych zaciągniętyhc na ładny visual timer'a
 
 // import styles from "src/styles/sass/styles-all.module.scss";
 
