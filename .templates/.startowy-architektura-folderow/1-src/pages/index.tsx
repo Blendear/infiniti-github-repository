@@ -1,4 +1,4 @@
-////  Problemy do rozwiązania poniższymi rozdziałami liczbowymi:
+////  Problemy do rozwiązania poniższymi rozdziałami liczbowymi: - hook1 - nierozpisane
 ////
 ////~~ A.  Śledzę upływ czasu real life
 ////
@@ -12,7 +12,7 @@
 
 // import styles from "src/styles/sass/styles-all.module.scss";
 
-// const a = () => {
+// const Aname = () => {
 //   return <h1 className={styles.eksperymentalny}> ...cias sdteczko </h1>;
 // };
-// export default a;
+// export default Aname;

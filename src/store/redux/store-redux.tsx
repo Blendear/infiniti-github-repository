@@ -61,9 +61,10 @@ import { createSlice, configureStore, PayloadAction } from "@reduxjs/toolkit";
 //
 //
 
-import { format, compareAsc } from "date-fns";
+import { parseISO, format, compareAsc } from "date-fns";
 
 const initialTimersState = {
+  GETnietyStringDataZakonczeniaTimera: "",
   czyTimerIsAktywny: false,
   czasStartuTimera: 0,
   czasNaliczonyOnStartuTimera: 0,
@@ -90,6 +91,10 @@ const timersSlice = createSlice({
       }, 250 * action.payload);
     },
     //
+    ustawReduxowyTimer(state, action) {
+      state.GETnietyStringDataZakonczeniaTimera = action.payload;
+      console.log(`GETnieta data : ${action.payload}`);
+    },
   },
 });
 

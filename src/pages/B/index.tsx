@@ -16,13 +16,16 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 
-import { useAppSelector, useAppDispatch } from "../../store/redux/hooks";
-
 import { useState } from "react";
 
-import { timersSliceActions } from "../../store/redux/store-redux";
+import { compareAsc, format, addMinutes } from "date-fns";
 
-import { format, addMinutes } from "date-fns";
+import { useQuery } from "react-query";
+
+import ReactHowler from "react-howler";
+
+import FirebasePostRequest from "../../components/firebase-post-request";
+import FirebaseGetRequest from "../../components/firebase-get-request";
 
 const StronaB = () => {
   const [dataZakonczeniaTimera, setDataZakonczeniaTimera] = useState(
@@ -50,8 +53,16 @@ const StronaB = () => {
         Wprowadz ilość minut
       </button>
 
-      <div> Timer jest o {stringCzasuKoncowegoTimera}</div>
+      <FirebasePostRequest
+        podanaDataZakonczeniaTimera={stringCzasuKoncowegoTimera}
+      ></FirebasePostRequest>
+      <FirebaseGetRequest></FirebaseGetRequest>
+      {/* <button onClick={addObjectToDatabaseHandler}></button> */}
     </h1>
   );
 };
 export default StronaB;
+
+// zaciągniju GET z Database
+// zapisz w redux
+// w componentcie zaciagnij z reduxa
