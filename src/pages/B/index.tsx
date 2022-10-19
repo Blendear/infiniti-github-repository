@@ -18,27 +18,39 @@ import styles from "src/styles/sass/styles-all.module.scss";
 
 import { useAppSelector, useAppDispatch } from "../../store/redux/hooks";
 
+import { useState } from "react";
+
 import { timersSliceActions } from "../../store/redux/store-redux";
 
+import { format, addMinutes } from "date-fns";
+
 const StronaB = () => {
-  const aktualnyTimer = useAppSelector(
-    (state) => state.timersReducer.czasNaliczonyOnStartuTimera
+  const [dataZakonczeniaTimera, setDataZakonczeniaTimera] = useState(
+    new Date()
   );
+  const [stringCzasuKoncowegoTimera, setStringCzasuKoncowegoTimera] =
+    useState("");
 
-  const dispatch = useAppDispatch();
+  const passwordToSetTimer = "cipcia";
 
-  const startTimerHandler = () => {
-    dispatch(
-      timersSliceActions.rozpocznijTimerODlugosciX({ dlugoscTimera: 50 })
-    );
+  const promptForWprowadzenieMinutHandler = () => {
+    let passwordUsera = prompt("Hasło podajta c:");
+    if (passwordToSetTimer === passwordUsera) {
+      let minutyDoDodania = parseInt(prompt("Za ile minut timer?"));
+      const dataTimera = addMinutes(new Date(), minutyDoDodania);
+      setDataZakonczeniaTimera(dataTimera);
+      console.log(`timer za ${minutyDoDodania} minut`);
+      setStringCzasuKoncowegoTimera(format(dataTimera, "HH : mm"));
+    }
   };
 
   return (
-    // sss - wyświetl wartosc aktualnego timera
     <h1 className={styles["grid--1row-2col"]}>
-      <button onClick={startTimerHandler}> Start timera</button>
-      <div> {`Czas timera w sekundach : ${aktualnyTimer}`}</div>
-      {/* <div>tes 1</div> <div> test 2</div> */}
+      <button onClick={promptForWprowadzenieMinutHandler}>
+        Wprowadz ilość minut
+      </button>
+
+      <div> Timer jest o {stringCzasuKoncowegoTimera}</div>
     </h1>
   );
 };

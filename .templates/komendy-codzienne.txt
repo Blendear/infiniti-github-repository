@@ -9,6 +9,11 @@ npm run build   &   npm run start
 
 npm run dev
 
+git add .
+git commit -m „moja wiadomość do commita”
+git push origin main
+
+
 
 
 
@@ -18,3 +23,4 @@ Kolejno robi to:
 3. (GDY DEVELOPUJESZ - NIE MUSISZ TEGO PISAĆ) odpal PRODUCTION version
    (wczesniej musisz "npm run build") compilowanie & działanie kodu
 4. server lokalny odpal
+5. commit do git'a & publikuj na stronce automatycznie
