@@ -1,0 +1,190 @@
+//
+//       1.1. Strona - Strona główna
+//
+//            1.1.a. Obszar - cała strona
+//
+//            1.1.b. Obszar - poziomy infiniti
+//
+//            1.1.c. Obszar - godziny otwarcia sal
+//
+//       1.2. Strona - Kontakt
+//
+//            1.2.a.
+//
+//       1.3. Strona - O nas
+//
+//            1.3.a.
+//
+
+.layout {
+  //
+  //       1.1. Strona - Strona główna
+  //
+  &-strona-glowna {
+    //
+    //            1.1.a. Obszar - cała strona
+    //
+    &__cala-strona {
+      display: grid;
+      // width: 100%;
+      // height: 100px;
+      grid-template-areas: //
+        ". aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa ." // navbar górny
+        "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" //slide in animowanych fot
+        ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." // dwie foty marketingowe
+        ". . eee eee eee eee eee eee eee eee . ." // poziomy infiniti 0 tytuł
+        ". . ddd ddd ddd ddd ddd ddd ddd ddd . ." // poziomy infiniti
+        "fff fff fff fff fff fff fff fff fff fff fff fff" // efitness app
+        ". . ggg ggg ggg ggg ggg ggg ggg ggg . ." // godziny otwarcia
+        ". . jjj jjj jjj jjj jjj jjj jjj jjj . ." // partnerzy tytuł górny
+        ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." // partnerzy slide-in fot
+        "iii iii iii iii iii iii iii iii iii iii iii iii" // newsletter
+        ". foot . . . . . . . . nav .";
+      grid-template-rows: 5rem minmax(10rem, min-content) repeat(7, 10rem);
+      grid-template-columns: 1fr repeat(10, minmax(2rem, 10rem)) 1fr;
+    }
+    &__navbar-gorny {
+      grid-area: aaa;
+      background-color: #8ca0ff;
+    }
+    &__animowany-slide-in-fot-infiniti {
+      grid-area: ccc;
+      background-color: #8cffb6;
+    }
+    &__foty-marketingowe {
+      grid-area: bbb;
+      background-color: #ffff64;
+
+      display: grid;
+      grid-template-areas: "bb1 bb2";
+      grid-template-rows: 10rem;
+      grid-template-columns: 1fr 1fr;
+
+      &--lewa-fota {
+        grid-area: bb1;
+      }
+      &--prawa-fota {
+        grid-area: bb2;
+      }
+    }
+    //
+    //            1.1.b. Obszar - poziomy infiniti
+    //
+    &__poziomy-infiniti-tytul-gorny {
+      grid-area: eee;
+      background-color: #deb3f3;
+    }
+    &__poziomy-infiniti-levle {
+      grid-area: ddd;
+      background-color: #8ca0ff;
+
+      display: grid;
+      grid-template-areas: "dd1 dd2 dd3 dd4";
+      grid-template-rows: 10rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      &--minus1 {
+        grid-area: dd1;
+      }
+      &--0 {
+        grid-area: dd2;
+      }
+      &--1 {
+        grid-area: dd3;
+      }
+      &--2 {
+        grid-area: dd4;
+      }
+    }
+
+    &__efitness-app {
+      grid-area: fff;
+      background-color: #0fa167;
+
+      display: grid;
+      grid-template-areas: "ff1 ff2";
+      grid-template-rows: 10rem;
+      grid-template-columns: 1fr 1fr;
+
+      &--lewa-fota {
+        grid-area: ff1;
+        filter: grayscale(80%);
+      }
+      &--prawa-fota {
+        grid-area: ff2;
+        filter: hue-rotate(90deg);
+      }
+    }
+    &__godziny-otwarcia {
+      grid-area: ggg;
+      background-color: #cfc7a7;
+
+      display: grid;
+      grid-template-areas: "gg1 gg2";
+      grid-template-rows: 10rem;
+      grid-template-columns: 1fr 1fr;
+
+      &--sauna {
+        grid-area: gg1;
+      }
+      &--klub {
+        grid-area: gg2;
+      }
+    }
+    &__partnerzy-tytul-gorny {
+      grid-area: jjj;
+      background-color: #83beeb;
+    }
+    &__partnerzy-animowany-slide-in {
+      grid-area: hhh;
+      background-color: #1a2c91;
+    }
+    &__newsletter {
+      grid-area: iii;
+      background-color: #e5a51c;
+
+      display: grid;
+      grid-template-areas: "ii1 ii2";
+      grid-template-rows: 10rem;
+      grid-template-columns: 3fr 9fr;
+
+      &--lewy-shape {
+        grid-area: ii1;
+      }
+      &--prawy-shape {
+        grid-area: ii2;
+      }
+    }
+    //
+  }
+}
+//
+
+//
+
+//
+
+.grid {
+  &--1row-2col {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, min-content);
+  }
+  &__typ-rozmiaru {
+    &--6rows-1col {
+      //
+      // sss - Każda wartość odnosi się do osobnego row'u / koluny. Np. "80vh min-content", znaczy 80 viuewport heigh dla pierwszje kolmnu & "min-c0ontnet", czyli tyle ile potrzebue minimalnie, dla drugiej.
+      //
+      display: grid;
+      grid-template-columns: min-content 80px 1fr repeat(3, min-content);
+    }
+  }
+  &__element {
+    &--1 {
+      background-color: rgb(70, 181, 22);
+    }
+    &--2 {
+      background-color: rgb(70, 22, 181);
+    }
+  }
+}

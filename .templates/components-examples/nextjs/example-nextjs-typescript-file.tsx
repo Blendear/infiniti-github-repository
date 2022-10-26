@@ -3,9 +3,11 @@
 // //
 
 // //
-// //  1.  Klepsydra całego dnia
+// //  1.  "po co, co i czym zrobimy" parent rozdzial
 // //
-// //      1.1.
+// //      1.1. "-II-" child podrozdział
+// //
+// //      1.2. "-II-" child podrozdział
 
 // import styles from "../styles/sass/styles-all.module.scss";
 

@@ -25,29 +25,17 @@ const Navbar = () => {
   return (
     <div>
       <nav className={styles.navbar}>
-        <div className={styles["parent-Y"]}>
-          parent Y<div className={styles["child-X"]}> child x</div>
-        </div>
-
-        {/* 
-        
-        
-        
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        .*/}
         <h1> Logo </h1>
-        <Link href="/"> Strona Główna</Link>
+        <Link href="/"> STRONA GŁÓWNA</Link>
+        <Link href="/o-nas"> O NAS </Link>
+        <Link href="/infiniti-medical"> INFINITI MEDICAL </Link>
+        <Link href="/galeria"> GALERIA </Link>
+        <Link href="/kadra"> KADRA </Link>
+        <Link href="/cennik"> CENNIK </Link>
+        <Link href="/grafik"> GRAFIK </Link>
+        <Link href="/do-pobrania"> DO POBRANIA</Link>
+        <Link href="/kontakt"> KONTAKT </Link>
+
         <Link href="/A"> Strona A</Link>
         <Link href="/B"> Strona B</Link>
         <Link href="/C"> Strona C</Link>

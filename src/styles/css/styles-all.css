@@ -1,9 +1,3 @@
-.ogolno-apkowy-styl {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .animation__slide-in {
   width: 800px;
   height: 400px;
@@ -37,6 +31,111 @@
     margin-left: 0%;
   }
 }
+.layout-strona-glowna__cala-strona {
+  display: grid;
+  grid-template-areas: ". aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa ." "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." ". . eee eee eee eee eee eee eee eee . ." ". . ddd ddd ddd ddd ddd ddd ddd ddd . ." "fff fff fff fff fff fff fff fff fff fff fff fff" ". . ggg ggg ggg ggg ggg ggg ggg ggg . ." ". . jjj jjj jjj jjj jjj jjj jjj jjj . ." ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." "iii iii iii iii iii iii iii iii iii iii iii iii" ". foot . . . . . . . . nav .";
+  grid-template-rows: 5rem minmax(10rem, min-content) repeat(7, 10rem);
+  grid-template-columns: 1fr repeat(10, minmax(2rem, 10rem)) 1fr;
+}
+.layout-strona-glowna__navbar-gorny {
+  grid-area: aaa;
+  background-color: #8ca0ff;
+}
+.layout-strona-glowna__animowany-slide-in-fot-infiniti {
+  grid-area: ccc;
+  background-color: #8cffb6;
+}
+.layout-strona-glowna__foty-marketingowe {
+  grid-area: bbb;
+  background-color: #ffff64;
+  display: grid;
+  grid-template-areas: "bb1 bb2";
+  grid-template-rows: 10rem;
+  grid-template-columns: 1fr 1fr;
+}
+.layout-strona-glowna__foty-marketingowe--lewa-fota {
+  grid-area: bb1;
+}
+.layout-strona-glowna__foty-marketingowe--prawa-fota {
+  grid-area: bb2;
+}
+.layout-strona-glowna__poziomy-infiniti-tytul-gorny {
+  grid-area: eee;
+  background-color: #deb3f3;
+}
+.layout-strona-glowna__poziomy-infiniti-levle {
+  grid-area: ddd;
+  background-color: #8ca0ff;
+  display: grid;
+  grid-template-areas: "dd1 dd2 dd3 dd4";
+  grid-template-rows: 10rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.layout-strona-glowna__poziomy-infiniti-levle--minus1 {
+  grid-area: dd1;
+}
+.layout-strona-glowna__poziomy-infiniti-levle--0 {
+  grid-area: dd2;
+}
+.layout-strona-glowna__poziomy-infiniti-levle--1 {
+  grid-area: dd3;
+}
+.layout-strona-glowna__poziomy-infiniti-levle--2 {
+  grid-area: dd4;
+}
+.layout-strona-glowna__efitness-app {
+  grid-area: fff;
+  background-color: #0fa167;
+  display: grid;
+  grid-template-areas: "ff1 ff2";
+  grid-template-rows: 10rem;
+  grid-template-columns: 1fr 1fr;
+}
+.layout-strona-glowna__efitness-app--lewa-fota {
+  grid-area: ff1;
+  filter: grayscale(80%);
+}
+.layout-strona-glowna__efitness-app--prawa-fota {
+  grid-area: ff2;
+  filter: hue-rotate(90deg);
+}
+.layout-strona-glowna__godziny-otwarcia {
+  grid-area: ggg;
+  background-color: #cfc7a7;
+  display: grid;
+  grid-template-areas: "gg1 gg2";
+  grid-template-rows: 10rem;
+  grid-template-columns: 1fr 1fr;
+}
+.layout-strona-glowna__godziny-otwarcia--sauna {
+  grid-area: gg1;
+}
+.layout-strona-glowna__godziny-otwarcia--klub {
+  grid-area: gg2;
+}
+.layout-strona-glowna__partnerzy-tytul-gorny {
+  grid-area: jjj;
+  background-color: #83beeb;
+}
+.layout-strona-glowna__partnerzy-animowany-slide-in {
+  grid-area: hhh;
+  background-color: #1a2c91;
+}
+.layout-strona-glowna__newsletter {
+  grid-area: iii;
+  background-color: #e5a51c;
+  display: grid;
+  grid-template-areas: "ii1 ii2";
+  grid-template-rows: 10rem;
+  grid-template-columns: 3fr 9fr;
+}
+.layout-strona-glowna__newsletter--lewy-shape {
+  grid-area: ii1;
+}
+.layout-strona-glowna__newsletter--prawy-shape {
+  grid-area: ii2;
+}
+
 .grid--1row-2col {
   display: grid;
   overflow: hidden;
@@ -95,15 +194,15 @@
 }
 
 .parent-Y {
-  height: 400px;
-  width: 1000px;
+  height: 10vh;
+  width: 100%;
   position: relative;
   background-color: rgb(228, 195, 167);
 }
 
 .child-X {
   position: absolute;
-  top: 40vh;
+  top: 5vh;
   left: 10%;
   background-color: rgb(187, 228, 167);
 }

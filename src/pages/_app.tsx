@@ -9,6 +9,7 @@
 //
 //  3.  "Layout" - pod zawartośc stronki, ktora ma być na KAŻDEJ page. Np. nawigacja górnja i footer dolny z informacjami/kontaktem etc.
 //
+import "src/styles/sass/globals.scss";
 
 import type { AppProps } from "next/app";
 

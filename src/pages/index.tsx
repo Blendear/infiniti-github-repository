@@ -16,7 +16,49 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const a = () => {
-  return <h1 className={styles.eksperymentalny}> Hejka Seksiaczku c:</h1>;
+const StronaD = () => {
+  return (
+    <div className={styles["layout-strona-glowna__cala-strona"]}>
+      <div className={styles["layout-strona-glowna__navbar-gorny"]}>
+        logo & navbar górny
+      </div>
+      <div
+        className={
+          styles["layout-strona-glowna__animowany-slide-in-fot-infiniti"]
+        }
+      >
+        {"[ slide'y ]"}
+      </div>
+
+      <div className={styles["layout-strona-glowna__foty-marketingowe"]}>
+        {"[ dwie foty ]"}
+      </div>
+      <div
+        className={styles["layout-strona-glowna__poziomy-infiniti-tytul-gorny"]}
+      >
+        --- 4 pietra pelne wrazen ---
+      </div>
+      <div className={styles["layout-strona-glowna__poziomy-infiniti-levle"]}>
+        poziomy infiniti
+      </div>
+      <div className={styles["layout-strona-glowna__efitness-app"]}>
+        efitness app
+      </div>
+      <div className={styles["layout-strona-glowna__godziny-otwarcia"]}>
+        godziny otwarcia
+      </div>
+      <div className={styles["layout-strona-glowna__partnerzy-tytul-gorny"]}>
+        tytuł górny - partnerzy
+      </div>
+      <div
+        className={styles["layout-strona-glowna__partnerzy-animowany-slide-in"]}
+      >
+        {"[ partnerzy ] "}
+      </div>
+      <div className={styles["layout-strona-glowna__newsletter"]}>
+        newsletter
+      </div>
+    </div>
+  );
 };
-export default a;
+export default StronaD;
