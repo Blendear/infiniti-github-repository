@@ -26,7 +26,7 @@ export default function handler(
   `;
 
   const msg = {
-    to: "r.cibis@gmail.com", // Change to your recipient
+    to: "decepticon.cibis8@gmail.com", // Change to your recipient
     from: "decepticon.cibis8@gmail.com", // Change to your verified sender
     subject: "Tobi i jego eksperymenty",
     text: message,
