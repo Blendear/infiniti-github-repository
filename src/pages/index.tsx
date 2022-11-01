@@ -16,12 +16,22 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const StronaD = () => {
+import PoziomyInfiniti from "../components/1-strona-glowna/poziomy-infiniti";
+
+const StronaStronaGlowna = () => {
+  console.log(process.env);
+
   return (
     <div className={styles["layout-strona-glowna__cala-strona"]}>
-      <div className={styles["layout-strona-glowna__navbar-gorny"]}>
-        logo & navbar górny
-      </div>
+      {/* <div className={styles["layout-strona-glowna__navbar-gorny"]}>
+        <div
+          className={
+            styles["layout-strona-glowna__navbar-gorny--logo-infiniti"]
+          }
+        >
+          LOGO
+        </div>
+      </div> */}
       <div
         className={
           styles["layout-strona-glowna__animowany-slide-in-fot-infiniti"]
@@ -31,8 +41,9 @@ const StronaD = () => {
       </div>
 
       <div className={styles["layout-strona-glowna__foty-marketingowe"]}>
-        {"[ dwie foty ]"}
+        {"[ dwie foty ] "}
       </div>
+
       <div
         className={styles["layout-strona-glowna__poziomy-infiniti-tytul-gorny"]}
       >
@@ -40,6 +51,7 @@ const StronaD = () => {
       </div>
       <div className={styles["layout-strona-glowna__poziomy-infiniti-levle"]}>
         poziomy infiniti
+        <PoziomyInfiniti></PoziomyInfiniti>
       </div>
       <div className={styles["layout-strona-glowna__efitness-app"]}>
         efitness app
@@ -61,4 +73,4 @@ const StronaD = () => {
     </div>
   );
 };
-export default StronaD;
+export default StronaStronaGlowna;

@@ -54,4 +54,11 @@ body {
   color: $color-grey-dark-2;
   font-weight: 300;
   line-height: 1.6;
+
+  //hide scroollbars \/
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }

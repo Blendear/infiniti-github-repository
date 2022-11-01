@@ -3,8 +3,16 @@
 @use "./1-base/base";
 
 @use "./2-components/animation-slidein";
-@use "./3-layout/grid";
 @use "./2-components/image";
 @use "./2-components/test-scss";
 
-@use "./3-layout/rozlozenie-elementow-wzledem-siebie";
+@use "./3-layout/a-header-footer";
+@use "./3-layout/cennik";
+@use "./3-layout/do-pobrania";
+@use "./3-layout/galeria";
+@use "./3-layout/grafik";
+@use "./3-layout/infiniti-medical";
+@use "./3-layout/kadra";
+@use "./3-layout/kontakt";
+@use "./3-layout/o-nas";
+@use "./3-layout/strona-glowna";

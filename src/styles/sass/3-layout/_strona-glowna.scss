@@ -1,35 +1,13 @@
-//
-//       1.1. Strona - Strona główna
-//
-//            1.1.a. Obszar - cała strona
-//
-//            1.1.b. Obszar - poziomy infiniti
-//
-//            1.1.c. Obszar - godziny otwarcia sal
-//
-//       1.2. Strona - Kontakt
-//
-//            1.2.a.
-//
-//       1.3. Strona - O nas
-//
-//            1.3.a.
-//
+//hook1 - zawijanie linijak zamiast spisu treści?
 
 .layout {
-  //
-  //       1.1. Strona - Strona główna
-  //
   &-strona-glowna {
-    //
-    //            1.1.a. Obszar - cała strona
-    //
     &__cala-strona {
       display: grid;
       // width: 100%;
       // height: 100px;
       grid-template-areas: //
-        ". aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa ." // navbar górny
+        // ". aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa ." // navbar górny
         "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" //slide in animowanych fot
         ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." // dwie foty marketingowe
         ". . eee eee eee eee eee eee eee eee . ." // poziomy infiniti 0 tytuł
@@ -40,12 +18,66 @@
         ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." // partnerzy slide-in fot
         "iii iii iii iii iii iii iii iii iii iii iii iii" // newsletter
         ". foot . . . . . . . . nav .";
-      grid-template-rows: 5rem minmax(10rem, min-content) repeat(7, 10rem);
+      grid-template-rows: minmax(10rem, min-content) repeat(7, 10rem);
       grid-template-columns: 1fr repeat(10, minmax(2rem, 10rem)) 1fr;
     }
     &__navbar-gorny {
       grid-area: aaa;
       background-color: #8ca0ff;
+
+      display: grid;
+
+      grid-template-areas: ". aa1 . aa2 aa3 aa4 aa5 aa6 aa7 aa8 aa9 .";
+      grid-template-rows: 5rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+      @mixin styl-tekstu-navbar {
+        // re-używalny styl dla dzieci, stąd napisany w parencie - hook1, good idea?
+        font-size: 1.4rem;
+        justify-self: center;
+        align-self: center;
+        color: #685e58;
+        font-weight: bold;
+      }
+
+      &--logo-infiniti {
+        grid-area: aa1;
+        background-color: #cfc7a7;
+        @include styl-tekstu-navbar;
+      }
+      &--o-nas {
+        grid-area: aa2;
+        background-color: #e5c131;
+        @include styl-tekstu-navbar;
+      }
+      &--infiniti-medical {
+        grid-area: aa3;
+        @include styl-tekstu-navbar;
+      }
+      &--galeria {
+        grid-area: aa4;
+        @include styl-tekstu-navbar;
+      }
+      &--kadra {
+        grid-area: aa5;
+        @include styl-tekstu-navbar;
+      }
+      &--cennik {
+        grid-area: aa6;
+        @include styl-tekstu-navbar;
+      }
+      &--grafik {
+        grid-area: aa7;
+        @include styl-tekstu-navbar;
+      }
+      &--do-pobrania {
+        grid-area: aa8;
+        @include styl-tekstu-navbar;
+      }
+      &--kontakt {
+        grid-area: aa9;
+        @include styl-tekstu-navbar;
+      }
     }
     &__animowany-slide-in-fot-infiniti {
       grid-area: ccc;
@@ -67,9 +99,7 @@
         grid-area: bb2;
       }
     }
-    //
-    //            1.1.b. Obszar - poziomy infiniti
-    //
+
     &__poziomy-infiniti-tytul-gorny {
       grid-area: eee;
       background-color: #deb3f3;
@@ -79,21 +109,45 @@
       background-color: #8ca0ff;
 
       display: grid;
-      grid-template-areas: "dd1 dd2 dd3 dd4";
+      //hook1 - najlepsza konwnecja nazewnictwa nested grids ? \/
+      grid-template-areas: "ddd_1 ddd_2 ddd_3 ddd_4 ddd_5 ddd_6 ddd_7 ddd_8";
       grid-template-rows: 10rem;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-
-      &--minus1 {
-        grid-area: dd1;
+      grid-template-columns: repeat(8, 1fr);
+      &--minus-1 {
+        &--fota {
+          grid-area: ddd_1;
+          border-bottom: 5px;
+        }
+        &--napis {
+          grid-area: ddd_2;
+        }
       }
       &--0 {
-        grid-area: dd2;
+        &--fota {
+          grid-area: ddd_3;
+          border-bottom: 5px;
+        }
+        &--napis {
+          grid-area: ddd_4;
+        }
       }
       &--1 {
-        grid-area: dd3;
+        &--fota {
+          grid-area: ddd_5;
+          border-bottom: 5px;
+        }
+        &--napis {
+          grid-area: ddd_6;
+        }
       }
       &--2 {
-        grid-area: dd4;
+        &--fota {
+          grid-area: ddd_7;
+          border-bottom: 5px;
+        }
+        &--napis {
+          grid-area: ddd_8;
+        }
       }
     }
 
@@ -144,24 +198,39 @@
       background-color: #e5a51c;
 
       display: grid;
-      grid-template-areas: "ii1 ii2";
+      grid-template-areas: "iii_1 iii_2";
       grid-template-rows: 10rem;
       grid-template-columns: 3fr 9fr;
 
       &--lewy-shape {
-        grid-area: ii1;
+        grid-area: iii_1;
+
+        display: grid;
+        grid-template-areas: "iii_1_a";
+        grid-template-rows: 10rem;
+        grid-template-columns: 1fr;
+        &--napis {
+          grid-area: iii_1_a;
+        }
       }
       &--prawy-shape {
-        grid-area: ii2;
+        grid-area: iii_2;
+
+        display: grid;
+        grid-template-areas: "iii_2_a iii_2_b";
+        grid-template-rows: 10rem;
+        grid-template-columns: 3fr 9fr;
+        &--input-email {
+          grid-area: iii_2_a;
+        }
+        &--button-zapisz-sie {
+          grid-area: iii_2_b;
+        }
       }
     }
     //
   }
 }
-//
-
-//
-
 //
 
 .grid {

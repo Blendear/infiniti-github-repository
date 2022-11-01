@@ -23,24 +23,67 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className={styles.navbar}>
-        <h1> Logo </h1>
-        <Link href="/"> STRONA GŁÓWNA</Link>
-        <Link href="/o-nas"> O NAS </Link>
-        <Link href="/infiniti-medical"> INFINITI MEDICAL </Link>
-        <Link href="/galeria"> GALERIA </Link>
-        <Link href="/kadra"> KADRA </Link>
-        <Link href="/cennik"> CENNIK </Link>
-        <Link href="/grafik"> GRAFIK </Link>
-        <Link href="/do-pobrania"> DO POBRANIA</Link>
-        <Link href="/kontakt"> KONTAKT </Link>
+    <nav className={styles["layout-strona-glowna__navbar-gorny"]}>
+      <Link href="/">
+        <a
+          className={
+            styles["layout-strona-glowna__navbar-gorny--logo-infiniti"]
+          }
+        >
+          {"LOGO / STR.G."}
+        </a>
+      </Link>
+      <Link href="/o-nas">
+        <a className={styles["layout-strona-glowna__navbar-gorny--o-nas"]}>
+          O NAS
+        </a>
+      </Link>
+      <Link href="/infiniti-medical">
+        <a
+          className={
+            styles["layout-strona-glowna__navbar-gorny--infiniti-medical"]
+          }
+        >
+          INFINITI MEDICAL
+        </a>
+      </Link>
+      <Link href="/galeria">
+        <a className={styles["layout-strona-glowna__navbar-gorny--galeria"]}>
+          GALERIA
+        </a>
+      </Link>
+      <Link href="/kadra">
+        <a className={styles["layout-strona-glowna__navbar-gorny--kadra"]}>
+          KADRA
+        </a>
+      </Link>
+      <Link href="/cennik">
+        <a className={styles["layout-strona-glowna__navbar-gorny--cennik"]}>
+          CENNIK
+        </a>
+      </Link>
+      <Link href="/grafik">
+        <a className={styles["layout-strona-glowna__navbar-gorny--grafik"]}>
+          GRAFIK
+        </a>
+      </Link>
+      <Link href="/do-pobrania">
+        <a
+          className={styles["layout-strona-glowna__navbar-gorny--do-pobrania"]}
+        >
+          DO POBRANIA
+        </a>
+      </Link>
+      <Link href="/kontakt">
+        <a className={styles["layout-strona-glowna__navbar-gorny--kontakt"]}>
+          KONTAKT
+        </a>
+      </Link>
 
-        <Link href="/A"> Strona A</Link>
-        <Link href="/B"> Strona B</Link>
-        <Link href="/C"> Strona C</Link>
-      </nav>
-    </div>
+      {/* <Link href="/A"> Strona A</Link>
+      <Link href="/B"> Strona B</Link>
+      <Link href="/C"> Strona C</Link> */}
+    </nav>
   );
 };
 

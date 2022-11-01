@@ -9,7 +9,7 @@
 // //
 // //      1.2. "-II-" child podrozdział
 
-// import styles from "../styles/sass/styles-all.module.scss";
+// import styles from "src/styles/sass/styles-all.module.scss";
 
 // const a = () => {
 //   return <h1 className={styles.eksperymentalny}> ...cias sdteczko </h1>;
