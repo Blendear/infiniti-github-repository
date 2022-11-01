@@ -16,11 +16,10 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 
+import Image from "next/image";
 import PoziomyInfiniti from "../components/1-strona-glowna/poziomy-infiniti";
 
 const StronaStronaGlowna = () => {
-  console.log(process.env);
-
   return (
     <div className={styles["layout-strona-glowna__cala-strona"]}>
       {/* <div className={styles["layout-strona-glowna__navbar-gorny"]}>
@@ -49,10 +48,9 @@ const StronaStronaGlowna = () => {
       >
         --- 4 pietra pelne wrazen ---
       </div>
-      <div className={styles["layout-strona-glowna__poziomy-infiniti-levle"]}>
-        poziomy infiniti
-        <PoziomyInfiniti></PoziomyInfiniti>
-      </div>
+
+      <PoziomyInfiniti />
+
       <div className={styles["layout-strona-glowna__efitness-app"]}>
         efitness app
       </div>

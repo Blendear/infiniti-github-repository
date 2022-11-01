@@ -10,27 +10,46 @@ const data = [
     levelName: "-1",
 
     fotaPath: "poziom-minus-1.png",
-    classAssigned: "",
+    classAssigned:
+      "layout-strona-glowna__poziomy-infiniti-levle--minus-1--fota",
   },
-  { id: 0, levelName: "0", fotaPath: "poziom-0.png", classAssigned: "" },
-  { id: 1, levelName: "1", fotaPath: "poziom-1.png", classAssigned: "" },
-  { id: 2, levelName: "2", fotaPath: "poziom-2.png", classAssigned: "" },
+  {
+    id: 0,
+    levelName: "0",
+    fotaPath: "poziom-0.png",
+    classAssigned: "layout-strona-glowna__poziomy-infiniti-levle--0--fota",
+  },
+  {
+    id: 1,
+    levelName: "1",
+    fotaPath: "poziom-1.png",
+    classAssigned: "layout-strona-glowna__poziomy-infiniti-levle--1--fota",
+  },
+  {
+    id: 2,
+    levelName: "2",
+    fotaPath: "poziom-2.png",
+    classAssigned: "layout-strona-glowna__poziomy-infiniti-levle--2--fota",
+  },
 ];
 
-//hook1 - jak returnować, żeby wyskoczyło na stronie 4 pozycje?
+const MapujemyPoArrayuFotIOpisow = data.map((i) => (
+  <div key={i.id} className={styles[i.classAssigned]}>
+    {console.log(styles[i.classAssigned])}
+    <Image
+      src={`/images/strona-glowna-animowane-zdjecia/1.png`}
+      //
+      alt={`nie pykło z poziomem ${i.id}`}
+      width={800} //hook1 jaki ?
+      height={400} //hook1 jaki ?
+    ></Image>
+  </div>
+));
+
 const PoziomyInfiniti = () => {
   return (
-    <div>
-      {data.map((i) => {
-        <Image
-          className={styles[i.classAssigned]}
-          src={`/images/strona-glowna-animowane-zdjecia/${i.fotoPath}`}
-          alt={`nie pykło z poziomem ${i.id}`}
-          width={800} //hook1 jaki ?
-          height={400} //hook1 jaki ?
-        ></Image>;
-        <p> {`Poziom ${i.levelName}`}</p>;
-      })}
+    <div className={styles["layout-strona-glowna__poziomy-infiniti-levle"]}>
+      {MapujemyPoArrayuFotIOpisow}
     </div>
   );
 };

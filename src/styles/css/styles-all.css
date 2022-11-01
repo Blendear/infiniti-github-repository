@@ -86,6 +86,10 @@
   background-color: rgb(187, 228, 167);
 }
 
+.blue {
+  background-color: blue;
+}
+
 .layout-strona-glowna__cala-strona {
   display: grid;
   grid-template-areas: "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." ". . eee eee eee eee eee eee eee eee . ." ". . ddd ddd ddd ddd ddd ddd ddd ddd . ." "fff fff fff fff fff fff fff fff fff fff fff fff" ". . ggg ggg ggg ggg ggg ggg ggg ggg . ." ". . jjj jjj jjj jjj jjj jjj jjj jjj . ." ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." "iii iii iii iii iii iii iii iii iii iii iii iii" ". foot . . . . . . . . nav .";

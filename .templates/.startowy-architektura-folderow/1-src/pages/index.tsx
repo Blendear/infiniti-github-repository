@@ -1,18 +1,20 @@
-////  Problemy do rozwiązania poniższymi rozdziałami liczbowymi: - hook1 - nierozpisane
 ////
-////~~ A.  Śledzę upływ czasu real life
 ////
-////       A.a. ...
+////~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
+////
+////       A.1. parent rozdział nr 1
 // //
-// //           1.  Moments.js library
+// //           A.1.1. child rozdział nr 1
 // //
-// //               1.1. Zaciągnięcie czasu dla Polski
-// //
-// //               1.2. Przerobienie danych zaciągniętyhc na ładny visual timer'a
+////~~ B.  Historyjka druga ...
+////
 
 // import styles from "src/styles/sass/styles-all.module.scss";
+// import BChild from "..."
 
-// const Aname = () => {
-//   return <h1 className={styles.eksperymentalny}> ...cias sdteczko </h1>;
+// BUDUJ COMPONENTOWO PARENTA. Czyli z imporotwanych componentów, a la <bChild/>, nie <div> ...zawartosc...</div>
+
+// const AParent = () => {
+//   return <bChild />;
 // };
-// export default Aname;
+// export default AParent;

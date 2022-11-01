@@ -1,17 +1,20 @@
+////
+////
+////~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
+////
+////       A.1. parent rozdział nr 1
 // //
-// //  1.
+// //           A.1.1. child rozdział nr 1
 // //
-
-// //
-// //  1.  "po co, co i czym zrobimy" parent rozdzial
-// //
-// //      1.1. "-II-" child podrozdział
-// //
-// //      1.2. "-II-" child podrozdział
+////~~ B.  Historyjka druga ...
+////
 
 // import styles from "src/styles/sass/styles-all.module.scss";
+// import BChild from "..."
 
-// const a = () => {
-//   return <h1 className={styles.eksperymentalny}> ...cias sdteczko </h1>;
+// BUDUJ COMPONENTOWO PARENTA. Czyli z imporotwanych componentów, a la <bChild/>, nie <div> ...zawartosc...</div>
+
+// const AParent = () => {
+//   return <bChild />;
 // };
-// export default a;
+// export default AParent;
