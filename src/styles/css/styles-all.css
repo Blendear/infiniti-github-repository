@@ -86,10 +86,6 @@
   background-color: rgb(187, 228, 167);
 }
 
-.blue {
-  background-color: blue;
-}
-
 .layout-strona-glowna__cala-strona {
   display: grid;
   grid-template-areas: "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." ". . eee eee eee eee eee eee eee eee . ." ". . ddd ddd ddd ddd ddd ddd ddd ddd . ." "fff fff fff fff fff fff fff fff fff fff fff fff" ". . ggg ggg ggg ggg ggg ggg ggg ggg . ." ". . jjj jjj jjj jjj jjj jjj jjj jjj . ." ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." "iii iii iii iii iii iii iii iii iii iii iii iii" ". foot . . . . . . . . nav .";
@@ -240,21 +236,36 @@
   grid-area: ddd_8;
   font-size: 1.7rem;
 }
+.layout-strona-glowna__efitness-app-tlo {
+  grid-area: fff;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(128, 128, 128, 0.566);
+}
 .layout-strona-glowna__efitness-app {
   grid-area: fff;
+  position: absolute;
+  z-index: 1;
   background-color: #0fa167;
   display: grid;
-  grid-template-areas: "ff1 ff2";
-  grid-template-rows: 10rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "ff1 ff2 ff2" "ff1 ff3 ff4";
+  grid-template-rows: 5rem 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.layout-strona-glowna__efitness-app--lewa-fota {
+.layout-strona-glowna__efitness-app--lewa-fota--telefony {
   grid-area: ff1;
-  filter: grayscale(80%);
 }
-.layout-strona-glowna__efitness-app--prawa-fota {
+.layout-strona-glowna__efitness-app--prawa-fota--opis {
   grid-area: ff2;
-  filter: hue-rotate(90deg);
+  font-size: 0.9rem;
+  color: rgb(43, 41, 41);
+  justify-self: center;
+}
+.layout-strona-glowna__efitness-app--prawa-fota--app-store {
+  grid-area: ff3;
+}
+.layout-strona-glowna__efitness-app--prawa-fota--google {
+  grid-area: ff4;
 }
 .layout-strona-glowna__godziny-otwarcia {
   grid-area: ggg;

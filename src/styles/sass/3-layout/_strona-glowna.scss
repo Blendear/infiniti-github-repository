@@ -1,8 +1,7 @@
-//hook1 - zawijanie linijak zamiast spisu treści?
+//hook2 - zawijanie linijak zamiast spisu treści?
 
-.blue {
-  background-color: blue;
-}
+//herehere01.11.2022 - hook1 - dostosuj rozmiar sekcji efitness tak, żeby zajmowało tyle miejsca ile content
+
 .layout {
   &-strona-glowna {
     &__cala-strona {
@@ -160,23 +159,43 @@
         }
       }
     }
-
+    &__efitness-app-tlo {
+      grid-area: fff;
+      position: absolute;
+      z-index: -1;
+      background-color: rgba(128, 128, 128, 0.566);
+    }
     &__efitness-app {
       grid-area: fff;
+      position: absolute;
+      z-index: 1;
       background-color: #0fa167;
 
       display: grid;
-      grid-template-areas: "ff1 ff2";
-      grid-template-rows: 10rem;
-      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "ff1 ff2 ff2"
+        "ff1 ff3 ff4";
+      grid-template-rows: 5rem 5rem;
+      grid-template-columns: 1fr 1fr 1fr;
 
       &--lewa-fota {
-        grid-area: ff1;
-        filter: grayscale(80%);
+        &--telefony {
+          grid-area: ff1;
+        }
       }
       &--prawa-fota {
-        grid-area: ff2;
-        filter: hue-rotate(90deg);
+        &--opis {
+          grid-area: ff2;
+          font-size: 0.9rem;
+          color: rgb(43, 41, 41);
+          justify-self: center;
+        }
+        &--app-store {
+          grid-area: ff3;
+        }
+        &--google {
+          grid-area: ff4;
+        }
       }
     }
     &__godziny-otwarcia {
