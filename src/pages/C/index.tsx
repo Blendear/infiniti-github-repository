@@ -64,7 +64,7 @@ const StronaZAnimacjaRTG = () => {
       {styles[aktywujAkaDodajTaClasse]}
       <Image
         className={styles[aktywujAkaDodajTaClasse]}
-        src={`/images/strona-glowna-animowane-zdjecia/${aktualnyIndexFoty}.png`}
+        src={`/images/1-strona-glowna/1-1-slajdy-fot/${aktualnyIndexFoty}.png`}
         alt={`nie pykło z fota nr ${aktualnyIndexFoty}`}
         width={800}
         height={400}

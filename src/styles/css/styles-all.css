@@ -214,6 +214,7 @@
 }
 .layout-strona-glowna__poziomy-infiniti-levle--minus-1--napis {
   grid-area: ddd_2;
+  font-size: 1.7rem;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--0--fota {
   grid-area: ddd_3;
@@ -221,6 +222,7 @@
 }
 .layout-strona-glowna__poziomy-infiniti-levle--0--napis {
   grid-area: ddd_4;
+  font-size: 1.7rem;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--1--fota {
   grid-area: ddd_5;
@@ -228,6 +230,7 @@
 }
 .layout-strona-glowna__poziomy-infiniti-levle--1--napis {
   grid-area: ddd_6;
+  font-size: 1.7rem;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--2--fota {
   grid-area: ddd_7;
@@ -235,6 +238,7 @@
 }
 .layout-strona-glowna__poziomy-infiniti-levle--2--napis {
   grid-area: ddd_8;
+  font-size: 1.7rem;
 }
 .layout-strona-glowna__efitness-app {
   grid-area: fff;
