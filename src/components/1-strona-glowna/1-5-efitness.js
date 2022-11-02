@@ -20,14 +20,28 @@ const EfitnessStronaGlowna = () => {
       {/* herehere01.11.2022 - hook1 - doróbcchild classy dla lewej i prawej strony. potrzebuje wiecej klatek grid-area dla prawej */}
       <div
         className={
-          styles["layout-strona-glowna__efitness-app--prawa-fota--opis"]
+          styles["layout-strona-glowna__efitness-app--prawa-fota--opis-tytul"]
         }
       >
         <div>ZAPISUJ SIĘ NA ZAJĘCIA DZIĘKI APLIKACJI MOBILNEJ EFITNESS APP</div>
-        <ul>
-          <li>Coffee</li>
-          <li>Tea</li>
-          <li>Milk</li>
+        <ul
+          className={
+            styles[
+              "layout-strona-glowna__efitness-app--prawa-fota--opis-punkty"
+            ]
+          }
+        >
+          <li>
+            Czytelny grafik zajęć i łatwe wyszukiwanie według typu zajęć lub
+            instruktora
+          </li>
+          <li>
+            Płatności bezgotówkowe - możecie opłacić swój karnet w każdej chwili
+          </li>
+          <li>
+            Widoczne postępy - możecie obserwować liczbę swoich wizyt i czasu
+            spędzonego w klubie oraz śledzić swoje postępy treningów
+          </li>
         </ul>
       </div>
       <div
@@ -57,7 +71,7 @@ const EfitnessStronaGlowna = () => {
       </div>
       <div
         className={
-          styles["layout-strona-glowna__efitness-app--prawa-fota--telefony"]
+          styles["layout-strona-glowna__efitness-app--lewa-fota--telefony"]
         }
       >
         <Image

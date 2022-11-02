@@ -88,8 +88,9 @@
 
 .layout-strona-glowna__cala-strona {
   display: grid;
+  position: relative;
   grid-template-areas: "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." ". . eee eee eee eee eee eee eee eee . ." ". . ddd ddd ddd ddd ddd ddd ddd ddd . ." "fff fff fff fff fff fff fff fff fff fff fff fff" ". . ggg ggg ggg ggg ggg ggg ggg ggg . ." ". . jjj jjj jjj jjj jjj jjj jjj jjj . ." ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." "iii iii iii iii iii iii iii iii iii iii iii iii" ". foot . . . . . . . . nav .";
-  grid-template-rows: minmax(10rem, min-content) repeat(7, 10rem);
+  grid-template-rows: repeat(8, minmax(10rem, min-content));
   grid-template-columns: 1fr repeat(10, minmax(2rem, 10rem)) 1fr;
 }
 .layout-strona-glowna__navbar-gorny {
@@ -240,32 +241,47 @@
   grid-area: fff;
   position: absolute;
   z-index: -1;
-  background-color: rgba(128, 128, 128, 0.566);
+  background-color: rgb(243, 243, 243);
 }
 .layout-strona-glowna__efitness-app {
   grid-area: fff;
-  position: absolute;
   z-index: 1;
-  background-color: #0fa167;
   display: grid;
   grid-template-areas: "ff1 ff2 ff2" "ff1 ff3 ff4";
-  grid-template-rows: 5rem 5rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 50% 20% 20%;
 }
 .layout-strona-glowna__efitness-app--lewa-fota--telefony {
   grid-area: ff1;
+  width: 80%;
+  position: relative;
+  top: 8%;
+  left: 14%;
 }
-.layout-strona-glowna__efitness-app--prawa-fota--opis {
+.layout-strona-glowna__efitness-app--prawa-fota--opis-tytul {
   grid-area: ff2;
-  font-size: 0.9rem;
+  font-size: 1.7rem;
+  font-weight: normal;
   color: rgb(43, 41, 41);
-  justify-self: center;
+  align-self: center;
+  position: relative;
+  left: 8%;
+}
+.layout-strona-glowna__efitness-app--prawa-fota--opis-punkty {
+  grid-area: ff2;
+  font-size: 1rem;
+  position: absolute;
+  top: 120%;
 }
 .layout-strona-glowna__efitness-app--prawa-fota--app-store {
   grid-area: ff3;
+  align-self: center;
+  padding-top: 5rem;
 }
 .layout-strona-glowna__efitness-app--prawa-fota--google {
   grid-area: ff4;
+  padding-top: 5rem;
+  align-self: center;
 }
 .layout-strona-glowna__godziny-otwarcia {
   grid-area: ggg;
