@@ -95,8 +95,10 @@
       // position: relative;
       display: grid;
       grid-template-areas: "bb1 bb2";
-      grid-template-rows: max-content;
+      grid-template-rows: minmax(5rem, max-content);
       grid-template-columns: 1fr 1fr;
+
+      transform: translate(0, -11rem);
 
       &--lewa-fota {
         grid-area: bb1;
@@ -114,7 +116,7 @@
       grid-template-areas: "eee1 eee2 eee3";
       // grid-template-rows: 5rem;
       grid-template-columns: 1fr max-content 1fr;
-      padding-top: 6rem;
+      // padding-top: 6rem;
       position: relative;
       &--tlo-pattern-lewo {
         grid-area: eee1;
