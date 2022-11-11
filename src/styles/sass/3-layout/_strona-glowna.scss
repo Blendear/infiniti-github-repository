@@ -6,11 +6,8 @@
   &-strona-glowna {
     &__cala-strona {
       display: grid;
-      position: relative;
-      // width: 100%;
-      // height: 100px;
+
       grid-template-areas: //
-        // ". aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa ." // navbar górny
         "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" //slide in animowanych fot
         ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." // dwie foty marketingowe
         ". . eee eee eee eee eee eee eee eee . ." // poziomy infiniti 0 tytuł
@@ -22,7 +19,7 @@
         "iii iii iii iii iii iii iii iii iii iii iii iii" // newsletter
         ". foot . . . . . . . . nav .";
       grid-template-rows: repeat(8, minmax(10rem, min-content));
-      grid-template-columns: 1fr repeat(10, minmax(2rem, 10rem)) 1fr;
+      grid-template-columns: 1fr 0.5rem repeat(8, minmax(2rem, 14rem)) 0.5rem 1fr;
     }
     &__navbar-gorny {
       grid-area: aaa;
@@ -160,18 +157,10 @@
         }
       }
     }
-    &__efitness-app-tlo {
-      grid-area: fff;
-      position: absolute;
 
-      z-index: -1;
-      background-color: rgb(243, 243, 243);
-    }
     &__efitness-app {
       grid-area: fff;
-
-      z-index: 1;
-      // background-color: #0fa16722;
+      position: relative;
 
       display: grid;
       grid-template-areas:
@@ -180,9 +169,17 @@
       grid-template-rows: min-content min-content;
       grid-template-columns: 50% 20% 20%;
 
+      &--tlo {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+      }
       &--lewa-fota {
         &--telefony {
+          z-index: 1;
           grid-area: ff1;
+
           width: 80%;
           position: relative;
           top: 8%;
@@ -191,31 +188,35 @@
       }
       &--prawa-fota {
         &--opis-tytul {
+          z-index: 1;
           grid-area: ff2;
 
-          font-size: 1.7rem;
+          font-size: 2.7rem;
           font-weight: normal;
           color: rgb(43, 41, 41);
-          align-self: center;
-          position: relative;
-          left: 8%;
-          // top: -20%;
+          align-self: end;
         }
         &--opis-punkty {
+          z-index: 1;
           grid-area: ff2;
-          font-size: 1rem;
-          position: absolute;
-          top: 120%;
+
+          font-size: 1.5rem;
+
+          list-style: none;
         }
         &--app-store {
+          z-index: 1;
           grid-area: ff3;
-          align-self: center;
+
+          align-self: start;
           padding-top: 5rem;
         }
         &--google {
+          z-index: 1;
           grid-area: ff4;
+
           padding-top: 5rem;
-          align-self: center;
+          align-self: start;
         }
       }
     }

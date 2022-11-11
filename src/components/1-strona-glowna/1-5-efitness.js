@@ -15,9 +15,6 @@ import Image from "next/image";
 const EfitnessStronaGlowna = () => {
   return (
     <h1 className={styles["layout-strona-glowna__efitness-app"]}>
-      {/* Efitness app */}
-
-      {/* herehere01.11.2022 - hook1 - doróbcchild classy dla lewej i prawej strony. potrzebuje wiecej klatek grid-area dla prawej */}
       <div
         className={
           styles["layout-strona-glowna__efitness-app--prawa-fota--opis-tytul"]
@@ -31,16 +28,17 @@ const EfitnessStronaGlowna = () => {
             ]
           }
         >
-          <li>
-            Czytelny grafik zajęć i łatwe wyszukiwanie według typu zajęć lub
-            instruktora
+          <li style={{ paddingTop: "10px" }}>
+            &#8226; Czytelny grafik zajęć i łatwe wyszukiwanie według typu zajęć
+            lub instruktora
           </li>
-          <li>
-            Płatności bezgotówkowe - możecie opłacić swój karnet w każdej chwili
+          <li style={{ paddingTop: "10px" }}>
+            &#8226; Płatności bezgotówkowe - możecie opłacić swój karnet w
+            każdej chwili
           </li>
-          <li>
-            Widoczne postępy - możecie obserwować liczbę swoich wizyt i czasu
-            spędzonego w klubie oraz śledzić swoje postępy treningów
+          <li style={{ paddingTop: "10px" }}>
+            &#8226; Widoczne postępy - możecie obserwować liczbę swoich wizyt i
+            czasu spędzonego w klubie oraz śledzić swoje postępy treningów
           </li>
         </ul>
       </div>
@@ -81,12 +79,12 @@ const EfitnessStronaGlowna = () => {
           height={1204}
         ></Image>
       </div>
-      <div className={styles["layout-strona-glowna__efitness-app-tlo"]}>
+      <div className={styles["layout-strona-glowna__efitness-app--tlo"]}>
         <Image
           src={`/images/1-strona-glowna/1-5-efitness/tlo-pattern.png`}
           alt={`nie pykło`}
-          width={1255}
-          height={570}
+          layout="fill"
+          objectFit="contain"
         ></Image>
       </div>
     </h1>
