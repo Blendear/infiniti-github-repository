@@ -21,8 +21,8 @@ const DwieFotyMarketingowe = () => {
           src={`/images/1-strona-glowna/1-2-dwie-foty-marketingowe copy/banner-www-jestesmyotwarci.png`}
           //
           alt={`nie pykło`}
-          width={585}
-          height={220}
+          height="220px"
+          width="585px"
         ></Image>
       </div>
       <div
@@ -33,8 +33,8 @@ const DwieFotyMarketingowe = () => {
         <Image
           src={`/images/1-strona-glowna/1-2-dwie-foty-marketingowe copy/panel-klienta-tlo2.png`}
           alt={`nie pykło`}
-          width={585}
-          height={220}
+          height="220px"
+          width="585px"
         ></Image>
       </div>
     </h1>

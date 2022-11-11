@@ -5,6 +5,7 @@
 import styles from "src/styles/sass/styles-all.module.scss";
 
 import Image from "next/image";
+
 import SlajdyFot from "../components/1-strona-glowna/1-1-slajdy-fot";
 import DwieFotyMarketingowe from "../components/1-strona-glowna/1-2-dwie-foty-marketingowe copy";
 import CzteryPietra from "../components/1-strona-glowna/1-3-cztery-pietra";

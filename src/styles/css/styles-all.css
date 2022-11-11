@@ -89,7 +89,7 @@
 .layout-strona-glowna__cala-strona {
   display: grid;
   grid-template-areas: "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." ". . eee eee eee eee eee eee eee eee . ." ". . ddd ddd ddd ddd ddd ddd ddd ddd . ." "fff fff fff fff fff fff fff fff fff fff fff fff" ". . ggg ggg ggg ggg ggg ggg ggg ggg . ." ". . jjj jjj jjj jjj jjj jjj jjj jjj . ." ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." "iii iii iii iii iii iii iii iii iii iii iii iii" ". foot . . . . . . . . nav .";
-  grid-template-rows: repeat(8, minmax(10rem, min-content));
+  grid-template-rows: repeat(8, minmax(5rem, max-content));
   grid-template-columns: 1fr 0.5rem repeat(8, minmax(2rem, 14rem)) 0.5rem 1fr;
 }
 .layout-strona-glowna__navbar-gorny {
@@ -180,10 +180,9 @@
 }
 .layout-strona-glowna__foty-marketingowe {
   grid-area: bbb;
-  background-color: #ffff64;
   display: grid;
   grid-template-areas: "bb1 bb2";
-  grid-template-rows: 10rem;
+  grid-template-rows: min-content;
   grid-template-columns: 1fr 1fr;
 }
 .layout-strona-glowna__foty-marketingowe--lewa-fota {
@@ -198,43 +197,38 @@
 }
 .layout-strona-glowna__poziomy-infiniti-levle {
   grid-area: ddd;
-  background-color: #8ca0ff;
   display: grid;
   grid-template-areas: "ddd_1 ddd_2 ddd_3 ddd_4 ddd_5 ddd_6 ddd_7 ddd_8";
-  grid-template-rows: 10rem;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: min-content;
+  grid-template-columns: max-content 1fr max-content 1fr max-content 1fr max-content 1fr;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--minus-1--fota {
   grid-area: ddd_1;
-  border-bottom: 5px;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--minus-1--napis {
   grid-area: ddd_2;
-  font-size: 1.7rem;
+  font-size: 3rem;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--0--fota {
   grid-area: ddd_3;
-  border-bottom: 5px;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--0--napis {
   grid-area: ddd_4;
-  font-size: 1.7rem;
+  font-size: 3rem;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--1--fota {
   grid-area: ddd_5;
-  border-bottom: 5px;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--1--napis {
   grid-area: ddd_6;
-  font-size: 1.7rem;
+  font-size: 3rem;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--2--fota {
   grid-area: ddd_7;
-  border-bottom: 5px;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--2--napis {
   grid-area: ddd_8;
-  font-size: 1.7rem;
+  font-size: 3rem;
 }
 .layout-strona-glowna__efitness-app {
   grid-area: fff;

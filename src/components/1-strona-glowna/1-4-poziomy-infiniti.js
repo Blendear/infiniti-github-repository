@@ -19,7 +19,7 @@ import Image from "next/image";
 
 const data = [
   {
-    id: -1,
+    id: 1,
     levelName: "-1",
 
     fotaPath: "poziom-minus-1",
@@ -28,7 +28,7 @@ const data = [
       "layout-strona-glowna__poziomy-infiniti-levle--minus-1--napis",
   },
   {
-    id: 0,
+    id: 1,
     levelName: "0",
     fotaPath: "poziom-0",
     classTejFoty: "layout-strona-glowna__poziomy-infiniti-levle--0--fota",
@@ -36,7 +36,7 @@ const data = [
       "layout-strona-glowna__poziomy-infiniti-levle--0--napis",
   },
   {
-    id: 1,
+    id: 2,
     levelName: "1",
     fotaPath: "poziom-1",
     classTejFoty: "layout-strona-glowna__poziomy-infiniti-levle--1--fota",
@@ -44,7 +44,7 @@ const data = [
       "layout-strona-glowna__poziomy-infiniti-levle--1--napis",
   },
   {
-    id: 2,
+    id: 3,
     levelName: "2",
     fotaPath: "poziom-2",
     classTejFoty: "layout-strona-glowna__poziomy-infiniti-levle--2--fota",
@@ -62,8 +62,8 @@ const MapujemyFoty = data.map((i) => (
       src={`/images/1-strona-glowna/1-4-poziomy-infiniti/${i.fotaPath}.png`}
       //
       alt={`nie pykło z poziomem ${i.id}`}
-      width={140}
-      height={140}
+      width={70}
+      height={60}
     ></Image>
   </div>
 ));

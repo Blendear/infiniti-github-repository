@@ -10,6 +10,7 @@
 //
 
 import styles from "src/styles/sass/styles-all.module.scss";
+import Image from "next/image";
 
 const SlajdyFot = () => {
   return (
@@ -18,7 +19,20 @@ const SlajdyFot = () => {
         styles["layout-strona-glowna__animowany-slide-in-fot-infiniti"]
       }
     >
-      Slajdy fot
+      <div
+        className={
+          styles[
+            "layout-strona-glowna__animowany-slide-in-fot-infiniti--miejsce-na-foty"
+          ]
+        }
+      >
+        <Image
+          src={`/images/1-strona-glowna/1-1-slajdy-fot/slide-6.jpg`}
+          alt={`nie pykło`}
+          layout="fill"
+          objectFit="cover"
+        ></Image>
+      </div>
     </h1>
   );
 };

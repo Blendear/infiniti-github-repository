@@ -10,13 +10,34 @@
 //
 
 import styles from "src/styles/sass/styles-all.module.scss";
+import Image from "next/image";
 
 const CzteryPietra = () => {
   return (
     <h1
       className={styles["layout-strona-glowna__poziomy-infiniti-tytul-gorny"]}
     >
-      Cztery pietra
+      <div
+        className={
+          styles[
+            "layout-strona-glowna__poziomy-infiniti-tytul-gorny--pattern-w-tle-lewy"
+          ]
+        }
+      ></div>
+      <div
+        className={
+          styles["layout-strona-glowna__poziomy-infiniti-tytul-gorny--napis"]
+        }
+      >
+        4 PIĘTRA PEŁNE WRAŻEŃ
+      </div>
+      <div
+        className={
+          styles[
+            "layout-strona-glowna__poziomy-infiniti-tytul-gorny--pattern-w-tle-prawy"
+          ]
+        }
+      ></div>
     </h1>
   );
 };

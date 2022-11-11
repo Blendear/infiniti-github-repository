@@ -18,7 +18,7 @@
         ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." // partnerzy slide-in fot
         "iii iii iii iii iii iii iii iii iii iii iii iii" // newsletter
         ". foot . . . . . . . . nav .";
-      grid-template-rows: repeat(8, minmax(10rem, min-content));
+      grid-template-rows: 100vh repeat(8, minmax(5rem, max-content));
       grid-template-columns: 1fr 0.5rem repeat(8, minmax(2rem, 14rem)) 0.5rem 1fr;
     }
     &__navbar-gorny {
@@ -82,14 +82,20 @@
     &__animowany-slide-in-fot-infiniti {
       grid-area: ccc;
       background-color: #8cffb6;
+
+      position: relative;
+      &--miejsce-na-foty {
+        width: 100%;
+        height: 100%;
+        background-color: #1a2c91;
+      }
     }
     &__foty-marketingowe {
       grid-area: bbb;
-      background-color: #ffff64;
-
+      // position: relative;
       display: grid;
       grid-template-areas: "bb1 bb2";
-      grid-template-rows: 10rem;
+      grid-template-rows: max-content;
       grid-template-columns: 1fr 1fr;
 
       &--lewa-fota {
@@ -102,58 +108,124 @@
 
     &__poziomy-infiniti-tytul-gorny {
       grid-area: eee;
-      background-color: #deb3f3;
+      // background-color: #deb3f3;
+
+      display: grid;
+      grid-template-areas: "eee1 eee2 eee3";
+      // grid-template-rows: 5rem;
+      grid-template-columns: 1fr max-content 1fr;
+      padding-top: 6rem;
+      position: relative;
+      &--tlo-pattern-lewo {
+        grid-area: eee1;
+        position: absolute;
+
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        transform: translate(-6rem, -6rem);
+      }
+      &--tlo-pattern-prawo {
+        grid-area: eee3;
+        position: absolute;
+
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        transform: translate(6rem, -6rem);
+      }
+      &--napis {
+        grid-area: eee2;
+        color: #4d4d4d;
+        font-weight: 400;
+        font-size: 3rem;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+
+        z-index: 1;
+      }
+      &--pattern-w-tle-lewy {
+        grid-area: eee1;
+
+        background-image: url("https://infiniti-fit.pl/wp-content/plugins/designthemes-core-features/shortcodes/images/title-pattern.png");
+        background-repeat: repeat-x;
+        background-position: center;
+
+        z-index: 1;
+      }
+      &--pattern-w-tle-prawy {
+        grid-area: eee3;
+
+        background-image: url("https://infiniti-fit.pl/wp-content/plugins/designthemes-core-features/shortcodes/images/title-pattern.png");
+        background-repeat: repeat-x;
+        background-position: center;
+
+        z-index: 1;
+      }
     }
     &__poziomy-infiniti-levle {
       grid-area: ddd;
-      background-color: #8ca0ff;
+      // background-color: #8ca0ff;
 
       display: grid;
       //hook1 - najlepsza konwnecja nazewnictwa nested grids ? \/
       grid-template-areas: "ddd_1 ddd_2 ddd_3 ddd_4 ddd_5 ddd_6 ddd_7 ddd_8";
-      grid-template-rows: 10rem;
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: min-content;
+      grid-template-columns: max-content 1fr max-content 1fr max-content 1fr max-content 1fr;
 
       // layout-strona-glowna__poziomy-infiniti-levle--2--napis
-      $rozmiar-czcionki-napisow-poziomow: 1.7rem;
+      padding-top: 4rem;
+      padding-bottom: 6rem;
+      @mixin napis-poziomow {
+        font-size: 2rem;
+        // font-style: normal;
+        border-bottom: 1px solid;
+        border-color: rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        margin-right: 70px;
+        padding-left: 10px;
+        padding-top: 5px;
+        color: #3c261b;
+        z-index: 1;
+      }
+
       &--minus-1 {
         &--fota {
           grid-area: ddd_1;
-          border-bottom: 5px;
         }
         &--napis {
           grid-area: ddd_2;
-          font-size: $rozmiar-czcionki-napisow-poziomow;
+          @include napis-poziomow;
         }
       }
       &--0 {
         &--fota {
           grid-area: ddd_3;
-          border-bottom: 5px;
+          // border-bottom: 5px;
         }
         &--napis {
           grid-area: ddd_4;
-          font-size: $rozmiar-czcionki-napisow-poziomow;
+          @include napis-poziomow;
         }
       }
       &--1 {
         &--fota {
           grid-area: ddd_5;
-          border-bottom: 5px;
+          // border-bottom: 5px;
         }
         &--napis {
           grid-area: ddd_6;
-          font-size: $rozmiar-czcionki-napisow-poziomow;
+          @include napis-poziomow;
         }
       }
       &--2 {
         &--fota {
           grid-area: ddd_7;
-          border-bottom: 5px;
+          // border-bottom: 5px;
         }
         &--napis {
           grid-area: ddd_8;
-          font-size: $rozmiar-czcionki-napisow-poziomow;
+          @include napis-poziomow;
         }
       }
     }
@@ -161,6 +233,7 @@
     &__efitness-app {
       grid-area: fff;
       position: relative;
+      background-color: #f4f4f4;
 
       display: grid;
       grid-template-areas:
