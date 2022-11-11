@@ -18,6 +18,7 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Transition } from "react-transition-group";
 
 // import fota1 from "public/images/strona-glowna-animowane-zdjecia/1.png";
 // import fota2 from "public/images/strona-glowna-animowane-zdjecia/2.png";
@@ -29,19 +30,14 @@ import { useEffect } from "react";
 const StronaZAnimacjaRTG = () => {
   let arrayOfImageSources = [];
 
-  const [timerNow, setTimerNow] = useState(1);
+  const [timerNow, setTimerNow] = useState(2);
 
-  let aktualnyIndexFoty = [
-    //   { id: 1, nrFoty: fota1 },
-    //   { id: 2, nrFoty: fota2 },
-    //   { id: 3, nrFoty: fota3 },
-    //   { id: 4, nrFoty: fota4 },
-    // ];
-    timerNow === 1 ? "1" : "",
-    timerNow === 2 ? "2" : "",
-    timerNow === 3 ? "3" : "",
-    timerNow === 4 ? "4" : "",
-  ].join("");
+  // let aktualnyIndexFoty = [
+  //   timerNow === 1 ? "slide-1" : "",
+  //   timerNow === 2 ? "slide-2" : "",
+  //   timerNow === 3 ? "slide-3" : "",
+  //   timerNow === 4 ? "slide-4" : "",
+  // ].join("");
 
   let aktywujAkaDodajTaClasse = [
     timerNow === 1 ? "animation__slide-in" : "",
@@ -54,22 +50,56 @@ const StronaZAnimacjaRTG = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setTimerNow((prev) => (timerNow < 4 ? prev + 1 : 1));
-    }, 1000);
+      setTimerNow((prev) => (timerNow < 4 ? prev + 1 : 2));
+    }, 6000);
   }, [timerNow]);
 
   return (
-    <div>
-      Fota nr {aktualnyIndexFoty}
-      {styles[aktywujAkaDodajTaClasse]}
-      <Image
-        className={styles[aktywujAkaDodajTaClasse]}
-        src={`/images/1-strona-glowna/1-1-slajdy-fot/${aktualnyIndexFoty}.png`}
-        alt={`nie pykło z fota nr ${aktualnyIndexFoty}`}
-        width={800}
-        height={400}
-      ></Image>
-    </div>
+    <Transition in={true}>
+      <h1
+        className={
+          styles["layout-strona-glowna__animowany-slide-in-fot-infiniti"]
+        }
+      >
+        <div
+          className={
+            styles[
+              "layout-strona-glowna__animowany-slide-in-fot-infiniti--miejsce-na-foty"
+            ]
+          }
+        >
+          {/* <div>
+          Fota nr {timerNow}
+          {styles[aktywujAkaDodajTaClasse]}
+        </div> */}
+
+          <Image
+            // className={styles[aktywujAkaDodajTaClasse]}
+            src={`/images/1-strona-glowna/1-1-slajdy-fot/slide-${
+              timerNow - 1
+            }.jpg`}
+            alt={`nie pykło z fota nr ${timerNow - 1}`}
+            layout="fill"
+            objectFit="cover"
+          ></Image>
+        </div>
+        <div
+          className={
+            styles[
+              "layout-strona-glowna__animowany-slide-in-fot-infiniti--miejsce-na-foty"
+            ]
+          }
+        >
+          <Image
+            className={styles[aktywujAkaDodajTaClasse]}
+            src={`/images/1-strona-glowna/1-1-slajdy-fot/slide-${timerNow}.jpg`}
+            alt={`nie pykło z fota nr ${timerNow}`}
+            layout="fill"
+            objectFit="cover"
+          ></Image>
+        </div>
+      </h1>
+    </Transition>
   );
 };
 export default StronaZAnimacjaRTG;
