@@ -325,16 +325,18 @@
           //hook1 - area TYLKO LEPSZE w statycznym layoucie. n ie w momencie dynamicznego, np. accordiona.
 
           &--accordion {
-            display: grid;
+            &--open {
+              display: grid;
 
-            grid-template-rows: repeat(4, minmax(0.25rem, min-content));
-            grid-template-columns: 1fr 3fr 2fr;
-            // &--closed {
-            //   background-color: red;
-            // }
-            // &--open {
-            //   background-color: greenyellow;
-            // }
+              grid-template-rows: repeat(4, minmax(0.25rem, min-content));
+              grid-template-columns: 1fr 3fr 2fr;
+            }
+            &--closed {
+              display: none;
+            }
+            //hook1 - TRAP1 - Jeśli masz na elemencie classe z grid, to dodajac classę kolejną - nadpisze ona typ displayu Z JAKIEGOS KURWA POWODU. Myślałem, że się połączą...
+
+            // CZYLI classa "open" i "closed" muszą tez mieć identyczny display"grid", "grid-template.." etc. properties.
           }
           //hook1 - za długie nazwy class. nieprzejrzysty jsx. wystarczy mi w sass zrobic spis tresci. kod powinien byc czysty,krotki, na temat
 
