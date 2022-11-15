@@ -1,29 +1,61 @@
+.closed {
+  color: red;
+}
+
+.open {
+  color: greenyellow;
+}
+
 .animation__slide-in {
   width: 800px;
   height: 400px;
-  animation: slidein 20s;
+  animation: slidein 4s forwards;
   animation-iteration-count: 1;
 }
 .animation__slide-in2 {
   width: 800px;
   height: 400px;
-  animation: slidein 20s;
+  animation: slidein2 4s forwards;
   animation-iteration-count: 1;
 }
 .animation__slide-in3 {
   width: 800px;
   height: 400px;
-  animation: slidein 20s;
+  animation: slidein3 4s forwards;
   animation-iteration-count: 1;
 }
 .animation__slide-in4 {
   width: 800px;
   height: 400px;
-  animation: slidein 20s;
+  animation: slidein4 4s forwards;
   animation-iteration-count: 1;
 }
 
 @keyframes slidein {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+@keyframes slidein2 {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+@keyframes slidein3 {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+@keyframes slidein4 {
   0% {
     margin-left: 100%;
   }
@@ -89,7 +121,7 @@
 .layout-strona-glowna__cala-strona {
   display: grid;
   grid-template-areas: "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." ". . eee eee eee eee eee eee eee eee . ." ". . ddd ddd ddd ddd ddd ddd ddd ddd . ." "fff fff fff fff fff fff fff fff fff fff fff fff" ". . ggg ggg ggg ggg ggg ggg ggg ggg . ." ". . jjj jjj jjj jjj jjj jjj jjj jjj . ." ". . hhh hhh hhh hhh hhh hhh hhh hhh . ." "iii iii iii iii iii iii iii iii iii iii iii iii" ". foot . . . . . . . . nav .";
-  grid-template-rows: repeat(8, minmax(5rem, max-content));
+  grid-template-rows: 100vh repeat(4, minmax(5rem, max-content)) 75vh repeat(4, minmax(5rem, max-content));
   grid-template-columns: 1fr 0.5rem repeat(8, minmax(2rem, 14rem)) 0.5rem 1fr;
 }
 .layout-strona-glowna__navbar-gorny {
@@ -177,13 +209,19 @@
 .layout-strona-glowna__animowany-slide-in-fot-infiniti {
   grid-area: ccc;
   background-color: #8cffb6;
+  position: relative;
+}
+.layout-strona-glowna__animowany-slide-in-fot-infiniti--miejsce-na-foty {
+  width: 100%;
+  height: 100%;
 }
 .layout-strona-glowna__foty-marketingowe {
   grid-area: bbb;
   display: grid;
   grid-template-areas: "bb1 bb2";
-  grid-template-rows: min-content;
+  grid-template-rows: minmax(5rem, max-content);
   grid-template-columns: 1fr 1fr;
+  transform: translate(0, -11rem);
 }
 .layout-strona-glowna__foty-marketingowe--lewa-fota {
   grid-area: bb1;
@@ -193,7 +231,49 @@
 }
 .layout-strona-glowna__poziomy-infiniti-tytul-gorny {
   grid-area: eee;
-  background-color: #deb3f3;
+  display: grid;
+  grid-template-areas: "eee1 eee2 eee3";
+  grid-template-columns: 1fr max-content 1fr;
+  position: relative;
+}
+.layout-strona-glowna__poziomy-infiniti-tytul-gorny--tlo-pattern-lewo {
+  grid-area: eee1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  transform: translate(-6rem, -6rem);
+}
+.layout-strona-glowna__poziomy-infiniti-tytul-gorny--tlo-pattern-prawo {
+  grid-area: eee3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  transform: translate(6rem, -6rem);
+}
+.layout-strona-glowna__poziomy-infiniti-tytul-gorny--napis {
+  grid-area: eee2;
+  color: #4d4d4d;
+  font-weight: 400;
+  font-size: 3rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  z-index: 1;
+}
+.layout-strona-glowna__poziomy-infiniti-tytul-gorny--pattern-w-tle-lewy {
+  grid-area: eee1;
+  background-image: url("https://infiniti-fit.pl/wp-content/plugins/designthemes-core-features/shortcodes/images/title-pattern.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  z-index: 1;
+}
+.layout-strona-glowna__poziomy-infiniti-tytul-gorny--pattern-w-tle-prawy {
+  grid-area: eee3;
+  background-image: url("https://infiniti-fit.pl/wp-content/plugins/designthemes-core-features/shortcodes/images/title-pattern.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  z-index: 1;
 }
 .layout-strona-glowna__poziomy-infiniti-levle {
   grid-area: ddd;
@@ -201,38 +281,73 @@
   grid-template-areas: "ddd_1 ddd_2 ddd_3 ddd_4 ddd_5 ddd_6 ddd_7 ddd_8";
   grid-template-rows: min-content;
   grid-template-columns: max-content 1fr max-content 1fr max-content 1fr max-content 1fr;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--minus-1--fota {
   grid-area: ddd_1;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--minus-1--napis {
   grid-area: ddd_2;
-  font-size: 3rem;
+  font-size: 2rem;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-right: 70px;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #3c261b;
+  z-index: 1;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--0--fota {
   grid-area: ddd_3;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--0--napis {
   grid-area: ddd_4;
-  font-size: 3rem;
+  font-size: 2rem;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-right: 70px;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #3c261b;
+  z-index: 1;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--1--fota {
   grid-area: ddd_5;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--1--napis {
   grid-area: ddd_6;
-  font-size: 3rem;
+  font-size: 2rem;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-right: 70px;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #3c261b;
+  z-index: 1;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--2--fota {
   grid-area: ddd_7;
 }
 .layout-strona-glowna__poziomy-infiniti-levle--2--napis {
   grid-area: ddd_8;
-  font-size: 3rem;
+  font-size: 2rem;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-right: 70px;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #3c261b;
+  z-index: 1;
 }
 .layout-strona-glowna__efitness-app {
   grid-area: fff;
   position: relative;
+  background-color: #f4f4f4;
   display: grid;
   grid-template-areas: "ff1 ff2 ff2" "ff1 ff3 ff4";
   grid-template-rows: min-content min-content;
@@ -288,6 +403,42 @@
 }
 .layout-strona-glowna__godziny-otwarcia--sauna {
   grid-area: gg1;
+  display: grid;
+  grid-template-areas: "gg1_1" "gg1_2";
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+}
+.layout-strona-glowna__godziny-otwarcia--sauna--tytul-napis {
+  grid-area: gg1_1;
+}
+.layout-strona-glowna__godziny-otwarcia--sauna--lista-plci {
+  grid-area: gg1_2;
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0.25rem, min-content));
+  grid-template-columns: 1fr;
+}
+.layout-strona-glowna__godziny-otwarcia--sauna--lista-plci--accordion {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0.25rem, min-content));
+  grid-template-columns: 1fr 3fr 2fr;
+}
+.layout-strona-glowna__godziny-otwarcia--sauna--lista-plci--mezczyzni {
+  display: grid;
+  grid-template-areas: "g g";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 5fr;
+}
+.layout-strona-glowna__godziny-otwarcia--sauna--lista-plci--kobiety {
+  display: grid;
+  grid-template-areas: "g g";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 5fr;
+}
+.layout-strona-glowna__godziny-otwarcia--sauna--lista-plci--koedukacja {
+  display: grid;
+  grid-template-areas: "g g";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 5fr;
 }
 .layout-strona-glowna__godziny-otwarcia--klub {
   grid-area: gg2;

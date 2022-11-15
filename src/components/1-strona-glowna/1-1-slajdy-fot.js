@@ -9,22 +9,6 @@
 //~~ B.  Historyjka druga ...
 //
 
-//
-
-//
-
-//herehere11.11.2022 - animacje slajdów. CZAS ZACZĄĆ !!!!  \ ( > O<)/
-
-// JAK - niech skonczony animacyjnie image 2 zostanie na pozycji image 1. I niech image 3 wejdzie na image 2, nmiehc sie naimuje
-
-//
-
-//
-
-//
-
-//
-
 import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
 import StronaZAnimacjaRTG from "../../pages/C";

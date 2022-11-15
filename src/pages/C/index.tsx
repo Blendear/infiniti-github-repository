@@ -1,31 +1,19 @@
-//// TEMPLATE \/\/\/
-
-////  Problemy do rozwiązania poniższymi rozdziałami liczbowymi:
-////
-////  A.  Śledzę upływ czasu real life
-////
-////       A.a. ...
-// //
-// //           1.  Moments.js library
-// //
-// //               1.1. Zaciągnięcie czasu dla Polski
-// //
-// //               1.2. Przerobienie danych zaciągniętyhc na ładny visual timer'a
-
-//// TEMPLATE /\/\/\
+//
+//
+//~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
+//
+//       A.1. parent rozdział nr 1
+//
+//           A.1.1. child rozdział nr 1
+//
+//~~ B.  Historyjka druga ...
+//
 
 import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Transition } from "react-transition-group";
-
-// import fota1 from "public/images/strona-glowna-animowane-zdjecia/1.png";
-// import fota2 from "public/images/strona-glowna-animowane-zdjecia/2.png";
-// import fota3 from "public/images/strona-glowna-animowane-zdjecia/3.png";
-// import fota4 from "public/images/strona-glowna-animowane-zdjecia/4.png";
-
-// 1.  iteruj od 1 do 4, co sekunde
 
 const StronaZAnimacjaRTG = () => {
   let arrayOfImageSources = [];
@@ -46,7 +34,7 @@ const StronaZAnimacjaRTG = () => {
     timerNow === 4 ? "animation__slide-in4" : "",
   ].join("");
 
-  // 1.  iteruj od 1 do 4, co sekunde
+  // 1.  iteruj od 2 do 4, co sekunde (1 nie, bo 1 ma sie pojawiac tylko, gdy timerNow osiaga 2. Wtedy timerNow-1 = 1.czyli zawsze jest fota do wyświetlenia. nawet po całej pętli)
 
   useEffect(() => {
     setTimeout(() => {
