@@ -5,86 +5,75 @@ import * as RiIcons from "react-icons/ri";
 
 export const navbarData = [
   {
-    title: "Overview",
-    path: "/overview",
+    title: "Dołącz do nas",
+    path: "/dolacz-do-nas",
+    icon: <AiIcons.AiFillHome />,
+  },
+
+  {
+    title: "Medical",
+    path: "/medical",
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: "Users",
-        path: "/overview/users",
+        title: "Usługi",
+        path: "/medical/uslugi",
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Revenue",
-        path: "/overview/revenue",
+        title: "Cennik",
+        path: "/medical/cennik",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Kontakt",
+        path: "/medical/kontakt",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
   },
   {
-    title: "Reports",
-    path: "/reports",
-    icon: <IoIcons.IoIosPaper />,
+    title: "Fitness",
+    path: "/fitness",
+    icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: "Reports",
-        path: "/reports/reports1",
+        title: "Aktualności",
+        path: "/fitness/aktualnosci",
         icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
       },
       {
-        title: "Reports 2",
-        path: "/reports/reports2",
+        title: "Grafik",
+        path: "/fitness/grafik",
         icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
       },
       {
-        title: "Reports 3",
-        path: "/reports/reports3",
+        title: "Cennik",
+        path: "/fitness/cennik",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Kadra",
+        path: "/fitness/kadra",
+        icon: <IoIcons.IoIosPaper />,
+      },
+
+      {
+        title: "Do pobrania",
+        path: "/fitness/do-pobrania",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Kontakt",
+        path: "/fitness/kontakt",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
-  },
-  {
-    title: "Products",
-    path: "/products",
-    icon: <FaIcons.FaCartPlus />,
-  },
-  {
-    title: "Team",
-    path: "/team",
-    icon: <IoIcons.IoMdPeople />,
-  },
-  {
-    title: "Messages",
-    path: "/messages",
-    icon: <FaIcons.FaEnvelopeOpenText />,
-
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: "Message 1",
-        path: "/messages/message1",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Message 2",
-        path: "/messages/message2",
-        icon: <IoIcons.IoIosPaper />,
-      },
-    ],
-  },
-  {
-    title: "Support",
-    path: "/support",
-    icon: <IoIcons.IoMdHelpCircle />,
   },
 ];

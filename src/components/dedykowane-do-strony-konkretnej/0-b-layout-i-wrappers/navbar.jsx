@@ -14,27 +14,18 @@
 //
 //       A.0. | | | - ikonka do rozwinięcia menu
 //
-//       A.1. Menu główne - ikony i nazwy
+//       A.1. Menu główne & (Opconalne) Poszczególne rozwijane menu'sy - ikona i nazwa > podikony i podnazwy
 //
 //            A.1.1. Import
 //
 //            A.1.2. Użycie
-//
-//       A.2. Rozwijane Menu - ikony i nazwy
-//
-//            A.2.1. Import
-//
-//            A.2.2. Użycie
 //
 //~~ B.  Data - jakie ikony, nazwy, do jakiej pozycji w menu
 //
 //       B.1. Import
 
 import styles from "src/styles/sass/styles-all.module.scss";
-
 import { useState } from "react";
-
-import Link from "next/link";
 
 //            A.1.1. Import
 import * as FaIcons from "react-icons/fa";
@@ -43,7 +34,10 @@ import { IconContext } from "react-icons/lib";
 
 //       B.1. Import
 import { navbarData } from "./navbarData";
+
+//            A.1.1. Import
 import RozwijaneMenu from "./RozwijaneMenu";
+
 const Navbar = () => {
   const [navbarWidoczny, setnavbarWidoczny] = useState(false);
 
@@ -84,7 +78,19 @@ const Navbar = () => {
         <AiIcons.AiOutlineClose />
       </button>
 
-      <Link href="/strona-glowna-infiniti">
+      {/* 
+      //       A.1. Menu główne & (Opconalne) Poszczególne rozwijane menu'sy - ikona i nazwa > podikony i podnazwy
+      */}
+      {navbarData.map((pozycjaMenu, indexPozycjiMenu) => {
+        return (
+          <RozwijaneMenu
+            pozycjaMenuProperty={pozycjaMenu}
+            key={indexPozycjiMenu}
+          />
+        );
+      })}
+
+      {/* <Link href="/strona-glowna-infiniti">
         <a
           className={
             styles["layout-strona-glowna__navbar-gorny--logo-infiniti"]
@@ -111,7 +117,7 @@ const Navbar = () => {
         <a className={styles["layout-strona-glowna__navbar-gorny--galeria"]}>
           Fitness
         </a>
-      </Link>
+      </Link> */}
     </nav>
   );
 };
