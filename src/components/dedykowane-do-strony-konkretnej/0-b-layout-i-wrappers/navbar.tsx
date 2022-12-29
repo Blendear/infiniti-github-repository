@@ -24,65 +24,34 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className={styles["layout-strona-glowna__navbar-gorny"]}>
-      <Link href="/">
+      <Link href="/strona-glowna-infiniti">
         <a
           className={
             styles["layout-strona-glowna__navbar-gorny--logo-infiniti"]
           }
         >
-          {"LOGO / STR.G."}
+          {"Domeczek  "}
         </a>
       </Link>
-      <Link href="/o-nas">
+      <Link href="/dolacz-do-nas">
         <a className={styles["layout-strona-glowna__navbar-gorny--o-nas"]}>
-          O NAS
+          Dołącz do nas
         </a>
       </Link>
-      <Link href="/infiniti-medical">
+      <Link href="/medical">
         <a
           className={
             styles["layout-strona-glowna__navbar-gorny--infiniti-medical"]
           }
         >
-          INFINITI MEDICAL
+          Medical
         </a>
       </Link>
-      <Link href="/galeria">
+      <Link href="/fitness">
         <a className={styles["layout-strona-glowna__navbar-gorny--galeria"]}>
-          GALERIA
+          Fitness
         </a>
       </Link>
-      <Link href="/kadra">
-        <a className={styles["layout-strona-glowna__navbar-gorny--kadra"]}>
-          KADRA
-        </a>
-      </Link>
-      <Link href="/cennik">
-        <a className={styles["layout-strona-glowna__navbar-gorny--cennik"]}>
-          CENNIK
-        </a>
-      </Link>
-      <Link href="/grafik">
-        <a className={styles["layout-strona-glowna__navbar-gorny--grafik"]}>
-          GRAFIK
-        </a>
-      </Link>
-      <Link href="/do-pobrania">
-        <a
-          className={styles["layout-strona-glowna__navbar-gorny--do-pobrania"]}
-        >
-          DO POBRANIA
-        </a>
-      </Link>
-      <Link href="/kontakt">
-        <a className={styles["layout-strona-glowna__navbar-gorny--kontakt"]}>
-          KONTAKT
-        </a>
-      </Link>
-
-      {/* <Link href="/A"> Strona A</Link>
-      <Link href="/B"> Strona B</Link>
-      <Link href="/C"> Strona C</Link> */}
     </nav>
   );
 };
