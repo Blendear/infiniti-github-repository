@@ -1,1 +1,20 @@
+//trap1 - MUSISZ TU IMPORTOWAĆ file, żeby był w ogóle skompilowany. inaczej masz miliard fileów, któe nic nie robią.
+
+@use "./1-base/base";
+@use "./1-base/helpers";
+
+@use "./2-components/accordiony";
+@use "./2-components/animation-slidein";
+@use "./2-components/image";
 @use "./2-components/test-scss";
+
+@use "./3-layout/a-header-footer";
+@use "./3-layout/cennik";
+@use "./3-layout/do-pobrania";
+@use "./3-layout/galeria";
+@use "./3-layout/grafik";
+@use "./3-layout/infiniti-medical";
+@use "./3-layout/kadra";
+@use "./3-layout/kontakt";
+@use "./3-layout/o-nas";
+@use "./3-layout/strona-glowna";

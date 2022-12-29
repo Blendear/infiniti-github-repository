@@ -1,6 +1,11 @@
 //trap1 - MUSISZ TU IMPORTOWAĆ file, żeby był w ogóle skompilowany. inaczej masz miliard fileów, któe nic nie robią.
 
 @use "./1-base/base";
+@use "./1-base/helpers";
+
+@use "./2-components/design-patterns/gallery-carousel/dp-carousel";
+@use "./2-components/dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/carousel-foty-infiniti/CarouselFotyINFINITI";
+@use "./2-components/dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/carousel-poziomy/CarouselPoziomy";
 
 @use "./2-components/accordiony";
 @use "./2-components/animation-slidein";

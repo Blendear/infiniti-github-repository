@@ -1,36 +1,38 @@
-// .eksperymentalny {
-//     background-color: rgb(224, 123, 60);
-//   }
+.eksperymentalny {
+  background-color: rgb(224, 123, 60);
+}
 
-//   .box {
-//     height: 100px;
-//     width: 100px;
-//     transition: all 2s;
-//     background-color: rgb(115, 219, 157);
-//   }
-//   .box--animated {
-//     animation: mymove 2s;
-//   }
+.box {
+  height: 100px;
+  width: 100px;
+  transition: all 2s;
+  background-color: rgb(115, 219, 157);
 
-//   @keyframes mymove {
-//     0% {
-//       height: 100px;
-//     }
-//     50% {
-//       height: 200px;
-//     }
-//     100% {
-//       height: 100px;
-//     }
-//   }
+  &--violet {
+    transition: all 2s;
+    background-color: rgb(125, 14, 97);
+  }
+  &--animated {
+    animation: mymove 2s;
+  }
+}
 
-//   .box--violet {
-//     background-color: rgb(125, 14, 97);
-//   }
-//   .navbar {
-//     background-color: rgb(159, 37, 159);
-//   }
+@keyframes mymove {
+  0% {
+    height: 100px;
+  }
+  50% {
+    height: 200px;
+  }
+  100% {
+    height: 100px;
+  }
+}
 
-//   .footer {
-//     background-color: rgb(14, 163, 126);
-//   }
+.navbar {
+  background-color: rgb(159, 37, 159);
+}
+
+.footer {
+  background-color: rgb(14, 163, 126);
+}

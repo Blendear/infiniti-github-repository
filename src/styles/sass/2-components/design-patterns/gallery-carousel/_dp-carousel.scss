@@ -1,0 +1,58 @@
+//
+//
+//~~ A.  Widok = 1 wybrnaa fota i 2+ poboczne, poziomo (?)
+//
+//       A.1. ..
+//
+//           A.1.1. ..
+//
+//~~ B.  Strzałki
+//
+//           B.4.2. Wygląd
+//
+//~~ D.  Animacja = Snap scroll po strzałk'nięciu
+//
+
+.carousel {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//
+//           B.4.2. Wygląd
+//
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide-active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}

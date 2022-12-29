@@ -1,3 +1,120 @@
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.carousel {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide-active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.carousel-foty-infiniti {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-foty-infiniti__arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.carousel-foty-infiniti__arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.carousel-foty-infiniti__slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.carousel-foty-infiniti__slide-active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.carousel-poziomy {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-poziomy__poziom--2 {
+  background-color: rgb(246, 254, 8);
+}
+.carousel-poziomy__poziom--1 {
+  background-color: rgb(184, 35, 35);
+}
+.carousel-poziomy__poziom--0 {
+  background-color: rgb(122, 43, 12);
+}
+.carousel-poziomy__poziom--minus1 {
+  background-color: rgb(43, 23, 23);
+  color: white;
+}
+.carousel-poziomy__slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.carousel-poziomy__slide-active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
 .accordion__trigger-od-niego {
   width: 5rem;
   height: 5rem;

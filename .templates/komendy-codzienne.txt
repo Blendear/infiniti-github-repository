@@ -9,6 +9,15 @@ npm run build   &   npm run start
 
 npm run dev
 
+
+~~~ ! TYLKO PIERWSZY RAZ, tworząc rpeository \/ ~~~
+
+git remote add origin https://github.com/Blendear/world-wild-wlrd.git
+git branch -M main
+git push -u origin main
+
+~~~ REGULARNIE = to commit changes \/ ~~~
+
 git add .
 git commit -m „moja wiadomość do commita”
 git push origin main
