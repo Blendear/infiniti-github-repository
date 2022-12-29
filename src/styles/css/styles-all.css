@@ -246,6 +246,18 @@
   grid-template-rows: 5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+.layout-strona-glowna__navbar-gorny__III--open {
+  background-color: greenyellow;
+}
+.layout-strona-glowna__navbar-gorny__III--closed {
+  display: none;
+}
+.layout-strona-glowna__navbar-gorny__X--open {
+  background-color: greenyellow;
+}
+.layout-strona-glowna__navbar-gorny__X--closed {
+  display: none;
+}
 .layout-strona-glowna__navbar-gorny--logo-infiniti {
   grid-area: aa1;
   background-color: #cfc7a7;

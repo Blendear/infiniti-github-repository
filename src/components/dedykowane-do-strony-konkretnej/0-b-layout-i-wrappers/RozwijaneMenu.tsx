@@ -9,8 +9,8 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const Footer = () => {
-  return <h1 className={styles.footer}> Footer moj</h1>;
+const RozwijaneMenu = () => {
+  return <h1 className={styles.footer}> rozwijane menu</h1>;
 };
 
-export default Footer;
+export default RozwijaneMenu;

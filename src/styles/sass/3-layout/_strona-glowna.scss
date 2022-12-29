@@ -46,6 +46,22 @@
         color: #685e58;
         font-weight: bold;
       }
+      &__III {
+        &--open {
+          background-color: greenyellow;
+        }
+        &--closed {
+          display: none;
+        }
+      }
+      &__X {
+        &--open {
+          background-color: greenyellow;
+        }
+        &--closed {
+          display: none;
+        }
+      }
 
       &--logo-infiniti {
         grid-area: aa1;
