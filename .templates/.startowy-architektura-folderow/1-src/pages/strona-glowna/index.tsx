@@ -29,14 +29,14 @@
 //
 //                          <aComponent/>
 //
-//                  </div>;
+//                  </div>
 //
 //                  <div className={styles["layout__strona-glowna__fragment-2-galeria-carousel"]}>
 //
 //                          <bComponent/>
 //
-//                  </div>;
-//          </div>;
+//                  </div>
+//          </div>
 //
 //          )
 // };
