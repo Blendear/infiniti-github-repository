@@ -322,7 +322,7 @@
 .layout__strona-glowna__poziomy {
   grid-area: eee;
   display: grid;
-  grid-template-areas: "ee1 ee1 ee1 ee1" "ee2 ee2 ee2 ee2" "ee3 ee4 ee5 ee6";
+  grid-template-areas: "ee1 ee1 ee1 ee1" "ee2 ee2 ee2 ee2" "ee3 ee4 ee5 ee6" "ee7 ee7 ee7 ee7";
   grid-template-rows: repeat(3, minmax(0rem, max-content));
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -395,7 +395,7 @@
   padding-top: 30%;
   font-size: 3rem;
   font-weight: bold;
-  color: #ebb4e7;
+  color: #ffffff;
 }
 .layout__strona-glowna__poziomy__napis-poziomu--0 {
   height: 100%;
@@ -403,7 +403,7 @@
   padding-top: 30%;
   font-size: 3rem;
   font-weight: bold;
-  color: #ebb4e7;
+  color: #ffffff;
 }
 .layout__strona-glowna__poziomy__napis-poziomu--1 {
   height: 100%;
@@ -411,7 +411,7 @@
   padding-top: 30%;
   font-size: 3rem;
   font-weight: bold;
-  color: #ebb4e7;
+  color: #ffffff;
 }
 .layout__strona-glowna__poziomy__napis-poziomu--2 {
   height: 100%;
@@ -419,7 +419,11 @@
   padding-top: 30%;
   font-size: 3rem;
   font-weight: bold;
-  color: #ebb4e7;
+  color: #ffffff;
+}
+.layout__strona-glowna__poziomy__shape-nad-godzinami {
+  grid-area: ee7;
+  transform: translateY(-7.5rem);
 }
 .layout__strona-glowna__godziny-otwarcia {
   grid-area: fff;
@@ -432,10 +436,22 @@
 .layout__strona-glowna__walczmy-razem {
   grid-area: ggg;
   display: grid;
-  grid-template-areas: "gg1" "gg2";
-  grid-template-rows: repeat(2, minmax(5rem, max-content));
-  grid-template-columns: 1fr;
-  background-color: #abe31e;
+  grid-template-rows: [r-start] 1fr [r-end];
+  grid-template-columns: [c-1] 1fr [c-2];
+  position: relative;
+}
+.layout__strona-glowna__walczmy-razem__shape {
+  grid-row: r-start/r-end;
+  grid-column: c-1/c-2;
+  z-index: -5;
+}
+.layout__strona-glowna__walczmy-razem__rysunek-z-napisem {
+  grid-row: r-start/r-end;
+  grid-column: c-1/c-2;
+  align-self: end;
+  margin-bottom: 5rem;
+  z-index: 15;
+  opacity: 0.5;
 }
 
 .parent-Y {

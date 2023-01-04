@@ -171,7 +171,9 @@
       grid-template-areas: //
         "ee1 ee1 ee1 ee1" // instrukcja
         "ee2 ee2 ee2 ee2" // mapa
-        "ee3 ee4 ee5 ee6"; // prostokaty poziomów
+        "ee3 ee4 ee5 ee6" // prostokaty poziomów
+        "ee7 ee7 ee7 ee7" // shape nad godzinami
+;
       grid-template-rows: repeat(3, minmax(0rem, max-content));
       grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -245,7 +247,7 @@
           font-size: 3rem;
           font-weight: bold;
 
-          color: #ebb4e7;
+          color: #ffffff;
         }
         &--minus-1 {
           @include napis-poziomu-all;
@@ -259,6 +261,10 @@
         &--2 {
           @include napis-poziomu-all;
         }
+      }
+      &__shape-nad-godzinami {
+        grid-area: ee7;
+        transform: translateY(-7.5rem);
       }
     }
     &__godziny-otwarcia {
@@ -278,13 +284,27 @@
       grid-area: ggg;
 
       display: grid;
-      grid-template-areas: //
-        "gg1" // napis
-        "gg2"; // rysunek
-      grid-template-rows: repeat(2, minmax(5rem, max-content));
-      grid-template-columns: 1fr;
+      grid-template-rows: [r-start] 1fr [r-end];
+      grid-template-columns: [c-1] 1fr [c-2];
 
-      background-color: #abe31e;
+      // background-color: #abe31e;
+      position: relative;
+
+      &__shape {
+        grid-row: r-start / r-end;
+        grid-column: c-1 / c-2;
+        z-index: -5;
+      }
+
+      &__rysunek-z-napisem {
+        grid-row: r-start / r-end;
+        grid-column: c-1 / c-2;
+        align-self: end;
+        margin-bottom: 5rem;
+        z-index: 15;
+
+        opacity: 0.5;
+      }
     }
   }
 }

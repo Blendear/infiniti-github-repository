@@ -25,7 +25,7 @@ import CarouselPoziomy from "../../components/dedykowane-do-strony-konkretnej/.s
 
 import SVGShapeBaner from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/1-baner-startowy/banerowe";
 import SVGShapeOpisu from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/3-opis-i-rysunek/nad-poziomy";
-import SVGShapeNadGodzinami from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/5-godziny-otwarcia/nad-godziny-otwarcia";
+import SVGShapeNadGodzinami from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/4-carpusel-poziomy/nad-godziny-otwarcia";
 import SVGShapeWalczmy from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/6-walczmy-razem/walczmy-razem";
 
 import Image from "next/image";
@@ -102,12 +102,34 @@ const a = () => {
         <div className={styles["layout__strona-glowna__poziomy__mapa"]}>
           <CarouselPoziomy />
         </div>
+        <div
+          className={
+            styles["layout__strona-glowna__poziomy__shape-nad-godzinami"]
+          }
+        >
+          <SVGShapeNadGodzinami />
+        </div>
       </div>
       <div className={styles["layout__strona-glowna__godziny-otwarcia"]}></div>
-      <div className={styles["layout__strona-glowna__walczmy-razem"]}></div>
-
-      <SVGShapeNadGodzinami className={styles["layout__strona-glowna__"]} />
-      <SVGShapeWalczmy className={styles["layout__strona-glowna__"]} />
+      <div className={styles["layout__strona-glowna__walczmy-razem"]}>
+        <div className={styles["layout__strona-glowna__walczmy-razem__shape"]}>
+          <SVGShapeWalczmy />
+        </div>
+        <div
+          className={
+            styles["layout__strona-glowna__walczmy-razem__rysunek-z-napisem"]
+          }
+        >
+          <Image
+            src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+            alt={`nie pyklo zdjecie`}
+            height={50}
+            width={120}
+            layout="responsive"
+            objectFit="contain"
+          />
+        </div>
+      </div>
     </div>
   );
 };
