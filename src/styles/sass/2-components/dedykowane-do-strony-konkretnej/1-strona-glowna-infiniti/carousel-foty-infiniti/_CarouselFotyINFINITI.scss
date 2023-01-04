@@ -14,9 +14,20 @@
 //
 
 .carousel-foty-infiniti {
-  position: relative;
-  height: 100vh;
-  display: flex;
+  // position: relative;
+
+  display: grid;
+  grid-template-areas: "aaa bbb ccc"; // kształy nachodzące & ikonka menu
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(5rem, 10rem) minmax(5rem, max-content) minmax(
+      5rem,
+      10rem
+    );
+
+  // height: 100vh;
+  // height: 50%;
+  // width: 50%;
+  // display: flex;
   justify-content: center;
   align-items: center;
 
@@ -24,33 +35,43 @@
   //           B.4.2. Wygląd
   //
   &__arrow-right {
-    position: absolute;
-    top: 50%;
-    right: 32px;
+    // position: absolute;
+    grid-area: ccc;
+
+    align-self: center;
+    justify-self: center;
+
     font-size: 3rem;
     color: #000;
-    z-index: 10;
+
     cursor: pointer;
     user-select: none;
   }
   &__arrow-left {
-    position: absolute;
-    top: 50%;
-    left: 32px;
+    grid-area: aaa;
+
     font-size: 3rem;
     color: #000;
-    z-index: 10;
+
+    align-self: center;
+    justify-self: center;
+
     cursor: pointer;
     user-select: none;
   }
   &__slide {
+    grid-area: bbb;
+
     opacity: 0;
     transition-duration: 1s ease;
   }
 
   &__slide-active {
+    grid-area: bbb;
+    // background-color: azure;
+
     opacity: 1;
     transition-duration: 1s;
-    transform: scale(1.08);
+    // transform: scale(1.08);
   }
 }

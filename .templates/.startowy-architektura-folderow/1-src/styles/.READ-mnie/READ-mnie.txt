@@ -1,0 +1,6 @@
+
+"CSS"       = NIE TYKAM. To miejsce auto-zapisywnaia przeconvertowanego kodu z "sass"
+
+
+
+"SASS"      = TUTAJ koduję vizuale

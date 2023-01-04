@@ -1,0 +1,17 @@
+
+
+"API"       = folder niezbedny, koniecznie tak nazwany, pod api routes
+
+
+"AUTH-..."  = folder w każdej apce odpowiadajacy z aauthentication. nazwa jest moja własna
+
+
+"_app"      = główny plik budujący web appkę. W niego wrzucamy rzadko tykany, "główny" kod i wrappery.
+
+
+"index"     = strona w przypadku URL równym " / ". Imo lepiej nie używac. Ewentulanie  "page not found" tam wpisać
+
+
+"..."       = KAŻDY INNY folder to strona web appki. JEDNĄ / JEDEN FOLDER główną lepiej mieć, a podstorny jako podfoldery zrobić. Cleaner architecture
+
+

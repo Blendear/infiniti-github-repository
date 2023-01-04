@@ -1,0 +1,147 @@
+.layout {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &__strona-glowna {
+    // \/ layout, w który zostana włożone "foty marketingowe i reszta podfragmnetó storny głównej
+    &__cala-strona {
+      display: grid;
+
+      grid-template-areas: //
+        // "aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa" // Navbar
+        "bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb" // INFINITIT baner & ikonki
+        "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" // Galeria
+        "ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd" // Opis i rysunek
+        "eee eee eee eee eee eee eee eee eee eee eee eee" // Poziomy & Oddzielnik
+        "fff fff fff fff fff fff fff fff fff fff fff fff " // Godziny Otwarcia
+        "ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg " // Rysunek osób
+        // "hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh " //
+        // "iii iii iii iii iii iii iii iii iii iii iii iii " //
+;
+      grid-template-rows:
+        minmax(5rem, max-content) minmax(5rem, max-content) minmax(
+          5rem,
+          max-content
+        )
+        repeat(3, minmax(5rem, max-content));
+      grid-template-columns: 1rem 1rem repeat(8, minmax(2rem, 14rem)) 1rem 1rem;
+    }
+
+    &__navbar {
+      //trap1 - NIE grid area.
+      // grid-area: aaa;
+
+      // display: grid;
+      // grid-template-areas: "aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa"; // kształy nachodzące & ikonka menu
+      // grid-template-rows: 1fr;
+      // grid-template-columns: repeat(11, minmax(5rem, 1fr)) minmax(5rem, 1fr);
+
+      background-color: #e5dd99;
+
+      z-index: 100;
+    }
+    &__baner-startowy {
+      grid-area: bbb;
+
+      display: grid;
+      grid-template-areas: 
+      //
+        "bb1";
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+
+      background-color: #40afff7a;
+
+      position: relative;
+      &--fota-w-tle {
+        grid-area: bb1;
+        // align-self: start;
+
+        opacity: 1;
+        z-index: -1;
+      }
+      &--paski-i-ikonki {
+        grid-area: bb1;
+
+        z-index: 0;
+      }
+      &--napis-glowny {
+      }
+      &--napis-maly {
+      }
+    }
+
+    &__galeria {
+      grid-area: ccc;
+
+      display: grid;
+      grid-template-areas: "cc1"; // nakładane, z-index'owo inne foty/shapey
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+
+      background-color: #219f97;
+      // align-self: start;
+
+      // transform: scale(0.5);
+    }
+
+    &__opis-i-rysunek {
+      grid-area: ddd;
+
+      display: grid;
+      grid-template-areas: "dd1"; // opis   &   rysunek
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+
+      background-color: #259f21;
+    }
+
+    &__poziomy-i-oddzielnik {
+      grid-area: eee;
+
+      display: grid;
+      grid-template-areas: //
+        "ee1" // instrukcja
+        "ee2" // mapa
+        "ee3"; // prostokaty poziomów
+      grid-template-rows: repeat (3, minmax(5rem, max-content));
+      grid-template-columns: 1fr;
+
+      background-color: #cf95e7;
+
+      &__prostokat {
+        grid-area: ee3;
+        background-color: #685e58;
+
+        &---aktywny {
+          background-color: #7b219f;
+        }
+      }
+    }
+    &__godziny-otwarcia {
+      grid-area: fff;
+
+      display: grid;
+      grid-template-areas: //
+        "ff1 ff1 ff1" // tytul
+        "ff2 ff2 ff2" // klub
+        "ff3 ff3 ff3"; // sauna
+      grid-template-rows: repeat (3, minmax(5rem, max-content));
+      grid-template-columns: 1fr 1fr 1fr;
+
+      background-color: #e39c40;
+    }
+    &__rysunek-ekipa {
+      grid-area: ggg;
+
+      display: grid;
+      grid-template-areas: //
+        "gg1" // napis
+        "gg2"; // rysunek
+      grid-template-rows: repeat(2, minmax(5rem, max-content));
+      grid-template-columns: 1fr;
+
+      background-color: #abe31e;
+    }
+  }
+}
+
+//

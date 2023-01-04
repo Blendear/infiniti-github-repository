@@ -23,7 +23,8 @@
   "include": [
     "src",
     "next-env.d.ts",
-    "src/components/dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/.-carousel/Carousel.tsx"
+    "src/components/dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/.-carousel/Carousel.tsx",
+    "src/components/dedykowane-do-strony-konkretnej/.0-layout-i-wrappers"
   ],
   "exclude": ["node_modules"]
 }

@@ -49,40 +49,40 @@
 }
 
 .carousel-foty-infiniti {
-  position: relative;
-  height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-areas: "aaa bbb ccc";
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(5rem, 10rem) minmax(5rem, max-content) minmax(5rem, 10rem);
   justify-content: center;
   align-items: center;
 }
 .carousel-foty-infiniti__arrow-right {
-  position: absolute;
-  top: 50%;
-  right: 32px;
+  grid-area: ccc;
+  align-self: center;
+  justify-self: center;
   font-size: 3rem;
   color: #000;
-  z-index: 10;
   cursor: pointer;
   user-select: none;
 }
 .carousel-foty-infiniti__arrow-left {
-  position: absolute;
-  top: 50%;
-  left: 32px;
+  grid-area: aaa;
   font-size: 3rem;
   color: #000;
-  z-index: 10;
+  align-self: center;
+  justify-self: center;
   cursor: pointer;
   user-select: none;
 }
 .carousel-foty-infiniti__slide {
+  grid-area: bbb;
   opacity: 0;
   transition-duration: 1s ease;
 }
 .carousel-foty-infiniti__slide-active {
+  grid-area: bbb;
   opacity: 1;
   transition-duration: 1s;
-  transform: scale(1.08);
 }
 
 .carousel-poziomy {
@@ -216,6 +216,82 @@
 
 .footer {
   background-color: rgb(14, 163, 126);
+}
+
+.layout__strona-glowna__cala-strona {
+  display: grid;
+  grid-template-areas: "bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb" "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" "ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd" "eee eee eee eee eee eee eee eee eee eee eee eee" "fff fff fff fff fff fff fff fff fff fff fff fff " "ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ";
+  grid-template-rows: minmax(5rem, max-content) minmax(5rem, max-content) minmax(5rem, max-content) repeat(3, minmax(5rem, max-content));
+  grid-template-columns: 1rem 1rem repeat(8, minmax(2rem, 14rem)) 1rem 1rem;
+}
+.layout__strona-glowna__navbar {
+  background-color: #e5dd99;
+  z-index: 100;
+}
+.layout__strona-glowna__baner-startowy {
+  grid-area: bbb;
+  display: grid;
+  grid-template-areas: "bb1";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  background-color: rgba(64, 175, 255, 0.4784313725);
+  position: relative;
+}
+.layout__strona-glowna__baner-startowy--fota-w-tle {
+  grid-area: bb1;
+  opacity: 1;
+  z-index: -1;
+}
+.layout__strona-glowna__baner-startowy--paski-i-ikonki {
+  grid-area: bb1;
+  z-index: 0;
+}
+.layout__strona-glowna__galeria {
+  grid-area: ccc;
+  display: grid;
+  grid-template-areas: "cc1";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  background-color: #219f97;
+}
+.layout__strona-glowna__opis-i-rysunek {
+  grid-area: ddd;
+  display: grid;
+  grid-template-areas: "dd1";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  background-color: #259f21;
+}
+.layout__strona-glowna__poziomy-i-oddzielnik {
+  grid-area: eee;
+  display: grid;
+  grid-template-areas: "ee1" "ee2" "ee3";
+  grid-template-rows: repeat 3, minmax(5rem, max-content);
+  grid-template-columns: 1fr;
+  background-color: #cf95e7;
+}
+.layout__strona-glowna__poziomy-i-oddzielnik__prostokat {
+  grid-area: ee3;
+  background-color: #685e58;
+}
+.layout__strona-glowna__poziomy-i-oddzielnik__prostokat---aktywny {
+  background-color: #7b219f;
+}
+.layout__strona-glowna__godziny-otwarcia {
+  grid-area: fff;
+  display: grid;
+  grid-template-areas: "ff1 ff1 ff1" "ff2 ff2 ff2" "ff3 ff3 ff3";
+  grid-template-rows: repeat 3, minmax(5rem, max-content);
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #e39c40;
+}
+.layout__strona-glowna__rysunek-ekipa {
+  grid-area: ggg;
+  display: grid;
+  grid-template-areas: "gg1" "gg2";
+  grid-template-rows: repeat(2, minmax(5rem, max-content));
+  grid-template-columns: 1fr;
+  background-color: #abe31e;
 }
 
 .parent-Y {

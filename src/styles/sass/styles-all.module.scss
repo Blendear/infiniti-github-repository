@@ -12,13 +12,6 @@
 @use "./2-components/image";
 @use "./2-components/test-scss";
 
-@use "./3-layout/a-header-footer";
-@use "./3-layout/cennik";
-@use "./3-layout/do-pobrania";
-@use "./3-layout/galeria";
-@use "./3-layout/grafik";
-@use "./3-layout/infiniti-medical";
-@use "./3-layout/kadra";
-@use "./3-layout/kontakt";
-@use "./3-layout/o-nas";
-@use "./3-layout/strona-glowna";
+@use "./3-layout/dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/strona-glowna-infiniti";
+@use "./3-layout/x-stare/a-header-footer";
+@use "./3-layout/x-stare/strona-glowna";

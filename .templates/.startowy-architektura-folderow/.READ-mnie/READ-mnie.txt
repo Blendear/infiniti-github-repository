@@ -1,0 +1,6 @@
+
+
+0.  Nazwy folderów BEZ liczb skopiuj of cors. one są dla mentalnego posegregowania w templates'ach
+
+
+1.  Skopiuj cały "src"   &   adekwatne "READ-mnie" każdego folderu oprowadzi cię po szczegółach

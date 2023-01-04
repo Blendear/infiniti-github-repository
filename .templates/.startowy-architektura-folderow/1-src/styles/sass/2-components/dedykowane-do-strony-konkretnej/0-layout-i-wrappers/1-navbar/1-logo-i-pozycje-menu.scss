@@ -1,0 +1,29 @@
+.fragment1 {
+  // np. .baner-startowy
+
+  &__element-1-od-fragmentu-1 {
+    // np. __dwa-svg-shapes-zwienczajace-baner
+    &__element-A-od-elementu-1 {
+      // np. __pierwszy-svg
+      &--dopisek-a-do-elementu-A {
+        // np. --wariant-z-gradientem
+        opacity: 1;
+      }
+      &--dopisek-b-do-elementu-A {
+        // np. --wariant-z-patternem
+      }
+    }
+    &__element-B-od-elementu-1 {
+      // np. __drugi-svg
+      &--dopisek-a-do-elementu-B {
+        // np. --wariant-z-gradientem
+      }
+      &--dopisek-b-do-elementu-B {
+        // np. --wariant-z-patternem
+      }
+    }
+  }
+  &__element-2-od-fragmentu-1 {
+    // np. __animowane-foty-autozmieniajace-sie
+  }
+}

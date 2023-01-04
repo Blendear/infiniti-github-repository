@@ -19,7 +19,7 @@ import { SessionProvider } from "next-auth/react";
 import store from "../store/redux/store-redux";
 import { Provider } from "react-redux";
 
-import Layout from "../components/dedykowane-do-strony-konkretnej/0-b-layout-i-wrappers/layout";
+import Layout from "../components/dedykowane-do-strony-konkretnej/.0-layout-i-wrappers/layout";
 
 function MyApp({
   Component,

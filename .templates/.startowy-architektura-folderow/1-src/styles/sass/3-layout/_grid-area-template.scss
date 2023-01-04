@@ -1,0 +1,58 @@
+//
+//
+// OSOBNY layout dla KAŻDEJ strony of cors
+//
+.layout {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &-strona-glowna {
+    // \/ layout, w który zostana włożone "foty marketingowe i reszta podfragmnetó storny głównej
+    &__cala-strona {
+      display: grid;
+
+      grid-template-areas: //
+        "aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa" // framgnet 1, np. baner startowy, zajmujący szerokością all 12 z 12 kolumn gridu
+        ". . bbb bbb bbb bbb bbb bbb bbb bbb . ." // fragment 2, np. dwie foty marketingowe, zajmujący 8 z 12 kolumn gridu
+        ". . ccc ccc ccc ccc ccc ccc ccc ccc . ." // fragment 3, zajmujący 8 z 12 kolumn gridu
+        "ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd" // etc.
+        "eee eee eee eee eee eee eee eee eee eee eee eee" //
+        "fff fff fff fff fff fff fff fff fff fff fff fff " //
+        "ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg " //
+        "hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh " //
+        "iii iii iii iii iii iii iii iii iii iii iii iii " //
+;
+      grid-template-rows: 100vh repeat(4, minmax(5rem, max-content)) 75vh repeat(
+          4,
+          minmax(5rem, max-content)
+        );
+      grid-template-columns: 1fr 0.5rem repeat(8, minmax(2rem, 14rem)) 0.5rem 1fr;
+    }
+
+    &__foty-marketingowe {
+      grid-area: bbb; // zajmij grid area "bbb" swojego bezpośredniego parenta.
+
+      display: grid;
+      grid-template-areas: "bb1 bb2"; // lewa fota & prawa fota
+      grid-template-rows: minmax(5rem, max-content);
+      grid-template-columns: 1fr 1fr;
+
+      background-color: #7b219f;
+
+      //kod, który jest taki sam dla obydwóch elementów - np. 2 foty
+      @mixin styl-fot {
+        background-color: #685e58;
+      }
+
+      &--lewa-fota {
+        grid-area: bb1;
+
+        @include styl-fot;
+      }
+      &--prawa-fota {
+        grid-area: bb2;
+
+        @include styl-fot;
+      }
+    }
+  }
+}
+//
