@@ -79,30 +79,32 @@ const CarouselPoziomy = () => {
   }
 
   return (
-    <section className={styles["carousel-foty-infiniti"]}>
+    <section
+      className={`${styles["layout__strona-glowna__galeria__carousel-fot"]} ${styles["carousel-foty-infiniti"]}`}
+    >
       {/* 
       //       B.2. Using ikonek i ich onClick'i
       */}
 
       <FaArrowAltCircleLeft
-        className={styles["carousel-foty-infiniti__arrow-left"]}
+        className={`${styles["layout__strona-glowna__galeria__carousel-fot--strzalka-lewa"]} ${styles["carousel-foty-infiniti__arrow-left"]}`}
         onClick={handlerPrevFoto}
       />
       <FaArrowAltCircleRight
-        className={styles["carousel-foty-infiniti__arrow-right"]}
+        className={`${styles["carousel-foty-infiniti__arrow-right"]} ${styles["layout__strona-glowna__galeria__carousel-fot--strzalka-prawa"]}`}
         onClick={handlerNextFoto}
       />
       {/*
       //       C.1. Map - Dla każdego object w liście/object'cie danych, return Image (next.jsowy)
       
       */}
-      <div className={styles["..."]}>
+      <div>
         {carouselData.map((aktualnaFota, indexAktualny) => (
           <div
             className={
               indexAktualny === aktualnyFoto
-                ? styles["carousel-foty-infiniti__slide-active"]
-                : styles["carousel-foty-infiniti__slide"]
+                ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
+                : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
             }
             key={indexAktualny}
           >

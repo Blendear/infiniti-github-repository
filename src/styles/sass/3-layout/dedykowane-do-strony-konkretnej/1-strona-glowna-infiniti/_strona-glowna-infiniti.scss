@@ -6,15 +6,12 @@
       display: grid;
 
       grid-template-areas: //
-        // "aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa" // Navbar
-        "bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb" // INFINITIT baner & ikonki
+        "bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb" // baner startowy, shapey & ikonki
         "ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc ccc" // Galeria
-        "ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd" // Opis i rysunek
-        "eee eee eee eee eee eee eee eee eee eee eee eee" // Poziomy & Oddzielnik
-        "fff fff fff fff fff fff fff fff fff fff fff fff " // Godziny Otwarcia
-        "ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg " // Rysunek osób
-        // "hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh hhh " //
-        // "iii iii iii iii iii iii iii iii iii iii iii iii " //
+        "ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd ddd" // Opis, shape i rysunek
+        "eee eee eee eee eee eee eee eee eee eee eee eee" // Poziomy
+        "fff fff fff fff fff fff fff fff fff fff fff fff " // Godziny Otwarcia, shape
+        "ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg " // Rysunek osób i shape
 ;
       grid-template-rows:
         minmax(5rem, max-content) minmax(5rem, max-content) minmax(
@@ -25,19 +22,6 @@
       grid-template-columns: 1rem 1rem repeat(8, minmax(2rem, 14rem)) 1rem 1rem;
     }
 
-    &__navbar {
-      //trap1 - NIE grid area.
-      // grid-area: aaa;
-
-      // display: grid;
-      // grid-template-areas: "aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa"; // kształy nachodzące & ikonka menu
-      // grid-template-rows: 1fr;
-      // grid-template-columns: repeat(11, minmax(5rem, 1fr)) minmax(5rem, 1fr);
-
-      background-color: #e5dd99;
-
-      z-index: 100;
-    }
     &__baner-startowy {
       grid-area: bbb;
 
@@ -55,17 +39,22 @@
         grid-area: bb1;
         // align-self: start;
 
-        opacity: 1;
-        z-index: -1;
+        opacity: 0.5;
+        z-index: -10;
       }
       &--paski-i-ikonki {
+        //shapey, wszystkie przy banerze, w tym na górzenavbarowe
         grid-area: bb1;
-
-        z-index: 0;
+        // position: relative;
+        z-index: -10;
       }
       &--napis-glowny {
+        grid-area: bb1;
+        z-index: 0;
       }
       &--napis-maly {
+        grid-area: bb1;
+        z-index: 0;
       }
     }
 
@@ -77,39 +66,136 @@
       grid-template-rows: 1fr;
       grid-template-columns: 1fr;
 
-      background-color: #219f97;
-      // align-self: start;
+      // background-color: #219f97;
+      transform: translateY(-5rem);
 
-      // transform: scale(0.5);
+      &__carousel-fot {
+        grid-area: cc1;
+
+        display: grid;
+        grid-template-areas: "aaa bbb ccc"; // kształy nachodzące & ikonka menu
+        grid-template-rows: 1fr;
+        grid-template-columns: minmax(5rem, 10rem) minmax(5rem, max-content) minmax(
+            5rem,
+            10rem
+          );
+
+        &--slide-none {
+          grid-area: bbb;
+        }
+        &--slide-active {
+          grid-area: bbb;
+          position: relative;
+          z-index: 10;
+        }
+        &--strzalka-lewa {
+          grid-area: aaa;
+        }
+        &--strzalka-prawa {
+          grid-area: ccc;
+        }
+      }
+      &__ksztalty-kolorowe-w-tle {
+        &--lewy {
+          grid-area: cc1;
+
+          height: 10rem;
+          width: 10rem;
+          background-color: #7b219f;
+          border-radius: 20%;
+          z-index: 5;
+
+          justify-self: center;
+          align-self: center;
+          transform: translate(-10vw, -10vw);
+        }
+        &--prawy {
+          grid-area: cc1;
+
+          height: 10rem;
+          width: 10rem;
+          background-color: #7b219f;
+          border-radius: 20%;
+          z-index: 5;
+
+          justify-self: center;
+          align-self: center;
+          transform: translate(10vw, 10vw);
+        }
+      }
     }
 
     &__opis-i-rysunek {
       grid-area: ddd;
 
       display: grid;
-      grid-template-areas: "dd1"; // opis   &   rysunek
-      grid-template-rows: 1fr;
-      grid-template-columns: 1fr;
 
-      background-color: #259f21;
+      grid-template-rows: [r-start] 1fr [r-end];
+      grid-template-columns: [c-1] 3fr [c-2] 1fr [c-3];
+
+      // grid-template-areas: "dd1"; // opis   &   rysunek
+      // grid-template-rows: 1fr;
+      // grid-template-columns: 1fr;
+
+      // background-color: #259f21;
+      position: relative;
+
+      &__shape {
+        grid-row: r-start / r-end;
+        grid-column: c-1 / c-3;
+      }
+      &__opis {
+        padding: 3vh 5vh 3vh 7vh;
+        grid-row: r-start / r-end;
+        grid-column: c-1 / c-2;
+
+        font-weight: bold;
+        font-size: 80%;
+
+        align-self: center;
+        justify-self: center;
+      }
+      &__rysunek {
+        grid-row: r-start / r-end;
+        grid-column: c-2 / c-3;
+
+        opacity: 0.3;
+        // background-color: yellow;
+      }
     }
 
-    &__poziomy-i-oddzielnik {
+    &__poziomy {
       grid-area: eee;
 
       display: grid;
       grid-template-areas: //
-        "ee1" // instrukcja
-        "ee2" // mapa
-        "ee3"; // prostokaty poziomów
+        "ee1 ee1 ee1 ee1" // instrukcja
+        "ee2 ee2 ee2 ee2" // mapa
+        "ee3 ee4 ee5 ee6"; // prostokaty poziomów
       grid-template-rows: repeat (3, minmax(5rem, max-content));
       grid-template-columns: 1fr;
 
       background-color: #cf95e7;
-
-      &__prostokat {
-        grid-area: ee3;
+      &__napis-instruckja {
+        grid-area: ee1;
+      }
+      &__mapa {
+        grid-area: ee2;
         background-color: #685e58;
+      }
+      &__prostokat {
+        &--minus-1 {
+          grid-area: ee3;
+        }
+        &--0 {
+          grid-area: ee4;
+        }
+        &--1 {
+          grid-area: ee5;
+        }
+        &--2 {
+          grid-area: ee6;
+        }
 
         &---aktywny {
           background-color: #7b219f;
@@ -129,7 +215,7 @@
 
       background-color: #e39c40;
     }
-    &__rysunek-ekipa {
+    &__walczmy-razem {
       grid-area: ggg;
 
       display: grid;

@@ -1,5 +1,7 @@
 
 
+"2-LAYOUT               = TYLKO layout. bez zmiany ksztaltow i kolorow, nie licząc backgroudn color property, do zobacenia czy dobrz elayout zrobilem
+
 (!) NIE DZIEL NA COMPONENTY w nieskończoność. No pussy mode, parenascie linijek nie jest straszne. Byle nie 300069.
 
 

@@ -1,4 +1,4 @@
-const SVGShapePodGodzinami = () => {
+const SVGShapeWalczmy = () => {
   //
   // Trap1 - CAMEL CASE nazewnictwo plików musi być, np.
   // sketch:type    zamień na    sketchType
@@ -23,4 +23,4 @@ const SVGShapePodGodzinami = () => {
     </svg>
   );
 };
-export default SVGShapePodGodzinami;
+export default SVGShapeWalczmy;

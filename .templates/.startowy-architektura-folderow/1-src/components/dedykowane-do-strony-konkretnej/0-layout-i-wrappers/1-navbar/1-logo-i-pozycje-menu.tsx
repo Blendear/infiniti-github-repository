@@ -25,11 +25,11 @@
 // const Navbar = () => {
 //   return (
 //
-//     <div className={styles["layout__navbar__caly-container"]}>   <- NIEKONIECZNIE równy całemu obszarowi paska \/. czasem więcej niż on
+//     <div className={`${styles["layout__navbar__caly-container"]} ${styles["...wyglad..."]}`}>   <- NIEKONIECZNIE równy całemu obszarowi paska \/. czasem więcej niż on
 //
-//             <nav className={styles["layout__navbar__obszar-całego-paska-nawigacji"]}>
+//             <nav className={`${styles["layout__navbar__obszar-całego-paska-nawigacji"]} ${styles["...wyglad..."]}`}>
 //
-//                  <div className={styles["layout__navbar__fragment-1-np-logo-firmy"]}>
+//                  <div className={`${styles["layout__navbar__fragment-1-np-logo-firmy"]} ${styles["...wyglad..."]}`}>
 //
 //                          <LogoComponent/>
 //                          ||
@@ -37,7 +37,7 @@
 //
 //                  </div>
 //
-//                  <div className={styles["layout__navbar__fragment-2-np-button-strona-glowna"]}>
+//                  <div className={`${styles["layout__navbar__fragment-2-np-button-strona-glowna"]} ${styles["...wyglad..."]}`}>
 //
 //                          <Link href="/strona-glowna">
 //                                      <ButtonStronaGlownaComponent/>
@@ -47,8 +47,7 @@
 //
 //                  </div>
 //
-//                  <div className={styles["layout__navbar__fragment-3-np-podstrona-1"]}>
-//
+//                  <div className={`${styles["layout__navbar__fragment-3-np-podstrona-1"]} ${styles["...wyglad..."]}`}>
 //                          <Link href="/podstrona1">
 //                                      <ButtonPodstronaPierwsza/>
 //                                       ||
@@ -57,7 +56,7 @@
 //
 //                  </div>
 //
-//                  <div className={styles["layout__navbar__fragment-4-np-podstrona-2"]}>
+//                  <div className={`${styles["layout__navbar__fragment-4-np-podstrona-2"]} ${styles["...wyglad..."]}`}>
 //
 //                          <Link href="/podstrona2">
 //                                      <ButtonPodstronaDruga/>

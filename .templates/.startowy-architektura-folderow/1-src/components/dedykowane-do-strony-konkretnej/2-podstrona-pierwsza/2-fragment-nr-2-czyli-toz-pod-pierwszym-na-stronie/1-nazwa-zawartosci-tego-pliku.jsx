@@ -25,9 +25,9 @@
 // const FragmentAkaComponentDanejStrony = () => {
 //   return (
 //
-//          <div className={styles["layout__strona-glowna__cala-strona"]}>
+//          <div className={`${styles["layout__strona-glowna__cala-strona"]} ${styles["...wyglad..."]}`}>
 //
-//                  <div className={styles["layout__strona-glowna__fragment-1-np-baner-startowy"]}>
+//                  <div className={`${styles["layout__strona-glowna__fragment-1-np-baner-startowy"]} ${styles["...wyglad..."]}`}>
 //
 //                          <aComponent/>
 //                          ||
@@ -36,7 +36,7 @@
 //
 //                  </div>
 //
-//                  <div className={styles["layout__strona-glowna__fragment-2-galeria-carousel"]}>
+//                  <div className={`${styles["layout__strona-glowna__fragment-2-galeria-carousel"]} ${styles["...wyglad..."]}`}>
 //
 //                          <bComponent/>
 //                          ||

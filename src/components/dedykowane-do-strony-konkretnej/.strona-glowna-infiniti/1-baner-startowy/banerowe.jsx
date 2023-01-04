@@ -1,4 +1,4 @@
-const SVGShapePodBanerem = () => {
+const SVGShapeBaner = () => {
   //
   // Trap1 - CAMEL CASE nazewnictwo plików musi być, np.
   // sketch:type    zamień na    sketchType
@@ -9,22 +9,22 @@ const SVGShapePodBanerem = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      id="eDUpfMtQ2vg1"
-      viewBox="0 0 1920 3000"
+      id="ecTeE92RXbd1"
+      viewBox="0 0 1920 2400"
       shape-rendering="geometricPrecision"
       text-rendering="geometricPrecision"
     >
       <path
-        d="M552.145017,212.260172L767.683021,0l1152.316978.000001v873.90915Q1429.332,454.32687,1413.19422,454.32687t-861.049203-242.066698Z"
-        transform="translate(0 0.000003)"
+        d="M737.879186,0L628.747961,153.562626Q1447.232152,526.72757,1460.873555,526.72757t459.126444,355.667179v-882.39475L737.879186,0Z"
+        transform="translate(0 0.000001)"
         fill="#fff"
-        stroke-width="6"
+        stroke-width="4.8"
       />
       <path
-        d="M0,1168.177241l552.145015,345.25572L1599.476333,1774.98016l320.523665,480.810374v744.209465h-1919.999999L0,1168.177241Z"
-        transform="translate(.000002 0.000001)"
-        fill="#f3f2f2"
-        stroke-width="6"
+        d="M-0.101243,1118.282658l402.947564,395.150303L1569.73195,1774.980159l350.268048,410.878711q-.000002,195.790474-.000002,214.141129t-1920.101242,0l.000003-1281.717341Z"
+        transform="translate(.000003 0.000001)"
+        fill="#fff"
+        stroke-width="4.8"
       />
       <path
         d="M1322.839117,660.237931c552.227598,9.813583,709.010638,334.877176,804.475882,632.716874.000001-92.32674.000005-258.51414,0-389.477395-127.705492-323.127974-483.956855-516.016356-804.475882-516.016356C709.115724,356.916586,315.034474,85.974338,232.768235,-270.671145c-.245882,57.798211-.000004,353.321908-.000004,358.03006c60.708396,254.612923,435.174808,539.885746,1090.070886,572.879016Z"
@@ -41,4 +41,4 @@ const SVGShapePodBanerem = () => {
     </svg>
   );
 };
-export default SVGShapePodBanerem;
+export default SVGShapeBaner;

@@ -14,30 +14,10 @@
 //
 
 .carousel-foty-infiniti {
-  // position: relative;
-
-  display: grid;
-  grid-template-areas: "aaa bbb ccc"; // kształy nachodzące & ikonka menu
-  grid-template-rows: 1fr;
-  grid-template-columns: minmax(5rem, 10rem) minmax(5rem, max-content) minmax(
-      5rem,
-      10rem
-    );
-
-  // height: 100vh;
-  // height: 50%;
-  // width: 50%;
-  // display: flex;
   justify-content: center;
   align-items: center;
 
-  //
-  //           B.4.2. Wygląd
-  //
   &__arrow-right {
-    // position: absolute;
-    grid-area: ccc;
-
     align-self: center;
     justify-self: center;
 
@@ -59,17 +39,12 @@
     cursor: pointer;
     user-select: none;
   }
-  &__slide {
-    grid-area: bbb;
-
+  &__slide-none {
     opacity: 0;
     transition-duration: 1s ease;
   }
 
   &__slide-active {
-    grid-area: bbb;
-    // background-color: azure;
-
     opacity: 1;
     transition-duration: 1s;
     // transform: scale(1.08);

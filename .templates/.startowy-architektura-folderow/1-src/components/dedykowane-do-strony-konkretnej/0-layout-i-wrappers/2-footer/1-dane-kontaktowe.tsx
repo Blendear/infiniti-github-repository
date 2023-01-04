@@ -23,9 +23,9 @@
 // const Footer = () => {
 //   return (
 //
-//          <div className={styles["layout__footer__caly-container"]}>
+//          <div className={`${styles["layout__footer__caly-container"]} ${styles["...wyglad..."]}`}>
 //
-//                  <div className={styles["layout__footer__caly-container__fragment-1-np-kontaktowe-info"]}>
+//                  <div className={`${styles["layout__footer__caly-container__fragment-1-np-kontaktowe-info"]} ${styles["...wyglad..."]}`}>
 //
 //                          <aComponent/>
 //                          ||
@@ -33,7 +33,7 @@
 //
 //                  </div>
 //
-//                  <div className={styles["layout__footer__caly-container__fragment-2-np-ikonki partnerów"]}>
+//                  <div className={`${styles["layout__footer__caly-container__fragment-2-np-ikonki partnerów"]} ${styles["...wyglad..."]}`}>
 //
 //                          <bComponent/>
 //                          ||

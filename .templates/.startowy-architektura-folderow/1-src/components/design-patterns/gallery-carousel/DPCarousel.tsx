@@ -79,30 +79,30 @@ const DPCarousel = () => {
   }
 
   return (
-    <section className={styles["carousel"]}>
+    <section className={`${styles["...layout..."]} ${styles["carousel"]}`}>
       {/* 
       //       B.2. Using ikonek i ich onClick'i
       */}
 
       <FaArrowAltCircleLeft
-        className={styles["arrow-left"]}
+        className={`${styles["...layout..."]} ${styles["arrow-left"]}`}
         onClick={handlerPrevFoto}
       />
       <FaArrowAltCircleRight
-        className={styles["arrow-right"]}
+        className={`${styles["...layout..."]} ${styles["arrow-right"]}`}
         onClick={handlerNextFoto}
       />
       {/*
       //       C.1. Map - Dla każdego object w liście/object'cie danych, return Image (next.jsowy)
       
       */}
-      <div className={styles["..."]}>
+      <div className={`${styles["...layout..."]} ${styles["...wyglad..."]}`}>
         {carouselData.map((aktualnaFota, indexAktualny) => (
           <div
             className={
               indexAktualny === aktualnyFoto
-                ? styles["slide-active"]
-                : styles["slide"]
+                ? `${styles["...layout..."]} ${styles["slide-active"]}`
+                : `${styles["...layout..."]} ${styles["slide"]}`
             }
             key={indexAktualny}
           >

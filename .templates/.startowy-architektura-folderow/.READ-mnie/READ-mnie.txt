@@ -1,5 +1,13 @@
 
 
+
+(!) className       =  CONTAINERY COMPONENTÓW mają dwie bazowe classy - layout & visual. 
+                       CONTAINERY STRON mają jeden bazowy - layout
+                       
+                                Bo CONTAINER STRON to tylko pusty kocek pozycjonujacy. A C.COMPONENTÓW to już container z, tak, pozycjowanymi elementami w s0obie, ALE TEŻ z konkretnymi wizualami
+                                Np. C.S. = "pages/strona-glowna/index.jsx"   &   C.C. = "components/...../strona-glowna/2-carousel/Carousel.jsx"
+
+
 0.  Nazwy folderów BEZ liczb skopiuj of cors. one są dla mentalnego posegregowania w templates'ach
 
 
