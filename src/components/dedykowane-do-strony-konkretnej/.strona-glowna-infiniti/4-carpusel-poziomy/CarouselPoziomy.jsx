@@ -86,50 +86,73 @@ const CarouselPoziomy = () => {
   }
 
   return (
-    <section className={styles["carousel-poziomy"]}>
+    <section className={styles["layout__strona-glowna__poziomy"]}>
       {/* 
       //       B.2. Using buttonów i ich onClick'i
       */}
+      <div
+        className={styles["layout__strona-glowna__poziomy__napis-instruckja"]}
+      >
+        Wybierz poziom i miejsce na mapie
+      </div>
       <button
-        className={styles["carousel-poziomy__poziom--2"]}
+        className={styles["layout__strona-glowna__poziomy__prostokat--2"]}
         onClick={handlerSetFoto2}
       >
-        {" "}
-        Poziom 2{" "}
+        <div
+          className={styles["layout__strona-glowna__poziomy__napis-poziomu--2"]}
+        >
+          2
+        </div>
       </button>
       <button
-        className={styles["carousel-poziomy__poziom--1"]}
+        className={styles["layout__strona-glowna__poziomy__prostokat--1"]}
         onClick={handlerSetFoto1}
       >
-        {" "}
-        Poziom 1{" "}
+        <div
+          className={styles["layout__strona-glowna__poziomy__napis-poziomu--1"]}
+        >
+          1
+        </div>
       </button>
       <button
-        className={styles["carousel-poziomy__poziom--0"]}
+        className={styles["layout__strona-glowna__poziomy__prostokat--0"]}
         onClick={handlerSetFoto0}
       >
-        {" "}
-        Poziom 0{" "}
+        <div
+          className={styles["layout__strona-glowna__poziomy__napis-poziomu--0"]}
+        >
+          0
+        </div>
       </button>
       <button
-        className={styles["carousel-poziomy__poziom--minus1"]}
+        className={styles["layout__strona-glowna__poziomy__prostokat--minus-1"]}
         onClick={handlerSetFotoMinus1}
       >
-        {" "}
-        Poziom -1{" "}
+        <div
+          className={
+            styles["layout__strona-glowna__poziomy__napis-poziomu--minus-1"]
+          }
+        >
+          -1
+        </div>
       </button>
 
       {/*
       //       C.1. Map - Dla każdego object w liście/object'cie danych, return Image (next.jsowy)
       
       */}
-      <div className={styles["..."]}>
+      <div className={styles["layout__strona-glowna__poziomy__mapa"]}>
         {carouselData.map((aktualnaFota, indexAktualny) => (
           <div
             className={
               indexAktualny === aktualnyFoto
-                ? styles["carousel-poziomy__slide-active"]
-                : styles["carousel-poziomy__slide"]
+                ? styles[
+                    "layout__strona-glowna__galeria__carousel-fot--slide-active"
+                  ]
+                : styles[
+                    "layout__strona-glowna__galeria__carousel-fot--slide-none"
+                  ]
             }
             key={indexAktualny}
           >

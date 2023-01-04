@@ -172,33 +172,92 @@
         "ee1 ee1 ee1 ee1" // instrukcja
         "ee2 ee2 ee2 ee2" // mapa
         "ee3 ee4 ee5 ee6"; // prostokaty poziomów
-      grid-template-rows: repeat (3, minmax(5rem, max-content));
-      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, minmax(0rem, max-content));
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 
-      background-color: #cf95e7;
+      // background-color: #cf95e7;
       &__napis-instruckja {
         grid-area: ee1;
+
+        font-weight: bold;
+        font-size: 1.4rem;
+
+        align-self: center;
+        justify-self: center;
+        color: black;
       }
       &__mapa {
         grid-area: ee2;
-        background-color: #685e58;
+        // background-color: #685e58;
+        &--nonactive-slide {
+          opacity: 0;
+          transition-duration: 1s ease;
+        }
+        &--active-slide {
+          opacity: 1;
+          transition-duration: 1s;
+          transform: scale(1.08);
+        }
       }
       &__prostokat {
+        @mixin prostokat-all {
+          align-self: center;
+          justify-self: center;
+          height: 10rem;
+          width: 60%;
+
+          background-color: #7b219f;
+          border: none;
+
+          cursor: pointer;
+        }
         &--minus-1 {
           grid-area: ee3;
+
+          @include prostokat-all;
         }
         &--0 {
           grid-area: ee4;
+
+          @include prostokat-all;
         }
         &--1 {
           grid-area: ee5;
+
+          @include prostokat-all;
         }
         &--2 {
           grid-area: ee6;
+
+          @include prostokat-all;
         }
 
         &---aktywny {
           background-color: #7b219f;
+        }
+      }
+      &__napis-poziomu {
+        @mixin napis-poziomu-all {
+          height: 100%;
+          width: 100%;
+          padding-top: 30%;
+
+          font-size: 3rem;
+          font-weight: bold;
+
+          color: #ebb4e7;
+        }
+        &--minus-1 {
+          @include napis-poziomu-all;
+        }
+        &--0 {
+          @include napis-poziomu-all;
+        }
+        &--1 {
+          @include napis-poziomu-all;
+        }
+        &--2 {
+          @include napis-poziomu-all;
         }
       }
     }

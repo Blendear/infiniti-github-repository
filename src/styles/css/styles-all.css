@@ -323,31 +323,103 @@
   grid-area: eee;
   display: grid;
   grid-template-areas: "ee1 ee1 ee1 ee1" "ee2 ee2 ee2 ee2" "ee3 ee4 ee5 ee6";
-  grid-template-rows: repeat 3, minmax(5rem, max-content);
-  grid-template-columns: 1fr;
-  background-color: #cf95e7;
+  grid-template-rows: repeat(3, minmax(0rem, max-content));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .layout__strona-glowna__poziomy__napis-instruckja {
   grid-area: ee1;
+  font-weight: bold;
+  font-size: 1.4rem;
+  align-self: center;
+  justify-self: center;
+  color: black;
 }
 .layout__strona-glowna__poziomy__mapa {
   grid-area: ee2;
-  background-color: #685e58;
+}
+.layout__strona-glowna__poziomy__mapa--nonactive-slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.layout__strona-glowna__poziomy__mapa--active-slide {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
 .layout__strona-glowna__poziomy__prostokat--minus-1 {
   grid-area: ee3;
+  align-self: center;
+  justify-self: center;
+  height: 10rem;
+  width: 60%;
+  background-color: #7b219f;
+  border: none;
+  cursor: pointer;
 }
 .layout__strona-glowna__poziomy__prostokat--0 {
   grid-area: ee4;
+  align-self: center;
+  justify-self: center;
+  height: 10rem;
+  width: 60%;
+  background-color: #7b219f;
+  border: none;
+  cursor: pointer;
 }
 .layout__strona-glowna__poziomy__prostokat--1 {
   grid-area: ee5;
+  align-self: center;
+  justify-self: center;
+  height: 10rem;
+  width: 60%;
+  background-color: #7b219f;
+  border: none;
+  cursor: pointer;
 }
 .layout__strona-glowna__poziomy__prostokat--2 {
   grid-area: ee6;
+  align-self: center;
+  justify-self: center;
+  height: 10rem;
+  width: 60%;
+  background-color: #7b219f;
+  border: none;
+  cursor: pointer;
 }
 .layout__strona-glowna__poziomy__prostokat---aktywny {
   background-color: #7b219f;
+}
+.layout__strona-glowna__poziomy__napis-poziomu--minus-1 {
+  height: 100%;
+  width: 100%;
+  padding-top: 30%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ebb4e7;
+}
+.layout__strona-glowna__poziomy__napis-poziomu--0 {
+  height: 100%;
+  width: 100%;
+  padding-top: 30%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ebb4e7;
+}
+.layout__strona-glowna__poziomy__napis-poziomu--1 {
+  height: 100%;
+  width: 100%;
+  padding-top: 30%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ebb4e7;
+}
+.layout__strona-glowna__poziomy__napis-poziomu--2 {
+  height: 100%;
+  width: 100%;
+  padding-top: 30%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ebb4e7;
 }
 .layout__strona-glowna__godziny-otwarcia {
   grid-area: fff;
