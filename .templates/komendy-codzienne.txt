@@ -12,7 +12,7 @@ npm run dev
 
 ~~~ ! TYLKO PIERWSZY RAZ, tworząc rpeository \/ ~~~
 
-git remote add origin https://github.com/Blendear/world-wild-wlrd.git
+git remote add origin https://github.com/Blendear/infiniti-github-repository.git
 git branch -M main
 git push -u origin main
 
