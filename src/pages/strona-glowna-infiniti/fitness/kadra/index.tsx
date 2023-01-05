@@ -21,7 +21,6 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import { kadraDataArray } from "./kadraData";
 import Image from "next/image";
 
-// D:\Apka React JS\infiniti-stronka\public\images\.dedykowane-do-strony-konkretnej\fitness\kadra\bator-monika.jpg
 const Kadra = () => {
   return (
     <div className={styles["layout__fitness-kadra__cala-strona"]}>
@@ -39,17 +38,22 @@ const Kadra = () => {
           <div
             className={
               styles[
-                "layout__fitness-kadra__cala-strona__recepcja-wiersz--jeden--foto"
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--jeden--foto-div-parent-element"
               ]
             }
           >
             <Image
-              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              src={`/images/.dedykowane-do-strony-konkretnej/fitness/kadra/bator-monika.jpg`}
               alt={`nie pyklo zdjecie`}
               height={100}
               width={100}
               layout="responsive"
               objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--jeden--foto-img-element"
+                ]
+              }
             />
           </div>
         </div>
@@ -61,7 +65,7 @@ const Kadra = () => {
           <div
             className={
               styles[
-                "layout__fitness-kadra__cala-strona__recepcja-wiersz--dwa--foto"
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--dwa--foto-div-parent-element"
               ]
             }
           >
@@ -72,6 +76,12 @@ const Kadra = () => {
               width={100}
               layout="responsive"
               objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--dwa--foto-img-element"
+                ]
+              }
+              // kadraDataArray
             />
           </div>
         </div>
@@ -83,7 +93,7 @@ const Kadra = () => {
           <div
             className={
               styles[
-                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto"
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
               ]
             }
           >
@@ -94,6 +104,11 @@ const Kadra = () => {
               width={100}
               layout="responsive"
               objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
             />
           </div>
         </div>
@@ -108,21 +123,81 @@ const Kadra = () => {
             styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz--jeden"]
           }
         >
-          {/* <aComponent/> */}TRENERZY
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
             styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwa"]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
             styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz--trzy"]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
@@ -131,21 +206,81 @@ const Kadra = () => {
             ]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
             styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz--piec"]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
             styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz--szesc"]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
@@ -154,14 +289,54 @@ const Kadra = () => {
             ]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
             styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz--osiem"]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
@@ -170,7 +345,27 @@ const Kadra = () => {
             ]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
@@ -179,7 +374,27 @@ const Kadra = () => {
             ]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
@@ -188,7 +403,27 @@ const Kadra = () => {
             ]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
@@ -197,7 +432,27 @@ const Kadra = () => {
             ]
           }
         >
-          {/* <aComponent/> */}
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
       </div>
       <div
@@ -208,7 +463,27 @@ const Kadra = () => {
             styles["layout__fitness-kadra__cala-strona__manager-wiersz--jeden"]
           }
         >
-          MANAGER
+          <div
+            className={
+              styles[
+                "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-div-parent-element"
+              ]
+            }
+          >
+            <Image
+              src={`/images/.design-pattern-placeholders/pietro1.jpg`}
+              alt={`nie pyklo zdjecie`}
+              height={100}
+              width={100}
+              layout="responsive"
+              objectFit="cover"
+              className={
+                styles[
+                  "layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto-img-element"
+                ]
+              }
+            />
+          </div>
         </div>
         <div
           className={
@@ -217,7 +492,7 @@ const Kadra = () => {
             ]
           }
         >
-          {" "}
+          KADRA
         </div>
       </div>
     </div>
