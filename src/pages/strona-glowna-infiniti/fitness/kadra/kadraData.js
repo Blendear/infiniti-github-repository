@@ -41,10 +41,17 @@ export const kadraDataArray = {
       socialMediaLinks: { facebook: "" },
     },
     {
-      nazwisko: "Duma",
-      name: "Ania",
-      fotoPathKoncowka: "duma-ania",
-      socialMediaLinks: { facebook: "" },
+      nazwisko: "Gidel",
+      name: "Ela",
+      fotoPathKoncowka: "gidel-ela",
+      socialMediaLinks: { facebook: "https://www.facebook.com/elagidel" },
+    },
+    {
+      nazwisko: "Gołębiowski",
+      name: "Romek",
+      funkcja: "Instruktor fitness",
+      fotoPathKoncowka: "gidel-ela",
+      socialMediaLinks: { facebook: "https://www.facebook.com/elagidel" },
     },
   ],
   manager: {
