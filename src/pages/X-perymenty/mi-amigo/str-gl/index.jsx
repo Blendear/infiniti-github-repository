@@ -23,15 +23,27 @@ import { isValidElement, useState } from "react";
 //
 import Image from "next/image";
 
+// 0.A Wydarzenia baza danych
+
 const wydarzenia = [
+  //braindead
   { name: "maniaczenie solo", typ: "N-WI-S-DO", protip: "VIP a nie yolo graj" },
   { name: "drzemusia", typ: "B-WI-S-DO", protip: "timer ustaw" },
-  { name: "ruchanie", typ: "T-WA-DU-DO", protip: "bardziej z biodra c:" },
+  { name: "ruchanie", typ: "B-WA-DU-DO", protip: "bardziej z biodra c:" },
+  //nakurwianie
+  //tworze
+  { name: "Wrld rozpisz", typ: "T-WI-S-DO", protip: "historyjka always" },
+  {
+    name: "Wrld pokmiń skarpetusząc z tleefonem",
+    typ: "T-WI-DU-DZ",
+    protip: "powerbvanka weź",
+  },
+  //chlone
 ];
 const PodstronaJeden = () => {
   {
     /* 
-        // 0 - statey
+        // 0.B - statey
         */
   }
   const [pierwszy, setPierwszy] = useState("");

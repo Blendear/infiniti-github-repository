@@ -110,7 +110,13 @@ const a = () => {
           <SVGShapeNadGodzinami />
         </div>
       </div>
-      <div className={styles["layout__strona-glowna__godziny-otwarcia"]}></div>
+      <div className={styles["layout__strona-glowna__godziny-otwarcia"]}>
+        {/* 
+        
+pora narysowac shapey godzin & wykminic jak ustawic shapey,
+zeby przy repsonsywnej strnie nie rozjebalo mi przykrycia shapem 4 prostokatow pieter
+*/}
+      </div>
       <div className={styles["layout__strona-glowna__walczmy-razem"]}>
         <div className={styles["layout__strona-glowna__walczmy-razem__shape"]}>
           <SVGShapeWalczmy />

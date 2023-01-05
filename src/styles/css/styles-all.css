@@ -454,6 +454,154 @@
   opacity: 0.5;
 }
 
+.layout__fitness-kadra__cala-strona {
+  display: grid;
+  grid-template-rows: [r-1] minmax(min-content, max-content) [r-2] minmax(min-content, max-content) [r-3] minmax(min-content, max-content) [r-4];
+  grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
+  margin: 2rem;
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz {
+  grid-row: r-1/r-2;
+  grid-column: c-1/c-4;
+  display: grid;
+  grid-template-rows: [r-1] minmax(10rem, 25rem) [r-2];
+  grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
+  background-color: #40afff;
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--jeden {
+  grid-row: r-1/r-2;
+  grid-column: c-1/c-2;
+  background-color: rgba(255, 64, 64, 0.4784313725);
+  position: relative;
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--jeden--foto {
+  height: 50%;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  background-color: #ff0303;
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--jeden--foto img {
+  border-radius: 45%;
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--dwa {
+  grid-row: r-1/r-2;
+  grid-column: c-2/c-3;
+  background-color: rgba(249, 64, 255, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--dwa--foto {
+  height: 50%;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  background-color: #ff0303;
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--dwa--foto img {
+  border-radius: 45%;
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy {
+  grid-row: r-1/r-2;
+  grid-column: c-3/c-4;
+  background-color: rgba(188, 255, 64, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto {
+  height: 50%;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  background-color: #ff0303;
+}
+.layout__fitness-kadra__cala-strona__recepcja-wiersz--trzy--foto img {
+  border-radius: 45%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-4;
+  display: grid;
+  grid-template-rows: [r-1] minmax(6rem, 15rem) [r-2] minmax(6rem, 15rem) [r-3] minmax(6rem, 15rem) [r-4] minmax(6rem, 15rem) [r-5];
+  grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4] 1fr [c-5] 1fr [c-6] 1fr [c-7] 1fr [c-8] 1fr [c-9] 1fr [c-10] 1fr [c-11] 1fr [c-12] 1fr [c-13];
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--jeden {
+  grid-row: r-1/r-2;
+  grid-column: c-1/c-5;
+  background-color: rgba(255, 64, 64, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwa {
+  grid-row: r-1/r-2;
+  grid-column: c-5/c-9;
+  background-color: rgba(249, 64, 255, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--trzy {
+  grid-row: r-1/r-2;
+  grid-column: c-9/c-13;
+  background-color: rgba(188, 255, 64, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--cztery {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-5;
+  background-color: rgba(64, 255, 179, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--piec {
+  grid-row: r-2/r-3;
+  grid-column: c-5/c-9;
+  background-color: rgba(64, 223, 255, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--szesc {
+  grid-row: r-2/r-3;
+  grid-column: c-9/c-13;
+  background-color: rgba(156, 64, 255, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--siedem {
+  grid-row: r-3/r-4;
+  grid-column: c-1/c-5;
+  background-color: rgba(255, 64, 64, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--osiem {
+  grid-row: r-3/r-4;
+  grid-column: c-5/c-9;
+  background-color: rgba(249, 64, 255, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dziewiec {
+  grid-row: r-3/r-4;
+  grid-column: c-9/c-13;
+  background-color: rgba(188, 255, 64, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dziesiec {
+  grid-row: r-4/r-5;
+  grid-column: c-1/c-5;
+  background-color: rgba(64, 255, 179, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--jedenascie {
+  grid-row: r-4/r-5;
+  grid-column: c-5/c-9;
+  background-color: rgba(64, 223, 255, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwanascie {
+  grid-row: r-4/r-5;
+  grid-column: c-9/c-13;
+  background-color: rgba(156, 64, 255, 0.4784313725);
+}
+.layout__fitness-kadra__cala-strona__manager-wiersz {
+  grid-row: r-3/r-4;
+  grid-column: c-1/c-4;
+  display: grid;
+  grid-template-rows: [r-1] minmax(10rem, 25rem) [r-2];
+  grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
+}
+.layout__fitness-kadra__cala-strona__manager-wiersz--jeden {
+  grid-row: r-1/r-2;
+  grid-column: c-1/c-2;
+  background-color: #fd99db;
+}
+.layout__fitness-kadra__cala-strona__manager-wiersz--napis-kadra {
+  grid-row: r-1/r-2;
+  grid-column: c-2/c-4;
+  background-color: #ff36bc;
+}
+
 .parent-Y {
   height: 10vh;
   width: 100%;
