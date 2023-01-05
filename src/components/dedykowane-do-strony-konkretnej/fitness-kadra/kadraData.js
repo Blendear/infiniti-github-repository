@@ -67,12 +67,12 @@ export const kadraDataArray = {
       },
     },
     {
-      nazwisko: "Kurelowska",
+      nazwisko: "Piotrowicz-Kurelowska",
       name: "Ramona",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "kurelowska-ramona",
       socialMediaLinks: {
-        facebook: "https://www.facebook.com/profile.php?id=100063105468123",
+        facebook: "https://www.facebook.com/ramonatrenerzdrowia",
       },
     },
   ],
