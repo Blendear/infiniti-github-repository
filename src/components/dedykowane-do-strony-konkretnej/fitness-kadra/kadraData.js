@@ -57,6 +57,24 @@ export const kadraDataArray = {
       fotoPathKoncowka: "gidel-ela",
       socialMediaLinks: { facebook: "https://www.facebook.com/elagidel" },
     },
+    {
+      nazwisko: "Kubicka",
+      name: "Katrin",
+      funkcja: "Instruktor fitness",
+      fotoPathKoncowka: "kubicka-katrin",
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/profile.php?id=100063105468123",
+      },
+    },
+    {
+      nazwisko: "Kurelowska",
+      name: "Ramona",
+      funkcja: "Instruktor fitness",
+      fotoPathKoncowka: "kurelowska-ramona",
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/profile.php?id=100063105468123",
+      },
+    },
   ],
   manager: {
     nazwisko: "Bich",

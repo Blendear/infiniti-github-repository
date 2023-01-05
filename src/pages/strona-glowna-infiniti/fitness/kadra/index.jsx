@@ -18,7 +18,7 @@ import styles from "src/styles/sass/styles-all.module.scss";
 ////
 ////       A.1. Baza danych importowana
 // //
-import { kadraDataArray } from "./kadraData";
+import { kadraDataArray } from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/kadraData";
 import Image from "next/image";
 
 const Kadra = () => {
