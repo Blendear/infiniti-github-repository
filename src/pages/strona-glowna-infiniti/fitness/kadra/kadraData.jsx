@@ -24,13 +24,27 @@ export const kadraDataArray = {
       nazwisko: "Bizoń",
       name: "Adam",
       fotoPathKoncowka: "bizon-adam",
-      socialMediaLinks: { facebook: "www.facebook.com" },
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/profile.php?id=100057168981507",
+      },
+    },
+    {
+      nazwisko: "Deierling",
+      name: "Arek",
+      fotoPathKoncowka: "deierling-arek",
+      socialMediaLinks: { facebook: "" },
     },
     {
       nazwisko: "Duma",
       name: "Ania",
       fotoPathKoncowka: "duma-ania",
-      socialMediaLinks: { facebook: "www.facebook.com" },
+      socialMediaLinks: { facebook: "" },
+    },
+    {
+      nazwisko: "Duma",
+      name: "Ania",
+      fotoPathKoncowka: "duma-ania",
+      socialMediaLinks: { facebook: "" },
     },
   ],
   manager: {
