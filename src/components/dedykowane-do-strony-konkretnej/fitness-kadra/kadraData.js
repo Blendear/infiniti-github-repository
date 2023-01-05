@@ -23,6 +23,7 @@ export const kadraDataArray = {
     {
       nazwisko: "Bizoń",
       name: "Adam",
+      funkcja: "Trener MMA i BJJ",
       fotoPathKoncowka: "bizon-adam",
       socialMediaLinks: {
         facebook: "https://www.facebook.com/profile.php?id=100057168981507",
@@ -31,18 +32,21 @@ export const kadraDataArray = {
     {
       nazwisko: "Deierling",
       name: "Arek",
+      funkcja: "Instruktor fitness / Trener personalny",
       fotoPathKoncowka: "deierling-arek",
       socialMediaLinks: { facebook: "" },
     },
     {
       nazwisko: "Duma",
       name: "Ania",
+      funkcja: "Instruktor fitness",
       fotoPathKoncowka: "duma-ania",
       socialMediaLinks: { facebook: "" },
     },
     {
       nazwisko: "Gidel",
       name: "Ela",
+      funkcja: "Instruktor fitness",
       fotoPathKoncowka: "gidel-ela",
       socialMediaLinks: { facebook: "https://www.facebook.com/elagidel" },
     },
