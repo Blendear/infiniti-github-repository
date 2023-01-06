@@ -4,19 +4,19 @@ export const kadraDataArray = {
       nazwisko: "Bator",
       name: "Monika",
       fotoPathKoncowka: "bator-monika",
-      socialMediaLinks: { facebook: "www.facebook.com" },
+      socialMediaLinks: { facebook: "" },
     },
     {
       nazwisko: "Czerska",
       name: "Iza",
       fotoPathKoncowka: "czerska-iza",
-      socialMediaLinks: { facebook: "www.facebook.com" },
+      socialMediaLinks: { facebook: "" },
     },
     {
-      nazwisko: "Bich",
+      nazwisko: "Rosa",
       name: "Sandra",
-      fotoPathKoncowka: "bich-marta",
-      socialMediaLinks: { facebook: "www.facebook.com" },
+      fotoPathKoncowka: "rosa-sandra",
+      socialMediaLinks: { facebook: "" },
     },
   ],
   trenerzy: [
@@ -54,8 +54,17 @@ export const kadraDataArray = {
       nazwisko: "Gołębiowski",
       name: "Romek",
       funkcja: "Instruktor fitness",
-      fotoPathKoncowka: "gidel-ela",
+      fotoPathKoncowka: "golebiowski-roman",
       socialMediaLinks: { facebook: "https://www.facebook.com/elagidel" },
+    },
+    {
+      nazwisko: "Kaczmarczyk",
+      name: "Sebastian",
+      funkcja: "Instruktor fitness / Trener personalny",
+      fotoPathKoncowka: "kaczmarczyk-sebastian",
+      socialMediaLinks: {
+        facebook: "",
+      },
     },
     {
       nazwisko: "Kubicka",
@@ -67,12 +76,57 @@ export const kadraDataArray = {
       },
     },
     {
+      nazwisko: "Kuśnierz-Pierz",
+      name: "Ania",
+      funkcja: "Instruktor fitness",
+      fotoPathKoncowka: "kusnierz-pierz-anna",
+      socialMediaLinks: {
+        facebook: "",
+      },
+    },
+    {
+      nazwisko: "Mróz",
+      name: "Maciej",
+      funkcja: "Instruktor fitness",
+      fotoPathKoncowka: "mroz-maciej",
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/profile.php?id=100063527531675",
+      },
+    },
+    {
       nazwisko: "Piotrowicz-Kurelowska",
       name: "Ramona",
       funkcja: "Instruktor fitness",
-      fotoPathKoncowka: "kurelowska-ramona",
+      fotoPathKoncowka: "piotrowicz-kurelowska-ramona",
       socialMediaLinks: {
         facebook: "https://www.facebook.com/ramonatrenerzdrowia",
+      },
+    },
+    {
+      nazwisko: "Prokop",
+      name: "Piotrek",
+      funkcja: "Instruktor fitness",
+      fotoPathKoncowka: "prokop-piotr",
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/prokopiotrek",
+      },
+    },
+    {
+      nazwisko: "Rypalla",
+      name: "Dominika",
+      funkcja: "Instruktor fitness / Trener personalny / Masażysta",
+      fotoPathKoncowka: "rypalla-dominika",
+      socialMediaLinks: {
+        facebook: "",
+      },
+    },
+    {
+      nazwisko: "Saska",
+      name: "Tomasz",
+      funkcja: "Instruktor fitness / Trener personalny / Dietetyk",
+      fotoPathKoncowka: "saska-tomasz",
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/fabrykaformywroclaw",
       },
     },
   ],
@@ -80,6 +134,6 @@ export const kadraDataArray = {
     nazwisko: "Bich",
     name: "Marta",
     fotoPathKoncowka: "bich-marta",
-    socialMediaLinks: { facebook: "www.facebook.com" },
+    socialMediaLinks: { facebook: "" },
   },
 };

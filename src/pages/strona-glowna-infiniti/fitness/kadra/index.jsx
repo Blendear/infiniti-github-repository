@@ -26,9 +26,25 @@ const Kadra = () => {
     <div className={styles["layout__fitness-kadra__cala-strona"]}>
       <div
         className={
+          styles["layout__fitness-kadra__cala-strona__tytulowy-opis-strony"]
+        }
+      >
+        ONI POMAGAJA NAM ROSNĄĆ
+      </div>
+      <div
+        className={
           styles["layout__fitness-kadra__cala-strona__recepcja-wiersz"]
         }
       >
+        <div
+          className={
+            styles[
+              "layout__fitness-kadra__cala-strona__recepcja-wiersz--zero-napis"
+            ]
+          }
+        >
+          RECEPCJA
+        </div>
         <div
           className={
             styles["layout__fitness-kadra__cala-strona__recepcja-wiersz--jeden"]
@@ -118,6 +134,13 @@ const Kadra = () => {
           styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz"]
         }
       >
+        <div
+          className={
+            styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz--napis"]
+          }
+        >
+          TRENERZY
+        </div>
         <div
           className={
             styles["layout__fitness-kadra__cala-strona__trenerzy-wiersz--jeden"]
@@ -487,12 +510,10 @@ const Kadra = () => {
         </div>
         <div
           className={
-            styles[
-              "layout__fitness-kadra__cala-strona__manager-wiersz--napis-kadra"
-            ]
+            styles["layout__fitness-kadra__cala-strona__manager-wiersz--napis"]
           }
         >
-          KADRA
+          MANAGER
         </div>
       </div>
     </div>

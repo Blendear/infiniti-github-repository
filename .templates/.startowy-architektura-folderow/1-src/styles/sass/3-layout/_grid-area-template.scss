@@ -27,6 +27,11 @@
           [c-1] 3fr
           [c-2]
           1fr [c-3];
+        // \/ TYLKO GDY NIE-TEKSTOWE, wtedy to jest NAJLEPSZY sposob full kontorli pozycji
+        // margin-left: 110%;
+        // margin-right: 10%;
+        // margin-top: 0%;
+        // margin-bottom: 0%;
 
         background-color: #40afff7a;
         // pierwszy PODfragment pierwszego fragmentu...
@@ -35,6 +40,11 @@
           grid-column: c-2 / c-3;
 
           background-color: #79ff407a;
+          // \/ TYLKO GDY NIE-TEKSTOWE, wtedy to jest NAJLEPSZY sposob full kontorli pozycji
+          // margin-left: 110%;
+          // margin-right: 10%;
+          // margin-top: 0%;
+          // margin-bottom: 0%;
         }
       }
       // drugi fragment calej strony, tóż pod tym pierwszym z samej gory strony
@@ -42,6 +52,11 @@
         // pierwszy PODfragment drugiego fragmentu...
         &--AAA {
           background-color: #e2ff407a;
+          // \/ TYLKO GDY NIE-TEKSTOWE, wtedy to jest NAJLEPSZY sposob full kontorli pozycji
+          // margin-left: 110%;
+          // margin-right: 10%;
+          // margin-top: 0%;
+          // margin-bottom: 0%;
         }
       }
     }
