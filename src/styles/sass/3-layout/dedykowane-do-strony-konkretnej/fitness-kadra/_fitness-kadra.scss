@@ -49,7 +49,7 @@ $font-weight: bold;
       display: grid;
 
       grid-template-rows:
-        [r-0] minmax($wysokosc-min-wiersza-all, $wysokosc-max-wiersza-all)
+        [r-0] 4rem
         [r-1] minmax($wysokosc-min-wiersza-all, $wysokosc-max-wiersza-all)
         [r-2] minmax($wysokosc-min-wiersza-all, $wysokosc-max-wiersza-all)
         [r-3] minmax($wysokosc-min-wiersza-all, $wysokosc-max-wiersza-all)
@@ -92,7 +92,8 @@ $font-weight: bold;
         grid-column: c-1 / c-4;
 
         justify-self: center;
-
+        // align-self: end;
+        margin-top: 6%;
         font-size: $font-size;
         font-weight: $font-weight;
       }
@@ -116,7 +117,7 @@ $font-weight: bold;
         // background-color: #40afff;
         margin-left: 2rem;
         margin-right: 2rem;
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
         &--zero-napis {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-2;
@@ -679,7 +680,7 @@ $font-weight: bold;
           // background-color: #fd99db;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
           // margin-top: 0;
-          margin-left: 20%;
+          margin-left: 33%;
           // margin-right: 2rem;
           margin-bottom: 3%;
 

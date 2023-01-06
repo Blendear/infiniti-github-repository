@@ -456,7 +456,7 @@
 
 .layout__fitness-kadra__cala-strona {
   display: grid;
-  grid-template-rows: [r-0] minmax(min-content, max-content) [r-1] minmax(min-content, max-content) [r-2] minmax(min-content, max-content) [r-3] minmax(min-content, max-content) [r-4];
+  grid-template-rows: [r-0] 4rem [r-1] minmax(min-content, max-content) [r-2] minmax(min-content, max-content) [r-3] minmax(min-content, max-content) [r-4];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
 }
 .layout__fitness-kadra__cala-strona__shape-lisc-manager {
@@ -477,6 +477,7 @@
   grid-row: r-0/r-1;
   grid-column: c-1/c-4;
   justify-self: center;
+  margin-top: 6%;
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -488,7 +489,7 @@
   grid-template-columns: [c-1] 10rem [c-2] 10rem [c-3] 10rem [c-4];
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 .layout__fitness-kadra__cala-strona__recepcja-wiersz--zero-napis {
   grid-row: r-1/r-2;
@@ -806,7 +807,7 @@
   grid-column: c-1/c-2;
   margin: auto;
   width: 50%;
-  margin-left: 20%;
+  margin-left: 33%;
   margin-bottom: 3%;
 }
 .layout__fitness-kadra__cala-strona__manager-wiersz--jeden--foto-img-element {
