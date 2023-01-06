@@ -539,8 +539,8 @@
   grid-column: c-1/c-5;
   margin: auto;
   width: 50%;
-  margin-left: 60%;
-  margin-top: 0%;
+  margin-left: 70%;
+  margin-top: 10%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--jeden--foto-img-element {
   border-radius: 50%;
@@ -561,8 +561,8 @@
   grid-column: c-9/c-13;
   margin: auto;
   width: 50%;
-  margin-left: -90%;
-  margin-top: 70%;
+  margin-left: -80%;
+  margin-top: 60%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--trzy--foto-img-element {
   border-radius: 50%;
@@ -570,12 +570,11 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--cztery {
   grid-row: r-1/r-2;
   grid-column: c-9/c-13;
-  background-color: rgba(64, 255, 179, 0.4784313725);
   margin: auto;
   width: 50%;
   margin-left: 50%;
   margin-right: 0%;
-  margin-top: 100%;
+  margin-top: 130%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--cztery--foto-img-element {
   border-radius: 50%;
@@ -583,7 +582,6 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--piec {
   grid-row: r-2/r-3;
   grid-column: c-1/c-5;
-  background-color: rgba(64, 223, 255, 0.4784313725);
   margin: auto;
   width: 50%;
   margin-left: 0%;
@@ -595,11 +593,10 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--szesc {
   grid-row: r-2/r-3;
   grid-column: c-5/c-9;
-  background-color: rgba(156, 64, 255, 0.4784313725);
   margin: auto;
   width: 50%;
   margin-left: 80%;
-  margin-top: 20%;
+  margin-top: 0%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--szesc--foto-img-element {
   border-radius: 50%;
@@ -607,21 +604,21 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--siedem {
   grid-row: r-3/r-4;
   grid-column: c-1/c-5;
-  background-color: rgba(255, 64, 64, 0.4784313725);
   margin: auto;
   width: 50%;
-  margin-left: 20%;
-  margin-top: -10%;
+  margin-left: -5%;
+  margin-top: 0%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--siedem--foto-img-element {
   border-radius: 50%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--osiem {
   grid-row: r-3/r-4;
-  grid-column: c-5/c-9;
-  background-color: rgba(249, 64, 255, 0.4784313725);
+  grid-column: c-1/c-5;
   margin: auto;
   width: 50%;
+  margin-left: 10%;
+  margin-top: 75%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--osiem--foto-img-element {
   border-radius: 50%;
@@ -629,9 +626,10 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--dziewiec {
   grid-row: r-3/r-4;
   grid-column: c-9/c-13;
-  background-color: rgba(188, 255, 64, 0.4784313725);
   margin: auto;
   width: 50%;
+  margin-left: 65%;
+  margin-top: 0%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--dziewiec--foto-img-element {
   border-radius: 50%;
@@ -639,9 +637,10 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--dziesiec {
   grid-row: r-4/r-5;
   grid-column: c-1/c-5;
-  background-color: rgba(64, 255, 179, 0.4784313725);
   margin: auto;
   width: 50%;
+  margin-left: 70%;
+  margin-top: 35%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--dziesiec--foto-img-element {
   border-radius: 50%;
@@ -649,9 +648,10 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--jedenascie {
   grid-row: r-4/r-5;
   grid-column: c-5/c-9;
-  background-color: rgba(64, 223, 255, 0.4784313725);
   margin: auto;
   width: 50%;
+  margin-left: 40%;
+  margin-top: 60%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--jedenascie--foto-img-element {
   border-radius: 50%;
@@ -659,11 +659,113 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwanascie {
   grid-row: r-4/r-5;
   grid-column: c-9/c-13;
-  background-color: rgba(156, 64, 255, 0.4784313725);
   margin: auto;
   width: 50%;
+  margin-left: 10%;
+  margin-bottom: 17%;
 }
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwanascie--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--trzynascie {
+  grid-row: r-3/r-4;
+  grid-column: c-9/c-13;
+  margin: auto;
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 70%;
+  margin-bottom: 0%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--trzynascie--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--czternascie {
+  grid-row: r-2/r-3;
+  grid-column: c-6/c-10;
+  margin: auto;
+  width: 50%;
+  margin-left: 70%;
+  margin-right: 0%;
+  margin-bottom: -15%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--czternascie--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--pietnascie {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-5;
+  margin: auto;
+  width: 50%;
+  margin-left: 125%;
+  margin-top: 40%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--pietnascie--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--szestnascie {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-5;
+  margin: auto;
+  width: 50%;
+  margin-left: 60%;
+  margin-top: 80%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--szestnascie--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--siedemnascie {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-5;
+  margin: auto;
+  width: 50%;
+  margin-left: 65%;
+  margin-top: 0%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--siedemnascie--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--osiemnascie {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-5;
+  margin: auto;
+  width: 50%;
+  margin-left: 135%;
+  margin-top: 110%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--osiemnascie--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dziewietnascie {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-5;
+  margin: auto;
+  width: 50%;
+  margin-left: 195%;
+  margin-top: 140%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dziewietnascie--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwadziescia {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-5;
+  margin: auto;
+  width: 50%;
+  margin-left: 145%;
+  margin-top: 190%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwadziescia--foto-img-element {
+  border-radius: 50%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwa-jeden {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-5;
+  margin: auto;
+  width: 50%;
+  margin-left: 75%;
+  margin-top: 155%;
+}
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwa-jeden--foto-img-element {
   border-radius: 50%;
 }
 .layout__fitness-kadra__cala-strona__manager-wiersz {

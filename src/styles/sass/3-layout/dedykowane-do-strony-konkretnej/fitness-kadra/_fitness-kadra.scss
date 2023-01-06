@@ -227,9 +227,9 @@ $font-weight: bold;
           // background-color: #ff40407a;
 
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          margin-left: 60%;
+          margin-left: 70%;
           // margin-right: 10%;
-          margin-top: 0%;
+          margin-top: 10%;
           // margin-bottom: 5%;
 
           &--foto-div-parent-element {
@@ -267,9 +267,9 @@ $font-weight: bold;
           // background-color: #bcff407a;
 
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          margin-left: -90%;
+          margin-left: -80%;
           // margin-right: 10%;
-          margin-top: 70%;
+          margin-top: 60%;
           // margin-bottom: 5%;
 
           &--foto-div-parent-element {
@@ -284,12 +284,12 @@ $font-weight: bold;
           grid-row: r-1 / r-2;
           grid-column: c-9 / c-13;
 
-          background-color: #40ffb37a;
+          // background-color: #40ffb37a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
 
           margin-left: 50%;
           margin-right: 0%;
-          margin-top: 100%;
+          margin-top: 130%;
           // margin-bottom: 5%;
 
           &--foto-div-parent-element {
@@ -304,7 +304,7 @@ $font-weight: bold;
           grid-row: r-2 / r-3;
           grid-column: c-1 / c-5;
 
-          background-color: #40dfff7a;
+          // background-color: #40dfff7a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
           margin-left: 0%;
           // margin-right: 120%;
@@ -323,11 +323,11 @@ $font-weight: bold;
           grid-row: r-2 / r-3;
           grid-column: c-5 / c-9;
 
-          background-color: #9c40ff7a;
+          // background-color: #9c40ff7a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
           margin-left: 80%;
           // margin-right: 120%;
-          margin-top: 20%;
+          margin-top: 0%;
           // margin-bottom: 5%;
           &--foto-div-parent-element {
             @include foto-container();
@@ -341,11 +341,11 @@ $font-weight: bold;
           grid-row: r-3 / r-4;
           grid-column: c-1 / c-5;
 
-          background-color: #ff40407a;
+          // background-color: #ff40407a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          margin-left: 20%;
+          margin-left: -5%;
           // margin-right: 120%;
-          margin-top: -10%;
+          margin-top: 0%;
           // margin-bottom: 5%;
           &--foto-div-parent-element {
             @include foto-container();
@@ -357,13 +357,13 @@ $font-weight: bold;
         }
         &--osiem {
           grid-row: r-3 / r-4;
-          grid-column: c-5 / c-9;
+          grid-column: c-1 / c-5;
 
-          background-color: #f940ff7a;
+          // background-color: #f940ff7a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          // margin-left: 68%;
+          margin-left: 10%;
           // margin-right: 120%;
-          // margin-top: 110%;
+          margin-top: 75%;
           // margin-bottom: 5%;
           &--foto-div-parent-element {
             @include foto-container();
@@ -377,11 +377,11 @@ $font-weight: bold;
           grid-row: r-3 / r-4;
           grid-column: c-9 / c-13;
 
-          background-color: #bcff407a;
+          // background-color: #bcff407a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          // margin-left: 68%;
+          margin-left: 65%;
           // margin-right: 120%;
-          // margin-top: 110%;
+          margin-top: 0%;
           // margin-bottom: 5%;
           &--foto-div-parent-element {
             @include foto-container();
@@ -395,11 +395,11 @@ $font-weight: bold;
           grid-row: r-4 / r-5;
           grid-column: c-1 / c-5;
 
-          background-color: #40ffb37a;
+          // background-color: #40ffb37a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          // margin-left: 68%;
+          margin-left: 70%;
           // margin-right: 120%;
-          // margin-top: 110%;
+          margin-top: 35%;
           // margin-bottom: 5%;
           &--foto-div-parent-element {
             @include foto-container();
@@ -413,11 +413,11 @@ $font-weight: bold;
           grid-row: r-4 / r-5;
           grid-column: c-5 / c-9;
 
-          background-color: #40dfff7a;
+          // background-color: #40dfff7a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          // margin-left: 68%;
+          margin-left: 40%;
           // margin-right: 120%;
-          // margin-top: 110%;
+          margin-top: 60%;
           // margin-bottom: 5%;
           &--foto-div-parent-element {
             @include foto-container();
@@ -431,12 +431,182 @@ $font-weight: bold;
           grid-row: r-4 / r-5;
           grid-column: c-9 / c-13;
 
-          background-color: #9c40ff7a;
+          // background-color: #9c40ff7a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          // margin-left: 68%;
+          margin-left: 10%;
           // margin-right: 120%;
           // margin-top: 110%;
+          margin-bottom: 17%;
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+        &--trzynascie {
+          grid-row: r-3 / r-4;
+          grid-column: c-9 / c-13;
+
+          // background-color: #9c40ff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 50%;
+          // margin-right: 120%;
+          margin-top: 70%;
+          margin-bottom: 0%;
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+        &--czternascie {
+          grid-row: r-2 / r-3;
+          grid-column: c-6 / c-10;
+
+          // background-color: #9c40ff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 70%;
+          margin-right: 0%;
+          // margin-top: 110%;
+          margin-bottom: -15%;
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+
+        &--pietnascie {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-5;
+
+          // background-color: #40dfff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 125%;
+          // margin-right: 120%;
+          margin-top: 40%;
           // margin-bottom: 5%;
+
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+        &--szestnascie {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-5;
+
+          // background-color: #40dfff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 60%;
+          // margin-right: 120%;
+          margin-top: 80%;
+          // margin-bottom: 5%;
+
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+        &--siedemnascie {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-5;
+
+          // background-color: #40dfff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 65%;
+          // margin-right: 120%;
+          margin-top: 0%;
+          // margin-bottom: 5%;
+
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+        &--osiemnascie {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-5;
+
+          // background-color: #40dfff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 135%;
+          // margin-right: 120%;
+          margin-top: 110%;
+          // margin-bottom: 5%;
+
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+        &--dziewietnascie {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-5;
+
+          // background-color: #40dfff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 195%;
+          // margin-right: 120%;
+          margin-top: 140%;
+          // margin-bottom: 5%;
+
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+        &--dwadziescia {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-5;
+
+          // background-color: #40dfff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 145%;
+          // margin-right: 120%;
+          margin-top: 190%;
+          // margin-bottom: 5%;
+
+          &--foto-div-parent-element {
+            @include foto-container();
+          }
+
+          &--foto-img-element {
+            @include foto-img-element();
+          }
+        }
+        &--dwa-jeden {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-5;
+
+          // background-color: #40dfff7a;
+          @include wysrodkowanie-i-zmniejszenie-dzieci();
+          margin-left: 75%;
+          // margin-right: 120%;
+          margin-top: 155%;
+          // margin-bottom: 5%;
+
           &--foto-div-parent-element {
             @include foto-container();
           }
