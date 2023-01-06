@@ -650,7 +650,10 @@ $font-weight: bold;
           }
         }
       }
-
+      &__trenerzy-wiersz img:hover {
+        // background-color: aqua;
+        transform: scale(1.3);
+      }
       &__manager-wiersz {
         grid-row: r-1 / r-2;
         grid-column: c-1 / c-4;

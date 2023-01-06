@@ -793,6 +793,9 @@
 .layout__fitness-kadra__cala-strona__trenerzy-wiersz--dwa-jeden--foto-img-element {
   border-radius: 50%;
 }
+.layout__fitness-kadra__cala-strona__trenerzy-wiersz img:hover {
+  transform: scale(1.3);
+}
 .layout__fitness-kadra__cala-strona__manager-wiersz {
   grid-row: r-1/r-2;
   grid-column: c-1/c-4;
