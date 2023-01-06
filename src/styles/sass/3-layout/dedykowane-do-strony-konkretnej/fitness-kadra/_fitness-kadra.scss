@@ -55,19 +55,37 @@ $font-weight: bold;
         [r-3] minmax($wysokosc-min-wiersza-all, $wysokosc-max-wiersza-all)
         [r-4];
       grid-template-columns:
-        [c-1] minmax($wysokosc-min-wiersza-all, $wysokosc-max-wiersza-all)
-        [c-2] minmax($wysokosc-min-wiersza-all, $wysokosc-max-wiersza-all)
-        [c-3] minmax($wysokosc-min-wiersza-all, $wysokosc-max-wiersza-all)
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
         [c-4];
 
       // margin: 2rem;
+      &__shape-lisc-manager {
+        grid-row: r-1 / r-2;
+        grid-column: c-1 / c-4;
 
-      &__shape-lisc {
+        margin-left: 5%;
+        // margin-right: 10%;
+        // margin-top: 10%;
+        // margin-bottom: 5%;
+
+        // margin-top: 50%;
+        // transform: translateX(1.15rem);
+      }
+      &__shape-lisc-recepcja {
+        grid-row: r-2 / r-3;
+        grid-column: c-1 / c-4;
+
+        margin-top: -10%;
+        // transform: translateX(1.15rem);
+      }
+      &__shape-lisc-trenerzy {
         grid-row: r-3 / r-4;
         grid-column: c-1 / c-4;
 
-        // margin-top: 50%;
-        transform: translateX(1.15rem);
+        // margin-bottom: 10%;
+        // transform: translateX(1.15rem);
       }
       &__tytulowy-opis-strony {
         grid-row: r-0 / r-1;
@@ -98,7 +116,7 @@ $font-weight: bold;
         // background-color: #40afff;
         margin-left: 2rem;
         margin-right: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 10rem;
         &--zero-napis {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-2;
@@ -112,7 +130,7 @@ $font-weight: bold;
           font-weight: $font-weight;
           margin-left: 0%;
           // margin-right: 10%;
-          // margin-top: 5%;
+          margin-top: 20%;
           // margin-bottom: 5%;
 
           &--foto-div-parent-element {
@@ -134,7 +152,7 @@ $font-weight: bold;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
           margin-left: 130%;
           // margin-right: 10%;
-          margin-top: 20%;
+          margin-top: 65%;
           margin-bottom: 0%;
 
           &--foto-div-parent-element {
@@ -153,9 +171,9 @@ $font-weight: bold;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
 
           // margin-left: 110%;
-          margin-right: -53%;
-          // margin-top: 0%;
-          margin-bottom: 5%;
+          margin-right: -55%;
+          margin-top: 35%;
+          margin-bottom: -15%;
           &--foto-div-parent-element {
             @include foto-container();
           }
@@ -225,7 +243,7 @@ $font-weight: bold;
 
           font-size: $font-size;
           font-weight: $font-weight;
-          // margin-left: 0%;
+          margin-left: 25%;
           // margin-right: 10%;
           margin-top: 30%;
           // margin-bottom: 5%;
@@ -300,7 +318,7 @@ $font-weight: bold;
           // background-color: #40ffb37a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
 
-          margin-left: 50%;
+          margin-left: 65%;
           margin-right: 0%;
           margin-top: 130%;
           // margin-bottom: 5%;
@@ -340,9 +358,9 @@ $font-weight: bold;
 
           // background-color: #9c40ff7a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          margin-left: 90%;
+          margin-left: 100%;
           // margin-right: 120%;
-          margin-top: -20%;
+          margin-top: 0%;
           // margin-bottom: 5%;
           &--foto-div-parent-element {
             @include foto-container();
@@ -466,7 +484,7 @@ $font-weight: bold;
 
           // background-color: #9c40ff7a;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          margin-left: 50%;
+          margin-left: 55%;
           // margin-right: 120%;
           margin-top: 70%;
           margin-bottom: 0%;
@@ -648,7 +666,7 @@ $font-weight: bold;
           [c-4];
         margin-left: 2rem;
         margin-right: 2rem;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
 
         // background-color: #ff40bf;
         &--jeden {
@@ -658,9 +676,12 @@ $font-weight: bold;
           // height: 100%;
           // width: 100%;
 
-          background-color: #fd99db;
+          // background-color: #fd99db;
           @include wysrodkowanie-i-zmniejszenie-dzieci();
-          margin-right: 0;
+          // margin-top: 0;
+          margin-left: 20%;
+          // margin-right: 2rem;
+          margin-bottom: 3%;
 
           &--foto-div-parent-element {
             @include foto-container();

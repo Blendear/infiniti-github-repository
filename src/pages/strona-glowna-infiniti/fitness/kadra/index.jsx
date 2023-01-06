@@ -21,13 +21,31 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import { kadraDataArray } from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/kadraData";
 import Image from "next/image";
 import SVGShapeTrenerzy from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/shape-lisc";
+import SVGShapeRecepcja from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/shape-lisc-recepcja";
+import SVGShapeManager from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/shape-lisc-manager";
 
 const Kadra = () => {
   return (
     <div>
       <div className={styles["layout__fitness-kadra__cala-strona"]}>
         <div
-          className={styles["layout__fitness-kadra__cala-strona__shape-lisc"]}
+          className={
+            styles["layout__fitness-kadra__cala-strona__shape-lisc-manager"]
+          }
+        >
+          <SVGShapeManager />
+        </div>
+        <div
+          className={
+            styles["layout__fitness-kadra__cala-strona__shape-lisc-recepcja"]
+          }
+        >
+          <SVGShapeRecepcja />
+        </div>
+        <div
+          className={
+            styles["layout__fitness-kadra__cala-strona__shape-lisc-trenerzy"]
+          }
         >
           <SVGShapeTrenerzy />
         </div>
@@ -37,7 +55,7 @@ const Kadra = () => {
             styles["layout__fitness-kadra__cala-strona__tytulowy-opis-strony"]
           }
         >
-          ONI POMAGAJA NAM ROSNĄĆ
+          TO ONI POMAGAJA NAM ROSNĄĆ
         </div>
         <div
           className={
