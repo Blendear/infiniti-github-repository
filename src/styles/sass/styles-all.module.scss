@@ -3,16 +3,11 @@
 @use "./1-base/base";
 @use "./1-base/helpers";
 
-@use "./2-components/design-patterns/gallery-carousel/dp-carousel";
-@use "./2-components/dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/carousel-foty-infiniti/CarouselFotyINFINITI";
-@use "./2-components/dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/carousel-poziomy/CarouselPoziomy";
+@use "./2-components/strona-glowna-infiniti/_/cala-strona-poza-carouselami";
+@use "./2-components/strona-glowna-infiniti/_/carouselFotyINFINITI";
+@use "./2-components/strona-glowna-infiniti/_/carouselPoziomy";
 
-@use "./2-components/accordiony";
-@use "./2-components/animation-slidein";
-@use "./2-components/image";
-@use "./2-components/test-scss";
-
-@use "./3-layout/dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/strona-glowna-infiniti";
-@use "./3-layout/dedykowane-do-strony-konkretnej/fitness-kadra/fitness-kadra";
-@use "./3-layout/x-stare/a-header-footer";
-@use "./3-layout/x-stare/strona-glowna";
+@use "./3-layout/_layout-i-wrappers/footer";
+@use "./3-layout/_layout-i-wrappers/navbar";
+@use "./3-layout/strona-glowna-infiniti/_/strona-glowna-infiniti";
+@use "./3-layout/strona-glowna-infiniti/fitness/kadra/fitness-kadra";

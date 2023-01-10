@@ -18,11 +18,11 @@ import styles from "src/styles/sass/styles-all.module.scss";
 ////
 ////       A.1. Baza danych importowana
 // //
-import { kadraDataArray } from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/kadraData";
+import { kadraDataArray } from "../../../../components/strona-glowna/fitness/kadra/0-A-kadraData";
 import Image from "next/image";
-import SVGShapeTrenerzy from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/shape-lisc";
-import SVGShapeRecepcja from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/shape-lisc-recepcja";
-import SVGShapeManager from "../../../../components/dedykowane-do-strony-konkretnej/fitness-kadra/shape-lisc-manager";
+import SVGShapeTrenerzy from "../../../../components/strona-glowna/fitness/kadra/0-B-shape-lisc";
+import SVGShapeRecepcja from "../../../../components/strona-glowna/fitness/kadra/0-B-shape-lisc-recepcja";
+import SVGShapeManager from "../../../../components/strona-glowna/fitness/kadra/0-B-shape-lisc-manager";
 
 const Kadra = () => {
   return (

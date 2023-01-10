@@ -20,13 +20,13 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 
-import CarouselFotyINFINITI from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/2-carousel-foty-infiniti/CarouselFotyINFINITI";
-import CarouselPoziomy from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/4-carpusel-poziomy/CarouselPoziomy";
+import CarouselFotyINFINITI from "../../components/strona-glowna/_/2-carousel-foty-infiniti/CarouselFotyINFINITI";
+import CarouselPoziomy from "../../components/strona-glowna/_/4-carpusel-poziomy/CarouselPoziomy";
 
-import SVGShapeBaner from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/1-baner-startowy/banerowe";
-import SVGShapeOpisu from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/3-opis-i-rysunek/nad-poziomy";
-import SVGShapeNadGodzinami from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/4-carpusel-poziomy/nad-godziny-otwarcia";
-import SVGShapeWalczmy from "../../components/dedykowane-do-strony-konkretnej/.strona-glowna-infiniti/6-walczmy-razem/walczmy-razem";
+import SVGShapeBaner from "../../components/strona-glowna/_/1-baner-startowy/banerowe";
+import SVGShapeOpisu from "../../components/strona-glowna/_/3-opis-i-rysunek/nad-poziomy";
+import SVGShapeNadGodzinami from "../../components/strona-glowna/_/4-carpusel-poziomy/nad-godziny-otwarcia";
+import SVGShapeWalczmy from "../../components/strona-glowna/_/6-walczmy-razem/walczmy-razem";
 
 import Image from "next/image";
 
