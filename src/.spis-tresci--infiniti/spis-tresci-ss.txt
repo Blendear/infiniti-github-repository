@@ -1,0 +1,49 @@
+//~~ 0. Podręczne info - gdzie zawsze znajdę nawigację i kontakt,, gdziekolwiek będę?
+
+        ) src/components/dedykowane-do-strony-
+        konkretnej/.0-layout-i-wrappers/layout.jsx
+
+
+
+//      0.1.  Navigacja - Na co dzieli się INFINITI, na jakie usługi, kadrę, cenniki, kontakt, fukjconalnosci?
+               
+                ) src/components/dedykowane-do-strony-
+                konkretnej/.0-layout-i-wrappers/navbar
+
+
+
+//      0.2.  Kontakt & lokalizacja - żeby skontaktować 
+        się / podjchać łatwo?
+
+                ) src/components/dedykowane-do-strony-
+                konkretnej/.0-layout-i-wrappers/footer
+
+
+
+//~~ 1. WTF is INFINITI - i co tam znajdę, wizualnie I treściwie?
+
+        ) src/pages/strona-glowna/index
+
+
+
+        1.0.  Dołączyć - Jak do was mogę? 
+
+                ) src/pages/strona-glowna/dolacz-do-nas/
+
+
+
+        1.1.  Medical - Co wchodzi w jego skład, usługi, kadrę etc.?
+
+                ) src/pages/strona-glowna/medical/   (TO TYLKO FOLDER GRUPUJĄCY)
+
+
+
+        1.2.  Fitness - Co wchodzi w jego skład, usługi, kadrę etc.?
+
+                ) src/pages/strona-glowna/fitness/   (TO TYLKO FOLDER GRUPUJĄCY)
+
+
+
+        1.3.  Skrót - Detal fragmentu 2 historyjki
+
+                ) src/pages/nazwapodstrony2/index

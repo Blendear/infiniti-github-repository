@@ -1,14 +1,53 @@
-////
-////
-////~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
-////
-////       A.1. parent rozdział nr 1
-// //
-// //           A.1.1. child rozdział nr 1
-// //
-////~~ B.  Historyjka druga ...
-////
+//
+//~~ 0. "SUROWA Historyjka"
 
+//       Tekst tekst tekst
+//      ||
+//      Rozbijasz wstepnie \/
+//       0.1. Krok 1
+//
+//           0.1.1. Podkrok 1 kroku 1
+//
+//       0.2. ...
+
+//~~ 1.  Fragment Historyjki === CZYM rozwiązuję w tym rozdziale
+//
+//
+//       1.1. Krok 1
+//
+//
+//           1.1.1. Podkrok 1 kroku 1
+//
+//
+//       1.2. ...
+//
+//
+//~~ 2.  Fragment Historyjki === CZYM rozwiązuję w tym rozdziale
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+//
 // 1.A. Importujesz componenty       -    Z którego zbudujesz kod tej stornki. NIE piszesz tu całego oryginalnego kodu
 // 2. Containeruję                   -    Tworzę 1 <div> główny i 1 dla każdego fragmentu danej strony
 // 3. Style'uję containery           -    Po kolei copy pastujac classy z bliźniaczo nazwanego pliku CSS'owskiego
@@ -27,16 +66,51 @@ import Image from "next/image";
 
 const wydarzenia = [
   //braindead
-  { name: "maniaczenie solo", typ: "N-WI-S-DO", protip: "VIP a nie yolo graj" },
-  { name: "drzemusia", typ: "B-WI-S-DO", protip: "timer ustaw" },
-  { name: "ruchanie", typ: "B-WA-DU-DO", protip: "bardziej z biodra c:" },
-  //nakurwianie
-  //tworze
-  { name: "Wrld rozpisz", typ: "T-WI-S-DO", protip: "historyjka always" },
   {
-    name: "Wrld pokmiń skarpetusząc z tleefonem",
-    typ: "T-WI-DU-DZ",
-    protip: "powerbvanka weź",
+    name: "CHILL, fabularne/coop maniaczenie",
+    typ: "BR-WI/WA-SI-DO",
+    szczegoly: "",
+    jak: "...",
+  },
+  {
+    name: "drzemusia",
+    typ: "BR-WI/WA-SI-DO",
+    szczegoly: "",
+    jak: "timer ustaw",
+  },
+  {
+    name: "ruchanie",
+    typ: "BR-WA-DU-DO",
+    szczegoly: "",
+    jak: "bardziej z biodra c:",
+  },
+  {
+    name: "rowerek & oglądanie",
+    typ: "BR-WI/WA-DU-DO",
+    szczegoly: "",
+    jak: "...",
+  },
+  { name: "windowshopping", typ: "BR-WI/WA-DU-DZ", szczegoly: "", jak: "..." },
+
+  //nakurwianie
+  {
+    name: "SPOCONE competitive maniaczenie",
+    typ: "NA-WI/WA-SI-DO",
+    szczegoly: "",
+    jak: "Detale   :   Overwatch, DKO   |   Jak   :   VIP a nie yolo graj",
+  },
+  //tworze
+  {
+    name: "Desant EASY - Dokończ - watahą skarpetus/collab or wilkiem, stojąco/siedząco",
+    typ: "TW-WI/WA-SI-DO/DZ",
+    szczegoly: "Overwatch, DKO ",
+    jak: " Wrlaclavia or z kimś w domu, zamiast solo?",
+  },
+  {
+    name: "Desant HARD - Historyjkuję, Architekturuję - CHODZĄCO/stojąco/siedząco - watahą skarpetus/collab or wilkiem",
+    typ: "TW-WI-DU-DZ",
+    szczegoly: "Wrld - link /React - link/Cubase - link etc.",
+    jak: "Wrlaclavia or z kimś w domu, zamiast solo?   |   ",
   },
   //chlone
 ];
@@ -64,7 +138,9 @@ const PodstronaJeden = () => {
   const handlerPierwszyB = () => {
     setPierwszy("B");
   };
+
   // setter - inputu on change
+
   const handlerOnChangeInput = (event) => {
     setDwaString(event.target.value);
   };
@@ -185,7 +261,7 @@ const PodstronaJeden = () => {
             />
           </div> */}
           <div>nazwa : {czteryOstatecznyWynik.name} </div>
-          <div>protip : {czteryOstatecznyWynik.protip}</div>
+          <div>jak : {czteryOstatecznyWynik.jak}</div>
           <div>________________</div>
         </div>
         {/* 
@@ -193,6 +269,11 @@ const PodstronaJeden = () => {
         */}
         <div>skróty & znaczenie : </div>
         <ul>
+          <li>
+            {" "}
+            / DWIE+ opcje tak piszesz, jeśli np. coś może być solo or duo, or
+            domem or duporuchem zaleznie od chęci{" "}
+          </li>
           <li> - tym, myślnikiem, oddzielasz litery </li>
           <li> ___ </li>
           <li> 1. energia</li>

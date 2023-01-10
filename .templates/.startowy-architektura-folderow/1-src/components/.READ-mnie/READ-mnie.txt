@@ -4,7 +4,10 @@
 
 
 
-"Do strony konkretnej"    =   Części skłądowe każdej, po kolei, strony (dla czystości pliku docelowego, w któym tylko imporutje dane componenty)
+"Do strony konkretnej"    =   NIE KOPIUJ T E G O FOLDERU, TYLKO JEGO CHILD FOLDERY. Bo ich parent
+                        folderem będzie bezposrednio "COMPONENTS" Części skłądowe każdej, po kolei,
+                        strony (dla czystości pliku docelowego, w któym tylko imporutje dane
+                        componenty)
 
                         (!) Jeśli DO GRUPY stron należy jakaś strona (np. cennik i grafik należą do grupy "infiniti fitness", a "terapia i lekarze" do "infiniti medical"), to niech ma prefix danej grupy (np. "medical-terapia", "medical-lekarze"). Niwe tworz dodatkowych folderów. folder glowny ma oznaczac strone.
                         
@@ -15,6 +18,6 @@
                         (!) Folder NAWET gdy ma tylko 1 plik. Bo to skalowalny sposób, np. gdybym nagle potrzebowal rozbic plik na dwa.
 
 
-"Design-patterns"         =   Żeby kopiuj-wklej i rework powtarzalne wzorce, zamiast od zera pisać. Np. często używany "carousel" dla robienia galerii
+"Design-patterns"         =   NIE KOPIUJ FOLDERU. TO MA BYĆ TYLKO FOLDER W TEAMPLTES, Żeby kopiuj-wklej i rework powtarzalne wzorce, zamiast od zera pisać. Np. często używany "carousel" dla robienia galerii
 
                         (!) W TEMPLATES tylko jest ten folder. Zbędny w original "src". to tylko źródło do kopiowania

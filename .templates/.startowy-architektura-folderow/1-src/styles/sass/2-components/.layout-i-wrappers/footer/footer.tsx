@@ -1,3 +1,5 @@
+// //
+// //  Footer = Dopisek na dole mojej strony (np. kontakt, copyright etc.)
 ////
 ////
 ////~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
@@ -16,27 +18,22 @@
 // 3. Style'uję containery           -    Po kolei copy pastujac classy z bliźniaczo nazwanego pliku CSS'owskiego
 
 // import styles from "src/styles/sass/styles-all.module.scss";
-// import aComponent from "... Z COMPONENTOWEGO FOLDERU, czyli folderu obok "pages""
-// import bComponent from - I I -
+// import {aComponent, bComponent} from "...COMPONENT folder..."
 
-// TO JEST Strona glowna najczesciej & wchodiz sie na nia wlasnie slugiem takim,
-// jaknazwa fdolderu - tu np. "strona-glowna"
-//
-// const FragmentAkaComponentDanejStrony = () => {
+// const Footer = () => {
 //   return (
 //
-//          <div className={`${styles["layout__strona-glowna__cala-strona"]} ${styles["...wyglad..."]}`}>
+//          <div className={`${styles["layout__footer__caly-container"]} ${styles["...wyglad..."]}`}>
 //
-//                  <div className={`${styles["layout__strona-glowna__fragment-1-np-baner-startowy"]} ${styles["...wyglad..."]}`}>
+//                  <div className={`${styles["layout__footer__caly-container__fragment-1-np-kontaktowe-info"]} ${styles["...wyglad..."]}`}>
 //
 //                          <aComponent/>
 //                          ||
-//                          Kod oryginalny, bo bez sensu go już dalej dzielić na dalsze componenty
-//
+//                           Kod oryginalny, bo bez sensu go już dalej dzielić na dalsze componenty
 //
 //                  </div>
 //
-//                  <div className={`${styles["layout__strona-glowna__fragment-2-galeria-carousel"]} ${styles["...wyglad..."]}`}>
+//                  <div className={`${styles["layout__footer__caly-container__fragment-2-np-ikonki partnerów"]} ${styles["...wyglad..."]}`}>
 //
 //                          <bComponent/>
 //                          ||
@@ -47,4 +44,4 @@
 //
 //          )
 // };
-// export default FragmentAkaComponentDanejStrony;
+// export default Footer;

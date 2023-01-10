@@ -4,13 +4,22 @@
     // \/ layout, w który zostana włożone fragmenty calej strony
     &__cala-strona {
       display: grid;
-
+      // JEDEN grid. BEZ subgridow. stąd tylko wierszy/kolumnm
       grid-template-rows:
-        [r-1] minmax(5rem, max-content)
-        [r-2] minmax(5rem, max-content)
-        [r-3];
+        [r-1] minmax(5rem, 10rem)
+        [r-2] minmax(5rem, 10rem)
+        [r-3] minmax(5rem, 10rem)
+        [r-4] minmax(5rem, 10rem)
+        [r-5] minmax(5rem, 10rem)
+        [r-6] minmax(5rem, 10rem)
+        [r-7] minmax(5rem, 10rem)
+        [r-8] minmax(5rem, 10rem)
+        [r-9] minmax(5rem, 10rem)
+        [r-10] minmax(5rem, 10rem)
+        [r-11];
+
       grid-template-columns:
-        [c-1] 3fr
+        [c-1] 1fr
         [c-2] 1fr
         [c-3];
       // pierwszy fragment calej strony, z samej gory strony (ustaiwam zgodnie z ulozeniem na stornie, dla latwego szukania
