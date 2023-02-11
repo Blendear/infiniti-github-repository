@@ -73,6 +73,7 @@ const CarouselPoziomy = () => {
   //
   //           B.3.1. Gdy aktualny jest ostanią fotą - przejdź do pierwszej || gdy nie jest ostatnią - przejdź do next foty
 
+  //herehere11.02.2023 - bug ze za duzo mozna dawac next image i wywala no image
   const handlerNextFoto = () => {
     setAktualnyFoto(
       aktualnyFoto === lengthOfDataArray - 1 ? 0 : aktualnyFoto + 1

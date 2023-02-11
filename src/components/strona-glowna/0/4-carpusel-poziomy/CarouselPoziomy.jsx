@@ -264,6 +264,9 @@ const CarouselPoziomy = () => {
             }
           ></button>
           <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("strefa-maszyn-2");
+            }}
             className={
               styles[
                 "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--strefa-maszyn-2"
@@ -271,6 +274,19 @@ const CarouselPoziomy = () => {
             }
           ></button>
           <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("strefa-maszyn-3");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--strefa-maszyn-3"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("strefa-wolnych-ciezarow");
+            }}
             className={
               styles[
                 "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--strefa-wolnych-ciezarow"
@@ -278,6 +294,9 @@ const CarouselPoziomy = () => {
             }
           ></button>
           <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("cialo-i-umysl");
+            }}
             className={
               styles[
                 "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--cialo-i-umysl"
@@ -292,16 +311,12 @@ const CarouselPoziomy = () => {
             }
           ></button>
           <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("maty");
+            }}
             className={
               styles[
                 "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--maty"
-              ]
-            }
-          ></button>
-          <button
-            className={
-              styles[
-                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--strefa-maszyn-3"
               ]
             }
           ></button>

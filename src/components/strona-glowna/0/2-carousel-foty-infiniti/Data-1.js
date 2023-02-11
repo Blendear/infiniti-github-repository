@@ -35,8 +35,26 @@ import wolneCiezary2 from "../../../../../public/images/.dedykowane-do-strony-ko
 import wolneCiezary3 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/strefa-wolnych-ciezarow/wolne-ciezary-3.png";
 import wolneCiezary4 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/strefa-wolnych-ciezarow/wolne-ciezary-4.png";
 
+import boisko1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/boisko/boisko-1.png";
+import boisko2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/boisko/boisko-2.png";
+import boisko3 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/boisko/boisko-3.png";
+import boisko4 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/boisko/boisko-4.png";
+import boisko5 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/boisko/boisko-5.png";
+import boisko6 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/boisko/boisko-6.png";
+
+import maty1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/maty/maty-1.png";
+
+import cialoIUmysl1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/cialo-i-umysl/cialo-i-umysl-1.png";
+import cialoIUmysl2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/cialo-i-umysl/cialo-i-umysl-2.png";
+import cialoIUmysl3 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/cialo-i-umysl/cialo-i-umysl-3.png";
+import cialoIUmysl4 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/cialo-i-umysl/cialo-i-umysl-4.png";
+import cialoIUmysl5 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/cialo-i-umysl/cialo-i-umysl-5.png";
+import cialoIUmysl6 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/cialo-i-umysl/cialo-i-umysl-6.png";
+import cialoIUmysl7 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/cialo-i-umysl/cialo-i-umysl-7.png";
+
 import foto7 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/7.png";
 
+//hook1 - produktywniejszy sposob zaciagania i zczytywania danych bardizje automatyczniue?
 //
 //       A.2. Każdy object w arrayu dostaje "staticcly imported image" jako property "image"
 //
@@ -47,11 +65,19 @@ export const carouselData1 = [
   },
   {
     nazwaMiejsca: "maty",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [maty1],
   },
   {
-    nazwaMiejsca: "sala-czerwona",
-    fotyTegoMiejsca: [],
+    nazwaMiejsca: "cialo-i-umysl",
+    fotyTegoMiejsca: [
+      cialoIUmysl1,
+      cialoIUmysl2,
+      cialoIUmysl3,
+      cialoIUmysl4,
+      cialoIUmysl5,
+      cialoIUmysl6,
+      cialoIUmysl7,
+    ],
   },
   {
     nazwaMiejsca: "squash",
@@ -86,7 +112,7 @@ export const carouselData1 = [
     ],
   },
   {
-    nazwaMiejsca: "wolne-ciezary",
+    nazwaMiejsca: "strefa-wolnych-ciezarow",
     fotyTegoMiejsca: [
       wolneCiezary1,
       wolneCiezary2,
@@ -94,8 +120,10 @@ export const carouselData1 = [
       wolneCiezary4,
     ],
   },
+
   {
-    image: foto7,
+    nazwaMiejsca: "boisko",
+    fotyTegoMiejsca: [boisko1, boisko2, boisko3, boisko4, boisko5, boisko6],
   },
   {
     image: foto7,
