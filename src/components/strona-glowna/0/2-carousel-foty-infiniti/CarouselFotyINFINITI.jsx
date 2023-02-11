@@ -140,6 +140,7 @@ const CarouselPoziomy = () => {
                     // height={300}
                     layout="fill"
                     objectFit="contain"
+                    quality={20}
                   />
                 )}
               </div>
@@ -168,6 +169,7 @@ const CarouselPoziomy = () => {
                     // height={300}
                     layout="fill"
                     objectFit="contain"
+                    quality={20}
                   />
                 )}
               </div>
@@ -200,6 +202,7 @@ const CarouselPoziomy = () => {
                     // height={300}
                     layout="fill"
                     objectFit="contain"
+                    quality={20}
                   />
                 )}
               </div>
@@ -232,6 +235,7 @@ const CarouselPoziomy = () => {
                     // height={300}
                     layout="fill"
                     objectFit="contain"
+                    quality={20}
                   />
                 )}
               </div>

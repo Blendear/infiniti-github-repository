@@ -55,6 +55,8 @@ import cialoIUmysl7 from "../../../../../public/images/.dedykowane-do-strony-kon
 import foto7 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/7.png";
 
 //hook1 - produktywniejszy sposob zaciagania i zczytywania danych bardizje automatyczniue?
+//.
+//TAK - PO PROSTU KAŻDE MIEJSCE === NOWY FOLDER, ZAMIAST NOWY OBJECT PROPERY. wtedy wystarczy będzie zrobić ... w sumie nie wiem co. To jest wyjscie?
 //
 //       A.2. Każdy object w arrayu dostaje "staticcly imported image" jako property "image"
 //
