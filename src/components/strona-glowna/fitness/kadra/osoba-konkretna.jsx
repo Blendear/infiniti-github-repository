@@ -22,7 +22,7 @@ const OsobaKonkretna = (props) => {
 
   const socialeTejOsoby = [];
   for (let socialKonkretny in props.daneOOsobie.socialMediaLinks) {
-    // console.log("wartosc to : ", index);
+    // console.log("sociale", props.daneOOsobie.socialMediaLinks);
     switch (socialKonkretny) {
       case "facebook":
         socialeTejOsoby.push(
@@ -43,14 +43,21 @@ const OsobaKonkretna = (props) => {
         );
         break;
       case "email":
-        socialeTejOsoby.push(
-          <Link href="/" key={socialKonkretny}>
-            <a>
-              {/* //hook2 i sizing of react-icons in rems */}
-              <TfiEmail size="2rem" color="#088b9a" />
-            </a>
-          </Link>
-        );
+        console.log("email-ccc", props.daneOOsobie.socialMediaLinks.email),
+          socialeTejOsoby.push(
+            // <Link
+            //   href={``}
+            //   key={socialKonkretny}
+            // >
+            //   <a>
+            //     {/* //hook2 i sizing of react-icons in rems */}
+            //     <TfiEmail size="2rem" color="#088b9a" />
+            //   </a>
+            // </Link>
+
+            <TfiEmail size="2rem" color="#088b9a" />
+          );
+        socialeTejOsoby.push(<p>{props.daneOOsobie.socialMediaLinks.email}</p>);
         break;
       default:
         break;
@@ -89,6 +96,7 @@ const OsobaKonkretna = (props) => {
           // width={100}
           layout="fill"
           objectFit="contain"
+          quality={50}
         />
       </div>
       <div

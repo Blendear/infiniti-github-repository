@@ -223,6 +223,18 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 background-color: white;
 
                 &--svg-konkretny {
+                  // align-self: center;
+                  // background-color: green;
+                  display: grid;
+                  grid-auto-flow: column;
+                  // align-content: center;
+                  gap: 0.5rem;
+
+                  & p {
+                    align-self: center;
+                    font-size: 1.1rem;
+                    color: #088b9a;
+                  }
                 }
               }
             }

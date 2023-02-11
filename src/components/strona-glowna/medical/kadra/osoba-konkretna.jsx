@@ -13,17 +13,17 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 const OsobaKonkretna = (props) => {
-  console.log(props.daneOOsobie.fotoPathKoncowka);
+  // console.log(props.daneOOsobie.fotoPathKoncowka);
 
   const socialeTejOsoby = [];
   for (let index in props.daneOOsobie.socialMediaLinks) {
-    // console.log("wartosc to : ", index);
     socialeTejOsoby.push(
-      <Link href="/" key={index}>
+      <Link href={`/${props.daneOOsobie.socialMediaLinks}`} key={index}>
         <a>{index}</a>
       </Link>
     );
   }
+
   // const x = props.daneOOsobie.socialMediaLinks.map(
   //   (dane, index) => (
   //     <Link href="/" key={index}>
@@ -57,6 +57,7 @@ const OsobaKonkretna = (props) => {
           // width={100}
           layout="fill"
           objectFit="contain"
+          quality={20}
         />
       </div>
       <div

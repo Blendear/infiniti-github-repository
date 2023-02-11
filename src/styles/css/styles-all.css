@@ -608,6 +608,17 @@
   column-gap: 2rem;
   background-color: white;
 }
+.layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+}
+.layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny p {
+  align-self: center;
+  font-size: 1.1rem;
+  color: #088b9a;
+}
+
 .layout__infiniti-do-pobrania__cala-strona {
   position: realtive;
   display: grid;

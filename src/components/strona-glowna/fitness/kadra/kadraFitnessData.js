@@ -16,7 +16,7 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Opiekun Recepcji",
       fotoPathKoncowka: "bator-monika",
-      socialMediaLinks: { email: "info@infiniti-fit.pl" },
+      socialMediaLinks: { email: "info@infiniti-fit.pl", inst: "xxx" },
     },
     {
       nazwisko: "Czerska",
@@ -52,6 +52,7 @@ export const kadraFitnessDataArray = {
       fotoPathKoncowka: "bizon-adam",
       socialMediaLinks: {
         facebook: "https://www.facebook.com/profile.php?id=100057168981507",
+        instagram: "/",
       },
     },
     {
