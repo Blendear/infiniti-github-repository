@@ -1,0 +1,20 @@
+
+
+)   ArtDirectionPokazanyNaStronieGownej   -   Opis desantu, w potrzebie
+
+            Deadline   :    dd.mm.rrrr
+
+
+
+)   DesantB   -   Opis desantu, w potrzebie
+
+            Deadline   :    dd.mm.rrrr
+
+
+
+)   DesantC   -   Opis desantu, w potrzebie
+
+            Deadline   :    dd.mm.rrrr
+
+
+S        

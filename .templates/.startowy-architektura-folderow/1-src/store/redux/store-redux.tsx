@@ -8,6 +8,9 @@
 //
 //      1.1. Initial state'y
 //
+//
+//      1.2.a. Menu I Navbar Slice
+//
 //      1.2. Sumy Kalorii slice
 //
 //      1.3. Authentication slice
@@ -25,6 +28,10 @@ import { createSlice, configureStore, PayloadAction } from "@reduxjs/toolkit";
 //
 //      0.1. Initial state'y
 //
+interface typeOfMenuINavbarState {
+  menuIsOpen: boolean;
+  // maxDziennieKalorie: number;
+}
 
 interface typeOfSumyKaloriiState {
   aktualnieKalorie: number;
@@ -39,14 +46,35 @@ interface typeOfAuthState {
 //      1.1. Initial state'y
 //
 
+const initialMenuINavbarState: typeOfMenuINavbarState = {
+  menuIsOpen: false,
+};
+
 const initialSumyKaloriiState: typeOfSumyKaloriiState = {
   aktualnieKalorie: 0,
   maxDziennieKalorie: 1700,
 };
 
 const initialAuthState: typeOfAuthState = { isAuthenticated: false };
-
 //
+//      1.2.a. Menu I Navbar Slice
+//
+const menuINavbarSlice = createSlice({
+  name: "menuINavbarSlice",
+  initialState: initialMenuINavbarState,
+  reducers: {
+    //  hook0--POWTÓRZWNIOSKI - action musi być konkretnego typu. Tu podajemy precyzyjny object "{ dodamTyleKalorii: number }" akurat.
+    ustawWidocznoscMenu(
+      state,
+      action: PayloadAction<{ toggleWidocznoscMenu: boolean }>
+    ) {
+      state.menuIsOpen === action.payload.toggleWidocznoscMenu;
+    },
+    consoleLogTest(state) {
+      console.log("Odpaliłem dispatch, reducer zadziałał");
+    },
+  },
+});
 //      1.2. Sumy Kalorii slice
 //
 const sumyKaloriiSlice = createSlice({
@@ -88,6 +116,7 @@ const authSlice = createSlice({
 
 const store = configureStore({
   reducer: {
+    menuINavbarReducer: menuINavbarSlice.reducer,
     sumyKaloriiReducer: sumyKaloriiSlice.reducer,
     authReducer: authSlice.reducer,
   },
@@ -101,7 +130,7 @@ export type AppDispatch = typeof store.dispatch;
 //
 //  3.  Action Packs - Redux Toolkit way
 //
-
+export const menuINavbarSliceActions = menuINavbarSlice.actions;
 export const sumyKaloriiSliceActions = sumyKaloriiSlice.actions;
 export const authSliceActions = authSlice.actions;
 

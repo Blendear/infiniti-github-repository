@@ -1,0 +1,133 @@
+$rozmiar-rowa: minmax(0rem, max-content);
+
+.navbar-gorny {
+  //   &__absolute-positioning {
+  //     // display: grid;
+
+  //     // grid-template-rows:
+  //     //   [r-1] $rozmiar-rowa
+  //     //   [r-2];
+
+  //     // grid-template-columns:
+  //     //   [c-0] 1fr
+  //     //   [c-1];
+
+  //     position: absolute;
+  //     height: 100%;
+  //   }
+  &__wrapper {
+    // position: relative;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  &__caly-container {
+    display: grid;
+
+    grid-template-rows:
+      [r-1] $rozmiar-rowa
+      [r-2];
+
+    grid-template-columns:
+      [c-0] 0.1fr
+      [c-1] 1fr
+      [c-2] 2fr
+      [c-3] 0.6fr
+      [c-4] 1fr
+      [c-5] 2fr
+      [c-6] 0.6fr
+      [c-7] 1fr
+      [c-8] 0.1fr
+      [c-0];
+
+    position: sticky;
+    top: 0;
+    // bottom: 0;
+    z-index: 100;
+
+    background-color: white;
+    box-shadow: 0 0 3vw 0.5vw #0000005b;
+    @mixin menu-elements {
+      align-self: center;
+      justify-self: center;
+      background-color: white;
+      border: none;
+
+      margin: 2vw 0.5vw 2vw 0.5vw;
+    }
+    @mixin wyglad-tekstu {
+      font-size: 3vw;
+      font-weight: bold;
+      color: #3b3b3b;
+
+      &:active {
+        color: #6c6992;
+        // transform: scale(1.1);
+      }
+
+      //   text-align: center;
+    }
+    &__btn-zaloguj {
+      &--svg {
+        grid-row: r-1 / r-2;
+        grid-column: c-1 / c-2;
+        @include menu-elements();
+        margin: 0.8vw 0 0 1vw;
+      }
+      &--tekst {
+        grid-row: r-1 / r-2;
+        grid-column: c-2 / c-3;
+        @include wyglad-tekstu();
+        @include menu-elements();
+      }
+    }
+    &__btn-zapisz {
+      &--svg {
+        grid-row: r-1 / r-2;
+        grid-column: c-4 / c-5;
+        @include menu-elements();
+        margin-top: 3vw;
+        color: #303030;
+      }
+      &--tekst {
+        grid-row: r-1 / r-2;
+        grid-column: c-5 / c-6;
+
+        @include wyglad-tekstu();
+        @include menu-elements();
+      }
+    }
+    &__btn-menu {
+      &--svg {
+        grid-row: r-1 / r-2;
+        grid-column: c-7 / c-8;
+        @include menu-elements();
+        margin: 1vw 3vw 0 0;
+      }
+    }
+    &__btn-menu-close-variant {
+      //hook1 -- dorób go, gdy menu jest otwarte
+    }
+    @mixin linia {
+      background-color: #3b3b3b;
+      width: 0.5vw;
+      aspect-ratio: 1/18;
+    }
+    &__linia-dzielaca {
+      &--1 {
+        grid-row: r-1 / r-2;
+        grid-column: c-3 / c-4;
+        @include menu-elements();
+        @include linia();
+      }
+      &--2 {
+        grid-row: r-1 / r-2;
+        grid-column: c-6 / c-7;
+        @include menu-elements();
+        @include linia();
+      }
+    }
+  }
+}

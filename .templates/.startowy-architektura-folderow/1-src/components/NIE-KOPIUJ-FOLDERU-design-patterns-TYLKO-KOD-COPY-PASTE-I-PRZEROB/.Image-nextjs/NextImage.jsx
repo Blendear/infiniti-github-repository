@@ -1,10 +1,10 @@
 {
   /* <div className={styles["layout__strona-glowna__opis-i-rysunek"]}>
-        /\ jemu daj "position:realtive"
+        /\ jemu daj "position:realtive" (or zbedne wystarczy \/?)
         <div
           className={styles["layout__strona-glowna__opis-i-rysunek__rysunek"]}
         >
-          /\ jemu przypisz classe
+          /\ jemu daj "position:realtive"   &   jemu przypisz classe
           <Image
             src={`/images/.design-pattern-placeholders/pietro1.jpg`}
             alt={`nie pyklo zdjecie`}

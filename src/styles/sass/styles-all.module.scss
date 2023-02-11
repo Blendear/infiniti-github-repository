@@ -1,13 +1,32 @@
 //trap1 - MUSISZ TU IMPORTOWAĆ file, żeby był w ogóle skompilowany. inaczej masz miliard fileów, któe nic nie robią.
 
+@use "./2-components/0-layout-i-wrappers/layout";
+@use "./2-components/0-layout-i-wrappers/navbar";
+@use "./2-components/0-layout-i-wrappers/footer";
 @use "./1-base/base";
 @use "./1-base/helpers";
 
-@use "./2-components/strona-glowna-infiniti/_/cala-strona-poza-carouselami";
-@use "./2-components/strona-glowna-infiniti/_/carouselFotyINFINITI";
-@use "./2-components/strona-glowna-infiniti/_/carouselPoziomy";
+@use "./2-components/strona-glowna-infiniti/0/cala-strona-poza-carouselami";
+@use "./2-components/strona-glowna-infiniti/0/carouselFotyINFINITI";
+@use "./2-components/wszechobecne-na-roznych-podstronach/menu-modal/menu-modal";
 
-@use "./3-layout/_layout-i-wrappers/footer";
-@use "./3-layout/_layout-i-wrappers/navbar";
-@use "./3-layout/strona-glowna-infiniti/_/strona-glowna-infiniti";
-@use "./3-layout/strona-glowna-infiniti/fitness/kadra/fitness-kadra";
+@use "./2-components/strona-glowna-infiniti/medical/kadra/medical-kadra.scss";
+@use "./2-components/strona-glowna-infiniti/medical/uslugi/medical-uslugi.scss";
+@use "./2-components/strona-glowna-infiniti/medical/cennik/medical-cennik.scss";
+
+@use "./2-components/strona-glowna-infiniti/fitness/cennik/fitness-cennik";
+@use "./2-components/strona-glowna-infiniti/fitness/grafik/fitness-grafik";
+@use "./2-components/strona-glowna-infiniti/fitness/kadra/fitness-kadra";
+
+@use "./2-components/strona-glowna-infiniti/infiniti/do-pobrania/infiniti-cennik";
+@use "./2-components/strona-glowna-infiniti/infiniti/kontakt/infiniti-kontakt";
+
+@use "./2-components//wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota";
+@use "./2-components/wszechobecne-na-roznych-podstronach/tytul-podstrony/tytul-podstrony";
+
+@use "./3-layout/strona-glowna-infiniti/0/strona-glowna-infiniti";
+// @use "./3-layout/strona-glowna-infiniti/fitness/kadra/fitness-kadra";
+
+// hook1--layout osobno i wizualny styl osobno? czy jednak 7-1
+//to scam i prosciej robic wszyskto jako "components"? przy
+// duzej appce pewnie 7-1 warte...

@@ -1,0 +1,1116 @@
+$rozmiar-rowa: minmax(0rem, max-content);
+$rozmiar-rowa-siatka-btn: 1fr;
+$rozmiar-column-siatka-btn: 1fr;
+.layout {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &__strona-glowna {
+    // \/ layout, w który zostana włożone "foty marketingowe i reszta podfragmnetó storny głównej
+    &__cala-strona {
+      position: relative;
+      display: grid;
+
+      grid-template-rows:
+      //
+
+        [r-1] $rozmiar-rowa
+        // [r-1_tlo] 15vw
+        [r-2] $rozmiar-rowa
+        [r-3] $rozmiar-rowa
+        [r-4] $rozmiar-rowa
+        [r-5] $rozmiar-rowa
+        [r-5_tlo] 15vw
+        [r-6] $rozmiar-rowa
+        // [r-6_tlo] 15vw
+        [r-7] $rozmiar-rowa
+        [r-7_tlo] 15vw
+        [r-8] $rozmiar-rowa
+        [r-9] $rozmiar-rowa
+        [r-10]
+        //
+;
+
+      grid-template-columns: 
+        //
+
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
+        [c-4] 1fr
+        [c-5] 1fr
+        [c-6] 1fr
+        [c-7] 1fr
+        [c-8] 1fr
+        [c-9] 1fr
+        [c-10] 1fr
+        [c-11] 1fr
+        [c-12]
+        //
+;
+      // grid-auto-flow: rows;
+      // Trap1 - COMPONENTY ( np. "fota w tle" || "tytuł podstrony") MAJĄ SWOJ SCSS W SWOIM DEDYKOWANUM PLIKU. bez sensu powielac kod np.
+      // dla foty w tle, ktora jest na kazdej stronie
+
+      &__0-startowe-logo-i-fota {
+        &--logo {
+          // hook1--dodaj logo i z-indexnij pod fote
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-12;
+          position: relative;
+
+          width: 35%;
+          aspect-ratio: 1.1/1;
+          align-self: center;
+          justify-self: center;
+        }
+        &--fota {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-12;
+          position: relative;
+
+          width: 100%;
+          aspect-ratio: 1.5/1;
+        }
+      }
+      &__0-nazwa-podstrony {
+        grid-row: r-3 / r-4;
+        grid-column: c-2 / c-11;
+      }
+      &__tlo-nad-co-ty-znajdziesz {
+        grid-row: r-1 / r-5_tlo;
+        grid-column: c-1 / c-12;
+
+        z-index: -100;
+
+        background: linear-gradient(
+          -45deg,
+          rgb(229, 200, 255) 0%,
+          rgb(245, 245, 255) 50%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
+      &__kup-karnet-button {
+        grid-row: r-2 / r-3;
+        grid-column: c-5 / c-8;
+
+        width: 12rem;
+        aspect-ratio: 5/1.8;
+
+        margin: 5vw 0 3vw 0;
+        justify-content: center;
+        justify-self: center;
+        align-content: center;
+        align-self: center;
+
+        border: none;
+        background: linear-gradient(
+          222deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(162, 44, 255, 1) 100%
+        );
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 0 0.3rem #000000;
+        box-shadow: 0 0 1vw 0.2vw #3f00455b;
+
+        &:active {
+          // font-weight: 1;
+          background: linear-gradient(
+            222deg,
+            rgb(17, 146, 148) 0%,
+            rgb(129, 33, 202) 100%
+          );
+        }
+      }
+      &__tytul {
+        grid-row: r-3 / r-4;
+        grid-column: c-2 / c-11;
+        position: relative;
+
+        display: grid;
+        grid-template-rows:
+          [r-1] minmax(0rem, max-content)
+          [r-2];
+
+        grid-template-columns:
+          [c-1] 1fr
+          [c-2];
+        align-content: center;
+
+        width: 100%;
+        &--svg {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-2;
+        }
+        &--tekst {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-2;
+          margin: 2% 0 0 0;
+          // align-self: center;
+          justify-self: center;
+          font-size: 3.8vw;
+          //hook1 - jak tworzyc svg, zeby nie pierodlic sie z ustawianiem elemntow w środku nich etc.? dzielic juena fragmenty?
+        }
+      }
+      &__fota-klubu {
+        grid-row: r-4 / r-5;
+        grid-column: c-2 / c-11;
+
+        position: relative;
+
+        width: 100%;
+        aspect-ratio: 4/1.5;
+        margin: 3vw 0 8vw 0;
+      }
+      &__lista-co-tu-znajdziesz {
+        grid-row: r-5 / r-6;
+        grid-column: c-1 / c-12;
+
+        // background-color: rgb(151, 255, 255);
+        -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
+        box-shadow: 0px 0px 13px 5px rgba(107, 122, 255, 0.25);
+        border-radius: 7rem;
+        background-color: white;
+        display: grid;
+        grid-template-rows:
+          [r-1] minmax(5rem, max-content)
+          [r-2] minmax(5rem, max-content)
+          [r-3] minmax(5rem, max-content)
+          [r-4] minmax(5rem, max-content)
+          [r-5] minmax(5rem, max-content)
+          [r-6] minmax(5rem, max-content)
+          [r-7] minmax(5rem, max-content)
+          [r-8] minmax(5rem, max-content)
+          [r-9];
+        grid-template-columns:
+          [c-1] 1fr
+          [c-2] 1fr
+          [c-2];
+
+        &--item {
+          @mixin tekst-ikonki {
+            justify-self: center;
+            align-self: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+          @mixin SVG-lewy {
+            margin-left: 25%;
+            margin-right: 15%;
+          }
+          @mixin SVG-prawy {
+            margin-left: 15%;
+            margin-right: 25%;
+          }
+          &--svg-icon-1 {
+            grid-row: r-2 / r-3;
+            grid-column: c-1 / c-2;
+            @include SVG-lewy();
+          }
+          &--tekst-1 {
+            grid-row: r-3 / r-4;
+            grid-column: c-1 / c-2;
+            @include tekst-ikonki();
+          }
+          &--svg-icon-2 {
+            grid-row: r-2 / r-3;
+            grid-column: c-2 / c-3;
+            @include SVG-prawy();
+          }
+          &--tekst-2 {
+            grid-row: r-3 / r-4;
+            grid-column: c-2 / c-3;
+            @include tekst-ikonki();
+          }
+          &--svg-icon-3 {
+            grid-row: r-4 / r-5;
+            grid-column: c-1 / c-2;
+            @include SVG-lewy();
+          }
+          &--tekst-3 {
+            grid-row: r-5 / r-6;
+            grid-column: c-1 / c-2;
+            @include tekst-ikonki();
+          }
+          &--svg-icon-4 {
+            grid-row: r-4 / r-5;
+            grid-column: c-2 / c-3;
+            @include SVG-prawy();
+          }
+          &--tekst-4 {
+            grid-row: r-5 / r-6;
+            grid-column: c-2 / c-3;
+            @include tekst-ikonki();
+          }
+          &--svg-icon-5 {
+            grid-row: r-6 / r-7;
+            grid-column: c-1 / c-2;
+          }
+          &--tekst-5 {
+            grid-row: r-7 / r-8;
+            grid-column: c-1 / c-2;
+          }
+          &--svg-icon-6 {
+            grid-row: r-6 / r-7;
+            grid-column: c-2 / c-3;
+          }
+          &--tekst-6 {
+            grid-row: r-7 / r-8;
+            grid-column: c-2 / c-3;
+          }
+          &--svg-icon-7 {
+            grid-row: r-8 / r-9;
+            grid-column: c-1 / c-2;
+          }
+          &--tekst-7 {
+            grid-row: r-9 / r-10;
+            grid-column: c-1 / c-2;
+          }
+          &--svg-icon-8 {
+            grid-row: r-8 / r-9;
+            grid-column: c-2 / c-3;
+          }
+          &--tekst-8 {
+            grid-row: r-9 / r-10;
+            grid-column: c-2 / c-3;
+          }
+        }
+      }
+      &__tlo-nad-gallery {
+        grid-row: r-5_tlo / r-7_tlo;
+        grid-column: c-1 / c-12;
+
+        z-index: -100;
+
+        background: linear-gradient(
+          -60deg,
+          rgb(223, 215, 253) 0%,
+          rgb(255, 255, 255) 50%,
+          rgb(241, 237, 255) 100%
+        );
+        background-color: #000000;
+      }
+      &__carousel-gallery {
+        grid-row: r-6 / r-7;
+        grid-column: c-1 / c-12;
+
+        display: grid;
+        grid-template-rows:
+          [r-1] minmax(5rem, max-content)
+          [r-2] minmax(5rem, max-content)
+          [r-3] minmax(5rem, max-content)
+          [r-4] minmax(5rem, max-content)
+          [r-5];
+        grid-template-columns:
+          [c-1] 1fr
+          [c-2] 1fr
+          [c-3] 1fr
+          [c-4] 1fr
+          [c-5] 1fr
+          [c-6];
+
+        &--tekst-tytulowy {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-6;
+
+          align-self: center;
+          justify-self: center;
+          margin: 7% 0 7% 0;
+          font-size: 4vw;
+        }
+        &--pozycja-carousel {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-6;
+          position: relative;
+
+          display: grid;
+          grid-template-rows: [r-1] 60vw //hook1 dobierz wielkosc pod pelnoekranowe wyswietlanie
+            [r-2];
+          grid-template-columns:
+            [c-1] 1fr
+            [c-2] 1fr
+            [c-3] 1fr
+            [c-4];
+        }
+        // width: 100%;
+        // aspect-ratio: 1/10;
+        &--pozycja-fot {
+          // display: grid;
+
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-4;
+
+          // width: 100%;
+          // justify-self: center;
+          z-index: 0;
+          margin: 0 10vw 0 10vw;
+          // position: relative;
+          // box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.25);
+
+          // align-content: center;
+          // opacity: 0.5; //hook1 - jak z-index używać,  żeby strzalki byly przed fotą
+        }
+        @mixin arrow {
+          align-self: center;
+          margin: 0 4vw 0 4vw;
+
+          font-size: 12vw;
+          color: #0000002e;
+
+          cursor: pointer;
+          user-select: none;
+
+          z-index: 5;
+        }
+        &--pozycja-left-arrow {
+          // display: grid;
+          // background-color: aqua;
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-2;
+
+          justify-self: start;
+
+          @include arrow();
+        }
+        &--pozycja-right-arrow {
+          grid-row: r-1 / r-2;
+          grid-column: c-3 / c-4;
+
+          justify-self: end;
+
+          @include arrow();
+        }
+
+        //BEZ samego wygladu CAROUSEL, bo ono ma dedykowany css gdzie indziej, bo jest design patternem
+        &--nazwa-miejsca {
+          grid-row: r-3 / r-4;
+          grid-column: c-2 / c-5;
+
+          display: grid;
+          grid-template-rows:
+            [r-1] minmax(0rem, max-content)
+            [r-2];
+          grid-template-columns:
+            [c-1] 1fr
+            [c-2];
+
+          width: 100%;
+          aspect-ratio: 5/1;
+
+          margin: 8vw 0 4vw 0;
+
+          border: none;
+          background: white;
+          color: rgb(71, 71, 71);
+          font-weight: bold;
+          // text-align: center;
+
+          // text-shadow: 0 0 0.3rem #000000;
+          box-shadow: 0px 0px 13px 0.5vw rgba(0, 0, 0, 0.25);
+          position: relative;
+          overflow: hidden;
+          &--tekst {
+            grid-row: r-1 / r-2;
+            grid-column: c-1 / c-2;
+            align-self: center;
+            // z-index: 0;
+          }
+          &--svg-nazwy {
+            grid-row: r-1 / r-2;
+            grid-column: c-1 / c-2;
+            // grid-row: r-3 / r-4;
+            // grid-column: c-2 / c-5;
+
+            // margin: 8vw 0 4vw 0;
+            // z-index: 5;
+          }
+        }
+
+        &--wiecej-button {
+          grid-row: r-4 / r-5;
+          grid-column: c-2 / c-5;
+
+          display: grid;
+          grid-template-rows:
+            [r-1] minmax(0rem, max-content)
+            [r-2];
+          grid-template-columns:
+            [c-1] 5fr
+            [c-2] 1fr
+            [c-3];
+
+          width: 100%;
+          aspect-ratio: 5/1;
+
+          margin: 4vw 0 8vw 0;
+
+          border: none;
+          background: #9d9bff;
+          background: -moz-linear-gradient(0deg, #9d9bff 0%, #d796ff 100%);
+          background: -webkit-linear-gradient(0deg, #9d9bff 0%, #d796ff 100%);
+          background: linear-gradient(0deg, #9d9bff 0%, #d796ff 100%);
+
+          color: white;
+          font-weight: bold;
+          text-shadow: 0 0 0.1rem #87138f;
+          box-shadow: 0px 0px 13px 0.5vw rgba(0, 0, 0, 0.25);
+          align-content: center;
+
+          &--tekst {
+            grid-row: r-1 / r-2;
+            grid-column: c-1 / c-2;
+
+            align-self: center;
+          }
+          &--svg-wiecej {
+            grid-row: r-1 / r-2;
+            grid-column: c-2 / c-3;
+
+            width: 60%;
+          }
+        }
+      }
+
+      &__carousel-poziomy {
+        grid-row: r-7 / r-8;
+        grid-column: c-1 / c-12;
+
+        display: grid;
+        grid-template-rows:
+          [r-1] minmax(5rem, max-content)
+          [r-2] minmax(5rem, max-content)
+          [r-3] minmax(5rem, max-content)
+          [r-4];
+        grid-template-columns:
+          [c-1] 4vw
+          [c-2] 1fr
+          [c-3] 1fr
+          [c-4] 1fr
+          [c-5] 1fr
+          [c-6] 4vw
+          [c-7];
+
+        position: relative;
+
+        -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
+        box-shadow: 0px 0px 13px 5px rgba(107, 122, 255, 0.25);
+        border-radius: 7rem;
+        background-color: white;
+
+        overflow: hidden;
+        // justify-content: center;
+        // align-items: center;
+        &--tekst-tytulowy {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-7;
+
+          font-size: 3.5vw;
+          text-align: center;
+          margin: 10vw 2vw 0 2vw;
+          // justify-self: center;
+          // align-self: center;
+        }
+        &--mapa {
+          &--container {
+            grid-row: r-2 / r-3;
+            grid-column: c-2 / c-6;
+
+            display: grid;
+            grid-template-rows:
+              [r-1] minmax(0rem, max-content)
+              [r-2];
+            grid-template-columns:
+              [c-1] 1fr
+              [c-2];
+
+            position: relative;
+            // width: 100%;
+            // height: 100%;
+            // aspect-ratio: 1.5/1; //hook1 dobierz aspect pod aspect screena z blendera
+
+            &--siatka-buttonow-container {
+              @mixin siatka {
+                grid-row: r-1 / r-11;
+                grid-column: c-1 / c-21;
+
+                display: grid;
+
+                grid-template-rows:
+                  [r-1] $rozmiar-rowa-siatka-btn
+                  [r-2] $rozmiar-rowa-siatka-btn
+                  [r-3] $rozmiar-rowa-siatka-btn
+                  [r-4] $rozmiar-rowa-siatka-btn
+                  [r-5] $rozmiar-rowa-siatka-btn
+                  [r-6] $rozmiar-rowa-siatka-btn
+                  [r-7] $rozmiar-rowa-siatka-btn
+                  [r-8] $rozmiar-rowa-siatka-btn
+                  [r-9] $rozmiar-rowa-siatka-btn
+                  [r-10] $rozmiar-rowa-siatka-btn
+                  [r-11];
+                grid-template-columns:
+                  [c-1] $rozmiar-column-siatka-btn
+                  [c-2] $rozmiar-column-siatka-btn
+                  [c-3] $rozmiar-column-siatka-btn
+                  [c-4] $rozmiar-column-siatka-btn
+                  [c-5] $rozmiar-column-siatka-btn
+                  [c-6] $rozmiar-column-siatka-btn
+                  [c-7] $rozmiar-column-siatka-btn
+                  [c-8] $rozmiar-column-siatka-btn
+                  [c-9] $rozmiar-column-siatka-btn
+                  [c-10] $rozmiar-column-siatka-btn
+                  [c-11] $rozmiar-column-siatka-btn
+                  [c-12] $rozmiar-column-siatka-btn
+                  [c-13] $rozmiar-column-siatka-btn
+                  [c-14] $rozmiar-column-siatka-btn
+                  [c-15] $rozmiar-column-siatka-btn
+                  [c-16] $rozmiar-column-siatka-btn
+                  [c-17] $rozmiar-column-siatka-btn
+                  [c-18] $rozmiar-column-siatka-btn
+                  [c-19] $rozmiar-column-siatka-btn
+                  [c-20] $rozmiar-column-siatka-btn
+                  [c-21];
+
+                position: relative;
+                width: 100%;
+                // height: 100%;
+                aspect-ratio: 1.8/1;
+                overflow: hidden;
+              }
+              @mixin btn-uniwersalne-ustawienia {
+                position: absolute;
+                z-index: 10;
+
+                background-color: #48c1fe76;
+                border: none;
+                // opacity: 0.01;
+
+                width: 100%;
+                height: 100%;
+
+                &:active {
+                  background-color: green;
+                }
+              }
+              &--minus-1 {
+                @include siatka();
+                &-- {
+                }
+              }
+              &--0 {
+                @include siatka();
+                &-- {
+                }
+              }
+
+              &--1 {
+                @include siatka();
+                &--squash {
+                  grid-row: r-3 / r-5;
+                  grid-column: c-14 / c-18;
+
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--chillera-utopia {
+                  // bedzie znaczek, nie napis
+                }
+                &--maty {
+                }
+
+                &--strefa-maszyn-1 {
+                  grid-row: r-3 / r-5;
+                  grid-column: c-8 / c-12;
+                  @include btn-uniwersalne-ustawienia();
+                  //przy czerownej
+                }
+                &--strefa-maszyn-2 {
+                  // przy wc
+                }
+                &--strefa-maszyn-3 {
+                  // przy oknach obok wolnych
+                }
+                &--strefa-wolnych-ciezarow {
+                }
+                &--sala-czerwona {
+                }
+                &--wc {
+                }
+                &--winda {
+                }
+              }
+              &--2 {
+                @include siatka();
+                &-- {
+                }
+              }
+            }
+            &--mapa {
+              grid-row: r-1 / r-2;
+              grid-column: c-1 / c-2;
+
+              position: relative;
+              width: 100%;
+              aspect-ratio: 1.8/1;
+
+              z-index: 5;
+            }
+          }
+          &--slide-active {
+            opacity: 1;
+            transition-duration: 1s;
+            transform: scale(1.08);
+          }
+          &--slide-none {
+            opacity: 0;
+            transition-duration: 1s ease;
+          }
+        }
+
+        &--buttony {
+          @mixin btn-poziomy {
+            grid-row: r-3 / r-4;
+            border: none;
+            margin: 0 1vw 0 1vw;
+            width: 15vw;
+            aspect-ratio: 1/1.6;
+            // padding-top: 1vw;
+            // align-self: center;
+            justify-self: center;
+            // text-align: ;
+            color: white;
+            font-size: 7vw;
+            font-weight: bold;
+
+            -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
+            box-shadow: 0px 0px 2vw 0.25vw rgba(0, 0, 0, 0.25);
+          }
+          &--minus-1 {
+            grid-column: c-2 / c-3;
+
+            background: #48c0fe;
+            background: -moz-linear-gradient(0deg, #48c0fe 0%, #a8fbfa 100%);
+            background: -webkit-linear-gradient(0deg, #48c0fe 0%, #a8fbfa 100%);
+            background: linear-gradient(0deg, #48c0fe 0%, #a8fbfa 100%);
+            //hook1 - tak webkitnij i backgroundij KAZDEGO gradienta
+            @include btn-poziomy();
+          }
+          &--0 {
+            grid-column: c-3 / c-4;
+
+            background: #5a87ff;
+            background: -moz-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
+            background: -webkit-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
+            background: linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
+
+            @include btn-poziomy();
+          }
+          &--1 {
+            grid-column: c-4 / c-5;
+
+            background: #8c51d7;
+            background: -moz-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+            background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+            background: linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+
+            @include btn-poziomy();
+          }
+          &--2 {
+            grid-column: c-5 / c-6;
+
+            background: #b260e0;
+            background: -moz-linear-gradient(0deg, #b260e0 0%, #eb7ffd 100%);
+            background: -webkit-linear-gradient(0deg, #b260e0 0%, #eb7ffd 100%);
+            background: linear-gradient(0deg, #b260e0 0%, #eb7ffd 100%);
+
+            @include btn-poziomy();
+          }
+        }
+      }
+      &__godziny-otwarcia {
+        grid-row: r-8 / r-9;
+        grid-column: c-1 / c-12;
+
+        position: relative;
+        display: grid;
+        grid-template-rows:
+          [r-1] minmax(0rem, max-content)
+          [r-2] minmax(0rem, max-content)
+          [r-3] minmax(0rem, max-content)
+          [r-4] minmax(0rem, max-content)
+          [r-5] minmax(0rem, max-content)
+          [r-6] minmax(0rem, max-content)
+          [r-7] minmax(0rem, max-content)
+          [r-8] minmax(0rem, max-content)
+          [r-9] minmax(0rem, max-content)
+          [r-10] minmax(0rem, max-content)
+          [r-11] minmax(0rem, max-content)
+          [r-12] minmax(0rem, max-content)
+          [r-13];
+        grid-template-columns:
+          [c-1] 1fr
+          [c-2] 1fr
+          [c-3] 1fr
+          [c-4] 1fr
+          [c-5] 1fr
+          [c-6] 1fr
+          [c-7] 1fr
+          [c-8] 1fr
+          [c-9] 1fr
+          [c-10];
+
+        padding: 5vw;
+        &--tekst-tytulowy {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-10;
+
+          margin: 5vw 0 0 0;
+          align-self: center;
+          justify-self: center;
+
+          font-size: 5vw;
+        }
+        &--podkreslnik {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-10;
+
+          width: 50vw;
+          aspect-ratio: 80/1;
+          margin: 0 0 5vw 0;
+
+          background-color: #b861bc;
+          align-self: start;
+          justify-self: center;
+        }
+        @mixin tytul-godzin-otwarcia {
+          font-size: 5vw;
+          margin: 3vw 0 0 0;
+        }
+        @mixin linia-dzielaca {
+          width: 20vw;
+          aspect-ratio: 60/1;
+          margin: 2vw 0 2vw 0;
+
+          background-color: #b861bc;
+          // align-self: start;
+          // justify-self: center;
+        }
+        &__klub {
+          @mixin grid-col-klub {
+            grid-column: c-1 / c-5;
+            align-self: center;
+            justify-self: center;
+            text-align: center;
+          }
+          &--obramowka {
+            &--gora {
+              grid-row: r-3 / r-10;
+              grid-column: c-1 / c-5;
+              align-self: start;
+            }
+            &--dol {
+              grid-row: r-3 / r-10;
+              grid-column: c-1 / c-5;
+              align-self: end;
+            }
+          }
+          &--tytul {
+            grid-row: r-3 / r-4;
+            @include grid-col-klub();
+
+            @include tytul-godzin-otwarcia();
+          }
+
+          &--linia-dzielaca {
+            &--1 {
+              grid-row: r-4 / r-5;
+              @include grid-col-klub();
+              @include linia-dzielaca();
+
+              width: 28vw;
+              aspect-ratio: 60/1;
+              // align-self: start;
+            }
+            &--2 {
+              grid-row: r-6 / r-7;
+              @include grid-col-klub();
+              @include linia-dzielaca();
+            }
+            &--3 {
+              grid-row: r-8 / r-9;
+              @include grid-col-klub();
+              @include linia-dzielaca();
+            }
+          }
+          @mixin font-godzin-klub {
+            font-size: 3.6vw;
+            line-height: 5vw;
+          }
+          &--rozpiska-godzinowa {
+            &--1 {
+              grid-row: r-5 / r-6;
+              @include grid-col-klub();
+              @include font-godzin-klub();
+            }
+            &--2 {
+              grid-row: r-7 / r-8;
+              @include grid-col-klub();
+              @include font-godzin-klub();
+            }
+            &--3 {
+              grid-row: r-9 / r-10;
+              @include grid-col-klub();
+              @include font-godzin-klub();
+              margin: 0 0 5vw 0;
+            }
+          }
+        }
+        &__sauna {
+          @mixin grid-col-sauna {
+            grid-column: c-6 / c-10;
+            align-self: center;
+            justify-self: center;
+            text-align: center;
+          }
+
+          &--obramowka {
+            &--gora {
+              grid-row: r-3 / r-10;
+              grid-column: c-6 / c-10;
+              align-self: start;
+            }
+            &--dol {
+              grid-row: r-3 / r-10;
+              grid-column: c-6 / c-10;
+              align-self: end;
+            }
+          }
+          &--tytul {
+            grid-row: r-3 / r-4;
+            @include grid-col-sauna();
+            @include tytul-godzin-otwarcia();
+          }
+          @mixin linia-sauna-podwojna {
+            width: 4vw;
+            aspect-ratio: 8/1;
+            align-self: center;
+            margin: 0 1vw 0 1vw;
+
+            background-color: #b861bc;
+          }
+          &--linia-dzielaca {
+            &--1 {
+              &--lewo {
+                grid-row: r-4 / r-5;
+                // @include grid-col-sauna();
+                grid-column: c-6 / c-7;
+                @include linia-sauna-podwojna();
+                justify-self: end;
+              }
+              &--prawo {
+                grid-row: r-4 / r-5;
+                // @include grid-col-sauna();
+                grid-column: c-9 / c-10;
+                @include linia-sauna-podwojna();
+                justify-self: start;
+              }
+              &--tekst {
+                grid-row: r-4 / r-5;
+                @include grid-col-sauna();
+                color: #b861bc;
+              }
+            }
+            &--2 {
+              &--lewo {
+                grid-row: r-6 / r-7;
+                // @include grid-col-sauna();
+                grid-column: c-6 / c-7;
+                @include linia-sauna-podwojna();
+                justify-self: end;
+              }
+              &--prawo {
+                grid-row: r-6 / r-7;
+                // @include grid-col-sauna();
+                grid-column: c-9 / c-10;
+                @include linia-sauna-podwojna();
+                justify-self: start;
+              }
+              &--tekst {
+                grid-row: r-6 / r-7;
+                @include grid-col-sauna();
+                color: #b861bc;
+              }
+            }
+            &--3 {
+              &--lewo {
+                grid-row: r-8 / r-9;
+                // @include grid-col-sauna();
+                grid-column: c-6 / c-7;
+                @include linia-sauna-podwojna();
+                justify-self: end;
+              }
+              &--prawo {
+                grid-row: r-8 / r-9;
+                // @include grid-col-sauna();
+                grid-column: c-9 / c-10;
+                @include linia-sauna-podwojna();
+                justify-self: start;
+              }
+              &--tekst {
+                grid-row: r-8 / r-9;
+                @include grid-col-sauna();
+                color: #b861bc;
+              }
+            }
+          }
+          @mixin margin-sauna-lewo {
+            margin: 0 1vw 0 3vw;
+          }
+          @mixin margin-sauna-prawo {
+            margin: 0 3vw 0 1vw;
+          }
+          @mixin font-godzin-sauna {
+            font-size: 2.7vw;
+            line-height: 4vw;
+          }
+          &--rozpiska-godzinowa {
+            &--1-a {
+              @include grid-col-sauna();
+              grid-row: r-5 / r-6;
+              grid-column: c-6 / c-8;
+              @include margin-sauna-lewo();
+              @include font-godzin-sauna();
+            }
+            &--1-b {
+              @include grid-col-sauna();
+              grid-row: r-5 / r-6;
+              grid-column: c-8 / c-10;
+              @include margin-sauna-prawo();
+              @include font-godzin-sauna();
+            }
+            &--2-a {
+              @include grid-col-sauna();
+              grid-row: r-7 / r-8;
+              grid-column: c-6 / c-8;
+              @include margin-sauna-lewo();
+              @include font-godzin-sauna();
+            }
+            &--2-b {
+              @include grid-col-sauna();
+              grid-row: r-7 / r-8;
+              grid-column: c-8 / c-10;
+              @include margin-sauna-prawo();
+              @include font-godzin-sauna();
+            }
+            &--3-a {
+              @include grid-col-sauna();
+              grid-row: r-9 / r-10;
+              grid-column: c-6 / c-8;
+              @include margin-sauna-lewo();
+              @include font-godzin-sauna();
+              align-self: start;
+              margin-top: 0.5vw;
+            }
+            &--3-b {
+              @include grid-col-sauna();
+              grid-row: r-9 / r-10;
+              grid-column: c-8 / c-10;
+              @include margin-sauna-prawo();
+              @include font-godzin-sauna();
+              align-self: start;
+              margin-top: 0.5vw;
+            }
+          }
+        }
+      }
+
+      &__partnerzy {
+        grid-row: r-9 / r-10;
+        grid-column: c-1 / c-12;
+
+        display: grid;
+        grid-template-rows:
+          [r-1] minmax(0rem, max-content)
+          [r-2] minmax(0rem, max-content)
+          [r-3] minmax(0rem, max-content)
+          [r-4];
+        grid-template-columns:
+          [c-1] 1fr
+          [c-2];
+
+        -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
+        box-shadow: 0px 0px 13px 5px rgba(107, 122, 255, 0.25);
+        border-top-left-radius: 7rem;
+        border-top-right-radius: 7rem;
+        background-color: white;
+
+        &--tytul-tekst {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-2;
+          margin: 7vw 0 0 0;
+
+          font-size: 5vw;
+          justify-self: center;
+        }
+        &--tytul-linia {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-2;
+
+          width: 32vw;
+          aspect-ratio: 40/1;
+          margin: 0vw 0 5vw 0;
+          justify-self: center;
+          background-color: #b861bc;
+        }
+        &--carousel {
+          grid-row: r-3 / r-4;
+          grid-column: c-1 / c-2;
+
+          display: grid;
+          grid-template-rows:
+            [r-1] minmax(0rem, max-content)
+            [r-2];
+          grid-template-columns:
+            [c-1] 1fr
+            [c-2] 1fr
+            [c-3] 1fr
+            [c-4];
+
+          // justify-self: center;
+          background-color: rgb(255, 255, 255);
+
+          width: 100%;
+          aspect-ratio: 4.5/1;
+
+          @mixin fota-partnerzy {
+            width: 20vw;
+            aspect-ratio: 2/1;
+            opacity: 0.3;
+            position: relative;
+          }
+          &--fota-1 {
+            grid-row: r-1 / r-2;
+            grid-column: c-1 / c-2;
+
+            @include fota-partnerzy();
+          }
+          &--fota-2 {
+            grid-row: r-1 / r-2;
+            grid-column: c-2 / c-3;
+
+            @include fota-partnerzy();
+          }
+          &--fota-3 {
+            grid-row: r-1 / r-2;
+            grid-column: c-3 / c-4;
+
+            @include fota-partnerzy();
+          }
+        }
+
+        //BEZ PARTNERZY carousel, bo bedzie design pattern???
+      }
+    }
+  }
+}
+
+//

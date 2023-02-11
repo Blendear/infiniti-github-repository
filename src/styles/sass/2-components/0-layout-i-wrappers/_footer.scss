@@ -1,0 +1,20 @@
+.footer {
+  &__caly-container {
+    display: grid;
+
+    grid-template-rows:
+      [r-1] minmax(0rem, max-content)
+      [r-2] minmax(0rem, max-content)
+      [r-3] minmax(0rem, max-content)
+      [r-4];
+
+    grid-template-columns:
+      [c-1] 1fr
+      [c-2] 1fr
+      [c-3] 1fr
+      [c-4] 1fr
+      [c-5];
+
+    background-color: aqua;
+  }
+}

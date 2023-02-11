@@ -10,6 +10,7 @@
     "compile:sass": "sass --watch src/styles/sass/styles-all.module.scss src/styles/css/styles-all.css"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.18.1",
     "@reduxjs/toolkit": "^1.8.6",
     "@sendgrid/mail": "^7.7.0",
     "date-fns": "^2.29.3",
@@ -20,10 +21,13 @@
     "next": "12.3.1",
     "next-auth": "^4.13.0",
     "next-session": "^4.0.5",
+    "ol": "^7.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-google-maps": "^9.4.5",
     "react-howler": "^5.2.0",
     "react-icons": "^4.7.1",
+    "react-openlayers": "^0.3.0",
     "react-query": "^3.39.2",
     "react-redux": "^8.0.4",
     "react-router-dom": "^5.3.4",

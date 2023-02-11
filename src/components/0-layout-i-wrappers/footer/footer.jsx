@@ -18,26 +18,33 @@
 // 3. Style'uję containery           -    Po kolei copy pastujac classy z bliźniaczo nazwanego pliku CSS'owskiego
 
 import styles from "src/styles/sass/styles-all.module.scss";
+
+import { useAppSelector, useAppDispatch } from "../../../store/redux/hooks";
+
 // import {aComponent, bComponent} from "...COMPONENT folder..."
 
 const Footer = () => {
+  const reduxStateIsMenuOpen = useAppSelector(
+    (state) => state.menuINavbarReducer.menuIsOpen
+  );
+
   return (
     <div
-      className={`${styles["layout__footer__caly-container"]} ${styles["...wyglad..."]}`}
+      className={
+        reduxStateIsMenuOpen === false
+          ? styles["footer__caly-container"]
+          : styles["menu-modal__closed-variant"]
+      }
     >
-      <div
-        className={`${styles["layout__footer__caly-container__fragment-1-np-kontaktowe-info"]} ${styles["...wyglad..."]}`}
-      >
-        {/* <aComponent/> */}
-        FOOTER
-      </div>
-
-      <div
-        className={`${styles["layout__footer__caly-container__fragment-2-np-ikonki partnerów"]} ${styles["...wyglad..."]}`}
-      >
-        {/* <bComponent/> */}
-      </div>
+      <div className={styles["footer__caly-container__costam"]}>FOOTER</div>
     </div>
   );
 };
 export default Footer;
+
+//
+//
+// Dorób classy dla każdego elementu   &   przypisz je placeholderom przedstawiajacymi fragmnenty daneo fragmentu (np. strzalki, foty i obramowki galerii carousel fot miejsc)
+//
+//
+//

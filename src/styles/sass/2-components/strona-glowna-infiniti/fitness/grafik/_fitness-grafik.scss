@@ -1,0 +1,68 @@
+$rozmiar-rowa: minmax(0rem, max-content);
+
+.layout {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &__fitness-grafik {
+    // \/ layout, w który zostana włożone "foty marketingowe i reszta podfragmnetó storny głównej
+    &__cala-strona {
+      position: relative;
+      display: grid;
+
+      grid-template-rows:
+      //
+
+        [r-1] $rozmiar-rowa
+        [r-2] $rozmiar-rowa
+        [r-3] $rozmiar-rowa
+        [r-4] $rozmiar-rowa
+        [r-5];
+
+      grid-template-columns: 
+        //
+
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
+        [c-4] 1fr
+        [c-5] 1fr
+        [c-6] 1fr
+        [c-7] 1fr
+        [c-8] 1fr
+        [c-9] 1fr
+        [c-10] 1fr
+        [c-11] 1fr
+        [c-12]
+        //
+;
+      // grid-auto-flow: rows;
+      // Trap1 - COMPONENTY ( np. "fota w tle" || "tytuł podstrony") MAJĄ SWOJ SCSS W SWOIM DEDYKOWANUM PLIKU. bez sensu powielac kod np.
+      // dla foty w tle, ktora jest na kazdej stronie
+
+      &__0-startowe-logo-i-fota {
+        &--logo {
+          // hook1--dodaj logo i z-indexnij pod fote
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-12;
+          position: relative;
+
+          width: 35%;
+          aspect-ratio: 1.1/1;
+          align-self: center;
+          justify-self: center;
+        }
+        &--fota {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-12;
+          position: relative;
+
+          width: 100%;
+          aspect-ratio: 1.5/1;
+        }
+      }
+      &__0-nazwa-podstrony {
+        grid-row: r-3 / r-4;
+        grid-column: c-2 / c-11;
+      }
+    }
+  }
+}

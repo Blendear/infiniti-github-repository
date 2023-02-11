@@ -1,0 +1,196 @@
+$rozmiar-rowa: minmax(0rem, max-content);
+
+.layout {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &__medical-kadra {
+    // \/ layout, w który zostana włożone "foty marketingowe i reszta podfragmnetó storny głównej
+    &__cala-strona {
+      position: relative;
+      display: grid;
+
+      grid-template-rows:
+        [r-1] $rozmiar-rowa
+        [r-2] $rozmiar-rowa
+        [r-3] $rozmiar-rowa
+        [r-4] $rozmiar-rowa
+        [r-5];
+
+      grid-template-columns:
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
+        [c-4] 1fr
+        [c-5] 1fr
+        [c-6] 1fr
+        [c-7] 1fr
+        [c-8] 1fr
+        [c-9] 1fr
+        [c-10] 1fr
+        [c-11] 1fr
+        [c-12];
+
+      &__0-startowe-logo-i-fota {
+        &--logo {
+          // hook1--dodaj logo i z-indexnij pod fote
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-12;
+          position: relative;
+
+          width: 35%;
+          aspect-ratio: 1.1/1;
+          align-self: center;
+          justify-self: center;
+        }
+        &--fota {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-12;
+          position: relative;
+
+          width: 100%;
+          aspect-ratio: 1.5/1;
+        }
+      }
+      &__0-nazwa-podstrony {
+        grid-row: r-2 / r-3;
+        grid-column: c-2 / c-11;
+      }
+      &__lista-rol {
+        grid-row: r-3/ r-4;
+        grid-column: c-1 / c-12;
+        display: grid;
+
+        grid-template-rows:
+          [r-1] $rozmiar-rowa
+          [r-2];
+
+        grid-template-columns:
+          [c-1] 1fr
+          [c-2];
+
+        &__konkretna-rola-container {
+          display: grid;
+          grid-template-rows:
+            [r-1] $rozmiar-rowa
+            [r-empty] 3vw
+            [r-2] $rozmiar-rowa
+            [r-3] 3vw
+            [r-empty];
+
+          grid-template-columns:
+            [c-1] 1fr
+            [c-2] 5fr
+            [c-3];
+          grid-auto-flow: row;
+          &--tytul-ikona-i-klocek-gradientowy {
+            grid-row: r-1/ r-empty;
+            grid-column: c-1 / c-3;
+            z-index: 5;
+
+            background: #1f5c91;
+            background: -moz-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
+            background: -webkit-linear-gradient(
+              -45deg,
+              #1f5c91 0%,
+              #4ec5d1 100%
+            );
+            background: linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
+          }
+          &--tytul-nazwa {
+            grid-row: r-1/ r-empty;
+            grid-column: c-2 / c-3;
+            z-index: 10;
+
+            color: white;
+          }
+          &--linia-boczna {
+            grid-row: r-2/ r-3;
+            grid-column: c-1 / c-2;
+            z-index: 5;
+
+            width: 2vw;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+
+            background-color: rgb(112, 194, 219);
+          }
+          &__lista-osob-o-tej-roli-container {
+            grid-row: r-2/ r-3;
+            grid-column: c-2 / c-3;
+            z-index: 5;
+            &__konkretna-osoba-container {
+              display: grid;
+              grid-template-rows:
+                [r-0] 1.5rem //empty gora
+                [r-1] max-content
+                [r-2] max-content
+                [r-3] max-content
+                [r-4] max-content //empty gdol
+                [r-6];
+
+              grid-template-columns:
+                [c-1] 2fr
+                [c-2] 0.5fr
+                [c-3] 3fr
+                [c-4];
+              &--fota {
+                grid-row: r-1/ r-5;
+                grid-column: c-1 / c-2;
+
+                //hook1-- DUŻO PROSTSZY SPOSOB KONTROLI KSZTALTU image'u
+                position: relative;
+                overflow: hidden;
+                // border-radius: 90%;
+
+                // padding: 1vw 3vw 1vw 3vw;
+                // margin: 2vw 0 2vw 0;
+              }
+              &--imie-i-nazwisko {
+                grid-row: r-1/ r-2;
+                grid-column: c-3/ c-4;
+
+                // padding: 1vw 0 1vw 0;
+                // margin: 2vw 0 2vw 0;
+                font-size: clamp(1vw, 2rem, 5vw);
+              }
+              &--rola-dokladna {
+                grid-row: r-2/ r-3;
+                grid-column: c-3 / c-4;
+
+                font-size: clamp(1vw, 1.25rem, 5vw);
+              }
+
+              &--tresc-tekst {
+                grid-row: r-3/ r-4;
+                grid-column: c-3/ c-3;
+
+                // box-shadow: 0 0 1vw 0.2vw #3f00455b;
+              }
+              &--sociale {
+                grid-row: r-4/ r-5;
+                grid-column: c-3 / c-3;
+
+                display: grid;
+                grid-template-rows:
+                  [r-1] max-content
+                  [r-2];
+
+                grid-template-columns:
+                  [c-1] max-content
+                  [c-2];
+
+                grid-auto-flow: column;
+                column-gap: 2rem;
+
+                background-color: white;
+
+                &--svg-konkretny {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

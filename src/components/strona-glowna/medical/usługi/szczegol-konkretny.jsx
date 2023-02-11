@@ -1,0 +1,84 @@
+//
+//
+//~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
+//
+//       A.1. parent rozdział nr 1
+//
+//           A.1.1. child rozdział nr 1
+//
+//~~ B.  Historyjka druga ...
+//
+
+import styles from "src/styles/sass/styles-all.module.scss";
+
+const SzczegolKonkretny = () => {
+  return (
+    <div
+      className={
+        styles[
+          "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container"
+        ]
+      }
+    >
+      <div
+        className={
+          styles[
+            "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--klocek"
+          ]
+        }
+      >
+        {/* klocek */}
+      </div>
+      <div
+        className={
+          styles[
+            "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--svg"
+          ]
+        }
+      >
+        svg
+      </div>
+      <div
+        className={
+          styles[
+            "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tytul"
+          ]
+        }
+      >
+        tytul
+      </div>
+      <div
+        // className={
+        //   2 > 1 === true
+        //     ? styles[
+        //         "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo"
+        //       ]
+        //     : styles["menu-modal__closed-variant"]
+        // }
+
+        // ZBEDNE /\ skoro tlo nie powstanie, if no content?
+
+        className={
+          styles[
+            "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo"
+          ]
+        }
+      >
+        {/* tresc tlo */}
+      </div>
+      <div
+        className={
+          2 > 1 === true
+            ? styles[
+                "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tekst"
+              ]
+            : styles["menu-modal__closed-variant"]
+        }
+      >
+        tresc-tekst sdvfnbiqw4enqaoi4naiusdbvyaer sdvfnbiqw4enqaoi4naiusdbvyaer
+        sdvfnbiqw4enqaoi4naiusdbvyaer sdvfnbiqw4enqaoi4naiusdbvyaer
+      </div>
+    </div>
+  );
+};
+export default SzczegolKonkretny;

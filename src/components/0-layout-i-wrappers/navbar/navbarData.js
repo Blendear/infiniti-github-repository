@@ -5,7 +5,7 @@ import * as RiIcons from "react-icons/ri";
 
 export const navbarData = [
   {
-    title: "Domeczek",
+    title: "Zaloguj",
     path: "/strona-glowna-infiniti",
     icon: <AiIcons.AiFillHome />,
   },

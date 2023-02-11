@@ -1,0 +1,43 @@
+$rozmiar-rowa: minmax(0rem, max-content);
+
+.tytul-podstrony {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &__caly-container {
+    // \/ layout, w który zostana włożone "foty marketingowe i reszta podfragmnetó storny głównej
+    position: relative;
+    display: grid;
+
+    grid-template-rows:
+      [r-1] $rozmiar-rowa
+      [r-2];
+
+    grid-template-columns:
+      [c-1] 1fr
+      [c-2];
+
+    transform: scale(0.5);
+
+    &--svg {
+      grid-row: r-1 / r-2;
+      grid-column: c-1 / c-2;
+
+      position: absolute;
+      z-index: 0;
+    }
+    &--napis {
+      grid-row: r-1 / r-2;
+      grid-column: c-1 / c-2;
+
+      position: absolute;
+      z-index: 2;
+
+      justify-self: center;
+      align-self: center;
+
+      color: grey;
+      font-weight: bold;
+      font-size: clamp(5vw, 3.5rem, 20vw);
+      //   transform: scale(0.5);
+    }
+  }
+}

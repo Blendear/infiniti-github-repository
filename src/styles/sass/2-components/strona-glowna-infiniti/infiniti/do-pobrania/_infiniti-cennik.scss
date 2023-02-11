@@ -1,0 +1,167 @@
+//
+//
+//~~ A.  ...
+//
+//       A.1. __medical-do-pobrania__cala-strona
+//
+//           A.1.1. __0-startowe-logo-i-fota
+//
+//           A.1.2. __0-nazwa-podstrony
+//
+//           A.1.3. __tytuly-i-content-do-pobrania
+//
+//~~ B.  ...
+//
+
+.layout {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &__infiniti-do-pobrania {
+    // \/ layout, w który zostana włożone fragmenty calej strony
+    &__cala-strona {
+      position: realtive;
+      display: grid;
+
+      grid-template-rows:
+        // 
+          // __obraz_i_logo_tytulowe
+
+        [r-1] minmax(5rem, max-content)
+        [r-2]
+        // __nazwa-tytulowa-podstrony
+        minmax(5rem, max-content)
+        [r-3]
+        // __tytuly-i-content-do-pobrania
+        minmax(5rem, max-content)
+        [r-4] minmax(5rem, max-content)
+        [r-5] minmax(5rem, max-content)
+        [r-6]
+        //
+;
+
+      grid-template-columns: 
+          //
+
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
+        [c-4] 1fr
+        [c-5] 1fr
+        [c-6] 1fr
+        [c-7] 1fr
+        [c-8] 1fr
+        [c-9] 1fr
+        [c-10] 1fr
+        [c-11] 1fr
+        [c-12]
+        //
+;
+      grid-auto-flow: rows;
+      // Trap1 - COMPONENTY ( np. "fota w tle" || "tytuł podstrony") MAJĄ SWOJ SCSS W SWOIM DEDYKOWANUM PLIKU. bez sensu powielac kod np.
+      // dla foty w tle, ktora jest na kazdej stronie
+
+      &__0-startowe-logo-i-fota {
+        display: grid;
+        grid-row: r-1 / r-2;
+        grid-column: c-1 / c-12;
+      }
+      &__0-nazwa-podstrony {
+        display: grid;
+        grid-row: r-2 / r-3;
+        grid-column: c-5 / c-8;
+        // height: 2rem;
+        // position: relative;
+      }
+      &__tytuly-i-content-do-pobrania {
+        @mixin tytul-klocek {
+          // background-color: #530d457a;
+          justify-content: center;
+          justify-self: center;
+          align-content: center;
+          align-self: center;
+          //hook1 - why musialem obydwa aligne zrobić,żeby osobno poruszyć tekstem i osobno gradintem
+          height: 3rem;
+          width: 12rem;
+          font-size: clamp(0.5rem, 1.1rem, 2rem);
+          font-weight: bold;
+          color: white;
+          background: rgb(34, 193, 195);
+          background: linear-gradient(
+            222deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(31, 92, 145, 1) 100%
+          );
+          // background-position: ;
+        }
+        &--logo {
+          &--tytul {
+            display: grid;
+            grid-row: r-3 / r-4;
+            grid-column: c-2 / c-6;
+
+            @include tytul-klocek;
+          }
+          &--content-typy-plikow {
+            display: grid;
+            grid-row: r-4 / r-6;
+            grid-column: c-2 / c-6;
+
+            background-color: #ff9c407a;
+
+            &--item-1 {
+              grid-row: r-4 / r-5;
+              grid-column: c-2 / c-4;
+            }
+            &--item-2 {
+              grid-row: r-4 / r-5;
+              grid-column: c-4 / c-6;
+            }
+            &--item-3 {
+              grid-row: r-5 / r-6;
+              grid-column: c-2 / c-4;
+            }
+            &--item-4 {
+              grid-row: r-5 / r-6;
+              grid-column: c-4 / c-6;
+            }
+          }
+        }
+        &--dokumenty {
+          &--tytul {
+            display: grid;
+            grid-row: r-3 / r-4;
+            grid-column: c-7 / c-11;
+
+            @include tytul-klocek;
+          }
+          &--content-umowy-i-regulaminy {
+            display: grid;
+            grid-row: r-4 / r-6;
+            grid-column: c-7 / c-11;
+            background-color: #d4b598b1;
+            grid-auto-flow: row;
+
+            &--item {
+              display: grid;
+              grid-auto-flow: column;
+              // background-color: yellow;
+            }
+          }
+        }
+        &--linia-srodkowa {
+          display: grid;
+          grid-row: r-4 / r-6;
+          grid-column: c-6 / c-7;
+
+          background-color: #530d457a;
+          justify-content: center;
+          justify-self: center;
+          align-content: center;
+          align-self: center;
+
+          width: 0.25rem;
+          height: 80%;
+        }
+      }
+    }
+  }
+}

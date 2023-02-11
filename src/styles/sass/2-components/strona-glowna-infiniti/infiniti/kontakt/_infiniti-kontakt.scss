@@ -1,0 +1,237 @@
+$rozmiar-rowa: minmax(0rem, max-content);
+
+.layout {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &__infiniti-kontakt {
+    // \/ layout, w który zostana włożone "foty marketingowe i reszta podfragmnetó storny głównej
+    &__cala-strona {
+      position: relative;
+      display: grid;
+
+      grid-template-rows:
+        [r-1] $rozmiar-rowa
+        [r-2] $rozmiar-rowa
+        [r-3] $rozmiar-rowa
+        [r-4] $rozmiar-rowa
+        [r-5] $rozmiar-rowa
+        [r-6] $rozmiar-rowa
+        [r-7];
+
+      grid-template-columns:
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
+        [c-4] 1fr
+        [c-5] 1fr
+        [c-6] 1fr
+        [c-7] 1fr
+        [c-8] 1fr
+        [c-9] 1fr
+        [c-10] 1fr
+        [c-11] 1fr
+        [c-12]
+        //
+;
+      // grid-auto-flow: rows;
+      // Trap1 - COMPONENTY ( np. "fota w tle" || "tytuł podstrony") MAJĄ SWOJ SCSS W SWOIM DEDYKOWANUM PLIKU. bez sensu powielac kod np.
+      // dla foty w tle, ktora jest na kazdej stronie
+
+      &__0-startowe-logo-i-fota {
+        &--logo {
+          // hook1--dodaj logo i z-indexnij pod fote
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-12;
+          position: relative;
+
+          width: 35%;
+          aspect-ratio: 1.1/1;
+          align-self: center;
+          justify-self: center;
+        }
+        &--fota {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-12;
+          position: relative;
+
+          width: 100%;
+          aspect-ratio: 1.5/1;
+        }
+      }
+      &__0-nazwa-podstrony {
+        grid-row: r-2 / r-3;
+        grid-column: c-2 / c-11;
+      }
+      &__napisz-do-nas-container {
+        grid-row: r-3 / r-4;
+        grid-column: c-1 / c-12;
+
+        display: grid;
+
+        grid-template-rows:
+          [r-1] $rozmiar-rowa
+          [r-2] $rozmiar-rowa
+          [r-3] $rozmiar-rowa
+          [r-4] $rozmiar-rowa
+          [r-5] $rozmiar-rowa
+          [r-6] $rozmiar-rowa
+          [r-7];
+
+        grid-template-columns:
+          [c-1] 1fr
+          [c-2] 9fr
+          [c-3];
+        &--tytul-formularza {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-3;
+        }
+        &--input {
+          &--imie-i-nazwisko {
+            grid-row: r-2 / r-3;
+            grid-column: c-1 / c-3;
+          }
+          &--email {
+            grid-row: r-3 / r-4;
+            grid-column: c-1 / c-3;
+          }
+          &--tresc-wiadomosci {
+            grid-row: r-4 / r-5;
+            grid-column: c-1 / c-3;
+          }
+        }
+        &--checkbox {
+          &--btn {
+            grid-row: r-5 / r-6;
+            grid-column: c-1 / c-2;
+          }
+          &--tresc-z-boku {
+            grid-row: r-5 / r-6;
+            grid-column: c-2 / c-3;
+          }
+        }
+        &--wyślij-btn {
+          grid-row: r-6 / r-7;
+          grid-column: c-1 / c-3;
+        }
+      }
+      &__mapa-dojazdu {
+        &--tytul-nad-nia {
+          grid-row: r-4 / r-5;
+          grid-column: c-1 / c-12;
+        }
+        &--mapa-image {
+          grid-row: r-5 / r-6;
+          grid-column: c-1 / c-12;
+
+          position: relative;
+          width: 30vw;
+
+          aspect-ratio: 2/1;
+        }
+      }
+      &__dane-kontaktowe-container {
+        grid-row: r-6 / r-7;
+        grid-column: c-1 / c-12;
+
+        display: grid;
+
+        grid-template-rows:
+          [r-1] $rozmiar-rowa
+          [r-2] $rozmiar-rowa
+          [r-3] $rozmiar-rowa
+          [r-4] $rozmiar-rowa
+          [r-5];
+
+        grid-template-columns:
+          [c-1] 1fr
+          [c-2] 1fr
+          [c-3] 1fr
+          [c-4];
+        &--adres {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-4;
+          display: grid;
+          grid-template-columns:
+            [c-1] 2fr
+            [c-2] 1fr
+            [c-3] 5fr
+            [c-4];
+
+          grid-auto-flow: column;
+          &--svg {
+          }
+          &--linia {
+          }
+          &--tresc {
+          }
+        }
+        &--godziny-otwarcia {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-4;
+
+          display: grid;
+          grid-template-columns:
+            [c-1] 2fr
+            [c-2] 1fr
+            [c-3] 5fr
+            [c-4];
+
+          grid-auto-flow: column;
+          &--svg {
+          }
+          &--linia {
+          }
+          &--tresc {
+          }
+        }
+        &--telefon {
+          grid-row: r-3 / r-4;
+          grid-column: c-1 / c-4;
+
+          display: grid;
+          grid-template-columns:
+            [c-1] 2fr
+            [c-2] 1fr
+            [c-3] 5fr
+            [c-4];
+
+          grid-auto-flow: column;
+          &--svg {
+          }
+          &--linia {
+          }
+          &--tresc {
+          }
+        }
+        &--email {
+          grid-row: r-4 / r-5;
+          grid-column: c-1 / c-4;
+
+          display: grid;
+          //hook1 - mega pod dynamicny grid, albo bez okreslania row / col, albo okreslajac
+          // tylko chciany jedno z nich,np. column tylko, a reszta niehc sdma asie zpalenia
+          grid-template-columns:
+            [c-1] 2fr
+            [c-2] 1fr
+            [c-3] 5fr
+            [c-4];
+
+          grid-auto-flow: column;
+          &--svg {
+          }
+          &--linia {
+          }
+          &--tresc {
+          }
+        }
+      }
+      &--fota-w-tle {
+        grid-row: r-3 / r-7;
+        grid-column: c-1 / c-12;
+
+        position: relative;
+        z-index: -100;
+        // filter: invert(1);
+      }
+    }
+  }
+}
