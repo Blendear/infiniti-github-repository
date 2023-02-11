@@ -528,6 +528,7 @@ $rozmiar-column-siatka-btn: 1fr;
               [c-2];
 
             position: relative;
+            margin: 2rem 0 2rem 0;
             // width: 100%;
             // height: 100%;
             // aspect-ratio: 1.5/1; //hook1 dobierz aspect pod aspect screena z blendera
@@ -550,7 +551,17 @@ $rozmiar-column-siatka-btn: 1fr;
                   [r-8] $rozmiar-rowa-siatka-btn
                   [r-9] $rozmiar-rowa-siatka-btn
                   [r-10] $rozmiar-rowa-siatka-btn
-                  [r-11];
+                  [r-11] $rozmiar-rowa-siatka-btn
+                  [r-12] $rozmiar-rowa-siatka-btn
+                  [r-13] $rozmiar-rowa-siatka-btn
+                  [r-14] $rozmiar-rowa-siatka-btn
+                  [r-15] $rozmiar-rowa-siatka-btn
+                  [r-16] $rozmiar-rowa-siatka-btn
+                  [r-17] $rozmiar-rowa-siatka-btn
+                  [r-18] $rozmiar-rowa-siatka-btn
+                  [r-19] $rozmiar-rowa-siatka-btn
+                  [r-20] $rozmiar-rowa-siatka-btn
+                  [r-21];
                 grid-template-columns:
                   [c-1] $rozmiar-column-siatka-btn
                   [c-2] $rozmiar-column-siatka-btn
@@ -572,7 +583,27 @@ $rozmiar-column-siatka-btn: 1fr;
                   [c-18] $rozmiar-column-siatka-btn
                   [c-19] $rozmiar-column-siatka-btn
                   [c-20] $rozmiar-column-siatka-btn
-                  [c-21];
+                  [c-21]$rozmiar-column-siatka-btn
+                  [c-22] $rozmiar-column-siatka-btn
+                  [c-23] $rozmiar-column-siatka-btn
+                  [c-24] $rozmiar-column-siatka-btn
+                  [c-25] $rozmiar-column-siatka-btn
+                  [c-26] $rozmiar-column-siatka-btn
+                  [c-27] $rozmiar-column-siatka-btn
+                  [c-28] $rozmiar-column-siatka-btn
+                  [c-29] $rozmiar-column-siatka-btn
+                  [c-30] $rozmiar-column-siatka-btn
+                  [c-31] $rozmiar-column-siatka-btn
+                  [c-32] $rozmiar-column-siatka-btn
+                  [c-33] $rozmiar-column-siatka-btn
+                  [c-34] $rozmiar-column-siatka-btn
+                  [c-35] $rozmiar-column-siatka-btn
+                  [c-36] $rozmiar-column-siatka-btn
+                  [c-37] $rozmiar-column-siatka-btn
+                  [c-38] $rozmiar-column-siatka-btn
+                  [c-39] $rozmiar-column-siatka-btn
+                  [c-40] $rozmiar-column-siatka-btn
+                  [c-41];
 
                 position: relative;
                 width: 100%;
@@ -609,8 +640,8 @@ $rozmiar-column-siatka-btn: 1fr;
               &--1 {
                 @include siatka();
                 &--squash {
-                  grid-row: r-3 / r-5;
-                  grid-column: c-14 / c-18;
+                  grid-row: r-7 / r-10;
+                  grid-column: c-28 / c-38;
 
                   @include btn-uniwersalne-ustawienia();
                 }
@@ -618,32 +649,62 @@ $rozmiar-column-siatka-btn: 1fr;
                   // bedzie znaczek, nie napis
                 }
                 &--maty {
+                  grid-row: r-6 / r-9;
+                  grid-column: c-15 / c-19;
+                  @include btn-uniwersalne-ustawienia();
                 }
 
                 &--strefa-maszyn-1 {
-                  grid-row: r-3 / r-5;
-                  grid-column: c-8 / c-12;
+                  grid-row: r-14 / r-20;
+                  grid-column: c-28 / c-35;
                   @include btn-uniwersalne-ustawienia();
-                  //przy czerownej
+                  //przy oknach
                 }
                 &--strefa-maszyn-2 {
+                  grid-row: r-10 / r-14;
+                  grid-column: c-27 / c-35;
+                  @include btn-uniwersalne-ustawienia();
                   // przy wc
                 }
                 &--strefa-maszyn-3 {
-                  // przy oknach obok wolnych
+                  grid-row: r-6 / r-11;
+                  grid-column: c-19 / c-26;
+                  @include btn-uniwersalne-ustawienia();
+
+                  // przy czerwonej
                 }
                 &--strefa-wolnych-ciezarow {
+                  grid-row: r-12 / r-19;
+                  grid-column: c-20 / c-27;
+                  @include btn-uniwersalne-ustawienia();
                 }
-                &--sala-czerwona {
+                &--cialo-i-umysl {
+                  grid-row: r-3 / r-7;
+                  grid-column: c-7 / c-14;
+                  @include btn-uniwersalne-ustawienia();
                 }
                 &--wc {
+                  // grid-row: r- / r-;
+                  // grid-column: c- / c-;
+                  // @include btn-uniwersalne-ustawienia();
                 }
                 &--winda {
+                  // grid-row: r- / r-;
+                  // grid-column: c- / c-;
+                  // @include btn-uniwersalne-ustawienia();
+                }
+                &--boisko {
+                  grid-row: r-7 / r-13;
+                  grid-column: c-6 / c-15;
+                  @include btn-uniwersalne-ustawienia();
                 }
               }
               &--2 {
                 @include siatka();
                 &-- {
+                  // grid-row: r- / r-;
+                  // grid-column: c- / c-;
+                  // @include btn-uniwersalne-ustawienia();
                 }
               }
             }

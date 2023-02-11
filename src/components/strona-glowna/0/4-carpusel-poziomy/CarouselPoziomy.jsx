@@ -243,6 +243,17 @@ const CarouselPoziomy = () => {
             }
           ></button>
           <button
+            // onClick={handlerSetMiejsceAktywne}
+            onClick={() => {
+              handlerSetMiejsceAktywne("boisko");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--boisko"
+              ]
+            }
+          ></button>
+          <button
             onClick={() => {
               handlerSetMiejsceAktywne("strefa-maszyn-1");
             }}
@@ -269,7 +280,7 @@ const CarouselPoziomy = () => {
           <button
             className={
               styles[
-                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--sala-czerwona"
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--cialo-i-umysl"
               ]
             }
           ></button>
