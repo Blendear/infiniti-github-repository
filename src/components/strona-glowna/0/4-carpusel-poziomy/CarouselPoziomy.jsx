@@ -105,7 +105,7 @@ const CarouselPoziomy = () => {
   if (!Array.isArray(carouselData) || carouselData.length <= 0) {
     return null;
   }
-
+  //
   return (
     <section
       className={styles["layout__strona-glowna__cala-strona__carousel-poziomy"]}
@@ -123,12 +123,18 @@ const CarouselPoziomy = () => {
         WYBIERZ <strong>PIĘTRO </strong> & <strong>MIEJSCE</strong> NA MAPIE,
         ŻEBY ZOBACZYĆ WYŻEJ JEGO ZDJĘCIA I OPIS
       </div>
+
       <button
-        className={
+        className={`${
           styles[
             "layout__strona-glowna__cala-strona__carousel-poziomy--buttony--2"
           ]
-        }
+        } ${
+          aktywnyPoziom !== 2 &&
+          styles[
+            "layout__strona-glowna__cala-strona__carousel-poziomy--buttony--niewybrane"
+          ]
+        }`}
         onClick={() => {
           handlerSetPoziomAktywny(2), handlerSetPoziomFotoNumber(2);
         }}
@@ -136,11 +142,16 @@ const CarouselPoziomy = () => {
         2
       </button>
       <button
-        className={
+        className={`${
           styles[
             "layout__strona-glowna__cala-strona__carousel-poziomy--buttony--1"
           ]
-        }
+        } ${
+          aktywnyPoziom !== 1 &&
+          styles[
+            "layout__strona-glowna__cala-strona__carousel-poziomy--buttony--niewybrane"
+          ]
+        }`}
         onClick={() => {
           handlerSetPoziomAktywny(1), handlerSetPoziomFotoNumber(1);
         }}
@@ -148,11 +159,17 @@ const CarouselPoziomy = () => {
         1
       </button>
       <button
-        className={
+        className={`${
           styles[
             "layout__strona-glowna__cala-strona__carousel-poziomy--buttony--0"
           ]
-        }
+        } ${
+          aktywnyPoziom !== 0 &&
+          styles[
+            "layout__strona-glowna__cala-strona__carousel-poziomy--buttony--niewybrane"
+          ]
+        }`}
+        // onMouseEnter={() => setBgColour("#c83f49")}
         onClick={() => {
           handlerSetPoziomAktywny(0), handlerSetPoziomFotoNumber(0);
         }}
@@ -163,11 +180,16 @@ const CarouselPoziomy = () => {
         onClick={() => {
           handlerSetPoziomAktywny(-1), handlerSetPoziomFotoNumber(-1);
         }}
-        className={
+        className={`${
           styles[
             "layout__strona-glowna__cala-strona__carousel-poziomy--buttony--minus-1"
           ]
-        }
+        } ${
+          aktywnyPoziom !== -1 &&
+          styles[
+            "layout__strona-glowna__cala-strona__carousel-poziomy--buttony--niewybrane"
+          ]
+        }`}
         // onClick={}
       >
         -1

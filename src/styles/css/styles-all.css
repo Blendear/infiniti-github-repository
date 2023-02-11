@@ -1071,9 +1071,11 @@
   grid-column: c-1/c-2;
   justify-self: start;
   align-self: center;
-  margin: 0 4vw 0 4vw;
+  margin: 0 8vw 0 8vw;
   font-size: 12vw;
-  color: rgba(0, 0, 0, 0.1803921569);
+  color: rgba(255, 255, 255, 0.3647058824);
+  stroke: 1rem;
+  filter: drop-shadow(0 0 0rem rgb(0, 0, 0));
   cursor: pointer;
   user-select: none;
   z-index: 5;
@@ -1083,9 +1085,11 @@
   grid-column: c-3/c-4;
   justify-self: end;
   align-self: center;
-  margin: 0 4vw 0 4vw;
+  margin: 0 8vw 0 8vw;
   font-size: 12vw;
-  color: rgba(0, 0, 0, 0.1803921569);
+  color: rgba(255, 255, 255, 0.3647058824);
+  stroke: 1rem;
+  filter: drop-shadow(0 0 0rem rgb(0, 0, 0));
   cursor: pointer;
   user-select: none;
   z-index: 5;
@@ -1279,6 +1283,9 @@
   -webkit-box-shadow: 2px 9px 13px 5px #000000;
   box-shadow: 0px 0px 2vw 0.25vw rgba(0, 0, 0, 0.25);
 }
+.layout__strona-glowna__cala-strona__carousel-poziomy--buttony--minus-1:hover {
+  font-size: 8vw;
+}
 .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--0 {
   grid-column: c-3/c-4;
   background: #5a87ff;
@@ -1296,6 +1303,9 @@
   font-weight: bold;
   -webkit-box-shadow: 2px 9px 13px 5px #000000;
   box-shadow: 0px 0px 2vw 0.25vw rgba(0, 0, 0, 0.25);
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--buttony--0:hover {
+  font-size: 8vw;
 }
 .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--1 {
   grid-column: c-4/c-5;
@@ -1315,6 +1325,9 @@
   -webkit-box-shadow: 2px 9px 13px 5px #000000;
   box-shadow: 0px 0px 2vw 0.25vw rgba(0, 0, 0, 0.25);
 }
+.layout__strona-glowna__cala-strona__carousel-poziomy--buttony--1:hover {
+  font-size: 8vw;
+}
 .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--2 {
   grid-column: c-5/c-6;
   background: #b260e0;
@@ -1332,6 +1345,13 @@
   font-weight: bold;
   -webkit-box-shadow: 2px 9px 13px 5px #000000;
   box-shadow: 0px 0px 2vw 0.25vw rgba(0, 0, 0, 0.25);
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--buttony--2:hover {
+  font-size: 8vw;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--buttony--niewybrane {
+  height: 60%;
+  align-self: end;
 }
 .layout__strona-glowna__cala-strona__godziny-otwarcia {
   grid-row: r-8/r-9;
@@ -1656,25 +1676,22 @@
 .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-1 {
   grid-row: r-1/r-2;
   grid-column: c-1/c-2;
-  width: 20vw;
+  width: 22vw;
   aspect-ratio: 2/1;
-  opacity: 0.3;
   position: relative;
 }
 .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-2 {
   grid-row: r-1/r-2;
   grid-column: c-2/c-3;
-  width: 20vw;
+  width: 22vw;
   aspect-ratio: 2/1;
-  opacity: 0.3;
   position: relative;
 }
 .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-3 {
   grid-row: r-1/r-2;
   grid-column: c-3/c-4;
-  width: 20vw;
+  width: 22vw;
   aspect-ratio: 2/1;
-  opacity: 0.3;
   position: relative;
 }
 

@@ -353,10 +353,13 @@ $rozmiar-column-siatka-btn: 1fr;
         }
         @mixin arrow {
           align-self: center;
-          margin: 0 4vw 0 4vw;
+          margin: 0 8vw 0 8vw;
 
           font-size: 12vw;
-          color: #0000002e;
+          color: #ffffff5d;
+          stroke: 1rem;
+          // box-shadow: #000000;
+          filter: drop-shadow(0 0 0rem rgb(0, 0, 0));
 
           cursor: pointer;
           user-select: none;
@@ -671,6 +674,7 @@ $rozmiar-column-siatka-btn: 1fr;
             grid-row: r-3 / r-4;
             border: none;
             margin: 0 1vw 0 1vw;
+            // height:100%
             width: 15vw;
             aspect-ratio: 1/1.6;
             // padding-top: 1vw;
@@ -683,6 +687,11 @@ $rozmiar-column-siatka-btn: 1fr;
 
             -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
             box-shadow: 0px 0px 2vw 0.25vw rgba(0, 0, 0, 0.25);
+
+            &:hover {
+              // height: 50%;
+              font-size: 8vw;
+            }
           }
           &--minus-1 {
             grid-column: c-2 / c-3;
@@ -723,6 +732,17 @@ $rozmiar-column-siatka-btn: 1fr;
             background: linear-gradient(0deg, #b260e0 0%, #eb7ffd 100%);
 
             @include btn-poziomy();
+          }
+
+          &--niewybrane {
+            //dodatek do reszty styli wtedy jest
+            // color: green;
+            height: 60%;
+            align-self: end;
+            // transition: height 3s; hooik2 - css transition bedzie wymagalo, bo dismountuje czy cos przed koncem animacji
+            // font-size: 6vw;
+            // tranasion: fon;
+            // opacity: 0.8;
           }
         }
       }
@@ -1071,7 +1091,9 @@ $rozmiar-column-siatka-btn: 1fr;
             [r-2];
           grid-template-columns:
             [c-1] 1fr
+            // [c-1_empty] 1rem
             [c-2] 1fr
+            // [c-1_empty] 1rem
             [c-3] 1fr
             [c-4];
 
@@ -1081,11 +1103,14 @@ $rozmiar-column-siatka-btn: 1fr;
           width: 100%;
           aspect-ratio: 4.5/1;
 
+          // gap: 2rem;
+
           @mixin fota-partnerzy {
-            width: 20vw;
+            width: 22vw;
             aspect-ratio: 2/1;
-            opacity: 0.3;
+            // opacity: 0.3;
             position: relative;
+            // margin: 0 1rem 0 1rem;
           }
           &--fota-1 {
             grid-row: r-1 / r-2;

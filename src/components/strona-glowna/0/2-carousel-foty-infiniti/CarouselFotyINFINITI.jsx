@@ -104,6 +104,7 @@ const CarouselPoziomy = () => {
       <FaArrowAltCircleLeft
         className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-left-arrow"]} ${styles["carousel-foty-infiniti__arrow-left"]}`}
         onClick={handlerPrevFoto}
+        // style={{ boxShadow: "black" }}
       />
       <FaArrowAltCircleRight
         className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-right-arrow"]} ${styles["carousel-foty-infiniti__arrow-right"]} `}

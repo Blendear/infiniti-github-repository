@@ -100,101 +100,92 @@ const CarouselPartnerzy = () => {
   }
 
   return (
-    <section
-      className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-carousel"]} ${styles["carousel-foty-infiniti"]}`}
+    <div
+      className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-fot"]}`}
     >
-      {/*
-      //       C.1. Map - Dla każdego object w liście/object'cie danych, return Image (next.jsowy)
-      
-      */}
-
-      <div
-        className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-fot"]}`}
-      >
-        {ileSeriiPartnerow.map((aktualnaFota, indexAktualny) => (
-          <div
-            className={
-              indexAktualny === aktualnyFotoIndex
-                ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
-                : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
-            }
-            key={indexAktualny}
-          >
-            {/* 
+      {ileSeriiPartnerow.map((aktualnaFota, indexAktualny) => (
+        <div
+          className={
+            indexAktualny === aktualnyFotoIndex
+              ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
+              : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
+          }
+          key={indexAktualny}
+        >
+          {/* 
             //       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
             */}
-            {indexAktualny === aktualnyFotoIndex && (
+          {indexAktualny === aktualnyFotoIndex && (
+            <div
+              className={
+                styles[
+                  "layout__strona-glowna__cala-strona__partnerzy--carousel"
+                ]
+              }
+            >
               <div
                 className={
                   styles[
-                    "layout__strona-glowna__cala-strona__partnerzy--carousel"
+                    "layout__strona-glowna__cala-strona__partnerzy--carousel--fota-1"
                   ]
                 }
               >
-                <div
-                  className={
-                    styles[
-                      "layout__strona-glowna__cala-strona__partnerzy--carousel--fota-1"
-                    ]
-                  }
-                >
+                <Image
+                  src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${indexZdjeciaPierwszegoZTrzech}.png`}
+                  alt={`nie pyklo zdjecie`}
+                  // width={300}
+                  // height={300}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+              <div
+                className={
+                  styles[
+                    "layout__strona-glowna__cala-strona__partnerzy--carousel--fota-2"
+                  ]
+                }
+              >
+                {indexZdjeciaPierwszegoZTrzech + 1 <=
+                  ilePartnerowPojedynczych && (
                   <Image
-                    src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${indexZdjeciaPierwszegoZTrzech}.png`}
+                    src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${
+                      indexZdjeciaPierwszegoZTrzech + 1
+                    }.png`}
                     alt={`nie pyklo zdjecie`}
                     // width={300}
                     // height={300}
                     layout="fill"
                     objectFit="contain"
                   />
-                </div>
-                <div
-                  className={
-                    styles[
-                      "layout__strona-glowna__cala-strona__partnerzy--carousel--fota-2"
-                    ]
-                  }
-                >
-                  {indexZdjeciaPierwszegoZTrzech + 1 <=
-                    ilePartnerowPojedynczych && (
-                    <Image
-                      src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${
-                        indexZdjeciaPierwszegoZTrzech + 1
-                      }.png`}
-                      alt={`nie pyklo zdjecie`}
-                      // width={300}
-                      // height={300}
-                      layout="fill"
-                      objectFit="contain"
-                    />
-                  )}
-                </div>
-                <div
-                  className={
-                    styles[
-                      "layout__strona-glowna__cala-strona__partnerzy--carousel--fota-3"
-                    ]
-                  }
-                >
-                  {indexZdjeciaPierwszegoZTrzech + 2 <=
-                    ilePartnerowPojedynczych && (
-                    <Image
-                      src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${
-                        indexZdjeciaPierwszegoZTrzech + 2
-                      }.png`}
-                      alt={`nie pyklo zdjecie`}
-                      // width={300}
-                      // height={300}
-                      layout="fill"
-                      objectFit="contain"
-                    />
-                  )}
-                </div>
+                )}
               </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </section>
+              <div
+                className={
+                  styles[
+                    "layout__strona-glowna__cala-strona__partnerzy--carousel--fota-3"
+                  ]
+                }
+              >
+                {indexZdjeciaPierwszegoZTrzech + 2 <=
+                  ilePartnerowPojedynczych && (
+                  <Image
+                    src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${
+                      indexZdjeciaPierwszegoZTrzech + 2
+                    }.png`}
+                    alt={`nie pyklo zdjecie`}
+                    // width={300}
+                    // height={300}
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
   );
 };
 export default CarouselPartnerzy;
