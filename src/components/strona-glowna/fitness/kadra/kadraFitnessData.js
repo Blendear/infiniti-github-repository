@@ -42,7 +42,7 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Instruktor Fitness",
       fotoPathKoncowka: "agarkova-alina",
-      socialMediaLinks: {},
+      socialMediaLinks: { facebook: "https://www.facebook.com/agarkova.alina" },
     },
     {
       nazwisko: "Bizoń",
@@ -52,7 +52,6 @@ export const kadraFitnessDataArray = {
       fotoPathKoncowka: "bizon-adam",
       socialMediaLinks: {
         facebook: "https://www.facebook.com/profile.php?id=100057168981507",
-        instagram: "/",
       },
     },
     {
@@ -62,7 +61,7 @@ export const kadraFitnessDataArray = {
       funkcja: "Instruktor Fitness",
       fotoPathKoncowka: "blak-julita",
       socialMediaLinks: {
-        facebook: "https://www.facebook.com/profile.php?id=100057168981507",
+        facebook: "https://www.facebook.com/julita.blak",
       },
     },
     {
@@ -71,7 +70,10 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Instruktor fitness / Trener personalny",
       fotoPathKoncowka: "deierling-arek",
-      socialMediaLinks: { instagram: "sdssd@gmail.com" },
+      socialMediaLinks: {
+        instagram: "sdssd@gmail.com",
+        facebook: "https://www.facebook.com/arkadiusz.deierling",
+      },
     },
     {
       nazwisko: "Duma",
@@ -79,7 +81,7 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "duma-ania",
-      socialMediaLinks: { facebook: "" },
+      socialMediaLinks: { facebook: "https://www.facebook.com/ania.wn.9" },
     },
     {
       nazwisko: "Gidel",
@@ -87,7 +89,9 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "gidel-ela",
-      socialMediaLinks: { facebook: "https://www.facebook.com/elagidel" },
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/elagidel",
+      },
     },
     {
       nazwisko: "Gołębiowski",
@@ -95,7 +99,9 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "golebiowski-roman",
-      socialMediaLinks: { facebook: "https://www.facebook.com/elagidel" },
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/profile.php?id=100000996505827",
+      },
     },
     // {
     //   nazwisko: "Kaczmarczyk",
@@ -114,7 +120,9 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "kopacz-izabela",
-      socialMediaLinks: {},
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/izabela.kopacz.7",
+      },
     },
     {
       nazwisko: "Kubicka",
@@ -133,7 +141,7 @@ export const kadraFitnessDataArray = {
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "kusnierz-pierz-anna",
       socialMediaLinks: {
-        facebook: "",
+        facebook: "https://www.facebook.com/pierz.anka",
       },
     },
 
@@ -143,7 +151,9 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "kwasnik-czernicka-agnieszka",
-      socialMediaLinks: {},
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/agnieszka.kwasnik.351",
+      },
     },
     {
       nazwisko: "Mróz",
@@ -181,7 +191,9 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Instruktor fitness / Trener personalny",
       fotoPathKoncowka: "rypalla-dominika",
-      socialMediaLinks: {},
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/dominika.rypalla",
+      },
     },
     // {
     //   nazwisko: "Saska",

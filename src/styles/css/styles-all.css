@@ -576,6 +576,11 @@
   width: 80%;
   aspect-ratio: 1/0.8;
   justify-self: center;
+  transition: all 0.5s;
+}
+.layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--fota:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--imie-i-nazwisko {
   grid-row: r-1/r-2;
@@ -617,6 +622,10 @@
   align-self: center;
   font-size: 1.1rem;
   color: #088b9a;
+}
+.layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny svg:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 
 .layout__infiniti-do-pobrania__cala-strona {

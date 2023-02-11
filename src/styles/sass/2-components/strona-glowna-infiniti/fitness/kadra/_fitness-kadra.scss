@@ -169,6 +169,11 @@ $rozmiar-rowa: minmax(0rem, max-content);
 
                 // padding: 1vw 3vw 1vw 3vw;
                 // margin: 2vw 0 2vw 0;
+                transition: all 0.5s;
+                &:hover {
+                  transform: scale(1.2);
+                  transition: all 0.5s;
+                }
               }
               &--imie-i-nazwisko {
                 grid-row: r-1/ r-2;
@@ -229,11 +234,16 @@ $rozmiar-rowa: minmax(0rem, max-content);
                   grid-auto-flow: column;
                   // align-content: center;
                   gap: 0.5rem;
+                  // transition: all 0.5s;
 
                   & p {
                     align-self: center;
                     font-size: 1.1rem;
                     color: #088b9a;
+                  }
+                  & svg:hover {
+                    transform: scale(1.2);
+                    transition: all 0.5s;
                   }
                 }
               }

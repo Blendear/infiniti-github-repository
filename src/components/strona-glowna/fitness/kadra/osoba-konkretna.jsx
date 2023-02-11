@@ -26,7 +26,10 @@ const OsobaKonkretna = (props) => {
     switch (socialKonkretny) {
       case "facebook":
         socialeTejOsoby.push(
-          <Link href="/" key={socialKonkretny}>
+          <Link
+            href={`${props.daneOOsobie.socialMediaLinks.facebook}`}
+            key={socialKonkretny}
+          >
             <a>
               <FaFacebookF size="2rem" color="#088b9a" />
             </a>
@@ -35,7 +38,10 @@ const OsobaKonkretna = (props) => {
         break;
       case "instagram":
         socialeTejOsoby.push(
-          <Link href="/" key={socialKonkretny}>
+          <Link
+            href={`${props.daneOOsobie.socialMediaLinks.instagram}`}
+            key={socialKonkretny}
+          >
             <a>
               <BsInstagram size="2rem" color="#088b9a" />
             </a>
@@ -43,20 +49,20 @@ const OsobaKonkretna = (props) => {
         );
         break;
       case "email":
-        console.log("email-ccc", props.daneOOsobie.socialMediaLinks.email),
-          socialeTejOsoby.push(
-            // <Link
-            //   href={``}
-            //   key={socialKonkretny}
-            // >
-            //   <a>
-            //     {/* //hook2 i sizing of react-icons in rems */}
-            //     <TfiEmail size="2rem" color="#088b9a" />
-            //   </a>
-            // </Link>
+        // console.log("email-ccc", props.daneOOsobie.socialMediaLinks.email),
+        socialeTejOsoby.push(
+          // <Link
+          //   href={``}
+          //   key={socialKonkretny}
+          // >
+          //   <a>
+          //     {/* //hook2 i sizing of react-icons in rems */}
+          //     <TfiEmail size="2rem" color="#088b9a" />
+          //   </a>
+          // </Link>
 
-            <TfiEmail size="2rem" color="#088b9a" />
-          );
+          <TfiEmail size="2rem" color="#088b9a" />
+        );
         socialeTejOsoby.push(<p>{props.daneOOsobie.socialMediaLinks.email}</p>);
         break;
       default:
