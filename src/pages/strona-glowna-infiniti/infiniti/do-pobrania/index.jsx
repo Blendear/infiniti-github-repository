@@ -172,8 +172,14 @@ const DoPobrania = () => {
             ]
           }
         >
-          {" "}
-          INFINITI - FITNESS
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Medical.jpg`}
+            alt={`nie pyklo zdjecie`}
+            // height={200}
+            // width={100}
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
         <div
           className={
@@ -198,6 +204,7 @@ const DoPobrania = () => {
                 // width={200}
                 layout="fill"
                 objectFit="contain"
+                quality={20}
               />
             </a>
           </Link>
@@ -284,8 +291,15 @@ const DoPobrania = () => {
             ]
           }
         >
-          {" "}
-          INFINITI - MEDICAL
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Fitness.jpg`}
+            alt={`nie pyklo zdjecie`}
+            // height={200}
+            // width={100}
+            layout="fill"
+            objectFit="contain"
+            quality={20}
+          />
         </div>
         <div
           className={
@@ -378,7 +392,14 @@ const DoPobrania = () => {
             ]
           }
         >
-          INFINITI
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-INFINITI.jpg`}
+            alt={`nie pyklo zdjecie`}
+            // height={200}
+            // width={100}
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
         <div
           className={
@@ -403,6 +424,7 @@ const DoPobrania = () => {
                 // width={200}
                 layout="fill"
                 objectFit="contain"
+                quality={20}
               />
             </a>
           </Link>

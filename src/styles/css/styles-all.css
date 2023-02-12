@@ -911,7 +911,7 @@
   grid-column: c-2/c-6;
   display: grid;
   position: relative;
-  grid-template-rows: [r-1] 4rem [r-2] 1fr [r-3] 1fr [r-4] 4rem [r-5] 1fr [r-6] 1fr [r-7] 4rem [r-8] 1fr [r-9] 1fr [r-10] 1fr [r-11];
+  grid-template-rows: [r-1] 7rem [r-2] 1fr [r-3] 1fr [r-4] 7rem [r-5] 1fr [r-6] 1fr [r-7] 7rem [r-8] 1fr [r-9] 1fr [r-10] 1fr [r-11];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3];
   grid-auto-flow: column;
 }
@@ -923,6 +923,9 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: rgb(71, 71, 71);
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--fitness-tytul {
   grid-row: r-4/r-5;
@@ -932,6 +935,9 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: rgb(71, 71, 71);
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--infiniti-tytul {
   grid-row: r-7/r-8;
@@ -941,6 +947,9 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: rgb(71, 71, 71);
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1 {
   grid-row: r-2/r-3;
@@ -1114,6 +1123,7 @@
   display: grid;
   grid-row: r-3/r-4;
   grid-column: c-7/c-11;
+  position: relative;
   justify-content: center;
   justify-self: center;
   align-content: center;
@@ -1139,7 +1149,7 @@
   grid-auto-flow: column;
   font-size: 1.2rem;
   color: rgb(71, 71, 71);
-  font-weight: bold;
+  font-weight: normal;
   align-self: center;
   column-gap: 1rem;
   transition: all 0.5s;
