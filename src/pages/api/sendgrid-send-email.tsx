@@ -26,9 +26,9 @@ export default function handler(
   `;
 
   const msg = {
-    to: "tobiascibis@gmail.com", // Change to your recipient
-    from: "tobiascibis@gmail.com", // Change to your verified sender
-    subject: "Tobi i jego eksperymenty",
+    to: "info@infiniti-fit.pl", // Change to your recipient
+    from: "info@infiniti-fit.pl", // Change to your verified sender
+    subject: "Wiadomość Klienta Ze Strony INFINITI",
     text: message,
     html: message.replace(/\r\n/g, "<br>"),
   };
