@@ -47,10 +47,10 @@ const StronaKontakt = () => {
       formData[field.name] = field.value;
     });
 
-    // await fetch("/api/sendgrid-send-email", {
-    //   method: "POST",
-    //   body: JSON.stringify(formData),
-    // });
+    await fetch("/api/sendgrid-send-email", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    });
     console.log(formData);
   }
   const reduxStateIsMenuOpen = useAppSelector(
@@ -108,7 +108,7 @@ const StronaKontakt = () => {
         />
       </div>
       <form
-        onSubmit={isCheckedZgoda === true && handleOnSubmit}
+        onSubmit={isCheckedZgoda === true ? handleOnSubmit : null}
         className={
           styles[
             "layout__infiniti-kontakt__cala-strona__napisz-do-nas-container"

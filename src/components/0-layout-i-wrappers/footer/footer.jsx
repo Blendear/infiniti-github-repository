@@ -18,9 +18,11 @@
 // 3. Style'uję containery           -    Po kolei copy pastujac classy z bliźniaczo nazwanego pliku CSS'owskiego
 
 import styles from "src/styles/sass/styles-all.module.scss";
-
+import Link from "next/link";
 import { useAppSelector, useAppDispatch } from "../../../store/redux/hooks";
-
+import { BsCardChecklist } from "react-icons/bs";
+import { BsCircle } from "react-icons/bs";
+import { AiOutlineBorder } from "react-icons/ai";
 // import {aComponent, bComponent} from "...COMPONENT folder..."
 
 const Footer = () => {
@@ -36,7 +38,75 @@ const Footer = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <div className={styles["footer__caly-container__costam"]}>FOOTER</div>
+      <div className={styles["footer__honorowane-karty"]}>
+        <div className={styles["footer__honorowane-karty--tytul"]}>
+          <BsCardChecklist color="white" />
+          <div>HONOROWANE KARTY</div>
+        </div>
+        <div className={styles["footer__honorowane-karty--karta"]}>
+          <BsCircle color="white" />
+          <div>Multisport</div>
+        </div>
+        <div className={styles["footer__honorowane-karty--karta"]}>
+          <BsCircle color="white" />
+          <div>FitProfit</div>
+        </div>
+        <div className={styles["footer__honorowane-karty--karta"]}>
+          <BsCircle color="white" />
+          <div>Medicover Sport</div>
+        </div>
+        <div className={styles["footer__honorowane-karty--karta"]}>
+          <BsCircle color="white" />
+          <div>PZU Sport</div>
+        </div>
+        <div className={styles["footer__honorowane-karty--karta"]}>
+          <BsCircle color="white" />
+          <div>Gymsteer</div>
+        </div>
+      </div>
+      <div className={styles["footer__dokumenty"]}>
+        <div className={styles["footer__dokumenty--tytul"]}>
+          <BsCardChecklist color="white" />
+          <div>DOKUMENTY</div>
+        </div>
+        <div className={styles["footer__dokumenty--karta"]}>
+          <AiOutlineBorder color="white" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Regulamin_Infiniti_Fitness_Club_2023.pdf"
+          >
+            <a target="_blank">Regulamin INFINITI</a>
+          </Link>
+        </div>
+        <div className={styles["footer__dokumenty--karta"]}>
+          <AiOutlineBorder color="white" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Polityka_Prywatności_Fit-Food-Group_01.2023.pdf"
+          >
+            <a target="_blank">Polityka prywatności</a>
+          </Link>
+        </div>
+        <div className={styles["footer__dokumenty--karta"]}>
+          <AiOutlineBorder color="white" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/OSWIADCZENIE_RODZICA_OPIEKUNA.pdf"
+          >
+            <a target="_blank">Zgoda nieletniego</a>
+          </Link>
+        </div>
+        <div className={styles["footer__dokumenty--karta"]}>
+          <AiOutlineBorder color="white" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Wzor-oswiadczenia-o-odstapieniu-od-umowy-zawartej-na-odleglosc.pdf"
+          >
+            <a target="_blank">Wzór odstąpienia od umowy</a>
+          </Link>
+        </div>
+      </div>
+      <div className={styles["footer__kontakt"]}>K</div>
     </div>
   );
 };

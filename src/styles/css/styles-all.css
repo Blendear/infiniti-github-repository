@@ -104,9 +104,98 @@
 
 .footer__caly-container {
   display: grid;
-  grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4];
-  grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4] 1fr [c-5];
-  background-color: aqua;
+  grid-template-rows: 1fr;
+  margin: 0 auto 0 auto;
+  padding: 3rem 0 0 0;
+  row-gap: 5rem;
+  background-color: black;
+}
+.footer__honorowane-karty {
+  display: grid;
+  grid-auto-rows: 5rem;
+}
+.footer__honorowane-karty--tytul {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  width: max(25vw, 25rem);
+  aspect-ratio: 5/1;
+  justify-self: center;
+  align-items: center;
+  justify-items: start;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+.footer__honorowane-karty--tytul svg {
+  justify-self: center;
+  font-size: 2rem;
+  align-self: center;
+}
+.footer__honorowane-karty--karta {
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  align-self: center;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: white;
+  width: 80%;
+  justify-self: center;
+}
+.footer__honorowane-karty--karta svg {
+  justify-self: center;
+  font-size: 1.2rem;
+  align-self: center;
+}
+.footer__dokumenty {
+  display: grid;
+  grid-auto-rows: 5rem;
+}
+.footer__dokumenty--tytul {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  width: max(25vw, 25rem);
+  aspect-ratio: 5/1;
+  justify-self: center;
+  align-items: center;
+  justify-items: start;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+.footer__dokumenty--tytul svg {
+  justify-self: center;
+  font-size: 2rem;
+  align-self: center;
+}
+.footer__dokumenty--karta {
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  align-self: center;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: white;
+  width: 80%;
+  justify-self: center;
+}
+.footer__dokumenty--karta svg {
+  justify-self: center;
+  font-size: 1.2rem;
+  align-self: center;
+}
+.footer__dokumenty--karta a {
+  color: rgb(71, 71, 71);
+}
+.footer__dokumenty--kartaa:link,
+.footer__dokumenty--karta :visited,
+.footer__dokumenty--karta :active,
+.footer__dokumenty--karta :hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer__kontakt {
+  display: grid;
 }
 
 /**

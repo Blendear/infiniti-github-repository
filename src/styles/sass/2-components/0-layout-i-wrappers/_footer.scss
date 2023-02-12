@@ -1,20 +1,122 @@
 .footer {
   &__caly-container {
     display: grid;
+    grid-template-rows: 1fr;
 
-    grid-template-rows:
-      [r-1] minmax(0rem, max-content)
-      [r-2] minmax(0rem, max-content)
-      [r-3] minmax(0rem, max-content)
-      [r-4];
+    margin: 0 auto 0 auto;
+    padding: 3rem 0 0 0;
+    row-gap: 5rem;
+
+    background-color: black;
+  }
+  @mixin tytul-kazdy {
+    background-color: grey;
+    display: grid;
 
     grid-template-columns:
       [c-1] 1fr
-      [c-2] 1fr
-      [c-3] 1fr
-      [c-4] 1fr
-      [c-5];
+      [c-2] 5fr
+      [c-3];
 
-    background-color: aqua;
+    //+reponsivenes - protip1 protip0 !!!
+    //
+    // EMPTY ROWS / COLUMNS zrob, są pewniejsz,e niz przesuwalne inny content marginy etc.
+    // &&
+    // NIE ROB AUTOFIT, lepiej zrobic bvreakpointy media queries, gdy design sie jebie
+    // &&
+    // aspect ratio height
+    // &&
+    // width i inne properties ograniczone poprzez... \/
+    //
+    //  - grid konkretny?
+    //          -minmax() - trap1 TYLKO W GRID ROW / COLUMN działa. W innych miejsach działa
+    //                      tylko min albo max, osobne properties \/
+    //  - pojedynczy element (np. width / height / font size)?
+    //          - descendant selector (np. childy będące "svg" tylko wycentruj, rezta justify start
+    //          - min   or    max
+    //                        ) Jak wybrać? - Min === schowajmy jego uglyness, ktory pojawia sie, gdy jest wiekszy niz ...
+    //                                      - Max === eksponujmy jego valuekieyd tylko znajdzie sie miejsce
+    //                        ) p. max === wybiera maksymalna z wartości. Np. "width:max(25vw, 20rem)"
+    //                        w zmniejszonym oknie weźmie 20rem, ale gdy zaczniesz rozciagac
+    //                        do prawei calego wekrnau, zauważysz ruch, BO 25VW BEDZIE WTEDY
+    //                        WIĘKSZE niż 20rem. I.....Responsivnees lets go c:
+
+    width: max(25vw, 25rem);
+    aspect-ratio: 5/1;
+
+    justify-self: center;
+
+    align-items: center;
+    justify-items: start;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    & svg {
+      justify-self: center;
+      font-size: 2rem;
+      align-self: center;
+    }
+  }
+  @mixin lista-rzeczy-grid-container {
+    display: grid;
+    grid-auto-rows: 5rem;
+  }
+  @mixin karta-kazda {
+    display: grid;
+    grid-template-columns:
+      [c-1] 1fr
+      [c-2] 5fr
+      [c-3];
+    // grid-auto-flow: column;
+    // grid-auto-columns: minmax(1rem, 10rem);
+    // column-gap: 1rem;
+
+    align-self: center;
+    // justify-self: start;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: white;
+    width: 80%;
+    justify-self: center;
+
+    & svg {
+      justify-self: center;
+      font-size: 1.2rem;
+      align-self: center;
+    }
+  }
+  &__honorowane-karty {
+    @include lista-rzeczy-grid-container();
+
+    &--tytul {
+      @include tytul-kazdy();
+    }
+    &--karta {
+      @include karta-kazda();
+    }
+  }
+  //hook1 - PRZED SRTYLIZOWANIEM, włóz ORYGINALNE DANE. Inaczje bp. pozniej wkleisz
+  // link component, i hierarchia divow idzie sie jebać
+  &__dokumenty {
+    @include lista-rzeczy-grid-container();
+    &--tytul {
+      @include tytul-kazdy();
+    }
+    &--karta {
+      @include karta-kazda();
+      & a {
+        color: rgb(71, 71, 71);
+      }
+      &a:link,
+      :visited,
+      :active,
+      :hover {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+  &__kontakt {
+    display: grid;
   }
 }
