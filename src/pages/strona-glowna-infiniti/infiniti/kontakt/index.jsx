@@ -104,12 +104,12 @@ const StronaKontakt = () => {
         />
       </div>
       <form
+        onSubmit={isCheckedZgoda === true && handleOnSubmit}
         className={
           styles[
             "layout__infiniti-kontakt__cala-strona__napisz-do-nas-container"
           ]
         }
-        onSubmit={handleOnSubmit}
       >
         <div
           className={
@@ -153,35 +153,45 @@ const StronaKontakt = () => {
             ]
           }
         />
-        <input
-          className={
-            styles[
-              "layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--btn"
-            ]
-          }
-          onChange={handlerToggleZgodaCheckbox}
-          type="checkbox"
-        ></input>
         <div
           className={
             styles[
-              "layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--tresc-z-boku"
+              "layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox"
             ]
           }
         >
-          * Wyrażam zgodę
+          <input
+            className={
+              styles[
+                "layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--btn"
+              ]
+            }
+            onChange={handlerToggleZgodaCheckbox}
+            type="checkbox"
+          ></input>
+          <div
+            className={
+              styles[
+                "layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--tresc-z-boku"
+              ]
+            }
+          >
+            * Wyrażam zgodę na przetwarzanie moich danych osobowych w związku z
+            realizacją mojej prośby lub zapytania. Rozumiem, że zgoda może
+            zostać cofnięta w każdym czasie, a jej cofnięcie skutkuje brakiem
+            odpowiedzi i nie wpływa na legalność kontaktu przed jej wycofaniem.
+          </div>
         </div>
 
         <button
+          type="submit"
           className={
             isCheckedZgoda === true
-              ? styles[
-                  "layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn"
-                ]
-              : styles["menu-modal__closed-variant"]
+              ? `${styles["layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn"]} ${styles["layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn--active"]}`
+              : `${styles["layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn"]} ${styles["layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn--blocked"]}`
           }
         >
-          Wyślij
+          WYŚLIJ ZAPYTANIE
         </button>
       </form>
 

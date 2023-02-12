@@ -914,34 +914,90 @@
   display: grid;
   grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4] minmax(0rem, max-content) [r-5] minmax(0rem, max-content) [r-6] minmax(0rem, max-content) [r-7];
   grid-template-columns: [c-1] 1fr [c-2] 9fr [c-3];
+  row-gap: 2rem;
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--tytul-formularza {
   grid-row: r-1/r-2;
   grid-column: c-1/c-3;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  margin: 1rem auto 1rem auto;
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--imie-i-nazwisko {
   grid-row: r-2/r-3;
   grid-column: c-1/c-3;
+  font-family: roboto, sans-serif;
+  background-color: #f4f4f4;
+  color: rgb(44, 44, 44);
+  border: none;
+  width: 80%;
+  aspect-ratio: 7/1;
+  justify-self: center;
+  padding: 1rem 0.5rem 1rem 0.5rem;
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--email {
   grid-row: r-3/r-4;
   grid-column: c-1/c-3;
+  font-family: roboto, sans-serif;
+  background-color: #f4f4f4;
+  color: rgb(44, 44, 44);
+  border: none;
+  width: 80%;
+  aspect-ratio: 7/1;
+  justify-self: center;
+  padding: 1rem 0.5rem 1rem 0.5rem;
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--tresc-wiadomosci {
   grid-row: r-4/r-5;
   grid-column: c-1/c-3;
+  font-family: roboto, sans-serif;
+  background-color: #f4f4f4;
+  color: rgb(44, 44, 44);
+  border: none;
+  width: 80%;
+  aspect-ratio: 7/1;
+  justify-self: center;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox {
+  grid-row: r-5/r-6;
+  grid-column: c-1/c-3;
+  display: grid;
+  grid-auto-flow: column;
+  width: 80vw;
+  justify-self: center;
+  text-align: justify;
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--btn {
-  grid-row: r-5/r-6;
-  grid-column: c-1/c-2;
+  align-self: start;
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--tresc-z-boku {
-  grid-row: r-5/r-6;
-  grid-column: c-2/c-3;
+  color: white;
+  font-size: 1.1rem;
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn {
   grid-row: r-6/r-7;
   grid-column: c-1/c-3;
+  width: 15rem;
+  aspect-ratio: 4/1;
+  justify-self: center;
+  border-radius: 0;
+  border: none;
+  color: white;
+  background: #1f5c91;
+  background: -moz-linear-gradient(-45deg, #1f5c91 0%, #12737a 100%);
+  background: -webkit-linear-gradient(-45deg, #1f5c91 0%, #12737a 100%);
+  background: linear-gradient(135deg, #1f5c91 0%, #12737a 100%);
+}
+.layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn--active {
+  opacity: 1;
+  cursor: pointer;
+}
+.layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn--blocked {
+  opacity: 0.5;
+  cursor: none;
 }
 .layout__infiniti-kontakt__cala-strona__mapa-dojazdu--tytul-nad-nia {
   grid-row: r-4/r-5;
