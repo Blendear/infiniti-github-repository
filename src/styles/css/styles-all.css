@@ -1557,12 +1557,14 @@
   display: grid;
   grid-template-rows: [r-1] minmax(5rem, max-content) [r-2] minmax(5rem, max-content) [r-3] minmax(5rem, max-content) [r-4] minmax(5rem, max-content) [r-5] minmax(5rem, max-content) [r-6] minmax(5rem, max-content) [r-7] minmax(5rem, max-content) [r-8] minmax(5rem, max-content) [r-9];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-2];
+  padding: 0 3rem 0 3rem;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-1 {
   grid-row: r-2/r-3;
   grid-column: c-1/c-2;
-  margin-left: 25%;
-  margin-right: 15%;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-1 {
   grid-row: r-3/r-4;
@@ -1577,8 +1579,9 @@
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-2 {
   grid-row: r-2/r-3;
   grid-column: c-2/c-3;
-  margin-left: 15%;
-  margin-right: 25%;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-2 {
   grid-row: r-3/r-4;
@@ -1593,8 +1596,9 @@
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-3 {
   grid-row: r-4/r-5;
   grid-column: c-1/c-2;
-  margin-left: 25%;
-  margin-right: 15%;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-3 {
   grid-row: r-5/r-6;
@@ -1609,8 +1613,9 @@
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-4 {
   grid-row: r-4/r-5;
   grid-column: c-2/c-3;
-  margin-left: 15%;
-  margin-right: 25%;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-4 {
   grid-row: r-5/r-6;
@@ -1625,8 +1630,9 @@
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-5 {
   grid-row: r-6/r-7;
   grid-column: c-1/c-2;
-  margin-left: 25%;
-  margin-right: 15%;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-5 {
   grid-row: r-7/r-8;
@@ -1641,8 +1647,9 @@
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-6 {
   grid-row: r-6/r-7;
   grid-column: c-2/c-3;
-  margin-left: 15%;
-  margin-right: 25%;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-6 {
   grid-row: r-7/r-8;
@@ -1657,8 +1664,9 @@
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-7 {
   grid-row: r-8/r-9;
   grid-column: c-1/c-2;
-  margin-left: 25%;
-  margin-right: 15%;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-7 {
   grid-row: r-9/r-10;
@@ -1673,8 +1681,9 @@
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-8 {
   grid-row: r-8/r-9;
   grid-column: c-2/c-3;
-  margin-left: 15%;
-  margin-right: 25%;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-8 {
   grid-row: r-9/r-10;

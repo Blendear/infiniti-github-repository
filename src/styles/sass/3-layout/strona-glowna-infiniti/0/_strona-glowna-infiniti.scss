@@ -207,6 +207,9 @@ $rozmiar-column-siatka-btn: 1fr;
           [c-2] 1fr
           [c-2];
 
+        padding: 0 3rem 0 3rem;
+        // gap: 2rem;
+        // column-gap: 2rem;
         &--item {
           @mixin tekst-ikonki {
             justify-self: center;
@@ -217,12 +220,18 @@ $rozmiar-column-siatka-btn: 1fr;
             font-weight: bold;
           }
           @mixin SVG-lewy {
-            margin-left: 25%;
-            margin-right: 15%;
+            justify-self: center;
+            align-self: center;
+            // margin-left: 25%;
+            // margin-right: 15%;
+            width: 70%;
           }
           @mixin SVG-prawy {
-            margin-left: 15%;
-            margin-right: 25%;
+            justify-self: center;
+            align-self: center;
+            // margin-left: 15%;
+            // margin-right: 25%;
+            width: 70%;
           }
           &--svg-icon-1 {
             grid-row: r-2 / r-3;
