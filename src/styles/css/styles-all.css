@@ -1500,9 +1500,23 @@
   font-weight: bold;
   text-shadow: 0 0 0.3rem #000000;
   box-shadow: 0 0 1vw 0.2vw rgba(63, 0, 69, 0.3568627451);
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
-.layout__strona-glowna__cala-strona__kup-karnet-button:active {
-  background: linear-gradient(222deg, rgb(17, 146, 148) 0%, rgb(129, 33, 202) 100%);
+.layout__strona-glowna__cala-strona__kup-karnet-button a {
+  color: rgb(255, 255, 255);
+}
+.layout__strona-glowna__cala-strona__kup-karnet-button a:link,
+.layout__strona-glowna__cala-strona__kup-karnet-button :visited,
+.layout__strona-glowna__cala-strona__kup-karnet-button :active,
+.layout__strona-glowna__cala-strona__kup-karnet-button :hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.layout__strona-glowna__cala-strona__kup-karnet-button:hover {
+  background: linear-gradient(222deg, rgb(162, 44, 255) 0%, rgb(34, 193, 195) 100%);
+  transform: scale(1.2);
+  transition: all 0.5s ease-out;
 }
 .layout__strona-glowna__cala-strona__tytul {
   grid-row: r-3/r-4;

@@ -173,7 +173,7 @@ const DoPobrania = () => {
           }
         >
           <Image
-            src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Medical.jpg`}
+            src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Fitness.jpg`}
             alt={`nie pyklo zdjecie`}
             // height={200}
             // width={100}
@@ -270,7 +270,7 @@ const DoPobrania = () => {
             // target="_blank"
             download
             //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
-            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/pdf.zip"
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/eps.zip"
           >
             <a target="_blank">
               <Image
@@ -291,8 +291,9 @@ const DoPobrania = () => {
             ]
           }
         >
+          {/* https://infiniti-kk-cms.efitness.com.pl/kup-karnet */}
           <Image
-            src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Fitness.jpg`}
+            src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Medical.jpg`}
             alt={`nie pyklo zdjecie`}
             // height={200}
             // width={100}
@@ -360,14 +361,23 @@ const DoPobrania = () => {
             ]
           }
         >
-          <Image
-            src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
-            alt={`nie pyklo zdjecie`}
-            // height={1004}
-            // width={2004}
-            layout="fill"
-            objectFit="contain"
-          />
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/pdf.pdf"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
         </div>
         <div
           className={
@@ -376,14 +386,23 @@ const DoPobrania = () => {
             ]
           }
         >
-          <Image
-            src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
-            alt={`nie pyklo zdjecie`}
-            // height={1004}
-            // width={2004}
-            layout="fill"
-            objectFit="contain"
-          />
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/eps.zip"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
         </div>
         <div
           className={
@@ -412,7 +431,7 @@ const DoPobrania = () => {
             // target="_blank"
             download
             //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
-            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/jpg.jpg"
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/jpg.jpg"
           >
             <a target="_blank">
               <Image
@@ -440,7 +459,7 @@ const DoPobrania = () => {
             // target="_blank"
             download
             //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
-            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/png.png"
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/png.png"
           >
             <a target="_blank">
               <Image
@@ -461,14 +480,23 @@ const DoPobrania = () => {
             ]
           }
         >
-          <Image
-            src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
-            alt={`nie pyklo zdjecie`}
-            // height={1004}
-            // width={2004}
-            layout="fill"
-            objectFit="contain"
-          />
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/pdf.pdf"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
         </div>
         <div
           className={
@@ -477,14 +505,23 @@ const DoPobrania = () => {
             ]
           }
         >
-          <Image
-            src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
-            alt={`nie pyklo zdjecie`}
-            // height={1004}
-            // width={2004}
-            layout="fill"
-            objectFit="contain"
-          />
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/eps.zip"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
         </div>
       </div>
     </div>

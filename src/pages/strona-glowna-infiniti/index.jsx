@@ -48,7 +48,7 @@ import MenuModal from "../../components/wszechobecne-na-roznych-podstronach/menu
 import { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../../store/redux/hooks";
 import { menuINavbarSliceActions } from "../../store/redux/store-redux";
-
+import Link from "next/link";
 //
 //
 // Dorób classy dla każdego elementu   &   przypisz je placeholderom przedstawiajacymi fragmnenty daneo fragmentu (np. strzalki, foty i obramowki galerii carousel fot miejsc)
@@ -101,7 +101,13 @@ const StronaGlowna = () => {
           styles["layout__strona-glowna__cala-strona__kup-karnet-button"]
         }
       >
-        KUP KARNET
+        <Link
+          // target="_blank"
+          download
+          href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet"
+        >
+          <a target="_blank">KUP KARNET</a>
+        </Link>
       </button>
       <TytulINFINITI />
       <div className={styles["layout__strona-glowna__cala-strona__fota-klubu"]}>

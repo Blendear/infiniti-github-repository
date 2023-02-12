@@ -111,14 +111,35 @@ $rozmiar-column-siatka-btn: 1fr;
         font-weight: bold;
         text-shadow: 0 0 0.3rem #000000;
         box-shadow: 0 0 1vw 0.2vw #3f00455b;
-
-        &:active {
-          // font-weight: 1;
+        transition: all 0.5s ease-out;
+        cursor: pointer;
+        // &:active {
+        //   // font-weight: 1;
+        //   background: linear-gradient(
+        //     222deg,
+        //     rgb(17, 146, 148) 0%,
+        //     rgb(129, 33, 202) 100%
+        //   );
+        // }
+        & a {
+          color: rgb(255, 255, 255);
+        }
+        & a:link,
+        :visited,
+        :active,
+        :hover {
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+        &:hover {
           background: linear-gradient(
             222deg,
-            rgb(17, 146, 148) 0%,
-            rgb(129, 33, 202) 100%
+            rgba(162, 44, 255, 1) 0%,
+            rgba(34, 193, 195, 1) 100%
           );
+
+          transform: scale(1.2);
+          transition: all 0.5s ease-out;
         }
       }
       &__tytul {
