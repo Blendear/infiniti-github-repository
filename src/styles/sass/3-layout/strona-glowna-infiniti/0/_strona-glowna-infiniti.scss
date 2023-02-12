@@ -267,34 +267,43 @@ $rozmiar-column-siatka-btn: 1fr;
           &--svg-icon-5 {
             grid-row: r-6 / r-7;
             grid-column: c-1 / c-2;
+            @include SVG-lewy();
           }
           &--tekst-5 {
             grid-row: r-7 / r-8;
             grid-column: c-1 / c-2;
+            @include tekst-ikonki();
           }
           &--svg-icon-6 {
             grid-row: r-6 / r-7;
             grid-column: c-2 / c-3;
+            @include SVG-prawy();
           }
           &--tekst-6 {
             grid-row: r-7 / r-8;
             grid-column: c-2 / c-3;
+            @include tekst-ikonki();
           }
           &--svg-icon-7 {
             grid-row: r-8 / r-9;
             grid-column: c-1 / c-2;
+            @include SVG-lewy();
           }
           &--tekst-7 {
             grid-row: r-9 / r-10;
             grid-column: c-1 / c-2;
+            @include tekst-ikonki();
           }
           &--svg-icon-8 {
             grid-row: r-8 / r-9;
             grid-column: c-2 / c-3;
+            @include SVG-prawy();
           }
           &--tekst-8 {
             grid-row: r-9 / r-10;
             grid-column: c-2 / c-3;
+
+            @include tekst-ikonki();
           }
         }
       }
