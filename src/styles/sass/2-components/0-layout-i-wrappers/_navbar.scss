@@ -15,14 +15,16 @@ $rozmiar-rowa: minmax(0rem, max-content);
   //     position: absolute;
   //     height: 100%;
   //   }
-  &__wrapper {
-    // position: relative;
-    height: 100%;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+  // &__wrapper {
+  //   // position: relative;
+  //   display: grid;
+
+  //   height: 100%;
+  //   width: 100%;
+  //   position: sticky;
+  //   top: 0;
+  //   z-index: 100;
+  // }
   &__caly-container {
     display: grid;
 
@@ -44,14 +46,19 @@ $rozmiar-rowa: minmax(0rem, max-content);
       // 0.1fr
       // [c-0]
 ;
-
-    position: sticky;
+    //hook1 - FIXED zamiast sticky powinienem zawsze? when to sue which?
+    position: fixed;
     top: 0;
+    margin: 1rem auto 0 auto;
     // bottom: 0;
     z-index: 100;
-
+    // justify-self: center;
     background-color: white;
     box-shadow: 0 0 3vw 0.5vw #0000005b;
+
+    // & * {
+    //   overflow: visible;
+    // }
     @mixin menu-elements {
       align-self: center;
       justify-self: center;
@@ -83,6 +90,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
         grid-column: c-1 / c-2;
         @include menu-elements();
         margin: 0.8vw 0 0 1vw;
+        // overflow: visible;
       }
       &--tekst {
         grid-row: r-1 / r-2;
@@ -120,7 +128,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
     }
     @mixin linia {
       background-color: #3b3b3b;
-      width: 0.5vw;
+      width: 0.15rem;
       aspect-ratio: 1/18;
     }
     &__linia-dzielaca {

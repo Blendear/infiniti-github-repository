@@ -1,17 +1,11 @@
 @charset "UTF-8";
-.navbar-gorny__wrapper {
-  height: 100%;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
 .navbar-gorny__caly-container {
   display: grid;
   grid-template-rows: [r-1] minmax(0rem, max-content) [r-2];
   grid-template-columns: [c-1] 1fr [c-2] 2fr [c-3] 0.6fr [c-4] 1fr [c-5] 2fr [c-6] 0.6fr [c-7] 1fr [c-8];
-  position: sticky;
+  position: fixed;
   top: 0;
+  margin: 1rem auto 0 auto;
   z-index: 100;
   background-color: white;
   box-shadow: 0 0 3vw 0.5vw rgba(0, 0, 0, 0.3568627451);
@@ -93,7 +87,7 @@
   border: none;
   margin: 2vw 0.5vw 2vw 0.5vw;
   background-color: #3b3b3b;
-  width: 0.5vw;
+  width: 0.15rem;
   aspect-ratio: 1/18;
 }
 .navbar-gorny__caly-container__linia-dzielaca--2 {
@@ -105,7 +99,7 @@
   border: none;
   margin: 2vw 0.5vw 2vw 0.5vw;
   background-color: #3b3b3b;
-  width: 0.5vw;
+  width: 0.15rem;
   aspect-ratio: 1/18;
 }
 
