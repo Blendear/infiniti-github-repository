@@ -108,7 +108,10 @@
   margin: 0 auto 0 auto;
   padding: 3rem 0 0 0;
   row-gap: 5rem;
-  background-color: black;
+  background: #5a87ff;
+  background: -moz-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
+  background: -webkit-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
+  background: linear-gradient(0deg, #cb8dff 0%, #809cff 100%);
 }
 .footer__honorowane-karty {
   display: grid;
@@ -126,6 +129,10 @@
   font-size: 1.6rem;
   font-weight: bold;
   color: white;
+  background: #8c51d7;
+  background: -moz-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+  background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+  background: linear-gradient(0deg, #965ae4 0%, #5b7eff 100%);
 }
 .footer__honorowane-karty--tytul svg {
   justify-self: center;
@@ -138,13 +145,24 @@
   align-self: center;
   font-size: 1.4rem;
   font-weight: normal;
+  text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
   color: white;
   width: 80%;
   justify-self: center;
 }
+.footer__honorowane-karty--karta a {
+  color: rgb(71, 71, 71);
+}
+.footer__honorowane-karty--karta a:link,
+.footer__honorowane-karty--karta :visited,
+.footer__honorowane-karty--karta :active,
+.footer__honorowane-karty--karta :hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 .footer__honorowane-karty--karta svg {
   justify-self: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   align-self: center;
 }
 .footer__dokumenty {
@@ -163,6 +181,10 @@
   font-size: 1.6rem;
   font-weight: bold;
   color: white;
+  background: #8c51d7;
+  background: -moz-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+  background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+  background: linear-gradient(0deg, #965ae4 0%, #5b7eff 100%);
 }
 .footer__dokumenty--tytul svg {
   justify-self: center;
@@ -175,27 +197,109 @@
   align-self: center;
   font-size: 1.4rem;
   font-weight: normal;
+  text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
   color: white;
   width: 80%;
   justify-self: center;
 }
-.footer__dokumenty--karta svg {
-  justify-self: center;
-  font-size: 1.2rem;
-  align-self: center;
-}
 .footer__dokumenty--karta a {
   color: rgb(71, 71, 71);
 }
-.footer__dokumenty--kartaa:link,
+.footer__dokumenty--karta a:link,
 .footer__dokumenty--karta :visited,
 .footer__dokumenty--karta :active,
 .footer__dokumenty--karta :hover {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+.footer__dokumenty--karta svg {
+  justify-self: center;
+  font-size: 1.5rem;
+  align-self: center;
+}
 .footer__kontakt {
   display: grid;
+  grid-auto-rows: 5rem;
+}
+.footer__kontakt--tytul {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  width: max(25vw, 25rem);
+  aspect-ratio: 5/1;
+  justify-self: center;
+  align-items: center;
+  justify-items: start;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  background: #8c51d7;
+  background: -moz-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+  background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
+  background: linear-gradient(0deg, #965ae4 0%, #5b7eff 100%);
+}
+.footer__kontakt--tytul svg {
+  justify-self: center;
+  font-size: 2rem;
+  align-self: center;
+}
+.footer__kontakt--karta {
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  align-self: center;
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
+  color: white;
+  width: 80%;
+  justify-self: center;
+}
+.footer__kontakt--karta a {
+  color: rgb(71, 71, 71);
+}
+.footer__kontakt--karta a:link,
+.footer__kontakt--karta :visited,
+.footer__kontakt--karta :active,
+.footer__kontakt--karta :hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer__kontakt--karta svg {
+  justify-self: center;
+  font-size: 1.5rem;
+  align-self: center;
+}
+.footer__kontakt--sociale {
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  align-self: center;
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
+  color: white;
+  width: 80%;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
+  justify-items: center;
+}
+.footer__kontakt--sociale a {
+  color: rgb(71, 71, 71);
+}
+.footer__kontakt--sociale a:link,
+.footer__kontakt--sociale :visited,
+.footer__kontakt--sociale :active,
+.footer__kontakt--sociale :hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer__kontakt--sociale svg {
+  justify-self: center;
+  font-size: 1.5rem;
+  align-self: center;
+}
+.footer__kontakt--sociale svg {
+  font-size: 2.5rem;
 }
 
 /**

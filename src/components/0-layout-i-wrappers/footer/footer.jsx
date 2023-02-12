@@ -21,8 +21,16 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import Link from "next/link";
 import { useAppSelector, useAppDispatch } from "../../../store/redux/hooks";
 import { BsCardChecklist } from "react-icons/bs";
-import { BsCircle } from "react-icons/bs";
-import { AiOutlineBorder } from "react-icons/ai";
+import { BsCircle, BsTelephone } from "react-icons/bs";
+import { AiOutlineBorder, AiOutlineInstagram } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
+import { VscCommentDiscussion } from "react-icons/vsc";
+import { BiPhone } from "react-icons/bi";
+import { HiOutlineMail } from "react-icons/hi";
+import { SlSocialFacebook, SlSocialYoutube } from "react-icons/sl";
+
+// https://instagram.com/infiniti.fitness.club
+// import { IoDocumentOutline } from "react-icons/io";
 // import {aComponent, bComponent} from "...COMPONENT folder..."
 
 const Footer = () => {
@@ -66,7 +74,7 @@ const Footer = () => {
       </div>
       <div className={styles["footer__dokumenty"]}>
         <div className={styles["footer__dokumenty--tytul"]}>
-          <BsCardChecklist color="white" />
+          <CgFileDocument />
           <div>DOKUMENTY</div>
         </div>
         <div className={styles["footer__dokumenty--karta"]}>
@@ -106,7 +114,37 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className={styles["footer__kontakt"]}>K</div>
+      <div className={styles["footer__kontakt"]}>
+        <div className={styles["footer__kontakt--tytul"]}>
+          <VscCommentDiscussion color="white" />
+          <div>WIĘCEJ O NAS</div>
+        </div>
+        <div className={styles["footer__kontakt--karta"]}>
+          <BiPhone color="white" />
+          <div>{"(+48) 88 48 48 808"}</div>
+        </div>
+        <div className={styles["footer__kontakt--karta"]}>
+          <HiOutlineMail color="white" />
+          <div>info@infiniti-fit.pl</div>
+        </div>
+        <div className={styles["footer__kontakt--sociale"]}>
+          <Link href="https://www.facebook.com/fitness.club.INFINITI">
+            <a>
+              <SlSocialFacebook />
+            </a>
+          </Link>
+          <Link href="https://www.youtube.com/watch?v=rhuTosgeXok&ab_channel=INFINITIRecepcja">
+            <a>
+              <SlSocialYoutube />
+            </a>
+          </Link>
+          <Link href="https://instagram.com/infiniti.fitness.club ">
+            <a>
+              <AiOutlineInstagram />
+            </a>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
