@@ -635,7 +635,7 @@
 .layout__medical-cennik__cala-strona {
   position: relative;
   display: grid;
-  grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4] minmax(0rem, max-content) [r-5];
+  grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4] 3rem [r-5];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4] 1fr [c-5] 1fr [c-6] 1fr [c-7] 1fr [c-8] 1fr [c-9] 1fr [c-10] 1fr [c-11] 1fr [c-12];
 }
 .layout__medical-cennik__cala-strona__0-startowe-logo-i-fota--logo {
@@ -671,7 +671,7 @@
 .layout__fitness-cennik__cala-strona {
   position: relative;
   display: grid;
-  grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4] minmax(0rem, max-content) [r-5];
+  grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4] 3rem [r-5];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4] 1fr [c-5] 1fr [c-6] 1fr [c-7] 1fr [c-8] 1fr [c-9] 1fr [c-10] 1fr [c-11] 1fr [c-12];
 }
 .layout__fitness-cennik__cala-strona__0-startowe-logo-i-fota--logo {
@@ -911,7 +911,7 @@
   grid-column: c-2/c-6;
   display: grid;
   position: relative;
-  grid-template-rows: [r-1] 4rem [r-2] 1fr [r-break1] 3rem [r-3] 1fr [r-4] 4rem [r-5] 1fr [r-break2] 3rem [r-6] 1fr [r-7] 2rem [r-8];
+  grid-template-rows: [r-1] 4rem [r-2] 1fr [r-3] 1fr [r-4] 4rem [r-5] 1fr [r-6] 1fr [r-7] 4rem [r-8] 1fr [r-9] 1fr [r-10] 1fr [r-11];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3];
   grid-auto-flow: column;
 }
@@ -919,7 +919,7 @@
   grid-row: r-1/r-2;
   grid-column: c-1/c-3;
   justify-self: center;
-  align-self: center;
+  align-self: end;
   font-size: 1.3rem;
   font-weight: bold;
   color: rgb(71, 71, 71);
@@ -928,7 +928,16 @@
   grid-row: r-4/r-5;
   grid-column: c-1/c-3;
   justify-self: center;
-  align-self: center;
+  align-self: end;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(71, 71, 71);
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--infiniti-tytul {
+  grid-row: r-7/r-8;
+  grid-column: c-1/c-3;
+  justify-self: center;
+  align-self: end;
   font-size: 1.3rem;
   font-weight: bold;
   color: rgb(71, 71, 71);
@@ -937,8 +946,8 @@
   grid-row: r-2/r-3;
   grid-column: c-1/c-2;
   position: relative;
-  width: 6rem;
-  aspect-ratio: 1/1.1;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
@@ -951,8 +960,8 @@
   grid-row: r-2/r-3;
   grid-column: c-2/c-3;
   position: relative;
-  width: 6rem;
-  aspect-ratio: 1/1.1;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
@@ -965,8 +974,8 @@
   grid-row: r-3/r-4;
   grid-column: c-1/c-2;
   position: relative;
-  width: 6rem;
-  aspect-ratio: 1/1.1;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
@@ -979,8 +988,8 @@
   grid-row: r-3/r-4;
   grid-column: c-2/c-3;
   position: relative;
-  width: 6rem;
-  aspect-ratio: 1/1.1;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
@@ -993,8 +1002,8 @@
   grid-row: r-5/r-6;
   grid-column: c-1/c-2;
   position: relative;
-  width: 6rem;
-  aspect-ratio: 1/1.1;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
@@ -1007,8 +1016,8 @@
   grid-row: r-5/r-6;
   grid-column: c-2/c-3;
   position: relative;
-  width: 6rem;
-  aspect-ratio: 1/1.1;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
@@ -1021,8 +1030,8 @@
   grid-row: r-6/r-7;
   grid-column: c-1/c-2;
   position: relative;
-  width: 6rem;
-  aspect-ratio: 1/1.1;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
@@ -1035,13 +1044,69 @@
   grid-row: r-6/r-7;
   grid-column: c-2/c-3;
   position: relative;
-  width: 6rem;
-  aspect-ratio: 1/1.1;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-8:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-9 {
+  grid-row: r-8/r-9;
+  grid-column: c-1/c-2;
+  position: relative;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-9:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-10 {
+  grid-row: r-8/r-9;
+  grid-column: c-2/c-3;
+  position: relative;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-10:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-11 {
+  grid-row: r-9/r-10;
+  grid-column: c-1/c-2;
+  position: relative;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-11:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-12 {
+  grid-row: r-9/r-10;
+  grid-column: c-2/c-3;
+  position: relative;
+  width: 4rem;
+  aspect-ratio: 1/1.5;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-12:hover {
   transform: scale(1.05);
   transition: all 0.5s;
 }
@@ -1105,8 +1170,9 @@
   justify-self: center;
   align-content: center;
   align-self: center;
-  width: 0.25rem;
-  height: 80%;
+  width: 0.2rem;
+  height: 92%;
+  align-self: start;
 }
 
 .layout__infiniti-kontakt__cala-strona {
@@ -1247,7 +1313,7 @@
   grid-row: r-6/r-7;
   grid-column: c-1/c-12;
   display: grid;
-  grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4] minmax(0rem, max-content) [r-5];
+  grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4] minmax(0rem, max-content) [r-5] 2rem [r-5];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
   width: 80vw;
   margin: 0 auto 0 auto;

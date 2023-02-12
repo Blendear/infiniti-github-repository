@@ -339,7 +339,7 @@ const DoPobrania = () => {
             </a>
           </Link>
         </div>
-        {/* <div
+        <div
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-7"
@@ -370,7 +370,100 @@ const DoPobrania = () => {
             layout="fill"
             objectFit="contain"
           />
-        </div> */}
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--infiniti-tytul"
+            ]
+          }
+        >
+          INFINITI
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-9"
+            ]
+          }
+        >
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/jpg.jpg"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/jpg.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                // height={200}
+                // width={200}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-10"
+            ]
+          }
+        >
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/png.png"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/png.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-11"
+            ]
+          }
+        >
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
+            alt={`nie pyklo zdjecie`}
+            // height={1004}
+            // width={2004}
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-12"
+            ]
+          }
+        >
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
+            alt={`nie pyklo zdjecie`}
+            // height={1004}
+            // width={2004}
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
       </div>
     </div>
   );
