@@ -120,12 +120,13 @@ const Footer = () => {
           <div>WIĘCEJ O NAS</div>
         </div>
         <div className={styles["footer__kontakt--karta"]}>
-          <BiPhone color="white" />
+          {/* <BiPhone color="white" /> */}
           <div>{"(+48) 88 48 48 808"}</div>
         </div>
         <div className={styles["footer__kontakt--karta"]}>
-          <HiOutlineMail color="white" />
-          <div>info@infiniti-fit.pl</div>
+          {/* <HiOutlineMail color="white" /> */}
+          {/* <div></div> */}
+          info@infiniti-fit.pl{" "}
         </div>
         <div className={styles["footer__kontakt--sociale"]}>
           <Link href="https://www.facebook.com/fitness.club.INFINITI">
@@ -144,6 +145,9 @@ const Footer = () => {
             </a>
           </Link>
         </div>
+      </div>
+      <div className={styles["footer__copyright"]}>
+        © 2023 - INFINITI Fitness Club
       </div>
     </div>
   );

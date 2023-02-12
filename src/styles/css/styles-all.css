@@ -107,7 +107,7 @@
   grid-template-rows: 1fr;
   margin: 0 auto 0 auto;
   padding: 3rem 0 0 0;
-  row-gap: 5rem;
+  row-gap: 3rem;
   background: #5a87ff;
   background: -moz-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
   background: -webkit-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
@@ -142,8 +142,8 @@
 .footer__honorowane-karty--karta {
   display: grid;
   grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
-  align-self: center;
-  font-size: 1.4rem;
+  align-self: end;
+  font-size: 1.6rem;
   font-weight: normal;
   text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
   color: white;
@@ -194,8 +194,8 @@
 .footer__dokumenty--karta {
   display: grid;
   grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
-  align-self: center;
-  font-size: 1.4rem;
+  align-self: end;
+  font-size: 1.6rem;
   font-weight: normal;
   text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
   color: white;
@@ -246,13 +246,16 @@
 .footer__kontakt--karta {
   display: grid;
   grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
-  align-self: center;
-  font-size: 1.4rem;
+  align-self: end;
+  font-size: 1.6rem;
   font-weight: normal;
   text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
   color: white;
   width: 80%;
   justify-self: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2];
 }
 .footer__kontakt--karta a {
   color: rgb(71, 71, 71);
@@ -272,8 +275,8 @@
 .footer__kontakt--sociale {
   display: grid;
   grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
-  align-self: center;
-  font-size: 1.4rem;
+  align-self: end;
+  font-size: 1.6rem;
   font-weight: normal;
   text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
   color: white;
@@ -300,6 +303,37 @@
 }
 .footer__kontakt--sociale svg {
   font-size: 2.5rem;
+}
+.footer__copyright {
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  align-self: end;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
+  color: white;
+  width: 80%;
+  justify-self: center;
+  display: inline-block;
+  text-align: center;
+  color: rgb(69, 69, 69);
+  text-shadow: none;
+  margin: 0 auto 2rem auto;
+}
+.footer__copyright a {
+  color: rgb(71, 71, 71);
+}
+.footer__copyright a:link,
+.footer__copyright :visited,
+.footer__copyright :active,
+.footer__copyright :hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer__copyright svg {
+  justify-self: center;
+  font-size: 1.5rem;
+  align-self: center;
 }
 
 /**
