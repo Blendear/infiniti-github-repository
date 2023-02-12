@@ -15,7 +15,7 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
-
+import Link from "next/link";
 import ZmienneStartoweLogo from "../../../../components/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/logo";
 import ZmienneStartoweTlo from "../../../../components/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/fota";
 import TytulPodstrony from "../../../../components/wszechobecne-na-roznych-podstronach/tytul-podstrony/tytul-podstrony";
@@ -24,6 +24,7 @@ import { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
 import { menuINavbarSliceActions } from "../../../../store/redux/store-redux";
 
+import { GrDocumentText } from "react-icons/gr";
 const DoPobrania = () => {
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
@@ -103,8 +104,13 @@ const DoPobrania = () => {
             ]
           }
         >
-          <div>zdjecie</div>
-          <div>opis</div>
+          <GrDocumentText size="2rem" opacity="0.6" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Regulamin_Infiniti_Fitness_Club_2023.pdf"
+          >
+            <a target="_blank">Regulamin INFINITI</a>
+          </Link>
         </div>
         <div
           className={
@@ -113,8 +119,13 @@ const DoPobrania = () => {
             ]
           }
         >
-          <div>zdjecie</div>
-          <div>opis</div>
+          <GrDocumentText size="2rem" opacity="0.6" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Polityka_Prywatności_Fit-Food-Group_01.2023.pdf"
+          >
+            <a target="_blank">Polityka prywatności</a>
+          </Link>
         </div>
         <div
           className={
@@ -123,81 +134,243 @@ const DoPobrania = () => {
             ]
           }
         >
-          <div>zdjecie</div>
-          <div>opis</div>
+          <GrDocumentText size="2rem" opacity="0.6" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/OSWIADCZENIE_RODZICA_OPIEKUNA.pdf"
+          >
+            <a target="_blank">Zgoda nieletniego</a>
+          </Link>
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item"
+            ]
+          }
+        >
+          <GrDocumentText size="2rem" opacity="0.6" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Wzor-oswiadczenia-o-odstapieniu-od-umowy-zawartej-na-odleglosc.pdf"
+          >
+            <a target="_blank">Wzór odstąpienia od umowy</a>
+          </Link>
         </div>
       </div>
       <div
         className={
           styles[
-            "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1"
+            "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow"
           ]
         }
       >
-        <Image
-          src={`/images/.design-pattern-placeholders/pietro1.jpg`}
-          alt={`nie pyklo zdjecie`}
-          // height={1004}
-          // width={2004}
-          height={200}
-          width={200}
-          layout="responsive"
-          objectFit="cover"
-        />
-      </div>
-      <div
-        className={
-          styles[
-            "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-2"
-          ]
-        }
-      >
-        <Image
-          src={`/images/.design-pattern-placeholders/pietro1.jpg`}
-          alt={`nie pyklo zdjecie`}
-          // height={1004}
-          // width={2004}
-          height={200}
-          width={200}
-          layout="responsive"
-          objectFit="cover"
-        />
-      </div>
-      <div
-        className={
-          styles[
-            "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-3"
-          ]
-        }
-      >
-        <Image
-          src={`/images/.design-pattern-placeholders/pietro1.jpg`}
-          alt={`nie pyklo zdjecie`}
-          // height={1004}
-          // width={2004}
-          height={200}
-          width={200}
-          layout="responsive"
-          objectFit="cover"
-        />
-      </div>
-      <div
-        className={
-          styles[
-            "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-4"
-          ]
-        }
-      >
-        <Image
-          src={`/images/.design-pattern-placeholders/pietro1.jpg`}
-          alt={`nie pyklo zdjecie`}
-          // height={1004}
-          // width={2004}
-          height={200}
-          width={200}
-          layout="responsive"
-          objectFit="cover"
-        />
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--medical-tytul"
+            ]
+          }
+        >
+          {" "}
+          INFINITI - FITNESS
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1"
+            ]
+          }
+        >
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/jpg.jpg"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/jpg.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                // height={200}
+                // width={200}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-2"
+            ]
+          }
+        >
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/png.png"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/png.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-3"
+            ]
+          }
+        >
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/pdf.pdf"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-4"
+            ]
+          }
+        >
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/pdf.zip"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--fitness-tytul"
+            ]
+          }
+        >
+          {" "}
+          INFINITI - MEDICAL
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-5"
+            ]
+          }
+        >
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/jpg.jpg"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/jpg.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                // height={200}
+                // width={200}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-6"
+            ]
+          }
+        >
+          <Link
+            // target="_blank"
+            download
+            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/png.png"
+          >
+            <a target="_blank">
+              <Image
+                src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/png.png`}
+                alt={`nie pyklo zdjecie`}
+                // height={1004}
+                // width={2004}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+        </div>
+        {/* <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-7"
+            ]
+          }
+        >
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
+            alt={`nie pyklo zdjecie`}
+            // height={1004}
+            // width={2004}
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+        <div
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-8"
+            ]
+          }
+        >
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
+            alt={`nie pyklo zdjecie`}
+            // height={1004}
+            // width={2004}
+            layout="fill"
+            objectFit="contain"
+          />
+        </div> */}
       </div>
     </div>
   );

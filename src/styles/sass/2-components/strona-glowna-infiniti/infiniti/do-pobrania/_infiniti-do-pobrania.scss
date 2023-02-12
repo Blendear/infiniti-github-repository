@@ -1,0 +1,285 @@
+//
+//
+//~~ A.  ...
+//
+//       A.1. __medical-do-pobrania__cala-strona
+//
+//           A.1.1. __0-startowe-logo-i-fota
+//
+//           A.1.2. __0-nazwa-podstrony
+//
+//           A.1.3. __tytuly-i-content-do-pobrania
+//
+//~~ B.  ...
+//
+
+.layout {
+  // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
+  &__infiniti-do-pobrania {
+    // \/ layout, w który zostana włożone fragmenty calej strony
+    &__cala-strona {
+      position: realtive;
+      display: grid;
+
+      grid-template-rows:
+        // 
+          // __obraz_i_logo_tytulowe
+
+        [r-1] minmax(5rem, max-content)
+        [r-2]
+        // __nazwa-tytulowa-podstrony
+        minmax(5rem, max-content)
+        [r-3]
+        // __tytuly-i-content-do-pobrania
+        minmax(5rem, max-content)
+        [r-4] minmax(5rem, max-content)
+        [r-5] minmax(5rem, max-content)
+        [r-6]
+        //
+;
+
+      grid-template-columns: 
+          //
+
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
+        [c-4] 1fr
+        [c-5] 1fr
+        [c-6] 1fr
+        [c-7] 1fr
+        [c-8] 1fr
+        [c-9] 1fr
+        [c-10] 1fr
+        [c-11] 1fr
+        [c-12]
+        //
+;
+      grid-auto-flow: rows;
+      // Trap1 - COMPONENTY ( np. "fota w tle" || "tytuł podstrony") MAJĄ SWOJ SCSS W SWOIM DEDYKOWANUM PLIKU. bez sensu powielac kod np.
+      // dla foty w tle, ktora jest na kazdej stronie
+
+      &__0-startowe-logo-i-fota {
+        display: grid;
+        grid-row: r-1 / r-2;
+        grid-column: c-1 / c-12;
+      }
+      &__0-nazwa-podstrony {
+        display: grid;
+        grid-row: r-2 / r-3;
+        grid-column: c-5 / c-8;
+        // height: 2rem;
+        // position: relative;
+      }
+      &__tytuly-i-content-do-pobrania {
+        @mixin tytul-klocek {
+          // background-color: #530d457a;
+          justify-content: center;
+          justify-self: center;
+          align-content: center;
+          align-self: center;
+          //hook1 - why musialem obydwa aligne zrobić,żeby osobno poruszyć tekstem i osobno gradintem
+          // height: 3rem;
+          width: 10.5rem;
+          aspect-ratio: 4/1;
+          font-size: clamp(0.5rem, 1.1rem, 4rem);
+          font-weight: bold;
+          color: white;
+          background: rgb(34, 193, 195);
+          background: linear-gradient(
+            222deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(31, 92, 145, 1) 100%
+          );
+          // background-position: ;
+        }
+        &--logo {
+          &--tytul {
+            display: grid;
+            grid-row: r-3 / r-4;
+            grid-column: c-2 / c-6;
+
+            @include tytul-klocek;
+          }
+          &--content-typy-plikow {
+            grid-row: r-4 / r-6;
+            grid-column: c-2 / c-6;
+
+            display: grid;
+
+            position: relative;
+            grid-template-rows:
+              [r-1] 4rem
+              [r-2] 1fr
+              [r-break1] 3rem
+              [r-3] 1fr
+              [r-4] 4rem
+              [r-5] 1fr
+              [r-break2] 3rem
+              [r-6] 1fr
+              [r-7] 2rem
+              [r-8];
+            grid-template-columns:
+              [c-1] 1fr
+              [c-2] 1fr
+              [c-3];
+            grid-auto-flow: column;
+
+            // row-gap: 1rem;
+
+            @mixin every-item {
+              position: relative;
+              // margin:0 0 1rem 0
+              width: 6rem;
+              aspect-ratio: 1/1.1;
+              justify-self: center;
+              align-self: center;
+              transition: all 0.5s;
+              &:hover {
+                transform: scale(1.05);
+                transition: all 0.5s;
+              }
+            }
+            @mixin tytuly-logo {
+              justify-self: center;
+              align-self: center;
+              font-size: 1.3rem;
+              font-weight: bold;
+              color: rgb(71, 71, 71);
+              // margin: 0 0 1rem 0;
+            }
+            &--medical-tytul {
+              grid-row: r-1 / r-2;
+              grid-column: c-1 / c-3;
+              @include tytuly-logo();
+            }
+            &--fitness-tytul {
+              grid-row: r-4 / r-5;
+              grid-column: c-1 / c-3;
+              @include tytuly-logo();
+            }
+
+            &--item-1 {
+              grid-row: r-2 / r-3;
+              grid-column: c-1 / c-2;
+
+              @include every-item();
+            }
+            &--item-2 {
+              grid-row: r-2 / r-3;
+              grid-column: c-2 / c-3;
+              @include every-item();
+            }
+            &--item-3 {
+              grid-row: r-3/ r-4;
+              grid-column: c-1 / c-2;
+              @include every-item();
+            }
+            &--item-4 {
+              grid-row: r-3/ r-4;
+              grid-column: c-2 / c-3;
+              @include every-item();
+            }
+            &--item-5 {
+              grid-row: r-5 / r-6;
+              grid-column: c-1 / c-2;
+
+              @include every-item();
+            }
+            &--item-6 {
+              grid-row: r-5 / r-6;
+              grid-column: c-2 / c-3;
+              @include every-item();
+            }
+            &--item-7 {
+              grid-row: r-6 / r-7;
+              grid-column: c-1 / c-2;
+              @include every-item();
+            }
+            &--item-8 {
+              grid-row: r-6 / r-7;
+              grid-column: c-2 / c-3;
+              @include every-item();
+            }
+          }
+        }
+        &--dokumenty {
+          &--tytul {
+            display: grid;
+            grid-row: r-3 / r-4;
+            grid-column: c-7 / c-11;
+
+            // font-size: 2rem;
+            // color: green;
+
+            @include tytul-klocek;
+          }
+          &--content-umowy-i-regulaminy {
+            display: grid;
+            grid-row: r-4 / r-6;
+            grid-column: c-7 / c-11;
+
+            grid-auto-flow: row;
+
+            grid-template-rows:
+              [r-1] 6rem
+              [r-2] 6rem
+              [r-3] 6rem
+              [r-4] 6rem
+              [r-5];
+            grid-template-columns:
+              [c-1] 1fr
+              [c-2];
+            // row-gap: 1.5rem;
+
+            &--item {
+              display: grid;
+              grid-auto-flow: column;
+              // background-color: yellow;
+              // height: 5rem;
+              font-size: 1.2rem;
+              color: rgb(71, 71, 71);
+              font-weight: bold;
+              align-self: center;
+              // align-content: center;
+              column-gap: 1rem;
+              transition: all 0.5s;
+              &:hover {
+                transform: scale(1.05);
+                transition: transform 0.5s;
+              }
+              //descendatn selector to sztosik protip1 \/
+              & svg {
+                align-self: center;
+              }
+              & a {
+                color: rgb(71, 71, 71);
+              }
+              &a:link,
+              :visited,
+              :active,
+              :hover {
+                text-decoration: none;
+                color: rgb(71, 71, 71);
+              }
+            }
+          }
+        }
+        &--linia-srodkowa {
+          display: grid;
+          grid-row: r-4 / r-6;
+          grid-column: c-6 / c-7;
+
+          background-color: #bd99ca;
+          justify-content: center;
+          justify-self: center;
+          align-content: center;
+          align-self: center;
+
+          width: 0.25rem;
+          height: 80%;
+        }
+      }
+    }
+  }
+}

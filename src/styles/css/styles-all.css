@@ -671,8 +671,8 @@
   justify-self: center;
   align-content: center;
   align-self: center;
-  height: 3rem;
-  width: 12rem;
+  width: 10.5rem;
+  aspect-ratio: 4/1;
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
@@ -680,26 +680,143 @@
   background: linear-gradient(222deg, rgb(34, 193, 195) 0%, rgb(31, 92, 145) 100%);
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow {
-  display: grid;
   grid-row: r-4/r-6;
   grid-column: c-2/c-6;
-  background-color: rgba(255, 156, 64, 0.4784313725);
+  display: grid;
+  position: relative;
+  grid-template-rows: [r-1] 4rem [r-2] 1fr [r-break1] 3rem [r-3] 1fr [r-4] 4rem [r-5] 1fr [r-break2] 3rem [r-6] 1fr [r-7] 2rem [r-8];
+  grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3];
+  grid-auto-flow: column;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--medical-tytul {
+  grid-row: r-1/r-2;
+  grid-column: c-1/c-3;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(71, 71, 71);
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--fitness-tytul {
+  grid-row: r-4/r-5;
+  grid-column: c-1/c-3;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(71, 71, 71);
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1 {
-  grid-row: r-4/r-5;
-  grid-column: c-2/c-4;
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-2;
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1/1.1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-2 {
-  grid-row: r-4/r-5;
-  grid-column: c-4/c-6;
+  grid-row: r-2/r-3;
+  grid-column: c-2/c-3;
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1/1.1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-2:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-3 {
-  grid-row: r-5/r-6;
-  grid-column: c-2/c-4;
+  grid-row: r-3/r-4;
+  grid-column: c-1/c-2;
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1/1.1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-3:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-4 {
+  grid-row: r-3/r-4;
+  grid-column: c-2/c-3;
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1/1.1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-4:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-5 {
   grid-row: r-5/r-6;
-  grid-column: c-4/c-6;
+  grid-column: c-1/c-2;
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1/1.1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-5:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-6 {
+  grid-row: r-5/r-6;
+  grid-column: c-2/c-3;
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1/1.1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-6:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-7 {
+  grid-row: r-6/r-7;
+  grid-column: c-1/c-2;
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1/1.1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-7:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-8 {
+  grid-row: r-6/r-7;
+  grid-column: c-2/c-3;
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1/1.1;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-8:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--tytul {
   display: grid;
@@ -709,8 +826,8 @@
   justify-self: center;
   align-content: center;
   align-self: center;
-  height: 3rem;
-  width: 12rem;
+  width: 10.5rem;
+  aspect-ratio: 4/1;
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
@@ -721,18 +838,42 @@
   display: grid;
   grid-row: r-4/r-6;
   grid-column: c-7/c-11;
-  background-color: rgba(212, 181, 152, 0.6941176471);
   grid-auto-flow: row;
+  grid-template-rows: [r-1] 6rem [r-2] 6rem [r-3] 6rem [r-4] 6rem [r-5];
+  grid-template-columns: [c-1] 1fr [c-2];
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item {
   display: grid;
   grid-auto-flow: column;
+  font-size: 1.2rem;
+  color: rgb(71, 71, 71);
+  font-weight: bold;
+  align-self: center;
+  column-gap: 1rem;
+  transition: all 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item svg {
+  align-self: center;
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item a {
+  color: rgb(71, 71, 71);
+}
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--itema:link,
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item :visited,
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item :active,
+.layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item :hover {
+  text-decoration: none;
+  color: rgb(71, 71, 71);
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--linia-srodkowa {
   display: grid;
   grid-row: r-4/r-6;
   grid-column: c-6/c-7;
-  background-color: rgba(83, 13, 69, 0.4784313725);
+  background-color: #bd99ca;
   justify-content: center;
   justify-self: center;
   align-content: center;
