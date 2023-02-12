@@ -23,6 +23,10 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 //
+import { GrDeploy, GrMailOption } from "react-icons/gr";
+import { BsTelephone } from "react-icons/bs";
+import { BiPhone, BiTimeFive, BiRocket } from "react-icons/bi";
+import { HiOutlineMail } from "react-icons/hi";
 
 const StronaKontakt = () => {
   const [isCheckedZgoda, setIsCheckedZgoda] = useState(false);
@@ -244,7 +248,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            icon
+            <BiRocket color="white" size="2rem" />
           </div>
           <div
             className={
@@ -252,9 +256,7 @@ const StronaKontakt = () => {
                 "layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres--linia"
               ]
             }
-          >
-            |
-          </div>
+          ></div>
           <div
             className={
               styles[
@@ -262,7 +264,8 @@ const StronaKontakt = () => {
               ]
             }
           >
-            adres
+            <strong>INFINITI Fitness Club</strong>
+            <br /> Al. Jana Pawła II 58, 47-232, Kędzierzyn-Koźle
           </div>
         </div>
         <div
@@ -279,7 +282,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            icon
+            <BiTimeFive color="white" size="2rem" />
           </div>
           <div
             className={
@@ -287,9 +290,7 @@ const StronaKontakt = () => {
                 "layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia--linia"
               ]
             }
-          >
-            |
-          </div>
+          ></div>
           <div
             className={
               styles[
@@ -297,7 +298,10 @@ const StronaKontakt = () => {
               ]
             }
           >
-            godziny otwarcia
+            Poniedziałek – Piątek 07:00 – 22:00 <br />
+            Sobota 08:00 – 20:00
+            <br />
+            Niedziela 08:00 – 18:00
           </div>
         </div>
         <div
@@ -314,7 +318,8 @@ const StronaKontakt = () => {
               ]
             }
           >
-            icon
+            <BiPhone color="white" size="2rem" />
+            {/* //hook2 - jak sylizowac masowo svg'ki improtowane z reat cions? jakis subselector? */}
           </div>
           <div
             className={
@@ -322,9 +327,7 @@ const StronaKontakt = () => {
                 "layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon--linia"
               ]
             }
-          >
-            |
-          </div>
+          ></div>
           <div
             className={
               styles[
@@ -332,7 +335,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            telefon
+            {"(+48) 88 48 48 808"}
           </div>
         </div>
         <div
@@ -349,7 +352,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            icon
+            <HiOutlineMail color="white" size="2rem" />
           </div>
           <div
             className={
@@ -357,9 +360,7 @@ const StronaKontakt = () => {
                 "layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--linia"
               ]
             }
-          >
-            |
-          </div>
+          ></div>
           <div
             className={
               styles[
@@ -367,7 +368,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            email
+            info@infiniti-fit.pl
           </div>
         </div>
       </div>
