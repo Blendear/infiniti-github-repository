@@ -48,8 +48,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
 ;
     //hook1 - FIXED zamiast sticky powinienem zawsze? when to sue which?
     position: fixed;
-    top: 0;
-    margin: 1rem auto 0 auto;
+    // top: 0;
+    margin: 1rem auto 0 6.5vw;
+
     // bottom: 0;
     z-index: 100;
     // justify-self: center;
