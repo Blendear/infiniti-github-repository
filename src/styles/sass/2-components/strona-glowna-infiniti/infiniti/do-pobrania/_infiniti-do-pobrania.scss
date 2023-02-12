@@ -122,6 +122,11 @@
               [r-9] 1fr
               [r-10] 1fr
               [r-11];
+            //trap1-  protip1 - NIGDY WIECJE STRIKTE ZBUDOWANYCH gridow
+            // kieyd mozesz po prostu zbudowac
+            //    a) component z unikatowymi propsami per przypadke użycia
+            //    b) grid dynamiczny, przemyślany w sposób "automatyczne
+            //    dodawanie kolejnych rowow etc.
 
             grid-template-columns:
               [c-1] 1fr
