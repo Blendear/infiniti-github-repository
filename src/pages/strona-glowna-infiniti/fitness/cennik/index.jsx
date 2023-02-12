@@ -18,7 +18,8 @@ import TytulPodstrony from "../../../../components/wszechobecne-na-roznych-podst
 import { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
 import { menuINavbarSliceActions } from "../../../../store/redux/store-redux";
-
+import Link from "next/link";
+import Image from "next/image";
 const FitnessCennik = () => {
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
@@ -49,12 +50,30 @@ const FitnessCennik = () => {
       <ZmienneStartoweLogo logoPath="logo-Fitness.jpg" />
       <div
         className={
-          styles["layout__medical-cennik__cala-strona__0-nazwa-podstrony"]
+          styles["layout__fitness-cennik__cala-strona__0-nazwa-podstrony"]
         }
       >
         <TytulPodstrony nazwaPodstrony="CENNIK" />
       </div>
-      {/* <div>tekst</div> */}
+      <div className={styles["layout__fitness-cennik__cala-strona__cennik"]}>
+        <Link
+          // target="_blank"
+          download
+          //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
+          href="/images/.dedykowane-do-strony-konkretnej/fitness/cennik/cennik-fitness.png"
+        >
+          <a target="_blank">
+            <Image
+              src={`/images/.dedykowane-do-strony-konkretnej/fitness/cennik/cennik-fitness.png`}
+              alt={`nie pyklo zdjecie`}
+              // width={300}
+              // height={300}
+              layout="fill"
+              objectFit="contain"
+            />
+          </a>
+        </Link>
+      </div>
     </div>
   );
 };

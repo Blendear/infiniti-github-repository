@@ -428,8 +428,17 @@
   aspect-ratio: 1.5/1;
 }
 .layout__medical-cennik__cala-strona__0-nazwa-podstrony {
-  grid-row: r-3/r-4;
+  grid-row: r-2/r-3;
   grid-column: c-2/c-11;
+}
+.layout__medical-cennik__cala-strona__cennik {
+  grid-row: r-3/r-4;
+  grid-column: c-1/c-12;
+  width: 90vw;
+  aspect-ratio: 1.2/1;
+  justify-self: center;
+  align-self: start;
+  position: relative;
 }
 
 .layout__fitness-cennik__cala-strona {
@@ -455,8 +464,17 @@
   aspect-ratio: 1.5/1;
 }
 .layout__fitness-cennik__cala-strona__0-nazwa-podstrony {
-  grid-row: r-3/r-4;
+  grid-row: r-2/r-3;
   grid-column: c-2/c-11;
+}
+.layout__fitness-cennik__cala-strona__cennik {
+  grid-row: r-3/r-4;
+  grid-column: c-1/c-12;
+  width: 90vw;
+  aspect-ratio: 1.2/1;
+  justify-self: center;
+  align-self: start;
+  position: relative;
 }
 
 .layout__fitness-grafik__cala-strona {

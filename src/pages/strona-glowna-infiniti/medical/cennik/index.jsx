@@ -19,6 +19,8 @@ import ZmienneStartoweLogo from "../../../../components/wszechobecne-na-roznych-
 import ZmienneStartoweTlo from "../../../../components/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/fota";
 import TytulPodstrony from "../../../../components/wszechobecne-na-roznych-podstronach/tytul-podstrony/tytul-podstrony";
 
+import Image from "next/image";
+import Link from "next/link";
 const MedicalCennik = () => {
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
@@ -54,7 +56,24 @@ const MedicalCennik = () => {
       >
         <TytulPodstrony nazwaPodstrony="CENNIK" />
       </div>
-      <div>tekst</div>
+      <div className={styles["layout__medical-cennik__cala-strona__cennik"]}>
+        <Link
+          // target="_blank"
+          download
+          href="/images/.dedykowane-do-strony-konkretnej/medical/cennik/cennik-medical.png"
+        >
+          <a target="_blank">
+            <Image
+              src={`/images/.dedykowane-do-strony-konkretnej/medical/cennik/cennik-medical.png`}
+              alt={`nie pyklo zdjecie`}
+              // width={300}
+              // height={300}
+              layout="fill"
+              objectFit="contain"
+            />
+          </a>
+        </Link>
+      </div>
     </div>
   );
 };
