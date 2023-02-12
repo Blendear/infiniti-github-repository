@@ -31,7 +31,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
       [r-2];
 
     grid-template-columns:
-      [c-0] 0.1fr
+      // [c-0] 0.1fr
+
       [c-1] 1fr
       [c-2] 2fr
       [c-3] 0.6fr
@@ -39,8 +40,10 @@ $rozmiar-rowa: minmax(0rem, max-content);
       [c-5] 2fr
       [c-6] 0.6fr
       [c-7] 1fr
-      [c-8] 0.1fr
-      [c-0];
+      [c-8]
+      // 0.1fr
+      // [c-0]
+;
 
     position: sticky;
     top: 0;
@@ -70,6 +73,11 @@ $rozmiar-rowa: minmax(0rem, max-content);
       //   text-align: center;
     }
     &__btn-zaloguj {
+      // display: grid;
+      // grid-row: r-1 / r-2;
+      // grid-column: c-1 / c-3;
+      // grid-auto-flow: column;
+      @include menu-elements();
       &--svg {
         grid-row: r-1 / r-2;
         grid-column: c-1 / c-2;

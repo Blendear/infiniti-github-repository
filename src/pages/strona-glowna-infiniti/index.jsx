@@ -145,7 +145,8 @@ const StronaGlowna = () => {
             ]
           }
         >
-          tekst1
+          FIZJOTERAPIA
+          <br /> & NATUROTERAPIA
         </div>
         <div
           className={
@@ -163,8 +164,7 @@ const StronaGlowna = () => {
             ]
           }
         >
-          {" "}
-          tekst2
+          SQUASH
         </div>
         <div
           className={
@@ -183,8 +183,7 @@ const StronaGlowna = () => {
             ]
           }
         >
-          {" "}
-          tekst3
+          YOGA <br />& MEDYTACJA
         </div>
         <div
           className={
@@ -202,7 +201,7 @@ const StronaGlowna = () => {
             ]
           }
         >
-          tekst4
+          MMA & BJJ
         </div>
         <div
           className={
@@ -220,7 +219,7 @@ const StronaGlowna = () => {
             ]
           }
         >
-          tekst5
+          ZAJĘCIA GRUPOWE DLA KAŻDEGO
         </div>
         <div
           className={
@@ -238,7 +237,7 @@ const StronaGlowna = () => {
             ]
           }
         >
-          tekst6
+          SIŁOWNIA <br />& FITNESS
         </div>
         <div
           className={
@@ -256,7 +255,7 @@ const StronaGlowna = () => {
             ]
           }
         >
-          tekst7
+          SAUNA & WELLNESS
         </div>
         <div
           className={
@@ -274,7 +273,7 @@ const StronaGlowna = () => {
             ]
           }
         >
-          tekst8
+          DOŚWIADCZENI DIETETYCY
         </div>
       </div>
 

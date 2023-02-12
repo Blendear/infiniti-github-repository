@@ -42,6 +42,7 @@ export default function handler(
     .catch((error) => {
       console.error(error);
     });
+
   //niezbędny handling of the response
   res.status(200).json({ name: "OK ziomuś" });
 }

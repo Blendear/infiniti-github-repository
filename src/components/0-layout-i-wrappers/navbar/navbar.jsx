@@ -44,27 +44,21 @@ const Navbar = () => {
         musze t0o obejsc, zeby je ułożyć w gridzie znowu
         */}
         <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-          <a>
-            <button
-              className={
-                styles["navbar-gorny__caly-container__btn-zaloguj--svg"]
-              }
-            >
-              <HiOutlineUserCircle
-                style={{ fontSize: "7vw", color: "#303030" }}
-              />
-            </button>
+          <a
+            className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
+          >
+            <HiOutlineUserCircle
+              style={{ fontSize: "7vw", color: "#303030" }}
+            />
           </a>
         </Link>
         <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-          <a>
-            <button
-              className={
-                styles["navbar-gorny__caly-container__btn-zaloguj--tekst"]
-              }
-            >
-              ZALOGUJ SIĘ
-            </button>
+          <a
+            className={
+              styles["navbar-gorny__caly-container__btn-zaloguj--tekst"]
+            }
+          >
+            ZALOGUJ SIĘ
           </a>
         </Link>
 
@@ -72,28 +66,22 @@ const Navbar = () => {
           className={styles["navbar-gorny__caly-container__linia-dzielaca--1"]}
         ></div>
         <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-          <a>
-            <button
-              className={
-                styles["navbar-gorny__caly-container__btn-zapisz--svg"]
-              }
-            >
-              <RiCalendarCheckLine
-                style={{ fontSize: "7vw", color: "#303030" }}
-              />
-            </button>
+          <a
+            className={styles["navbar-gorny__caly-container__btn-zapisz--svg"]}
+          >
+            <RiCalendarCheckLine
+              style={{ fontSize: "7vw", color: "#303030" }}
+            />
           </a>
         </Link>
 
         <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-          <a>
-            <button
-              className={
-                styles["navbar-gorny__caly-container__btn-zapisz--tekst"]
-              }
-            >
-              ZAPISZ SIĘ
-            </button>
+          <a
+            className={
+              styles["navbar-gorny__caly-container__btn-zapisz--tekst"]
+            }
+          >
+            ZAPISZ SIĘ
           </a>
         </Link>
 
