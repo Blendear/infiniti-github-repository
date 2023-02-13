@@ -91,7 +91,10 @@ const CarouselPoziomy = () => {
     // console.log(
     //   carouselData.find((miejsce) => miejsce.nazwaMiejsca === "boisko")
     // );
-    console.log("index", reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej);
+    console.log(
+      "index foty aktualnej",
+      reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej
+    );
     dispatch(
       wybranyPoziomIMiejsceActions.ustawIndexFoty({
         // !aktualnaFota.image ? 0 : aktualnyFoto + 1
@@ -112,7 +115,10 @@ const CarouselPoziomy = () => {
   //           B.3.1. Gdy aktualny jest pierwszą fotą - przejdź do ostatniej || gdy nie jest ostatnią - przejdź do next foty
   //
   const handlerPrevFoto = () => {
-    console.log("index", reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej);
+    console.log(
+      "index foty aktualnej",
+      reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej
+    );
     // console.log(aktualnyFoto);
     let iloscFotWTymMiejscu = carouselData.find(
       (miejsce) =>
@@ -202,6 +208,7 @@ const CarouselPoziomy = () => {
                     aktualnyDataObject.fotyTegoMiejsca[
                       reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej
                     ]
+
                     // ? aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]
                     // : aktualnyDataObject.fotyTegoMiejsca[0]
                     // :
