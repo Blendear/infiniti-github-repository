@@ -58,8 +58,14 @@ const MedicalKadra = () => {
         <TytulPodstrony nazwaPodstrony="KADRA" />
       </div>
       <div className={styles["layout__medical-kadra__cala-strona__lista-rol"]}>
-        <RolaRozdzial rola={kadraMedicalDataArray.fizjoterapeuci} />
-        <RolaRozdzial rola={kadraMedicalDataArray.masazysci} />
+        <RolaRozdzial
+          rola={kadraMedicalDataArray.fizjoterapeuci}
+          nazwaRoli="FIZJOTERAPEUCI"
+        />
+        <RolaRozdzial
+          rola={kadraMedicalDataArray.masazysci}
+          nazwaRoli="MASAŻYŚCI"
+        />
         {/* <RolaRozdzial props={kadraMedicalDataArray.trenerzy} /> */}
         {/* <RolaRozdzial /> */}
       </div>

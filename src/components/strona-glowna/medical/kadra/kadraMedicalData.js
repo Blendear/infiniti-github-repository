@@ -6,7 +6,9 @@ export const kadraMedicalDataArray = {
       opis: "testowy opis",
       funkcja: "Masażysta",
       fotoPathKoncowka: "rypalla-dominika",
-      socialMediaLinks: {},
+      socialMediaLinks: {
+        facebook: "https://www.facebook.com/dominika.rypalla",
+      },
     },
   ],
   fizjoterapeuci: [
@@ -16,7 +18,7 @@ export const kadraMedicalDataArray = {
       opis: "testowy opis",
       funkcja: "Fizjoterapeutka",
       fotoPathKoncowka: "meisner-iwona",
-      socialMediaLinks: {},
+      socialMediaLinks: { facebook: "https://www.facebook.com/iwona.meisner" },
     },
   ],
 };

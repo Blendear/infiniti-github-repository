@@ -361,7 +361,7 @@
   grid-row: r-1/r-10;
   grid-column: c-1/c-12;
   display: grid;
-  grid-template-rows: [r-1] minmax(0vw, max-content) [r-2] minmax(0vw, 20vw) [r-3] minmax(0vw, 20vw) [r-4] minmax(0vw, 20vw) [r-5] minmax(0vw, 20vw) [r-6] minmax(0vw, 20vw) [r-7] minmax(0vw, 20vw) [r-8] minmax(0vw, 20vw) [r-9];
+  grid-template-rows: [r-0_break] 16vw [r-1] minmax(0vw, max-content) [r-2] minmax(0vw, 20vw) [r-3] minmax(0vw, 20vw) [r-4] minmax(0vw, 20vw) [r-5] minmax(0vw, 20vw) [r-6] minmax(0vw, 20vw) [r-7] minmax(0vw, 20vw) [r-8] minmax(0vw, 20vw) [r-9];
   grid-template-columns: [c-1] 0.6fr [c-2] 3fr [c-3] 0.6fr [c-4] 3fr [c-5] 0.6fr [c-6];
   z-index: 200;
   background-color: white;
@@ -460,13 +460,13 @@
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container {
   display: grid;
-  grid-template-rows: [r-1] minmax(0rem, max-content) [r-empty] 3vw [r-2] minmax(0rem, max-content) [r-3] 3vw [r-empty];
-  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  grid-template-rows: [r-1] 4rem [r-empty] 3vw [r-2] minmax(0rem, max-content) [r-3] 3vw [r-empty];
+  grid-template-columns: [c-1] 0.5fr [c-2] 6fr [c-2_5] 4fr [c-3];
   grid-auto-flow: row;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--tytul-ikona-i-klocek-gradientowy {
   grid-row: r-1/r-empty;
-  grid-column: c-1/c-3;
+  grid-column: c-1/c-2_5;
   z-index: 5;
   background: #1f5c91;
   background: -moz-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
@@ -475,51 +475,75 @@
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--tytul-nazwa {
   grid-row: r-1/r-empty;
-  grid-column: c-2/c-3;
+  grid-column: c-1/c-3;
   z-index: 10;
   color: white;
+  font-size: 1.7rem;
+  letter-spacing: 0.06rem;
+  margin: 0rem 0 0rem 3rem;
+  align-self: center;
+  font-weight: bold;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--linia-boczna {
   grid-row: r-2/r-3;
   grid-column: c-1/c-2;
   z-index: 5;
-  width: 2vw;
+  width: 0.5rem;
   height: 100%;
   justify-self: center;
   align-self: center;
-  background-color: rgb(112, 194, 219);
+  background-color: rgb(201, 170, 216);
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container {
   grid-row: r-2/r-3;
   grid-column: c-2/c-3;
   z-index: 5;
+  margin: 3vw 0 3vw 0;
+  display: grid;
+  row-gap: 5vw;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container {
   display: grid;
-  grid-template-rows: [r-0] 1.5rem [r-1] max-content [r-2] max-content [r-3] max-content [r-4] max-content [r-6];
-  grid-template-columns: [c-1] 2fr [c-2] 0.5fr [c-3] 3fr [c-4];
+  grid-template-rows: [r-0] max-content [r-1] max-content [r-2] max-content [r-3] max-content [r-4] max-content [r-6];
+  grid-template-columns: [c-1] 2fr [c-2] minmax(0.5rem, 1rem) [c-3] 3fr [c-4] 0.5fr [c-5];
+  aspect-ratio: 4/1;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--fota {
   grid-row: r-1/r-5;
   grid-column: c-1/c-2;
   position: relative;
   overflow: hidden;
+  width: 80%;
+  aspect-ratio: 1/0.8;
+  justify-self: center;
+  transition: all 0.5s;
+}
+.layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--fota:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--imie-i-nazwisko {
   grid-row: r-1/r-2;
-  grid-column: c-3/c-4;
-  font-size: clamp(1vw, 2rem, 5vw);
+  grid-column: c-3/c-5;
+  font-size: 2rem;
+  color: #088b9a;
+  font-weight: bold;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--rola-dokladna {
   grid-row: r-2/r-3;
   grid-column: c-3/c-4;
-  font-size: clamp(1vw, 1.25rem, 5vw);
+  font-size: 1.2rem;
+  color: #484848;
+  font-weight: 600;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--tresc-tekst {
   grid-row: r-3/r-4;
   grid-column: c-3/c-3;
+  font-size: clamp(1vw, 1.2rem, 5vw);
+  color: #4c4c4c;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale {
+  margin: 0.5rem 0 0 0;
   grid-row: r-4/r-5;
   grid-column: c-3/c-3;
   display: grid;
@@ -529,6 +553,21 @@
   column-gap: 2rem;
   background-color: white;
 }
+.layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+}
+.layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny p {
+  align-self: center;
+  font-size: 1.1rem;
+  color: #088b9a;
+}
+.layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny svg:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
 .layout__medical-uslugi__cala-strona {
   position: relative;
   display: grid;
@@ -767,7 +806,7 @@
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container {
   display: grid;
   grid-template-rows: [r-1] 4rem [r-empty] 3vw [r-2] minmax(0rem, max-content) [r-3] 3vw [r-empty];
-  grid-template-columns: [c-1] 0.5fr [c-2] 5fr [c-2_5] 4fr [c-3];
+  grid-template-columns: [c-1] 0.5fr [c-2] 6fr [c-2_5] 4fr [c-3];
   grid-auto-flow: row;
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container--tytul-ikona-i-klocek-gradientowy {
@@ -787,6 +826,8 @@
   font-size: 2rem;
   margin: 0rem 0 0rem 3rem;
   align-self: center;
+  font-size: 1.7rem;
+  letter-spacing: 0.06rem;
   font-weight: bold;
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container--linia-boczna {

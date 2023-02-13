@@ -12,16 +12,62 @@
 import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+
+import { TfiEmail } from "react-icons/tfi";
+import { FaFacebookF } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+
 const OsobaKonkretna = (props) => {
   // console.log(props.daneOOsobie.fotoPathKoncowka);
 
   const socialeTejOsoby = [];
-  for (let index in props.daneOOsobie.socialMediaLinks) {
-    socialeTejOsoby.push(
-      <Link href={`/${props.daneOOsobie.socialMediaLinks}`} key={index}>
-        <a>{index}</a>
-      </Link>
-    );
+  for (let socialKonkretny in props.daneOOsobie.socialMediaLinks) {
+    // console.log("sociale", props.daneOOsobie.socialMediaLinks);
+    switch (socialKonkretny) {
+      case "facebook":
+        socialeTejOsoby.push(
+          <Link
+            href={`${props.daneOOsobie.socialMediaLinks.facebook}`}
+            key={socialKonkretny}
+          >
+            <a>
+              <FaFacebookF size="2rem" color="#088b9a" />
+            </a>
+          </Link>
+        );
+        break;
+      case "instagram":
+        socialeTejOsoby.push(
+          <Link
+            href={`${props.daneOOsobie.socialMediaLinks.instagram}`}
+            key={socialKonkretny}
+          >
+            <a>
+              <BsInstagram size="2rem" color="#088b9a" />
+            </a>
+          </Link>
+        );
+        break;
+      case "email":
+        // console.log("email-ccc", props.daneOOsobie.socialMediaLinks.email),
+        socialeTejOsoby.push(
+          // <Link
+          //   href={``}
+          //   key={socialKonkretny}
+          // >
+          //   <a>
+          //     {/* //hook2 i sizing of react-icons in rems */}
+          //     <TfiEmail size="2rem" color="#088b9a" />
+          //   </a>
+          // </Link>
+
+          <TfiEmail size="2rem" color="#088b9a" />
+        );
+        socialeTejOsoby.push(<p>{props.daneOOsobie.socialMediaLinks.email}</p>);
+        break;
+      default:
+        break;
+    }
   }
 
   // const x = props.daneOOsobie.socialMediaLinks.map(
@@ -51,7 +97,7 @@ const OsobaKonkretna = (props) => {
         }
       >
         <Image
-          src={`/images/.dedykowane-do-strony-konkretnej/medical/kadra/fizjoterapeuci/${props.daneOOsobie.fotoPathKoncowka}.png`}
+          src={`/images/.dedykowane-do-strony-konkretnej/medical/kadra/${props.daneOOsobie.fotoPathKoncowka}.png`}
           alt={`nie pyklo zdjecie`}
           // height={200}
           // width={100}
@@ -88,7 +134,7 @@ const OsobaKonkretna = (props) => {
             : styles["menu-modal__closed-variant"]
         }
       >
-        {props.daneOOsobie.opis}
+        {/* {props.daneOOsobie.opis} */}
       </div>
 
       <div

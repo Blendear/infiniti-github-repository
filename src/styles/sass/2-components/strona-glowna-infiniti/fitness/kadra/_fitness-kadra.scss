@@ -78,7 +78,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
 
           grid-template-columns:
             [c-1] 0.5fr
-            [c-2] 5fr
+            [c-2] 6fr
             [c-2_5] 4fr
             [c-3];
           grid-auto-flow: row;
@@ -107,6 +107,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
             font-size: 2rem;
             margin: 0rem 0 0rem 3rem;
             align-self: center;
+            font-size: 1.7rem;
+            letter-spacing: 0.06rem;
             font-weight: bold;
           }
           &--linia-boczna {

@@ -11,6 +11,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
     display: grid;
 
     grid-template-rows:
+      [r-0_break] 16vw
       [r-1] minmax(0vw, max-content)
       [r-2] $rozmiar-rowa
       [r-3] $rozmiar-rowa

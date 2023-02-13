@@ -70,20 +70,22 @@ $rozmiar-rowa: minmax(0rem, max-content);
         &__konkretna-rola-container {
           display: grid;
           grid-template-rows:
-            [r-1] $rozmiar-rowa
+            [r-1] 4rem
             [r-empty] 3vw
             [r-2] $rozmiar-rowa
             [r-3] 3vw
             [r-empty];
 
           grid-template-columns:
-            [c-1] 1fr
-            [c-2] 5fr
+            [c-1] 0.5fr
+            [c-2] 6fr
+            [c-2_5] 4fr
             [c-3];
           grid-auto-flow: row;
+          //hook1 - NAJPIERW JEDEN / DWA ORYGINALNE DATA, pozniej dopiero perfect styling, I TO REMEM NAJLEPIJE
           &--tytul-ikona-i-klocek-gradientowy {
             grid-row: r-1/ r-empty;
-            grid-column: c-1 / c-3;
+            grid-column: c-1 / c-2_5;
             z-index: 5;
 
             background: #1f5c91;
@@ -97,76 +99,118 @@ $rozmiar-rowa: minmax(0rem, max-content);
           }
           &--tytul-nazwa {
             grid-row: r-1/ r-empty;
-            grid-column: c-2 / c-3;
+            grid-column: c-1 / c-3;
             z-index: 10;
 
             color: white;
+            //hook1 - \/ najlepsyzsposob na ograniczanie repsonsywnbe? w srodku rem, a min max to vw?)
+            font-size: 1.7rem;
+            letter-spacing: 0.06rem;
+            margin: 0rem 0 0rem 3rem;
+            align-self: center;
+            font-weight: bold;
           }
           &--linia-boczna {
             grid-row: r-2/ r-3;
             grid-column: c-1 / c-2;
             z-index: 5;
 
-            width: 2vw;
+            width: 0.5rem;
             height: 100%;
             justify-self: center;
             align-self: center;
-
-            background-color: rgb(112, 194, 219);
+            // margin: 0 0 0 2rem;
+            background-color: rgb(201, 170, 216);
           }
           &__lista-osob-o-tej-roli-container {
             grid-row: r-2/ r-3;
             grid-column: c-2 / c-3;
             z-index: 5;
+            margin: 3vw 0 3vw 0;
+
+            //hook1 - nawet gry dynamicnza lista, zeby zrobisz rowne gapsy, musisz dac doispaly grid
+            display: grid;
+            row-gap: 5vw;
+
             &__konkretna-osoba-container {
               display: grid;
               grid-template-rows:
-                [r-0] 1.5rem //empty gora
+                [r-0] max-content //empty gora
                 [r-1] max-content
                 [r-2] max-content
                 [r-3] max-content
-                [r-4] max-content //empty gdol
+                [r-4] max-content//empty gdol
                 [r-6];
 
               grid-template-columns:
                 [c-1] 2fr
-                [c-2] 0.5fr
+                [c-2] minmax(0.5rem, 1rem)
                 [c-3] 3fr
-                [c-4];
+                [c-4] 0.5fr
+                [c-5];
+              // color: #1f5c91;
+
+              // height: 16rem;
+              aspect-ratio: 4/1;
+              // white-space: nowrap;
               &--fota {
                 grid-row: r-1/ r-5;
                 grid-column: c-1 / c-2;
 
                 //hook1-- DUŻO PROSTSZY SPOSOB KONTROLI KSZTALTU image'u
+                //// border-radius: 90%; i overflow hidden
+
                 position: relative;
                 overflow: hidden;
-                // border-radius: 90%;
+                width: 80%;
+                // height: 100%;
+                aspect-ratio: 1/0.8;
+                //hook1 - rozpisz kiedy ASPECTRATIO, CZY NAJLEPSZY JEST REM, czy jednak czasme lepiej &, kiedy lepiej % kiedy vw kiedy rem (% np., kiedy niepowiniennigyd przerosnac containera
+                justify-self: center;
 
                 // padding: 1vw 3vw 1vw 3vw;
                 // margin: 2vw 0 2vw 0;
+                transition: all 0.5s;
+                &:hover {
+                  transform: scale(1.2);
+                  transition: all 0.5s;
+                }
               }
               &--imie-i-nazwisko {
                 grid-row: r-1/ r-2;
-                grid-column: c-3/ c-4;
-
+                grid-column: c-3/ c-5;
+                // height: 50%;
                 // padding: 1vw 0 1vw 0;
                 // margin: 2vw 0 2vw 0;
-                font-size: clamp(1vw, 2rem, 5vw);
+                // white-space: nowrap;
+                // overflow: visible;
+                // height: 4vh;
+                // aspect-ratio: 10/1;
+                //hook1 - ZAWSZE rm lepszy? ob vw wyjebuje repsonsywnosc w kosmos gdy rozszerzasz
+                font-size: 2rem;
+                color: #088b9a;
+                font-weight: bold;
               }
               &--rola-dokladna {
                 grid-row: r-2/ r-3;
                 grid-column: c-3 / c-4;
 
-                font-size: clamp(1vw, 1.25rem, 5vw);
+                font-size: 1.2rem;
+
+                color: #484848;
+                font-weight: 600;
               }
 
               &--tresc-tekst {
                 grid-row: r-3/ r-4;
                 grid-column: c-3/ c-3;
 
-                // box-shadow: 0 0 1vw 0.2vw #3f00455b;
+                font-size: clamp(1vw, 1.2rem, 5vw);
+                // color: #4c4c4c;
+                color: #4c4c4c;
               }
               &--sociale {
+                margin: 0.5rem 0 0 0;
                 grid-row: r-4/ r-5;
                 grid-column: c-3 / c-3;
 
@@ -185,6 +229,23 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 background-color: white;
 
                 &--svg-konkretny {
+                  // align-self: center;
+                  // background-color: green;
+                  display: grid;
+                  grid-auto-flow: column;
+                  // align-content: center;
+                  gap: 0.5rem;
+                  // transition: all 0.5s;
+
+                  & p {
+                    align-self: center;
+                    font-size: 1.1rem;
+                    color: #088b9a;
+                  }
+                  & svg:hover {
+                    transform: scale(1.2);
+                    transition: all 0.5s;
+                  }
                 }
               }
             }

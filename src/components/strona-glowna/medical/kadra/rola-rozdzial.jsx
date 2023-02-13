@@ -40,9 +40,7 @@ const RolaRozdzial = (props) => {
             "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--tytul-ikona-i-klocek-gradientowy"
           ]
         }
-      >
-        ikona roli
-      </div>
+      ></div>
       <div
         className={
           styles[
@@ -50,7 +48,7 @@ const RolaRozdzial = (props) => {
           ]
         }
       >
-        rola
+        {props.nazwaRoli}
       </div>
       <div
         className={
