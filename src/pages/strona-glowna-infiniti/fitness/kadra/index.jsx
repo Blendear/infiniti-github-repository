@@ -17,7 +17,7 @@ import { menuINavbarSliceActions } from "../../../../store/redux/store-redux";
 
 import ZmienneStartoweLogo from "../../../../components/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/logo";
 import ZmienneStartoweTlo from "../../../../components/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/fota";
-import TytulPodstrony from "../../../../components/wszechobecne-na-roznych-podstronach/tytul-podstrony/tytul-podstrony";
+import TytulPodstronyFitness from "../../../../components/wszechobecne-na-roznych-podstronach/tytul-podstrony/tytul-podstrony-fitness";
 
 import { kadraFitnessDataArray } from "../../../../components/strona-glowna/fitness/kadra/kadraFitnessData";
 import RolaRozdzial from "../../../../components/strona-glowna/fitness/kadra/rola-rozdzial";
@@ -54,7 +54,7 @@ const FitnessKadra = () => {
           styles["layout__fitness-kadra__cala-strona__0-nazwa-podstrony"]
         }
       >
-        <TytulPodstrony nazwaPodstrony="KADRA" />
+        <TytulPodstronyFitness nazwaPodstrony="KADRA" />
       </div>
       <div className={styles["layout__fitness-kadra__cala-strona__lista-rol"]}>
         <RolaRozdzial

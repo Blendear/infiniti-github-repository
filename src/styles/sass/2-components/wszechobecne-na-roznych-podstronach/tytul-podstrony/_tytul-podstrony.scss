@@ -1,3 +1,5 @@
+@use "../../../5-themes/fitness-variables/fitness-variables";
+
 $rozmiar-rowa: minmax(0rem, max-content);
 
 .tytul-podstrony {
@@ -37,6 +39,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
       color: grey;
       font-weight: normal;
       font-size: min(3.7rem, 20vw);
+      &--fitness-wariant {
+        color: fitness-variables.$fitness--czarny;
+      }
       //   transform: scale(0.5);
     }
   }

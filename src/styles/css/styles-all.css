@@ -813,10 +813,10 @@
   grid-row: r-1/r-empty;
   grid-column: c-1/c-2_5;
   z-index: 5;
-  background: #1f5c91;
-  background: -moz-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
-  background: -webkit-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
-  background: linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
+  background: #de8515;
+  background: -moz-linear-gradient(135deg, #de8515 0%, #ffdc22 100%);
+  background: -webkit-linear-gradient(135deg, #de8515 0%, #ffdc22 100%);
+  background: linear-gradient(135deg, #de8515 0%, #ffdc22 100%);
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container--tytul-nazwa {
   grid-row: r-1/r-empty;
@@ -828,6 +828,7 @@
   align-self: center;
   font-size: 1.7rem;
   letter-spacing: 0.06rem;
+  filter: drop-shadow(0 0 0.06rem rgb(112, 17, 0));
   font-weight: bold;
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container--linia-boczna {
@@ -838,7 +839,7 @@
   height: 100%;
   justify-self: center;
   align-self: center;
-  background-color: rgb(201, 170, 216);
+  background-color: #120e17;
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container {
   grid-row: r-2/r-3;
@@ -872,7 +873,7 @@
   grid-row: r-1/r-2;
   grid-column: c-3/c-5;
   font-size: 2rem;
-  color: #088b9a;
+  color: #89150d;
   font-weight: bold;
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--rola-dokladna {
@@ -907,7 +908,7 @@
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny p {
   align-self: center;
   font-size: 1.1rem;
-  color: #088b9a;
+  color: #89150d;
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny svg:hover {
   transform: scale(1.2);
@@ -1491,6 +1492,9 @@
   color: grey;
   font-weight: normal;
   font-size: min(3.7rem, 20vw);
+}
+.tytul-podstrony__caly-container--napis--fitness-wariant {
+  color: #120e17;
 }
 
 .layout__strona-glowna__cala-strona {

@@ -90,14 +90,22 @@ $rozmiar-rowa: minmax(0rem, max-content);
             grid-column: c-1 / c-2_5;
             z-index: 5;
 
-            background: #1f5c91;
-            background: -moz-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
-            background: -webkit-linear-gradient(
-              -45deg,
-              #1f5c91 0%,
-              #4ec5d1 100%
+            background: fitness-variables.$fitness--klocek-gradient-part-1;
+            background: -moz-linear-gradient(
+              135deg,
+              fitness-variables.$fitness--klocek-gradient-part-1 0%,
+              fitness-variables.$fitness--klocek-gradient-part-2 100%
             );
-            background: linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
+            background: -webkit-linear-gradient(
+              135deg,
+              fitness-variables.$fitness--klocek-gradient-part-1 0%,
+              fitness-variables.$fitness--klocek-gradient-part-2 100%
+            );
+            background: linear-gradient(
+              135deg,
+              fitness-variables.$fitness--klocek-gradient-part-1 0%,
+              fitness-variables.$fitness--klocek-gradient-part-2 100%
+            );
           }
           &--tytul-nazwa {
             grid-row: r-1/ r-empty;
@@ -111,6 +119,10 @@ $rozmiar-rowa: minmax(0rem, max-content);
             align-self: center;
             font-size: 1.7rem;
             letter-spacing: 0.06rem;
+            // text-shadow: 0px 0px fitness-variables.$fitness--bordowy;
+            filter: drop-shadow(
+              0 0 0.06rem fitness-variables.$fitness--tytul-roli-drop-shadow
+            );
             font-weight: bold;
           }
           &--linia-boczna {
@@ -123,7 +135,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             justify-self: center;
             align-self: center;
             // margin: 0 0 0 2rem;
-            background-color: rgb(201, 170, 216);
+            background-color: fitness-variables.$fitness--linia-boczna-lub-dzielaca-color;
           }
           &__lista-osob-o-tej-roli-container {
             grid-row: r-2/ r-3;
@@ -191,7 +203,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 // aspect-ratio: 10/1;
                 //hook1 - ZAWSZE rm lepszy? ob vw wyjebuje repsonsywnosc w kosmos gdy rozszerzasz
                 font-size: 2rem;
-                color: #088b9a;
+                color: fitness-variables.$fitness--bordowy;
                 font-weight: bold;
               }
               &--rola-dokladna {
@@ -243,7 +255,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                   & p {
                     align-self: center;
                     font-size: 1.1rem;
-                    color: #088b9a;
+                    color: fitness-variables.$fitness--bordowy;
                   }
                   & svg:hover {
                     transform: scale(1.2);
