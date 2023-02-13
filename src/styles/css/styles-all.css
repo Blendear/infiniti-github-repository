@@ -1465,7 +1465,7 @@
   width: 35%;
   aspect-ratio: 1.1/1;
   align-self: end;
-  margin: 0 0 3.5rem 0;
+  margin: 0 0 9.3vw 0;
   justify-self: center;
 }
 .layout__strona-glowna__cala-strona__0-startowe-logo-i-fota--fota {
@@ -1528,6 +1528,7 @@
   grid-template-columns: [c-1] 1fr [c-2];
   align-content: center;
   width: 100%;
+  margin: 1rem 0 0 0;
 }
 .layout__strona-glowna__cala-strona__tytul--svg {
   grid-row: r-1/r-2;
@@ -1546,7 +1547,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 4/1.5;
-  margin: 3vw 0 8vw 0;
+  margin: 2rem 0 8vw 0;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz {
   grid-row: r-5/r-6;
@@ -1558,7 +1559,7 @@
   display: grid;
   grid-template-rows: [r-1] minmax(5rem, max-content) [r-2] minmax(5rem, max-content) [r-3] minmax(5rem, max-content) [r-4] minmax(5rem, max-content) [r-5] minmax(5rem, max-content) [r-6] minmax(5rem, max-content) [r-7] minmax(5rem, max-content) [r-8] minmax(5rem, max-content) [r-9];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-2];
-  padding: 0 3rem 4rem 3rem;
+  padding: 0 2rem 4rem 2rem;
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-1 {
   grid-row: r-2/r-3;
@@ -1574,7 +1575,7 @@
   align-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 2rem;
   text-align: center;
@@ -1593,7 +1594,7 @@
   align-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 2rem;
   text-align: center;
@@ -1612,7 +1613,7 @@
   align-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 2rem;
   text-align: center;
@@ -1631,7 +1632,7 @@
   align-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 2rem;
   text-align: center;
@@ -1650,7 +1651,7 @@
   align-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 2rem;
   text-align: center;
@@ -1669,7 +1670,7 @@
   align-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 2rem;
   text-align: center;
@@ -1688,7 +1689,7 @@
   align-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 2rem;
   text-align: center;
@@ -1707,7 +1708,7 @@
   align-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   line-height: 2rem;
   text-align: center;
@@ -1725,6 +1726,15 @@
   display: grid;
   grid-template-rows: [r-1] minmax(5rem, max-content) [r-2] minmax(5rem, max-content) [r-3] minmax(5rem, max-content) [r-4] minmax(5rem, max-content) [r-5];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4] 1fr [c-5] 1fr [c-6];
+}
+.layout__strona-glowna__cala-strona__carousel-gallery--loader {
+  z-index: -10;
+  position: absolute;
+  top: 30%;
+  padding: 0 0 0 40vw;
+}
+.layout__strona-glowna__cala-strona__carousel-gallery--loader span {
+  justify-self: center;
 }
 .layout__strona-glowna__cala-strona__carousel-gallery--tekst-tytulowy {
   grid-row: r-1/r-2;

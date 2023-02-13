@@ -50,14 +50,24 @@ import { useAppSelector, useAppDispatch } from "../../store/redux/hooks";
 import { menuINavbarSliceActions } from "../../store/redux/store-redux";
 import Link from "next/link";
 //
+import { CSSProperties } from "react";
+
+import CircleLoader from "react-spinners/CircleLoader";
+
 //
 // Dorób classy dla każdego elementu   &   przypisz je placeholderom przedstawiajacymi fragmnenty daneo fragmentu (np. strzalki, foty i obramowki galerii carousel fot miejsc)
 //
 //
 //
+
 const StronaGlowna = () => {
   // const [showMenuModal, setShowMenuModal] = useState(false);
 
+  //spinner
+  const [loading, setLoading] = useState(true);
+  const [color, setColor] = useState("#ffffff");
+
+  //
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
   );
@@ -292,6 +302,22 @@ const StronaGlowna = () => {
           ZOBACZ CO TUTAJ NA CIEBIE CZEKA!
         </div>
         <CarouselFotyINFINITI />
+        <div
+          className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-carousel"]} ${styles["carousel-foty-infiniti"]} ${styles["layout__strona-glowna__cala-strona__carousel-gallery--loader"]}`}
+        >
+          <CircleLoader
+            color="#09adca"
+            loading={loading}
+            cssOverride={{
+              display: "block",
+              margin: "0 auto",
+              borderColor: "red",
+            }}
+            size={"20vw"}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
         <button
           className={
             styles[

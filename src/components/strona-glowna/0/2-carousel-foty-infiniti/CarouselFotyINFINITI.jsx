@@ -64,6 +64,9 @@ const CarouselPoziomy = () => {
   const reduxStatePoziomIMiejsceAktualne = useAppSelector(
     (state) => state.wybranyPoziomIMiejsceReducer
   );
+
+  //spinner
+
   //
   //       B.3. Handler - OnClicki, treść
   //

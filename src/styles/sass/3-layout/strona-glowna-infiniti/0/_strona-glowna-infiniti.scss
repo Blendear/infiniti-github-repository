@@ -58,10 +58,11 @@ $rozmiar-column-siatka-btn: 1fr;
           position: relative;
 
           width: 35%;
+          // color:#09adca
           aspect-ratio: 1.1/1;
           // align-self: center;
           align-self: end;
-          margin: 0 0 3.5rem 0;
+          margin: 0 0 9.3vw 0;
           justify-self: center;
         }
         &--fota {
@@ -160,6 +161,7 @@ $rozmiar-column-siatka-btn: 1fr;
         align-content: center;
 
         width: 100%;
+        margin: 1rem 0 0 0;
 
         &--svg {
           grid-row: r-1 / r-2;
@@ -183,7 +185,7 @@ $rozmiar-column-siatka-btn: 1fr;
 
         width: 100%;
         aspect-ratio: 4/1.5;
-        margin: 3vw 0 8vw 0;
+        margin: 2rem 0 8vw 0;
       }
       &__lista-co-tu-znajdziesz {
         grid-row: r-5 / r-6;
@@ -210,7 +212,7 @@ $rozmiar-column-siatka-btn: 1fr;
           [c-2] 1fr
           [c-2];
 
-        padding: 0 3rem 4rem 3rem;
+        padding: 0 2rem 4rem 2rem;
         // gap: 2rem;
         // column-gap: 2rem;
         &--item {
@@ -219,7 +221,7 @@ $rozmiar-column-siatka-btn: 1fr;
             align-self: center;
             margin-top: 5%;
             margin-bottom: 5%;
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             font-weight: bold;
             line-height: 2rem;
             text-align: center;
@@ -354,6 +356,19 @@ $rozmiar-column-siatka-btn: 1fr;
           [c-5] 1fr
           [c-6];
 
+        &--loader {
+          z-index: -10;
+          position: absolute;
+          top: 30%;
+          // padding: 0 auto 0 auto;
+          padding: 0 0 0 40vw;
+
+          // align-self: center;
+          & span {
+            justify-self: center;
+          }
+          // justify-self: center;
+        }
         &--tekst-tytulowy {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-6;
@@ -798,6 +813,12 @@ $rozmiar-column-siatka-btn: 1fr;
               // height: 50%;
               font-size: 8vw;
             }
+            // &:active {
+            //   height: 100%;
+            //   align-self: end;
+            //   transition: height 1s ease-in;
+            // }
+            //hook2 - /\ to, zamiast nowej klasy, powinienes dodawac do wybranego buttona. wtedy animacja jest git
           }
           &--minus-1 {
             grid-column: c-2 / c-3;
@@ -845,7 +866,8 @@ $rozmiar-column-siatka-btn: 1fr;
             // color: green;
             height: 60%;
             align-self: end;
-            // transition: height 3s; hooik2 - css transition bedzie wymagalo, bo dismountuje czy cos przed koncem animacji
+            // transition: height 3s;
+            // /\ hooik2 - css transition bedzie wymagalo, bo dismountuje czy cos przed koncem animacji
             // font-size: 6vw;
             // tranasion: fon;
             // opacity: 0.8;
