@@ -469,8 +469,8 @@
   grid-column: c-1/c-2_5;
   z-index: 5;
   background: #1f5c91;
-  background: -moz-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
-  background: -webkit-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
+  background: -moz-linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
+  background: -webkit-linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
   background: linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--tytul-nazwa {
@@ -492,7 +492,7 @@
   height: 100%;
   justify-self: center;
   align-self: center;
-  background-color: rgb(201, 170, 216);
+  background-color: #d8bde0;
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container {
   grid-row: r-2/r-3;
@@ -1489,8 +1489,8 @@
   justify-self: center;
   align-self: center;
   color: grey;
-  font-weight: bold;
-  font-size: clamp(5vw, 3.5rem, 20vw);
+  font-weight: normal;
+  font-size: min(3.7rem, 20vw);
 }
 
 .layout__strona-glowna__cala-strona {

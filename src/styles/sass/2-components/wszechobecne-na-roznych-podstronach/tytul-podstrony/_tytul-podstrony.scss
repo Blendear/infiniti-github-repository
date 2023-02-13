@@ -35,8 +35,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
       align-self: center;
 
       color: grey;
-      font-weight: bold;
-      font-size: clamp(5vw, 3.5rem, 20vw);
+      font-weight: normal;
+      font-size: min(3.7rem, 20vw);
       //   transform: scale(0.5);
     }
   }

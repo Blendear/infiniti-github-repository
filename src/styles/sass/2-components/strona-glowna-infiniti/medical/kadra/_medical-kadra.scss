@@ -1,3 +1,5 @@
+@use "../../../../5-themes/medical-variables/medical-variables";
+
 $rozmiar-rowa: minmax(0rem, max-content);
 
 .layout {
@@ -88,14 +90,22 @@ $rozmiar-rowa: minmax(0rem, max-content);
             grid-column: c-1 / c-2_5;
             z-index: 5;
 
-            background: #1f5c91;
-            background: -moz-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
-            background: -webkit-linear-gradient(
-              -45deg,
-              #1f5c91 0%,
-              #4ec5d1 100%
+            background: medical-variables.$medical--klocek-gradient-part-1;
+            background: -moz-linear-gradient(
+              135deg,
+              medical-variables.$medical--klocek-gradient-part-1 0%,
+              medical-variables.$medical--klocek-gradient-part-2 100%
             );
-            background: linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
+            background: -webkit-linear-gradient(
+              135deg,
+              medical-variables.$medical--klocek-gradient-part-1 0%,
+              medical-variables.$medical--klocek-gradient-part-2 100%
+            );
+            background: linear-gradient(
+              135deg,
+              medical-variables.$medical--klocek-gradient-part-1 0%,
+              medical-variables.$medical--klocek-gradient-part-2 100%
+            );
           }
           &--tytul-nazwa {
             grid-row: r-1/ r-empty;
@@ -120,7 +130,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             justify-self: center;
             align-self: center;
             // margin: 0 0 0 2rem;
-            background-color: rgb(201, 170, 216);
+            background-color: medical-variables.$medical--linia-boczna-lub-dzielaca-color;
           }
           &__lista-osob-o-tej-roli-container {
             grid-row: r-2/ r-3;

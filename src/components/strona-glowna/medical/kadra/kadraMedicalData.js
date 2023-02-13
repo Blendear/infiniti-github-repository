@@ -4,7 +4,7 @@ export const kadraMedicalDataArray = {
       nazwisko: "Rypalla",
       name: "Dominika",
       opis: "testowy opis",
-      funkcja: "Masażysta",
+      funkcja: "Masażystka",
       fotoPathKoncowka: "rypalla-dominika",
       socialMediaLinks: {
         facebook: "https://www.facebook.com/dominika.rypalla",
