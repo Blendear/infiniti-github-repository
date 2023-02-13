@@ -665,13 +665,14 @@
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container {
   display: grid;
   grid-template-rows: [r-1] 1fr [r-2] max-content [r-3];
-  grid-template-columns: [c-1] 1fr [c-2] 3fr [c-3] 3fr [c-4];
+  grid-template-columns: [c-1] 0.5fr [c-2] 3fr [c-3] 3fr [c-4];
 }
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--klocek {
   grid-row: r-1/r-2;
   grid-column: c-1/c-3;
-  padding: 1vw 0 1vw 0;
-  margin: 2vw 0 2vw 0;
+  margin: 3vw 0 3vw 0;
+  height: 2.5rem;
+  width: 18rem;
   background: #5e25ba;
   background: -moz-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
   background: -webkit-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
@@ -680,11 +681,20 @@
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--svg {
   grid-row: r-1/r-2;
   grid-column: c-1/c-2;
+  align-self: center;
+  color: white;
+  display: grid;
+  justify-items: center;
 }
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tytul {
   grid-row: r-1/r-2;
   grid-column: c-2/c-3;
+  align-self: center;
+  justify-self: start;
+  font-size: 1rem;
   color: white;
+  font-weight: bold;
+  filter: drop-shadow(0 0 0.05rem rgb(41, 0, 47));
 }
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo {
   grid-row: r-2/r-3;
@@ -695,6 +705,11 @@
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tekst {
   grid-row: r-2/r-3;
   grid-column: c-1/c-4;
+  padding: 1rem 2rem 1rem 2rem;
+  display: grid;
+}
+.layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tekst ul li::marker {
+  color: #5e25ba;
 }
 
 .layout__medical-cennik__cala-strona {

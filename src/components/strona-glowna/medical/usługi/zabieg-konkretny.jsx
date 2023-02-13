@@ -77,7 +77,7 @@ const ZabiegKonkretny = (props) => {
         />
         <SzczegolKonkretny
           tresc={props.d}
-          tytul="ZDROWE W PRZYPADKU"
+          tytul="ZALECANE W PRZYPADKU"
           svgIcon={<IoMdPerson />}
         />
         <SzczegolKonkretny

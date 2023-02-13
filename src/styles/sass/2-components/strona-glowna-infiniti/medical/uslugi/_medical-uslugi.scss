@@ -163,7 +163,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 [r-3];
 
               grid-template-columns:
-                [c-1] 1fr
+                [c-1] 0.5fr
                 [c-2] 3fr
                 [c-3] 3fr
                 [c-4];
@@ -171,9 +171,13 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 grid-row: r-1/ r-2;
                 grid-column: c-1 / c-3;
 
-                padding: 1vw 0 1vw 0;
-                margin: 2vw 0 2vw 0;
+                // padding: 1vw 0 1vw 0;
+                margin: 3vw 0 3vw 0;
 
+                height: 2.5rem;
+                width: 18rem;
+                //protip1 - repsonsiveness - ZAWSZE okresl width i height, chocby height wyliczane z aspect ratio
+                //trap1- I NIE % OR VW, tylko rem. aspekty wizualne, niefontowe, moge vw, jeśli już potrzeba. Ale tedy min or max używam
                 background: #5e25ba;
                 background: -moz-linear-gradient(
                   -45deg,
@@ -190,22 +194,40 @@ $rozmiar-rowa: minmax(0rem, max-content);
               &--svg {
                 grid-row: r-1/ r-2;
                 grid-column: c-1 / c-2;
+                align-self: center;
+                color: white;
+
+                // padding: 0 auto 0 auto;
+                display: grid;
+                justify-items: center;
               }
               &--tytul {
                 grid-row: r-1/ r-2;
                 grid-column: c-2 / c-3;
-
+                align-self: center;
+                justify-self: start;
+                font-size: 1rem;
                 color: white;
+                font-weight: bold;
+                filter: drop-shadow(0 0 0.05rem rgb(41, 0, 47));
               }
               &--tresc-tlo {
                 grid-row: r-2/ r-3;
                 grid-column: c-1 / c-4;
                 background-color: white;
                 box-shadow: 0 0 1vw 0.2vw #3f00455b;
+                // padding: 1vw 0 1vw 0;
               }
               &--tresc-tekst {
                 grid-row: r-2/ r-3;
                 grid-column: c-1 / c-4;
+                padding: 1rem 2rem 1rem 2rem;
+                display: grid;
+                // row-gap: 3rem;
+                //protip2 - zmiana bullet looku \/ "::marker"
+                & ul li::marker {
+                  color: #5e25ba;
+                }
               }
             }
           }
