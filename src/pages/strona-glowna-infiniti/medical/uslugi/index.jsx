@@ -23,6 +23,14 @@ import ZabiegKonkretny from "../../../../components/strona-glowna/medical/usług
 
 import SVGSolux from "../../../../components/strona-glowna/medical/usługi/svg/svg-solux.jsx";
 import SVGLaser from "../../../../components/strona-glowna/medical/usługi/svg/svg-laser.jsx";
+import SVGDrenaz from "../../../../components/strona-glowna/medical/usługi/svg/svg-drenaz";
+import SVGElektro1 from "../../../../components/strona-glowna/medical/usługi/svg/svg-elektro-1";
+import SVGElektro2 from "../../../../components/strona-glowna/medical/usługi/svg/svg-elektro-2";
+import SVGElektro3 from "../../../../components/strona-glowna/medical/usługi/svg/svg-elektro-3";
+import SVGElektro4 from "../../../../components/strona-glowna/medical/usługi/svg/svg-elektro-4";
+import SVGWodor from "../../../../components/strona-glowna/medical/usługi/svg/svg-wodor";
+import SVGUltradzwiek from "../../../../components/strona-glowna/medical/usługi/svg/svg-dzwiek";
+import SVGMagnet from "../../../../components/strona-glowna/medical/usługi/svg/svg-magnet";
 
 const kolorSVG = "#ffffff";
 
@@ -68,7 +76,16 @@ const MedicalUslugi = () => {
       >
         <ZabiegKonkretny svgComponent={<SVGSolux mojKolor={kolorSVG} />} />
         <ZabiegKonkretny svgComponent={<SVGLaser mojKolor={kolorSVG} />} />
-        <ZabiegKonkretny svgComponent={<SVGLaser mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny svgComponent={<SVGDrenaz mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny svgComponent={<SVGElektro1 mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny svgComponent={<SVGElektro2 mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny svgComponent={<SVGElektro3 mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny svgComponent={<SVGElektro4 mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny
+          svgComponent={<SVGUltradzwiek mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny svgComponent={<SVGMagnet mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny svgComponent={<SVGWodor mojKolor={kolorSVG} />} />
       </div>
     </div>
   );
