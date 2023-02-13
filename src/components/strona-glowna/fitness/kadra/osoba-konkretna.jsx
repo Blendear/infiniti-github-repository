@@ -31,7 +31,7 @@ const OsobaKonkretna = (props) => {
             key={socialKonkretny}
           >
             <a>
-              <FaFacebookF size="2rem" color="#088b9a" />
+              <FaFacebookF size="2rem" color="#89150d" />
             </a>
           </Link>
         );
@@ -43,7 +43,7 @@ const OsobaKonkretna = (props) => {
             key={socialKonkretny}
           >
             <a>
-              <BsInstagram size="2rem" color="#088b9a" />
+              <BsInstagram size="2rem" color="#89150d" />
             </a>
           </Link>
         );
@@ -61,7 +61,7 @@ const OsobaKonkretna = (props) => {
           //   </a>
           // </Link>
 
-          <TfiEmail size="2rem" color="#088b9a" />
+          <TfiEmail size="2rem" color="#89150d" />
         );
         socialeTejOsoby.push(<p>{props.daneOOsobie.socialMediaLinks.email}</p>);
         break;

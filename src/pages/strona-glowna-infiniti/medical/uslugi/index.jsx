@@ -21,6 +21,11 @@ import TytulPodstrony from "../../../../components/wszechobecne-na-roznych-podst
 
 import ZabiegKonkretny from "../../../../components/strona-glowna/medical/usługi/zabieg-konkretny";
 
+import SVGSolux from "../../../../components/strona-glowna/medical/usługi/svg/svg-solux.jsx";
+import SVGLaser from "../../../../components/strona-glowna/medical/usługi/svg/svg-laser.jsx";
+
+const kolorSVG = "#ffffff";
+
 const MedicalUslugi = () => {
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
@@ -61,9 +66,9 @@ const MedicalUslugi = () => {
           styles["layout__medical-uslugi__cala-strona__lista-zabiegow"]
         }
       >
-        <ZabiegKonkretny />
-        <ZabiegKonkretny />
-        <ZabiegKonkretny />
+        <ZabiegKonkretny svgComponent={<SVGSolux mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny svgComponent={<SVGLaser mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny svgComponent={<SVGLaser mojKolor={kolorSVG} />} />
       </div>
     </div>
   );

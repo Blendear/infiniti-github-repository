@@ -13,7 +13,7 @@ import styles from "src/styles/sass/styles-all.module.scss";
 
 import ZmienneStartoweLogo from "../../../../components/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/logo";
 import ZmienneStartoweTlo from "../../../../components/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/fota";
-import TytulPodstrony from "../../../../components/wszechobecne-na-roznych-podstronach/tytul-podstrony/tytul-podstrony";
+import TytulPodstronyFitness from "../../../../components/wszechobecne-na-roznych-podstronach/tytul-podstrony/tytul-podstrony-fitness";
 
 import { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
@@ -53,7 +53,7 @@ const FitnessCennik = () => {
           styles["layout__fitness-cennik__cala-strona__0-nazwa-podstrony"]
         }
       >
-        <TytulPodstrony nazwaPodstrony="CENNIK" />
+        <TytulPodstronyFitness nazwaPodstrony="CENNIK" />
       </div>
       <div className={styles["layout__fitness-cennik__cala-strona__cennik"]}>
         <Link

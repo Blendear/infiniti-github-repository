@@ -13,7 +13,9 @@ import styles from "src/styles/sass/styles-all.module.scss";
 
 import SzczegolKonkretny from "./szczegol-konkretny";
 
-const ZabiegKonkretny = () => {
+import { useState } from "react";
+
+const ZabiegKonkretny = (props) => {
   return (
     <div
       className={
@@ -29,7 +31,7 @@ const ZabiegKonkretny = () => {
           ]
         }
       >
-        ikona i klocek zabiegu
+        {props.svgComponent}
       </div>
       <div
         className={

@@ -483,6 +483,7 @@
   margin: 0rem 0 0rem 3rem;
   align-self: center;
   font-weight: bold;
+  filter: drop-shadow(0 0 0.2rem #1a4898);
 }
 .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--linia-boczna {
   grid-row: r-2/r-3;

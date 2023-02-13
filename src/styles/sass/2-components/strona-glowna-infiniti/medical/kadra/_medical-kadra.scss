@@ -119,6 +119,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
             margin: 0rem 0 0rem 3rem;
             align-self: center;
             font-weight: bold;
+            filter: drop-shadow(
+              0 0 0.2rem medical-variables.$medical--ciemny-niebieksi
+            );
           }
           &--linia-boczna {
             grid-row: r-2/ r-3;

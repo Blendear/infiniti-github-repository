@@ -7,10 +7,6 @@ const SVGOtoczkaNazwy = (props) => {
   //
 
   //hook1 - protip1 - MAM SPOSOB NA DYNAMICZNE KOLORY SVG \/ - PODAJESZ "FILL" OR INNE PROPERTY POPRZEZ PROPS
-  // \/
-  // szukasz "stroke" albo "fill" (zxależy co chcesz wyplenic)
-  //w podcomponentach <svg>, i wszedzie tam wklejasz wartosc
-  //"props.nazwaPropertyzKolorem", np. stroke={props.mojKolor}
   return (
     <svg
       fill={props.mojKolor} // <<<<, + \/
