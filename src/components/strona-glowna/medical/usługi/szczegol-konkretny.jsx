@@ -75,8 +75,7 @@ const SzczegolKonkretny = (props) => {
             : styles["menu-modal__closed-variant"]
         }
       >
-        tresc-tekst sdvfnbiqw4enqaoi4naiusdbvyaer sdvfnbiqw4enqaoi4naiusdbvyaer
-        sdvfnbiqw4enqaoi4naiusdbvyaer sdvfnbiqw4enqaoi4naiusdbvyaer
+        {props.tresc}
       </div>
     </div>
   );

@@ -75,44 +75,53 @@ const MedicalUslugi = () => {
         }
       >
         {/* //hook1 - daloby sie to zrobisz szycbiej, robic plik z danymi i mapujac renderujaco, prawda? \/*/}
+        {/* NIE BYLOBY JEBANIA SIE z dopasowywaniem tytulow etc. mhmmm */}
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="LAMPA SOLLUX"
+          e="asd"
+          d="bbb"
+          j="ccc"
+          p="ddd"
           svgComponent={<SVGSolux mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          e="asd"
+          d="bbb"
+          j="ccc"
+          p="ddd"
+          tytulZAbiegu="LASEROTERAPIA"
           svgComponent={<SVGLaser mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="DRENAŻ LIMFATYCZNY"
           svgComponent={<SVGDrenaz mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="ELEKTROSTYMULACJA"
           svgComponent={<SVGElektro1 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="ELEKTROTERAPIA"
           svgComponent={<SVGElektro2 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="INETRFERENCJA"
           svgComponent={<SVGElektro3 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="DIADYNAMIKA"
           svgComponent={<SVGElektro4 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="ULTRADŹWIĘKI"
           svgComponent={<SVGUltradzwiek mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="POLE MAGNETYCZNE"
           svgComponent={<SVGMagnet mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          tytulZAbiegu="aa"
+          tytulZAbiegu="INHALACJA AKTYWNEGO WODORU"
           svgComponent={<SVGWodor mojKolor={kolorSVG} />}
         />
       </div>

@@ -45,7 +45,7 @@ const ZabiegKonkretny = (props) => {
           ]
         }
       >
-        tytul zabiegu
+        {props.tytulZAbiegu}
       </div>
       <div
         className={
@@ -63,10 +63,26 @@ const ZabiegKonkretny = (props) => {
             : styles["menu-modal__closed-variant"]
         }
       >
-        <SzczegolKonkretny tytul="EFEKTY ZDROWOTNE" svgIcon={<AiFillHeart />} />
-        <SzczegolKonkretny tytul="DLA KOGO" svgIcon={<IoMdPerson />} />
-        <SzczegolKonkretny tytul="JAK WYGLĄDA" svgIcon={<RiZoomInLine />} />
-        <SzczegolKonkretny tytul="PRZECIWSKAZANIA" svgIcon={<TiFlag />} />
+        <SzczegolKonkretny
+          tresc={props.e}
+          tytul="EFEKTY ZDROWOTNE"
+          svgIcon={<AiFillHeart />}
+        />
+        <SzczegolKonkretny
+          tresc={props.d}
+          tytul="DLA KOGO"
+          svgIcon={<IoMdPerson />}
+        />
+        <SzczegolKonkretny
+          tresc={props.j}
+          tytul="JAK WYGLĄDA"
+          svgIcon={<RiZoomInLine />}
+        />
+        <SzczegolKonkretny
+          tresc={props.p}
+          tytul="PRZECIWSKAZANIA"
+          svgIcon={<TiFlag />}
+        />
       </div>
     </div>
   );
