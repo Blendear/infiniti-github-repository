@@ -688,7 +688,40 @@ $rozmiar-column-siatka-btn: 1fr;
               }
               &--minus-1 {
                 @include siatka();
-                &-- {
+                &--crossfit-box {
+                  grid-row: r-6 / r-10;
+                  grid-column: c-12 / c-17;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--kuznia-tytanow-1 {
+                  grid-row: r-10 / r-17;
+                  grid-column: c-11 / c-19;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--kuznia-tytanow-2 {
+                  grid-row: r-2 / r-7;
+                  grid-column: c-11 / c-20;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--mma {
+                  grid-row: r-4 / r-13;
+                  grid-column: c-6 / c-12;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--sauna {
+                  grid-row: r-5 / r-10;
+                  grid-column: c-25 / c-31;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--szatnia-damska {
+                  grid-row: r-8 / r-12;
+                  grid-column: c-30 / c-37;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--szatnia-meska {
+                  grid-row: r-7 / r-11;
+                  grid-column: c-18 / c-26;
+                  @include btn-uniwersalne-ustawienia();
                 }
               }
               &--0 {

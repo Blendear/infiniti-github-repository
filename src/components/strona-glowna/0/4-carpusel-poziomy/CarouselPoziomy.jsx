@@ -214,7 +214,80 @@ const CarouselPoziomy = () => {
                 ]
               : styles["menu-modal__closed-variant"]
           }
-        ></div>
+        >
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("szatnia-meska");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--szatnia-meska"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("kuznia-tytanow-1");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--kuznia-tytanow-1"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("kuznia-tytanow-2");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--kuznia-tytanow-2"
+              ]
+            }
+          ></button>
+
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("mma");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--mma"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("crossfit-box");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--crossfit-box"
+              ]
+            }
+          ></button>
+
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("sauna");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--sauna"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("szatnia-damska");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--szatnia-damska"
+              ]
+            }
+          ></button>
+        </div>
         <div
           className={
             aktywnyPoziom === 0
@@ -457,9 +530,11 @@ const CarouselPoziomy = () => {
         </div>
         <div
           className={
-            styles[
-              "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--2"
-            ]
+            aktywnyPoziom === 2
+              ? styles[
+                  "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--2"
+                ]
+              : styles["menu-modal__closed-variant"]
           }
         >
           <button

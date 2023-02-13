@@ -1883,6 +1883,97 @@
   aspect-ratio: 1.8/1;
   overflow: hidden;
 }
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--crossfit-box {
+  grid-row: r-6/r-10;
+  grid-column: c-12/c-17;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(72, 193, 254, 0.462745098);
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--crossfit-box:active {
+  background-color: green;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--kuznia-tytanow-1 {
+  grid-row: r-10/r-17;
+  grid-column: c-11/c-19;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(72, 193, 254, 0.462745098);
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--kuznia-tytanow-1:active {
+  background-color: green;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--kuznia-tytanow-2 {
+  grid-row: r-2/r-7;
+  grid-column: c-11/c-20;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(72, 193, 254, 0.462745098);
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--kuznia-tytanow-2:active {
+  background-color: green;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--mma {
+  grid-row: r-4/r-13;
+  grid-column: c-6/c-12;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(72, 193, 254, 0.462745098);
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--mma:active {
+  background-color: green;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--sauna {
+  grid-row: r-5/r-10;
+  grid-column: c-25/c-31;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(72, 193, 254, 0.462745098);
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--sauna:active {
+  background-color: green;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--szatnia-damska {
+  grid-row: r-8/r-12;
+  grid-column: c-30/c-37;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(72, 193, 254, 0.462745098);
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--szatnia-damska:active {
+  background-color: green;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--szatnia-meska {
+  grid-row: r-7/r-11;
+  grid-column: c-18/c-26;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(72, 193, 254, 0.462745098);
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--minus-1--szatnia-meska:active {
+  background-color: green;
+}
 .layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0 {
   grid-row: r-1/r-11;
   grid-column: c-1/c-21;
