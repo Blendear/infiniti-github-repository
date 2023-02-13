@@ -19,7 +19,7 @@
 //    6. Pieszczę - Detale wizualne i data'owe programuj
 
 import styles from "src/styles/sass/styles-all.module.scss";
-
+import CallButton from "../../components/strona-glowna/0/call-i-messenger/call-btn";
 import CarouselFotyINFINITI from "../../components/strona-glowna/0/2-carousel-foty-infiniti/CarouselFotyINFINITI";
 import CarouselPoziomy from "../../components/strona-glowna/0/4-carpusel-poziomy/CarouselPoziomy";
 import TytulINFINITI from "../../components/strona-glowna/0/tytul-infiniti/tytul-podstrony";
@@ -386,6 +386,7 @@ const StronaGlowna = () => {
       <GodzinyOtwarciaKS />
 
       <Partnerzy />
+      <CallButton />
     </div>
   );
 };

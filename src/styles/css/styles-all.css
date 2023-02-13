@@ -1542,6 +1542,26 @@
   color: #120e17;
 }
 
+.layout__strona-glowna__call-btn {
+  position: fixed;
+  z-index: 100;
+  bottom: 1rem;
+  left: 1rem;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 90%;
+  background: #5e25ba;
+  background: -moz-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
+  background: -webkit-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
+  background: linear-gradient(135deg, #5e25ba 0%, #d252ab 100%);
+  justify-self: center;
+  align-self: center;
+}
+.layout__strona-glowna__call-btn--svg {
+  color: rgb(255, 255, 255);
+  justify-self: center;
+  font-size: 2.5rem;
+}
 .layout__strona-glowna__cala-strona {
   position: relative;
   display: grid;
