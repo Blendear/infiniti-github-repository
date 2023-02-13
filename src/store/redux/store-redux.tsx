@@ -35,6 +35,7 @@ interface typeOfMenuINavbarState {
 interface typeOfWybranyPoziomIMiejsceState {
   poziom: number;
   miejsce: string;
+  indexFotyAktualnej: number;
 }
 interface typeOfSumyKaloriiState {
   aktualnieKalorie: number;
@@ -56,6 +57,7 @@ const initialMenuINavbarState: typeOfMenuINavbarState = {
 const initialWybranyPoziomIMiejsceState: typeOfWybranyPoziomIMiejsceState = {
   poziom: 1,
   miejsce: "boisko",
+  indexFotyAktualnej: 0,
 };
 
 const initialSumyKaloriiState: typeOfSumyKaloriiState = {
@@ -96,6 +98,10 @@ const wybranyPoziomIMiejsceSlice = createSlice({
     },
     ustawMiejsce(state, action: PayloadAction<{ noweMiejsce: string }>) {
       state.miejsce = action.payload.noweMiejsce;
+      // console.log(`wysyłam payload  : ${action.payload.toggleWidocznoscMenu}`);
+    },
+    ustawIndexFoty(state, action: PayloadAction<{ nowyIndex: number }>) {
+      state.indexFotyAktualnej = action.payload.nowyIndex;
       // console.log(`wysyłam payload  : ${action.payload.toggleWidocznoscMenu}`);
     },
     consoleLogTest(state) {

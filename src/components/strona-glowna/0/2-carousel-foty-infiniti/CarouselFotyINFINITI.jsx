@@ -48,6 +48,7 @@ import Image from "next/image.js";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
+import { wybranyPoziomIMiejsceActions } from "../../../../store/redux/store-redux";
 
 //hook1 \/
 //
@@ -59,6 +60,7 @@ const CarouselPoziomy = () => {
   const reduxStatePoziomIMiejsceAktualne = useAppSelector(
     (state) => state.wybranyPoziomIMiejsceReducer
   );
+  const dispatch = useAppDispatch();
 
   //ktore miejsc ejest aktywne
 
@@ -89,17 +91,20 @@ const CarouselPoziomy = () => {
     // console.log(
     //   carouselData.find((miejsce) => miejsce.nazwaMiejsca === "boisko")
     // );
-    console.log(aktualnyFoto);
-    setAktualnyFoto(
-      // !aktualnaFota.image ? 0 : aktualnyFoto + 1
-      aktualnyFoto ===
-        carouselData.find(
-          (miejsce) =>
-            miejsce.nazwaMiejsca === reduxStatePoziomIMiejsceAktualne.miejsce
-        ).fotyTegoMiejsca.length -
-          1
-        ? 0
-        : aktualnyFoto + 1
+    console.log("index", reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej);
+    dispatch(
+      wybranyPoziomIMiejsceActions.ustawIndexFoty({
+        // !aktualnaFota.image ? 0 : aktualnyFoto + 1
+        nowyIndex:
+          reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej ===
+          carouselData.find(
+            (miejsce) =>
+              miejsce.nazwaMiejsca === reduxStatePoziomIMiejsceAktualne.miejsce
+          ).fotyTegoMiejsca.length -
+            1
+            ? 0
+            : reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej + 1,
+      })
     );
   };
 
@@ -107,17 +112,37 @@ const CarouselPoziomy = () => {
   //           B.3.1. Gdy aktualny jest pierwszą fotą - przejdź do ostatniej || gdy nie jest ostatnią - przejdź do next foty
   //
   const handlerPrevFoto = () => {
-    console.log(aktualnyFoto);
+    console.log("index", reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej);
+    // console.log(aktualnyFoto);
     let iloscFotWTymMiejscu = carouselData.find(
       (miejsce) =>
         miejsce.nazwaMiejsca === reduxStatePoziomIMiejsceAktualne.miejsce
     ).fotyTegoMiejsca.length;
-    if (aktualnyFoto === 0) {
-      setAktualnyFoto(iloscFotWTymMiejscu - 1);
-    } else if (aktualnyFoto > iloscFotWTymMiejscu - 1) {
-      setAktualnyFoto(0);
+    if (reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej === 0) {
+      dispatch(
+        wybranyPoziomIMiejsceActions.ustawIndexFoty({
+          nowyIndex: iloscFotWTymMiejscu - 1,
+        })
+      );
+
+      // setAktualnyFoto(iloscFotWTymMiejscu - 1);
+    } else if (
+      reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej >
+      iloscFotWTymMiejscu - 1
+    ) {
+      dispatch(
+        wybranyPoziomIMiejsceActions.ustawIndexFoty({
+          nowyIndex: 0,
+        })
+      );
+      // setAktualnyFoto(0);
     } else {
-      setAktualnyFoto(aktualnyFoto - 1);
+      dispatch(
+        wybranyPoziomIMiejsceActions.ustawIndexFoty({
+          nowyIndex: reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej - 1,
+        })
+      );
+      // setAktualnyFoto(reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej - 1);
     }
   };
   //
@@ -174,7 +199,9 @@ const CarouselPoziomy = () => {
                   //herehere - dziala. DZIALA \/
                   src={
                     // 0 > 1
-                    aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]
+                    aktualnyDataObject.fotyTegoMiejsca[
+                      reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej
+                    ]
                     // ? aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]
                     // : aktualnyDataObject.fotyTegoMiejsca[0]
                     // :

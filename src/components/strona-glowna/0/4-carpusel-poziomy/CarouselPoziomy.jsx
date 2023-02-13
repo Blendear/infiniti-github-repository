@@ -92,12 +92,16 @@ const CarouselPoziomy = () => {
   const handlerSetMiejsceAktywne = (miejsceString) => {
     // setAktywneMiejsce("squash");
     // console.log(aktywneMiejsce);
+    console.log("index", reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej);
     dispatch(
       wybranyPoziomIMiejsceActions.ustawMiejsce({
         noweMiejsce: miejsceString,
       }),
       console.log(reduxStatePoziomIMiejsceAktualne)
     );
+    //trap1 - redux dispatch - SETOWANIE WYAMGA PODANIA OF AN OBJECT WITH PROPERTY/IES NAME/S, N IE "0", TYLKO {PROPERTYNAME : 0}
+    dispatch(wybranyPoziomIMiejsceActions.ustawIndexFoty({ nowyIndex: 0 }));
+    console.log("index", reduxStatePoziomIMiejsceAktualne.indexFotyAktualnej);
   };
   //
   //       A.2. Guard clause - if no data, nic nie wyświetlaj.
