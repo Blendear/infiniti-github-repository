@@ -599,6 +599,7 @@
   grid-row: r-3/r-4;
   grid-column: c-1/c-12;
   display: grid;
+  margin: 0 2rem 0 2rem;
   grid-template-rows: [r-1] minmax(0rem, max-content) [r-2];
   grid-template-columns: [c-1] 1fr [c-2];
 }
@@ -611,23 +612,43 @@
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--tytul-ikona-i-klocek-gradientowy {
   grid-row: r-1/r-2;
   grid-column: c-1/c-3;
-  z-index: 5;
   background: #1f5c91;
   background: -moz-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
   background: -webkit-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
   background: linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
+  height: 4rem;
+  margin: 1rem 0 1rem 3rem;
+}
+.layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--svg {
+  grid-row: r-1/r-2;
+  grid-column: c-1/c-2;
+  z-index: 5;
+  background-color: rgb(255, 255, 255);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 90%;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 0.5rem;
+  padding: 0.85rem 0.85rem 0.85rem 0.85rem;
+}
+.layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--svg svg {
+  width: 3.3rem;
+  height: 3.3rem;
 }
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--tytul-nazwa {
   grid-row: r-1/r-2;
   grid-column: c-2/c-3;
   z-index: 10;
+  font-size: min(1.5rem, 50vw);
+  align-self: center;
   color: white;
 }
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--linia-boczna {
   grid-row: r-2/r-3;
   grid-column: c-1/c-2;
   z-index: 5;
-  width: 3vw;
+  width: 0.6rem;
   height: 100%;
   justify-self: center;
   background-color: rgb(112, 194, 219);

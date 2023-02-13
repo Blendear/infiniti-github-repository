@@ -35,6 +35,13 @@ const ZabiegKonkretny = (props) => {
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--tytul-ikona-i-klocek-gradientowy"
           ]
         }
+      ></div>
+      <div
+        className={
+          styles[
+            "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--svg"
+          ]
+        }
       >
         {props.svgComponent}
       </div>

@@ -32,7 +32,7 @@ import SVGWodor from "../../../../components/strona-glowna/medical/usługi/svg/s
 import SVGUltradzwiek from "../../../../components/strona-glowna/medical/usługi/svg/svg-dzwiek";
 import SVGMagnet from "../../../../components/strona-glowna/medical/usługi/svg/svg-magnet";
 
-const kolorSVG = "#ffffff";
+const kolorSVG = "#00aeff";
 
 const MedicalUslugi = () => {
   const reduxStateIsMenuOpen = useAppSelector(
