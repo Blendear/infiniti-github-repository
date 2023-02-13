@@ -82,6 +82,10 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [c-2] 5fr
             [c-3];
           grid-auto-flow: row;
+
+          &--nieaktywny {
+            height: 5rem;
+          }
           &--tytul-ikona-i-klocek-gradientowy {
             grid-row: r-1/ r-2;
             grid-column: c-1 / c-3;
@@ -167,6 +171,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 [c-2] 3fr
                 [c-3] 3fr
                 [c-4];
+
               &--klocek {
                 grid-row: r-1/ r-2;
                 grid-column: c-1 / c-3;
@@ -221,6 +226,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
               &--tresc-tekst {
                 grid-row: r-2/ r-3;
                 grid-column: c-1 / c-4;
+                font-size: 1.1rem;
                 padding: 1rem 2rem 1rem 2rem;
                 display: grid;
                 // row-gap: 3rem;

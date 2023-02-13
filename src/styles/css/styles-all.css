@@ -609,6 +609,9 @@
   grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
   grid-auto-flow: row;
 }
+.layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--nieaktywny {
+  height: 5rem;
+}
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--tytul-ikona-i-klocek-gradientowy {
   grid-row: r-1/r-2;
   grid-column: c-1/c-3;
@@ -705,6 +708,7 @@
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tekst {
   grid-row: r-2/r-3;
   grid-column: c-1/c-4;
+  font-size: 1.1rem;
   padding: 1rem 2rem 1rem 2rem;
   display: grid;
 }
@@ -1810,7 +1814,7 @@
   grid-row: r-6/r-7;
   grid-column: c-1/c-12;
   display: grid;
-  grid-template-rows: [r-1] minmax(5rem, max-content) [r-2] minmax(5rem, max-content) [r-3] minmax(5rem, max-content) [r-4] minmax(5rem, max-content) [r-5];
+  grid-template-rows: [r-1] minmax(5rem, max-content) [r-2] minmax(5rem, max-content) [r-3] minmax(5rem, max-content) [r-4] minmax(2.2rem, max-content) [r-5];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4] 1fr [c-5] 1fr [c-6];
 }
 .layout__strona-glowna__cala-strona__carousel-gallery--loader {

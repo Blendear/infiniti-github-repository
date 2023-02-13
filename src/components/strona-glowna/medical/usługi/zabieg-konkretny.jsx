@@ -21,6 +21,11 @@ import { RiZoomInLine } from "react-icons/ri";
 import { TiFlag } from "react-icons/ti";
 
 const ZabiegKonkretny = (props) => {
+  const [isAktywnyBoolean, setIsAktywnyBoolean] = useState(false);
+  const handlerToggleIsAktywny = () => {
+    setIsAktywnyBoolean(!isAktywnyBoolean);
+  };
+
   return (
     <div
       className={
@@ -30,6 +35,8 @@ const ZabiegKonkretny = (props) => {
       }
     >
       <div
+        //hook1 - trap1 - jesli cos ma byc buittonem, DAJ TEMU OSOBNY PARENT ELEMENT, inaczjer jak tutaj, musialem stworzyc 3 onlicki, co nie jest optymlane
+        onClick={handlerToggleIsAktywny}
         className={
           styles[
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--tytul-ikona-i-klocek-gradientowy"
@@ -37,6 +44,7 @@ const ZabiegKonkretny = (props) => {
         }
       ></div>
       <div
+        onClick={handlerToggleIsAktywny}
         className={
           styles[
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--svg"
@@ -46,6 +54,7 @@ const ZabiegKonkretny = (props) => {
         {props.svgComponent}
       </div>
       <div
+        onClick={handlerToggleIsAktywny}
         className={
           styles[
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--tytul-nazwa"
@@ -61,13 +70,14 @@ const ZabiegKonkretny = (props) => {
           ]
         }
       ></div>
+
       <div
         className={
-          2 > 1 === true
+          isAktywnyBoolean === true
             ? styles[
                 "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container"
               ]
-            : styles["menu-modal__closed-variant"]
+            : `${styles["menu-modal__closed-variant"]} `
         }
       >
         <SzczegolKonkretny
@@ -91,6 +101,7 @@ const ZabiegKonkretny = (props) => {
           svgIcon={<TiFlag />}
         />
       </div>
+      {props.isRozwiniety !== true && <div style={{ color: "white" }}>I</div>}
     </div>
   );
 };

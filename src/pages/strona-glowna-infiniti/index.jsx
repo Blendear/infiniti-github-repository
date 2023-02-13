@@ -353,7 +353,7 @@ const StronaGlowna = () => {
           </div>
         </button>
 
-        <button
+        {/* <button
           className={
             styles[
               "layout__strona-glowna__cala-strona__carousel-gallery--wiecej-button"
@@ -378,7 +378,7 @@ const StronaGlowna = () => {
           >
             <SVGWiecejArrowRight />
           </div>
-        </button>
+        </button> */}
       </div>
 
       <CarouselPoziomy />
