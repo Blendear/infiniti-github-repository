@@ -74,4 +74,8 @@ export const carouselDataMinus1 = [
     nazwaMiejsca: "szatnia-meska",
     fotyTegoMiejsca: [szatniaMeska1],
   },
+  {
+    nazwaMiejsca: "sauna",
+    fotyTegoMiejsca: [sauna1],
+  },
 ];

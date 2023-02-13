@@ -125,10 +125,11 @@ const CarouselPoziomy = () => {
       >
         {reduxStatePoziomIMiejsceAktualne.poziom === -1 && (
           <div>
-            {carouselDataMinus1.map((aktualnaFota, indexAktualny) => (
+            {carouselDataMinus1.map((aktualnyDataObject, indexAktualny) => (
               <div
                 className={
-                  indexAktualny === aktualnyFoto
+                  reduxStatePoziomIMiejsceAktualne.miejsce ===
+                  aktualnyDataObject.nazwaMiejsca
                     ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
                     : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
                 }
@@ -137,9 +138,12 @@ const CarouselPoziomy = () => {
                 {/* 
             //       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
             */}
-                {indexAktualny === aktualnyFoto && (
+
+                {reduxStatePoziomIMiejsceAktualne.miejsce ===
+                  aktualnyDataObject.nazwaMiejsca && (
                   <Image
-                    src={aktualnaFota.image}
+                    //herehere - dziala. DZIALA \/
+                    src={aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]}
                     alt={`nie pyklo zdjecie`}
                     // width={300}
                     // height={300}
@@ -188,7 +192,7 @@ const CarouselPoziomy = () => {
         )}
         {reduxStatePoziomIMiejsceAktualne.poziom === 1 && (
           <div>
-            {carouselData2.map((aktualnyDataObject, indexAktualny) => (
+            {carouselData1.map((aktualnyDataObject, indexAktualny) => (
               <div
                 className={
                   reduxStatePoziomIMiejsceAktualne.miejsce ===

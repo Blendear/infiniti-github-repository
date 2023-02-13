@@ -675,7 +675,7 @@ $rozmiar-column-siatka-btn: 1fr;
                 position: absolute;
                 z-index: 10;
 
-                background-color: #48c1fe76;
+                background-color: #48c1fe00;
                 border: none;
                 // opacity: 0.01;
 
@@ -683,7 +683,13 @@ $rozmiar-column-siatka-btn: 1fr;
                 height: 100%;
 
                 &:active {
-                  background-color: green;
+                  background-color: rgba(255, 255, 255, 0.347);
+                  width: 4rem;
+                  height: 4rem;
+                  justify-self: center;
+                  align-self: center;
+                  // border: #000000;
+                  border-radius: 45%;
                 }
               }
               &--minus-1 {
