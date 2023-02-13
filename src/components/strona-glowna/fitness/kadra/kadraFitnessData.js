@@ -175,16 +175,16 @@ export const kadraFitnessDataArray = {
         facebook: "https://www.facebook.com/ramonatrenerzdrowia",
       },
     },
-    {
-      nazwisko: "Prokop",
-      name: "Piotrek",
-      opis: "testowy opis",
-      funkcja: "Instruktor fitness",
-      fotoPathKoncowka: "prokop-piotr",
-      socialMediaLinks: {
-        facebook: "https://www.facebook.com/prokopiotrek",
-      },
-    },
+    // {
+    //   nazwisko: "Prokop",
+    //   name: "Piotrek",
+    //   opis: "testowy opis",
+    //   funkcja: "Instruktor fitness",
+    //   fotoPathKoncowka: "prokop-piotr",
+    //   socialMediaLinks: {
+    //     facebook: "https://www.facebook.com/prokopiotrek",
+    //   },
+    // },
     {
       nazwisko: "Rypalla",
       name: "Dominika",
