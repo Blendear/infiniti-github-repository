@@ -11,6 +11,14 @@ export const kadraFitnessDataArray = {
   ],
   recepcja: [
     {
+      nazwisko: "Rosa",
+      name: "Sandra",
+      opis: "testowy opis",
+      funkcja: "Kierownik Recepcji",
+      fotoPathKoncowka: "rosa-sandra",
+      socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    },
+    {
       nazwisko: "Bator",
       name: "Monika",
       opis: "testowy opis",
@@ -24,14 +32,6 @@ export const kadraFitnessDataArray = {
       opis: "testowy opis",
       funkcja: "Opiekun Recepcji",
       fotoPathKoncowka: "czerska-iza",
-      socialMediaLinks: { email: "info@infiniti-fit.pl" },
-    },
-    {
-      nazwisko: "Rosa",
-      name: "Sandra",
-      opis: "testowy opis",
-      funkcja: "Kierownik Recepcji",
-      fotoPathKoncowka: "rosa-sandra",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
   ],

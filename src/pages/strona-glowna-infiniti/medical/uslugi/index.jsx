@@ -77,50 +77,353 @@ const MedicalUslugi = () => {
         {/* //hook1 - daloby sie to zrobisz szycbiej, robic plik z danymi i mapujac renderujaco, prawda? \/*/}
         {/* NIE BYLOBY JEBANIA SIE z dopasowywaniem tytulow etc. mhmmm */}
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="LAMPA SOLLUX"
-          e="asd"
-          d="bbb"
-          j="ccc"
-          p="ddd"
           svgComponent={<SVGSolux mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
-          e="asd"
-          d="bbb"
-          j="ccc"
-          p="ddd"
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="LASEROTERAPIA"
           svgComponent={<SVGLaser mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="DRENAŻ LIMFATYCZNY"
           svgComponent={<SVGDrenaz mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="ELEKTROSTYMULACJA"
           svgComponent={<SVGElektro1 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="ELEKTROTERAPIA"
           svgComponent={<SVGElektro2 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="INETRFERENCJA"
           svgComponent={<SVGElektro3 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="DIADYNAMIKA"
           svgComponent={<SVGElektro4 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li>działanie przeciwbólowe</li>
+              <li>działanie rozluźniające</li>
+              <li>przyspieszenie gojenia</li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li>
+                {
+                  "stanów pourazowych (naderwaniach, skręceniach, zwichnięciach, złamaniach)"
+                }
+              </li>
+              <li>chorób zwyrodnieniowych kręgosłupa i stawów</li>
+              <li>ostrogi piętowej</li>
+              <li> leczenia obrzęków o charakterze limfatycznym</li>
+              <li>
+                chorób reumatycznych, – leczenia przykurczów, blizn, krwiaków
+              </li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li>zabieg nieodczuwalny dla pacjenta</li>
+              <li>średni czas zabiegu wynosi ok. 4-10 minut</li>
+              <li>
+                {" "}
+                {
+                  "dokładnie rzecz biorąc - ultradźwięki to fale akustyczne o wysokiej częstotliwości (1-3 MHz). Tkanka naświetlana tego typu falami podczas zabiegu podlega mikro-masażowi, którego efektem jest zwiększona temperatura i przyspieszone mikrokrążenie. Dodatkowo ultradźwięki rozluźniają mięśnie. W związku z tym jest to zabieg idealny dla sportowców. Ultradźwięki w fizykoterapii aplikowane są za pomocą głowicy, a na skórę używana jest substancja sprzęgająca (żel) lub lek w postaci leku (zabieg ten nazywamy wtedy fonoforezą)."
+                }
+              </li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li>nowotwory i stany po ich operacyjnym usunięciu</li>
+              <li>ciąża</li>
+              <li>cukrzyca</li>
+              <li>czynne procesy gruźlicze</li>
+              <li>skazy krwotoczne</li>
+              <li>niewydolność</li>
+              <li> krążenia i zaburzenia rytmu serca</li>
+              <li>ciężki stan ogólny</li>
+              <li>niezakończony wzrost kości w obszarze tarczy wzrostowej</li>
+              <li>nerwobóle niewyjaśnionego pochodzenia</li>
+              <li>ostre procesy zapalne i stany gorączkowe</li>
+              <li>zaburzenia ukrwienia obwodowego</li>
+              <li>elektroniczne i metalowe implanty</li>
+              <li>neuropatie</li>
+              <li>zakrzepowe zapalenie żył</li>
+              <li>wypadanie krążka międzykręgowego</li>
+              <li>tany po wycięciu łuku kręgowego</li>
+              <li>
+                w przypadku implantów i endoprotez należy zachować środki
+                ostrożności
+              </li>
+            </ul>
+          }
           tytulZAbiegu="ULTRADŹWIĘKI"
           svgComponent={<SVGUltradzwiek mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="POLE MAGNETYCZNE"
           svgComponent={<SVGMagnet mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
+          e={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          }
           tytulZAbiegu="INHALACJA AKTYWNEGO WODORU"
           svgComponent={<SVGWodor mojKolor={kolorSVG} />}
         />
