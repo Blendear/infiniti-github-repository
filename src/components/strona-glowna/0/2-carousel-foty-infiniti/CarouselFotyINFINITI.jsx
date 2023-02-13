@@ -86,9 +86,20 @@ const CarouselPoziomy = () => {
 
   //herehere11.02.2023 - bug ze za duzo mozna dawac next image i wywala no image
   const handlerNextFoto = () => {
+    // console.log(
+    //   carouselData.find((miejsce) => miejsce.nazwaMiejsca === "boisko")
+    // );
+    console.log(aktualnyFoto);
     setAktualnyFoto(
       // !aktualnaFota.image ? 0 : aktualnyFoto + 1
-      aktualnyFoto === lengthOfDataArray - 1 ? 0 : aktualnyFoto + 1
+      aktualnyFoto ===
+        carouselData.find(
+          (miejsce) =>
+            miejsce.nazwaMiejsca === reduxStatePoziomIMiejsceAktualne.miejsce
+        ).fotyTegoMiejsca.length -
+          1
+        ? 0
+        : aktualnyFoto + 1
     );
   };
 
@@ -96,9 +107,18 @@ const CarouselPoziomy = () => {
   //           B.3.1. Gdy aktualny jest pierwszą fotą - przejdź do ostatniej || gdy nie jest ostatnią - przejdź do next foty
   //
   const handlerPrevFoto = () => {
-    setAktualnyFoto(
-      aktualnyFoto === 0 ? lengthOfDataArray - 1 : aktualnyFoto - 1
-    );
+    console.log(aktualnyFoto);
+    let iloscFotWTymMiejscu = carouselData.find(
+      (miejsce) =>
+        miejsce.nazwaMiejsca === reduxStatePoziomIMiejsceAktualne.miejsce
+    ).fotyTegoMiejsca.length;
+    if (aktualnyFoto === 0) {
+      setAktualnyFoto(iloscFotWTymMiejscu - 1);
+    } else if (aktualnyFoto > iloscFotWTymMiejscu - 1) {
+      setAktualnyFoto(0);
+    } else {
+      setAktualnyFoto(aktualnyFoto - 1);
+    }
   };
   //
   //       A.2. Guard clause - if no data, nic nie wyświetlaj.
@@ -149,8 +169,16 @@ const CarouselPoziomy = () => {
               {reduxStatePoziomIMiejsceAktualne.miejsce ===
                 aktualnyDataObject.nazwaMiejsca && (
                 <Image
+                  // if no "akytualnyfoto" o tym numerze - wyseitl [0]
+                  // if no [0] - ustaw fote specjalne "juz wkrotce dodamy zdjeciua tego miejsca!"
                   //herehere - dziala. DZIALA \/
-                  src={aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]}
+                  src={
+                    // 0 > 1
+                    aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]
+                    // ? aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]
+                    // : aktualnyDataObject.fotyTegoMiejsca[0]
+                    // :
+                  }
                   alt={`nie pyklo zdjecie`}
                   // width={300}
                   // height={300}
