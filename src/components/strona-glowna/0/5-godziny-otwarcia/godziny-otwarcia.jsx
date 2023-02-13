@@ -169,7 +169,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>SOBOTA</strong> <br /> 08:00 - 20:00
+        <strong>PON. & ŚR.</strong> <br /> 09:00 - 12:00
       </div>
       <div
         className={
@@ -178,7 +178,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>SOBOTA</strong> <br /> 08:00 - 20:00
+        <strong>WT. & CZW.</strong> <br /> 17:00 - 21:00
       </div>
       <div
         className={
@@ -210,7 +210,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>SOBOTA</strong> <br /> 08:00 - 20:00
+        <strong>PN. & ŚR.</strong> <br /> 17:00 - 21:00
       </div>
       <div
         className={
@@ -219,7 +219,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>SOBOTA</strong> <br /> 08:00 - 20:00
+        <strong>WT. & CZW.</strong> <br /> 09:00 - 12:00
       </div>
 
       <div
@@ -252,7 +252,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>NIEDZIELA</strong> <br /> 08:00 - 18:00
+        <strong>SOBOTA</strong> <br /> 09:00 - 12:00 <br /> 16:00 - 19:00
       </div>
       <div
         className={
@@ -261,7 +261,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>NIEDZIELA</strong> <br /> 08:00 - 18:00
+        <strong>NIEDZIELA</strong> <br /> 11:00 - 17:00
       </div>
     </div>
   );

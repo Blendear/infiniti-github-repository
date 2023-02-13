@@ -1273,6 +1273,7 @@ $rozmiar-column-siatka-btn: 1fr;
               @include margin-sauna-lewo();
               @include font-godzin-sauna();
               align-self: start;
+              line-height: 1.3rem;
               margin-top: 0.5vw;
             }
             &--3-b {
@@ -1282,6 +1283,7 @@ $rozmiar-column-siatka-btn: 1fr;
               @include margin-sauna-prawo();
               @include font-godzin-sauna();
               align-self: start;
+              line-height: 1.3rem;
               margin-top: 0.5vw;
             }
           }
