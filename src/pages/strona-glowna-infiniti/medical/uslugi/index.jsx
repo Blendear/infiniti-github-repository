@@ -296,7 +296,7 @@ const MedicalUslugi = () => {
               <li></li>
             </ul>
           }
-          tytulZAbiegu="INETRFERENCJA"
+          tytulZAbiegu="INTERFERENCJA"
           svgComponent={<SVGElektro3 mojKolor={kolorSVG} />}
         />
         <ZabiegKonkretny
@@ -455,7 +455,7 @@ const MedicalUslugi = () => {
               <li></li>
             </ul>
           }
-          tytulZAbiegu="INHALACJA AKTYWNEGO WODORU"
+          tytulZAbiegu="INHALACJA AKT. WODORU"
           svgComponent={<SVGWodor mojKolor={kolorSVG} />}
         />
       </div>

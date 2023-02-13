@@ -127,16 +127,4 @@ export const carouselData1 = [
     nazwaMiejsca: "boisko",
     fotyTegoMiejsca: [boisko1, boisko2, boisko3, boisko4, boisko5, boisko6],
   },
-  {
-    image: foto7,
-  },
-  {
-    image: foto7,
-  },
-  {
-    image: foto7,
-  },
-  {
-    image: foto7,
-  },
 ];

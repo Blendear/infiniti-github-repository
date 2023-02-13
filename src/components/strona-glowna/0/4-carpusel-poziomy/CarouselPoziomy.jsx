@@ -57,7 +57,7 @@ import { wybranyPoziomIMiejsceActions } from "../../../../store/redux/store-redu
 //hook1 - zrob zeby nazwa miejsca w galerii i fota galerii byla adekwatna do miejsca w reduxsie
 const CarouselPoziomy = () => {
   const [aktualnyFotoPoziom, setAktualnyFotoPoziomu] = useState(0);
-  const [aktywnyPoziom, setAktywnyPoziom] = useState(2);
+  const [aktywnyPoziom, setAktywnyPoziom] = useState(-1);
   const lengthOfDataArray = carouselData.length;
 
   //

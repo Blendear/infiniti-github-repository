@@ -55,7 +55,7 @@ const initialMenuINavbarState: typeOfMenuINavbarState = {
 
 const initialWybranyPoziomIMiejsceState: typeOfWybranyPoziomIMiejsceState = {
   poziom: 1,
-  miejsce: "squash",
+  miejsce: "boisko",
 };
 
 const initialSumyKaloriiState: typeOfSumyKaloriiState = {

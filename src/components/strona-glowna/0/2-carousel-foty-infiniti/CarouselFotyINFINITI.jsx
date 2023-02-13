@@ -41,10 +41,8 @@
 import { useState } from "react";
 import styles from "src/styles/sass/styles-all.module.scss";
 //       C.0. Import danych i next image
-import { carouselData1 } from "./Data-1";
-import { carouselData0 } from "./Data-0";
-import { carouselData2 } from "./Data-2";
-import { carouselDataMinus1 } from "./Data--1";
+import { carouselData } from "./Data";
+
 import Image from "next/image.js";
 //       B.1. Import ikonek
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
@@ -58,13 +56,23 @@ import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
 // po nazwie fote znajduje
 
 const CarouselPoziomy = () => {
-  const [aktualnyFoto, setAktualnyFoto] = useState(0);
-  const lengthOfDataArray = carouselData1.length;
-
   const reduxStatePoziomIMiejsceAktualne = useAppSelector(
     (state) => state.wybranyPoziomIMiejsceReducer
   );
 
+  //ktore miejsc ejest aktywne
+
+  // oblicz dlugosc jego zdjec array
+
+  // max index zdjecia = poliz ile ma zdjec to miejsce /\ - 1
+
+  // Image - if no foty w tym miejscu - wyswietl miejsce "boisko"
+
+  //
+  const [aktualnyFoto, setAktualnyFoto] = useState(0);
+  const lengthOfDataArray = carouselData.length;
+
+  // fotyTegoMiejsca
   //spinner
 
   //
@@ -95,7 +103,7 @@ const CarouselPoziomy = () => {
   //
   //       A.2. Guard clause - if no data, nic nie wyświetlaj.
   //
-  if (!Array.isArray(carouselData1) || carouselData1.length <= 0) {
+  if (!Array.isArray(carouselData) || carouselData.length <= 0) {
     return null;
   }
 
@@ -123,139 +131,39 @@ const CarouselPoziomy = () => {
       <div
         className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-fot"]}`}
       >
-        {reduxStatePoziomIMiejsceAktualne.poziom === -1 && (
-          <div>
-            {carouselDataMinus1.map((aktualnyDataObject, indexAktualny) => (
-              <div
-                className={
-                  reduxStatePoziomIMiejsceAktualne.miejsce ===
-                  aktualnyDataObject.nazwaMiejsca
-                    ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
-                    : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
-                }
-                key={indexAktualny}
-              >
-                {/* 
+        <div>
+          {carouselData.map((aktualnyDataObject, indexAktualny) => (
+            <div
+              className={
+                reduxStatePoziomIMiejsceAktualne.miejsce ===
+                aktualnyDataObject.nazwaMiejsca
+                  ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
+                  : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
+              }
+              key={indexAktualny}
+            >
+              {/* 
             //       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
             */}
 
-                {reduxStatePoziomIMiejsceAktualne.miejsce ===
-                  aktualnyDataObject.nazwaMiejsca && (
-                  <Image
-                    //herehere - dziala. DZIALA \/
-                    src={aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]}
-                    alt={`nie pyklo zdjecie`}
-                    // width={300}
-                    // height={300}
-                    layout="fill"
-                    objectFit="contain"
-                    quality={20}
-                  />
-                )}
-              </div>
-            ))}
-          </div>
-        )}
+              {reduxStatePoziomIMiejsceAktualne.miejsce ===
+                aktualnyDataObject.nazwaMiejsca && (
+                <Image
+                  //herehere - dziala. DZIALA \/
+                  src={aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]}
+                  alt={`nie pyklo zdjecie`}
+                  // width={300}
+                  // height={300}
+                  layout="fill"
+                  objectFit="contain"
+                  quality={20}
+                />
+              )}
+            </div>
+          ))}
+        </div>
+
         {/* //herehere13.02.2023 - jak zrobic, zeby zapetlaly sie zdjecia,a nie "nie pyklo"? */}
-        {reduxStatePoziomIMiejsceAktualne.poziom === 0 && (
-          <div>
-            {carouselData0.map((aktualnyDataObject, indexAktualny) => (
-              <div
-                className={
-                  reduxStatePoziomIMiejsceAktualne.miejsce ===
-                  aktualnyDataObject.nazwaMiejsca
-                    ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
-                    : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
-                }
-                key={indexAktualny}
-              >
-                {/* 
-            //       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
-            */}
-
-                {reduxStatePoziomIMiejsceAktualne.miejsce ===
-                  aktualnyDataObject.nazwaMiejsca && (
-                  <Image
-                    //herehere - dziala. DZIALA \/
-                    src={aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]}
-                    alt={`nie pyklo zdjecie`}
-                    // width={300}
-                    // height={300}
-                    layout="fill"
-                    objectFit="contain"
-                    quality={20}
-                  />
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-        {reduxStatePoziomIMiejsceAktualne.poziom === 1 && (
-          <div>
-            {carouselData1.map((aktualnyDataObject, indexAktualny) => (
-              <div
-                className={
-                  reduxStatePoziomIMiejsceAktualne.miejsce ===
-                  aktualnyDataObject.nazwaMiejsca
-                    ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
-                    : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
-                }
-                key={indexAktualny}
-              >
-                {/* 
-            //       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
-            */}
-
-                {reduxStatePoziomIMiejsceAktualne.miejsce ===
-                  aktualnyDataObject.nazwaMiejsca && (
-                  <Image
-                    //herehere - dziala. DZIALA \/
-                    src={aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]}
-                    alt={`nie pyklo zdjecie`}
-                    // width={300}
-                    // height={300}
-                    layout="fill"
-                    objectFit="contain"
-                    quality={20}
-                  />
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-        {reduxStatePoziomIMiejsceAktualne.poziom === 2 && (
-          <div>
-            {carouselData2.map((aktualnyDataObject, indexAktualny) => (
-              <div
-                className={
-                  reduxStatePoziomIMiejsceAktualne.miejsce ===
-                  aktualnyDataObject.nazwaMiejsca
-                    ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
-                    : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
-                }
-                key={indexAktualny}
-              >
-                {/* 
-            //       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
-            */}
-
-                {reduxStatePoziomIMiejsceAktualne.miejsce ===
-                  aktualnyDataObject.nazwaMiejsca && (
-                  <Image
-                    //herehere - dziala. DZIALA \/
-                    src={aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]}
-                    alt={`nie pyklo zdjecie`}
-                    // width={300}
-                    // height={300}
-                    layout="fill"
-                    objectFit="contain"
-                    quality={20}
-                  />
-                )}
-              </div>
-            ))}
-          </div>
-        )}
       </div>
     </section>
   );
