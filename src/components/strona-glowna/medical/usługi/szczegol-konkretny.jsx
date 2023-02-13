@@ -11,7 +11,7 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const SzczegolKonkretny = () => {
+const SzczegolKonkretny = (props) => {
   return (
     <div
       className={
@@ -36,7 +36,7 @@ const SzczegolKonkretny = () => {
           ]
         }
       >
-        svg
+        {props.svgIcon}
       </div>
       <div
         className={
@@ -45,7 +45,7 @@ const SzczegolKonkretny = () => {
           ]
         }
       >
-        tytul
+        {props.tytul}
       </div>
       <div
         // className={

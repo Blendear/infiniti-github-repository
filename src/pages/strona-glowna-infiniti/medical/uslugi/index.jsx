@@ -74,18 +74,47 @@ const MedicalUslugi = () => {
           styles["layout__medical-uslugi__cala-strona__lista-zabiegow"]
         }
       >
-        <ZabiegKonkretny svgComponent={<SVGSolux mojKolor={kolorSVG} />} />
-        <ZabiegKonkretny svgComponent={<SVGLaser mojKolor={kolorSVG} />} />
-        <ZabiegKonkretny svgComponent={<SVGDrenaz mojKolor={kolorSVG} />} />
-        <ZabiegKonkretny svgComponent={<SVGElektro1 mojKolor={kolorSVG} />} />
-        <ZabiegKonkretny svgComponent={<SVGElektro2 mojKolor={kolorSVG} />} />
-        <ZabiegKonkretny svgComponent={<SVGElektro3 mojKolor={kolorSVG} />} />
-        <ZabiegKonkretny svgComponent={<SVGElektro4 mojKolor={kolorSVG} />} />
+        {/* //hook1 - daloby sie to zrobisz szycbiej, robic plik z danymi i mapujac renderujaco, prawda? \/*/}
         <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGSolux mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGLaser mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGDrenaz mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGElektro1 mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGElektro2 mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGElektro3 mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGElektro4 mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
           svgComponent={<SVGUltradzwiek mojKolor={kolorSVG} />}
         />
-        <ZabiegKonkretny svgComponent={<SVGMagnet mojKolor={kolorSVG} />} />
-        <ZabiegKonkretny svgComponent={<SVGWodor mojKolor={kolorSVG} />} />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGMagnet mojKolor={kolorSVG} />}
+        />
+        <ZabiegKonkretny
+          tytulZAbiegu="aa"
+          svgComponent={<SVGWodor mojKolor={kolorSVG} />}
+        />
       </div>
     </div>
   );

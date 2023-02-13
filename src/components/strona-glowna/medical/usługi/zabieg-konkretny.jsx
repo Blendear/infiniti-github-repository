@@ -15,6 +15,11 @@ import SzczegolKonkretny from "./szczegol-konkretny";
 
 import { useState } from "react";
 
+import { AiFillHeart } from "react-icons/ai";
+import { IoMdPerson } from "react-icons/io";
+import { RiZoomInLine } from "react-icons/ri";
+import { TiFlag } from "react-icons/ti";
+
 const ZabiegKonkretny = (props) => {
   return (
     <div
@@ -58,10 +63,10 @@ const ZabiegKonkretny = (props) => {
             : styles["menu-modal__closed-variant"]
         }
       >
-        <SzczegolKonkretny />
-        <SzczegolKonkretny />
-        <SzczegolKonkretny />
-        <SzczegolKonkretny />
+        <SzczegolKonkretny tytul="EFEKTY ZDROWOTNE" svgIcon={<AiFillHeart />} />
+        <SzczegolKonkretny tytul="DLA KOGO" svgIcon={<IoMdPerson />} />
+        <SzczegolKonkretny tytul="JAK WYGLĄDA" svgIcon={<RiZoomInLine />} />
+        <SzczegolKonkretny tytul="PRZECIWSKAZANIA" svgIcon={<TiFlag />} />
       </div>
     </div>
   );
