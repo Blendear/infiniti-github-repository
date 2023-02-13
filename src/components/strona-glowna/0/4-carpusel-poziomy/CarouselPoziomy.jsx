@@ -217,11 +217,146 @@ const CarouselPoziomy = () => {
         ></div>
         <div
           className={
-            styles[
-              "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0"
-            ]
+            aktywnyPoziom === 0
+              ? styles[
+                  "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0"
+                ]
+              : styles["menu-modal__closed-variant"]
           }
-        ></div>
+        >
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("arkadia");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--arkadia"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("manager");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--manager"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("restauracja");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--restauracja"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("taras");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--taras"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("analiza-skladu-ciala");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--analiza-skladu-ciala"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("wodor");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--wodor"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("la-ola");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--la-ola"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("sfd");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--sfd"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("fizjoterapia-1");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--fizjoterapia-1"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("fizjoterapia-2");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--fizjoterapia-2"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("naturoterapia");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--naturoterapia"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("recepcja");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--recepcja"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("solarium");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--solarium"
+              ]
+            }
+          ></button>
+        </div>
+        {/* /\ hook1-  jak zrobic taka watahe buttonow czysto, podajac tlylko jedna nazw,e zeby reszta JS sam robil? */}
+
         <div
           className={
             aktywnyPoziom === 1
@@ -232,7 +367,6 @@ const CarouselPoziomy = () => {
           }
         >
           <button
-            // onClick={handlerSetMiejsceAktywne}
             onClick={() => {
               handlerSetMiejsceAktywne("squash");
             }}
@@ -303,13 +437,13 @@ const CarouselPoziomy = () => {
               ]
             }
           ></button>
-          <button
+          {/* <button
             className={
               styles[
                 "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--1--chillera-utopia"
               ]
             }
-          ></button>
+          ></button> */}
           <button
             onClick={() => {
               handlerSetMiejsceAktywne("maty");
@@ -327,7 +461,48 @@ const CarouselPoziomy = () => {
               "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--2"
             ]
           }
-        ></div>
+        >
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("strefa-cardio");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--2--strefa-cardio"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("sala-ic");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--2--sala-ic"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("sala-zolta");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--2--sala-zolta"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("masaz");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--2--masaz"
+              ]
+            }
+          ></button>
+        </div>
         <div
           className={
             styles[

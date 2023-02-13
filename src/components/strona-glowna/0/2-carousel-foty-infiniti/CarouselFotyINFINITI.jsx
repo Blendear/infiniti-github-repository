@@ -79,9 +79,11 @@ const CarouselPoziomy = () => {
   //herehere11.02.2023 - bug ze za duzo mozna dawac next image i wywala no image
   const handlerNextFoto = () => {
     setAktualnyFoto(
+      // !aktualnaFota.image ? 0 : aktualnyFoto + 1
       aktualnyFoto === lengthOfDataArray - 1 ? 0 : aktualnyFoto + 1
     );
   };
+
   //
   //           B.3.1. Gdy aktualny jest pierwszą fotą - przejdź do ostatniej || gdy nie jest ostatnią - przejdź do next foty
   //
@@ -150,12 +152,14 @@ const CarouselPoziomy = () => {
             ))}
           </div>
         )}
+        {/* //herehere13.02.2023 - jak zrobic, zeby zapetlaly sie zdjecia,a nie "nie pyklo"? */}
         {reduxStatePoziomIMiejsceAktualne.poziom === 0 && (
           <div>
-            {carouselData0.map((aktualnaFota, indexAktualny) => (
+            {carouselData1.map((aktualnyDataObject, indexAktualny) => (
               <div
                 className={
-                  indexAktualny === aktualnyFoto
+                  reduxStatePoziomIMiejsceAktualne.miejsce ===
+                  aktualnyDataObject.nazwaMiejsca
                     ? `${styles["layout__strona-glowna__galeria__carousel-fot--slide-active"]} ${styles["carousel-foty-infiniti__slide-active"]}`
                     : `${styles["layout__strona-glowna__galeria__carousel-fot--slide-none"]} ${styles["carousel-foty-infiniti__slide-none"]} `
                 }
@@ -164,9 +168,12 @@ const CarouselPoziomy = () => {
                 {/* 
             //       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
             */}
-                {indexAktualny === aktualnyFoto && (
+
+                {reduxStatePoziomIMiejsceAktualne.miejsce ===
+                  aktualnyDataObject.nazwaMiejsca && (
                   <Image
-                    src={aktualnaFota.image}
+                    //herehere - dziala. DZIALA \/
+                    src={aktualnyDataObject.fotyTegoMiejsca[aktualnyFoto]}
                     alt={`nie pyklo zdjecie`}
                     // width={300}
                     // height={300}

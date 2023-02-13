@@ -693,7 +693,70 @@ $rozmiar-column-siatka-btn: 1fr;
               }
               &--0 {
                 @include siatka();
-                &-- {
+                &--arkadia {
+                  grid-row: r-4 / r-8;
+                  grid-column: c-6 / c-11;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--manager {
+                  grid-row: r-5 / r-8;
+                  grid-column: c-16 / c-21;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--taras {
+                  grid-row: r-1 / r-5;
+                  grid-column: c-11 / c-21;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--restauracja {
+                  grid-row: r-8 / r-13;
+                  grid-column: c-11 / c-20;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--analiza-skladu-ciala {
+                  grid-row: r-11 / r-14;
+                  grid-column: c-20 / c-25;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--wodor {
+                  grid-row: r-14 / r-17;
+                  grid-column: c-19 / c-25;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--sfd {
+                  grid-row: r-16 / r-20;
+                  grid-column: c-27 / c-33;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--fizjoterapia-1 {
+                  grid-row: r-13 / r-17;
+                  grid-column: c-30 / c-35;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--recepcja {
+                  grid-row: r-10 / r-13;
+                  grid-column: c-25 / c-30;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--la-ola {
+                  grid-row: r-11 / r-13;
+                  grid-column: c-33 / c-37;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--naturoterapia {
+                  grid-row: r-7 / r-11;
+                  grid-column: c-34 / c-39;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--solarium {
+                  grid-row: r-9 / r-11;
+                  grid-column: c-28 / c-33;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--fizjoterapia-2 {
+                  grid-row: r-6 / r-9;
+                  grid-column: c-28 / c-34;
+                  @include btn-uniwersalne-ustawienia();
                 }
               }
 
@@ -705,9 +768,9 @@ $rozmiar-column-siatka-btn: 1fr;
 
                   @include btn-uniwersalne-ustawienia();
                 }
-                &--chillera-utopia {
-                  // bedzie znaczek, nie napis
-                }
+                // &--chillera-utopia {
+                //   // bedzie znaczek, nie napis
+                // }
                 &--maty {
                   grid-row: r-6 / r-9;
                   grid-column: c-15 / c-19;
@@ -761,10 +824,25 @@ $rozmiar-column-siatka-btn: 1fr;
               }
               &--2 {
                 @include siatka();
-                &-- {
-                  // grid-row: r- / r-;
-                  // grid-column: c- / c-;
-                  // @include btn-uniwersalne-ustawienia();
+                &--strefa-cardio {
+                  grid-row: r-7 / r-16;
+                  grid-column: c-17 / c-35;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--sala-zolta {
+                  grid-row: r-4 / r-10;
+                  grid-column: c-6 / c-13;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--sala-ic {
+                  grid-row: r-10 / r-17;
+                  grid-column: c-12 / c-17;
+                  @include btn-uniwersalne-ustawienia();
+                }
+                &--masaz {
+                  grid-row: r-4 / r-10;
+                  grid-column: c-13 / c-17;
+                  @include btn-uniwersalne-ustawienia();
                 }
               }
             }
