@@ -155,7 +155,7 @@ const CarouselPoziomy = () => {
         {/* //herehere13.02.2023 - jak zrobic, zeby zapetlaly sie zdjecia,a nie "nie pyklo"? */}
         {reduxStatePoziomIMiejsceAktualne.poziom === 0 && (
           <div>
-            {carouselData1.map((aktualnyDataObject, indexAktualny) => (
+            {carouselData0.map((aktualnyDataObject, indexAktualny) => (
               <div
                 className={
                   reduxStatePoziomIMiejsceAktualne.miejsce ===
@@ -188,7 +188,7 @@ const CarouselPoziomy = () => {
         )}
         {reduxStatePoziomIMiejsceAktualne.poziom === 1 && (
           <div>
-            {carouselData1.map((aktualnyDataObject, indexAktualny) => (
+            {carouselData2.map((aktualnyDataObject, indexAktualny) => (
               <div
                 className={
                   reduxStatePoziomIMiejsceAktualne.miejsce ===
@@ -221,7 +221,7 @@ const CarouselPoziomy = () => {
         )}
         {reduxStatePoziomIMiejsceAktualne.poziom === 2 && (
           <div>
-            {carouselData1.map((aktualnyDataObject, indexAktualny) => (
+            {carouselData2.map((aktualnyDataObject, indexAktualny) => (
               <div
                 className={
                   reduxStatePoziomIMiejsceAktualne.miejsce ===
