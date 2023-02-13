@@ -27,7 +27,7 @@ export const carouselData = [
   },
   {
     image:
-      "/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/carousel-poziomy/0.png",
+      "/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/carousel-poziomy/zero.png",
   },
   {
     image:
