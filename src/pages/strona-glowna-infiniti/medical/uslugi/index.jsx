@@ -79,30 +79,61 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>obniżenie napięcia mięśniowego</li>
+              <li>działanie przeciwbólowe</li>
+              <li>działanie przeciwzapalne</li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>bóli kręgosłupa</li>
+              <li>bóli mięśniowych</li>
+              <li>odleżyn</li>
+              <li>przewlekłych stanów zapalnych</li>
+              <li>przykurczy mięśni</li>
+              <li>stłuczeń i skręceń</li>
+              <li>oparzeń</li>
+              <li>trudno gojących się ran</li>
+              <li>stanów pooperacyjnych</li>
             </ul>
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                podczas zabiegu pacjent może odczuwać przyjemne uczucie ciepła
+              </li>
+              <li>
+                lampę ustawia się w zależności od odczucia ciepła przez pacjenta
+              </li>
+              <li>średni czas zabiegu wynosi ok. 15-20 minut</li>
+              <li>
+                po zabiegu może pojawić się odczyn miejscowy na skórze, tzw.
+                rumień- na skutek rozszerzenia włośniczek, tętniczek oraz naczyń
+                żylnych. Rumień ustępuje w ciągu kilkunastu minut.
+              </li>
+
+              <li>
+                {
+                  "dokładnie rzecz biorąc - jedna z form światłolecznictwa wykorzystująca lampę ze światłem podczerwonym. Lampa Sollux to urządzenie elektryczne emitujące głównie promieniowanie podczerwone, które wnika głęboko w tkanki. Urządzenie posiada dodatkowe filtry: → niebieski, który działa przeciwbólowo, → czerwony, który łagodzi stany zapalne i przyśpiesza gojenie się ran. Lampę ustawia się w zależności od odczucia ciepła przez pacjenta. Promieniowanie podczerwone wywołuje w tkankach ciepło, które rozszerza naczynia krwionośne."
+                }
+              </li>
             </ul>
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>ostre stany zapalne</li>
+              <li>krwawienia</li>
+              <li>epilepsja</li>
+              <li>choroby układu krążenia</li>
+              <li>ciąża</li>
+              <li>nowotwory</li>
+              <li>choroby nerek</li>
+              <li>żylaki</li>
+              <li>stany gorączkowe</li>
+              <li>gruźlica</li>
+              <li>miażdżyca</li>
+              <li>wieże rany</li>
+              <li>złamania</li>
             </ul>
           }
           tytulZAbiegu="LAMPA SOLLUX"
@@ -127,7 +158,7 @@ const MedicalUslugi = () => {
             <ul>
               <li></li>
               <li></li>
-              <li></li>
+              <li>{"dokładnie rzecz biorąc - ___"}</li>
             </ul>
           }
           p={
@@ -159,7 +190,7 @@ const MedicalUslugi = () => {
             <ul>
               <li></li>
               <li></li>
-              <li></li>
+              <li>{"dokładnie rzecz biorąc - ___"}</li>
             </ul>
           }
           p={
@@ -191,7 +222,7 @@ const MedicalUslugi = () => {
             <ul>
               <li></li>
               <li></li>
-              <li></li>
+              <li>{"dokładnie rzecz biorąc - ___"}</li>
             </ul>
           }
           p={
@@ -223,7 +254,7 @@ const MedicalUslugi = () => {
             <ul>
               <li></li>
               <li></li>
-              <li></li>
+              <li>{"dokładnie rzecz biorąc - ___"}</li>
             </ul>
           }
           p={
@@ -255,7 +286,7 @@ const MedicalUslugi = () => {
             <ul>
               <li></li>
               <li></li>
-              <li></li>
+              <li>{"dokładnie rzecz biorąc - ___"}</li>
             </ul>
           }
           p={
@@ -287,7 +318,7 @@ const MedicalUslugi = () => {
             <ul>
               <li></li>
               <li></li>
-              <li></li>
+              <li>{"dokładnie rzecz biorąc - ___"}</li>
             </ul>
           }
           p={
@@ -382,7 +413,7 @@ const MedicalUslugi = () => {
             <ul>
               <li></li>
               <li></li>
-              <li></li>
+              <li>{"dokładnie rzecz biorąc - ___"}</li>
             </ul>
           }
           p={
@@ -414,7 +445,7 @@ const MedicalUslugi = () => {
             <ul>
               <li></li>
               <li></li>
-              <li></li>
+              <li>{"dokładnie rzecz biorąc - ___"}</li>
             </ul>
           }
           p={
