@@ -48,6 +48,8 @@ import MenuModal from "../../components/wszechobecne-na-roznych-podstronach/menu
 import { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../../store/redux/hooks";
 import { menuINavbarSliceActions } from "../../store/redux/store-redux";
+// import { wybranyPoziomIMiejsceActions } from "../../../../store/redux/store-redux";
+
 import Link from "next/link";
 //
 import { CSSProperties } from "react";
@@ -71,7 +73,11 @@ const StronaGlowna = () => {
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
   );
-
+  const reduxStatePoziomIMiejsceAktualne = useAppSelector(
+    (state) => state.wybranyPoziomIMiejsceReducer
+  );
+  // let slowoWyswietlane = reduxStatePoziomIMiejsceAktualne.miejsce;
+  // console.log(slowoWyswietlane);
   const dispatch = useAppDispatch();
 
   const handlerToggleMenuIsOpen = (event) => {
@@ -332,7 +338,9 @@ const StronaGlowna = () => {
               ]
             }
           >
-            NAZWA MIEJSCA
+            {`${reduxStatePoziomIMiejsceAktualne.miejsce
+              .toUpperCase()
+              .replace(/-/g, " ")}`}
           </div>
           <div
             className={
