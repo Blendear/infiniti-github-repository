@@ -9,23 +9,29 @@ $rozmiar-column-siatka-btn: 1fr;
     &__call-btn {
       position: fixed;
       z-index: 100;
-      bottom: 1rem;
-      left: 1rem;
-      height: 7rem;
-      width: 7rem;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      height: 5rem;
+      width: 5rem;
       border-radius: 90%;
-      // background-color: green;
-      background: #5e25ba;
-      background: -moz-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
-      background: -webkit-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
-      background: linear-gradient(135deg, #5e25ba 0%, #d252ab 100%);
-      justify-self: center;
-      align-self: center;
+      background-color: white;
+      // background: #5e25ba;
+      // background: -moz-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
+      // background: -webkit-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
+      // background: linear-gradient(135deg, #5e25ba 0%, #d252ab 100%);
+
+      box-shadow: 0 0 0.7rem 0.3rem #0000003b;
+      //protip1 - cant aling? force dispaly:grid and then align its children (svg is the children in thsi case)
+      display: grid;
+      align-items: center;
+      justify-items: center;
       &--svg {
-        color: rgb(255, 255, 255);
-        justify-self: center;
+        color: rgb(0, 0, 0);
+        // justify-self: center;
         // height: 10rem;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        // align-self: center;
+        height: 2.8rem;
         // width
       }
     }
