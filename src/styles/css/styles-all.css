@@ -1561,6 +1561,25 @@
   font-size: 2.2rem;
   height: 2.8rem;
 }
+.layout__strona-glowna__messenger-btn {
+  position: fixed;
+  z-index: 100;
+  bottom: 7.5rem;
+  left: 1.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 90%;
+  background-color: white;
+  box-shadow: 0 0 0.7rem 0.3rem rgba(0, 0, 0, 0.231372549);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.layout__strona-glowna__messenger-btn--svg {
+  color: rgb(0, 0, 0);
+  font-size: 2.2rem;
+  height: 2.8rem;
+}
 .layout__strona-glowna__cala-strona {
   position: relative;
   display: grid;
