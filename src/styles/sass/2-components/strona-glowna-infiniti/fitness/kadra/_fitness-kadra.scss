@@ -79,6 +79,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [r-empty];
 
           grid-template-columns:
+            [c-0] 2rem
             [c-1] 0.5fr
             [c-2] 6fr
             [c-2_5] 4fr
@@ -121,7 +122,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             letter-spacing: 0.06rem;
             // text-shadow: 0px 0px fitness-variables.$fitness--bordowy;
             filter: drop-shadow(
-              0 0 0.06rem fitness-variables.$fitness--tytul-roli-drop-shadow
+              0 0 0.15rem fitness-variables.$fitness--tytul-roli-drop-shadow
             );
             font-weight: bold;
           }
@@ -135,7 +136,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             justify-self: center;
             align-self: center;
             // margin: 0 0 0 2rem;
-            background-color: fitness-variables.$fitness--linia-boczna-lub-dzielaca-color;
+            background-color: fitness-variables.$fitness--bordowy;
           }
           &__lista-osob-o-tej-roli-container {
             grid-row: r-2/ r-3;

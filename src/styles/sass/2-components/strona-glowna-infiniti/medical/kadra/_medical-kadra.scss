@@ -79,6 +79,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [r-empty];
 
           grid-template-columns:
+            [c-0] 2rem
             [c-1] 0.5fr
             [c-2] 6fr
             [c-2_5] 4fr

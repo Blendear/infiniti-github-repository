@@ -142,30 +142,49 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>działanie przeciwzapalne</li>
+              <li>działanie przeciwbólowe</li>
+              <li>
+                przyspieszenie i optymalizowanie gojenia się ran i owrzodzeń
+                oraz tworzenia blizn zrostu kostnego
+              </li>
+              <li>przyspieszenie gojenia złamań kości</li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>schorzeń o podłożu reumatycznym i zwyrodnieniowym</li>
+              <li>okresu po urazach typu skręcenia, zwichnięcia i złamania</li>
+              <li>utrudnionych procesów gojenia skóry w przebiegu odleżyn</li>
+              <li>ostrego stanu zapalnego tkanek miękkich</li>
+              <li>zespołu cieśni nadgarstka</li>
+              <li>ostrogi piętowej</li>
+              <li>łokcia golfisty/ tenisisty</li>
+              <li>przykurczy mięśni</li>
             </ul>
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li>{"dokładnie rzecz biorąc - ___"}</li>
+              <li>zabieg nieodczuwalny dla pacjenta</li>
+              <li>średni czas zabiegu wynosi ok. 5-10 min.</li>
+              <li>
+                {
+                  "dokładnie rzecz biorąc - To metoda fizykoterapii polegająca na naświetlaniach powierzchni ciała, miejscowych (punktowych) lub na większych obszarach. Dzięki pobudzeniu (biostymulacji) komórek energią promieniowania laserowego, możliwe jest osiągnięcie skutków terapeutycznych. Zabieg ten wykonuje się w celu pobudzenia komórek."
+                }
+              </li>
             </ul>
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>ciąża</li>
+              <li>nowotwory</li>
+              <li>przyjmowanie leków fotouczulających</li>
+              <li>padaczka</li>
+              <li>gorączka</li>
+              <li>infekcje wirusowe i bakteryjne</li>
+              <li>stany wyczerpania organizmu</li>
+              <li>krwotoki z przewodu pokarmowego</li>
+              <li>stosowanie leków przeciwzakrzepowych i sterydów</li>
             </ul>
           }
           tytulZAbiegu="LASEROTERAPIA"
@@ -174,30 +193,69 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>działanie przeciwbólowe</li>
+              <li>redukcja problemów z poruszaniem kończynami</li>
+              <li>zmniejszenie uczucia nadmiernego ciężaru kończyn,</li>
+              <li>redukcja obrzęków</li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              Obrzęków limfatycznych, powstających np. w stanach:
+              <li>pourazowych</li>
+              <li>
+                w cukrzycy, gdy następuje zaburzenie transportu płynów w
+                organizmie
+              </li>
+              <li>
+                w stanach pozapalnych wyzwolonych różnymi przyczynami: ukąszenia
+                owadów, owrzodzeniach, drobnych urazach
+              </li>
+              <li>w nowotworach</li>
+              <li>
+                poza rakiem węzłów chłonnych guzy mogą wyzwalać niedrożność
+                naczyń limfatycznych
+              </li>
+              <li>
+                w powikłaniach pourazowych nawet po wielu latach od choroby
+              </li>
+              <li>
+                np. po skomplikowanym złamaniu nogi obrzęki mogą się ujawniać do
+                końca życia po przeciążeniu nogi
+              </li>
+              <li>pasożytniczych</li>
+              <li>w chorobach tkanki łącznej, m.in. zwyrodnieniowych</li>
+              <li>
+                w przewlekłej niewydolności krążenia, a także innych chorobach,
+                jak m.in.: zespole Turnera, Proteusza, czy chorobie Milroya
+              </li>
             </ul>
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li>{"dokładnie rzecz biorąc - ___"}</li>
+              <li>
+                podczas zabiegu pacjent może odczuwać ucisk o określonej sile
+              </li>
+              <li>średni czas trwania zabiegu wynosi ok. 30-60 min.</li>
+              <li>
+                {
+                  "dokładnie rzecz biorąc - Drenaż limfatyczny jest formą masażu manualnego lub mechanicznego, który ma na celu odprowadzenie zbierającej się w organizmie limfy i krwi oraz usprawnienie ich przepływu. Metodę tę stosuje się najczęściej w stanach pourazowych, a poddawane są jej ręce oraz nogi. Drenaż przynosi spuchniętym kończynom ulgę i przyśpiesza gojenie się uszkodzonych tkanek (poprzez przyśpieszenie transportu limfocytów)."
+                }
+              </li>
             </ul>
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>nowotwory</li>
+              <li>nadciśnienie tętnicze</li>
+              <li>zakrzepowe zapalenie żył</li>
+              <li>stany zapalne stawów</li>
+              <li>twierdzone krwiaki w kończynach</li>
+              <li>niewydolność nerek lub serca</li>
+              <li>miażdżycę</li>
+              <li>{"zmiany naczyń krwionośnych (żylaki)"}</li>
+              <li>stany zapalne naczyń limfatycznych</li>
+              <li>choroby skóry</li>
             </ul>
           }
           tytulZAbiegu="DRENAŻ LIMFATYCZNY"
@@ -220,9 +278,22 @@ const MedicalUslugi = () => {
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li>{"dokładnie rzecz biorąc - ___"}</li>
+              <li>
+                pacjent w trakcie zabiegu może odczuwać ból. Inne odczucia
+                towarzyszące to ukłucia i mrowienie, charakterystyczne dla
+                zabiegów z zakresu elektroterapii
+              </li>
+              <li>
+                podczas zabiegu powinno dojść do widocznego skurczu
+                stymulowanych mięśni, może to powodować także ruch kończyn
+              </li>
+              <li>średni czas zabiegu wynosi ok. 20-30 minut</li>
+              <li>
+                {
+                  "dokładnie rzecz biorąc - Elektrostymulacja jest zabiegiem wykorzystującym prąd impulsowy w celu pobudzenia i wzmocnienia nerwów lub uszkodzonych mięśni. Do przeprowadzenia zabiegu wykorzystuje się prąd niskiej i średniej częstotliwości, który przyczynia się do zmniejszania bólu, redukcji obrzęków, rozluźnienia mięśni oraz poprawy przewodnictwa chemiczno-nerwowego. Zadaniem zabiegu jest utrzymanie zdolności odnerwionego mięśnia do skurczu, zapobieganie zanikom mięśniowym a także przywracanie siły i rozbudowa masy mięśnia."
+                }
+              </li>
+              {/* //herehere14.02.2023 - dopisz /\ */}
             </ul>
           }
           p={
@@ -238,30 +309,124 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                {" "}
+                Zależnie od wybranego podtypu elektropterapii, które opisane
+                zostały poniżej
+              </li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              {" "}
+              Elektroterapia wspiera procesy zdrowienia i rehabilitacji w
+              następujących schorzeniac:
+              <li>Choroby układu ruchu</li>
+              <li>
+                artroza, choroby zwyrodnieniowe, reumatyczne i dyskopatie, bóle
+                kręgosłupa, osteoporoza, zapalenie stawów i tkanek
+                okołostawowych
+              </li>
+              <li>Choroby układu nerwowego</li>
+              <li>
+                rwa kulszowa, rwa ramienna, przewlekłe zapalenia splotów i
+                korzeni nerwowych, neuralgie, stany zapalne nerwów obwodowych,
+                nerwobóle, stany podrażnienia korzeni nerwowych; – Choroby i
+                stany patologiczne tkanek
+              </li>
+              <li>
+                blizny i przykurcze, gojenie ran i owrzodzeń, resorpcja
+                wysięków, krwiaków i obrzęków
+              </li>
+              <li>Obrażenia i kontuzje</li>
+              <li>
+                łamania, urazy mięśni, dolegliwości bólowe związane z urazami
+              </li>
+              <li>Osłabienie i upośledzenie pracy mięśni</li>
+              <li>
+                zmniejszenie napięcia mięśni, elektrostymulacja mięśni
+                odnerwionych, stymulacja mięśni zanikających, rehabilitacja
+                spastycznego porażenia mięśni, leczenie zwiększonego napięcia
+                mięśniowego, zwiększenie masy i siły mięśniowej
+              </li>
             </ul>
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li>{"dokładnie rzecz biorąc - ___"}</li>
+              {" "}
+              Przebieg zależy od podtypu elektroterapii:
+              <ul>
+                {" "}
+                PRĄDY TENS
+                <li>
+                  pacjent powinien czuć delikatne mrowienie bądź skurcz mięśnia
+                </li>
+                <li>
+                  natężenie prądu ustawiane jest do subiektywnych odczuć
+                  pacjenta
+                </li>
+                <li>średni czas zabiegu wynosi ok. 15-30 minut</li>
+                <li>
+                  dokładnie rzecz biorąc - ten rodzaj zabiegu polega na
+                  przezskórnej elektrostymulacji nerwów, poprzez prądy impulsowe
+                  o małej częstotliwości. Po odpowiednim rozmieszczeniu elektrod
+                  na ciele, fizjoterapeuta wybiera odpowiedni rodzaj prądu oraz
+                  ustawia wszystkie parametry.{" "}
+                </li>
+              </ul>
+              <ul>
+                GALWANIZACJA
+                <li>pacjent w trakcie zabiegu powinien odczuwać mrowienie</li>
+                <li>
+                  wartość natężenia prądu w obwodzie ustala się do odczuć
+                  pacjenta
+                </li>
+                <li>średni czas zabiegu wynosi ok. 15-30 minut</li>{" "}
+                <li>
+                  następstwem zabiegu galwanizacji jest powstanie w miejscu
+                  zabiegu
+                </li>
+                <li>
+                  rumienia galwanicznego. Utrzymuje się on do kilkudziesięciu
+                  minut
+                </li>
+                <li>
+                  {
+                    "dokładnie rzecz biorąc - Jeden z zabiegów fizjoterapeutycznych z dziedziny elektroterapii wykorzystujący prąd stały. W zabiegu galwanizacji wykorzystuje się dwie płaskie elektrody. W celu lepszego przewodzenia prądu – elektrody umieszcza się na specjalnie nasączonych podkładach wiskozowych. Galwanizacja pobudza działanie układu nerwowego przyspieszając gojenie stanów zapalnych i działając przeciwbólowo. Ponadto elektroterapia stymuluje mięśnie do pracy, co pomaga zapobiegać zanikom."
+                  }
+                </li>
+              </ul>
+              <ul>
+                {" "}
+                JONOFOREZA
+                <li>pacjent w trakcie zabiegu powinien odczuwać mrowienie</li>
+                <li>średni czas zabiegu wynosi ok. 10-20 minut</li>
+                <li>
+                  miejsca, do których zostały przyłożone elektrody, po zabiegu
+                  mogą być lekko zaczerwienione
+                </li>
+                <li>
+                  {
+                    "dokładnie rzecz biorąc - Jonoforeza to zabieg należący do obszaru elektroterapii w rehabilitacji. Inaczej nazywana jest terapią jonową i polega na wprowadzaniu do tkanki związków chemicznych o działaniu leczniczym za pomocą prądu stałego. Lekarstwo jest aplikowane bezpośrednio na chore miejsce – dzięki czemu jonoforeza pozwala uzyskać bardzo dobre efekty. Dodatkowo nie obciąża przewodu pokarmowego, żołądka i wątroby. Czynnikiem leczniczym w jonoforezie nie jest prąd, ale jony dostarczone do organizmu. Zastosowanie prądu powoduje, że w tkankach podwyższa się temperatura. Wpływa to na poprawę krążenia i odżywienie komórek, co wspomaga np. działanie przeciwzapalnie czy przeciwbólowe."
+                  }
+                </li>
+              </ul>
             </ul>
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>wszczepione urządzenia takie jak, np. rozrusznik serca</li>
+              <li>posiadanie endoprotezy, lub innego metalowego implantu</li>
+              <li>chorobę nowotworową</li>
+              <li>choroby serca</li>
+              <li>epilepsja</li>
+              <li>padaczka</li>
+              <li>
+                ostre stany zapalne skóry, bądź zmiany skórne, – zaburzenia
+                czucia
+              </li>
+              <li>osobnicza nietolerancja prądu</li>
+              <li>ciąża</li>
             </ul>
           }
           tytulZAbiegu="ELEKTROTERAPIA"
@@ -284,9 +449,23 @@ const MedicalUslugi = () => {
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li>{"dokładnie rzecz biorąc - ___"}</li>
+              <li>
+                podczas wykonywania zabiegu pacjent powinien odczuwać wibracje
+              </li>
+              <li>
+                natężenie prądu jest dobierane w zależności od tolerancji
+                pacjenta
+              </li>{" "}
+              <li>
+                dawkowanie jest uzależnione przede wszystkim od stadium i
+                rodzaju choroby
+              </li>{" "}
+              <li>średni czas zabiegu wynosi ok. 6-20 minut</li>
+              <li>
+                {
+                  "dokładnie rzecz biorąc - Prądy interferencyjne (zwane również prądami Nemeca) to prądy średniej częstotliwości modulowane w amplitudzie z małą częstotliwością. Prądy interferencyjne przede wszystkim działają przeciwbólowo, pobudzają mięśnie do skurczu, rozszerzają naczynia krwionośne i usprawniają krążenie obwodowe. Dodatkowo zabiegi z wykorzystaniem tego rodzaju prądu usprawniają procesy odżywcze i przemiany materii w tkankach."
+                }
+              </li>
             </ul>
           }
           p={
@@ -295,6 +474,7 @@ const MedicalUslugi = () => {
               <li></li>
               <li></li>
             </ul>
+            //herehere14.02.2023 - dopisz /\
           }
           tytulZAbiegu="INTERFERENCJA"
           svgComponent={<SVGElektro3 mojKolor={kolorSVG} />}
@@ -313,18 +493,46 @@ const MedicalUslugi = () => {
               <li></li>
               <li></li>
             </ul>
+            //herehere14.02.2023 -  dokoncz
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li>{"dokładnie rzecz biorąc - ___"}</li>
+              <li>pacjent powinien czuć delikatne mrowienie</li>
+              <li>
+                natężenie prądu ustawiane jest do subiektywnych odczuć pacjenta
+              </li>{" "}
+              <li>średni czas zabiegu wynosi ok. 6-8 minut</li>
+              <li>
+                <ul>
+                  {
+                    "dokładnie rzecz biorąc - prądy diadynamiczne (DD) są to prądy stosowane w fizjoterapii. Inaczej nazywane są również prądami Bernarda. Zaliczane do prądówo niskiej częstotliwości, które poprzez serie impulsów, wywołują określone reakcje organizmu "
+                  }
+                  <br />
+                  Wyróżnia się 6 rodzajów prądów niskiej częstotliwości o
+                  różnych parametrach, wchodzących w skład prądu
+                  diadynamicznego. Stosowane w odpowiedniej kombinacji pozwalają
+                  uzyskać oczekiwany efekt terapeutyczny.
+                  <li>MF – działa pobudzająco i odżywia tkanki,</li>
+                  <li>
+                    DF – działa znieczulająco i rozluźniająco na mięśnie,
+                    dlatego często stosuje się go w pierwszej kolejności,
+                  </li>
+                  <li>
+                    RS – stosowany do elektrostymulacji mięśni zdrowych lub
+                    nieznacznie uszkodzonych
+                  </li>
+                  <li>CP – obniża napięcie mięśniowe i zwiększa ukrwienie</li>
+                  <li>LP – działa przeciwbólowo,</li>
+                  <li>
+                    MM – stosowany do elektrostymulacji mięśni zdrowych lub
+                    nieznacznie uszkodzonych
+                  </li>
+                </ul>
+              </li>
             </ul>
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
               <li></li>
             </ul>
           }
@@ -397,30 +605,70 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>złagodzenie obrzęków</li>
+              <li>złagodzenie dolegliwości bólowych</li>
+              <li>przyspieszenie zrostu kostnego</li>
+              <li>skrócenie czasu rekonwalescencji</li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                {
+                  "urazów i stanów pourazowych w obrębie narządu ruchu (złamania, zwichnięcia, skręcenia, stłuczenia, stawy rzekome)"
+                }
+              </li>
+              <li>
+                {
+                  "ostrych i przewlekłych skutkach urazów narządu ruchu (uszkodzenie ścięgien, więzadeł, torebki stawowej, krwiaki, obrzęki)"
+                }
+              </li>
+              <li>chorób zwyrodnieniowych stawów</li>
+              <li>osteoporozy</li>
+              <li>miażdżycy</li>
+              <li>nadciśnienia tętniczego i choroby niedokrwiennej serca</li>
+              <li>
+                {
+                  "chorób neurologicznych (migrena, przewlekłe bóle głowy, w okresie poudarowym)"
+                }
+              </li>
+              <li>{"chorób przewodu pokarmowego (choroba wrzodowa)"}</li>
+              <li>{"chorób pulmonologicznych (zapalenie oskrzeli, zatok)"}</li>
+              <li>chorób układu rodnego</li>
             </ul>
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li>{"dokładnie rzecz biorąc - ___"}</li>
+              <li>zabieg nieodczuwalny dla pacjenta</li>
+
+              <li>średni czas zabiegu wynosi ok. 15- 30 minut</li>
+              <li>
+                {
+                  "stosujemy pole magnetyczne o niskiej częstotliwości (do 50Hz) i indukcji w przedziale 0,5-10 mT "
+                }
+              </li>
+              <li>
+                aparaty posiadają aplikatory w kształtach kołowych lub płytek
+              </li>
+              <li>
+                {
+                  "dokładnie rzecz biorąc - Podczas zabiegu pole magnetyczne przenika ciało docierając do każdej jego komórki, gdzie poprzez działanie na struktury błon komórkowych i procesy transportu jonów wspiera procesy naprawcze komórki ułatwiając przenikanie tlenu i substancji odżywczych do jej wnętrza. Pole magnetyczne pobudza syntezę kolagenu, czyli białka, które wchodzi w skład naszej skóry, ścięgien, a nawet rogówki oka. Właśnie dlatego magnetoterapię wykorzystuje się między innymi w leczeniu chorób skóry, oczu i narządu ruchu."
+                }
+              </li>
             </ul>
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                {"obecność elektronicznych implantów (np. rozrusznik serca)"}
+              </li>
+              <li>cukrzyca u osób młodych</li>
+              <li>choroby nowotworowe</li>
+              <li>nadczynność tarczycy</li>
+              <li>gruźlica</li>
+              <li> ostre infekcje</li>
+              <li>ciężkie i nie unormowane choroby serca i układu krążenia</li>
+              <li>choroby układu pokarmowego z ryzykiem krwawienia</li>
             </ul>
           }
           tytulZAbiegu="POLE MAGNETYCZNE"
@@ -458,6 +706,7 @@ const MedicalUslugi = () => {
           tytulZAbiegu="INHALACJA AKT. WODORU"
           svgComponent={<SVGWodor mojKolor={kolorSVG} />}
         />
+        {/* //herehere14.02.2023 -  dokoncz */}
       </div>
     </div>
   );
