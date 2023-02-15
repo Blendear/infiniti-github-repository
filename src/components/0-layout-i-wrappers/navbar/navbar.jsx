@@ -36,7 +36,7 @@ const Navbar = () => {
     // hook2 - WHY THE FUCK nie dziala to z position absoulute jako parent? chodzi
     // o jakas dziką zależnośc child-parent przy "positon:sticky" pewnie, ale jprl
     // <div className={styles["navbar-gorny__absolute-positioning"]}>
-    <div>
+    <div className={styles[""]}>
       {/* https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec */}
 
       <nav className={styles["navbar-gorny__caly-container"]}>
@@ -47,9 +47,7 @@ const Navbar = () => {
           <a
             className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
           >
-            <HiOutlineUserCircle
-              style={{ fontSize: "7vw", color: "#303030" }}
-            />
+            <HiOutlineUserCircle style={{ color: "#303030" }} />
           </a>
         </Link>
         <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
@@ -69,9 +67,7 @@ const Navbar = () => {
           <a
             className={styles["navbar-gorny__caly-container__btn-zapisz--svg"]}
           >
-            <RiCalendarCheckLine
-              style={{ fontSize: "7vw", color: "#303030" }}
-            />
+            <RiCalendarCheckLine style={{ color: "#303030" }} />
           </a>
         </Link>
 
@@ -94,12 +90,12 @@ const Navbar = () => {
           {reduxStateIsMenuOpen === false ? (
             <GiHamburgerMenu
               onClick={handlerToggleMenuIsOpen}
-              style={{ fontSize: "6vw", color: "#303030" }}
+              style={{ color: "#303030" }}
             />
           ) : (
             <IoMdCloseCircle
               onClick={handlerToggleMenuIsOpen}
-              style={{ fontSize: "6vw", color: "#303030" }}
+              style={{ color: "#303030" }}
             />
           )}
         </button>
