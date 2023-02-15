@@ -47,7 +47,7 @@ const Navbar = () => {
           <a
             className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
           >
-            <HiOutlineUserCircle style={{ color: "#303030" }} />
+            <HiOutlineUserCircle />
           </a>
         </Link>
         <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
@@ -67,7 +67,7 @@ const Navbar = () => {
           <a
             className={styles["navbar-gorny__caly-container__btn-zapisz--svg"]}
           >
-            <RiCalendarCheckLine style={{ color: "#303030" }} />
+            <RiCalendarCheckLine />
           </a>
         </Link>
 
@@ -88,15 +88,9 @@ const Navbar = () => {
           className={styles["navbar-gorny__caly-container__btn-menu--svg"]}
         >
           {reduxStateIsMenuOpen === false ? (
-            <GiHamburgerMenu
-              onClick={handlerToggleMenuIsOpen}
-              style={{ color: "#303030" }}
-            />
+            <GiHamburgerMenu onClick={handlerToggleMenuIsOpen} />
           ) : (
-            <IoMdCloseCircle
-              onClick={handlerToggleMenuIsOpen}
-              style={{ color: "#303030" }}
-            />
+            <IoMdCloseCircle onClick={handlerToggleMenuIsOpen} />
           )}
         </button>
       </nav>
