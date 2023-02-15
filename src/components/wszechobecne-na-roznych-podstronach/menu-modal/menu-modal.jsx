@@ -47,17 +47,26 @@ const MenuModal = (props) => {
       >
         <Link href="/strona-glowna-infiniti/medical/uslugi">
           <a>
-            <KlocekMenu imagePathEnd="klocki/medical-uslugi.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/medical-uslugi.png"
+              typKlockaNormalCzyDlugi="normal"
+            />
           </a>
         </Link>
         <Link href="/strona-glowna-infiniti/medical/cennik">
           <a>
-            <KlocekMenu imagePathEnd="klocki/medical-cennik.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/medical-cennik.png"
+              typKlockaNormalCzyDlugi="normal"
+            />
           </a>
         </Link>
         <Link href="/strona-glowna-infiniti/medical/kadra">
           <a>
-            <KlocekMenu imagePathEnd="klocki/medical-kadra.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/medical-kadra.png"
+              typKlockaNormalCzyDlugi="normal"
+            />
           </a>
         </Link>
 
@@ -73,17 +82,26 @@ const MenuModal = (props) => {
         {/* <KlocekMenu imagePathEnd="klocki/fitness-grafik.png" /> */}
         <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
           <a>
-            <KlocekMenu imagePathEnd="klocki/fitness-grafik.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/fitness-grafik.png"
+              typKlockaNormalCzyDlugi="normal"
+            />
           </a>
         </Link>
         <Link href="/strona-glowna-infiniti/fitness/cennik">
           <a>
-            <KlocekMenu imagePathEnd="klocki/fitness-cennik.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/fitness-cennik.png"
+              typKlockaNormalCzyDlugi="normal"
+            />
           </a>
         </Link>
         <Link href="/strona-glowna-infiniti/fitness/kadra">
           <a>
-            <KlocekMenu imagePathEnd="klocki/fitness-kadra.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/fitness-kadra.png"
+              typKlockaNormalCzyDlugi="normal"
+            />
           </a>
         </Link>
 
@@ -98,17 +116,26 @@ const MenuModal = (props) => {
       >
         <Link href="/strona-glowna-infiniti">
           <a>
-            <KlocekMenu imagePathEnd="klocki/infiniti-o-nas.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/infiniti-o-nas.png"
+              typKlockaNormalCzyDlugi="dlugi"
+            />
           </a>
         </Link>
         <Link href="/strona-glowna-infiniti/infiniti/kontakt">
           <a>
-            <KlocekMenu imagePathEnd="klocki/infiniti-kontakt-i-dojazd.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/infiniti-kontakt-i-dojazd.png"
+              typKlockaNormalCzyDlugi="dlugi"
+            />
           </a>
         </Link>
         <Link href="/strona-glowna-infiniti/infiniti/do-pobrania">
           <a>
-            <KlocekMenu imagePathEnd="klocki/infiniti-do-pobrania.png" />
+            <KlocekMenu
+              imagePathEnd="klocki/infiniti-do-pobrania.png"
+              typKlockaNormalCzyDlugi="dlugi"
+            />
           </a>
         </Link>
 

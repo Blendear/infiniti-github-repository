@@ -407,6 +407,17 @@
   background-color: white;
   height: 100%;
 }
+@media (orientation: landscape) {
+  .menu-modal__caly-container {
+    grid-template-rows: [r-1] max-content [r-2] 3fr;
+    grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
+  }
+}
+@media (orientation: landscape) {
+  .menu-modal__caly-container {
+    justify-items: center;
+  }
+}
 .menu-modal__caly-container__loga--medical {
   grid-row: r-1/r-2;
   grid-column: c-2/c-3;
@@ -414,55 +425,139 @@
   width: 100%;
   aspect-ratio: 1.3/1;
 }
+@media (orientation: landscape) {
+  .menu-modal__caly-container__loga--medical {
+    grid-row: r-1/r-2;
+    grid-column: c-1/c-2;
+  }
+}
+@media (orientation: landscape) {
+  .menu-modal__caly-container__loga--medical {
+    width: 50%;
+  }
+}
 .menu-modal__caly-container__loga--fitness {
   grid-row: r-1/r-2;
   grid-column: c-4/c-5;
   position: relative;
+}
+@media (orientation: landscape) {
+  .menu-modal__caly-container__loga--fitness {
+    grid-row: r-1/r-2;
+    grid-column: c-3/c-4;
+  }
+}
+@media (orientation: landscape) {
+  .menu-modal__caly-container__loga--fitness {
+    width: 50%;
+  }
 }
 .menu-modal__caly-container__klocki--container-listujacy-klocki-lewe {
   grid-row: r-2/r-3;
   grid-column: c-2/c-3;
   margin: 5vw 0 0 0;
 }
+@media (orientation: landscape) {
+  .menu-modal__caly-container__klocki--container-listujacy-klocki-lewe {
+    grid-row: r-2/r-3;
+    grid-column: c-1/c-2;
+  }
+}
+@media (orientation: landscape) {
+  .menu-modal__caly-container__klocki--container-listujacy-klocki-lewe {
+    width: max(23rem, 30vw);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: grid;
+    justify-items: center;
+    align-self: start;
+    row-gap: 5rem;
+  }
+}
 .menu-modal__caly-container__klocki--container-listujacy-klocki-prawe {
   grid-row: r-2/r-3;
   grid-column: c-4/c-5;
   margin: 5vw 0 0 0;
+}
+@media (orientation: landscape) {
+  .menu-modal__caly-container__klocki--container-listujacy-klocki-prawe {
+    grid-row: r-2/r-3;
+    grid-column: c-3/c-4;
+  }
+}
+@media (orientation: landscape) {
+  .menu-modal__caly-container__klocki--container-listujacy-klocki-prawe {
+    width: max(23rem, 30vw);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: grid;
+    justify-items: center;
+    align-self: start;
+    row-gap: 5rem;
+  }
 }
 .menu-modal__caly-container__klocki--container-listujacy-klocki-srodkowe {
   grid-row: r-6/r-7;
   grid-column: c-2/c-5;
   margin: 0vw 0 0 0;
 }
+@media (orientation: landscape) {
+  .menu-modal__caly-container__klocki--container-listujacy-klocki-srodkowe {
+    grid-row: r-2/r-3;
+    grid-column: c-2/c-3;
+    width: max(23rem, 30vw);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: grid;
+    justify-items: center;
+    align-self: start;
+    row-gap: 5rem;
+  }
+}
 .menu-modal__caly-container__klocki--container-klocka-jednego {
   display: grid;
   grid-template-rows: [r-1] minmax(0vw, 20vw) [r-2];
-  grid-template-columns: [c-1] 1fr [c-2] 2fr [c-3];
   grid-auto-flow: row;
   position: relative;
   margin: 0 0 3vw 0;
 }
+@media (orientation: landscape) {
+  .menu-modal__caly-container__klocki--container-klocka-jednego {
+    align-items: start;
+    grid-template-rows: [r-1] max-content [r-2];
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+}
 .menu-modal__caly-container__klocki--fota-btn {
-  grid-row: r-1/r-2;
-  grid-column: c-1/c-3;
   position: relative;
   z-index: 10;
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
+@media (orientation: landscape) {
+  .menu-modal__caly-container__klocki--fota-btn {
+    width: 15vw;
+    aspect-ratio: 2/1;
+  }
+}
 .menu-modal__caly-container__klocki--fota-btn:active {
   transform: scale(1.1);
 }
-.menu-modal__caly-container__klocki--napis {
-  grid-row: r-1/r-2;
-  grid-column: c-2/c-3;
-  font-size: 3vw;
-  font-weight: 600;
-  letter-spacing: 0.2vw;
-  align-self: center;
-  text-align: center;
-  color: rgb(255, 255, 255);
+.menu-modal__caly-container__klocki--dluuuga-fota-btn {
+  position: relative;
   z-index: 10;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+@media (orientation: landscape) {
+  .menu-modal__caly-container__klocki--dluuuga-fota-btn {
+    width: 30vw;
+    aspect-ratio: 4/1;
+  }
+}
+.menu-modal__caly-container__klocki--dluuuga-fota-btn:active {
+  transform: scale(1.1);
 }
 
 .layout__medical-kadra__cala-strona {

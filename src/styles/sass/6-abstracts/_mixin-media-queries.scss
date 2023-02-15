@@ -1,0 +1,19 @@
+@mixin my-media-query($maxOrMinWidthBreakpoint, $breakpointAtHowManyEm) {
+  // mobile FIRST   &   media queries NOT FOR URZĄDZENIA, tylko for breakpoints, czyli momenty rozciagniecia ekranu, które psują ci visual
+
+  // @content === pozwala nam włożyć jakiklwiek kod do tego mxiia, gdy go stworzymy
+
+  @if $maxOrMinWidthBreakpoint == "min" {
+    @media (min-width: $breakpointAtHowManyEm) {
+      @content;
+    }
+  }
+
+  @if $maxOrMinWidthBreakpoint == "max" {
+    @media (max-width: $breakpointAtHowManyEm) {
+      @content;
+    }
+  }
+}
+
+//hook1 - jak importowac? nie dziala

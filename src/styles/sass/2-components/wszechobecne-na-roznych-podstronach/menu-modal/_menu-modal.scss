@@ -7,9 +7,8 @@ $rozmiar-rowa: minmax(0vw, 20vw);
   &__caly-container {
     grid-row: r-1 / r-10;
     grid-column: c-1 / c-12;
-    // position: relative;
-    display: grid;
 
+    display: grid;
     grid-template-rows:
       [r-0_break] 16vw
       [r-1] minmax(0vw, max-content)
@@ -21,7 +20,6 @@ $rozmiar-rowa: minmax(0vw, 20vw);
       [r-7] $rozmiar-rowa
       [r-8] $rozmiar-rowa
       [r-9];
-
     grid-template-columns:
       [c-1] 0.6fr
       [c-2] 3fr
@@ -29,51 +27,118 @@ $rozmiar-rowa: minmax(0vw, 20vw);
       [c-4] 3fr
       [c-5] 0.6fr
       [c-6];
-
+    @media (orientation: landscape) {
+      grid-template-rows:
+        [r-1] max-content
+        [r-2] 3fr;
+      grid-template-columns:
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
+        [c-4];
+    }
     z-index: 200;
     background-color: white;
     // hook1 - image blurred w tle or inner shadow chociaz w tle?
 
     height: 100%;
+    @media (orientation: landscape) {
+      justify-items: center;
+    }
 
     &__loga {
+      //NIEUŻYTY
       &--medical {
         grid-row: r-1 / r-2;
         grid-column: c-2 / c-3;
-
+        @media (orientation: landscape) {
+          grid-row: r-1 / r-2;
+          grid-column: c-1 / c-2;
+        }
         position: relative;
         width: 100%;
+        @media (orientation: landscape) {
+          width: 50%;
+        }
         aspect-ratio: 1.3/1;
       }
       &--fitness {
         grid-row: r-1 / r-2;
         grid-column: c-4 / c-5;
+        @media (orientation: landscape) {
+          grid-row: r-1 / r-2;
+          grid-column: c-3 / c-4;
+        }
 
         position: relative;
         // width: 100%;
+        // width: 50%;
+        @media (orientation: landscape) {
+          width: 50%;
+        }
         // aspect-ratio: 1.5/1;
       }
     }
     &__klocki {
+      //NIEUŻYTY
+      @mixin m-q-landscape-lewe-prawe-klocki {
+        @media (orientation: landscape) {
+          width: max(23rem, 30vw);
+
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+
+          display: grid;
+
+          justify-items: center;
+          align-self: start;
+          row-gap: 5rem;
+        }
+      }
       &--container-listujacy-klocki-lewe {
         grid-row: r-2 / r-3;
         grid-column: c-2 / c-3;
-        // width: 100%;
-        // aspect-ratio: 1.5/1;
+        @media (orientation: landscape) {
+          grid-row: r-2 / r-3;
+          grid-column: c-1 / c-2;
+          // width: 100%;
+        }
+
         margin: 5vw 0 0 0;
-        // row-gap: 5vw;
+
+        @include m-q-landscape-lewe-prawe-klocki();
       }
       &--container-listujacy-klocki-prawe {
         grid-row: r-2 / r-3;
         grid-column: c-4 / c-5;
-        // width: 100%;
-        // aspect-ratio: 1.5/1;
+        @media (orientation: landscape) {
+          grid-row: r-2 / r-3;
+          grid-column: c-3 / c-4;
+        }
+
         margin: 5vw 0 0 0;
-        // row-gap: 5vw;
+
+        @include m-q-landscape-lewe-prawe-klocki();
       }
       &--container-listujacy-klocki-srodkowe {
         grid-row: r-6 / r-7;
         grid-column: c-2 / c-5;
+        @media (orientation: landscape) {
+          grid-row: r-2 / r-3;
+          grid-column: c-2 / c-3;
+
+          width: max(23rem, 30vw);
+
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+
+          display: grid;
+
+          justify-items: center;
+          align-self: start;
+          row-gap: 5rem;
+          // margin: none;
+        }
         // width: 100%;
         // aspect-ratio: 1.5/1;
         margin: 0vw 0 0 0;
@@ -87,27 +152,31 @@ $rozmiar-rowa: minmax(0vw, 20vw);
           [r-1] $rozmiar-rowa
           [r-2];
 
-        grid-template-columns:
-          [c-1] 1fr
-          [c-2] 2fr
-          [c-3];
+        // grid-template-columns:
+        //   [c-1] 1fr
+        //   [c-2] 2fr
+        //   [c-3];
 
         grid-auto-flow: row;
+
         position: relative;
         margin: 0 0 3vw 0;
+        @media (orientation: landscape) {
+          align-items: start;
 
-        // border: none;
-        // background-color: rgba(255, 255, 255, 0);
-
-        // width: 30%;
-
-        // aspect-ratio: /1; DYDKTOWANY PRZEZ IMAGE
-        // overflow: hidden;
+          grid-template-rows:
+            [r-1] max-content
+            [r-2];
+          margin: 0 0 0 0; //trap1 - "none" nie zawsze dziala. bezpieczniej uzyc value typowej dla properties, np ."0 0 0 0"
+          width: 100%;
+        }
       }
       &--fota-btn {
-        grid-row: r-1 / r-2;
-        grid-column: c-1 / c-3;
-
+        @media (orientation: landscape) {
+          width: 15vw;
+          aspect-ratio: 2/1;
+        }
+        //
         position: relative;
         z-index: 10;
         border: none;
@@ -115,8 +184,21 @@ $rozmiar-rowa: minmax(0vw, 20vw);
 
         &:active {
           transform: scale(1.1);
-          // text-shadow: 0 0 1vw 0.2vw #3f00455b;
-          // filter: drop-shadow(10);
+        }
+      }
+      &--dluuuga-fota-btn {
+        @media (orientation: landscape) {
+          width: 30vw;
+          aspect-ratio: 4/1;
+        }
+        //
+        position: relative;
+        z-index: 10;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+
+        &:active {
+          transform: scale(1.1);
         }
       }
       // &--svg {
@@ -129,18 +211,18 @@ $rozmiar-rowa: minmax(0vw, 20vw);
 
       //   z-index: 5;
       // }
-      &--napis {
-        grid-row: r-1 / r-2;
-        grid-column: c-2 / c-3;
+      // &--napis {
+      //   grid-row: r-1 / r-2;
+      //   grid-column: c-2 / c-3;
 
-        font-size: 3vw;
-        font-weight: 600;
-        letter-spacing: 0.2vw;
-        align-self: center;
-        text-align: center;
-        color: rgb(255, 255, 255);
-        z-index: 10;
-      }
+      //   font-size: 3vw;
+      //   font-weight: 600;
+      //   letter-spacing: 0.2vw;
+      //   align-self: center;
+      //   text-align: center;
+      //   color: rgb(255, 255, 255);
+      //   z-index: 10;
+      // }
     }
   }
 }

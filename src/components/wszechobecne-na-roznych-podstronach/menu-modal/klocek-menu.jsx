@@ -15,7 +15,11 @@ const KlocekMenu = (props) => {
     >
       <button
         // onClick={handlerToggleMenuIsOpen}
-        className={styles["menu-modal__caly-container__klocki--fota-btn"]}
+        className={
+          props.typKlockaNormalCzyDlugi === "normal"
+            ? styles["menu-modal__caly-container__klocki--fota-btn"]
+            : styles["menu-modal__caly-container__klocki--dluuuga-fota-btn"]
+        }
       >
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/menu-modal/${props.imagePathEnd}`}
