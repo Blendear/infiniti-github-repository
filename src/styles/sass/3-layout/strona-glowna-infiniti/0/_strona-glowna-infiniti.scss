@@ -124,6 +124,12 @@ $rozmiar-column-siatka-btn: 1fr;
           align-self: end;
           margin: 0 0 9.3vw 0;
           justify-self: center;
+          @media (orientation: landscape) {
+            // width: 15vw;
+            // aspect-ratio: 2/1;
+            width: 8%;
+            margin: 0 0 2.3vw 0;
+          }
         }
         &--fota {
           grid-row: r-1 / r-2;
@@ -132,11 +138,23 @@ $rozmiar-column-siatka-btn: 1fr;
 
           width: 100%;
           aspect-ratio: 1.5/1;
+
+          @media (orientation: landscape) {
+            // width: 15vw;
+            aspect-ratio: 6/1;
+          }
         }
       }
       &__0-nazwa-podstrony {
         grid-row: r-3 / r-4;
         grid-column: c-2 / c-11;
+
+        // @media (orientation: landscape) {
+        //   // width: 15vw;
+        //   display: grid;
+        //   justify-items: center;
+        //   // aspect-ratio: 4/1;
+        // }
       }
       &__tlo-nad-co-ty-znajdziesz {
         grid-row: r-1 / r-5_tlo;

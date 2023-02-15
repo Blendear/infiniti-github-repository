@@ -18,13 +18,30 @@ $rozmiar-rowa: minmax(0rem, max-content);
       [c-2];
 
     transform: scale(0.5);
+    @media (orientation: landscape) {
+      // width: 15vw;
+      // aspect-ratio: 4/1;
+      // transform: scale(1);
+      // transform: scale(0.3);
+      transform: none;
+      width: 18%;
+      margin: 3rem 0 3rem 0;
+      // heigh
+      // aspect-ratio: 10/1;
+    }
 
     &--svg {
       grid-row: r-1 / r-2;
       grid-column: c-1 / c-2;
 
-      position: absolute;
-      z-index: 0;
+      // position: absolute;
+      // z-index: 0;
+      @media (orientation: landscape) {
+        // position: relative;
+        // z-index: 0;
+
+        // aspect-ratio: 4/1;
+      }
     }
     &--napis {
       grid-row: r-1 / r-2;
@@ -39,6 +56,13 @@ $rozmiar-rowa: minmax(0rem, max-content);
       color: grey;
       font-weight: normal;
       font-size: min(3.7rem, 20vw);
+
+      @media (orientation: landscape) {
+        // width: 15vw;
+        // aspect-ratio: 4/1;
+        font-size: 3rem;
+      }
+
       &--fitness-wariant {
         color: fitness-variables.$fitness--czarny;
       }

@@ -31,6 +31,31 @@ $rozmiar-rowa: minmax(0rem, max-content);
         [c-11] 1fr
         [c-12];
 
+      @media (orientation: landscape) {
+        // width: 15vw;
+        // aspect-ratio: 2/1;
+        // grid-template-rows:
+        //   [r-1] $rozmiar-rowa
+        //   [r-2] $rozmiar-rowa
+        //   [r-3] $rozmiar-rowa
+        //   [r-4] $rozmiar-rowa
+        //   [r-5];
+
+        // grid-template-columns:
+        //   [c-1] 1fr
+        //   [c-2] 1fr
+        //   [c-3] 1fr
+        //   [c-4] 1fr
+        //   [c-5] 1fr
+        //   [c-6] 1fr
+        //   [c-7] 1fr
+        //   [c-8] 1fr
+        //   [c-9] 1fr
+        //   [c-10] 1fr
+        //   [c-11] 1fr
+        //   [c-12];
+      }
+
       &__0-startowe-logo-i-fota {
         &--logo {
           // hook1--dodaj logo i z-indexnij pod fote
@@ -55,6 +80,15 @@ $rozmiar-rowa: minmax(0rem, max-content);
       &__0-nazwa-podstrony {
         grid-row: r-2 / r-3;
         grid-column: c-2 / c-11;
+        @media (orientation: landscape) {
+          // width: 15vw;
+          // aspect-ratio: 4/1;
+          display: grid;
+          justify-items: center;
+          // align-self: start;
+          // width: 5rem;
+          // height: 5rem;
+        }
       }
       &__lista-rol {
         grid-row: r-3/ r-4;
@@ -85,11 +119,27 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [c-2_5] 4fr
             [c-3];
           grid-auto-flow: row;
+
+          @media (orientation: landscape) {
+            grid-template-rows:
+              [r-1] 4rem
+              [r-empty] 3vw
+              [r-2] $rozmiar-rowa
+              [r-3] 3vw
+              [r-empty];
+
+            grid-template-columns:
+              [c-0] 2rem
+              [c-1] 0.35fr
+              [c-2] 6fr;
+          }
           //hook1 - NAJPIERW JEDEN / DWA ORYGINALNE DATA, pozniej dopiero perfect styling, I TO REMEM NAJLEPIJE
           &--tytul-ikona-i-klocek-gradientowy {
             grid-row: r-1/ r-empty;
             grid-column: c-1 / c-2_5;
             z-index: 5;
+
+            width: max(20rem, 30vw);
 
             background: fitness-variables.$fitness--klocek-gradient-part-1;
             background: -moz-linear-gradient(
@@ -147,6 +197,18 @@ $rozmiar-rowa: minmax(0rem, max-content);
             //hook1 - nawet gry dynamicnza lista, zeby zrobisz rowne gapsy, musisz dac doispaly grid
             display: grid;
             row-gap: 5vw;
+            @media (orientation: landscape) {
+              margin: 0.5vw 0 0.5vw 0;
+              padding-right: 7rem;
+              //trap1 -
+              grid-auto-flow: row;
+              // grid-template-rows: repeat(10, minmax(0rem, max-content));
+              grid-template-columns: repeat(3, 1fr);
+              //herehere15.02.2023 - dorob breakpoint pod 2 kolumny albo pod repsonsywie zmniejszane
+              // fonty, zeby sredni width nie zbijal ze soba, najezdzajacych na siebie ludzi
+              // row-gap: 0vw;
+              // column-gap: 1rem;
+            }
 
             &__konkretna-osoba-container {
               display: grid;
@@ -168,6 +230,23 @@ $rozmiar-rowa: minmax(0rem, max-content);
 
               // height: 16rem;
               aspect-ratio: 4/1;
+
+              @media (orientation: landscape) {
+                width: 30vw;
+                grid-template-rows:
+                  [r-0] max-content //empty gora
+                  [r-1] max-content
+                  [r-2] max-content
+                  [r-3] max-content
+                  [r-4] max-content//empty gdol
+                  [r-6];
+
+                grid-template-columns:
+                  [c-1] 2fr
+                  [c-2] minmax(0.5rem, 1rem)
+                  [c-3] 2fr
+                  [c-4];
+              }
               // white-space: nowrap;
               &--fota {
                 grid-row: r-1/ r-5;
@@ -181,6 +260,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 width: 80%;
                 // height: 100%;
                 aspect-ratio: 1/0.8;
+                @media (orientation: landscape) {
+                  aspect-ratio: 1/1;
+                }
                 //hook1 - rozpisz kiedy ASPECTRATIO, CZY NAJLEPSZY JEST REM, czy jednak czasme lepiej &, kiedy lepiej % kiedy vw kiedy rem (% np., kiedy niepowiniennigyd przerosnac containera
                 justify-self: center;
 
@@ -204,6 +286,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 // aspect-ratio: 10/1;
                 //hook1 - ZAWSZE rm lepszy? ob vw wyjebuje repsonsywnosc w kosmos gdy rozszerzasz
                 font-size: 2rem;
+                @media (orientation: landscape) {
+                  font-size: min(2.5rem, 2vw);
+                }
                 color: fitness-variables.$fitness--bordowy;
                 font-weight: bold;
               }
@@ -212,6 +297,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 grid-column: c-3 / c-4;
 
                 font-size: 1.2rem;
+                @media (orientation: landscape) {
+                  font-size: min(2rem, 1.7vw);
+                }
 
                 color: #484848;
                 font-weight: 600;
@@ -245,18 +333,23 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 background-color: white;
 
                 &--svg-konkretny {
-                  // align-self: center;
-                  // background-color: green;
                   display: grid;
                   grid-auto-flow: column;
-                  // align-content: center;
+
                   gap: 0.5rem;
-                  // transition: all 0.5s;
 
                   & p {
                     align-self: center;
                     font-size: 1.1rem;
+                    @media (orientation: landscape) {
+                      font-size: min(1.7rem, 1.2vw);
+                    }
                     color: fitness-variables.$fitness--bordowy;
+                  }
+                  & svg {
+                    @media (orientation: landscape) {
+                      // font-size: min(1.7rem, 0.2vw);
+                    }
                   }
                   & svg:hover {
                     transform: scale(1.2);
