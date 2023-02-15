@@ -1045,9 +1045,10 @@
 @media (orientation: landscape) {
   .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container {
     margin: 0.5vw 0 0.5vw 0;
-    padding-right: 7rem;
+    margin-right: 7rem;
     grid-auto-flow: row;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
   }
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container {
@@ -1058,7 +1059,7 @@
 }
 @media (orientation: landscape) {
   .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container {
-    width: 30vw;
+    width: 28vw;
     grid-template-rows: [r-0] max-content [r-1] max-content [r-2] max-content [r-3] max-content [r-4] max-content [r-6];
     grid-template-columns: [c-1] 2fr [c-2] minmax(0.5rem, 1rem) [c-3] 2fr [c-4];
   }
