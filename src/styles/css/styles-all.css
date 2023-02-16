@@ -2451,7 +2451,7 @@
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy {
     grid-template-rows: [r-1] minmax(5rem, max-content) [r-2] minmax(5rem, max-content) [r-3];
-    grid-template-columns: [c-1] 6fr [c-2] 1fr [c-3] 1fr [c-4] 1fr [c-5] 1fr [c-6];
+    grid-template-columns: [c-1] 5fr [c-1_5_break] 2vw [c-2] 1fr [c-3] 1fr [c-4] 1fr [c-5] 1fr [c-6];
     padding: 0 4vw 0 4vw;
   }
 }
@@ -2480,7 +2480,7 @@
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container {
     grid-row: r-2/r-3;
-    grid-column: c-1/c-2;
+    grid-column: c-1/c-1_5_break;
     width: 100%;
     justify-self: center;
     marign: 0 0 0 0;
@@ -3143,18 +3143,23 @@
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--minus-1 {
-    width: 60%;
+    width: 75%;
     font-size: 4vw;
-    height: 70%;
+    height: 85%;
     align-self: end;
-    justify-self: start;
+    justify-self: center;
     margin: 0 0 0 0;
     -webkit-box-shadow: 2px 9px 13px 5px #000000;
     box-shadow: 0px 0px 1vw 0.25vw rgba(0, 0, 0, 0.176);
   }
 }
 .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--minus-1:hover {
-  font-size: 5vw;
+  font-size: 8vw;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--minus-1:hover {
+    font-size: 5vw;
+  }
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--minus-1 {
@@ -3182,18 +3187,23 @@
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--0 {
-    width: 60%;
+    width: 75%;
     font-size: 4vw;
-    height: 70%;
+    height: 85%;
     align-self: end;
-    justify-self: start;
+    justify-self: center;
     margin: 0 0 0 0;
     -webkit-box-shadow: 2px 9px 13px 5px #000000;
     box-shadow: 0px 0px 1vw 0.25vw rgba(0, 0, 0, 0.176);
   }
 }
 .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--0:hover {
-  font-size: 5vw;
+  font-size: 8vw;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--0:hover {
+    font-size: 5vw;
+  }
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--0 {
@@ -3221,18 +3231,23 @@
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--1 {
-    width: 60%;
+    width: 75%;
     font-size: 4vw;
-    height: 70%;
+    height: 85%;
     align-self: end;
-    justify-self: start;
+    justify-self: center;
     margin: 0 0 0 0;
     -webkit-box-shadow: 2px 9px 13px 5px #000000;
     box-shadow: 0px 0px 1vw 0.25vw rgba(0, 0, 0, 0.176);
   }
 }
 .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--1:hover {
-  font-size: 5vw;
+  font-size: 8vw;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--1:hover {
+    font-size: 5vw;
+  }
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--1 {
@@ -3260,18 +3275,23 @@
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--2 {
-    width: 60%;
+    width: 75%;
     font-size: 4vw;
-    height: 70%;
+    height: 85%;
     align-self: end;
-    justify-self: start;
+    justify-self: center;
     margin: 0 0 0 0;
     -webkit-box-shadow: 2px 9px 13px 5px #000000;
     box-shadow: 0px 0px 1vw 0.25vw rgba(0, 0, 0, 0.176);
   }
 }
 .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--2:hover {
-  font-size: 5vw;
+  font-size: 8vw;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--2:hover {
+    font-size: 5vw;
+  }
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--2 {
@@ -3282,6 +3302,11 @@
 .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--niewybrane {
   height: 60%;
   align-self: end;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__carousel-poziomy--buttony--niewybrane {
+    height: 35%;
+  }
 }
 .layout__strona-glowna__cala-strona__godziny-otwarcia {
   grid-row: r-8/r-9;

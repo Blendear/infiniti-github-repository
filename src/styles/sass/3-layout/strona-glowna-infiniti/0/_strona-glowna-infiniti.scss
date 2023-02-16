@@ -837,7 +837,8 @@ $rozmiar-column-siatka-btn: 1fr;
             [r-2] minmax(5rem, max-content)
             [r-3];
           grid-template-columns:
-            [c-1] 6fr
+            [c-1] 5fr
+            [c-1_5_break] 2vw
             [c-2] 1fr
             [c-3] 1fr
             [c-4] 1fr
@@ -882,7 +883,7 @@ $rozmiar-column-siatka-btn: 1fr;
             // aspect-ratio: 1.5/1; //hook1 dobierz aspect pod aspect screena z blendera
             @media (orientation: landscape) {
               grid-row: r-2 / r-3;
-              grid-column: c-1 / c-2;
+              grid-column: c-1 / c-1_5_break;
 
               width: 100%;
               justify-self: center;
@@ -1221,12 +1222,12 @@ $rozmiar-column-siatka-btn: 1fr;
             -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
             box-shadow: 0px 0px 2vw 0.25vw rgba(0, 0, 0, 0.25);
             @media (orientation: landscape) {
-              width: 60%;
+              width: 75%;
               font-size: 4vw;
               // aspect-ratio: 1/2;
-              height: 70%;
+              height: 85%;
               align-self: end;
-              justify-self: start;
+              justify-self: center;
               margin: 0 0 0 0;
 
               -webkit-box-shadow: 2px 9px 13px 5px #000000;
@@ -1234,7 +1235,10 @@ $rozmiar-column-siatka-btn: 1fr;
             }
             &:hover {
               // height: 50%;
-              font-size: 5vw;
+              font-size: 8vw;
+              @media (orientation: landscape) {
+                font-size: 5vw;
+              }
             }
             // &:active {
             //   height: 100%;
@@ -1314,6 +1318,9 @@ $rozmiar-column-siatka-btn: 1fr;
             // font-size: 6vw;
             // tranasion: fon;
             // opacity: 0.8;
+            @media (orientation: landscape) {
+              height: 35%;
+            }
           }
         }
       }
