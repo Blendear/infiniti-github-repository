@@ -191,8 +191,8 @@
 @media (orientation: landscape) {
   .footer__honorowane-karty--tytul {
     width: 80%;
-    aspect-ratio: 7/1;
-    font-size: 1.3vw;
+    height: 85%;
+    font-size: 1.1vw;
   }
 }
 .footer__honorowane-karty--tytul svg {
@@ -262,8 +262,8 @@
 @media (orientation: landscape) {
   .footer__dokumenty--tytul {
     width: 80%;
-    aspect-ratio: 7/1;
-    font-size: 1.3vw;
+    height: 85%;
+    font-size: 1.1vw;
   }
 }
 .footer__dokumenty--tytul svg {
@@ -333,8 +333,8 @@
 @media (orientation: landscape) {
   .footer__kontakt--tytul {
     width: 80%;
-    aspect-ratio: 7/1;
-    font-size: 1.3vw;
+    height: 85%;
+    font-size: 1.1vw;
   }
 }
 .footer__kontakt--tytul svg {
