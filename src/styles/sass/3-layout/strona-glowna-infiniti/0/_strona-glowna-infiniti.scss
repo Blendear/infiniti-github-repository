@@ -557,7 +557,7 @@ $rozmiar-column-siatka-btn: 1fr;
             [c-2] 2.5fr
             [c-3];
 
-          padding: 6rem 8rem 6rem 8rem;
+          padding: 6rem 8rem 6rem 12rem;
           column-gap: 2vw;
         }
 
@@ -830,6 +830,22 @@ $rozmiar-column-siatka-btn: 1fr;
         background-color: white;
 
         overflow: hidden;
+
+        @media (orientation: landscape) {
+          grid-template-rows:
+            [r-1] minmax(5rem, max-content)
+            [r-2] minmax(5rem, max-content)
+            [r-3];
+          grid-template-columns:
+            [c-1] 6fr
+            [c-2] 1fr
+            [c-3] 1fr
+            [c-4] 1fr
+            [c-5] 1fr
+            [c-6];
+
+          padding: 0 4vw 0 4vw;
+        }
         // justify-content: center;
         // align-items: center;
         &--tekst-tytulowy {
@@ -841,6 +857,10 @@ $rozmiar-column-siatka-btn: 1fr;
           margin: 10vw 2vw 0 2vw;
           // justify-self: center;
           // align-self: center;
+          @media (orientation: landscape) {
+            font-size: 2vw;
+            margin: 6vw 2vw 0 2vw;
+          }
         }
         &--mapa {
           &--container {
@@ -860,7 +880,14 @@ $rozmiar-column-siatka-btn: 1fr;
             // width: 100%;
             // height: 100%;
             // aspect-ratio: 1.5/1; //hook1 dobierz aspect pod aspect screena z blendera
+            @media (orientation: landscape) {
+              grid-row: r-2 / r-3;
+              grid-column: c-1 / c-2;
 
+              width: 100%;
+              justify-self: center;
+              marign: 0 0 0 0;
+            }
             &--siatka-buttonow-container {
               @mixin siatka {
                 grid-row: r-1 / r-11;
@@ -1193,10 +1220,21 @@ $rozmiar-column-siatka-btn: 1fr;
 
             -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
             box-shadow: 0px 0px 2vw 0.25vw rgba(0, 0, 0, 0.25);
+            @media (orientation: landscape) {
+              width: 60%;
+              font-size: 4vw;
+              // aspect-ratio: 1/2;
+              height: 70%;
+              align-self: end;
+              justify-self: start;
+              margin: 0 0 0 0;
 
+              -webkit-box-shadow: 2px 9px 13px 5px #000000;
+              box-shadow: 0px 0px 1vw 0.25vw rgba(0, 0, 0, 0.176);
+            }
             &:hover {
               // height: 50%;
-              font-size: 8vw;
+              font-size: 5vw;
             }
             // &:active {
             //   height: 100%;
@@ -1214,6 +1252,11 @@ $rozmiar-column-siatka-btn: 1fr;
             background: linear-gradient(0deg, #48c0fe 0%, #a8fbfa 100%);
             //hook1 - tak webkitnij i backgroundij KAZDEGO gradienta
             @include btn-poziomy();
+
+            @media (orientation: landscape) {
+              grid-row: r-2 / r-3;
+              grid-column: c-2 / c-3;
+            }
           }
           &--0 {
             grid-column: c-3 / c-4;
@@ -1224,6 +1267,11 @@ $rozmiar-column-siatka-btn: 1fr;
             background: linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
 
             @include btn-poziomy();
+
+            @media (orientation: landscape) {
+              grid-row: r-2 / r-3;
+              grid-column: c-3 / c-4;
+            }
           }
           &--1 {
             grid-column: c-4 / c-5;
@@ -1234,6 +1282,11 @@ $rozmiar-column-siatka-btn: 1fr;
             background: linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
 
             @include btn-poziomy();
+
+            @media (orientation: landscape) {
+              grid-row: r-2 / r-3;
+              grid-column: c-4 / c-5;
+            }
           }
           &--2 {
             grid-column: c-5 / c-6;
@@ -1244,6 +1297,11 @@ $rozmiar-column-siatka-btn: 1fr;
             background: linear-gradient(0deg, #b260e0 0%, #eb7ffd 100%);
 
             @include btn-poziomy();
+
+            @media (orientation: landscape) {
+              grid-row: r-2 / r-3;
+              grid-column: c-5 / c-6;
+            }
           }
 
           &--niewybrane {
