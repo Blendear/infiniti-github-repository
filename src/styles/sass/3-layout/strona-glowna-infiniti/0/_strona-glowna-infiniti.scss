@@ -283,6 +283,12 @@ $rozmiar-column-siatka-btn: 1fr;
         width: 100%;
         aspect-ratio: 4/1.5;
         margin: 2rem 0 8vw 0;
+
+        @media (orientation: landscape) {
+          // width: 80%;
+          // margin: 0 4rem 0 4rem;
+          // margin: 2rem 4vw 8vw 4vw;
+        }
       }
       &__lista-co-tu-znajdziesz {
         grid-row: r-5 / r-6;
@@ -538,6 +544,22 @@ $rozmiar-column-siatka-btn: 1fr;
           [c-4] 1fr
           [c-5] 1fr
           [c-6];
+        @media (orientation: landscape) {
+          // font-size: 1.5rem;
+          grid-template-rows:
+            [r-1] minmax(0rem, max-content)
+            [r-2] minmax(5rem, max-content)
+            [r-3] minmax(2rem)
+            [r-4] minmax(0rem, max-content)
+            [r-5];
+          grid-template-columns:
+            [c-1] 1fr
+            [c-2] 1fr
+            [c-3];
+
+          padding: 6rem 8rem 6rem 8rem;
+          column-gap: 2vw;
+        }
 
         &--loader {
           z-index: -10;
@@ -561,6 +583,17 @@ $rozmiar-column-siatka-btn: 1fr;
           margin: 4rem 0 3rem 0;
           font-size: 4.5vw;
           font-weight: bold;
+
+          @media (orientation: landscape) {
+            grid-row: r-1 / r-3;
+            grid-column: c-1 / c-2;
+
+            font-size: 2vw;
+            margin: 9rem 0 3rem 0;
+            // align-self: start;
+            text-align: center;
+            width: 100%;
+          }
         }
         &--pozycja-carousel {
           grid-row: r-2 / r-3;
@@ -575,6 +608,16 @@ $rozmiar-column-siatka-btn: 1fr;
             [c-2] 1fr
             [c-3] 1fr
             [c-4];
+
+          @media (orientation: landscape) {
+            grid-row: r-1 / r-5;
+            grid-column: c-2 / c-3;
+
+            grid-template-rows: [r-1] 30vw //hook1 dobierz wielkosc pod pelnoekranowe wyswietlanie
+              [r-2];
+
+            // margin: 0 0 0 4rem;
+          }
         }
         // width: 100%;
         // aspect-ratio: 1/10;
@@ -593,6 +636,9 @@ $rozmiar-column-siatka-btn: 1fr;
 
           // align-content: center;
           // opacity: 0.5; //hook1 - jak z-index używać,  żeby strzalki byly przed fotą
+          @media (orientation: landscape) {
+            margin: 0 0 0 0;
+          }
         }
         @mixin arrow {
           align-self: center;
@@ -656,10 +702,23 @@ $rozmiar-column-siatka-btn: 1fr;
           box-shadow: 0px 0px 13px 0.5vw rgba(0, 0, 0, 0.25);
           position: relative;
           overflow: hidden;
+
+          @media (orientation: landscape) {
+            grid-row: r-3 / r-4;
+            grid-column: c-1 / c-2;
+
+            margin: 0 0 0 0;
+            align-self: start;
+            // aspect-ratio: 2/1;
+          }
           &--tekst {
             grid-row: r-1 / r-2;
             grid-column: c-1 / c-2;
             align-self: center;
+            @media (orientation: landscape) {
+              padding: 0 1.5vw 0 1.5vw;
+              font-size: 1.5vw;
+            }
             // z-index: 0;
           }
           &--svg-nazwy {
@@ -702,6 +761,14 @@ $rozmiar-column-siatka-btn: 1fr;
           text-shadow: 0 0 0.1rem #87138f;
           box-shadow: 0px 0px 13px 0.5vw rgba(0, 0, 0, 0.25);
           align-content: center;
+
+          @media (orientation: landscape) {
+            grid-row: r-3 / r-4;
+            grid-column: c-1 / c-2;
+
+            margin: 0 0 0 0;
+            align-self: end;
+          }
 
           &--tekst {
             grid-row: r-1 / r-2;
