@@ -1402,7 +1402,10 @@ $rozmiar-column-siatka-btn: 1fr;
           justify-self: center;
           font-size: 2.3vw;
           transform: translateY(2vw);
-
+          @media (orientation: landscape) {
+            font-size: 2vw;
+            margin: 0 0 0 0;
+          }
           @media (orientation: landscape) {
             width: 22vw;
             aspect-ratio: 60/1;
@@ -1801,6 +1804,10 @@ $rozmiar-column-siatka-btn: 1fr;
         border-top-right-radius: 7rem;
         background-color: white;
 
+        @media (orientation: landscape) {
+          // width: 70%;
+        }
+
         &--tytul-tekst {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-2;
@@ -1808,6 +1815,11 @@ $rozmiar-column-siatka-btn: 1fr;
 
           font-size: 5vw;
           justify-self: center;
+
+          @media (orientation: landscape) {
+            font-size: 2vw;
+            margin: 3vw 0 0 0;
+          }
         }
         &--tytul-linia {
           grid-row: r-2 / r-3;
@@ -1818,6 +1830,13 @@ $rozmiar-column-siatka-btn: 1fr;
           margin: 0vw 0 5vw 0;
           justify-self: center;
           background-color: #b861bc;
+
+          @media (orientation: landscape) {
+            width: 18vw;
+            aspect-ratio: 60/1;
+
+            margin: 0 0 3vw 0;
+          }
         }
         &--carousel {
           grid-row: r-3 / r-4;
@@ -1834,7 +1853,7 @@ $rozmiar-column-siatka-btn: 1fr;
             // [c-1_empty] 1rem
             [c-3] 1fr
             [c-4];
-
+          // justify-items: center;
           // justify-self: center;
           background-color: rgb(255, 255, 255);
 
@@ -1842,6 +1861,11 @@ $rozmiar-column-siatka-btn: 1fr;
           aspect-ratio: 4.5/1;
 
           // gap: 2rem;
+          @media (orientation: landscape) {
+            // width: 50%;
+            aspect-ratio: 7.5/1;
+            justify-self: center;
+          }
 
           @mixin fota-partnerzy {
             width: 22vw;
@@ -1849,6 +1873,11 @@ $rozmiar-column-siatka-btn: 1fr;
             // opacity: 0.3;
             position: relative;
             // margin: 0 1rem 0 1rem;
+
+            @media (orientation: landscape) {
+              width: 60%;
+              justify-self: center;
+            }
           }
           &--fota-1 {
             grid-row: r-1 / r-2;

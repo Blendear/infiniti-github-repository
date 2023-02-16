@@ -3224,6 +3224,12 @@
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__godziny-otwarcia--podkreslnik {
+    font-size: 2vw;
+    margin: 0 0 0 0;
+  }
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__godziny-otwarcia--podkreslnik {
     width: 22vw;
     aspect-ratio: 60/1;
     margin: 0 0 3vw 0;
@@ -3761,6 +3767,12 @@
   font-size: 5vw;
   justify-self: center;
 }
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__partnerzy--tytul-tekst {
+    font-size: 2vw;
+    margin: 3vw 0 0 0;
+  }
+}
 .layout__strona-glowna__cala-strona__partnerzy--tytul-linia {
   grid-row: r-2/r-3;
   grid-column: c-1/c-2;
@@ -3769,6 +3781,13 @@
   margin: 0vw 0 5vw 0;
   justify-self: center;
   background-color: #b861bc;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__partnerzy--tytul-linia {
+    width: 18vw;
+    aspect-ratio: 60/1;
+    margin: 0 0 3vw 0;
+  }
 }
 .layout__strona-glowna__cala-strona__partnerzy--carousel {
   grid-row: r-3/r-4;
@@ -3780,12 +3799,24 @@
   width: 100%;
   aspect-ratio: 4.5/1;
 }
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__partnerzy--carousel {
+    aspect-ratio: 7.5/1;
+    justify-self: center;
+  }
+}
 .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-1 {
   grid-row: r-1/r-2;
   grid-column: c-1/c-2;
   width: 22vw;
   aspect-ratio: 2/1;
   position: relative;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-1 {
+    width: 60%;
+    justify-self: center;
+  }
 }
 .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-2 {
   grid-row: r-1/r-2;
@@ -3794,12 +3825,24 @@
   aspect-ratio: 2/1;
   position: relative;
 }
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-2 {
+    width: 60%;
+    justify-self: center;
+  }
+}
 .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-3 {
   grid-row: r-1/r-2;
   grid-column: c-3/c-4;
   width: 22vw;
   aspect-ratio: 2/1;
   position: relative;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__partnerzy--carousel--fota-3 {
+    width: 60%;
+    justify-self: center;
+  }
 }
 
 /*# sourceMappingURL=styles-all.css.map */
