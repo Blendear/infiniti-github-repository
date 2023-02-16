@@ -149,6 +149,9 @@ const Footer = () => {
       <div className={styles["footer__copyright"]}>
         © 2023 - INFINITI Fitness Club
       </div>
+      <div className={styles["footer__link-do-tworcow"]}>
+        Images by vextok, macrovectora and imaginationlol on Freepik
+      </div>
     </div>
   );
 };

@@ -12,6 +12,23 @@
     background: -moz-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
     background: -webkit-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
     background: linear-gradient(0deg, #cb8dff 0%, #809cff 100%);
+
+    @media (orientation: landscape) {
+      grid-auto-flow: column;
+      // grid-template-columns: repeat(auto-fit, 30vw);
+
+      grid-template-rows:
+        [r-1] 1fr
+        [r-2] minmax(0, max-content)
+        [r-3] minmax(0, max-content)
+        [r-4];
+      grid-template-columns:
+        [c-1] 1fr
+        [c-2] 1fr
+        [c-3] 1fr
+        [c-4];
+      row-gap: 2vw;
+    }
   }
   @mixin tytul-kazdy {
     background-color: grey;
@@ -60,7 +77,11 @@
     background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
     background: linear-gradient(0deg, #965ae4 0%, #5b7eff 100%);
     // box-shadow: 0px 0px 0.2rem 0.2rem #53249078;
-
+    @media (orientation: landscape) {
+      width: 80%;
+      aspect-ratio: 7/1;
+      font-size: 1.3vw;
+    }
     & svg {
       justify-self: center;
       font-size: 2rem;
@@ -70,6 +91,7 @@
   @mixin lista-rzeczy-grid-container {
     display: grid;
     grid-auto-rows: 5rem;
+    // width: 80%;
     // align-items: end;
   }
   @mixin karta-kazda {
@@ -90,7 +112,10 @@
     color: white;
     width: 80%;
     justify-self: center;
-
+    @media (orientation: landscape) {
+      width: 60%;
+      font-size: 1.3vw;
+    }
     & a {
       color: rgb(71, 71, 71);
     }
@@ -108,6 +133,10 @@
     }
   }
   &__honorowane-karty {
+    @media (orientation: landscape) {
+      grid-row: r-1 / r-2;
+      grid-column: c-1 / c-2;
+    }
     @include lista-rzeczy-grid-container();
 
     &--tytul {
@@ -120,6 +149,10 @@
   //hook1 - PRZED SRTYLIZOWANIEM, włóz ORYGINALNE DANE. Inaczje bp. pozniej wkleisz
   // link component, i hierarchia divow idzie sie jebać
   &__dokumenty {
+    @media (orientation: landscape) {
+      grid-row: r-1 / r-2;
+      grid-column: c-2 / c-3;
+    }
     @include lista-rzeczy-grid-container();
     &--tytul {
       @include tytul-kazdy();
@@ -129,6 +162,10 @@
     }
   }
   &__kontakt {
+    @media (orientation: landscape) {
+      grid-row: r-1 / r-2;
+      grid-column: c-3 / c-4;
+    }
     @include lista-rzeczy-grid-container();
     // grid-template-rows:
     //   [c-1] 1fr
@@ -180,5 +217,26 @@
     text-shadow: none;
     margin: 0 auto 2rem auto;
     // margin-bottom: 2rem;
+    @media (orientation: landscape) {
+      grid-row: r-2 / r-3;
+      grid-column: c-1 / c-4;
+    }
+  }
+
+  &__link-do-tworcow {
+    @include karta-kazda();
+
+    display: inline-block;
+    // justify-items: center;
+    // align-self: start;
+    text-align: center;
+    color: rgb(69, 69, 69);
+    text-shadow: none;
+    margin: 0 auto 2rem auto;
+
+    @media (orientation: landscape) {
+      grid-row: r-3/ r-4;
+      grid-column: c-1 / c-4;
+    }
   }
 }

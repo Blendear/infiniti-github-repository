@@ -153,9 +153,23 @@
   background: -webkit-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
   background: linear-gradient(0deg, #cb8dff 0%, #809cff 100%);
 }
+@media (orientation: landscape) {
+  .footer__caly-container {
+    grid-auto-flow: column;
+    grid-template-rows: [r-1] 1fr [r-2] minmax(0, max-content) [r-3] minmax(0, max-content) [r-4];
+    grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
+    row-gap: 2vw;
+  }
+}
 .footer__honorowane-karty {
   display: grid;
   grid-auto-rows: 5rem;
+}
+@media (orientation: landscape) {
+  .footer__honorowane-karty {
+    grid-row: r-1/r-2;
+    grid-column: c-1/c-2;
+  }
 }
 .footer__honorowane-karty--tytul {
   background-color: grey;
@@ -174,6 +188,13 @@
   background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
   background: linear-gradient(0deg, #965ae4 0%, #5b7eff 100%);
 }
+@media (orientation: landscape) {
+  .footer__honorowane-karty--tytul {
+    width: 80%;
+    aspect-ratio: 7/1;
+    font-size: 1.3vw;
+  }
+}
 .footer__honorowane-karty--tytul svg {
   justify-self: center;
   font-size: 2rem;
@@ -189,6 +210,12 @@
   color: white;
   width: 80%;
   justify-self: center;
+}
+@media (orientation: landscape) {
+  .footer__honorowane-karty--karta {
+    width: 60%;
+    font-size: 1.3vw;
+  }
 }
 .footer__honorowane-karty--karta a {
   color: rgb(71, 71, 71);
@@ -209,6 +236,12 @@
   display: grid;
   grid-auto-rows: 5rem;
 }
+@media (orientation: landscape) {
+  .footer__dokumenty {
+    grid-row: r-1/r-2;
+    grid-column: c-2/c-3;
+  }
+}
 .footer__dokumenty--tytul {
   background-color: grey;
   display: grid;
@@ -226,6 +259,13 @@
   background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
   background: linear-gradient(0deg, #965ae4 0%, #5b7eff 100%);
 }
+@media (orientation: landscape) {
+  .footer__dokumenty--tytul {
+    width: 80%;
+    aspect-ratio: 7/1;
+    font-size: 1.3vw;
+  }
+}
 .footer__dokumenty--tytul svg {
   justify-self: center;
   font-size: 2rem;
@@ -241,6 +281,12 @@
   color: white;
   width: 80%;
   justify-self: center;
+}
+@media (orientation: landscape) {
+  .footer__dokumenty--karta {
+    width: 60%;
+    font-size: 1.3vw;
+  }
 }
 .footer__dokumenty--karta a {
   color: rgb(71, 71, 71);
@@ -261,6 +307,12 @@
   display: grid;
   grid-auto-rows: 5rem;
 }
+@media (orientation: landscape) {
+  .footer__kontakt {
+    grid-row: r-1/r-2;
+    grid-column: c-3/c-4;
+  }
+}
 .footer__kontakt--tytul {
   background-color: grey;
   display: grid;
@@ -277,6 +329,13 @@
   background: -moz-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
   background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
   background: linear-gradient(0deg, #965ae4 0%, #5b7eff 100%);
+}
+@media (orientation: landscape) {
+  .footer__kontakt--tytul {
+    width: 80%;
+    aspect-ratio: 7/1;
+    font-size: 1.3vw;
+  }
 }
 .footer__kontakt--tytul svg {
   justify-self: center;
@@ -296,6 +355,12 @@
   justify-items: center;
   display: grid;
   grid-template-columns: [c-1] 1fr [c-2];
+}
+@media (orientation: landscape) {
+  .footer__kontakt--karta {
+    width: 60%;
+    font-size: 1.3vw;
+  }
 }
 .footer__kontakt--karta a {
   color: rgb(71, 71, 71);
@@ -325,6 +390,12 @@
   display: grid;
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
   justify-items: center;
+}
+@media (orientation: landscape) {
+  .footer__kontakt--sociale {
+    width: 60%;
+    font-size: 1.3vw;
+  }
 }
 .footer__kontakt--sociale a {
   color: rgb(71, 71, 71);
@@ -360,6 +431,12 @@
   text-shadow: none;
   margin: 0 auto 2rem auto;
 }
+@media (orientation: landscape) {
+  .footer__copyright {
+    width: 60%;
+    font-size: 1.3vw;
+  }
+}
 .footer__copyright a {
   color: rgb(71, 71, 71);
 }
@@ -374,6 +451,55 @@
   justify-self: center;
   font-size: 1.5rem;
   align-self: center;
+}
+@media (orientation: landscape) {
+  .footer__copyright {
+    grid-row: r-2/r-3;
+    grid-column: c-1/c-4;
+  }
+}
+.footer__link-do-tworcow {
+  display: grid;
+  grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
+  align-self: end;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-shadow: 0rem 0.2rem rgba(94, 40, 98, 0.4705882353);
+  color: white;
+  width: 80%;
+  justify-self: center;
+  display: inline-block;
+  text-align: center;
+  color: rgb(69, 69, 69);
+  text-shadow: none;
+  margin: 0 auto 2rem auto;
+}
+@media (orientation: landscape) {
+  .footer__link-do-tworcow {
+    width: 60%;
+    font-size: 1.3vw;
+  }
+}
+.footer__link-do-tworcow a {
+  color: rgb(71, 71, 71);
+}
+.footer__link-do-tworcow a:link,
+.footer__link-do-tworcow :visited,
+.footer__link-do-tworcow :active,
+.footer__link-do-tworcow :hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer__link-do-tworcow svg {
+  justify-self: center;
+  font-size: 1.5rem;
+  align-self: center;
+}
+@media (orientation: landscape) {
+  .footer__link-do-tworcow {
+    grid-row: r-3/r-4;
+    grid-column: c-1/c-4;
+  }
 }
 
 /**
@@ -2331,8 +2457,8 @@
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-gallery--pozycja-left-arrow {
-    font-size: 6vw;
-    margin: 0 10.5vw 0 10.5vw;
+    font-size: 4vw;
+    margin: 0 8vw 0 8vw;
     stroke: 0rem;
   }
 }
@@ -2352,8 +2478,8 @@
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-gallery--pozycja-right-arrow {
-    font-size: 6vw;
-    margin: 0 10.5vw 0 10.5vw;
+    font-size: 4vw;
+    margin: 0 8vw 0 8vw;
     stroke: 0rem;
   }
 }
