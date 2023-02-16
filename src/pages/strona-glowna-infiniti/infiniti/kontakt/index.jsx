@@ -248,7 +248,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            <BiRocket color="white" size="2rem" />
+            <BiRocket color="white" />
           </div>
           <div
             className={
@@ -282,7 +282,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            <BiTimeFive color="white" size="2rem" />
+            <BiTimeFive color="white" />
           </div>
           <div
             className={
@@ -318,7 +318,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            <BiPhone color="white" size="2rem" />
+            <BiPhone color="white" />
             {/* //hook2 - jak sylizowac masowo svg'ki improtowane z reat cions? jakis subselector? */}
           </div>
           <div
@@ -352,7 +352,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            <HiOutlineMail color="white" size="2rem" />
+            <HiOutlineMail color="white" />
           </div>
           <div
             className={

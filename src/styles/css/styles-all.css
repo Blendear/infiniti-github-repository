@@ -1707,6 +1707,11 @@
   grid-template-columns: [c-1] 1fr [c-2] 9fr [c-3];
   row-gap: 2rem;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container {
+    row-gap: 1vh;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--tytul-formularza {
   grid-row: r-1/r-2;
   grid-column: c-1/c-3;
@@ -1714,6 +1719,11 @@
   font-size: 1.5rem;
   font-family: "Roboto Condensed", sans-serif;
   margin: 3rem auto 0rem auto;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--tytul-formularza {
+    font-size: 3vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--imie-i-nazwisko {
   grid-row: r-2/r-3;
@@ -1727,6 +1737,19 @@
   justify-self: center;
   padding: 1rem 0.5rem 1rem 0.5rem;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--imie-i-nazwisko {
+    width: 60%;
+    height: 50%;
+    padding: 1vh 0.5rem 1vh 0.5rem;
+    font-size: 1.8vw;
+  }
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--imie-i-nazwisko {
+    margin: 2vw 0 0 0;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--email {
   grid-row: r-3/r-4;
   grid-column: c-1/c-3;
@@ -1739,6 +1762,14 @@
   justify-self: center;
   padding: 1rem 0.5rem 1rem 0.5rem;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--email {
+    width: 60%;
+    height: 50%;
+    padding: 1vh 0.5rem 1vh 0.5rem;
+    font-size: 1.8vw;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--tresc-wiadomosci {
   grid-row: r-4/r-5;
   grid-column: c-1/c-3;
@@ -1750,6 +1781,19 @@
   aspect-ratio: 7/1;
   justify-self: center;
   padding: 1rem 0.5rem 1rem 0.5rem;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--tresc-wiadomosci {
+    width: 60%;
+    height: 50%;
+    padding: 1vh 0.5rem 1vh 0.5rem;
+    font-size: 1.8vw;
+  }
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--input--tresc-wiadomosci {
+    height: 20vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox {
   grid-row: r-5/r-6;
@@ -1764,9 +1808,22 @@
   align-self: start;
   margin: 0 0.5rem 0 0;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--btn {
+    margin: 3.5vw;
+    transform: scale(2);
+  }
+}
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--tresc-z-boku {
   color: white;
   font-size: 1.1rem;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--checkbox--tresc-z-boku {
+    margin: 2.5vw 0 2.5vw 0;
+    width: 90%;
+    font-size: 1.5vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn {
   grid-row: r-6/r-7;
@@ -1781,6 +1838,12 @@
   background: -moz-linear-gradient(-45deg, #1f5c91 0%, #12737a 100%);
   background: -webkit-linear-gradient(-45deg, #1f5c91 0%, #12737a 100%);
   background: linear-gradient(135deg, #1f5c91 0%, #12737a 100%);
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn {
+    width: 20vw;
+    font-size: 1.7vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container--wyślij-btn--active {
   opacity: 1;
@@ -1798,6 +1861,11 @@
   font-family: "Roboto Condensed", sans-serif;
   margin: 5rem auto 2rem auto;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__mapa-dojazdu--tytul-nad-nia {
+    font-size: 3vw;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__mapa-dojazdu--mapa-image {
   grid-row: r-5/r-6;
   grid-column: c-1/c-12;
@@ -1807,6 +1875,11 @@
   margin: 0 auto 3rem auto;
   box-shadow: 0px 0px 0.7rem 1px #000000;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__mapa-dojazdu--mapa-image {
+    width: 50vw;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container {
   grid-row: r-6/r-7;
   grid-column: c-1/c-12;
@@ -1814,8 +1887,17 @@
   grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(0rem, max-content) [r-3] minmax(0rem, max-content) [r-4] minmax(0rem, max-content) [r-5] 2rem [r-5];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
   width: 80vw;
-  margin: 0 auto 0 auto;
+  justify-self: center;
   row-gap: 2.5rem;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container {
+    width: 90%;
+    grid-template-rows: [r-1] 10vw [r-2] 10vw [r-3];
+    grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3];
+    align-items: center;
+    margin: 1vw 0 3vw 0;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres {
   grid-row: r-1/r-2;
@@ -1824,8 +1906,20 @@
   grid-template-columns: [c-1] 2fr [c-2] 1fr [c-3] 5fr [c-4];
   grid-auto-flow: column;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres {
+    grid-row: r-1/r-2;
+    grid-column: c-1/c-2;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres--svg {
   margin: auto;
+  font-size: 5vw;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres--svg {
+    font-size: 3vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres--svg svg path {
   stroke: black;
@@ -1836,11 +1930,22 @@
   height: 3rem;
   margin: auto 0 auto 0;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres--linia {
+    height: 100%;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres--tresc {
   color: white;
   font-size: 1rem;
   font-weight: 100;
   line-height: 2rem;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--adres--tresc {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia {
   grid-row: r-2/r-3;
@@ -1849,8 +1954,20 @@
   grid-template-columns: [c-1] 2fr [c-2] 1fr [c-3] 5fr [c-4];
   grid-auto-flow: column;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia {
+    grid-row: r-1/r-2;
+    grid-column: c-2/c-3;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia--svg {
   margin: auto;
+  font-size: 5vw;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia--svg {
+    font-size: 3vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia--linia {
   background-color: white;
@@ -1858,11 +1975,22 @@
   height: 3rem;
   margin: auto 0 auto 0;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia--linia {
+    height: 100%;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia--tresc {
   color: white;
   font-size: 1rem;
   font-weight: 100;
   line-height: 2rem;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--godziny-otwarcia--tresc {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon {
   grid-row: r-3/r-4;
@@ -1871,8 +1999,20 @@
   grid-template-columns: [c-1] 2fr [c-2] 1fr [c-3] 5fr [c-4];
   grid-auto-flow: column;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon {
+    grid-row: r-2/r-3;
+    grid-column: c-1/c-2;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon--svg {
   margin: auto;
+  font-size: 5vw;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon--svg {
+    font-size: 3vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon--linia {
   background-color: white;
@@ -1880,11 +2020,22 @@
   height: 3rem;
   margin: auto 0 auto 0;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon--linia {
+    height: 100%;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon--tresc {
   color: white;
   font-size: 1rem;
   font-weight: 100;
   line-height: 2rem;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon--tresc {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email {
   grid-row: r-4/r-5;
@@ -1893,8 +2044,20 @@
   grid-template-columns: [c-1] 2fr [c-2] 1fr [c-3] 5fr [c-4];
   grid-auto-flow: column;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email {
+    grid-row: r-2/r-3;
+    grid-column: c-2/c-3;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--svg {
   margin: auto;
+  font-size: 5vw;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--svg {
+    font-size: 3vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--linia {
   background-color: white;
@@ -1902,11 +2065,22 @@
   height: 3rem;
   margin: auto 0 auto 0;
 }
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--linia {
+    height: 100%;
+  }
+}
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--tresc {
   color: white;
   font-size: 1rem;
   font-weight: 100;
   line-height: 2rem;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--tresc {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
 }
 .layout__infiniti-kontakt__cala-strona--fota-w-tle {
   grid-row: r-3/r-7;
