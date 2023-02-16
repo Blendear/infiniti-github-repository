@@ -68,6 +68,11 @@
         display: grid;
         grid-row: r-2 / r-3;
         grid-column: c-5 / c-8;
+        @media (orientation: landscape) {
+          display: grid;
+          justify-self: center;
+          justify-items: center;
+        }
         // height: 2rem;
         // position: relative;
       }

@@ -60,6 +60,10 @@ $rozmiar-rowa: minmax(0rem, max-content);
       &__0-nazwa-podstrony {
         grid-row: r-2 / r-3;
         grid-column: c-2 / c-11;
+        @media (orientation: landscape) {
+          display: grid;
+          justify-items: center;
+        }
       }
       &__napisz-do-nas-container {
         grid-row: r-3 / r-4;

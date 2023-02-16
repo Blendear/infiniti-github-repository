@@ -712,6 +712,12 @@
   grid-row: r-2/r-3;
   grid-column: c-2/c-11;
 }
+@media (orientation: landscape) {
+  .layout__medical-kadra__cala-strona__0-nazwa-podstrony {
+    display: grid;
+    justify-items: center;
+  }
+}
 .layout__medical-kadra__cala-strona__lista-rol {
   grid-row: r-3/r-4;
   grid-column: c-1/c-12;
@@ -855,6 +861,12 @@
 .layout__medical-uslugi__cala-strona__0-nazwa-podstrony {
   grid-row: r-2/r-3;
   grid-column: c-2/c-11;
+}
+@media (orientation: landscape) {
+  .layout__medical-uslugi__cala-strona__0-nazwa-podstrony {
+    display: grid;
+    justify-items: center;
+  }
 }
 .layout__medical-uslugi__cala-strona__lista-zabiegow {
   grid-row: r-3/r-4;
@@ -1003,6 +1015,12 @@
   grid-row: r-2/r-3;
   grid-column: c-2/c-11;
 }
+@media (orientation: landscape) {
+  .layout__medical-cennik__cala-strona__0-nazwa-podstrony {
+    display: grid;
+    justify-items: center;
+  }
+}
 .layout__medical-cennik__cala-strona__cennik {
   grid-row: r-3/r-4;
   grid-column: c-1/c-12;
@@ -1038,6 +1056,12 @@
 .layout__fitness-cennik__cala-strona__0-nazwa-podstrony {
   grid-row: r-2/r-3;
   grid-column: c-2/c-11;
+}
+@media (orientation: landscape) {
+  .layout__fitness-cennik__cala-strona__0-nazwa-podstrony {
+    display: grid;
+    justify-items: center;
+  }
 }
 .layout__fitness-cennik__cala-strona__cennik {
   grid-row: r-3/r-4;
@@ -1286,6 +1310,13 @@
   display: grid;
   grid-row: r-2/r-3;
   grid-column: c-5/c-8;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-do-pobrania__cala-strona__0-nazwa-podstrony {
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+  }
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--tytul {
   display: grid;
@@ -1698,6 +1729,12 @@
 .layout__infiniti-kontakt__cala-strona__0-nazwa-podstrony {
   grid-row: r-2/r-3;
   grid-column: c-2/c-11;
+}
+@media (orientation: landscape) {
+  .layout__infiniti-kontakt__cala-strona__0-nazwa-podstrony {
+    display: grid;
+    justify-items: center;
+  }
 }
 .layout__infiniti-kontakt__cala-strona__napisz-do-nas-container {
   grid-row: r-3/r-4;
@@ -2120,7 +2157,7 @@
 }
 @media (orientation: landscape) {
   .tytul-podstrony__caly-container--napis {
-    font-size: 3rem;
+    font-size: 2vw;
   }
 }
 .tytul-podstrony__caly-container--napis--fitness-wariant {
