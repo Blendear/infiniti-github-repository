@@ -235,7 +235,9 @@ const StronaGlowna = () => {
             ]
           }
         >
-          ZAJĘCIA GRUPOWE DLA KAŻDEGO
+          ZAJĘCIA GRUPOWE
+          <br />
+          DLA KAŻDEGO
         </div>
         <div
           className={
@@ -271,7 +273,7 @@ const StronaGlowna = () => {
             ]
           }
         >
-          SAUNA & WELLNESS
+          SAUNA <br />& WELLNESS
         </div>
         <div
           className={
@@ -289,7 +291,8 @@ const StronaGlowna = () => {
             ]
           }
         >
-          DOŚWIADCZENI DIETETYCY
+          DOŚWIADCZENI <br />
+          DIETETYCY
         </div>
       </div>
 

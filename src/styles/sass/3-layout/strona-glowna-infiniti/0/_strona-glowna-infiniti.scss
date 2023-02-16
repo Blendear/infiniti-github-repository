@@ -202,6 +202,12 @@ $rozmiar-column-siatka-btn: 1fr;
         //     rgb(129, 33, 202) 100%
         //   );
         // }
+        @media (orientation: landscape) {
+          margin: 2vw 0 1vw 0;
+          width: 12vw;
+          aspect-ratio: 5/1.8;
+          font-size: 1.5vw;
+        }
         & a {
           color: rgb(255, 255, 255);
         }
@@ -236,14 +242,23 @@ $rozmiar-column-siatka-btn: 1fr;
         grid-template-columns:
           [c-1] 1fr
           [c-2];
-        align-content: center;
+        // align-content: center;
 
         width: 100%;
         margin: 1rem 0 0 0;
-
+        @media (orientation: landscape) {
+          width: 100%;
+          align-items: center;
+          justify-items: center;
+        }
         &--svg {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-2;
+
+          @media (orientation: landscape) {
+            width: 60%;
+            align-self: center;
+          }
         }
         &--tekst {
           grid-row: r-1 / r-2;
@@ -252,6 +267,10 @@ $rozmiar-column-siatka-btn: 1fr;
           // align-self: center;
           justify-self: center;
           font-size: 3.8vw;
+          @media (orientation: landscape) {
+            font-size: 2vw;
+            margin: 0 0 0 0;
+          }
           //hook1 - jak tworzyc svg, zeby nie pierodlic sie z ustawianiem elemntow w środku nich etc.? dzielic juena fragmenty?
         }
       }
@@ -288,11 +307,29 @@ $rozmiar-column-siatka-btn: 1fr;
         grid-template-columns:
           [c-1] 1fr
           [c-2] 1fr
-          [c-2];
+          [c-3];
 
         padding: 0 2rem 4rem 2rem;
         // gap: 2rem;
         // column-gap: 2rem;
+
+        @media (orientation: landscape) {
+          grid-template-rows:
+            [r-1] minmax(5rem, max-content)
+            [r-2] minmax(5rem, max-content)
+            [r-3] minmax(5rem, max-content)
+            [r-4] minmax(5rem, max-content)
+            [r-5] minmax(5rem, max-content)
+            [r-6];
+          grid-template-columns:
+            [c-1] 1fr
+            [c-2] 1fr
+            [c-3] 1fr
+            [c-4] 1fr
+            [c-5];
+
+          padding: 0 7rem 4rem 7rem;
+        }
         &--item {
           @mixin tekst-ikonki {
             justify-self: center;
@@ -303,6 +340,10 @@ $rozmiar-column-siatka-btn: 1fr;
             font-weight: bold;
             line-height: 2rem;
             text-align: center;
+
+            @media (orientation: landscape) {
+              font-size: 1.5rem;
+            }
           }
           @mixin SVG-lewy {
             justify-self: center;
@@ -310,6 +351,9 @@ $rozmiar-column-siatka-btn: 1fr;
             // margin-left: 25%;
             // margin-right: 15%;
             width: 70%;
+            @media (orientation: landscape) {
+              width: 50%;
+            }
           }
           @mixin SVG-prawy {
             justify-self: center;
@@ -317,6 +361,9 @@ $rozmiar-column-siatka-btn: 1fr;
             // margin-left: 15%;
             // margin-right: 25%;
             width: 70%;
+            @media (orientation: landscape) {
+              width: 50%;
+            }
           }
           &--svg-icon-1 {
             grid-row: r-2 / r-3;
@@ -342,62 +389,120 @@ $rozmiar-column-siatka-btn: 1fr;
             grid-row: r-4 / r-5;
             grid-column: c-1 / c-2;
             @include SVG-lewy();
+            @media (orientation: landscape) {
+              grid-row: r-2 / r-3;
+              grid-column: c-3 / c-4;
+            }
           }
           &--tekst-3 {
             grid-row: r-5 / r-6;
             grid-column: c-1 / c-2;
             @include tekst-ikonki();
+
+            @media (orientation: landscape) {
+              grid-row: r-3 / r-4;
+              grid-column: c-3 / c-4;
+            }
           }
           &--svg-icon-4 {
             grid-row: r-4 / r-5;
             grid-column: c-2 / c-3;
             @include SVG-prawy();
+            @media (orientation: landscape) {
+              grid-row: r-2 / r-3;
+              grid-column: c-4 / c-5;
+            }
           }
           &--tekst-4 {
             grid-row: r-5 / r-6;
             grid-column: c-2 / c-3;
             @include tekst-ikonki();
+
+            @media (orientation: landscape) {
+              grid-row: r-3 / r-4;
+              grid-column: c-4 / c-5;
+            }
           }
           &--svg-icon-5 {
             grid-row: r-6 / r-7;
             grid-column: c-1 / c-2;
             @include SVG-lewy();
+
+            @media (orientation: landscape) {
+              grid-row: r-4 / r-5;
+              grid-column: c-1 / c-2;
+            }
           }
           &--tekst-5 {
             grid-row: r-7 / r-8;
             grid-column: c-1 / c-2;
             @include tekst-ikonki();
+
+            @media (orientation: landscape) {
+              grid-row: r-5 / r-6;
+              grid-column: c-1 / c-2;
+            }
           }
           &--svg-icon-6 {
             grid-row: r-6 / r-7;
             grid-column: c-2 / c-3;
             @include SVG-prawy();
+
+            @media (orientation: landscape) {
+              grid-row: r-4 / r-5;
+              grid-column: c-2 / c-3;
+            }
           }
           &--tekst-6 {
             grid-row: r-7 / r-8;
             grid-column: c-2 / c-3;
             @include tekst-ikonki();
+
+            @media (orientation: landscape) {
+              grid-row: r-5 / r-6;
+              grid-column: c-2 / c-3;
+            }
           }
           &--svg-icon-7 {
             grid-row: r-8 / r-9;
             grid-column: c-1 / c-2;
             @include SVG-lewy();
+
+            @media (orientation: landscape) {
+              grid-row: r-4 / r-5;
+              grid-column: c-3 / c-4;
+            }
           }
           &--tekst-7 {
             grid-row: r-9 / r-10;
             grid-column: c-1 / c-2;
             @include tekst-ikonki();
+
+            @media (orientation: landscape) {
+              grid-row: r-5 / r-6;
+              grid-column: c-3 / c-4;
+            }
           }
           &--svg-icon-8 {
             grid-row: r-8 / r-9;
             grid-column: c-2 / c-3;
             @include SVG-prawy();
+
+            @media (orientation: landscape) {
+              grid-row: r-4 / r-5;
+              grid-column: c-4 / c-5;
+            }
           }
           &--tekst-8 {
             grid-row: r-9 / r-10;
             grid-column: c-2 / c-3;
 
             @include tekst-ikonki();
+
+            @media (orientation: landscape) {
+              grid-row: r-5 / r-6;
+              grid-column: c-4 / c-5;
+            }
           }
         }
       }
