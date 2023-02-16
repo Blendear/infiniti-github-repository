@@ -1834,7 +1834,6 @@
   font-weight: bold;
   text-shadow: 0 0 0.3rem #000000;
   box-shadow: 0 0 1vw 0.2vw rgba(63, 0, 69, 0.3568627451);
-  transition: all 0.5s ease-out;
   cursor: pointer;
 }
 @media (orientation: landscape) {
@@ -2248,7 +2247,7 @@
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__carousel-gallery {
     grid-template-rows: [r-1] minmax(0rem, max-content) [r-2] minmax(5rem, max-content) [r-3] minmax(2rem) [r-4] minmax(0rem, max-content) [r-5];
-    grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3];
+    grid-template-columns: [c-1] 1fr [c-2] 2.5fr [c-3];
     padding: 6rem 8rem 6rem 8rem;
     column-gap: 2vw;
   }
@@ -2256,8 +2255,16 @@
 .layout__strona-glowna__cala-strona__carousel-gallery--loader {
   z-index: -10;
   position: absolute;
-  top: 30%;
-  padding: 0 0 0 40vw;
+  top: 40%;
+  justify-self: center;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__carousel-gallery--loader {
+    padding: 0 0 0 0;
+    justify-self: center;
+    top: 30%;
+    font-size: 2rem;
+  }
 }
 .layout__strona-glowna__cala-strona__carousel-gallery--loader span {
   justify-self: center;
@@ -2285,6 +2292,7 @@
   grid-row: r-2/r-3;
   grid-column: c-1/c-6;
   position: relative;
+  align-items: start;
   display: grid;
   grid-template-rows: [r-1] 60vw [r-2];
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3] 1fr [c-4];
@@ -2321,6 +2329,13 @@
   user-select: none;
   z-index: 5;
 }
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__carousel-gallery--pozycja-left-arrow {
+    font-size: 6vw;
+    margin: 0 10.5vw 0 10.5vw;
+    stroke: 0rem;
+  }
+}
 .layout__strona-glowna__cala-strona__carousel-gallery--pozycja-right-arrow {
   grid-row: r-1/r-2;
   grid-column: c-3/c-4;
@@ -2334,6 +2349,13 @@
   cursor: pointer;
   user-select: none;
   z-index: 5;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__cala-strona__carousel-gallery--pozycja-right-arrow {
+    font-size: 6vw;
+    margin: 0 10.5vw 0 10.5vw;
+    stroke: 0rem;
+  }
 }
 .layout__strona-glowna__cala-strona__carousel-gallery--nazwa-miejsca {
   grid-row: r-3/r-4;

@@ -65,9 +65,9 @@ import CircleLoader from "react-spinners/CircleLoader";
 const StronaGlowna = () => {
   // const [showMenuModal, setShowMenuModal] = useState(false);
 
-  //spinner
-  const [loading, setLoading] = useState(true);
-  const [color, setColor] = useState("#ffffff");
+  // //spinner
+  // const [loading, setLoading] = useState(true);
+  // const [color, setColor] = useState("#ffffff");
 
   //
   const reduxStateIsMenuOpen = useAppSelector(
@@ -311,7 +311,7 @@ const StronaGlowna = () => {
           ZOBACZ CO TUTAJ NA CIEBIE CZEKA!
         </div>
         <CarouselFotyINFINITI />
-        <div
+        {/* <div
           className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-carousel"]} ${styles["carousel-foty-infiniti"]} ${styles["layout__strona-glowna__cala-strona__carousel-gallery--loader"]}`}
         >
           <CircleLoader
@@ -326,7 +326,7 @@ const StronaGlowna = () => {
             aria-label="Loading Spinner"
             data-testid="loader"
           />
-        </div>
+        </div> */}
         <button
           className={
             styles[

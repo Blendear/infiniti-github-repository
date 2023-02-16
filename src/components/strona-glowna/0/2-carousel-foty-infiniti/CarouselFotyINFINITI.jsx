@@ -49,7 +49,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
 import { wybranyPoziomIMiejsceActions } from "../../../../store/redux/store-redux";
-
+import CircleLoader from "react-spinners/CircleLoader";
 //hook1 \/
 //
 // po poziomie data plik wybiera
@@ -57,6 +57,10 @@ import { wybranyPoziomIMiejsceActions } from "../../../../store/redux/store-redu
 // po nazwie fote znajduje
 
 const CarouselPoziomy = () => {
+  //spinner
+  const [loading, setLoading] = useState(true);
+  const [color, setColor] = useState("#ffffff");
+
   const reduxStatePoziomIMiejsceAktualne = useAppSelector(
     (state) => state.wybranyPoziomIMiejsceReducer
   );
@@ -165,7 +169,22 @@ const CarouselPoziomy = () => {
       {/* 
       //       B.2. Using ikonek i ich onClick'i
       */}
-
+      <div
+        className={` ${styles["layout__strona-glowna__cala-strona__carousel-gallery--loader"]}`}
+      >
+        <CircleLoader
+          color="#09adca"
+          loading={loading}
+          cssOverride={{
+            display: "block",
+            margin: "0 auto",
+            borderColor: "red",
+          }}
+          size={"10vw"}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
       <FaArrowAltCircleLeft
         className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-left-arrow"]} ${styles["carousel-foty-infiniti__arrow-left"]}`}
         onClick={handlerPrevFoto}
