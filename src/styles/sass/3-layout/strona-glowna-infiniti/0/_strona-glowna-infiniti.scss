@@ -1352,8 +1352,7 @@ $rozmiar-column-siatka-btn: 1fr;
           [c-6] 1fr
           [c-7] 1fr
           [c-8] 1fr
-          [c-9] 1fr
-          [c-10] 1fr;
+          [c-9] 1fr;
 
         padding: 5vw;
         // justify-self: center;
@@ -1380,7 +1379,7 @@ $rozmiar-column-siatka-btn: 1fr;
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-10;
 
-          margin: 5vw 0 0 0;
+          margin: 3vw 0 0 0;
           align-self: center;
           justify-self: center;
 
@@ -1401,17 +1400,21 @@ $rozmiar-column-siatka-btn: 1fr;
           background-color: #b861bc;
           align-self: start;
           justify-self: center;
+          font-size: 2.3vw;
+          transform: translateY(2vw);
 
           @media (orientation: landscape) {
             width: 22vw;
             aspect-ratio: 60/1;
 
             margin: 0 0 3vw 0;
+            transform: translateY(0);
+            // transform: translateY(2vw);
           }
         }
         @mixin tytul-godzin-otwarcia {
-          font-size: 5vw;
-          margin: 3vw 0 0 0;
+          font-size: 4vw;
+          margin: 4vw 0 2vw 0;
           @media (orientation: landscape) {
             font-size: 2vw;
           }
@@ -1606,6 +1609,8 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-row: r-4 / r-5;
                 @include grid-col-sauna();
                 color: #b861bc;
+
+                font-size: 2.5vw;
                 @media (orientation: landscape) {
                   font-size: 1.5vw;
                 }
@@ -1638,6 +1643,8 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-row: r-6 / r-7;
                 @include grid-col-sauna();
                 color: #b861bc;
+                font-size: 2.5vw;
+
                 @media (orientation: landscape) {
                   font-size: 1.5vw;
                 }
@@ -1669,6 +1676,7 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-row: r-8 / r-9;
                 @include grid-col-sauna();
                 color: #b861bc;
+                font-size: 2.5vw;
                 @media (orientation: landscape) {
                   font-size: 1.5vw;
                 }
@@ -1690,7 +1698,7 @@ $rozmiar-column-siatka-btn: 1fr;
             }
           }
           @mixin font-godzin-sauna {
-            font-size: 2.7vw;
+            font-size: 2.5vw;
             line-height: 4vw;
             @media (orientation: landscape) {
               font-size: 1.5vw;
@@ -1733,8 +1741,10 @@ $rozmiar-column-siatka-btn: 1fr;
               @include margin-sauna-lewo();
               @include font-godzin-sauna();
               align-self: start;
-              line-height: 1.3rem;
+              line-height: 3.2vw;
               margin-top: 0.5vw;
+              font-size: 2.3vw;
+
               @media (orientation: landscape) {
                 // transform: translateX(-2.5rem);
                 // font-size: 1vw;
@@ -1758,9 +1768,9 @@ $rozmiar-column-siatka-btn: 1fr;
               @include margin-sauna-prawo();
               @include font-godzin-sauna();
               align-self: start;
-              line-height: 1.7vw;
-
+              line-height: 3.2vw;
               margin-top: 0.5vw;
+              font-size: 2.3vw;
               @media (orientation: landscape) {
                 // transform: translateX(-2.5rem);
                 // font-size: 1vw;
