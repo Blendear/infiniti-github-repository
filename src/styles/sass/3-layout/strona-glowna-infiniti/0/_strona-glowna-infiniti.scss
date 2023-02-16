@@ -979,13 +979,12 @@ $rozmiar-column-siatka-btn: 1fr;
                 height: 100%;
 
                 &:active {
-                  background-color: rgba(255, 255, 255, 0.347);
-                  width: 4rem;
-                  height: 4rem;
-                  justify-self: center;
-                  align-self: center;
-                  // border: #000000;
-                  border-radius: 45%;
+                  background: rgb(255, 255, 255);
+                  background: radial-gradient(
+                    circle,
+                    rgba(255, 255, 255, 0.4542191876750701) 37%,
+                    rgba(148, 187, 233, 0) 38%
+                  );
                 }
               }
               &--minus-1 {
@@ -1349,14 +1348,34 @@ $rozmiar-column-siatka-btn: 1fr;
           [c-2] 1fr
           [c-3] 1fr
           [c-4] 1fr
-          [c-5] 1fr
+          [c-5] 0.5fr
           [c-6] 1fr
           [c-7] 1fr
           [c-8] 1fr
           [c-9] 1fr
-          [c-10];
+          [c-10] 1fr;
 
         padding: 5vw;
+        // justify-self: center;
+        line-height: 2vw;
+
+        @media (orientation: landscape) {
+          padding: 3.5vw;
+
+          grid-template-columns:
+            [c-0_break] 1fr
+            [c-1] 1fr
+            [c-2] 1fr
+            [c-3] 1fr
+            [c-4] 1fr
+            [c-5] 0fr
+            [c-6] 1fr
+            [c-7] 1fr
+            [c-8] 1fr
+            [c-9] 1fr
+            [c-10] 1fr
+            [c-10_break];
+        }
         &--tekst-tytulowy {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-10;
@@ -1366,6 +1385,10 @@ $rozmiar-column-siatka-btn: 1fr;
           justify-self: center;
 
           font-size: 5vw;
+          @media (orientation: landscape) {
+            font-size: 2vw;
+            margin: 0 0 0 0;
+          }
         }
         &--podkreslnik {
           grid-row: r-2 / r-3;
@@ -1378,20 +1401,22 @@ $rozmiar-column-siatka-btn: 1fr;
           background-color: #b861bc;
           align-self: start;
           justify-self: center;
+
+          @media (orientation: landscape) {
+            width: 22vw;
+            aspect-ratio: 60/1;
+
+            margin: 0 0 3vw 0;
+          }
         }
         @mixin tytul-godzin-otwarcia {
           font-size: 5vw;
           margin: 3vw 0 0 0;
+          @media (orientation: landscape) {
+            font-size: 2vw;
+          }
         }
-        @mixin linia-dzielaca {
-          width: 20vw;
-          aspect-ratio: 60/1;
-          margin: 2vw 0 2vw 0;
 
-          background-color: #b861bc;
-          // align-self: start;
-          // justify-self: center;
-        }
         &__klub {
           @mixin grid-col-klub {
             grid-column: c-1 / c-5;
@@ -1404,11 +1429,23 @@ $rozmiar-column-siatka-btn: 1fr;
               grid-row: r-3 / r-10;
               grid-column: c-1 / c-5;
               align-self: start;
+
+              @media (orientation: landscape) {
+                width: 80%;
+                justify-self: center;
+              }
             }
             &--dol {
               grid-row: r-3 / r-10;
               grid-column: c-1 / c-5;
               align-self: end;
+              // margin: 0 0 2vw 0;
+
+              @media (orientation: landscape) {
+                width: 80%;
+                justify-self: center;
+                margin: 0 0 1.5vw 0;
+              }
             }
           }
           &--tytul {
@@ -1417,7 +1454,21 @@ $rozmiar-column-siatka-btn: 1fr;
 
             @include tytul-godzin-otwarcia();
           }
+          @mixin linia-dzielaca {
+            width: 20vw;
+            aspect-ratio: 60/1;
+            margin: 2vw 0 2vw 0;
 
+            background-color: #b861bc;
+            @media (orientation: landscape) {
+              margin: 2vw 0 2vw 0;
+
+              width: 14vw;
+              aspect-ratio: 50/1;
+            }
+            // align-self: start;
+            // justify-self: center;
+          }
           &--linia-dzielaca {
             &--1 {
               grid-row: r-4 / r-5;
@@ -1426,12 +1477,22 @@ $rozmiar-column-siatka-btn: 1fr;
 
               width: 28vw;
               aspect-ratio: 60/1;
+              @media (orientation: landscape) {
+                width: 18vw;
+                aspect-ratio: 55/1;
+              }
+
               // align-self: start;
             }
             &--2 {
               grid-row: r-6 / r-7;
               @include grid-col-klub();
               @include linia-dzielaca();
+
+              @media (orientation: landscape) {
+                // width: 18vw;
+                // aspect-ratio: 55/1;
+              }
             }
             &--3 {
               grid-row: r-8 / r-9;
@@ -1442,6 +1503,11 @@ $rozmiar-column-siatka-btn: 1fr;
           @mixin font-godzin-klub {
             font-size: 3.6vw;
             line-height: 5vw;
+
+            @media (orientation: landscape) {
+              font-size: 1.5vw;
+              line-height: 2vw;
+            }
           }
           &--rozpiska-godzinowa {
             &--1 {
@@ -1475,11 +1541,20 @@ $rozmiar-column-siatka-btn: 1fr;
               grid-row: r-3 / r-10;
               grid-column: c-6 / c-10;
               align-self: start;
+              @media (orientation: landscape) {
+                width: 80%;
+                justify-self: center;
+              }
             }
             &--dol {
               grid-row: r-3 / r-10;
               grid-column: c-6 / c-10;
               align-self: end;
+              @media (orientation: landscape) {
+                width: 80%;
+                justify-self: center;
+                margin: 0 0 1.5vw 0;
+              }
             }
           }
           &--tytul {
@@ -1494,6 +1569,14 @@ $rozmiar-column-siatka-btn: 1fr;
             margin: 0 1vw 0 1vw;
 
             background-color: #b861bc;
+            @media (orientation: landscape) {
+              width: 4.2vw;
+              margin: 0 0 0 0;
+              aspect-ratio: 12/1;
+              // aspect-ratio: 8/1;
+              // margin: 0 0 0 0;
+              // justify-self: start;
+            }
           }
           &--linia-dzielaca {
             &--1 {
@@ -1503,6 +1586,10 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-column: c-6 / c-7;
                 @include linia-sauna-podwojna();
                 justify-self: end;
+
+                @media (orientation: landscape) {
+                  transform: translateX(2.5rem);
+                }
               }
               &--prawo {
                 grid-row: r-4 / r-5;
@@ -1510,11 +1597,18 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-column: c-9 / c-10;
                 @include linia-sauna-podwojna();
                 justify-self: start;
+
+                @media (orientation: landscape) {
+                  transform: translateX(-2.5rem);
+                }
               }
               &--tekst {
                 grid-row: r-4 / r-5;
                 @include grid-col-sauna();
                 color: #b861bc;
+                @media (orientation: landscape) {
+                  font-size: 1.5vw;
+                }
               }
             }
             &--2 {
@@ -1524,6 +1618,10 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-column: c-6 / c-7;
                 @include linia-sauna-podwojna();
                 justify-self: end;
+
+                @media (orientation: landscape) {
+                  transform: translateX(2.5rem);
+                }
               }
               &--prawo {
                 grid-row: r-6 / r-7;
@@ -1531,11 +1629,18 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-column: c-9 / c-10;
                 @include linia-sauna-podwojna();
                 justify-self: start;
+
+                @media (orientation: landscape) {
+                  transform: translateX(-2.5rem);
+                }
               }
               &--tekst {
                 grid-row: r-6 / r-7;
                 @include grid-col-sauna();
                 color: #b861bc;
+                @media (orientation: landscape) {
+                  font-size: 1.5vw;
+                }
               }
             }
             &--3 {
@@ -1545,6 +1650,9 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-column: c-6 / c-7;
                 @include linia-sauna-podwojna();
                 justify-self: end;
+                @media (orientation: landscape) {
+                  transform: translateX(2.5rem);
+                }
               }
               &--prawo {
                 grid-row: r-8 / r-9;
@@ -1552,23 +1660,42 @@ $rozmiar-column-siatka-btn: 1fr;
                 grid-column: c-9 / c-10;
                 @include linia-sauna-podwojna();
                 justify-self: start;
+
+                @media (orientation: landscape) {
+                  transform: translateX(-2.5rem);
+                }
               }
               &--tekst {
                 grid-row: r-8 / r-9;
                 @include grid-col-sauna();
                 color: #b861bc;
+                @media (orientation: landscape) {
+                  font-size: 1.5vw;
+                }
               }
             }
           }
           @mixin margin-sauna-lewo {
             margin: 0 1vw 0 3vw;
+            @media (orientation: landscape) {
+              margin: 0 1vw 0 0;
+              justify-self: end;
+            }
           }
           @mixin margin-sauna-prawo {
             margin: 0 3vw 0 1vw;
+            @media (orientation: landscape) {
+              margin: 0 0 0 1vw;
+              justify-self: start;
+            }
           }
           @mixin font-godzin-sauna {
             font-size: 2.7vw;
             line-height: 4vw;
+            @media (orientation: landscape) {
+              font-size: 1.5vw;
+              line-height: 2vw;
+            }
           }
           &--rozpiska-godzinowa {
             &--1-a {
@@ -1608,6 +1735,21 @@ $rozmiar-column-siatka-btn: 1fr;
               align-self: start;
               line-height: 1.3rem;
               margin-top: 0.5vw;
+              @media (orientation: landscape) {
+                // transform: translateX(-2.5rem);
+                // font-size: 1vw;
+                line-height: 1.7vw;
+              }
+              // &--godziny-pierwsze {
+              //   @include grid-col-sauna();
+              //   grid-row: r-10 / r-11;
+              //   grid-column: c-6 / c-8;
+              //   @include margin-sauna-lewo();
+              //   @include font-godzin-sauna();
+              //   align-self: start;
+              //   line-height: 1.3rem;
+              //   margin-top: 0.5vw;
+              // }
             }
             &--3-b {
               @include grid-col-sauna();
@@ -1616,9 +1758,14 @@ $rozmiar-column-siatka-btn: 1fr;
               @include margin-sauna-prawo();
               @include font-godzin-sauna();
               align-self: start;
-              line-height: 1.3rem;
+              line-height: 1.7vw;
 
               margin-top: 0.5vw;
+              @media (orientation: landscape) {
+                // transform: translateX(-2.5rem);
+                // font-size: 1vw;
+                line-height: 1.7vw;
+              }
             }
           }
         }
