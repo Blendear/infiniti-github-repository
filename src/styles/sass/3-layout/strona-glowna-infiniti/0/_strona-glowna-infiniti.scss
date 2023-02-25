@@ -124,11 +124,12 @@ $rozmiar-column-siatka-btn: 1fr;
           align-self: end;
           margin: 0 0 9.3vw 0;
           justify-self: center;
+
           @media (orientation: landscape) {
             // width: 15vw;
             // aspect-ratio: 2/1;
-            width: 8%;
-            margin: 0 0 2.3vw 0;
+            width: 12%;
+            margin: auto 0 auto 0;
           }
         }
         &--fota {

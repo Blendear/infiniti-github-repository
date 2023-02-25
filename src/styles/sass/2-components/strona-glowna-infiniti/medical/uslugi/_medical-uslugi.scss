@@ -11,8 +11,11 @@ $rozmiar-rowa: minmax(0rem, max-content);
       display: grid;
 
       grid-template-rows:
+      // \/ 2_5 zostal dpdany pod dodanie tytulu - hook1 lepije robic dynamiczne rowy.
+
         [r-1] $rozmiar-rowa
         [r-2] $rozmiar-rowa
+        [r-2_5] 1fr
         [r-3] $rozmiar-rowa
         [r-4] $rozmiar-rowa
         [r-5];
@@ -53,18 +56,32 @@ $rozmiar-rowa: minmax(0rem, max-content);
         }
       }
       &__0-nazwa-podstrony {
-        grid-row: r-2 / r-3;
+        grid-row: r-2 / r-2_5;
         grid-column: c-2 / c-11;
         @media (orientation: landscape) {
           display: grid;
           justify-items: center;
         }
       }
+      &__opis-korzystania-ze-strony {
+        grid-row: r-2_5 / r-3;
+        grid-column: c-2 / c-11;
+
+        font-size: 3.5vw;
+        text-align: center;
+        align-self: center;
+        // width: 70%;
+
+        @media (orientation: landscape) {
+          font-size: 2vw;
+          // margin: 6vw 2vw 0 2vw;
+        }
+      }
       &__lista-zabiegow {
         grid-row: r-3/ r-4;
         grid-column: c-1 / c-12;
         display: grid;
-        margin: 0 2rem 0 2rem;
+        margin: 4vw 2rem 0 2rem;
 
         grid-template-rows:
           [r-1] $rozmiar-rowa
@@ -73,7 +90,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
         grid-template-columns:
           [c-1] 1fr
           [c-2];
-
+        @media (orientation: landscape) {
+          margin: 2vw 2rem 3vw 2rem;
+        }
         &__konkretny-zabieg-container {
           display: grid;
           grid-template-rows:

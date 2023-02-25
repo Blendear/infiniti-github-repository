@@ -165,6 +165,9 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
         @include menu-elements();
         grid-row: r-1 / r-2;
         grid-column: c-7 / c-8;
+
+        display: grid;
+        justify-items: start;
       }
     }
 

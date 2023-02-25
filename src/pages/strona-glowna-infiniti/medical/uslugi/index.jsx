@@ -71,6 +71,16 @@ const MedicalUslugi = () => {
       </div>
       <div
         className={
+          styles[
+            "layout__medical-uslugi__cala-strona__opis-korzystania-ze-strony"
+          ]
+        }
+      >
+        WYBIERZ <strong>ZABIEG</strong> & <strong>SZCZEGÓŁY</strong>, KTÓRE CIĘ
+        INTERESUJĄ
+      </div>
+      <div
+        className={
           styles["layout__medical-uslugi__cala-strona__lista-zabiegow"]
         }
       >
