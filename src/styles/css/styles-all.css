@@ -2304,10 +2304,21 @@
   align-items: center;
   justify-items: center;
 }
+@media (orientation: landscape) {
+  .layout__strona-glowna__call-btn {
+    height: 5vw;
+    width: 5vw;
+  }
+}
 .layout__strona-glowna__call-btn--svg {
   color: rgb(0, 0, 0);
   font-size: 2.2rem;
   height: 2.8rem;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__call-btn--svg {
+    font-size: 2vw;
+  }
 }
 .layout__strona-glowna__messenger-btn {
   position: fixed;
@@ -2323,10 +2334,23 @@
   align-items: center;
   justify-items: center;
 }
+@media (orientation: landscape) {
+  .layout__strona-glowna__messenger-btn {
+    height: 5vw;
+    width: 5vw;
+    bottom: 7.5vw;
+  }
+}
 .layout__strona-glowna__messenger-btn--svg {
   color: rgb(0, 0, 0);
   font-size: 2.2rem;
   height: 2.8rem;
+}
+@media (orientation: landscape) {
+  .layout__strona-glowna__messenger-btn--svg {
+    font-size: 2.5vw;
+    height: 2.9vw;
+  }
 }
 .layout__strona-glowna__cala-strona {
   position: relative;
