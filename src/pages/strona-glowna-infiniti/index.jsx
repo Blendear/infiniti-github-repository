@@ -56,6 +56,7 @@ import { CSSProperties } from "react";
 
 import CircleLoader from "react-spinners/CircleLoader";
 
+import { carouselData } from "../../components/strona-glowna/0/2-carousel-foty-infiniti/Data";
 //
 // Dorób classy dla każdego elementu   &   przypisz je placeholderom przedstawiajacymi fragmnenty daneo fragmentu (np. strzalki, foty i obramowki galerii carousel fot miejsc)
 //
@@ -341,9 +342,19 @@ const StronaGlowna = () => {
               ]
             }
           >
-            {`${reduxStatePoziomIMiejsceAktualne.miejsce
+            {/* {`${reduxStatePoziomIMiejsceAktualne.miejsce
               .toUpperCase()
-              .replace(/-/g, " ")}`}
+              .replace(/-/g, " ")}`} */}
+
+            {/*  \/ znajduje miejsce o adekwatnej nazwie & używa jego property "wysiwetlanaNazwa" - przez chujowa architkeutre wstepna musialem dwa osobne properties zrobic*/}
+
+            {carouselData
+              .find(
+                (miejsce) =>
+                  miejsce.nazwaMiejsca ===
+                  reduxStatePoziomIMiejsceAktualne.miejsce
+              )
+              .wyswietlanaNazwa.toUpperCase()}
           </div>
           <div
             className={

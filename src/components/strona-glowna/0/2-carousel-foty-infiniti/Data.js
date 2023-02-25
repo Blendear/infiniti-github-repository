@@ -116,6 +116,7 @@ export const carouselData = [
   {
     nazwaMiejsca: "crossfit-box",
     fotyTegoMiejsca: [crossfitBox1],
+    wyswietlanaNazwa: "Crossfit Box",
   },
 
   {
@@ -125,6 +126,7 @@ export const carouselData = [
       kuzniaTytanowPierwsza2,
       kuzniaTytanowPierwsza3,
     ],
+    wyswietlanaNazwa: "Duże Ciężary 1",
   },
   {
     nazwaMiejsca: "kuznia-tytanow-2",
@@ -135,24 +137,39 @@ export const carouselData = [
       kuzniaTytanowDruga4,
       kuzniaTytanowDruga5,
     ],
+    wyswietlanaNazwa: "Duże Ciężary 2",
   },
   {
     nazwaMiejsca: "mma",
     fotyTegoMiejsca: [mma1, mma2, mma3, mma4, mma5],
+    wyswietlanaNazwa: "MMA",
   },
   {
     nazwaMiejsca: "szatnia-damska",
     fotyTegoMiejsca: [szatniaDamska1],
+    wyswietlanaNazwa: "Szatnia Damska",
   },
   {
     nazwaMiejsca: "szatnia-meska",
     fotyTegoMiejsca: [szatniaMeska1],
+    wyswietlanaNazwa: "Szatnia Męska",
   },
   {
     nazwaMiejsca: "sauna",
     fotyTegoMiejsca: [sauna1],
+    wyswietlanaNazwa: "Sauna",
   },
   // 0
+  {
+    nazwaMiejsca: "arkadia",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Arkadia",
+  },
+  {
+    nazwaMiejsca: "manager",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Manager",
+  },
   {
     nazwaMiejsca: "fizjoterapia-1",
     fotyTegoMiejsca: [
@@ -162,28 +179,69 @@ export const carouselData = [
       fizjoterapiaPierwsza4,
       fizjoterapiaPierwsza5,
     ],
+    wyswietlanaNazwa: "Fizjoterapia 1",
   },
   {
     nazwaMiejsca: "fizjoterapia-2",
     fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Fizjoterapia 2",
   },
   {
     nazwaMiejsca: "restauracja",
     fotyTegoMiejsca: [restauracja1, restauracja2, restauracja3],
+    wyswietlanaNazwa: "Restauracja",
+  },
+  {
+    nazwaMiejsca: "taras",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Taras",
+  },
+  {
+    nazwaMiejsca: "analiza-skladu-ciala",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Analiza Składu Ciała",
+  },
+  {
+    nazwaMiejsca: "wodor",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Inhalacja Wodoru",
+  },
+  {
+    nazwaMiejsca: "la-ola",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "La 'Ola",
+  },
+  {
+    nazwaMiejsca: "sfd",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "SFD",
+  },
+  {
+    nazwaMiejsca: "naturoterapia",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Naturoterapia",
+  },
+  {
+    nazwaMiejsca: "solarium",
+    fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Solarium",
   },
   {
     nazwaMiejsca: "recepcja",
     fotyTegoMiejsca: [recepcja1],
+    wyswietlanaNazwa: "Recepcja",
   },
 
   // 1
   {
     nazwaMiejsca: "chillera-utopia",
     fotyTegoMiejsca: [],
+    wyswietlanaNazwa: "Chillera Utopia",
   },
   {
     nazwaMiejsca: "maty",
     fotyTegoMiejsca: [maty1],
+    wyswietlanaNazwa: "Maty",
   },
   {
     nazwaMiejsca: "cialo-i-umysl",
@@ -196,10 +254,12 @@ export const carouselData = [
       cialoIUmysl6,
       cialoIUmysl7,
     ],
+    wyswietlanaNazwa: "Ciało I Umysł",
   },
   {
     nazwaMiejsca: "squash",
     fotyTegoMiejsca: [squash1, squash2],
+    wyswietlanaNazwa: "Squash",
   },
   {
     nazwaMiejsca: "strefa-maszyn-1",
@@ -209,6 +269,7 @@ export const carouselData = [
       strefaMaszynPierwsza4,
       strefaMaszynPierwsza3,
     ],
+    wyswietlanaNazwa: "Strefa Maszyn 1",
   },
   {
     nazwaMiejsca: "strefa-maszyn-2",
@@ -220,6 +281,7 @@ export const carouselData = [
       strefaMaszynDruga4,
       strefaMaszynDruga5,
     ],
+    wyswietlanaNazwa: "Strefa Maszyn 2",
   },
   {
     nazwaMiejsca: "strefa-maszyn-3",
@@ -228,6 +290,7 @@ export const carouselData = [
       strefaMaszynTrzecia2,
       strefaMaszynTrzecia3,
     ],
+    wyswietlanaNazwa: "Strefa Maszyn 3",
   },
   {
     nazwaMiejsca: "strefa-wolnych-ciezarow",
@@ -237,11 +300,13 @@ export const carouselData = [
       wolneCiezary3,
       wolneCiezary4,
     ],
+    wyswietlanaNazwa: "S. Wolnych Ciężarów",
   },
 
   {
     nazwaMiejsca: "boisko",
     fotyTegoMiejsca: [boisko1, boisko2, boisko3, boisko4, boisko5, boisko6],
+    wyswietlanaNazwa: "Boisko",
   },
 
   // 2
@@ -249,17 +314,21 @@ export const carouselData = [
   {
     nazwaMiejsca: "masaz",
     fotyTegoMiejsca: [masaz1],
+    wyswietlanaNazwa: "Masaż",
   },
   {
     nazwaMiejsca: "sala-ic",
     fotyTegoMiejsca: [salaIC1, salaIC2, salaIC3],
+    wyswietlanaNazwa: "Sala IC",
   },
   {
     nazwaMiejsca: "sala-zolta",
     fotyTegoMiejsca: [salaZolta1, salaZolta2, salaZolta3],
+    wyswietlanaNazwa: "Sala Żółta",
   },
   {
     nazwaMiejsca: "strefa-cardio",
     fotyTegoMiejsca: [strefaCardio1, strefaCardio2, strefaCardio3],
+    wyswietlanaNazwa: "Strefa Cardio",
   },
 ];
