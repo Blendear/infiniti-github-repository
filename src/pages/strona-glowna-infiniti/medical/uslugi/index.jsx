@@ -666,7 +666,7 @@ const MedicalUslugi = () => {
               <li>choroby nowotworowe</li>
               <li>nadczynność tarczycy</li>
               <li>gruźlica</li>
-              <li> ostre infekcje</li>
+              <li>ostre infekcje</li>
               <li>ciężkie i nie unormowane choroby serca i układu krążenia</li>
               <li>choroby układu pokarmowego z ryzykiem krwawienia</li>
             </ul>
