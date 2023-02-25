@@ -274,16 +274,34 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>zmniejszenie bólu, np. kręgosłupa</li>
+              <li>zwiększanie sprawności mięśniu</li>
+              <li>podniesienie ogólnej odporności</li>
+              <li>
+                rehabilitacyjne korzyści, w szczególności wspierające
+                fizykoterapię, np. aby zregenerować uszkodzony nerw obwodowy
+              </li>
+              <li>
+                modelowanie sylwetki, poprzez zmniejszenie obwodu tkanki
+                tłuszczowej, przyspieszenie produkcji kolagenu i elastyny
+              </li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                uszkodzonego mięśnia, wymagającego rehabilitacji i/lub
+                fizykoterapii
+              </li>
+              <li>porażenia</li>
+              <li>niedowładu typu wiodkiego</li>
+              <li>
+                potrzeby niedopuszczenia do degeneracji odnerwionego mięśnia
+              </li>
+              <li>bólu kręgosłupa</li>
+              <li>zmniejszonej odporności ogólnej</li>
+              <li>celulitu</li>
+              <li>nadmiernej, niechcianej tkanki tłuszczowej</li>
             </ul>
           }
           j={
@@ -308,9 +326,12 @@ const MedicalUslugi = () => {
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>choroby serca</li>
+              <li>epilepsja</li>
+              <li>stany zpalane skóry</li>
+              <li>spastyczne porażenia mięśni</li>
+              <li>żyki</li>
+              <li>guzki i nowotwory o niewiadomym pochodzeniu</li>
             </ul>
           }
           tytulZAbiegu="ELEKTROSTYMULACJA"
@@ -445,16 +466,33 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>działanie przeciwbólowe</li>
+              <li>pobudzenie mięśni do skurczu</li>
+              <li>rozszerzenie naczyń krwionośnych</li>
+              <li>usprawnienie krążenia obwodowego</li>
+              <li>
+                usprawnienie procesów odżywczych i przemiany materii w tkankach
+              </li>
+              <li>usprawnienie perystaltyki jelit</li>
+              <li>redukcja obrzęków</li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>nerwobóle</li>
+              <li>choroby o podłożu zwyrodnieniowo–wytwórczym</li>
+
+              <li>
+                dysfunkcje mięśni w obszarze miednicy mniejszej (np.
+                nietrzymanie moczu)
+              </li>
+              <li>
+                ból pleców, krzyża, kręgosłupa lub zespoły bólowe narządu ruchu{" "}
+              </li>
+              <li>obrzęki</li>
+              <li>zaparć</li>
+              <li>zaburzenia motoryki jelit</li>
+              <li>bóli menstruacyjnych u kobiet</li>
             </ul>
           }
           j={
@@ -473,18 +511,28 @@ const MedicalUslugi = () => {
               <li>średni czas zabiegu wynosi ok. 6-20 minut</li>
               <li>
                 {
-                  "dokładnie rzecz biorąc - Prądy interferencyjne (zwane również prądami Nemeca) to prądy średniej częstotliwości modulowane w amplitudzie z małą częstotliwością. Prądy interferencyjne przede wszystkim działają przeciwbólowo, pobudzają mięśnie do skurczu, rozszerzają naczynia krwionośne i usprawniają krążenie obwodowe. Dodatkowo zabiegi z wykorzystaniem tego rodzaju prądu usprawniają procesy odżywcze i przemiany materii w tkankach."
+                  "dokładnie rzecz biorąc - Prądy interferencyjne (zwane również prądami Nemeca) to prądy średniej częstotliwości modulowane w amplitudzie z małą częstotliwością. "
                 }
               </li>
             </ul>
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>gorączka</li>
+              <li>nowotwór</li>
+              <li>choroby zakaźne</li>
+              <li>
+                obecność metalowych implantów w miejscu zabiegu, np. w przypadku
+                zaimplantowanego rozrusznika serca, nie można wykonywać zabiegu
+                w okolicy klatki piersiowej
+              </li>
+              <li>ciąża</li>
+              <li>
+                zmiany troficzne i niektóre schorzenia dermatologiczne powłok
+                skórnych
+              </li>
+              <li>stosunkowo świeże przerwania ciągłości tkanek</li>
             </ul>
-            //herehere14.02.2023 - dopisz /\
           }
           tytulZAbiegu="INTERFERENCJA"
           svgComponent={<SVGElektro3 mojKolor={kolorSVG} />}
@@ -492,18 +540,26 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>działanie przeciwbólowe</li>
+              <li>obniżenie napięcia mięśni</li>
+              <li>ozszerzenie naczyń krwionośnych</li>
+              <li>przyrost masy mięśniowej</li>
+              <li>
+                elektrostymulacja mięśni i nerwów nieznacznie uszkodzonych
+              </li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>zespołów bólowych</li>
+              <li>nerwobólu</li>
+              <li>dyskopatii</li>
+              <li>zapalenia okołostawowego</li>
+              <li>zmiany po urazach narządu ruchu</li>
+              <li>sinicy samorodnej kończyn</li>
+              <li>półpaśca</li>
+              <li>zaniku mięśni z nieczynności</li>
             </ul>
-            //herehere14.02.2023 -  dokoncz
           }
           j={
             <ul>
@@ -543,7 +599,19 @@ const MedicalUslugi = () => {
           }
           p={
             <ul>
-              <li></li>
+              <li>ciąża</li>
+              <li>gruźlica</li>
+              <li>nowotwór</li>
+              <li>przerwanie ciągłości skóry w miejscu zabiegu</li>
+              <li>choroby skóry</li>
+              <li>
+                nadwrażliwość na reakcje fizykochemiczne występujące w wyniku
+                działania prądu
+              </li>
+              <li>rozrusznik serca</li>
+              <li>gorączka</li>
+              <li>infekcje</li>
+              <li>schorzenia metaboliczne</li>
             </ul>
           }
           tytulZAbiegu="DIADYNAMIKA"
@@ -690,10 +758,22 @@ const MedicalUslugi = () => {
               <li></li>
               <li></li>
               <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
             </ul>
           }
           d={
             <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
               <li></li>
               <li></li>
               <li></li>
@@ -704,10 +784,22 @@ const MedicalUslugi = () => {
               <li></li>
               <li></li>
               <li>{"dokładnie rzecz biorąc - ___"}</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
             </ul>
           }
           p={
             <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
               <li></li>
               <li></li>
               <li></li>
