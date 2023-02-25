@@ -87,6 +87,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [c-3];
           grid-auto-flow: row;
 
+          margin: 0 0 1vw 0;
+
           @media (orientation: landscape) {
             grid-template-columns:
               [c-1] 0.25fr
@@ -180,7 +182,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             z-index: 5;
 
             width: 0.6rem;
-            height: 95%;
+            height: 100%;
             align-self: center;
             justify-self: center;
 

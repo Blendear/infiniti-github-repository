@@ -90,10 +90,26 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [c-3];
           grid-auto-flow: row;
           //hook1 - NAJPIERW JEDEN / DWA ORYGINALNE DATA, pozniej dopiero perfect styling, I TO REMEM NAJLEPIJE
+          @media (orientation: landscape) {
+            grid-template-rows:
+              [r-1] 4rem
+              [r-empty] 3vw
+              [r-2] $rozmiar-rowa
+              [r-3] 3vw
+              [r-empty];
+
+            grid-template-columns:
+              [c-0] 2rem
+              [c-1] 0.35fr
+              [c-2] 6fr;
+          }
+
           &--tytul-ikona-i-klocek-gradientowy {
             grid-row: r-1/ r-empty;
             grid-column: c-1 / c-2_5;
             z-index: 5;
+
+            width: max(20rem, 30vw);
 
             background: medical-variables.$medical--klocek-gradient-part-1;
             background: -moz-linear-gradient(
@@ -150,6 +166,19 @@ $rozmiar-rowa: minmax(0rem, max-content);
             display: grid;
             row-gap: 5vw;
 
+            @media (orientation: landscape) {
+              margin: 0.5vw 0 0.5vw 0;
+              margin-right: 7rem;
+
+              grid-auto-flow: row;
+
+              // grid-template-columns: repeat(3, 1fr);
+              grid-template-columns: 1.8fr 1fr 1fr; //hook2 - na sile zwiekszylem, zeby nimie i nazwisko sie
+              //rozciagalo na maksa, skoro i tak tylko 1 masazystka
+
+              column-gap: 2rem;
+            }
+
             &__konkretna-osoba-container {
               display: grid;
               grid-template-rows:
@@ -171,6 +200,23 @@ $rozmiar-rowa: minmax(0rem, max-content);
               // height: 16rem;
               aspect-ratio: 4/1;
               // white-space: nowrap;
+
+              @media (orientation: landscape) {
+                width: 28vw;
+                grid-template-rows:
+                  [r-0] max-content //empty gora
+                  [r-1] max-content
+                  [r-2] max-content
+                  [r-3] max-content
+                  [r-4] max-content//empty gdol
+                  [r-6];
+
+                grid-template-columns:
+                  [c-1] 2fr
+                  [c-2] minmax(0.5rem, 1rem)
+                  [c-3] 2fr
+                  [c-4];
+              }
               &--fota {
                 grid-row: r-1/ r-5;
                 grid-column: c-1 / c-2;
@@ -189,6 +235,10 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 // padding: 1vw 3vw 1vw 3vw;
                 // margin: 2vw 0 2vw 0;
                 transition: all 0.5s;
+
+                @media (orientation: landscape) {
+                  aspect-ratio: 1/1;
+                }
                 &:hover {
                   transform: scale(1.2);
                   transition: all 0.5s;
@@ -208,6 +258,10 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 font-size: 2rem;
                 color: #088b9a;
                 font-weight: bold;
+
+                @media (orientation: landscape) {
+                  font-size: min(2.2rem, 2vw);
+                }
               }
               &--rola-dokladna {
                 grid-row: r-2/ r-3;
@@ -215,8 +269,13 @@ $rozmiar-rowa: minmax(0rem, max-content);
 
                 font-size: 1.2rem;
 
-                color: #484848;
+                // color: #484848;
+                color: #6e6e6e;
                 font-weight: 600;
+
+                @media (orientation: landscape) {
+                  font-size: min(1.7rem, 1.7vw);
+                }
               }
 
               &--tresc-tekst {
@@ -259,6 +318,10 @@ $rozmiar-rowa: minmax(0rem, max-content);
                     align-self: center;
                     font-size: 1.1rem;
                     color: #088b9a;
+
+                    @media (orientation: landscape) {
+                      font-size: min(1.7rem, 1.2vw);
+                    }
                   }
                   & svg:hover {
                     transform: scale(1.2);

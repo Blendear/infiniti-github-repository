@@ -41,6 +41,17 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
     aspect-ratio: 8/1;
     position: fixed;
     z-index: 100;
+    //wyśrodkowywanie \/ w mobilnym view
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 2.5vw;
+    @media (orientation: landscape) {
+      top: 1.5%;
+      //"na prawo" przy desktop view === rozkaz "pojdz na maxa na lewo  & transformem odbij o wielkosc navbara w lewo i ciut wiecej, pod margin effect
+      left: 100%;
+
+      transform: translate(-102.5%, 0);
+    }
 
     @include my-media-query("min", 35em) {
       width: min(45rem, 55vw);
@@ -77,7 +88,7 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
       width: 100%;
       height: 100%;
       // _______________________________ Stylizacja - Self _______________________________
-      font-size: 7vw; //trap1 - svg === FONT SIZE, nie widthem rozmiar określasz   &   rozmiar koniecznie classą zrob, nie inline styleami. bo szukasz pozniej 2 godiznydlaczego classa jest nadpisywana
+      font-size: 6.2vw; //trap1 - svg === FONT SIZE, nie widthem rozmiar określasz   &   rozmiar koniecznie classą zrob, nie inline styleami. bo szukasz pozniej 2 godiznydlaczego classa jest nadpisywana
 
       @include my-media-query("min", 25em) {
         font-size: min(7vw, 3.5rem);
@@ -94,8 +105,8 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
     @mixin wyglad-tekstu {
       // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rozmiary & Pozycjonowanie - Self ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
       font-size: 1.1rem;
-      @include my-media-query("min", 43.75em) {
-        font-size: 1.4rem;
+      @media (orientation: landscape) {
+        font-size: max(1.55rem, 1vw);
       }
       // _______________________________ Stylizacja - Self _______________________________
       -webkit-tap-highlight-color: transparent;

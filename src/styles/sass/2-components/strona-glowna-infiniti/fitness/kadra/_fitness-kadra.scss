@@ -81,13 +81,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
         grid-row: r-2 / r-3;
         grid-column: c-2 / c-11;
         @media (orientation: landscape) {
-          // width: 15vw;
-          // aspect-ratio: 4/1;
           display: grid;
           justify-items: center;
-          // align-self: start;
-          // width: 5rem;
-          // height: 5rem;
         }
       }
       &__lista-rol {
@@ -346,11 +341,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                     }
                     color: fitness-variables.$fitness--bordowy;
                   }
-                  & svg {
-                    @media (orientation: landscape) {
-                      // font-size: min(1.7rem, 0.2vw);
-                    }
-                  }
+
                   & svg:hover {
                     transform: scale(1.2);
                     transition: all 0.5s;

@@ -101,7 +101,7 @@ const ZabiegKonkretny = (props) => {
           svgIcon={<TiFlag />}
         />
       </div>
-      {props.isRozwiniety !== true && <div style={{ color: "white" }}>I</div>}
+      {/* {props.isRozwiniety !== true && <div style={{ color: "white" }}>I</div>} */}
     </div>
   );
 };
