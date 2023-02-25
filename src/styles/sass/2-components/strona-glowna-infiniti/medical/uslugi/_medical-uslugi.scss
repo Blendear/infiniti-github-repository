@@ -81,7 +81,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
         grid-row: r-3/ r-4;
         grid-column: c-1 / c-12;
         display: grid;
-        margin: 4vw 2rem 0 2rem;
+        margin: 4vw 2rem 5vw 2rem;
 
         grid-template-rows:
           [r-1] $rozmiar-rowa

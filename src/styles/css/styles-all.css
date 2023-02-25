@@ -932,7 +932,7 @@
   grid-row: r-3/r-4;
   grid-column: c-1/c-12;
   display: grid;
-  margin: 4vw 2rem 0 2rem;
+  margin: 4vw 2rem 5vw 2rem;
   grid-template-rows: [r-1] minmax(0rem, max-content) [r-2];
   grid-template-columns: [c-1] 1fr [c-2];
 }

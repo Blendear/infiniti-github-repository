@@ -755,54 +755,54 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Wzmocnienie naturalnej odporności</li>
+              <li>Dotlenienie i poprawienia ogólnego zdrowia organizmu</li>
+              <li>Poprawienie jakości snu</li>
+              <li>Przywrócenie witalności i zregenerowanie organizmu</li>
+              <li>Opóźnienie procesu starzenia</li>
+              <li>Poprawienie kondycji i wydolności organizmu</li>
             </ul>
           }
           d={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>chęci spowolnienia efektów starzenia organizmu</li>
+              <li>osłabionej odporności</li>
+              <li>
+                potrzeby poprawy jakości życia w chorobach przewlekłych,
+                opóźnianie procesów starzenia
+              </li>
+              <li>
+                chęci wzmocnienia naturalnej odporności, wydolności i ogólnego
+                zdrowia organizmu
+              </li>
+              <li>chorób sercowo-naczyniowych</li>
+              <li>chorób mózgowo-naczyniowych</li>
+              <li>nowotworów</li>
+              <li>chorób metabolizmu</li>
+              <li>chorób i zaburzeń układu oddechowego</li>
             </ul>
           }
           j={
             <ul>
-              <li></li>
-              <li></li>
-              <li>{"dokładnie rzecz biorąc - ___"}</li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                Wodór podaje się do organizmu poprzez przewód nosowy. Inhalacja
+                wodoru jest najskuteczniejszym sposobem na wprowadzenie wodoru
+                do organizmu
+              </li>
+              <li>Wodór podaje się do organizmu poprzez przewód nosowy</li>
+
+              <li>
+                Wdychanie wodoru osiąga maksymalny poziom w osoczu w około 30
+                minut
+              </li>
+              <li>
+                Wodór utrzymuje się w organizmie do 30 godzin po inhalacji.
+              </li>
             </ul>
           }
           p={
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Brak. Nie posiada skutków ubocznych</li>
             </ul>
           }
           tytulZAbiegu="INHALACJA AKT. WODORU"
