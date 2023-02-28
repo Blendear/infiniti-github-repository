@@ -300,7 +300,7 @@ export const carouselData = [
       wolneCiezary3,
       wolneCiezary4,
     ],
-    wyswietlanaNazwa: "S. Wolnych Ciężarów",
+    wyswietlanaNazwa: "Wolne Ciężary",
   },
 
   {
