@@ -61,6 +61,12 @@ import solarium2 from "../../../../../public/images/.dedykowane-do-strony-konkre
 import laOla1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/la-ola/la-ola-1.png";
 import laOla2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/la-ola/la-ola-2.png";
 
+import arkadia1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-1.png";
+import arkadia2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-2.png";
+import arkadia3 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-3.png";
+import arkadia4 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-4.png";
+import arkadia5 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-5.png";
+
 // 1
 
 import squash1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/squash/squash-1.png";
@@ -174,7 +180,7 @@ export const carouselData = [
   // 0
   {
     nazwaMiejsca: "arkadia",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [arkadia1, arkadia2, arkadia3, arkadia4, arkadia5],
     wyswietlanaNazwa: "Arkadia",
   },
   {
