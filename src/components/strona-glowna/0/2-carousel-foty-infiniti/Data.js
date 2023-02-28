@@ -49,6 +49,18 @@ import restauracja1 from "../../../../../public/images/.dedykowane-do-strony-kon
 import restauracja2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/restauracja/restauracja-2.png";
 import restauracja3 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/restauracja/restauracja-3.png";
 
+import manager1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/manager/manager.png";
+
+import sfd1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/sfd/sfd.png";
+
+import taras1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/taras/taras.png";
+
+import solarium1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/solarium/solarium-1.png";
+import solarium2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/solarium/solarium-2.png";
+
+import laOla1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/la-ola/la-ola-1.png";
+import laOla2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/la-ola/la-ola-2.png";
+
 // 1
 
 import squash1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/squash/squash-1.png";
@@ -167,7 +179,7 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "manager",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [manager1],
     wyswietlanaNazwa: "Manager",
   },
   {
@@ -193,7 +205,7 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "taras",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [taras1],
     wyswietlanaNazwa: "Taras",
   },
   {
@@ -208,12 +220,12 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "la-ola",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [laOla1, laOla2],
     wyswietlanaNazwa: "La 'Ola",
   },
   {
     nazwaMiejsca: "sfd",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [sfd1],
     wyswietlanaNazwa: "SFD",
   },
   {
@@ -223,7 +235,7 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "solarium",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [solarium1, solarium2],
     wyswietlanaNazwa: "Solarium",
   },
   {
