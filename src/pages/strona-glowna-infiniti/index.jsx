@@ -335,6 +335,7 @@ const StronaGlowna = () => {
             ]
           }
         >
+          {/* ... */}
           <div
             className={
               styles[

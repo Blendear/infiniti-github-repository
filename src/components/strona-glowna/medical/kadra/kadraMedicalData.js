@@ -20,5 +20,13 @@ export const kadraMedicalDataArray = {
       fotoPathKoncowka: "meisner-iwona",
       socialMediaLinks: { facebook: "https://www.facebook.com/iwona.meisner" },
     },
+    {
+      nazwisko: "Kowalczyk",
+      name: "Patrycja",
+      opis: "testowy opis",
+      funkcja: "Fizjoterapeutka",
+      fotoPathKoncowka: "kowalczyk-patrycja",
+      socialMediaLinks: {},
+    },
   ],
 };
