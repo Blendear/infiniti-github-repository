@@ -37,7 +37,7 @@ import szatniaDamska1 from "../../../../../public/images/.dedykowane-do-strony-k
 import szatniaMeska1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/.minus-1/szatnia-meska/szatnia-meska-1.png";
 
 // 0
-import renowacjaTemporaryInformacyjnaFota from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/inne/renowacja-info.png";
+import renowacjaTemporaryInformacyjnaFota from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/inne/renowacja-info.png";
 
 import fizjoterapiaPierwsza1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/fizjoterapia-1/fizjoterapia-jeden-1.png";
 import fizjoterapiaPierwsza2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/fizjoterapia-1/fizjoterapia-jeden-2.png";
