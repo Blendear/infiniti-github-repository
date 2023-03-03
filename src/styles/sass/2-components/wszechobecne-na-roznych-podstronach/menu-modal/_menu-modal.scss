@@ -58,7 +58,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
         position: relative;
         width: 100%;
 
-        animation: fadeInAnimation ease 1.2s;
+        animation: fadeInAnimation ease 0.6s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
 
@@ -85,7 +85,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
         position: relative;
         // width: 100%;
         // width: 50%;
-        animation: fadeInAnimation ease 1.2s;
+        animation: fadeInAnimation ease 0.6s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
 
