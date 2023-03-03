@@ -238,7 +238,8 @@ const CarouselPoziomy = () => {
                   layout="fill"
                   objectFit="contain"
                   quality={40}
-                  // priority
+                  priority
+                  loading="eager"
                 />
               )}
             </div>
