@@ -106,7 +106,7 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
       // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rozmiary & Pozycjonowanie - Self ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
       font-size: 1.1rem;
       @media (orientation: landscape) {
-        font-size: max(1.55rem, 1vw);
+        font-size: max(1.4rem, 0.1vw);
       }
       // _______________________________ Stylizacja - Self _______________________________
       -webkit-tap-highlight-color: transparent;

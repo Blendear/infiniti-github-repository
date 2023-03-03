@@ -235,10 +235,22 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 // padding: 1vw 3vw 1vw 3vw;
                 // margin: 2vw 0 2vw 0;
                 transition: all 0.5s;
+                animation: fadeInAnimation ease 1.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
 
+                @keyframes fadeInAnimation {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
                 @media (orientation: landscape) {
                   aspect-ratio: 1/1;
                 }
+
                 &:hover {
                   transform: scale(1.2);
                   transition: all 0.5s;

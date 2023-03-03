@@ -60,7 +60,7 @@
 }
 @media (orientation: landscape) {
   .navbar-gorny__caly-container__btn-zaloguj--tekst {
-    font-size: max(1.55rem, 1vw);
+    font-size: max(1.4rem, 0.1vw);
   }
 }
 .navbar-gorny__caly-container__btn-zaloguj--tekst:active {
@@ -102,7 +102,7 @@
 }
 @media (orientation: landscape) {
   .navbar-gorny__caly-container__btn-zapisz--tekst {
-    font-size: max(1.55rem, 1vw);
+    font-size: max(1.4rem, 0.1vw);
   }
 }
 .navbar-gorny__caly-container__btn-zapisz--tekst:active {
@@ -813,6 +813,17 @@
   aspect-ratio: 1/0.8;
   justify-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--fota {
@@ -1349,10 +1360,21 @@
   aspect-ratio: 1/0.8;
   justify-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 @media (orientation: landscape) {
   .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--fota {
     aspect-ratio: 1/1;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--fota:hover {
