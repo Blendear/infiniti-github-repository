@@ -21,6 +21,7 @@ const ZmienneStartoweTlo = (props) => {
         // width={200}
         layout="fill"
         objectFit="cover"
+        priority
       />
     </div>
   );

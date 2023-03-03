@@ -28,6 +28,7 @@ const KlocekMenu = (props) => {
           // width={200}
           layout="fill"
           objectFit="contain"
+          priority
         />
       </button>
       {/* props.linkPath */}

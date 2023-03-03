@@ -135,6 +135,7 @@ const StronaGlowna = () => {
           // width={100}
           layout="fill"
           objectFit="cover"
+          priority
         />
         {/* /\ TYLKO GDY samo zdjecie zmienias,z np. koło robisz, dzikei "border-radiu:50%;, 
           wtedy "className i Image'owi dodasz. ale inaczje, nic nie dodawaj */}
