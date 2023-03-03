@@ -62,6 +62,7 @@ import solarium2 from "../../../../../public/images/.dedykowane-do-strony-konkre
 
 import laOla1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/la-ola/la-ola-1.png";
 import laOla2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/la-ola/la-ola-2.png";
+import laOla3 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/la-ola/la-ola-3.png";
 
 import arkadia1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-1.png";
 import arkadia2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-2.png";
@@ -228,7 +229,7 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "la-ola",
-    fotyTegoMiejsca: [laOla1, laOla2],
+    fotyTegoMiejsca: [laOla1, laOla2, laOla3],
     wyswietlanaNazwa: "La 'Ola",
   },
   {
