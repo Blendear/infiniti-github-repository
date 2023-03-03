@@ -105,6 +105,8 @@ const StronaKontakt = () => {
           // width={100}
           layout="fill"
           objectFit="cover"
+          priority
+          loading="eager"
         />
       </div>
       <form

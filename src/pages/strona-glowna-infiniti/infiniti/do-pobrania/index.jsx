@@ -179,6 +179,8 @@ const DoPobrania = () => {
             // width={100}
             layout="fill"
             objectFit="contain"
+            priority
+            loading="eager"
           />
         </div>
         <div
@@ -205,6 +207,8 @@ const DoPobrania = () => {
                 layout="fill"
                 objectFit="contain"
                 quality={20}
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -230,6 +234,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -255,6 +261,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -280,6 +288,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -300,6 +310,8 @@ const DoPobrania = () => {
             layout="fill"
             objectFit="contain"
             quality={20}
+            priority
+            loading="eager"
           />
         </div>
         <div
@@ -325,6 +337,8 @@ const DoPobrania = () => {
                 // width={200}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -350,6 +364,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -375,6 +391,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -400,6 +418,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -418,6 +438,8 @@ const DoPobrania = () => {
             // width={100}
             layout="fill"
             objectFit="contain"
+            priority
+            loading="eager"
           />
         </div>
         <div
@@ -444,6 +466,8 @@ const DoPobrania = () => {
                 layout="fill"
                 objectFit="contain"
                 quality={20}
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -469,6 +493,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -494,6 +520,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
@@ -519,6 +547,8 @@ const DoPobrania = () => {
                 // width={2004}
                 layout="fill"
                 objectFit="contain"
+                priority
+                loading="eager"
               />
             </a>
           </Link>
