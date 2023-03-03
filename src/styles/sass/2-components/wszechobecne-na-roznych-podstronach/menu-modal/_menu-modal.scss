@@ -57,6 +57,19 @@ $rozmiar-rowa: minmax(0vw, 20vw);
 
         position: relative;
         width: 100%;
+
+        animation: fadeInAnimation ease 1.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+        @keyframes fadeInAnimation {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
         @media (orientation: landscape) {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-2;
@@ -72,6 +85,18 @@ $rozmiar-rowa: minmax(0vw, 20vw);
         position: relative;
         // width: 100%;
         // width: 50%;
+        animation: fadeInAnimation ease 1.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+        @keyframes fadeInAnimation {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
         @media (orientation: landscape) {
           grid-row: r-1 / r-2;
           grid-column: c-3 / c-4;
@@ -183,7 +208,18 @@ $rozmiar-rowa: minmax(0vw, 20vw);
         z-index: 10;
         border: none;
         background-color: rgba(255, 255, 255, 0);
+        animation: fadeInAnimation ease 0.4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
 
+        @keyframes fadeInAnimation {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
         &:active {
           transform: scale(1.1);
         }
@@ -198,7 +234,18 @@ $rozmiar-rowa: minmax(0vw, 20vw);
         z-index: 10;
         border: none;
         background-color: rgba(255, 255, 255, 0);
+        animation: fadeInAnimation ease 0.4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
 
+        @keyframes fadeInAnimation {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
         &:active {
           transform: scale(1.1);
         }

@@ -562,7 +562,18 @@
   grid-column: c-2/c-3;
   position: relative;
   width: 100%;
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   aspect-ratio: 1.3/1;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .menu-modal__caly-container__loga--medical {
@@ -575,6 +586,17 @@
   grid-row: r-1/r-2;
   grid-column: c-4/c-5;
   position: relative;
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .menu-modal__caly-container__loga--fitness {
@@ -665,11 +687,22 @@
   z-index: 10;
   border: none;
   background-color: rgba(255, 255, 255, 0);
+  animation: fadeInAnimation ease 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 @media (orientation: landscape) {
   .menu-modal__caly-container__klocki--fota-btn {
     width: 15vw;
     aspect-ratio: 2/1;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .menu-modal__caly-container__klocki--fota-btn:active {
@@ -680,11 +713,22 @@
   z-index: 10;
   border: none;
   background-color: rgba(255, 255, 255, 0);
+  animation: fadeInAnimation ease 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 @media (orientation: landscape) {
   .menu-modal__caly-container__klocki--dluuuga-fota-btn {
     width: 30vw;
     aspect-ratio: 4/1;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .menu-modal__caly-container__klocki--dluuuga-fota-btn:active {
@@ -1166,6 +1210,17 @@
   justify-self: center;
   align-self: start;
   position: relative;
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .layout__fitness-cennik__cala-strona {
@@ -1208,6 +1263,17 @@
   justify-self: center;
   align-self: start;
   position: relative;
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .layout__fitness-grafik__cala-strona {
@@ -2389,6 +2455,17 @@
   align-self: end;
   margin: 0 0 9.3vw 0;
   justify-self: center;
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__0-startowe-logo-i-fota--logo {
@@ -2402,6 +2479,17 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1.5/1;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__strona-glowna__cala-strona__0-startowe-logo-i-fota--fota {
@@ -2506,6 +2594,17 @@
   width: 100%;
   aspect-ratio: 4/1.5;
   margin: 2rem 0 8vw 0;
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz {
   grid-row: r-5/r-6;
@@ -3585,6 +3684,17 @@
   width: 100%;
   aspect-ratio: 1.8/1;
   z-index: 5;
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .layout__strona-glowna__cala-strona__carousel-poziomy--mapa--slide-active {
   opacity: 1;
