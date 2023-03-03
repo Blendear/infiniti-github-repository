@@ -39,6 +39,8 @@ import szatniaMeska1 from "../../../../../public/images/.dedykowane-do-strony-ko
 // 0
 import renowacjaTemporaryInformacyjnaFota from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/inne/renowacja-info.png";
 
+import analizaSkladuCiala1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/analiza-skladu-ciala/analiza-skladu-ciala-1.png";
+
 import fizjoterapiaPierwsza1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/fizjoterapia-1/fizjoterapia-jeden-1.png";
 import fizjoterapiaPierwsza2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/fizjoterapia-1/fizjoterapia-jeden-2.png";
 import fizjoterapiaPierwsza3 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/fizjoterapia-1/fizjoterapia-jeden-3.png";
@@ -219,7 +221,7 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "analiza-skladu-ciala",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [analizaSkladuCiala1],
     wyswietlanaNazwa: "Analiza Składu Ciała",
   },
   {
