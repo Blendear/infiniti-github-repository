@@ -22,6 +22,7 @@ const ZmienneStartoweLogo = (props) => {
         layout="fill"
         objectFit="cover"
         priority
+        loading="eager"
       />
     </div>
   );

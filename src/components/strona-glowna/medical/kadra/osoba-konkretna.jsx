@@ -103,7 +103,9 @@ const OsobaKonkretna = (props) => {
           // width={100}
           layout="fill"
           objectFit="contain"
-          quality={20}
+          quality={50}
+          priority
+          loading="eager"
         />
       </div>
       <div

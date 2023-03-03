@@ -71,6 +71,7 @@ const MedicalCennik = () => {
               layout="fill"
               objectFit="contain"
               priority
+              loading="eager"
             />
           </a>
         </Link>

@@ -29,6 +29,7 @@ const KlocekMenu = (props) => {
           layout="fill"
           objectFit="contain"
           priority
+          loading="eager"
         />
       </button>
       {/* props.linkPath */}
