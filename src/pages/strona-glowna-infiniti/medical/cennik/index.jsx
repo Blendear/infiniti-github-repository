@@ -70,6 +70,7 @@ const MedicalCennik = () => {
               // height={300}
               layout="fill"
               objectFit="contain"
+              priority
             />
           </a>
         </Link>

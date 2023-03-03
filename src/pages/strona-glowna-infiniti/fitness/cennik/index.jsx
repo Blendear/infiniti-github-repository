@@ -70,6 +70,7 @@ const FitnessCennik = () => {
               // height={300}
               layout="fill"
               objectFit="contain"
+              priority
             />
           </a>
         </Link>
