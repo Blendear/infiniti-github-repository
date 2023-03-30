@@ -109,7 +109,10 @@ const StronaKontakt = () => {
           loading="eager"
         />
       </div>
-      <form
+
+      {/* \/ wykomentowany form do wysylania maili - nie dzialal na maila, na ktorym mjest infiniti mail.*/}
+
+      {/* <form
         onSubmit={isCheckedZgoda === true ? handleOnSubmit : null}
         className={
           styles[
@@ -199,7 +202,7 @@ const StronaKontakt = () => {
         >
           WYŚLIJ ZAPYTANIE
         </button>
-      </form>
+      </form> */}
 
       <div
         className={

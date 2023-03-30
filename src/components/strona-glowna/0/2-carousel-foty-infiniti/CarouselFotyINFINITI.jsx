@@ -245,8 +245,6 @@ const CarouselPoziomy = () => {
             </div>
           ))}
         </div>
-
-        {/* //herehere13.02.2023 - jak zrobic, zeby zapetlaly sie zdjecia,a nie "nie pyklo"? */}
       </div>
     </section>
   );

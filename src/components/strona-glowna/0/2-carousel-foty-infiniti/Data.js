@@ -72,6 +72,8 @@ import arkadia3 from "../../../../../public/images/.dedykowane-do-strony-konkret
 import arkadia4 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-4.png";
 import arkadia5 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/arkadia/arkadia-5.png";
 
+import wodor1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/wodor/wodor.png";
+
 // 1
 
 import squash1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/1/squash/squash-1.png";
@@ -226,7 +228,7 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "wodor",
-    fotyTegoMiejsca: [],
+    fotyTegoMiejsca: [wodor1],
     wyswietlanaNazwa: "Inhalacja Wodoru",
   },
   {

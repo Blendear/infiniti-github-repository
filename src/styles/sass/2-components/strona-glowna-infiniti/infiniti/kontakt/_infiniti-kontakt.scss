@@ -244,9 +244,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
           grid-column: c-1 / c-12;
 
           position: relative;
-          width: 80vw;
+          width: 70vw;
 
-          aspect-ratio: 1.85/1;
+          aspect-ratio: 1.65/1;
           margin: 0 auto 3rem auto;
           // hook1 WSZYSTKO marginem pozycjonowa,c zmaiast align-selfme? zawsze kuwa dziala
           // border: 0.1rem solid rgb(255, 255, 255);
@@ -256,7 +256,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
           box-shadow: 0px 0px 0.7rem 1px #000000;
 
           @media (orientation: landscape) {
-            width: 50vw;
+            width: 35vw;
           }
         }
       }

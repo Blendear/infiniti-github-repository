@@ -562,7 +562,7 @@
   grid-column: c-2/c-3;
   position: relative;
   width: 100%;
-  animation: fadeInAnimation ease 1.2s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   aspect-ratio: 1.3/1;
@@ -586,7 +586,7 @@
   grid-row: r-1/r-2;
   grid-column: c-4/c-5;
   position: relative;
-  animation: fadeInAnimation ease 1.2s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -857,7 +857,7 @@
   aspect-ratio: 1/0.8;
   justify-self: center;
   transition: all 0.5s;
-  animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -1210,7 +1210,7 @@
   justify-self: center;
   align-self: start;
   position: relative;
-  animation: fadeInAnimation ease 1.2s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -1263,7 +1263,7 @@
   justify-self: center;
   align-self: start;
   position: relative;
-  animation: fadeInAnimation ease 1.2s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -1426,7 +1426,7 @@
   aspect-ratio: 1/0.8;
   justify-self: center;
   transition: all 0.5s;
-  animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -1582,6 +1582,17 @@
   position: relative;
   height: 100%;
   width: 100%;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--fitness-tytul {
   grid-row: r-4/r-5;
@@ -1594,6 +1605,17 @@
   position: relative;
   height: 100%;
   width: 100%;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--infiniti-tytul {
   grid-row: r-7/r-8;
@@ -1606,6 +1628,17 @@
   position: relative;
   height: 100%;
   width: 100%;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1 {
   grid-row: r-2/r-3;
@@ -1616,6 +1649,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1 {
@@ -1635,6 +1679,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-2 {
@@ -1654,6 +1709,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-3 {
@@ -1673,6 +1739,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-4 {
@@ -1692,6 +1769,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-5 {
@@ -1711,6 +1799,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-6 {
@@ -1730,6 +1829,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-7 {
@@ -1749,6 +1859,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-8 {
@@ -1768,6 +1889,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-9 {
@@ -1787,6 +1919,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-10 {
@@ -1806,6 +1949,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-11 {
@@ -1825,6 +1979,17 @@
   justify-self: center;
   align-self: center;
   transition: all 0.5s;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-12 {
@@ -2121,14 +2286,14 @@
   grid-row: r-5/r-6;
   grid-column: c-1/c-12;
   position: relative;
-  width: 80vw;
-  aspect-ratio: 1.85/1;
+  width: 70vw;
+  aspect-ratio: 1.65/1;
   margin: 0 auto 3rem auto;
   box-shadow: 0px 0px 0.7rem 1px #000000;
 }
 @media (orientation: landscape) {
   .layout__infiniti-kontakt__cala-strona__mapa-dojazdu--mapa-image {
-    width: 50vw;
+    width: 35vw;
   }
 }
 .layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container {
@@ -2338,6 +2503,17 @@
   grid-column: c-1/c-12;
   position: relative;
   z-index: -100;
+  animation: fadeInAnimation ease 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .tytul-podstrony__caly-container {
@@ -2455,7 +2631,7 @@
   align-self: end;
   margin: 0 0 9.3vw 0;
   justify-self: center;
-  animation: fadeInAnimation ease 1.2s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -2479,7 +2655,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1.5/1;
-  animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -2594,7 +2770,7 @@
   width: 100%;
   aspect-ratio: 4/1.5;
   margin: 2rem 0 8vw 0;
-  animation: fadeInAnimation ease 1.2s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -3684,7 +3860,7 @@
   width: 100%;
   aspect-ratio: 1.8/1;
   z-index: 5;
-  animation: fadeInAnimation ease 1.2s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
