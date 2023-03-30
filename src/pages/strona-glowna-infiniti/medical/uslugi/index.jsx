@@ -352,13 +352,13 @@ const MedicalUslugi = () => {
               {" "}
               Elektroterapia wspiera procesy zdrowienia i rehabilitacji w
               następujących schorzeniac:
-              <li>Choroby układu ruchu</li>
+              <li>choroby układu ruchu</li>
               <li>
                 artroza, choroby zwyrodnieniowe, reumatyczne i dyskopatie, bóle
                 kręgosłupa, osteoporoza, zapalenie stawów i tkanek
                 okołostawowych
               </li>
-              <li>Choroby układu nerwowego</li>
+              <li>choroby układu nerwowego</li>
               <li>
                 rwa kulszowa, rwa ramienna, przewlekłe zapalenia splotów i
                 korzeni nerwowych, neuralgie, stany zapalne nerwów obwodowych,
@@ -369,11 +369,11 @@ const MedicalUslugi = () => {
                 blizny i przykurcze, gojenie ran i owrzodzeń, resorpcja
                 wysięków, krwiaków i obrzęków
               </li>
-              <li>Obrażenia i kontuzje</li>
+              <li>obrażenia i kontuzje</li>
               <li>
                 łamania, urazy mięśni, dolegliwości bólowe związane z urazami
               </li>
-              <li>Osłabienie i upośledzenie pracy mięśni</li>
+              <li>osłabienie i upośledzenie pracy mięśni</li>
               <li>
                 zmniejszenie napięcia mięśni, elektrostymulacja mięśni
                 odnerwionych, stymulacja mięśni zanikających, rehabilitacja
@@ -388,7 +388,8 @@ const MedicalUslugi = () => {
               Przebieg zależy od podtypu elektroterapii:
               <ul>
                 {" "}
-                PRĄDY TENS
+                <br />
+                <strong>PRĄDY TENS</strong>
                 <li>
                   pacjent powinien czuć delikatne mrowienie bądź skurcz mięśnia
                 </li>
@@ -404,9 +405,10 @@ const MedicalUslugi = () => {
                   na ciele, fizjoterapeuta wybiera odpowiedni rodzaj prądu oraz
                   ustawia wszystkie parametry.{" "}
                 </li>
+                <br />
               </ul>
               <ul>
-                GALWANIZACJA
+                <strong>GALWANIZACJA</strong>
                 <li>pacjent w trakcie zabiegu powinien odczuwać mrowienie</li>
                 <li>
                   wartość natężenia prądu w obwodzie ustala się do odczuć
@@ -426,10 +428,11 @@ const MedicalUslugi = () => {
                     "dokładnie rzecz biorąc - Jeden z zabiegów fizjoterapeutycznych z dziedziny elektroterapii wykorzystujący prąd stały. W zabiegu galwanizacji wykorzystuje się dwie płaskie elektrody. W celu lepszego przewodzenia prądu – elektrody umieszcza się na specjalnie nasączonych podkładach wiskozowych. Galwanizacja pobudza działanie układu nerwowego przyspieszając gojenie stanów zapalnych i działając przeciwbólowo. Ponadto elektroterapia stymuluje mięśnie do pracy, co pomaga zapobiegać zanikom."
                   }
                 </li>
+                <br />
               </ul>
               <ul>
                 {" "}
-                JONOFOREZA
+                <strong>JONOFOREZA</strong>
                 <li>pacjent w trakcie zabiegu powinien odczuwać mrowienie</li>
                 <li>średni czas zabiegu wynosi ok. 10-20 minut</li>
                 <li>
@@ -755,12 +758,12 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
-              <li>Wzmocnienie naturalnej odporności</li>
-              <li>Dotlenienie i poprawienia ogólnego zdrowia organizmu</li>
-              <li>Poprawienie jakości snu</li>
-              <li>Przywrócenie witalności i zregenerowanie organizmu</li>
-              <li>Opóźnienie procesu starzenia</li>
-              <li>Poprawienie kondycji i wydolności organizmu</li>
+              <li>wzmocnienie naturalnej odporności</li>
+              <li>dotlenienie i poprawienia ogólnego zdrowia organizmu</li>
+              <li>poprawienie jakości snu</li>
+              <li>przywrócenie witalności i zregenerowanie organizmu</li>
+              <li>opóźnienie procesu starzenia</li>
+              <li>poprawienie kondycji i wydolności organizmu</li>
             </ul>
           }
           d={
@@ -785,24 +788,24 @@ const MedicalUslugi = () => {
           j={
             <ul>
               <li>
-                Wodór podaje się do organizmu poprzez przewód nosowy. Inhalacja
+                wodór podaje się do organizmu poprzez przewód nosowy. Inhalacja
                 wodoru jest najskuteczniejszym sposobem na wprowadzenie wodoru
                 do organizmu
               </li>
-              <li>Wodór podaje się do organizmu poprzez przewód nosowy</li>
+              <li>wodór podaje się do organizmu poprzez przewód nosowy</li>
 
               <li>
-                Wdychanie wodoru osiąga maksymalny poziom w osoczu w około 30
+                wdychanie wodoru osiąga maksymalny poziom w osoczu w około 30
                 minut
               </li>
               <li>
-                Wodór utrzymuje się w organizmie do 30 godzin po inhalacji.
+                wodór utrzymuje się w organizmie do 30 godzin po inhalacji.
               </li>
             </ul>
           }
           p={
             <ul>
-              <li>Brak. Nie posiada skutków ubocznych</li>
+              <li>brak. Nie posiada skutków ubocznych</li>
             </ul>
           }
           tytulZAbiegu="INHALACJA AKT. WODORU"
