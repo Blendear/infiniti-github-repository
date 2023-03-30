@@ -52,6 +52,8 @@ import Image from "next/image.js";
 //       B.1. Import ikonek
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
+import CircleLoader from "react-spinners/CircleLoader";
+
 import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
 import { wybranyPoziomIMiejsceActions } from "../../../../store/redux/store-redux";
 //hook1 - zrob zeby nazwa miejsca w galerii i fota galerii byla adekwatna do miejsca w reduxsie
@@ -59,6 +61,8 @@ const CarouselPoziomy = () => {
   const [aktualnyFotoPoziom, setAktualnyFotoPoziomu] = useState(0);
   const [aktywnyPoziom, setAktywnyPoziom] = useState(-1);
   const lengthOfDataArray = carouselData.length;
+
+  const [loading, setLoading] = useState(true);
 
   //
   //       B.3. Handler - OnClicki, treść
@@ -584,6 +588,22 @@ const CarouselPoziomy = () => {
           ></button>
         </div>
         <div
+          className={` ${styles["layout__strona-glowna__cala-strona__carousel-gallery--loader"]}`}
+        >
+          <CircleLoader
+            color="#09adca"
+            loading={loading}
+            cssOverride={{
+              display: "block",
+              margin: "0 auto",
+              borderColor: "red",
+            }}
+            size={"10vw"}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+        <div
           className={
             styles[
               "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--mapa"
@@ -603,6 +623,8 @@ const CarouselPoziomy = () => {
             */}
               {indexAktualny === aktualnyFotoPoziom && (
                 <Image
+                  onLoad={() => setLoading(true)}
+                  onLoadingComplete={() => setLoading(false)}
                   src={aktualnaFota.image}
                   alt={`nie pyklo zdjecie`}
                   // width={300}

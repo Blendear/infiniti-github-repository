@@ -3128,7 +3128,7 @@
   }
 }
 .layout__strona-glowna__cala-strona__carousel-gallery--loader {
-  z-index: -10;
+  z-index: 0;
   position: absolute;
   top: 40%;
   justify-self: center;

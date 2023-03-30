@@ -622,7 +622,7 @@ $rozmiar-column-siatka-btn: 1fr;
         }
 
         &--loader {
-          z-index: -10;
+          z-index: 0;
           position: absolute;
           top: 40%;
           // padding: 0 auto 0 auto;
