@@ -587,7 +587,7 @@ const CarouselPoziomy = () => {
             }
           ></button>
         </div>
-        <div
+        {/* <div
           className={` ${styles["layout__strona-glowna__cala-strona__carousel-gallery--loader"]}`}
         >
           <CircleLoader
@@ -602,7 +602,7 @@ const CarouselPoziomy = () => {
             aria-label="Loading Spinner"
             data-testid="loader"
           />
-        </div>
+        </div> */}
         <div
           className={
             styles[
@@ -623,8 +623,8 @@ const CarouselPoziomy = () => {
             */}
               {indexAktualny === aktualnyFotoPoziom && (
                 <Image
-                  onLoad={() => setLoading(true)}
-                  onLoadingComplete={() => setLoading(false)}
+                  // onLoad={() => setLoading(true)}
+                  // onLoadingComplete={() => setLoading(false)}
                   src={aktualnaFota.image}
                   alt={`nie pyklo zdjecie`}
                   // width={300}
