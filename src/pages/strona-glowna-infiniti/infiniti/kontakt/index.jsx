@@ -368,7 +368,7 @@ const StronaKontakt = () => {
             }
           ></div>
           <a
-            href="mailto:mail@example.org"
+            href="info@infiniti-fit.pl"
             className={
               styles[
                 "layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--tresc"

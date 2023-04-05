@@ -128,7 +128,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="mailto:mail@example.org"
+          href="mailto:info@infiniti-fit.pl"
           className={styles["footer__kontakt--karta"]}
         >
           {/* <HiOutlineMail color="white" /> */}
