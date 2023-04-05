@@ -333,7 +333,8 @@ const StronaKontakt = () => {
               ]
             }
           ></div>
-          <div
+          <a
+            href="tel:+48884848808"
             className={
               styles[
                 "layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--telefon--tresc"
@@ -341,7 +342,7 @@ const StronaKontakt = () => {
             }
           >
             {"(+48) 88 48 48 808"}
-          </div>
+          </a>
         </div>
         <div
           className={
@@ -366,7 +367,8 @@ const StronaKontakt = () => {
               ]
             }
           ></div>
-          <div
+          <a
+            href="mailto:mail@example.org"
             className={
               styles[
                 "layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container--email--tresc"
@@ -374,7 +376,7 @@ const StronaKontakt = () => {
             }
           >
             info@infiniti-fit.pl
-          </div>
+          </a>
         </div>
       </div>
       <div></div>

@@ -123,15 +123,18 @@ const Footer = () => {
           <VscCommentDiscussion color="white" />
           <div>WIĘCEJ O NAS</div>
         </div>
-        <div className={styles["footer__kontakt--karta"]}>
-          {/* <BiPhone color="white" /> */}
+        <a href="tel:+48884848808" className={styles["footer__kontakt--karta"]}>
           <div>{"(+48) 88 48 48 808"}</div>
-        </div>
-        <div className={styles["footer__kontakt--karta"]}>
+        </a>
+
+        <a
+          href="mailto:mail@example.org"
+          className={styles["footer__kontakt--karta"]}
+        >
           {/* <HiOutlineMail color="white" /> */}
           {/* <div></div> */}
           info@infiniti-fit.pl{" "}
-        </div>
+        </a>
         <div className={styles["footer__kontakt--sociale"]}>
           <Link href="https://www.facebook.com/fitness.club.INFINITI">
             <a>
