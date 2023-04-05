@@ -895,7 +895,7 @@
   grid-column: c-3/c-4;
   font-size: 1.2rem;
   color: #6e6e6e;
-  font-weight: 600;
+  font-weight: 400;
 }
 @media (orientation: landscape) {
   .layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--rola-dokladna {
@@ -1463,8 +1463,8 @@
   grid-row: r-2/r-3;
   grid-column: c-3/c-4;
   font-size: 1.2rem;
+  font-weight: 400;
   color: #484848;
-  font-weight: 600;
 }
 @media (orientation: landscape) {
   .layout__fitness-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--rola-dokladna {
@@ -2821,7 +2821,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 2rem;
   text-align: center;
 }
@@ -2850,7 +2850,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 2rem;
   text-align: center;
 }
@@ -2885,7 +2885,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 2rem;
   text-align: center;
 }
@@ -2926,7 +2926,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 2rem;
   text-align: center;
 }
@@ -2967,7 +2967,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 2rem;
   text-align: center;
 }
@@ -3008,7 +3008,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 2rem;
   text-align: center;
 }
@@ -3049,7 +3049,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 2rem;
   text-align: center;
 }
@@ -3090,7 +3090,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.35rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 2rem;
   text-align: center;
 }

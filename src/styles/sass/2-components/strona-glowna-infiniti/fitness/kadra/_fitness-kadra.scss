@@ -305,12 +305,12 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 grid-column: c-3 / c-4;
 
                 font-size: 1.2rem;
+                font-weight: 400;
                 @media (orientation: landscape) {
                   font-size: min(2rem, 1.7vw);
                 }
 
                 color: #484848;
-                font-weight: 600;
               }
 
               &--tresc-tekst {
