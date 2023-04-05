@@ -71,7 +71,7 @@ export const kadraFitnessDataArray = {
       funkcja: "Instruktor fitness / Trener personalny",
       fotoPathKoncowka: "deierling-arek",
       socialMediaLinks: {
-        instagram: "sdssd@gmail.com",
+        instagram: "https://www.instagram.com/panie_arku/?hl=pl",
         facebook: "https://www.facebook.com/arkadiusz.deierling",
       },
     },

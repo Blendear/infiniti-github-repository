@@ -53,6 +53,10 @@ const Footer = () => {
         </div>
         <div className={styles["footer__honorowane-karty--karta"]}>
           <BsCircle color="white" />
+          <div>LUX MED</div>
+        </div>
+        <div className={styles["footer__honorowane-karty--karta"]}>
+          <BsCircle color="white" />
           <div>Multisport</div>
         </div>
         <div className={styles["footer__honorowane-karty--karta"]}>

@@ -128,11 +128,18 @@
               [r-4] 7rem //tytul
               [r-5] 1fr
               [r-6] 1fr
-              [r-7] 7rem //tytul
-              [r-8] 1fr
-              [r-9] 1fr
-              [r-10] 1fr
-              [r-11];
+              [r-7] 1fr;
+
+            // \/ wykomentowane, bo one byly pod INFINITI logo (a mialy hardcoded rozmiar), bez medical ani fitness - a jest niepotrzebne
+
+            // 7rem //tytul
+            // [r-8] 1fr
+            // [r-9] 1fr
+            // [r-10] 1fr
+            // [r-11];
+
+            //
+
             //trap1-  protip1 - NIGDY WIECJE STRIKTE ZBUDOWANYCH gridow
             // kieyd mozesz po prostu zbudowac
             //    a) component z unikatowymi propsami per przypadke użycia
@@ -153,11 +160,14 @@
                 [r-4] 8vw //tytul
                 [r-5] 1fr
                 [r-6] 1fr
-                [r-7] 8vw //tytul
-                [r-8] 1fr
-                [r-9] 1fr
-                [r-10] 1fr
-                [r-11];
+                [r-7] 1fr;
+              // \/ wykomentowane, bo one byly pod INFINITI logo (a mialy hardcoded rozmiar), bez medical ani fitness - a jest niepotrzebne
+
+              // 8vw //tytul
+              // [r-8] 1fr
+              // [r-9] 1fr
+              // [r-10] 1fr
+              // [r-11];
               grid-template-columns:
                 [c-1] 10vw
                 [c-2] 10vw

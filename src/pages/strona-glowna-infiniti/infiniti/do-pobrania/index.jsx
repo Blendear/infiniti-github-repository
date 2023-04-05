@@ -424,7 +424,10 @@ const DoPobrania = () => {
             </a>
           </Link>
         </div>
-        <div
+
+        {/* \/ INFINITI zakomentowane, bo nikt tego nie będzie potrzebował */}
+
+        {/* <div
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--infiniti-tytul"
@@ -552,7 +555,7 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

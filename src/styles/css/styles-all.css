@@ -1560,14 +1560,14 @@
   grid-column: c-2/c-6;
   display: grid;
   position: relative;
-  grid-template-rows: [r-1] 7rem [r-2] 1fr [r-3] 1fr [r-4] 7rem [r-5] 1fr [r-6] 1fr [r-7] 7rem [r-8] 1fr [r-9] 1fr [r-10] 1fr [r-11];
+  grid-template-rows: [r-1] 7rem [r-2] 1fr [r-3] 1fr [r-4] 7rem [r-5] 1fr [r-6] 1fr [r-7] 1fr;
   grid-template-columns: [c-1] 1fr [c-2] 1fr [c-3];
   grid-auto-flow: column;
 }
 @media (orientation: landscape) {
   .layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow {
     justify-self: center;
-    grid-template-rows: [r-1] 8vw [r-2] 1fr [r-3] 1fr [r-4] 8vw [r-5] 1fr [r-6] 1fr [r-7] 8vw [r-8] 1fr [r-9] 1fr [r-10] 1fr [r-11];
+    grid-template-rows: [r-1] 8vw [r-2] 1fr [r-3] 1fr [r-4] 8vw [r-5] 1fr [r-6] 1fr [r-7] 1fr;
     grid-template-columns: [c-1] 10vw [c-2] 10vw [c-3];
   }
 }
