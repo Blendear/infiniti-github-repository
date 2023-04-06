@@ -138,6 +138,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
               height: max(4rem, 4vw);
             }
           }
+
           &--svg {
             // displa
             display: grid;
@@ -195,6 +196,30 @@ $rozmiar-rowa: minmax(0rem, max-content);
               letter-spacing: 0.1rem;
             }
           }
+          &--nowosc {
+            grid-row: r-1/ r-2;
+            grid-column: c-2 / c-3;
+
+            display: grid;
+            z-index: 10;
+            width: 7rem;
+            aspect-ratio: 2/1;
+            background-color: #765bc2;
+            color: white;
+            justify-self: end;
+            justify-items: center;
+            align-items: center;
+            transform: translate(1rem, -1.6rem);
+            font-weight: 600;
+            font-size: 1.2rem;
+
+            @media (orientation: landscape) {
+              // margin-right: 5rem;
+              transform: translate(1rem, -1.2rem);
+              width: 10rem;
+              font-size: 1.5rem;
+            }
+          }
           &--linia-boczna {
             grid-row: r-2/ r-3;
             grid-column: c-1 / c-2;
@@ -211,6 +236,14 @@ $rozmiar-rowa: minmax(0rem, max-content);
             grid-row: r-2/ r-3;
             grid-column: c-2 / c-3;
             z-index: 5;
+
+            &__fota-nowosc {
+              grid-row: r-2/ r-3;
+              grid-column: c-2 / c-3;
+              z-index: 10;
+              // width: 50%;
+              // height: 50%;
+            }
             &__konkretny-szczegol-container {
               display: grid;
               grid-template-rows:

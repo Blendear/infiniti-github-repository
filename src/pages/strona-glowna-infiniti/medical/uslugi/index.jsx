@@ -89,6 +89,65 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
+              <li>wzmocnienie naturalnej odporności</li>
+              <li>dotlenienie i poprawienia ogólnego zdrowia organizmu</li>
+              <li>poprawienie jakości snu</li>
+              <li>przywrócenie witalności i zregenerowanie organizmu</li>
+              <li>opóźnienie procesu starzenia</li>
+              <li>poprawienie kondycji i wydolności organizmu</li>
+            </ul>
+          }
+          d={
+            <ul>
+              <li>chęci spowolnienia efektów starzenia organizmu</li>
+              <li>osłabionej odporności</li>
+              <li>
+                potrzeby poprawy jakości życia w chorobach przewlekłych,
+                opóźnianie procesów starzenia
+              </li>
+              <li>
+                chęci wzmocnienia naturalnej odporności, wydolności i ogólnego
+                zdrowia organizmu
+              </li>
+              <li>chorób sercowo-naczyniowych</li>
+              <li>chorób mózgowo-naczyniowych</li>
+              <li>nowotworów</li>
+              <li>chorób metabolizmu</li>
+              <li>chorób i zaburzeń układu oddechowego</li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li>
+                wodór podaje się do organizmu poprzez przewód nosowy. Inhalacja
+                wodoru jest najskuteczniejszym sposobem na wprowadzenie wodoru
+                do organizmu
+              </li>
+              <li>wodór podaje się do organizmu poprzez przewód nosowy</li>
+
+              <li>
+                wdychanie wodoru osiąga maksymalny poziom w osoczu w około 30
+                minut
+              </li>
+              <li>
+                wodór utrzymuje się w organizmie do 30 godzin po inhalacji.
+              </li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li>brak. Nie posiada skutków ubocznych</li>
+            </ul>
+          }
+          tytulZAbiegu="INHALACJA AKT. WODORU"
+          svgComponent={<SVGWodor mojKolor={kolorSVG} />}
+          isNowoscIMaFoty={true}
+          isNowoscIMaZnaczek={true}
+        />
+        {/* //herehere14.02.2023 -  dokoncz */}
+        <ZabiegKonkretny
+          e={
+            <ul>
               <li>obniżenie napięcia mięśniowego</li>
               <li>działanie przeciwbólowe</li>
               <li>działanie przeciwzapalne</li>
@@ -755,63 +814,6 @@ const MedicalUslugi = () => {
           tytulZAbiegu="POLE MAGNETYCZNE"
           svgComponent={<SVGMagnet mojKolor={kolorSVG} />}
         />
-        <ZabiegKonkretny
-          e={
-            <ul>
-              <li>wzmocnienie naturalnej odporności</li>
-              <li>dotlenienie i poprawienia ogólnego zdrowia organizmu</li>
-              <li>poprawienie jakości snu</li>
-              <li>przywrócenie witalności i zregenerowanie organizmu</li>
-              <li>opóźnienie procesu starzenia</li>
-              <li>poprawienie kondycji i wydolności organizmu</li>
-            </ul>
-          }
-          d={
-            <ul>
-              <li>chęci spowolnienia efektów starzenia organizmu</li>
-              <li>osłabionej odporności</li>
-              <li>
-                potrzeby poprawy jakości życia w chorobach przewlekłych,
-                opóźnianie procesów starzenia
-              </li>
-              <li>
-                chęci wzmocnienia naturalnej odporności, wydolności i ogólnego
-                zdrowia organizmu
-              </li>
-              <li>chorób sercowo-naczyniowych</li>
-              <li>chorób mózgowo-naczyniowych</li>
-              <li>nowotworów</li>
-              <li>chorób metabolizmu</li>
-              <li>chorób i zaburzeń układu oddechowego</li>
-            </ul>
-          }
-          j={
-            <ul>
-              <li>
-                wodór podaje się do organizmu poprzez przewód nosowy. Inhalacja
-                wodoru jest najskuteczniejszym sposobem na wprowadzenie wodoru
-                do organizmu
-              </li>
-              <li>wodór podaje się do organizmu poprzez przewód nosowy</li>
-
-              <li>
-                wdychanie wodoru osiąga maksymalny poziom w osoczu w około 30
-                minut
-              </li>
-              <li>
-                wodór utrzymuje się w organizmie do 30 godzin po inhalacji.
-              </li>
-            </ul>
-          }
-          p={
-            <ul>
-              <li>brak. Nie posiada skutków ubocznych</li>
-            </ul>
-          }
-          tytulZAbiegu="INHALACJA AKT. WODORU"
-          svgComponent={<SVGWodor mojKolor={kolorSVG} />}
-        />
-        {/* //herehere14.02.2023 -  dokoncz */}
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ import { AiFillHeart } from "react-icons/ai";
 import { IoMdPerson } from "react-icons/io";
 import { RiZoomInLine } from "react-icons/ri";
 import { TiFlag } from "react-icons/ti";
-
+import Image from "next/image";
 const ZabiegKonkretny = (props) => {
   const [isAktywnyBoolean, setIsAktywnyBoolean] = useState(false);
   const handlerToggleIsAktywny = () => {
@@ -43,6 +43,7 @@ const ZabiegKonkretny = (props) => {
           ]
         }
       ></div>
+
       <div
         onClick={handlerToggleIsAktywny}
         className={
@@ -63,6 +64,18 @@ const ZabiegKonkretny = (props) => {
       >
         {props.tytulZAbiegu}
       </div>
+      {props.isNowoscIMaFoty && (
+        <div
+          className={
+            styles[
+              "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--nowosc"
+            ]
+          }
+        >
+          {/* {props.isNowoscIMaZnaczek} */}
+          NOWOŚĆ
+        </div>
+      )}
       <div
         className={
           styles[
@@ -80,6 +93,28 @@ const ZabiegKonkretny = (props) => {
             : `${styles["menu-modal__closed-variant"]} `
         }
       >
+        <div
+          className={
+            styles[
+              "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__fota-nowosc"
+            ]
+          }
+        >
+          {/* {props.isNowoscIMaFoty && (
+            <Image
+              src={`/images/.dedykowane-do-strony-konkretnej/medical/usługi/wodor.png`}
+              alt={`nie pyklo zdjecie`}
+              height={300}
+              width={150}
+              layout="responsive"
+              objectFit="contain"
+              // quality={50}
+              priority
+              loading="eager"
+            />
+          )} */}
+        </div>
+
         <SzczegolKonkretny
           tresc={props.e}
           tytul="EFEKTY ZDROWOTNE"

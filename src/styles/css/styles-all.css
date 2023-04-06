@@ -1076,6 +1076,29 @@
     letter-spacing: 0.1rem;
   }
 }
+.layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--nowosc {
+  grid-row: r-1/r-2;
+  grid-column: c-2/c-3;
+  display: grid;
+  z-index: 10;
+  width: 7rem;
+  aspect-ratio: 2/1;
+  background-color: #765bc2;
+  color: white;
+  justify-self: end;
+  justify-items: center;
+  align-items: center;
+  transform: translate(1rem, -1.6rem);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+@media (orientation: landscape) {
+  .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--nowosc {
+    transform: translate(1rem, -1.2rem);
+    width: 10rem;
+    font-size: 1.5rem;
+  }
+}
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--linia-boczna {
   grid-row: r-2/r-3;
   grid-column: c-1/c-2;
@@ -1090,6 +1113,11 @@
   grid-row: r-2/r-3;
   grid-column: c-2/c-3;
   z-index: 5;
+}
+.layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__fota-nowosc {
+  grid-row: r-2/r-3;
+  grid-column: c-2/c-3;
+  z-index: 10;
 }
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container {
   display: grid;
