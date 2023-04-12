@@ -14,8 +14,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
         [r-1] $rozmiar-rowa
         [r-2] $rozmiar-rowa
         [r-3] $rozmiar-rowa
-        [r-4] 3rem
-        [r-5];
+        [r-4] $rozmiar-rowa
+        [r-5] 3rem
+        [r-6];
 
       grid-template-columns: 
         //
@@ -67,12 +68,64 @@ $rozmiar-rowa: minmax(0rem, max-content);
           justify-items: center;
         }
       }
-      &__cennik {
+      &__kup-karnet-button-cennik-fitness {
         grid-row: r-3 / r-4;
+        grid-column: c-5 / c-8;
+
+        width: 12rem;
+        aspect-ratio: 5/1.8;
+
+        margin: 5vw 0 3vw 0;
+        justify-content: center;
+        justify-self: center;
+        align-content: center;
+        align-self: center;
+
+        border: none;
+        background: linear-gradient(222deg, #cb530f 0%, #ffdc22 100%);
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 0 0.3rem #381b00;
+        box-shadow: 0 0 1vw 0.2vw #9f000021;
+        // transition: all 0.5s ease-out;
+        cursor: pointer;
+        // &:active {
+        //   // font-weight: 1;
+        //   background: linear-gradient(
+        //     222deg,
+        //     rgb(17, 146, 148) 0%,
+        //     rgb(129, 33, 202) 100%
+        //   );
+        // }
+        @media (orientation: landscape) {
+          margin: 2vw 0 1vw 0;
+          width: 12vw;
+          aspect-ratio: 5/1.8;
+          font-size: 1.5vw;
+        }
+        & a {
+          color: rgb(255, 255, 255);
+        }
+        & a:link,
+        :visited,
+        :active,
+        :hover {
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+        &:hover {
+          background: linear-gradient(222deg, #a00c04 0%, #fab800 100%);
+
+          transform: scale(1.2);
+          transition: all 0.5s ease-out;
+        }
+      }
+      &__cennik {
+        grid-row: r-4 / r-5;
         grid-column: c-1 / c-12;
         // height: 100vw;
         width: 90vw;
-        aspect-ratio: 1.2/1;
+        aspect-ratio: 1.35/1;
         justify-self: center;
         align-self: start;
         position: relative;

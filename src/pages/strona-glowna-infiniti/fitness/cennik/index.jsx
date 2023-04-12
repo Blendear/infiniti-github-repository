@@ -55,6 +55,21 @@ const FitnessCennik = () => {
       >
         <TytulPodstronyFitness nazwaPodstrony="CENNIK" />
       </div>
+      <button
+        className={
+          styles[
+            "layout__fitness-cennik__cala-strona__kup-karnet-button-cennik-fitness"
+          ]
+        }
+      >
+        <Link
+          // target="_blank"
+          download
+          href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet"
+        >
+          <a target="_blank">KUP KARNET</a>
+        </Link>
+      </button>
       <div className={styles["layout__fitness-cennik__cala-strona__cennik"]}>
         <Link
           // target="_blank"

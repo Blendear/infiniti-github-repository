@@ -96,6 +96,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
         &__konkretny-zabieg-container {
           display: grid;
           grid-template-rows:
+            [r-0] minmax(0rem, max-content)
             [r-1] $rozmiar-rowa
             [r-2] $rozmiar-rowa
             [r-3];
@@ -238,9 +239,11 @@ $rozmiar-rowa: minmax(0rem, max-content);
             z-index: 5;
 
             &__fota-nowosc {
-              grid-row: r-2/ r-3;
-              grid-column: c-2 / c-3;
-              z-index: 10;
+              // grid-row: r-0/ r-1;
+              // grid-column: c-2 / c-3;
+              // z-index: 10;
+              // position: relative;
+
               // width: 50%;
               // height: 50%;
             }

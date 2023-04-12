@@ -104,10 +104,10 @@ const ZabiegKonkretny = (props) => {
             <Image
               src={`/images/.dedykowane-do-strony-konkretnej/medical/usługi/wodor.png`}
               alt={`nie pyklo zdjecie`}
-              height={300}
-              width={150}
-              layout="responsive"
-              objectFit="contain"
+              // height={300}
+              // width={150}
+              layout="fill"
+              objectFit="cover"
               // quality={50}
               priority
               loading="eager"

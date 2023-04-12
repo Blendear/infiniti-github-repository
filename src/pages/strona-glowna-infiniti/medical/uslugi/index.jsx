@@ -1,13 +1,16 @@
 //
 //
-//~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
+//  “Filtr skilli, wraz z ustawianymi pod-możliwościami pokaż”
+//  I
+//  hook1....
 //
-//       A.1. parent rozdział nr 1
+//       1. parent rozdział nr 1
 //
-//           A.1.1. child rozdział nr 1
+//           1.A.. child rozdział nr 1
 //
-//~~ B.  Historyjka druga ...
+//                1.A.I. nowy dodatek
 //
+//                1.A.II. child rozdział nr 1
 
 import styles from "src/styles/sass/styles-all.module.scss";
 
