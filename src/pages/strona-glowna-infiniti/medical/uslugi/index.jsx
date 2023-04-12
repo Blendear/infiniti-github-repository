@@ -145,6 +145,7 @@ const MedicalUslugi = () => {
           tytulZAbiegu="INHALACJA AKT. WODORU"
           svgComponent={<SVGWodor mojKolor={kolorSVG} />}
           isNowoscIMaFoty={true}
+          fotaTyczySieTegoSzczegolu="efekty zdrowotne"
           isNowoscIMaZnaczek={true}
         />
         {/* //herehere14.02.2023 -  dokoncz */}

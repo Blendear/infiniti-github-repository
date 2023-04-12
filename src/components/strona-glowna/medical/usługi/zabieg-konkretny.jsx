@@ -99,26 +99,18 @@ const ZabiegKonkretny = (props) => {
               "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__fota-nowosc"
             ]
           }
-        >
-          {/* {props.isNowoscIMaFoty && (
-            <Image
-              src={`/images/.dedykowane-do-strony-konkretnej/medical/usługi/wodor.png`}
-              alt={`nie pyklo zdjecie`}
-              // height={300}
-              // width={150}
-              layout="fill"
-              objectFit="cover"
-              // quality={50}
-              priority
-              loading="eager"
-            />
-          )} */}
-        </div>
+        ></div>
 
         <SzczegolKonkretny
           tresc={props.e}
           tytul="EFEKTY ZDROWOTNE"
           svgIcon={<AiFillHeart />}
+          isNowoscIMaFoty={props.isNowoscIMaFoty ? props.isNowoscIMaFoty : null}
+          fotaTyczySieTegoSzczegolu={
+            props.fotaTyczySieTegoSzczegolu
+              ? props.fotaTyczySieTegoSzczegolu
+              : null
+          }
         />
         <SzczegolKonkretny
           tresc={props.d}

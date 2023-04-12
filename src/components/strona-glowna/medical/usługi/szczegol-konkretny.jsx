@@ -11,7 +11,7 @@
 
 import styles from "src/styles/sass/styles-all.module.scss";
 import { useState } from "react";
-
+import Image from "next/image";
 const SzczegolKonkretny = (props) => {
   const [isAktywnySzczegolBoolean, setIsAktywnySzczegolBoolean] =
     useState(false);
@@ -55,26 +55,80 @@ const SzczegolKonkretny = (props) => {
       >
         {props.tytul}
       </div>
-      <div
-        className={
-          isAktywnySzczegolBoolean === true
-            ? styles[
-                "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo"
-              ]
-            : styles["menu-modal__closed-variant"]
-        }
 
-        // ZBEDNE /\ skoro tlo nie powstanie, if no content?
+      {props.isNowoscIMaFoty ? (
+        <div
+          className={
+            isAktywnySzczegolBoolean === true
+              ? styles[
+                  "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo-foty-zastepujacej-tekst"
+                ]
+              : styles["menu-modal__closed-variant"]
+          }
 
-        // className={
-        //   styles[
-        //     "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo"
-        //   ]
-        // }
-      >
-        {/* tresc tlo */}
-      </div>
-      <div
+          // ZBEDNE /\ skoro tlo nie powstanie, if no content?
+
+          // className={
+          //   styles[
+          //     "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo"
+          //   ]
+          // }
+        >
+          <div
+            className={
+              isAktywnySzczegolBoolean === true
+                ? styles[
+                    "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-fota-zamiast-tekstu"
+                  ]
+                : styles["menu-modal__closed-variant"]
+            }
+          >
+            <Image
+              src={`/images/.dedykowane-do-strony-konkretnej/medical/usługi/wodor.png`}
+              alt={`nie pyklo zdjecie`}
+              // height={300}
+              // width={150}
+              layout="fill"
+              objectFit="contain"
+              // quality={80}
+              priority
+              loading="eager"
+            />
+          </div>
+        </div>
+      ) : (
+        <div
+          className={
+            isAktywnySzczegolBoolean === true
+              ? styles[
+                  "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo"
+                ]
+              : styles["menu-modal__closed-variant"]
+          }
+
+          // ZBEDNE /\ skoro tlo nie powstanie, if no content?
+
+          // className={
+          //   styles[
+          //     "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo"
+          //   ]
+          // }
+        >
+          <div
+            className={
+              isAktywnySzczegolBoolean === true
+                ? styles[
+                    "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tekst"
+                  ]
+                : styles["menu-modal__closed-variant"]
+            }
+          >
+            {props.tresc}
+          </div>
+        </div>
+      )}
+
+      {/* <div
         className={
           isAktywnySzczegolBoolean === true
             ? styles[
@@ -84,7 +138,7 @@ const SzczegolKonkretny = (props) => {
         }
       >
         {props.tresc}
-      </div>
+      </div> */}
     </div>
   );
 };

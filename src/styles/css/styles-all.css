@@ -1002,6 +1002,7 @@
   grid-template-columns: [c-1] 1fr [c-2] 5fr [c-3];
   grid-auto-flow: row;
   margin: 0 0 1vw 0;
+  cursor: pointer;
 }
 @media (orientation: landscape) {
   .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container {
@@ -1176,11 +1177,25 @@
   background-color: white;
   box-shadow: 0 0 1vw 0.2vw rgba(63, 0, 69, 0.3568627451);
 }
+.layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tlo-foty-zastepujacej-tekst {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-4;
+}
+.layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-fota-zamiast-tekstu {
+  grid-row: r-2/r-3;
+  grid-column: c-1/c-4;
+  height: 80vw;
+  aspect-ratio: 1/1;
+  padding: 1rem 2rem 1rem 2rem;
+  position: relative;
+  display: grid;
+}
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tekst {
   grid-row: r-2/r-3;
   grid-column: c-1/c-4;
   font-size: 1.1rem;
   padding: 1rem 2rem 1rem 2rem;
+  position: relative;
   display: grid;
 }
 .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tresc-tekst ul li::marker {
