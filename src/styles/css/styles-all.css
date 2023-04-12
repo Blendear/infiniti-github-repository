@@ -1003,6 +1003,7 @@
   grid-auto-flow: row;
   margin: 0 0 1vw 0;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 @media (orientation: landscape) {
   .layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container {
