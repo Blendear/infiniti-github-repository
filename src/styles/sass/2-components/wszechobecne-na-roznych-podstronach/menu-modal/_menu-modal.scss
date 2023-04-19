@@ -1,3 +1,4 @@
+@use "../../../../sass/5-themes/infiniti-variables/infiniti-variables";
 $rozmiar-rowa: minmax(0vw, 20vw);
 
 .menu-modal {
@@ -5,9 +6,10 @@ $rozmiar-rowa: minmax(0vw, 20vw);
     display: none;
   }
   &__caly-container {
-    grid-row: r-1 / r-10;
-    grid-column: c-1 / c-12;
-
+    // grid-row: r-1 / r-10;
+    // grid-column: c-1 / c-12;
+    // overflow: hidden;
+    // background-size: 100%;
     display: grid;
     grid-template-rows:
       [r-0_break] 16vw
@@ -19,7 +21,8 @@ $rozmiar-rowa: minmax(0vw, 20vw);
       [r-6] $rozmiar-rowa
       [r-7] $rozmiar-rowa
       [r-8] $rozmiar-rowa
-      [r-9];
+      [r-9] 1fr
+      [r-10];
     grid-template-columns:
       [c-1] 0.6fr
       [c-2] 3fr
@@ -30,7 +33,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
     @media (orientation: landscape) {
       grid-template-rows:
         [r-1] max-content
-        [r-2] 3fr;
+        [r-2];
       grid-template-columns:
         [c-1] 1fr
         [c-2] 1fr
@@ -38,13 +41,14 @@ $rozmiar-rowa: minmax(0vw, 20vw);
         [c-4];
 
       // align-self: center;
-      margin: 5vw 0 0 0;
+      margin: 0 0 0 0;
+      padding: 5vw 0 0 0;
     }
     z-index: 200;
-    background-color: white;
+
     // hook1 - image blurred w tle or inner shadow chociaz w tle?
 
-    height: 100%;
+    // height: 135vh;
     @media (orientation: landscape) {
       justify-items: center;
     }
@@ -54,10 +58,11 @@ $rozmiar-rowa: minmax(0vw, 20vw);
       &--medical {
         grid-row: r-1 / r-2;
         grid-column: c-2 / c-3;
-
+        display: grid;
+        justify-self: center;
         position: relative;
-        width: 100%;
-
+        width: 50%;
+        margin: 0 0 3vw 0;
         animation: fadeInAnimation ease 0.6s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -74,17 +79,19 @@ $rozmiar-rowa: minmax(0vw, 20vw);
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-2;
 
-          width: 35%;
+          width: 25%;
         }
         aspect-ratio: 1.3/1;
       }
       &--fitness {
         grid-row: r-1 / r-2;
         grid-column: c-4 / c-5;
-
+        margin: 0 0 3vw 0;
         position: relative;
+        display: grid;
+        justify-self: center;
         // width: 100%;
-        // width: 50%;
+        width: 50%;
         animation: fadeInAnimation ease 0.6s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -101,7 +108,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
           grid-row: r-1 / r-2;
           grid-column: c-3 / c-4;
 
-          width: 35%;
+          width: 25%;
         }
         // aspect-ratio: 1.5/1;
       }
@@ -131,7 +138,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
           // width: 100%;
         }
 
-        margin: 5vw 0 0 0;
+        margin: 0vw 0 0 0;
 
         @include m-q-landscape-lewe-prawe-klocki();
       }
@@ -143,7 +150,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
           grid-column: c-3 / c-4;
         }
 
-        margin: 5vw 0 0 0;
+        margin: 0vw 0 0 0;
 
         @include m-q-landscape-lewe-prawe-klocki();
       }
@@ -164,11 +171,13 @@ $rozmiar-rowa: minmax(0vw, 20vw);
           justify-items: center;
           align-self: start;
           row-gap: 5rem;
+          transform: translateY(0);
           // margin: none;
         }
         // width: 100%;
         // aspect-ratio: 1.5/1;
         margin: 0vw 0 0 0;
+        transform: translateY(-3rem);
         // row-gap: 5vw;
       }
 
@@ -208,6 +217,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
         z-index: 10;
         border: none;
         background-color: rgba(255, 255, 255, 0);
+        filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.447));
         animation: fadeInAnimation ease 0.4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -230,6 +240,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
           aspect-ratio: 4/1;
         }
         //
+        filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.447));
         position: relative;
         z-index: 10;
         border: none;

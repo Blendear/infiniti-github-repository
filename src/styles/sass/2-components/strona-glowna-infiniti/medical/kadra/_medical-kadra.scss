@@ -1,4 +1,4 @@
-@use "../../../../5-themes/medical-variables/medical-variables";
+@use "../../../../5-themes/infiniti-variables/infiniti-variables";
 
 $rozmiar-rowa: minmax(0rem, max-content);
 
@@ -6,6 +6,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
   // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
   &__medical-kadra {
     // \/ layout, w który zostana włożone "foty marketingowe i reszta podfragmnetó storny głównej
+
     &__cala-strona {
       position: relative;
       display: grid;
@@ -30,7 +31,30 @@ $rozmiar-rowa: minmax(0rem, max-content);
         [c-10] 1fr
         [c-11] 1fr
         [c-12];
+      &__tlo-calej-strony {
+        grid-row: r-1/ r-5;
+        grid-column: c-1 / c-12;
+        z-index: -100;
+        background-color: infiniti-variables.$middle-blue;
+        background: -moz-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
 
+          infiniti-variables.$light-blue 100%
+        );
+        background: -webkit-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
+        background: linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
+      }
       &__0-startowe-logo-i-fota {
         &--logo {
           // hook1--dodaj logo i z-indexnij pod fote
@@ -111,22 +135,23 @@ $rozmiar-rowa: minmax(0rem, max-content);
 
             width: max(20rem, 30vw);
 
-            background: medical-variables.$medical--klocek-gradient-part-1;
+            background: infiniti-variables.$aktywny-fiolet;
             background: -moz-linear-gradient(
-              135deg,
-              medical-variables.$medical--klocek-gradient-part-1 0%,
-              medical-variables.$medical--klocek-gradient-part-2 100%
+              90deg,
+              infiniti-variables.$kafelkowy-fiolet 0%,
+              infiniti-variables.$kafelkowy-niebieski 100%
             );
             background: -webkit-linear-gradient(
-              135deg,
-              medical-variables.$medical--klocek-gradient-part-1 0%,
-              medical-variables.$medical--klocek-gradient-part-2 100%
+              90deg,
+              infiniti-variables.$kafelkowy-fiolet 0%,
+              infiniti-variables.$kafelkowy-niebieski 100%
             );
             background: linear-gradient(
-              135deg,
-              medical-variables.$medical--klocek-gradient-part-1 0%,
-              medical-variables.$medical--klocek-gradient-part-2 100%
+              90deg,
+              infiniti-variables.$kafelkowy-fiolet 0%,
+              infiniti-variables.$kafelkowy-niebieski 100%
             );
+            filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           }
           &--tytul-nazwa {
             grid-row: r-1/ r-empty;
@@ -140,9 +165,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             margin: 0rem 0 0rem 3rem;
             align-self: center;
             font-weight: bold;
-            filter: drop-shadow(
-              0 0 0.2rem medical-variables.$medical--ciemny-niebieksi
-            );
+            filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           }
           &--linia-boczna {
             grid-row: r-2/ r-3;
@@ -154,7 +177,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             justify-self: center;
             align-self: center;
             // margin: 0 0 0 2rem;
-            background-color: medical-variables.$medical--linia-boczna-lub-dzielaca-color;
+            background-color: infiniti-variables.$linia-boczna;
           }
           &__lista-osob-o-tej-roli-container {
             grid-row: r-2/ r-3;
@@ -231,6 +254,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 aspect-ratio: 1/0.8;
                 //hook1 - rozpisz kiedy ASPECTRATIO, CZY NAJLEPSZY JEST REM, czy jednak czasme lepiej &, kiedy lepiej % kiedy vw kiedy rem (% np., kiedy niepowiniennigyd przerosnac containera
                 justify-self: center;
+                filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.607));
 
                 // padding: 1vw 3vw 1vw 3vw;
                 // margin: 2vw 0 2vw 0;
@@ -268,26 +292,26 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 // aspect-ratio: 10/1;
                 //hook1 - ZAWSZE rm lepszy? ob vw wyjebuje repsonsywnosc w kosmos gdy rozszerzasz
                 font-size: 2rem;
-                color: #088b9a;
-                font-weight: bold;
-
+                letter-spacing: 0.1rem;
+                filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
                 @media (orientation: landscape) {
-                  font-size: min(2.2rem, 2vw);
+                  font-size: min(2.5rem, 2vw);
                 }
+                color: white;
+                font-weight: bold;
               }
               &--rola-dokladna {
                 grid-row: r-2/ r-3;
                 grid-column: c-3 / c-4;
-
+                letter-spacing: 0.05rem;
                 font-size: 1.2rem;
-
-                // color: #484848;
-                color: #6e6e6e;
-                font-weight: 400;
-
+                filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
+                // font-weight: 600;
                 @media (orientation: landscape) {
-                  font-size: min(1.7rem, 1.7vw);
+                  font-size: min(2rem, 1.7vw);
                 }
+
+                color: white;
               }
 
               &--tresc-tekst {
@@ -315,7 +339,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 grid-auto-flow: column;
                 column-gap: 2rem;
 
-                background-color: white;
+                // background-color: white;
 
                 &--svg-konkretny {
                   // align-self: center;
@@ -325,11 +349,11 @@ $rozmiar-rowa: minmax(0rem, max-content);
                   // align-content: center;
                   gap: 0.5rem;
                   // transition: all 0.5s;
-
+                  filter: drop-shadow(0 0 0.15rem rgba(0, 0, 0, 0.422));
                   & p {
                     align-self: center;
                     font-size: 1.1rem;
-                    color: #088b9a;
+                    color: #ffffff;
 
                     @media (orientation: landscape) {
                       font-size: min(1.7rem, 1.2vw);

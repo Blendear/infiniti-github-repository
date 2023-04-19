@@ -50,11 +50,6 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
 import { wybranyPoziomIMiejsceActions } from "../../../../store/redux/store-redux";
 import CircleLoader from "react-spinners/CircleLoader";
-//hook1 \/
-//
-// po poziomie data plik wybiera
-//
-// po nazwie fote znajduje
 
 const CarouselPoziomy = () => {
   //spinner
@@ -66,15 +61,6 @@ const CarouselPoziomy = () => {
   );
   const dispatch = useAppDispatch();
 
-  //ktore miejsc ejest aktywne
-
-  // oblicz dlugosc jego zdjec array
-
-  // max index zdjecia = poliz ile ma zdjec to miejsce /\ - 1
-
-  // Image - if no foty w tym miejscu - wyswietl miejsce "boisko"
-
-  //
   const [aktualnyFoto, setAktualnyFoto] = useState(0);
   const lengthOfDataArray = carouselData.length;
 
@@ -90,7 +76,6 @@ const CarouselPoziomy = () => {
   //
   //           B.3.1. Gdy aktualny jest ostanią fotą - przejdź do pierwszej || gdy nie jest ostatnią - przejdź do next foty
 
-  //herehere11.02.2023 - bug ze za duzo mozna dawac next image i wywala no image
   const handlerNextFoto = () => {
     // console.log(
     //   carouselData.find((miejsce) => miejsce.nazwaMiejsca === "boisko")
@@ -173,7 +158,7 @@ const CarouselPoziomy = () => {
         className={` ${styles["layout__strona-glowna__cala-strona__carousel-gallery--loader"]}`}
       >
         <CircleLoader
-          color="#09adca"
+          color="#5c1593"
           loading={loading}
           cssOverride={{
             display: "block",

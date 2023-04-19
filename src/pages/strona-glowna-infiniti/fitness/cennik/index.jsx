@@ -46,8 +46,8 @@ const FitnessCennik = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-Fitness.png" />
-      <ZmienneStartoweLogo logoPath="logo-Fitness.jpg" />
+      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
           styles["layout__fitness-cennik__cala-strona__0-nazwa-podstrony"]
@@ -55,6 +55,11 @@ const FitnessCennik = () => {
       >
         <TytulPodstronyFitness nazwaPodstrony="CENNIK" />
       </div>
+      <div
+        className={
+          styles["layout__medical-cennik__cala-strona__tlo-calej-strony"]
+        }
+      ></div>
       <button
         className={
           styles[

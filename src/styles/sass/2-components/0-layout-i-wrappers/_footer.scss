@@ -1,3 +1,5 @@
+@use "../../../../styles/sass/5-themes/infiniti-variables/infiniti-variables";
+
 .footer {
   &__caly-container {
     display: grid;
@@ -8,10 +10,22 @@
     row-gap: 3rem;
 
     // background-color: black;
-    background: #5a87ff;
-    background: -moz-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
-    background: -webkit-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
-    background: linear-gradient(0deg, #cb8dff 0%, #809cff 100%);
+    background: infiniti-variables.$dark-violet;
+    background: -moz-linear-gradient(
+      0deg,
+      infiniti-variables.$dark-violet 0%,
+      infiniti-variables.$dark-blue 100%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      infiniti-variables.$dark-violet 0%,
+      infiniti-variables.$dark-blue 100%
+    );
+    background: linear-gradient(
+      0deg,
+      infiniti-variables.$dark-violet 0%,
+      infiniti-variables.$dark-blue 100%
+    );
 
     @media (orientation: landscape) {
       grid-auto-flow: column;
@@ -71,11 +85,24 @@
     justify-items: start;
     font-size: 1.6rem;
     font-weight: bold;
+    letter-spacing: 0.07rem;
     color: white;
-    background: #8c51d7;
-    background: -moz-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
-    background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
-    background: linear-gradient(0deg, #965ae4 0%, #5b7eff 100%);
+    background: infiniti-variables.$dark-violet;
+    background: -moz-linear-gradient(
+      0deg,
+      infiniti-variables.$dark-violet 0%,
+      infiniti-variables.$dark-blue 100%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      infiniti-variables.$dark-violet 0%,
+      infiniti-variables.$dark-blue 100%
+    );
+    background: linear-gradient(
+      0deg,
+      infiniti-variables.$dark-violet 0%,
+      infiniti-variables.$dark-blue 100%
+    );
     // box-shadow: 0px 0px 0.2rem 0.2rem #53249078;
     @media (orientation: landscape) {
       width: 80%;
@@ -110,6 +137,7 @@
     // justify-self: start;
     font-size: 1.6rem;
     font-weight: normal;
+    line-height: 2rem;
     text-shadow: 0rem 0.2rem #5e286278;
     color: white;
     width: 80%;
@@ -215,7 +243,7 @@
     // justify-items: center;
     // align-self: start;
     text-align: center;
-    color: rgb(69, 69, 69);
+    color: rgba(0, 0, 0, 0.443);
     text-shadow: none;
     margin: 0 auto 2rem auto;
     // margin-bottom: 2rem;
@@ -232,7 +260,7 @@
     // justify-items: center;
     // align-self: start;
     text-align: center;
-    color: rgb(69, 69, 69);
+    color: rgba(0, 0, 0, 0.443);
     text-shadow: none;
     margin: 0 auto 2rem auto;
 

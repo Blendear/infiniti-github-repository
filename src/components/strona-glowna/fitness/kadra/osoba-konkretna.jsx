@@ -31,7 +31,7 @@ const OsobaKonkretna = (props) => {
             key={socialKonkretny}
           >
             <a>
-              <FaFacebookF size="2rem" color="#89150d" />
+              <FaFacebookF size="2rem" color="#22c1c3" />
             </a>
           </Link>
         );
@@ -43,7 +43,7 @@ const OsobaKonkretna = (props) => {
             key={socialKonkretny}
           >
             <a>
-              <BsInstagram size="2rem" color="#89150d" />
+              <BsInstagram size="2rem" color="#22c1c3" />
             </a>
           </Link>
         );
@@ -61,7 +61,7 @@ const OsobaKonkretna = (props) => {
           //   </a>
           // </Link>
 
-          <TfiEmail size="2rem" color="#89150d" />
+          <TfiEmail size="2rem" color="#22c1c3" />
         );
         socialeTejOsoby.push(<p>{props.daneOOsobie.socialMediaLinks.email}</p>);
         break;
@@ -126,7 +126,6 @@ const OsobaKonkretna = (props) => {
         {props.daneOOsobie.funkcja}
       </div>
 
-      {/* //hook1 - opis keidys mozna dorobic, co lubi etc. cos perosnalnego */}
       {/* <div
         className={
           2 > 1 === true

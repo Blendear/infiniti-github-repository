@@ -1,3 +1,5 @@
+@use "../../../../5-themes/infiniti-variables/infiniti-variables";
+
 $rozmiar-rowa: minmax(0rem, max-content);
 
 .layout {
@@ -14,8 +16,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
         [r-1] $rozmiar-rowa
         [r-2] $rozmiar-rowa
         [r-3] $rozmiar-rowa
-        [r-4] 3rem
-        [r-5];
+        [r-4] $rozmiar-rowa
+        [r-5] $rozmiar-rowa
+        [r-6];
 
       grid-template-columns: 
         //
@@ -88,6 +91,30 @@ $rozmiar-rowa: minmax(0rem, max-content);
             opacity: 1;
           }
         }
+      }
+      &__tlo-calej-strony {
+        grid-row: r-1 / r-6;
+        grid-column: c-1 / c-12;
+        z-index: -100;
+        background-color: infiniti-variables.$middle-blue;
+        background: -moz-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
+        background: -webkit-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
+        background: linear-gradient(
+          180deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
       }
     }
   }

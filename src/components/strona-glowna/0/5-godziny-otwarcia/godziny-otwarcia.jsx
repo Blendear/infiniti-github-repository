@@ -51,7 +51,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>KLUB</strong>
+        KLUB
       </div>
       <div
         className={
@@ -137,7 +137,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>SAUNA</strong>
+        SAUNA
       </div>
       <div
         className={
@@ -262,6 +262,15 @@ const GodzinyOtwarciaKS = () => {
         }
       >
         <strong>NIEDZIELA</strong> <br /> 11:00 - 17:00
+      </div>
+      <div
+        className={
+          styles[
+            "layout__strona-glowna__cala-strona__godziny-otwarcia--dopisek-z-gwiazdka-na-dole"
+          ]
+        }
+      >
+        * Sauna włączana na życzenie klienta
       </div>
     </div>
   );

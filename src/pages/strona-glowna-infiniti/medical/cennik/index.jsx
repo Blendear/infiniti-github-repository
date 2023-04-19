@@ -47,8 +47,8 @@ const MedicalCennik = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-Medical.png" />
-      <ZmienneStartoweLogo logoPath="logo-Medical.jpg" />
+      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
           styles["layout__medical-cennik__cala-strona__0-nazwa-podstrony"]
@@ -56,6 +56,11 @@ const MedicalCennik = () => {
       >
         <TytulPodstrony nazwaPodstrony="CENNIK" />
       </div>
+      <div
+        className={
+          styles["layout__medical-cennik__cala-strona__tlo-calej-strony"]
+        }
+      ></div>
       <div className={styles["layout__medical-cennik__cala-strona__cennik"]}>
         <Link
           // target="_blank"

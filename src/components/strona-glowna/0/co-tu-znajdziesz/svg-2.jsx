@@ -9,14 +9,14 @@ const SVGCoTuZnajdziesz1 = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      id="eyzcHZtF1LR1"
+      id="e7rUizfGglF1"
       viewBox="0 0 210 210"
       shape-rendering="geometricPrecision"
       text-rendering="geometricPrecision"
     >
       <defs>
         <linearGradient
-          id="eyzcHZtF1LR2-fill"
+          id="e7rUizfGglF2-fill"
           x1="0.500047"
           y1="0"
           x2="0.5"
@@ -25,15 +25,15 @@ const SVGCoTuZnajdziesz1 = () => {
           gradientUnits="objectBoundingBox"
           gradientTransform="translate(0 0)"
         >
-          <stop id="eyzcHZtF1LR2-fill-0" offset="0%" stop-color="#cb8dff" />
-          <stop id="eyzcHZtF1LR2-fill-1" offset="100%" stop-color="#809cff" />
+          <stop id="e7rUizfGglF2-fill-0" offset="0%" stop-color="#3bb4ff" />
+          <stop id="e7rUizfGglF2-fill-1" offset="100%" stop-color="#9f30ff" />
         </linearGradient>
       </defs>
       <ellipse
         rx="105"
         ry="105"
         transform="translate(105.000003 105)"
-        fill="url(#eyzcHZtF1LR2-fill)"
+        fill="url(#e7rUizfGglF2-fill)"
       />
       <g transform="matrix(.699537 0.535691-.535691 0.699537 79.343168-25.463373)">
         <ellipse

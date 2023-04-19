@@ -34,8 +34,8 @@ import SVGElektro4 from "../../../../components/strona-glowna/medical/usługi/sv
 import SVGWodor from "../../../../components/strona-glowna/medical/usługi/svg/svg-wodor";
 import SVGUltradzwiek from "../../../../components/strona-glowna/medical/usługi/svg/svg-dzwiek";
 import SVGMagnet from "../../../../components/strona-glowna/medical/usługi/svg/svg-magnet";
-
-const kolorSVG = "#246798";
+// hook1 - markup next tiem zrob, nie tylko divy
+const kolorSVG = "#7A1276";
 
 const MedicalUslugi = () => {
   const reduxStateIsMenuOpen = useAppSelector(
@@ -63,8 +63,8 @@ const MedicalUslugi = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-Medical.png" />
-      <ZmienneStartoweLogo logoPath="logo-Medical.jpg" />
+      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
           styles["layout__medical-uslugi__cala-strona__0-nazwa-podstrony"]
@@ -72,6 +72,12 @@ const MedicalUslugi = () => {
       >
         <TytulPodstrony nazwaPodstrony="USŁUGI" />
       </div>
+      <div
+        className={
+          styles["layout__medical-kadra__cala-strona__tlo-calej-strony"]
+        }
+      ></div>
+
       <div
         className={
           styles[

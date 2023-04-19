@@ -25,6 +25,7 @@ import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
 import { menuINavbarSliceActions } from "../../../../store/redux/store-redux";
 
 import { GrDocumentText } from "react-icons/gr";
+import { CgFileDocument } from "react-icons/cg";
 const DoPobrania = () => {
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
@@ -60,7 +61,11 @@ const DoPobrania = () => {
       >
         <TytulPodstrony nazwaPodstrony="DO POBRANIA" />
       </div>
-
+      <div
+        className={
+          styles["layout__fitness-kadra__cala-strona__tlo-calej-strony"]
+        }
+      ></div>
       <div
         className={
           styles[
@@ -104,7 +109,7 @@ const DoPobrania = () => {
             ]
           }
         >
-          <GrDocumentText opacity="0.6" />
+          <CgFileDocument />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Regulamin_Infiniti_Fitness_Club_2023.pdf"
@@ -119,7 +124,7 @@ const DoPobrania = () => {
             ]
           }
         >
-          <GrDocumentText opacity="0.6" />
+          <CgFileDocument />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Polityka_Prywatności_Fit-Food-Group_01.2023.pdf"
@@ -134,7 +139,7 @@ const DoPobrania = () => {
             ]
           }
         >
-          <GrDocumentText opacity="0.6" />
+          <CgFileDocument />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/OSWIADCZENIE_RODZICA_OPIEKUNA.pdf"
@@ -149,7 +154,7 @@ const DoPobrania = () => {
             ]
           }
         >
-          <GrDocumentText opacity="0.6" />
+          <CgFileDocument />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Wzor-oswiadczenia-o-odstapieniu-od-umowy-zawartej-na-odleglosc.pdf"

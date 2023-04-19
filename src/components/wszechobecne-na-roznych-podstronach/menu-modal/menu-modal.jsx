@@ -11,16 +11,19 @@ const MenuModal = (props) => {
   );
 
   return (
+    // <div className={styles["menu-modal__tlo"]}>
     <div
       className={
         reduxStateIsMenuOpen === true
-          ? styles["menu-modal__caly-container"]
+          ? `${styles["menu-modal__caly-container"]} 
+            
+            `
           : styles["menu-modal__closed-variant"]
       }
     >
       <div className={styles["menu-modal__caly-container__loga--medical"]}>
         <Image
-          src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/menu-modal/loga/logo-Medical.png`}
+          src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Medical.jpg`}
           alt={`nie pyklo zdjecie`}
           // height={200}
           // width={200}
@@ -30,7 +33,7 @@ const MenuModal = (props) => {
       </div>
       <div className={styles["menu-modal__caly-container__loga--fitness"]}>
         <Image
-          src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/menu-modal/loga/logo-Fitness.png`}
+          src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Fitness.jpg`}
           alt={`nie pyklo zdjecie`}
           // height={200}
           // width={200}
@@ -142,6 +145,7 @@ const MenuModal = (props) => {
         {/* <KlocekMenu imagePathEnd="klocek-medical.png" napisTresc="CENNIK" /> */}
       </div>
     </div>
+    // </div>
   );
 };
 export default MenuModal;

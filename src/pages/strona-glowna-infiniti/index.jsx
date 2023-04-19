@@ -170,7 +170,7 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-2"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-7"
             ]
           }
         >
@@ -179,7 +179,7 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-2"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-7"
             ]
           }
         >
@@ -188,7 +188,7 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-3"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-5"
             ]
           }
         >
@@ -198,11 +198,11 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-3"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-5"
             ]
           }
         >
-          YOGA <br />& MEDYTACJA
+          YOGA
         </div>
         <div
           className={
@@ -220,12 +220,12 @@ const StronaGlowna = () => {
             ]
           }
         >
-          MMA & BJJ
+          SZTUKI WALKI
         </div>
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-5"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-6"
             ]
           }
         >
@@ -234,7 +234,7 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-5"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-6"
             ]
           }
         >
@@ -245,7 +245,7 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-6"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-2"
             ]
           }
         >
@@ -254,7 +254,7 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-6"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-2"
             ]
           }
         >
@@ -263,7 +263,7 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-7"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-3"
             ]
           }
         >
@@ -272,7 +272,7 @@ const StronaGlowna = () => {
         <div
           className={
             styles[
-              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-7"
+              "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-3"
             ]
           }
         >

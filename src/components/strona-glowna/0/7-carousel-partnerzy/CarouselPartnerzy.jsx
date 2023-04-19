@@ -46,14 +46,7 @@ import Image from "next/image.js";
 //       B.1. Import ikonek
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { useEffect } from "react";
-//hook1 \/
-//
-// 0. 3 zdjęica wyświetl na raz
-// 1. po array number ustaw aktualne 3 zdjecia
-// 2. co x sekund zmien 3 zdjecia
-// 3. if drugi i trzeci div have no foty do pokazania , niech pokaza nic
-//
-//
+
 let cos = 1;
 const CarouselPartnerzy = () => {
   const [aktualnyFotoIndex, setAktualnyFotoIndex] = useState(0);

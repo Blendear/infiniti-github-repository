@@ -53,7 +53,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
       justify-self: center;
       align-self: center;
 
-      color: grey;
+      color: rgb(255, 255, 255);
       font-weight: normal;
       font-size: min(3.7rem, 20vw);
 
@@ -64,7 +64,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
       }
 
       &--fitness-wariant {
-        color: fitness-variables.$fitness--czarny;
+        color: white;
       }
       //   transform: scale(0.5);
     }

@@ -1,4 +1,5 @@
 @use "../../../../5-themes/medical-variables/medical-variables";
+@use "../../../../5-themes/infiniti-variables/infiniti-variables";
 
 $rozmiar-rowa: minmax(0rem, max-content);
 
@@ -33,7 +34,30 @@ $rozmiar-rowa: minmax(0rem, max-content);
         [c-10] 1fr
         [c-11] 1fr
         [c-12];
+      &__tlo-calej-strony {
+        grid-row: r-1/ r-5;
+        grid-column: c-1 / c-12;
+        z-index: -100;
+        background-color: infiniti-variables.$middle-blue;
+        background: -moz-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
 
+          infiniti-variables.$light-blue 100%
+        );
+        background: -webkit-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
+        background: linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
+      }
       &__0-startowe-logo-i-fota {
         &--logo {
           // hook1--dodaj logo i z-indexnij pod fote
@@ -124,15 +148,23 @@ $rozmiar-rowa: minmax(0rem, max-content);
             grid-row: r-1/ r-2;
             grid-column: c-1 / c-3;
 
-            background: #1f5c91;
-            background: -moz-linear-gradient(-45deg, #1f5c91 0%, #4ec5d1 100%);
-            background: -webkit-linear-gradient(
-              -45deg,
-              #1f5c91 0%,
-              #4ec5d1 100%
+            background: infiniti-variables.$aktywny-fiolet;
+            background: -moz-linear-gradient(
+              90deg,
+              infiniti-variables.$kafelkowy-fiolet 0%,
+              infiniti-variables.$kafelkowy-niebieski 100%
             );
-            background: linear-gradient(135deg, #1f5c91 0%, #4ec5d1 100%);
-            // width: 4rem;
+            background: -webkit-linear-gradient(
+              90deg,
+              infiniti-variables.$kafelkowy-fiolet 0%,
+              infiniti-variables.$kafelkowy-niebieski 100%
+            );
+            background: linear-gradient(
+              90deg,
+              infiniti-variables.$kafelkowy-fiolet 0%,
+              infiniti-variables.$kafelkowy-niebieski 100%
+            );
+            filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
             height: 4rem;
             margin: 1rem 0 1rem 3rem;
 
@@ -152,7 +184,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             width: 6rem;
             height: 6rem;
             border-radius: 90%;
-            border-color: #246798;
+            border-color: infiniti-variables.$kafelkowy-fiolet;
             border-style: solid;
             border-width: 0.5rem;
 
@@ -183,9 +215,9 @@ $rozmiar-rowa: minmax(0rem, max-content);
             grid-row: r-1/ r-2;
             grid-column: c-2 / c-3;
             z-index: 10;
-            font-size: min(1.5rem, 50vw);
+            font-size: min(1.4rem, 50vw);
             font-weight: bold;
-            letter-spacing: 0.12rem;
+            letter-spacing: 0.09rem;
             align-self: center;
 
             padding: 0 0 0 1.5rem;
@@ -206,7 +238,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             z-index: 10;
             width: 7rem;
             aspect-ratio: 2/1;
-            background-color: #765bc2;
+            background-color: infiniti-variables.$kafelkowy-happy-fiolet;
             color: white;
             justify-self: end;
             justify-items: center;
@@ -232,7 +264,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             align-self: center;
             justify-self: center;
 
-            background-color: medical-variables.$medical--jasny-niebieksi;
+            background-color: infiniti-variables.$linia-boczna;
           }
           &__lista-szczegolow-danego-zabiegu-container {
             grid-row: r-2/ r-3;
@@ -278,21 +310,27 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 //
 
                 height: 2.5rem;
-                width: 18rem;
+                width: 19rem;
+                z-index: -5;
                 //protip1 - repsonsiveness - ZAWSZE okresl width i height, chocby height wyliczane z aspect ratio
                 //trap1- I NIE % OR VW, tylko rem. aspekty wizualne, niefontowe, moge vw, jeśli już potrzeba. Ale tedy min or max używam
-                background: #5e25ba;
+                background: infiniti-variables.$aktywny-fiolet;
                 background: -moz-linear-gradient(
-                  -45deg,
-                  #5e25ba 0%,
-                  #d252ab 100%
+                  90deg,
+                  infiniti-variables.$kafelkowy-fiolet 0%,
+                  infiniti-variables.$kafelkowy-niebieski 100%
                 );
                 background: -webkit-linear-gradient(
-                  -45deg,
-                  #5e25ba 0%,
-                  #d252ab 100%
+                  90deg,
+                  infiniti-variables.$kafelkowy-fiolet 0%,
+                  infiniti-variables.$kafelkowy-niebieski 100%
                 );
-                background: linear-gradient(135deg, #5e25ba 0%, #d252ab 100%);
+                background: linear-gradient(
+                  90deg,
+                  infiniti-variables.$kafelkowy-fiolet 0%,
+                  infiniti-variables.$kafelkowy-niebieski 100%
+                );
+                filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
 
                 @media (orientation: landscape) {
                   margin: 1vw 0 1vw 0;
@@ -322,7 +360,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 font-size: 1rem;
                 color: white;
                 font-weight: bold;
-                filter: drop-shadow(0 0 0.05rem rgb(41, 0, 47));
+                letter-spacing: 0.1rem;
+                filter: drop-shadow(0 0 0.15rem rgb(0, 38, 47));
 
                 @media (orientation: landscape) {
                   font-size: max(1rem, 1vw);
@@ -331,8 +370,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
               &--tresc-tlo {
                 grid-row: r-2/ r-3;
                 grid-column: c-1 / c-4;
-                background-color: white;
-                box-shadow: 0 0 1vw 0.2vw #3f00455b;
+                // background-color: white;
+                // box-shadow: 0 0 1vw 0.2vw #3f00455b;
                 // padding: 1vw 0 1vw 0;
               }
               &--tresc-tlo-foty-zastepujacej-tekst {
@@ -342,11 +381,11 @@ $rozmiar-rowa: minmax(0rem, max-content);
               &--tresc-fota-zamiast-tekstu {
                 grid-row: r-2/ r-3;
                 grid-column: c-1 / c-4;
-                height: 80vw;
+                height: 73vw;
                 aspect-ratio: 1/1;
                 // width: 100vw;
                 // width: auto;
-                padding: 1rem 2rem 1rem 2rem;
+                padding: 1rem 2rem 1rem 0rem;
                 // width: 3rem;
                 position: relative;
                 display: grid;
@@ -357,13 +396,15 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 grid-column: c-1 / c-4;
                 font-size: 1.1rem;
                 padding: 1rem 2rem 1rem 2rem;
+                color: white;
                 // width: 3rem;
                 position: relative;
                 display: grid;
                 // row-gap: 3rem;
                 //protip2 - zmiana bullet looku \/ "::marker"
                 & ul li::marker {
-                  color: #5e25ba;
+                  color: infiniti-variables.$kafelkowy-niebieski;
+                  // filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
                 }
 
                 @media (orientation: landscape) {

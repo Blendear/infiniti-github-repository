@@ -88,6 +88,11 @@ const StronaKontakt = () => {
       >
         <TytulPodstrony nazwaPodstrony="KONTAKT" />
       </div>
+      <div
+        className={
+          styles["layout__fitness-kadra__cala-strona__tlo-calej-strony"]
+        }
+      ></div>
       {/* <div
         className={
           styles["layout__infiniti-kontakt__cala-strona__0-nazwa-podstrony"]

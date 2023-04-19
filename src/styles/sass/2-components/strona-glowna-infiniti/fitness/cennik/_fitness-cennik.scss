@@ -1,3 +1,5 @@
+@use "../../../../5-themes/infiniti-variables/infiniti-variables";
+
 $rozmiar-rowa: minmax(0rem, max-content);
 
 .layout {
@@ -75,19 +77,35 @@ $rozmiar-rowa: minmax(0rem, max-content);
         width: 12rem;
         aspect-ratio: 5/1.8;
 
-        margin: 5vw 0 3vw 0;
+        margin: 0vw 0 3vw 0;
         justify-content: center;
         justify-self: center;
         align-content: center;
         align-self: center;
 
         border: none;
-        background: linear-gradient(222deg, #cb530f 0%, #ffdc22 100%);
+        background-color: infiniti-variables.$sunny-light-violet;
+        background: -moz-linear-gradient(
+          222deg,
+          infiniti-variables.$sunny-light-blue 0%,
+          infiniti-variables.$sunny-light-violet 100%
+        );
+        background: -webkit-linear-gradient(
+          222deg,
+          infiniti-variables.$sunny-light-blue 0%,
+          infiniti-variables.$sunny-light-violet 100%
+        );
+        background: linear-gradient(
+          222deg,
+          infiniti-variables.$sunny-light-blue 0%,
+          infiniti-variables.$sunny-light-violet 100%
+        );
         color: white;
         font-weight: bold;
         text-shadow: 0 0 0.3rem #381b00;
         box-shadow: 0 0 1vw 0.2vw #9f000021;
         // transition: all 0.5s ease-out;
+        transition: all 1s;
         cursor: pointer;
         // &:active {
         //   // font-weight: 1;
@@ -98,7 +116,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
         //   );
         // }
         @media (orientation: landscape) {
-          margin: 2vw 0 1vw 0;
+          margin: 1vw 0 1vw 0;
           width: 12vw;
           aspect-ratio: 5/1.8;
           font-size: 1.5vw;
@@ -114,7 +132,22 @@ $rozmiar-rowa: minmax(0rem, max-content);
           color: rgb(255, 255, 255);
         }
         &:hover {
-          background: linear-gradient(222deg, #a00c04 0%, #fab800 100%);
+          background-color: infiniti-variables.$sunny-light-violet;
+          background: -moz-linear-gradient(
+            -222deg,
+            infiniti-variables.$sunny-light-blue 0%,
+            infiniti-variables.$sunny-light-violet 100%
+          );
+          background: -webkit-linear-gradient(
+            -222deg,
+            infiniti-variables.$sunny-light-blue 0%,
+            infiniti-variables.$sunny-light-violet 100%
+          );
+          background: linear-gradient(
+            -222deg,
+            infiniti-variables.$sunny-light-blue 0%,
+            infiniti-variables.$sunny-light-violet 100%
+          );
 
           transform: scale(1.2);
           transition: all 0.5s ease-out;

@@ -246,15 +246,19 @@ $rozmiar-rowa: minmax(0rem, max-content);
           position: relative;
           width: 70vw;
 
-          aspect-ratio: 1.65/1;
+          aspect-ratio: 1.82 /1;
           margin: 0 auto 3rem auto;
           // hook1 WSZYSTKO marginem pozycjonowa,c zmaiast align-selfme? zawsze kuwa dziala
           // border: 0.1rem solid rgb(255, 255, 255);
           // & img {
           // }
-
-          box-shadow: 0px 0px 0.7rem 1px #000000;
-
+          filter: drop-shadow(0 0 0.8rem rgb(0, 0, 0));
+          // box-shadow: 0px 0px 0.7rem 1px #000000;
+          transition: all 1s;
+          &:hover {
+            transform: scale(1.1);
+            transition: all 1s;
+          }
           @media (orientation: landscape) {
             width: 35vw;
           }
@@ -412,12 +416,16 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [c-2] 1fr
             [c-3] 5fr
             [c-4];
-
+          transition: all 1s;
           grid-auto-flow: column;
 
           @media (orientation: landscape) {
             grid-row: r-2/ r-3;
             grid-column: c-1 / c-2;
+          }
+          &:hover {
+            transform: scale(1.1);
+            transition: all 1s;
           }
           &--svg {
             @include svg-style();
@@ -443,10 +451,15 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [c-4];
 
           grid-auto-flow: column;
-
+          transition: all 1s;
           @media (orientation: landscape) {
             grid-row: r-2/ r-3;
             grid-column: c-2 / c-3;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+            transition: all 1s;
           }
           &--svg {
             @include svg-style();

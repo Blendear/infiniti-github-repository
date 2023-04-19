@@ -45,8 +45,8 @@ const FitnessGrafik = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-Fitness.png" />
-      <ZmienneStartoweLogo logoPath="logo-Fitness.jpg" />
+      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
           styles["layout__medical-cennik__cala-strona__0-nazwa-podstrony"]

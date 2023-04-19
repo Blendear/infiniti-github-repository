@@ -11,7 +11,7 @@ const TytulINFINITI = (props) => {
       <div
         className={styles["layout__strona-glowna__cala-strona__tytul--tekst"]}
       >
-        CENTRUM ZDROWIA & KLUB FITNESS
+        CENTRUM ZDROWIA
       </div>
     </div>
   );

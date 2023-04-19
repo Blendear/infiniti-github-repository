@@ -6,7 +6,7 @@ const TytulPodstronyFitness = (props) => {
     <div className={styles["tytul-podstrony__caly-container"]}>
       <SVGOtoczkaNazwy
         className={styles["tytul-podstrony__caly-container--svg"]}
-        mojKolor="#fbb900"
+        mojKolor="#ffffff"
       />
 
       <div

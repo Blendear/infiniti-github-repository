@@ -47,8 +47,8 @@ const FitnessKadra = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-Fitness.png" />
-      <ZmienneStartoweLogo logoPath="logo-Fitness.jpg" />
+      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
           styles["layout__fitness-kadra__cala-strona__0-nazwa-podstrony"]
@@ -56,6 +56,11 @@ const FitnessKadra = () => {
       >
         <TytulPodstronyFitness nazwaPodstrony="KADRA" />
       </div>
+      <div
+        className={
+          styles["layout__fitness-kadra__cala-strona__tlo-calej-strony"]
+        }
+      ></div>
       <div className={styles["layout__fitness-kadra__cala-strona__lista-rol"]}>
         <RolaRozdzial
           rola={kadraFitnessDataArray.manager}

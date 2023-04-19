@@ -9,7 +9,7 @@ const SVGOtoczkaGodzinOtwarciaGora = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      id="ehj37UOqfAF1"
+      id="evKU1OZscqY1"
       viewBox="0 0 162 40"
       shape-rendering="geometricPrecision"
       text-rendering="geometricPrecision"
@@ -21,7 +21,7 @@ const SVGOtoczkaGodzinOtwarciaGora = () => {
           rx="0"
           ry="0"
           transform="matrix(0-1.064516 1 0 160 40)"
-          fill="#d2dbed"
+          fill="#482283"
           stroke-width="0"
         />
         <rect
@@ -30,7 +30,7 @@ const SVGOtoczkaGodzinOtwarciaGora = () => {
           rx="0"
           ry="0"
           transform="matrix(0-1.064516 1 0 0 40)"
-          fill="#d2dbed"
+          fill="#482283"
           stroke-width="0"
         />
         <rect
@@ -38,7 +38,7 @@ const SVGOtoczkaGodzinOtwarciaGora = () => {
           height="2"
           rx="0"
           ry="0"
-          fill="#d2dbed"
+          fill="#482283"
           stroke-width="0"
         />
       </g>

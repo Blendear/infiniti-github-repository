@@ -56,7 +56,7 @@ import CircleLoader from "react-spinners/CircleLoader";
 
 import { useAppSelector, useAppDispatch } from "../../../../store/redux/hooks";
 import { wybranyPoziomIMiejsceActions } from "../../../../store/redux/store-redux";
-//hook1 - zrob zeby nazwa miejsca w galerii i fota galerii byla adekwatna do miejsca w reduxsie
+
 const CarouselPoziomy = () => {
   const [aktualnyFotoPoziom, setAktualnyFotoPoziomu] = useState(0);
   const [aktywnyPoziom, setAktywnyPoziom] = useState(-1);
@@ -128,7 +128,7 @@ const CarouselPoziomy = () => {
           ]
         }
       >
-        WYBIERZ <strong>PIĘTRO </strong> & <strong>MIEJSCE</strong> NA MAPIE,
+        WYBIERZ <strong>PIĘTRO </strong> I <strong>MIEJSCE</strong> NA MAPIE,
         ŻEBY ZOBACZYĆ WYŻEJ JEGO ZDJĘCIA
         {/* I OPIS */}
       </div>
@@ -437,7 +437,6 @@ const CarouselPoziomy = () => {
             }
           ></button>
         </div>
-        {/* /\ hook1-  jak zrobic taka watahe buttonow czysto, podajac tlylko jedna nazw,e zeby reszta JS sam robil? */}
 
         <div
           className={

@@ -1,8 +1,9 @@
-// @use "../../../../5-themes/medical-variables/medical-variables";
+@use "../../../../sass/5-themes/infiniti-variables/infiniti-variables";
 
 $rozmiar-rowa: minmax(0rem, max-content);
 $rozmiar-rowa-siatka-btn: 1fr;
 $rozmiar-column-siatka-btn: 1fr;
+
 .layout {
   // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
   &__strona-glowna {
@@ -15,10 +16,6 @@ $rozmiar-column-siatka-btn: 1fr;
       width: 5rem;
       border-radius: 90%;
       background-color: white;
-      // background: #5e25ba;
-      // background: -moz-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
-      // background: -webkit-linear-gradient(-45deg, #5e25ba 0%, #d252ab 100%);
-      // background: linear-gradient(135deg, #5e25ba 0%, #d252ab 100%);
 
       box-shadow: 0 0 0.7rem 0.3rem #0000003b;
       //protip1 - cant aling? force dispaly:grid and then align its children (svg is the children in thsi case)
@@ -141,13 +138,13 @@ $rozmiar-column-siatka-btn: 1fr;
           grid-column: c-1 / c-12;
           position: relative;
 
-          width: 35%;
+          width: 17%;
           // color:#09adca
           aspect-ratio: 1.1/1;
           // align-self: center;
           align-self: end;
-          margin: 0 0 9.3vw 0;
-          justify-self: center;
+          margin: 0 0 6.5vw 10vw;
+          justify-self: start;
 
           animation: fadeInAnimation ease 0.6s;
           animation-iteration-count: 1;
@@ -165,7 +162,7 @@ $rozmiar-column-siatka-btn: 1fr;
             // width: 15vw;
             // aspect-ratio: 2/1;
             width: 12%;
-            margin: auto 0 auto 0;
+            margin: auto 0 auto 4vw;
           }
         }
         &--fota {
@@ -206,16 +203,28 @@ $rozmiar-column-siatka-btn: 1fr;
         // }
       }
       &__tlo-nad-co-ty-znajdziesz {
-        grid-row: r-1 / r-5_tlo;
+        grid-row: r-1 / r-10;
         grid-column: c-1 / c-12;
 
         z-index: -100;
+        background-color: infiniti-variables.$middle-blue;
+        background: -moz-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
 
+          infiniti-variables.$light-blue 100%
+        );
+        background: -webkit-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
         background: linear-gradient(
-          -45deg,
-          rgb(229, 200, 255) 0%,
-          rgb(245, 245, 255) 50%,
-          rgba(255, 255, 255, 1) 100%
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
         );
       }
       &__kup-karnet-button {
@@ -232,10 +241,21 @@ $rozmiar-column-siatka-btn: 1fr;
         align-self: center;
 
         border: none;
+        background-color: infiniti-variables.$sunny-light-violet;
+        background: -moz-linear-gradient(
+          222deg,
+          infiniti-variables.$sunny-light-blue 0%,
+          infiniti-variables.$sunny-light-violet 100%
+        );
+        background: -webkit-linear-gradient(
+          222deg,
+          infiniti-variables.$sunny-light-blue 0%,
+          infiniti-variables.$sunny-light-violet 100%
+        );
         background: linear-gradient(
           222deg,
-          rgba(34, 193, 195, 1) 0%,
-          rgba(162, 44, 255, 1) 100%
+          infiniti-variables.$sunny-light-blue 0%,
+          infiniti-variables.$sunny-light-violet 100%
         );
         color: white;
         font-weight: bold;
@@ -243,14 +263,8 @@ $rozmiar-column-siatka-btn: 1fr;
         box-shadow: 0 0 1vw 0.2vw #3f00455b;
         // transition: all 0.5s ease-out;
         cursor: pointer;
-        // &:active {
-        //   // font-weight: 1;
-        //   background: linear-gradient(
-        //     222deg,
-        //     rgb(17, 146, 148) 0%,
-        //     rgb(129, 33, 202) 100%
-        //   );
-        // }
+        transition: all 1s;
+
         @media (orientation: landscape) {
           margin: 2vw 0 1vw 0;
           width: 12vw;
@@ -268,10 +282,21 @@ $rozmiar-column-siatka-btn: 1fr;
           color: rgb(255, 255, 255);
         }
         &:hover {
+          background-color: infiniti-variables.$sunny-light-violet;
+          background: -moz-linear-gradient(
+            -222deg,
+            infiniti-variables.$sunny-light-blue 0%,
+            infiniti-variables.$sunny-light-violet 100%
+          );
+          background: -webkit-linear-gradient(
+            -222deg,
+            infiniti-variables.$sunny-light-blue 0%,
+            infiniti-variables.$sunny-light-violet 100%
+          );
           background: linear-gradient(
-            222deg,
-            rgba(162, 44, 255, 1) 0%,
-            rgba(34, 193, 195, 1) 100%
+            -222deg,
+            infiniti-variables.$sunny-light-blue 0%,
+            infiniti-variables.$sunny-light-violet 100%
           );
 
           transform: scale(1.2);
@@ -304,7 +329,7 @@ $rozmiar-column-siatka-btn: 1fr;
         &--svg {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-2;
-
+          filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           @media (orientation: landscape) {
             width: 60%;
             align-self: center;
@@ -317,6 +342,7 @@ $rozmiar-column-siatka-btn: 1fr;
           // align-self: center;
           justify-self: center;
           font-size: 3.8vw;
+          filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           @media (orientation: landscape) {
             font-size: 2vw;
             margin: 0 0 0 0;
@@ -336,7 +362,7 @@ $rozmiar-column-siatka-btn: 1fr;
         animation: fadeInAnimation ease 0.6s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-
+        filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.422));
         @keyframes fadeInAnimation {
           0% {
             opacity: 0;
@@ -359,7 +385,23 @@ $rozmiar-column-siatka-btn: 1fr;
         -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
         box-shadow: 0px 0px 13px 5px rgba(107, 122, 255, 0.25);
         border-radius: 7rem;
-        background-color: white;
+        background-color: infiniti-variables.$dark-violet;
+        background: -moz-linear-gradient(
+          90deg,
+          infiniti-variables.$dark-violet 0%,
+          infiniti-variables.$dark-blue 100%
+        );
+        background: -webkit-linear-gradient(
+          90deg,
+          infiniti-variables.$dark-violet 0%,
+          infiniti-variables.$dark-blue 100%
+        );
+        background: linear-gradient(
+          90deg,
+          infiniti-variables.$dark-violet 0%,
+          infiniti-variables.$dark-blue 100%
+        );
+
         display: grid;
         grid-template-rows:
           [r-1] minmax(5rem, max-content)
@@ -403,21 +445,23 @@ $rozmiar-column-siatka-btn: 1fr;
             align-self: center;
             margin-top: 5%;
             margin-bottom: 5%;
-            font-size: 1.35rem;
-            font-weight: 600;
-            line-height: 2rem;
+            font-size: max(1.45rem, 3.2vw);
+            font-weight: 500;
+            line-height: max(2rem, 5vw);
             text-align: center;
 
             @media (orientation: landscape) {
-              font-size: 1.5rem;
+              font-size: 1.7rem;
+              line-height: 2rem;
             }
           }
           @mixin SVG-lewy {
             justify-self: center;
             align-self: center;
+            filter: drop-shadow(0 0 0.35rem rgba(0, 0, 0, 0.447));
             // margin-left: 25%;
             // margin-right: 15%;
-            width: 70%;
+            width: 50%;
             @media (orientation: landscape) {
               width: 50%;
             }
@@ -425,9 +469,10 @@ $rozmiar-column-siatka-btn: 1fr;
           @mixin SVG-prawy {
             justify-self: center;
             align-self: center;
+            filter: drop-shadow(0 0 0.35rem rgba(0, 0, 0, 0.447));
             // margin-left: 15%;
             // margin-right: 25%;
-            width: 70%;
+            width: 50%;
             @media (orientation: landscape) {
               width: 50%;
             }
@@ -579,13 +624,25 @@ $rozmiar-column-siatka-btn: 1fr;
 
         z-index: -100;
 
-        background: linear-gradient(
-          -60deg,
-          rgb(223, 215, 253) 0%,
-          rgb(255, 255, 255) 50%,
-          rgb(241, 237, 255) 100%
+        background-color: infiniti-variables.$middle-blue;
+        background: -moz-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
         );
-        background-color: #000000;
+        background: -webkit-linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
+        background: linear-gradient(
+          90deg,
+          infiniti-variables.$middle-blue 0%,
+
+          infiniti-variables.$light-blue 100%
+        );
       }
       &__carousel-gallery {
         grid-row: r-6 / r-7;
@@ -654,7 +711,7 @@ $rozmiar-column-siatka-btn: 1fr;
           justify-self: center;
           margin: 4rem 0 3rem 0;
           font-size: 4.5vw;
-          font-weight: bold;
+          // font-weight: bold;
 
           @media (orientation: landscape) {
             grid-row: r-1 / r-3;
@@ -705,7 +762,7 @@ $rozmiar-column-siatka-btn: 1fr;
           margin: 0 10vw 0 10vw;
           // position: relative;
           // box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.25);
-
+          // filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           // align-content: center;
           // opacity: 0.5; //hook1 - jak z-index używać,  żeby strzalki byly przed fotą
           @media (orientation: landscape) {
@@ -717,8 +774,8 @@ $rozmiar-column-siatka-btn: 1fr;
           margin: 0 8vw 0 8vw;
 
           font-size: 12vw;
-          color: #ffffff5d;
-          stroke: 1rem;
+          color: rgba(0, 0, 0, 0.443);
+          // stroke: 1rem;
           // box-shadow: #000000;
           filter: drop-shadow(0 0 0rem rgb(0, 0, 0));
 
@@ -792,6 +849,7 @@ $rozmiar-column-siatka-btn: 1fr;
             grid-row: r-1 / r-2;
             grid-column: c-1 / c-2;
             align-self: center;
+            font-size: max(4vw, 1.8rem);
             @media (orientation: landscape) {
               padding: 0 1.5vw 0 1.5vw;
               font-size: 1.5vw;
@@ -886,7 +944,22 @@ $rozmiar-column-siatka-btn: 1fr;
         -webkit-box-shadow: 2px 9px 13px 5px #000000; //HOOK1 - WSZEDZIE gdzie trzeba (?) daj webkit wersje
         box-shadow: 0px 0px 13px 5px rgba(107, 122, 255, 0.25);
         border-radius: 7rem;
-        background-color: white;
+        background-color: infiniti-variables.$dark-violet;
+        background: -moz-linear-gradient(
+          90deg,
+          infiniti-variables.$dark-violet 0%,
+          infiniti-variables.$dark-blue 100%
+        );
+        background: -webkit-linear-gradient(
+          90deg,
+          infiniti-variables.$dark-violet 0%,
+          infiniti-variables.$dark-blue 100%
+        );
+        background: linear-gradient(
+          90deg,
+          infiniti-variables.$dark-violet 0%,
+          infiniti-variables.$dark-blue 100%
+        );
 
         overflow: hidden;
 
@@ -1246,7 +1319,7 @@ $rozmiar-column-siatka-btn: 1fr;
               position: relative;
               width: 100%;
               aspect-ratio: 1.8/1;
-
+              filter: drop-shadow(0 0 0.15rem #150924);
               z-index: 5;
               animation: fadeInAnimation ease 0.6s;
               animation-iteration-count: 1;
@@ -1319,12 +1392,23 @@ $rozmiar-column-siatka-btn: 1fr;
           }
           &--minus-1 {
             grid-column: c-2 / c-3;
-
-            background: #48c0fe;
-            background: -moz-linear-gradient(0deg, #48c0fe 0%, #a8fbfa 100%);
-            background: -webkit-linear-gradient(0deg, #48c0fe 0%, #a8fbfa 100%);
-            background: linear-gradient(0deg, #48c0fe 0%, #a8fbfa 100%);
-            //hook1 - tak webkitnij i backgroundij KAZDEGO gradienta
+            //hook1 - Z VARIABLES zaciangij next time kolory, zeby zmienic tylko pare kolorow w scss, a nie recznie ustawiac gradienty kazdego elementu
+            background: infiniti-variables.$aktywny-fiolet;
+            background: -moz-linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
+            background: -webkit-linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
+            background: linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
             @include btn-poziomy();
 
             @media (orientation: landscape) {
@@ -1335,11 +1419,22 @@ $rozmiar-column-siatka-btn: 1fr;
           &--0 {
             grid-column: c-3 / c-4;
 
-            background: #5a87ff;
-            background: -moz-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
-            background: -webkit-linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
-            background: linear-gradient(0deg, #5a87ff 0%, #95d7ff 100%);
-
+            background: infiniti-variables.$aktywny-fiolet;
+            background: -moz-linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
+            background: -webkit-linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
+            background: linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
             @include btn-poziomy();
 
             @media (orientation: landscape) {
@@ -1350,11 +1445,22 @@ $rozmiar-column-siatka-btn: 1fr;
           &--1 {
             grid-column: c-4 / c-5;
 
-            background: #8c51d7;
-            background: -moz-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
-            background: -webkit-linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
-            background: linear-gradient(0deg, #8c51d7 0%, #6283ff 100%);
-
+            background: infiniti-variables.$aktywny-fiolet;
+            background: -moz-linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
+            background: -webkit-linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
+            background: linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
             @include btn-poziomy();
 
             @media (orientation: landscape) {
@@ -1365,11 +1471,22 @@ $rozmiar-column-siatka-btn: 1fr;
           &--2 {
             grid-column: c-5 / c-6;
 
-            background: #b260e0;
-            background: -moz-linear-gradient(0deg, #b260e0 0%, #eb7ffd 100%);
-            background: -webkit-linear-gradient(0deg, #b260e0 0%, #eb7ffd 100%);
-            background: linear-gradient(0deg, #b260e0 0%, #eb7ffd 100%);
-
+            background: infiniti-variables.$aktywny-fiolet;
+            background: -moz-linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
+            background: -webkit-linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
+            background: linear-gradient(
+              0deg,
+              infiniti-variables.$aktywny-fiolet 0%,
+              infiniti-variables.$aktywny-niebieski 100%
+            );
             @include btn-poziomy();
 
             @media (orientation: landscape) {
@@ -1383,6 +1500,22 @@ $rozmiar-column-siatka-btn: 1fr;
             // color: green;
             height: 60%;
             align-self: end;
+            background: infiniti-variables.$nieaktywny-darkblue;
+            background: -moz-linear-gradient(
+              0deg,
+              infiniti-variables.$nieaktywny-darkblue 0%,
+              infiniti-variables.$nieaktywny-lightblue 100%
+            );
+            background: -webkit-linear-gradient(
+              0deg,
+              infiniti-variables.$nieaktywny-darkblue 0%,
+              infiniti-variables.$nieaktywny-lightblue 100%
+            );
+            background: linear-gradient(
+              0deg,
+              infiniti-variables.$nieaktywny-darkblue 0%,
+              infiniti-variables.$nieaktywny-lightblue 100%
+            );
             // transition: height 3s;
             // /\ hooik2 - css transition bedzie wymagalo, bo dismountuje czy cos przed koncem animacji
             // font-size: 6vw;
@@ -1413,7 +1546,8 @@ $rozmiar-column-siatka-btn: 1fr;
           [r-10] minmax(0rem, max-content)
           [r-11] minmax(0rem, max-content)
           [r-12] minmax(0rem, max-content)
-          [r-13];
+          [r-13] minmax(0rem, max-content)
+          [r-14];
         grid-template-columns:
           [c-1] 1fr
           [c-2] 1fr
@@ -1446,6 +1580,14 @@ $rozmiar-column-siatka-btn: 1fr;
             [c-10] 1fr
             [c-10_break];
         }
+        &--dopisek-z-gwiazdka-na-dole {
+          grid-row: r-13 / r-14;
+          grid-column: c-1 / c-10;
+
+          justify-self: center;
+          padding: 3rem 0 0rem 0;
+          font-size: min(2.9vw, 2.5rem);
+        }
         &--tekst-tytulowy {
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-10;
@@ -1466,22 +1608,19 @@ $rozmiar-column-siatka-btn: 1fr;
 
           width: 50vw;
           aspect-ratio: 80/1;
-          margin: 0 0 5vw 0;
+          margin: 0.4rem 0 5vw 0;
 
-          background-color: #b861bc;
+          background-color: #482283;
           align-self: start;
           justify-self: center;
           font-size: 2.3vw;
           transform: translateY(2vw);
-          @media (orientation: landscape) {
-            font-size: 2vw;
-            margin: 0 0 0 0;
-          }
+
           @media (orientation: landscape) {
             width: 22vw;
             aspect-ratio: 60/1;
-
-            margin: 0 0 3vw 0;
+            font-size: 2vw;
+            margin: 0.6rem 0 3vw 0;
             transform: translateY(0);
             // transform: translateY(2vw);
           }
@@ -1490,7 +1629,7 @@ $rozmiar-column-siatka-btn: 1fr;
           font-size: 4vw;
           margin: 4vw 0 2vw 0;
           @media (orientation: landscape) {
-            font-size: 2vw;
+            font-size: 3.2vw;
           }
         }
 
@@ -1536,7 +1675,7 @@ $rozmiar-column-siatka-btn: 1fr;
             aspect-ratio: 60/1;
             margin: 2vw 0 2vw 0;
 
-            background-color: #b861bc;
+            background-color: #482283;
             @media (orientation: landscape) {
               margin: 2vw 0 2vw 0;
 
@@ -1645,7 +1784,7 @@ $rozmiar-column-siatka-btn: 1fr;
             align-self: center;
             margin: 0 1vw 0 1vw;
 
-            background-color: #b861bc;
+            background-color: infiniti-variables.$dark-violet;
             @media (orientation: landscape) {
               width: 4.2vw;
               margin: 0 0 0 0;
@@ -1682,9 +1821,10 @@ $rozmiar-column-siatka-btn: 1fr;
               &--tekst {
                 grid-row: r-4 / r-5;
                 @include grid-col-sauna();
-                color: #b861bc;
+                color: infiniti-variables.$dark-violet;
 
                 font-size: 2.5vw;
+                font-weight: bold;
                 @media (orientation: landscape) {
                   font-size: 1.5vw;
                 }
@@ -1716,8 +1856,9 @@ $rozmiar-column-siatka-btn: 1fr;
               &--tekst {
                 grid-row: r-6 / r-7;
                 @include grid-col-sauna();
-                color: #b861bc;
+                color: infiniti-variables.$dark-violet;
                 font-size: 2.5vw;
+                font-weight: bold;
 
                 @media (orientation: landscape) {
                   font-size: 1.5vw;
@@ -1749,8 +1890,9 @@ $rozmiar-column-siatka-btn: 1fr;
               &--tekst {
                 grid-row: r-8 / r-9;
                 @include grid-col-sauna();
-                color: #b861bc;
+                color: infiniti-variables.$dark-violet;
                 font-size: 2.5vw;
+                font-weight: bold;
                 @media (orientation: landscape) {
                   font-size: 1.5vw;
                 }
@@ -1773,6 +1915,8 @@ $rozmiar-column-siatka-btn: 1fr;
           }
           @mixin font-godzin-sauna {
             font-size: 2.5vw;
+            text-shadow: 0rem 0rem 0.4rem rgba(0, 0, 0, 0.655);
+
             line-height: 4vw;
             @media (orientation: landscape) {
               font-size: 1.5vw;
@@ -1824,16 +1968,6 @@ $rozmiar-column-siatka-btn: 1fr;
                 // font-size: 1vw;
                 line-height: 1.7vw;
               }
-              // &--godziny-pierwsze {
-              //   @include grid-col-sauna();
-              //   grid-row: r-10 / r-11;
-              //   grid-column: c-6 / c-8;
-              //   @include margin-sauna-lewo();
-              //   @include font-godzin-sauna();
-              //   align-self: start;
-              //   line-height: 1.3rem;
-              //   margin-top: 0.5vw;
-              // }
             }
             &--3-b {
               @include grid-col-sauna();
@@ -1883,7 +2017,7 @@ $rozmiar-column-siatka-btn: 1fr;
           grid-row: r-1 / r-2;
           grid-column: c-1 / c-2;
           margin: 7vw 0 0 0;
-
+          color: infiniti-variables.$dark-blue;
           font-size: 5vw;
           justify-self: center;
 
@@ -1900,7 +2034,7 @@ $rozmiar-column-siatka-btn: 1fr;
           aspect-ratio: 40/1;
           margin: 0vw 0 5vw 0;
           justify-self: center;
-          background-color: #b861bc;
+          background-color: infiniti-variables.$dark-blue;
 
           @media (orientation: landscape) {
             width: 18vw;

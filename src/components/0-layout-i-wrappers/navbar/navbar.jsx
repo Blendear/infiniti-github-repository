@@ -1,7 +1,5 @@
 import styles from "src/styles/sass/styles-all.module.scss";
 
-//hook1 - stworsz navbar sticky
-
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { RiCalendarCheckLine } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -40,9 +38,6 @@ const Navbar = () => {
       {/* https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec */}
 
       <nav className={styles["navbar-gorny__caly-container"]}>
-        {/* hook1 - dodalem do przyciskow i ikon DWA PARENTY, Link i "a",wiec jakos
-        musze t0o obejsc, zeby je ułożyć w gridzie znowu
-        */}
         <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
           <a
             className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}

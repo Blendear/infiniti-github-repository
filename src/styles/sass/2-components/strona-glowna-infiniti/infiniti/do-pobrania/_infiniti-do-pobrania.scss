@@ -12,7 +12,7 @@
 //
 //~~ B.  ...
 //
-
+@use "../../../../5-themes/infiniti-variables/infiniti-variables";
 .layout {
   // \/ fragment klasy (jak "layout" /\, dopisywane dla jasności "czego tyczy się ten css class", dla developera)
   &__infiniti-do-pobrania {
@@ -58,7 +58,26 @@
       grid-auto-flow: rows;
       // Trap1 - COMPONENTY ( np. "fota w tle" || "tytuł podstrony") MAJĄ SWOJ SCSS W SWOIM DEDYKOWANUM PLIKU. bez sensu powielac kod np.
       // dla foty w tle, ktora jest na kazdej stronie
+      z-index: -100;
+      background-color: infiniti-variables.$middle-blue;
+      background: -moz-linear-gradient(
+        90deg,
+        infiniti-variables.$middle-blue 0%,
 
+        infiniti-variables.$light-blue 100%
+      );
+      background: -webkit-linear-gradient(
+        90deg,
+        infiniti-variables.$middle-blue 0%,
+
+        infiniti-variables.$light-blue 100%
+      );
+      background: linear-gradient(
+        90deg,
+        infiniti-variables.$middle-blue 0%,
+
+        infiniti-variables.$light-blue 100%
+      );
       &__0-startowe-logo-i-fota {
         display: grid;
         grid-row: r-1 / r-2;
@@ -89,14 +108,26 @@
           // aspect-ratio: 3/1;
           height: 7vw;
           font-size: 3vw;
+          letter-spacing: 0.1rem;
           font-weight: bold;
           color: white;
-          background: rgb(34, 193, 195);
-          background: linear-gradient(
-            222deg,
-            rgba(34, 193, 195, 1) 0%,
-            rgba(31, 92, 145, 1) 100%
+          background: infiniti-variables.$aktywny-fiolet;
+          background: -moz-linear-gradient(
+            90deg,
+            infiniti-variables.$kafelkowy-fiolet 0%,
+            infiniti-variables.$kafelkowy-niebieski 100%
           );
+          background: -webkit-linear-gradient(
+            90deg,
+            infiniti-variables.$kafelkowy-fiolet 0%,
+            infiniti-variables.$kafelkowy-niebieski 100%
+          );
+          background: linear-gradient(
+            90deg,
+            infiniti-variables.$kafelkowy-fiolet 0%,
+            infiniti-variables.$kafelkowy-niebieski 100%
+          );
+          filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           @media (orientation: landscape) {
             height: 4.5vw;
             font-size: 2vw;
@@ -342,8 +373,8 @@
               grid-auto-flow: column;
               // background-color: yellow;
               // height: 5rem;
-              font-size: 3.2vw;
-              color: rgb(71, 71, 71);
+              font-size: min(2rem, 3.35vw);
+              // color: rgb(255, 255, 255);
               font-weight: normal;
               align-self: center;
               justify-self: start;
@@ -359,21 +390,25 @@
                 & svg {
                   font-size: 6vh;
                   margin: 0 2vh 0 0;
+                  // color: infiniti-variables.$linia-boczna;
+                  color: white;
                 }
               }
               //descendatn selector to sztosik protip1 \/
               & svg {
                 align-self: center;
+                color: rgba(255, 255, 255, 0.418);
+                // font-size: 3vh;
               }
               & a {
-                color: rgb(71, 71, 71);
+                // color: rgb(255, 255, 255);
               }
               &a:link,
               :visited,
               :active,
               :hover {
                 text-decoration: none;
-                color: rgb(71, 71, 71);
+                color: rgb(255, 255, 255);
               }
             }
           }
@@ -383,13 +418,13 @@
           grid-row: r-4 / r-6;
           grid-column: c-6 / c-7;
 
-          background-color: #bd99ca;
+          background-color: infiniti-variables.$linia-boczna;
           justify-content: center;
           justify-self: center;
           align-content: center;
           align-self: center;
 
-          width: 0.2rem;
+          width: 0.3rem;
           height: 92%;
           align-self: start;
         }

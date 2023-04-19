@@ -48,8 +48,8 @@ const MedicalKadra = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-Medical.png" />
-      <ZmienneStartoweLogo logoPath="logo-Medical.jpg" />
+      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
           styles["layout__medical-kadra__cala-strona__0-nazwa-podstrony"]
@@ -57,6 +57,11 @@ const MedicalKadra = () => {
       >
         <TytulPodstrony nazwaPodstrony="KADRA" />
       </div>
+      <div
+        className={
+          styles["layout__medical-kadra__cala-strona__tlo-calej-strony"]
+        }
+      ></div>
       <div className={styles["layout__medical-kadra__cala-strona__lista-rol"]}>
         <RolaRozdzial
           rola={kadraMedicalDataArray.fizjoterapeuci}
