@@ -61,7 +61,7 @@ const MedicalCennik = () => {
           styles["layout__medical-cennik__cala-strona__tlo-calej-strony"]
         }
       ></div>
-      <div className={styles["layout__medical-cennik__cala-strona__cennik"]}>
+      <div className={styles["layout__medical-cennik__cala-strona__cennik-1"]}>
         <Link
           // target="_blank"
           download
@@ -70,6 +70,26 @@ const MedicalCennik = () => {
           <a target="_blank">
             <Image
               src={`/images/.dedykowane-do-strony-konkretnej/medical/cennik/cennik-medical.png`}
+              alt={`nie pyklo zdjecie`}
+              // width={300}
+              // height={300}
+              layout="fill"
+              objectFit="contain"
+              priority
+              loading="eager"
+            />
+          </a>
+        </Link>
+      </div>
+      <div className={styles["layout__medical-cennik__cala-strona__cennik-2"]}>
+        <Link
+          // target="_blank"
+          download
+          href="/images/.dedykowane-do-strony-konkretnej/medical/cennik/cennik-fizjo.png"
+        >
+          <a target="_blank">
+            <Image
+              src={`/images/.dedykowane-do-strony-konkretnej/medical/cennik/cennik-fizjo.png`}
               alt={`nie pyklo zdjecie`}
               // width={300}
               // height={300}
