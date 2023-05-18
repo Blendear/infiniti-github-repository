@@ -1,14 +1,22 @@
 export const kadraMedicalDataArray = {
   masazysci: [
+    // {
+    //   nazwisko: "Rypalla",
+    //   name: "Dominika",
+    //   opis: "testowy opis",
+    //   funkcja: "Masażystka",
+    //   fotoPathKoncowka: "rypalla-dominika",
+    //   socialMediaLinks: {
+    //     facebook: "https://www.facebook.com/dominika.rypalla",
+    //   },
+    // },
     {
-      nazwisko: "Rypalla",
-      name: "Dominika",
+      nazwisko: "Judycka",
+      name: "Kamila",
       opis: "testowy opis",
       funkcja: "Masażystka",
-      fotoPathKoncowka: "rypalla-dominika",
-      socialMediaLinks: {
-        facebook: "https://www.facebook.com/dominika.rypalla",
-      },
+      fotoPathKoncowka: "no-image",
+      socialMediaLinks: {},
     },
   ],
   fizjoterapeuci: [
@@ -26,6 +34,14 @@ export const kadraMedicalDataArray = {
       opis: "testowy opis",
       funkcja: "Fizjoterapeutka",
       fotoPathKoncowka: "kowalczyk-patrycja",
+      socialMediaLinks: {},
+    },
+    {
+      nazwisko: "Bruździńska",
+      name: "Adrianna",
+      opis: "testowy opis",
+      funkcja: "Fizjoterapeutka",
+      fotoPathKoncowka: "no-image",
       socialMediaLinks: {},
     },
   ],

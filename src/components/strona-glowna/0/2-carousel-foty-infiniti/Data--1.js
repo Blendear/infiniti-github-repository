@@ -9,7 +9,7 @@
 //
 
 //
-//       A.1. Trap1 - Staticly imported foty muszą być, żeby next.js'owy Image je załapał
+//       A.1. Trap1 - \/ (thats why we import all individually) Staticly imported foty muszą być, żeby next.js'owy Image je załapał
 //
 import crossfitBox1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/.minus-1/crossfit-box/crossfit-box-1.png";
 
