@@ -308,7 +308,7 @@ const StronaKontakt = () => {
               ]
             }
           >
-            Poniedziałek – Piątek 06:00 – 22:00 <br />
+            Poniedziałek – Piątek 06:30 – 22:00 <br />
             Sobota 08:00 – 20:00
             <br />
             Niedziela 08:00 – 18:00
