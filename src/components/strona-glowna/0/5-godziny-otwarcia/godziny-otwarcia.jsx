@@ -67,7 +67,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>PON. - PT.</strong> <br /> 06:00 - 22:00
+        <strong>PON. - PT.</strong> <br /> 06:30 - 22:00
       </div>
       <div
         className={

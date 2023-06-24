@@ -15,9 +15,8 @@ npm run dev
 git remote add origin https://github.com/Blendear/infiniti-github-repository.git
 git branch -M main
 git push -u origin main
-git remote add origin https://github.com/Blendear/create-new-dish-form.git
-git branch -M main
-git push -u origin main
+
+
 ~~~ REGULARNIE = to commit changes \/ ~~~
 
 git add .
