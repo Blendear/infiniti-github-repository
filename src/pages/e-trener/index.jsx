@@ -4,9 +4,9 @@
 import { useRouter } from "next/router";
 import styles from "src/styles/sass/styles-all.module.scss";
 import {
-  QRReader,
-  NumberIDReader,
-  MuscleChooser,
+  QRSzukacz,
+  NumerIDSzukacz,
+  WybieraczMiesni,
   WitaczImiennyZLinkami,
   WyborMetodySzukaniaMaszyny,
 } from "../../features/e-trener";
@@ -26,9 +26,9 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
       <div className={styles["child__css-class-name"]}>
         {
           {
-            qr: <QRReader />,
-            nr: <NumberIDReader />,
-            miesien: <MuscleChooser />,
+            qr: <QRSzukacz />,
+            nr: <NumerIDSzukacz />,
+            miesien: <WybieraczMiesni />,
           }[router.query.method]
         }
       </div>
