@@ -5,7 +5,7 @@
 import styles from "src/styles/sass/styles-all.module.scss";
 import {
   PanelZOpisemSubskrycji,
-  SamozmieniajacySieTekst,
+  TytulSamozmieniajacySie,
 } from "../../../features/e-trener";
 
 const InfoOSubskrypcji = ({ propA, propB }) => {
@@ -40,7 +40,7 @@ const InfoOSubskrypcji = ({ propA, propB }) => {
       style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
       // className={styles["container__css-class-name"]}
     >
-      <SamozmieniajacySieTekst
+      <TytulSamozmieniajacySie
         arrayOfStrings={[
           "TYLKO JEDEN KROK",
           "CENA JEDNEJ PIZZY",
