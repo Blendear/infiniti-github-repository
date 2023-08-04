@@ -3,19 +3,18 @@
 //
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const ModalCwiczeniaKonkretnego = ({ propA, propB }) => {
+const PanelGrupyMiesniowej = ({ propA, propB }) => {
   return (
     <div className={styles["container__css-class-name"]}>
       {/* //       _._. AA */}
-      <div className={styles["child__css-class-name"]}>
-        [[[ModalCwiczeniaKonkretnego]]]
-      </div>
+      <div className={styles[""]}>[Fota]</div>
+      <div className={styles[""]}>Nazwa grupy mięśniowej</div>
     </div>
   );
 };
-export default ModalCwiczeniaKonkretnego;
+export default PanelGrupyMiesniowej;
 
-//~~ _. ModalCwiczeniaKonkretnego
+//~~ _. PanelGrupyMiesniowej
 //
 //       _._. AA
 //

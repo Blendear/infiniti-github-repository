@@ -4,8 +4,10 @@
 import { useState } from "react";
 import styles from "src/styles/sass/styles-all.module.scss";
 import { maszyny } from "..";
+import TytulBezTla from "./TytulBezTla";
+import PotwierdzPrzycisk from "./PotwierdzPrzycisk";
 
-const NumberIDReader = () => {
+const NumerIDSzukacz = () => {
   const [fotaMaszyny, setFotaMaszyny] = useState("");
 
   const handleInputChange = (e) => {
@@ -20,7 +22,7 @@ const NumberIDReader = () => {
 
   return (
     <div className={styles["container__css-class-name"]}>
-      <div className={styles[""]}>WPISZ RĘCZNIE NR MASZYNY</div>
+      <TytulBezTla>WPISZ RĘCZNIE NR MASZYNY</TytulBezTla>
       {/* //       _._. Jeśli użytkownik wpisał 9-cyfrową liczbę, która jest numerem ID maszyny, to wyświetl zdjęcie maszyny. Inaczej - wyświetl zdjęcie z napisem "zły numer"       */}
       <input
         onChange={handleInputChange}
@@ -32,19 +34,18 @@ const NumberIDReader = () => {
           <>
             <div className={styles[""]}>{fotaMaszyny}</div>
             {fotaMaszyny !== "zly-numer" && (
-              <>
-                <div>CZY TO TA MASZYNA?</div>
-                <button className={styles[""]}>TAK \/</button>
-              </>
+              <PotwierdzPrzycisk bgColor="green">
+                {"TAK, TO TA MASZYNA"}
+              </PotwierdzPrzycisk>
             )}
           </>
         ))()}
     </div>
   );
 };
-export default NumberIDReader;
+export default NumerIDSzukacz;
 
-//~~ _. NumberIDReader
+//~~ _. NumerIDSzukacz
 //
 //       _._. Jeśli użytkownik wpisał 9-cyfrową liczbę, która jest numerem ID maszyny, to wyświetl zdjęcie maszyny. Inaczej - wyświetl zdjęcie z napisem "zły numer"
 //

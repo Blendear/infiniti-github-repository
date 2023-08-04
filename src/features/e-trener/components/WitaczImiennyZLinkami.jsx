@@ -5,9 +5,10 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import Link from "next/link";
 import { IoSettingsSharp } from "react-icons/io5";
 import { RiLogoutBoxLine } from "react-icons/ri";
+import TytulZTlemKolorowym from "./TytulZTlemKolorowym";
 const WitaczImiennyZLinkami = ({ propA, propB }) => {
   return (
-    <div className={styles["container__css-class-name"]}>
+    <TytulZTlemKolorowym>
       {/* //       _._. AA */}
       <button>
         <RiLogoutBoxLine />
@@ -22,7 +23,7 @@ const WitaczImiennyZLinkami = ({ propA, propB }) => {
           </a>
         </Link>
       </button>
-    </div>
+    </TytulZTlemKolorowym>
   );
 };
 export default WitaczImiennyZLinkami;

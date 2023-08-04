@@ -5,6 +5,9 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import { useRouter } from "next/router";
 import { MiniaturkaCwiczenia } from "../../../features/e-trener";
 import { useState, useEffect } from "react";
+import { TytulBezTla, TytulZTlemKolorowym } from "../../../features/e-trener";
+import ModalCwiczeniaWybranego from "../../../features/e-trener/components/ModalCwiczeniaWybranego";
+import { cwiczenia } from "../../../features/e-trener";
 
 const ListaCwiczen = ({ propA, propB }) => {
   const [nazwaModalu, setNazwaModalu] = useState("null");
@@ -16,50 +19,34 @@ const ListaCwiczen = ({ propA, propB }) => {
     router.query !== null && setNazwaModalu(router.query["nazwa-modalu"]);
   }, [router.query]);
 
-  const przefiltrowaneCwiczenia = [
-    {
-      "id-cwiczenia": "testowe-id-a",
-      fota: "testowe-fota-a.png",
-      nazwa: "Testowa nazwa A",
-    },
-    {
-      "id-cwiczenia": "testowe-id-b",
-      fota: "testowe-fota-b.png",
-      nazwa: "Testowa nazwa B",
-    },
-    {
-      "id-cwiczenia": "testowe-id-c",
-      fota: "testowe-fota-c.png",
-      nazwa: "Testowa nazwa C",
-    },
-  ];
-
   return (
     <div className={styles["container__css-class-name"]}>
-      <div className={styles["child__css-class-name"]}>
-        (hook1 - NIE POWINIEN TAKI LABEL TEŻ BYĆ COMPONENTEM - WSZEDZIE GO
-        POWTARZAM)Wybierz ćwiczenie i zaczynajmy!
-      </div>
+      <TytulZTlemKolorowym>WYBIERZ ĆWICZENIE I ZACZYNAJMY!</TytulZTlemKolorowym>
+      <TytulBezTla>
+        LUB KLIKNIJ “i”, ABY ZOBACZYĆ LOKALIZACJĘ MASZYNY ORAZ “ĆWICZONE
+        MIĘŚNIE”
+      </TytulBezTla>
 
       {/* //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń */}
       <div>
-        {przefiltrowaneCwiczenia.map((cwiczenie) => {
+        {cwiczenia.map((cwiczenie) => {
           return (
             <MiniaturkaCwiczenia
               key={cwiczenie["id-cwiczenia"]}
-              id={cwiczenie["id-cwiczenia"]}
+              id={cwiczenie["id"]}
               nazwa={cwiczenie.nazwa}
-              fota={cwiczenie.fota}
+              fota={cwiczenie["fota-miniaturki"]}
               setNazwaModalu={setNazwaModalu}
               setIdOtwartegoCwiczenia={setIdOtwartegoCwiczenia}
             />
           );
         })}
       </div>
-      {nazwaModalu !== "null" ? (
-        <div>{`otwarty jest modal typu ćwiczenia [${nazwaModalu}] z cwiczeniem [${idOtwartegoCwiczenia}]`}</div>
-      ) : (
-        <div>zamknięty modal</div>
+      {nazwaModalu !== "null" && (
+        <ModalCwiczeniaWybranego
+          nazwaModalu={nazwaModalu}
+          idOtwartegoCwiczenia={idOtwartegoCwiczenia}
+        />
       )}
     </div>
   );

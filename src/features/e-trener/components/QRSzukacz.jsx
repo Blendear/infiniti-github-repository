@@ -3,12 +3,13 @@
 //
 import styles from "src/styles/sass/styles-all.module.scss";
 import Link from "next/link";
+import TytulBezTla from "./TytulBezTla";
 
-const QRReader = ({ propA, propB }) => {
+const QRSzukacz = ({ propA, propB }) => {
   return (
     <div className={styles["container__css-class-name"]}>
       {/* //       _._. AA */}
-      <div className={styles["child__css-class-name"]}>QRReader</div>
+      <TytulBezTla>ZESKANUJ KOD QR MASZYNY</TytulBezTla>
       <Link
         href={`/e-trener/lista-cwiczen?nazwa-modalu=${"null"}&id-cwiczenia=${"null"}`}
       >
@@ -17,7 +18,7 @@ const QRReader = ({ propA, propB }) => {
     </div>
   );
 };
-export default QRReader;
+export default QRSzukacz;
 
 //~~ _. QR Reader
 //

@@ -3,14 +3,14 @@
 //
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const SamozmieniajacySieTekst = ({ metoda }) => {
+const TytulSamozmieniajacySie = ({ metoda }) => {
   return (
     <div className={styles["container__css-class-name"]}>
       ~ Component z autozmieniajacym sie tekstem ~
     </div>
   );
 };
-export default SamozmieniajacySieTekst;
+export default TytulSamozmieniajacySie;
 
-//~~ _. SamozmieniajacySieTekst
+//~~ _. TytulSamozmieniajacySie
 //
