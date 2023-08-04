@@ -22,3 +22,5 @@ export { default as ModalCwiczeniaWybranego } from "./components/ModalCwiczeniaW
 export { default as cwiczenia } from "./data/cwiczenia";
 export { default as maszyny } from "./data/maszyny";
 export { default as grupyMiesniowe } from "./data/grupyMiesniowe";
+export { default as infoOSubskrypcji } from "./data/infoOSubskrypcji";
+export { default as tekstySamozmieniajace } from "./data/tekstySamozmieniajace";

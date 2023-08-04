@@ -3,13 +3,13 @@
 //
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const PanelGrupyMiesniowej = ({ propA, propB }) => {
+const PanelGrupyMiesniowej = ({ grupaMiesniowa, key }) => {
   return (
-    <div className={styles["container__css-class-name"]}>
+    <li key={key} className={styles["container__css-class-name"]}>
       {/* //       _._. AA */}
       <div className={styles[""]}>[Fota]</div>
-      <div className={styles[""]}>Nazwa grupy mięśniowej</div>
-    </div>
+      <div className={styles[""]}>{grupaMiesniowa}</div>
+    </li>
   );
 };
 export default PanelGrupyMiesniowej;

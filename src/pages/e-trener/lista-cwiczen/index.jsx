@@ -29,13 +29,11 @@ const ListaCwiczen = ({ propA, propB }) => {
 
       {/* //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń */}
       <div>
-        {cwiczenia.map((cwiczenie) => {
+        {cwiczenia.map((cwiczenie, index) => {
           return (
             <MiniaturkaCwiczenia
-              key={cwiczenie["id-cwiczenia"]}
-              id={cwiczenie["id"]}
-              nazwa={cwiczenie.nazwa}
-              fota={cwiczenie["fota-miniaturki"]}
+              key={index}
+              cwiczenie={cwiczenie}
               setNazwaModalu={setNazwaModalu}
               setIdOtwartegoCwiczenia={setIdOtwartegoCwiczenia}
             />
@@ -44,6 +42,7 @@ const ListaCwiczen = ({ propA, propB }) => {
       </div>
       {nazwaModalu !== "null" && (
         <ModalCwiczeniaWybranego
+          setNazwaModalu={setNazwaModalu}
           nazwaModalu={nazwaModalu}
           idOtwartegoCwiczenia={idOtwartegoCwiczenia}
         />

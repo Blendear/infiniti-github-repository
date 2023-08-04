@@ -3,10 +3,12 @@
 //
 import styles from "src/styles/sass/styles-all.module.scss";
 
-const TytulSamozmieniajacySie = ({ metoda }) => {
+const TytulSamozmieniajacySie = ({ napisy }) => {
   return (
     <div className={styles["container__css-class-name"]}>
-      ~ Component z autozmieniajacym sie tekstem ~
+      {napisy.map((tekst, index) => {
+        return <div key={index}>{tekst}</div>;
+      })}
     </div>
   );
 };
