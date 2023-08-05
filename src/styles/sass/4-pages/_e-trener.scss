@@ -73,7 +73,7 @@ $max-content: max-content;
         background: rgb(random(255), random(255), random(255));
         border: none;
         opacity: 0.6;
-        // background: transparent;
+        background: transparent;
       }
       &--barki-tyl {
         @include btn-uniwersalne-ustawienia();
