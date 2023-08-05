@@ -172,7 +172,7 @@ $max-content: max-content;
       &--skosne {
         @include btn-uniwersalne-ustawienia();
         grid-row: 32 / 44;
-        grid-column: 29 / 36;
+        grid-column: 30 / 36;
       }
       &--triceps {
         @include btn-uniwersalne-ustawienia();
@@ -192,7 +192,7 @@ $max-content: max-content;
 
         &--2 {
           @include btn-uniwersalne-ustawienia();
-          grid-row: 55 / 63;
+          grid-row: 56 / 63;
           grid-column: 26 / 32;
         }
       }

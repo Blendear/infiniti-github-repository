@@ -1,20 +1,18 @@
 const grupyMiesnioweDublowaneNaModelu3D = [
-  { nazwa: "Barki - Tył", fota: "barki-tyl--2.png", indexPrzycisku: 21 },
-  { nazwa: "Barki - Środek", fota: "barki-boki--2.png", indexPrzycisku: 22 },
-  { nazwa: "Barki - Przód", fota: "barki-przod--2.png", indexPrzycisku: 23 },
-  { nazwa: "Biceps", fota: "biceps--2.png", indexPrzycisku: 24 },
+  { nazwa: "Barki - Tył", fota: "barki-tyl--2.png" },
+  { nazwa: "Barki - Środek", fota: "barki-boki--2.png" },
+  { nazwa: "Barki - Przód", fota: "barki-przod--2.png" },
+  { nazwa: "Biceps", fota: "biceps--2.png" },
   {
     nazwa: "Przedramie - Góra",
     fota: "przedramie-gora--2.png",
-    indexPrzycisku: 25,
   },
   {
     nazwa: "Przedramie - Dół",
     fota: "przedramie-dol--2.png",
-    indexPrzycisku: 26,
   },
-  { nazwa: "Triceps", fota: "triceps--2.png", indexPrzycisku: 27 },
-  { nazwa: "Uda - Tył", fota: "uda-przod--2.png", indexPrzycisku: 28 },
+  { nazwa: "Triceps", fota: "triceps--2.png" },
+  { nazwa: "Uda - Przód", fota: "uda-przod--2.png" },
 ];
 
 export default grupyMiesnioweDublowaneNaModelu3D;

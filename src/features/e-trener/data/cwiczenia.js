@@ -1,5 +1,6 @@
 const cwiczenia = [
   {
+    // hook2 - change the names to camelCase, to follow convention
     id: 1, // pod szybsze wyszukiwanie ćwiczeń, zamiast wolniejszego wysuzkiwania po stringu "nazwa"
     "link-wideo": "yt.com/123456789",
     "fota-miniaturki": "min-aaa.png",
