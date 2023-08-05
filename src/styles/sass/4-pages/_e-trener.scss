@@ -6,8 +6,9 @@
 // .name{}
 // &__{}
 // &--{}
-
-.name-of-component {
+$rozmiar-sciany-kwadratu-siatki: 1fr;
+$max-content: max-content;
+.strona-glowna {
   &__container {
     // grid-row: r-0 / r-1;
     // grid-column: c-0 / c-1;
@@ -31,6 +32,196 @@
     }
     & :active {
       filter: saturate(1);
+    }
+  }
+  &__wybieracz-miesni {
+    display: grid;
+    grid-template-rows:
+      [r-1] $max-content //hook1 - create global sizes and import them here
+      [r-2] 45rem
+      [r-3] $max-content
+      [r-4];
+    grid-template-columns:
+      [c-1] 1fr
+      [c-2];
+    row-gap: 2rem;
+
+    @mixin rozmiar-wybieracza {
+      // margin: 5rem 0 0 0;
+
+      position: absolute;
+      height: 45rem;
+      aspect-ratio: 1/1.5;
+    }
+    &__3d-model-z-miesniami {
+      @include rozmiar-wybieracza();
+
+      grid-row: 1 / 2;
+    }
+    &__siatka-do-przyciskow {
+      @include rozmiar-wybieracza();
+
+      grid-row: 1 / 2;
+
+      z-index: 5;
+
+      display: grid;
+      grid-template-rows: repeat(91, $rozmiar-sciany-kwadratu-siatki);
+      grid-template-columns: repeat(61, $rozmiar-sciany-kwadratu-siatki);
+
+      @mixin btn-uniwersalne-ustawienia() {
+        background: rgb(random(255), random(255), random(255));
+        border: none;
+        opacity: 0.6;
+        background: transparent;
+      }
+      &--barki-tyl {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 16 / 19;
+        grid-column: 26 / 32;
+
+        &--2 {
+          @include btn-uniwersalne-ustawienia();
+          grid-row: 17 /21;
+          grid-column: 46 / 53;
+        }
+      }
+      &--barki-boki {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 19 / 22;
+        grid-column: 24 / 33;
+
+        &--2 {
+          @include btn-uniwersalne-ustawienia();
+          grid-row: 21 / 25;
+          grid-column: 49 / 53;
+        }
+      }
+      &--barki-przod {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 21 / 25;
+        grid-column: 25 / 36;
+
+        &--2 {
+          @include btn-uniwersalne-ustawienia();
+          grid-row: 21 / 25;
+          grid-column: 45 / 49;
+        }
+      }
+      &--biceps {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 25 / 29;
+        grid-column: 17 / 26;
+
+        &--2 {
+          @include btn-uniwersalne-ustawienia();
+          grid-row: 25 / 32;
+          grid-column: 46/ 53;
+        }
+      }
+      &--brzuch-gora {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 32 / 37;
+        grid-column: 36 / 44;
+      }
+      &--brzuch-dol {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 37 / 44;
+        grid-column: 36 / 42;
+      }
+      &--klatka-piersiowa-gora {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 20 / 24;
+        grid-column: 36 / 45;
+      }
+      &--klatka-piersiowa-srodek {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 24 / 28;
+        grid-column: 32 / 46;
+      }
+      &--klatka-piersiowa-dol {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 28 / 32;
+        grid-column: 32 / 46;
+      }
+      &--lydki {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 61 / 75;
+        grid-column: 9 / 43;
+      }
+      &--plecy-gora {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 14 / 20;
+        grid-column: 32 / 46;
+      }
+      &--plecy-srodek {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 25 / 34;
+        grid-column: 26 / 32;
+      }
+      &--plecy-dol {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 34 / 40;
+        grid-column: 26 / 31;
+      }
+      &--posladki {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 40 / 51;
+        grid-column: 24 / 30;
+      }
+      &--przedramie-gora {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 25 / 42;
+        grid-column: 9 / 14;
+
+        &--2 {
+          @include btn-uniwersalne-ustawienia();
+          grid-row: 25 / 40;
+          grid-column: 54 / 59;
+        }
+      }
+      &--przedramie-dol {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 24 / 42;
+        grid-column: 14 / 17;
+
+        &--2 {
+          @include btn-uniwersalne-ustawienia();
+          grid-row: 25 / 40;
+          grid-column: 52 / 54;
+        }
+      }
+      &--skosne {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 32 / 44;
+        grid-column: 29 / 36;
+      }
+      &--triceps {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 19 / 24;
+        grid-column: 15 / 24;
+
+        &--2 {
+          @include btn-uniwersalne-ustawienia();
+          grid-row: 30 / 36;
+          grid-column: 46/ 51;
+        }
+      }
+      &--uda-przod {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 44 / 57;
+        grid-column: 30 / 48;
+      }
+      &--uda-srodek {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 51 / 57;
+        grid-column: 26 / 31;
+      }
+      &--uda-tyl {
+        @include btn-uniwersalne-ustawienia();
+        grid-row: 53 / 63;
+        grid-column: 20 / 46;
+      }
     }
   }
 }
