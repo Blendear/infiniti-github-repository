@@ -11,12 +11,10 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 
 const QRSzukacz = () => {
-  const [result, setResult] = useState("No result");
   const router = useRouter();
 
   const handleScan = (data) => {
-    setResult(data);
-    console.log(data);
+    console.log(data.text);
 
     if (data !== null) {
       router.push(`${data.text}`);
@@ -26,14 +24,8 @@ const QRSzukacz = () => {
     <div className={styles["container__css-class-name"]}>
       {/* //       _._. AA */}
       <TytulBezTla>ZESKANUJ KOD QR MASZYNY</TytulBezTla>
-      {/* <Link
-        href={`/e-trener/lista-cwiczen?nazwa-modalu=${"null"}&id-cwiczenia=${"null"}`}
-      >
-        <a>do tego linku auto-przeprowadzi QR reader</a>
-      </Link> */}
 
       <div>
-        <p>{result.text ? result.text : "Zeskanuj aparatem kod QR maszyny"}</p>
         <QrReader
           onResult={(result, error) => {
             if (!!result) {
