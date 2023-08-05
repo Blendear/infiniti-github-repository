@@ -1,0 +1,167 @@
+//
+//~~ _.  Example component, which will be styled
+//
+//       _._. Workflow Quick AF
+//
+//       _._. CheatSheet
+//
+//       _._. Main grid system (inside a dedicated parent container) - for positioning the components layout
+//
+//           _._._. Variant "Strictly set row/column amounts & sizes"
+//
+//           _._._. Variant "Automatically set row/column amounts & sizes"
+//
+//           _._._. Visual size recognition helper
+//
+//           _._._. Common css properties
+//
+//                  _._._._. Self - Sizes & Positioning
+//
+//                  _._._._. Self - Styling
+//
+//                  _._._._. Children - Sizes & Positioning
+//
+//                  _._._._. Children - Styling
+//
+//           _._._. Align/justify center for every descending element - since mostly you would write a/j in those elements anyway
+//
+
+//
+//       _._. Workflow Quick AF
+//
+// ______
+// UCOMPONENTNIJ (VARIABLES NAWET) JUŻ SAM PROJEKT W FIGMIE
+// ______
+// [ v ] _. Figma file z "Historyjka"               -   WSZYSTKO W COMPONENTS REUŻYWALNE spróbuj pogrupowac JUŻ W FIGMIE. Na odstawie tychże componentów od razu będziesz wiedział jakie MIXINS I COMPONENTS GLOBALNE utworzyć, a które lokalne. nawet shadow or barder radius są powtarzalne
+// ______
+// UPRECYZUJ CEL AKTUALNY
+// ______
+// [ v ] _. Figma file z "Historyjka"               -   Prostokąty kolorowe, symbolizujące grid/grid items (skopiuj z template'u figmowskiego)
+// [ v ] _. Figma file z "Historyjka"               -   Czarne okienko pod "herehere" wstaw (w tworzony akurat Frame)
+// ______
+// BASE SCSS FILES AND BEM CLASSES CREATION
+// ______
+// [ v ] _. "globals.scss"                          -   Globalne style edytuj (jeśli potrzeba) -
+// [ v ] _. [abstracts] i "_typography.scss"        -   Wszystkie MIARY, które można, skropl w uniwersalnie używalne miary, palety kolorów itp.
+// [ v ] _. [layout]                                -   Footer, navbar i inne potrzebne "stałe, poza body" elementy
+// [ v ] _. [components]                            -   Wszystkie FRAGMENTY wizualne, które można, skropl w uniwersalnie używalne componenty (np. button używany wizualnie na paru pages)
+// [   ] _. [pages]                                 -   Unikatowe dla danej strony wizuale tutaj stwórz
+// [ v ] _. "styles-all.module.scss"                -   Dodaj all scss files tutaj, poprzez "@use..."
+// ______
+// PREPARE HTML FOR SCSS INJECTION  &  LETS GO CSS
+// ______
+// [   ] _. "... . scss" files                      -   Think about how to bundle html elements inside dynamic containers & Create adequate BEM class names (without properties yet)
+// [   ] _. "... . jsx" files                       -   Dodaj potrzebne || Usuń zbędne - html elementy, ADEKWATNIE do wcześniej stoworzonych nazw (Np. o mam 3-poziomowo głęboki class tree, ale mam tylko 2-poziomowo głęboki div w divie, wię cmusze dac dodatkowego parent diva) - żeby kontrolę mieć || żeby zbędnych class pozycjonujących nie musieć pisać
+// [   ] _. "... . jsx" files                       -   Dodaj nazwy class do adekwatnych HTML elementów (bo w next krokach będzie potrzeba widać efekty pisanyc css properties)
+// [   ] _. "... . jsx" files                       -   Semantic html names, write them, instead of <div> everywhere
+// [   ] _. "... . scss" files                      -   write self & child POSITIONING css properties (ORDER : [layout] > [components] > [pages])
+//
+//                                                  [   ]     - OD RAZU RESPONSYWNE ROZMIARY - hook1 jak?
+//                                                  [   ]     -
+//                                                  [   ]     -
+//                                                  [   ]     -
+//
+// [   ] _. "... . scss" files                      -   write self & child STYLING css properties (ORDER : [layout] > [components] > [pages])
+//
+
+@use "../../../styles/sass/abstracts/mixins";
+@use "../../../styles/sass/abstracts/colors";
+@use "../../../styles/sass/abstracts/variables";
+@use "../../../styles/sass/base/typography";
+//
+//       _._. CheatSheet
+//
+// https://htmlcheatsheet.com/css/
+//
+// @include mixins.amounts-container;
+//
+// .name{}
+// &__{}
+// &--{}
+
+.name-of-component {
+  &__container {
+    //
+    //           _._._. Common css properties
+    //
+    //                  _._._._. Self - Sizes & Positioning
+
+    // margin: 0 0 0 2rem;
+    // padding: 0 5rem 0 5rem;
+    // width: 8rem;
+    // aspect-ratio:2/1; // width/height
+    // font-size: typography.$font-size-sm;
+    //
+    //                  _._._._. Self - Styling
+    //
+    // font-weight: typography.$font-weight-normal;
+    // color: $kolor-svg-nawigacji;
+    background-color: green; //           _._._. Visual size recognition helper
+    //
+    //                  _._._._. Children - Sizes & Positioning
+    //
+    //
+    //              //       _._. Grid system (main) - for positioning the components layout
+    //
+    display: grid; //           _._._. Variant "Strictly set row/column amounts & sizes"
+    grid-template-rows:
+      [r-0] 1fr
+      [r-1] 1fr
+      [r-2] 1fr
+      [r-3] 1fr
+      [r-4] 1fr
+      [r-5] 1fr
+      [r-6];
+    grid-template-columns:
+      [c-0] 1fr
+      [c-1] 1fr
+      [c-2] 1fr
+      [c-3] 1fr
+      [r-4] 1fr
+      [r-5] 1fr
+      [r-6];
+    //
+    // display: grid; //           _._._. Variant "Automatically set row/column amounts & sizes"
+    // grid-auto-flow: column;
+    // grid-auto-columns: 1fr;
+    // grid-auto-rows: 1fr;
+    // row-gap: 0.8rem;
+    //
+    // justify-items: end; // defaultly set to "center" inside "_globals.scss"
+    // align-items: start; // defaultly set to "center" inside "_globals.scss"
+    //
+    //                  _._._._. Children - Styling
+    //                  THROUGH SELECTORS, FOR EXAMPLE "A L L DESCENDANT ELEMENTS"
+    //
+    // & * {
+    //   background-color: yellow;
+    //   color: black;
+    // }
+  }
+
+  &__child-element-name {
+    //
+    //                  _._._._. Self - Sizes & Positioning
+    // grid-row: r-0 / r-1;
+    // grid-column: c-0 / c-1;
+    // margin: 0 0 0 2rem;
+    //                  _._._._. Self - Styling
+    // background-color: green;
+    //                  _._._._. Children - Sizes & Positioning
+    // display: grid;
+    // grid-template-rows:[r-0] 1fr [r-1];
+    // grid-template-columns:[c-0] 1fr [c-1];
+    // ||
+    // grid-auto-flow: column;
+    // grid-auto-columns: 1fr;
+    // grid-auto-rows: 1fr;
+    //                  _._._._. Children - Styling
+    // & * { background-color: yellow; }
+    //
+    &__child-element-of-child-element-name {
+      //
+      // code here
+      //
+    }
+  }
+}
