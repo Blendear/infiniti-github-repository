@@ -73,7 +73,7 @@ $max-content: max-content;
         background: rgb(random(255), random(255), random(255));
         border: none;
         opacity: 0.6;
-        background: transparent;
+        // background: transparent;
       }
       &--barki-tyl {
         @include btn-uniwersalne-ustawienia();
@@ -211,6 +211,12 @@ $max-content: max-content;
         @include btn-uniwersalne-ustawienia();
         grid-row: 44 / 57;
         grid-column: 30 / 48;
+
+        &--2 {
+          @include btn-uniwersalne-ustawienia();
+          grid-row: 55 / 63;
+          grid-column: 26 / 32;
+        }
       }
       &--uda-srodek {
         @include btn-uniwersalne-ustawienia();

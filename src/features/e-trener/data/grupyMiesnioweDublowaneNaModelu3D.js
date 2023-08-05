@@ -14,6 +14,7 @@ const grupyMiesnioweDublowaneNaModelu3D = [
     indexPrzycisku: 26,
   },
   { nazwa: "Triceps", fota: "triceps--2.png", indexPrzycisku: 27 },
+  { nazwa: "Uda - Tył", fota: "uda-przod--2.png", indexPrzycisku: 28 },
 ];
 
 export default grupyMiesnioweDublowaneNaModelu3D;
