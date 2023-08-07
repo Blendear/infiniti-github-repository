@@ -165,14 +165,6 @@
               [r-10] 1fr
               [r-11];
 
-            //
-
-            //trap1-  protip1 - NIGDY WIECJE STRIKTE ZBUDOWANYCH gridow
-            // kieyd mozesz po prostu zbudowac
-            //    a) component z unikatowymi propsami per przypadke użycia
-            //    b) grid dynamiczny, przemyślany w sposób "automatyczne
-            //    dodawanie kolejnych rowow etc.
-
             grid-template-columns:
               [c-1] 1fr
               [c-2] 1fr
@@ -187,20 +179,15 @@
                 [r-4] 8vw //tytul
                 [r-5] 1fr
                 [r-6] 1fr
-                [r-7] 1fr;
-              // \/ wykomentowane, bo one byly pod INFINITI logo (a mialy hardcoded rozmiar), bez medical ani fitness - a jest niepotrzebne
-
-              // 8vw //tytul
-              // [r-8] 1fr
-              // [r-9] 1fr
-              // [r-10] 1fr
-              // [r-11];
+                [r-7] 8vw
+                [r-8];
               grid-template-columns:
                 [c-1] 10vw
                 [c-2] 10vw
-                [c-3];
+                [c-3] 10vw
+                [c-4] 10vw
+                [c-5];
             }
-            // row-gap: 1rem;
 
             @mixin every-item {
               position: relative;
@@ -255,21 +242,32 @@
             }
             &--medical-tytul {
               @include tytuly-logo();
-
               grid-row: r-7 / r-8;
               grid-column: c-1 / c-3;
+              @media (orientation: landscape) {
+                grid-row: r-5 / r-6;
+                grid-column: c-1 / c-5;
+              }
             }
             &--fitness-tytul {
               @include tytuly-logo();
-
               grid-row: r-4 / r-5;
               grid-column: c-1 / c-3;
+
+              @media (orientation: landscape) {
+                grid-row: r-3 / r-4;
+                grid-column: c-1 / c-5;
+              }
             }
             &--infiniti-tytul {
               @include tytuly-logo();
 
               grid-row: r-1 / r-2;
               grid-column: c-1 / c-3;
+              @media (orientation: landscape) {
+                grid-row: r-1 / r-2;
+                grid-column: c-1 / c-5;
+              }
             }
 
             &--item-9 {
@@ -277,84 +275,113 @@
               grid-column: c-1 / c-2;
 
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-2 / r-3;
+                grid-column: auto;
+              }
             }
             &--item-10 {
               grid-row: r-2 / r-3;
               grid-column: c-2 / c-3;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-2 / r-3;
+                grid-column: auto;
+              }
             }
             &--item-11 {
               grid-row: r-3/ r-4;
               grid-column: c-1 / c-2;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-2 / r-3;
+                grid-column: auto;
+              }
             }
             &--item-12 {
               grid-row: r-3/ r-4;
               grid-column: c-2 / c-3;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-2 / r-3;
+                grid-column: auto;
+              }
             }
             &--item-5 {
               grid-row: r-5 / r-6;
               grid-column: c-1 / c-2;
 
               @include every-item();
+
+              @media (orientation: landscape) {
+                grid-row: r-4 / r-5;
+                grid-column: c-1 / c-2;
+              }
             }
             &--item-6 {
               grid-row: r-5 / r-6;
               grid-column: c-2 / c-3;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-4 / r-5;
+                grid-column: c-2 / c-3;
+              }
             }
             &--item-7 {
               grid-row: r-6 / r-7;
               grid-column: c-1 / c-2;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-4 / r-5;
+                grid-column: c-3 / c-4;
+              }
             }
             &--item-8 {
               grid-row: r-6 / r-7;
               grid-column: c-2 / c-3;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-4 / r-5;
+                grid-column: c-4 / c-5;
+              }
             }
-            // &--item-1 {
-            //   grid-row: r-2 / r-3;
-            //   grid-column: c-1 / c-2;
 
-            //   @include every-item();
-            // }
-            // &--item-2 {
-            //   grid-row: r-2 / r-3;
-            //   grid-column: c-2 / c-3;
-            //   @include every-item();
-            // }
-            // &--item-3 {
-            //   grid-row: r-3/ r-4;
-            //   grid-column: c-1 / c-2;
-            //   @include every-item();
-            // }
-            // &--item-4 {
-            //   grid-row: r-3/ r-4;
-            //   grid-column: c-2 / c-3;
-            //   @include every-item();
-            // }
             &--item-1 {
               grid-row: r-8 / r-9;
               grid-column: c-1 / c-2;
 
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-6 / r-7;
+                grid-column: c-1/ c-2;
+              }
             }
             &--item-2 {
               grid-row: r-8 / r-9;
               grid-column: c-2 / c-3;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-6 / r-7;
+                grid-column: c-2/ c-3;
+              }
             }
             &--item-3 {
               grid-row: r-9 / r-10;
               grid-column: c-1 / c-2;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-6 / r-7;
+                grid-column: c-3/ c-4;
+              }
             }
             &--item-4 {
               grid-row: r-9 / r-10;
               grid-column: c-2 / c-3;
               @include every-item();
+              @media (orientation: landscape) {
+                grid-row: r-6 / r-7;
+                grid-column: c-4/ c-5;
+              }
             }
           }
         }
