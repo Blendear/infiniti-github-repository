@@ -37,6 +37,7 @@ const InfoOSubskrypcji = ({ propA, propB }) => {
         buy-button-id="buy_btn_1NZfo5KGht8obmlk8ckROD9N"
         publishable-key="pk_test_51NUuTyKGht8obmlkV6fMysPOrScxtbyfWrTIW6oV7GHVib7ejuifc6X8PyIACcW75m5H0XNSlm4158YJ55Olla4k00WkwVCODD"
       ></stripe-buy-button>
+      {/* /\ hook1 wstaw tu button z LIVE VERSION pozniej */}
     </div>
   );
 };

@@ -17,7 +17,8 @@ const WitaczImiennyZLinkami = ({ propA, propB }) => {
         Hej [imie usera z Auth0]!
       </div>
       <button>
-        <Link href={`hook1 - tu wklej link do customer portalu`}>
+        <Link href="https://billing.stripe.com/p/login/test_cN200H2EiboBbfy7ss">
+          {/* /\ hook1 wstaw tu link z LIVE VERSION pozniej */}
           <a>
             <IoSettingsSharp />
           </a>
