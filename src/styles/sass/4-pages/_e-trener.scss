@@ -3,10 +3,7 @@
 // @use "../../../styles/sass/abstracts/variables";
 // @use "../../../styles/sass/base/typography";
 
-// .name{}
-// &__{}
-// &--{}
-$rozmiar-sciany-kwadratu-siatki: 1fr;
+$rozmiar-sciany-kwadratu-siatki: 1fr; //hook2 - przerob na universal miary i wstaw do variables/ colors scss files
 $max-content: max-content;
 .strona-glowna {
   &__wybieracz-miesni {

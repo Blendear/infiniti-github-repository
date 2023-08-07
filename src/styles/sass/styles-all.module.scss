@@ -1,11 +1,9 @@
-//trap1 - MUSISZ TU IMPORTOWAĆ file, żeby był w ogóle skompilowany. inaczej masz miliard fileów, któe nic nie robią.
+@use "./1-base/base";
+@use "./1-base/helpers";
 
 @use "./2-components/0-layout-i-wrappers/layout";
 @use "./2-components/0-layout-i-wrappers/navbar";
 @use "./2-components/0-layout-i-wrappers/footer";
-@use "./1-base/base";
-@use "./1-base/helpers";
-
 @use "./2-components/strona-glowna-infiniti/0/cala-strona-poza-carouselami";
 @use "./2-components/strona-glowna-infiniti/0/carouselFotyINFINITI";
 @use "./2-components/wszechobecne-na-roznych-podstronach/menu-modal/menu-modal";
@@ -25,14 +23,12 @@
 @use "./2-components/wszechobecne-na-roznych-podstronach/tytul-podstrony/tytul-podstrony";
 
 @use "./3-layout/strona-glowna-infiniti/0/strona-glowna-infiniti";
-// @use "./3-layout/strona-glowna-infiniti/fitness/kadra/fitness-kadra";
 
 @use "./4-pages/e-trener";
 
 @use "./5-themes/fitness-variables/fitness-variables";
 @use "./5-themes/medical-variables/medical-variables";
-// hook1--layout osobno i wizualny styl osobno? czy jednak 7-1
-//to scam i prosciej robic wszyskto jako "components"? przy
-// duzej appce pewnie 7-1 warte...
 
 @use "./6-abstracts/mixin-media-queries";
+@use "./6-abstracts/colors";
+@use "./6-abstracts/variables";
