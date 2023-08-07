@@ -37,7 +37,7 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
 };
 export default ETrenerStrGlowna;
 
-//Witacz imienny użytkownika - z opcją wylogowania oraz przekierowania do panelu użytkownika (zarządzającym subskrypcją)
+//
 //~~ _. E-Trener stronga główna
 //
 //       _._. <WitaczImiennyZLinkami>

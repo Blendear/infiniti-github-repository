@@ -159,15 +159,11 @@
               [r-4] 7rem //tytul
               [r-5] 1fr
               [r-6] 1fr
-              [r-7] 1fr;
-
-            // \/ wykomentowane, bo one byly pod INFINITI logo (a mialy hardcoded rozmiar), bez medical ani fitness - a jest niepotrzebne
-
-            // 7rem //tytul
-            // [r-8] 1fr
-            // [r-9] 1fr
-            // [r-10] 1fr
-            // [r-11];
+              [r-7] 7rem
+              [r-8] 1fr
+              [r-9] 1fr
+              [r-10] 1fr
+              [r-11];
 
             //
 
@@ -258,39 +254,41 @@
               // padding: 3rem 0 0 0;
             }
             &--medical-tytul {
-              grid-row: r-1 / r-2;
-              grid-column: c-1 / c-3;
               @include tytuly-logo();
-            }
-            &--fitness-tytul {
-              grid-row: r-4 / r-5;
-              grid-column: c-1 / c-3;
-              @include tytuly-logo();
-            }
-            &--infiniti-tytul {
+
               grid-row: r-7 / r-8;
               grid-column: c-1 / c-3;
-
+            }
+            &--fitness-tytul {
               @include tytuly-logo();
+
+              grid-row: r-4 / r-5;
+              grid-column: c-1 / c-3;
+            }
+            &--infiniti-tytul {
+              @include tytuly-logo();
+
+              grid-row: r-1 / r-2;
+              grid-column: c-1 / c-3;
             }
 
-            &--item-1 {
+            &--item-9 {
               grid-row: r-2 / r-3;
               grid-column: c-1 / c-2;
 
               @include every-item();
             }
-            &--item-2 {
+            &--item-10 {
               grid-row: r-2 / r-3;
               grid-column: c-2 / c-3;
               @include every-item();
             }
-            &--item-3 {
+            &--item-11 {
               grid-row: r-3/ r-4;
               grid-column: c-1 / c-2;
               @include every-item();
             }
-            &--item-4 {
+            &--item-12 {
               grid-row: r-3/ r-4;
               grid-column: c-2 / c-3;
               @include every-item();
@@ -316,23 +314,44 @@
               grid-column: c-2 / c-3;
               @include every-item();
             }
-            &--item-9 {
+            // &--item-1 {
+            //   grid-row: r-2 / r-3;
+            //   grid-column: c-1 / c-2;
+
+            //   @include every-item();
+            // }
+            // &--item-2 {
+            //   grid-row: r-2 / r-3;
+            //   grid-column: c-2 / c-3;
+            //   @include every-item();
+            // }
+            // &--item-3 {
+            //   grid-row: r-3/ r-4;
+            //   grid-column: c-1 / c-2;
+            //   @include every-item();
+            // }
+            // &--item-4 {
+            //   grid-row: r-3/ r-4;
+            //   grid-column: c-2 / c-3;
+            //   @include every-item();
+            // }
+            &--item-1 {
               grid-row: r-8 / r-9;
               grid-column: c-1 / c-2;
 
               @include every-item();
             }
-            &--item-10 {
+            &--item-2 {
               grid-row: r-8 / r-9;
               grid-column: c-2 / c-3;
               @include every-item();
             }
-            &--item-11 {
+            &--item-3 {
               grid-row: r-9 / r-10;
               grid-column: c-1 / c-2;
               @include every-item();
             }
-            &--item-12 {
+            &--item-4 {
               grid-row: r-9 / r-10;
               grid-column: c-2 / c-3;
               @include every-item();
@@ -402,7 +421,7 @@
                 // font-size: 3vh;
               }
               & a {
-                // color: rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
               }
               &a:link,
               :visited,
