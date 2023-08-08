@@ -18,6 +18,7 @@ export { default as WideoLinkZagniezdzony } from "./components/WideoLinkZagniezd
 export { default as SzczegolyCwiczenia } from "./components/SzczegolyCwiczenia";
 export { default as ModalCwiczeniaWybranego } from "./components/ModalCwiczeniaWybranego";
 
+//hook1 - why do this imports of "data" \/ not work, if it work for components /\
 export { default as cwiczenia } from "./data/cwiczenia";
 export { default as maszyny } from "./data/maszyny";
 export { default as grupyMiesniowe } from "./data/grupyMiesniowe";

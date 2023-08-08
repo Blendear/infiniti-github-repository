@@ -1,6 +1,6 @@
 const cwiczenia = [
   {
-    // hook2 - change the names to camelCase, to follow convention
+    // hook1 - change the names to camelCase, to follow convention
     id: 1, // pod szybsze wyszukiwanie ćwiczeń, zamiast wolniejszego wysuzkiwania po stringu "nazwa"
     "link-wideo": "yt.com/123456789",
     "fota-miniaturki": "min-aaa.png",
@@ -9,6 +9,7 @@ const cwiczenia = [
     "fota-lokalizacji": "lok-aaa.png",
     idMaszynyUzywanej: "123456789",
   },
+
   {
     id: 2,
     "link-wideo": "yt.com/111111111",
