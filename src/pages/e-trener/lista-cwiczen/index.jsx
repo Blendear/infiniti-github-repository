@@ -13,10 +13,10 @@ const ListaCwiczen = () => {
   const [nazwaModalu, setNazwaModalu] = useState("null"); // ["wideo" || "szczegoly"]
   const [filtr, setFiltr] = useState("null"); // ["maszyna" || "gr-miesniowa"]
   const [wartosc, setWartosc] = useState("null"); // [number idMaszyny || string "cwiczone-miesnie"]
-  const [idOtwartegoCwiczenia, setIdOtwartegoCwiczenia] = useState("null"); // [string z id cwiczenia]
+  // const [idOtwartegoCwiczenia, setIdOtwartegoCwiczenia] = useState("null"); // [string z id cwiczenia]
+  const [otwarteCwiczenie, setOtwarteCwiczenie] = useState({}); // object z propertiesami cwiczenia
 
   const router = useRouter();
-  console.log(router.query);
 
   useEffect(() => {
     router.query !== null &&
@@ -43,19 +43,20 @@ const ListaCwiczen = () => {
                 key={index}
                 cwiczenie={cwiczenie}
                 setNazwaModalu={setNazwaModalu}
-                setIdOtwartegoCwiczenia={setIdOtwartegoCwiczenia}
+                setOtwarteCwiczenie={setOtwarteCwiczenie}
               />
             );
           } else if (
             filtr === "gr-miesniowa" &&
             cwiczenie["cwiczone-miesnie"].find((miesien) => miesien === wartosc)
           ) {
+            console.log("OTO ITEM Z LISTY CWICZEN: ", cwiczenie);
             return (
               <MiniaturkaCwiczenia
                 key={index}
                 cwiczenie={cwiczenie}
                 setNazwaModalu={setNazwaModalu}
-                setIdOtwartegoCwiczenia={setIdOtwartegoCwiczenia}
+                setOtwarteCwiczenie={setOtwarteCwiczenie}
               />
             );
           }
@@ -65,7 +66,7 @@ const ListaCwiczen = () => {
         <ModalCwiczeniaWybranego
           setNazwaModalu={setNazwaModalu}
           nazwaModalu={nazwaModalu}
-          idOtwartegoCwiczenia={idOtwartegoCwiczenia}
+          otwarteCwiczenie={otwarteCwiczenie}
         />
       )}
     </div>

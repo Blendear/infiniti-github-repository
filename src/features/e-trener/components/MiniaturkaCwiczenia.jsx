@@ -5,10 +5,10 @@ import styles from "src/styles/sass/styles-all.module.scss";
 
 const MiniaturkaCwiczenia = ({
   cwiczenie,
-
   setNazwaModalu,
-  setIdOtwartegoCwiczenia,
+  setOtwarteCwiczenie,
 }) => {
+  console.log("MiniaturkaCwiczenia dostala takie cwiczenie : ", cwiczenie);
   return (
     <div className={styles["container__css-class-name"]}>
       <div className={styles[""]}>_________</div>
@@ -16,7 +16,7 @@ const MiniaturkaCwiczenia = ({
       <button
         className={styles[""]}
         onClick={() => {
-          setNazwaModalu("szczegoly"), setIdOtwartegoCwiczenia(cwiczenie["id"]);
+          setNazwaModalu("szczegoly"), setOtwarteCwiczenie(cwiczenie);
         }}
       >
         (i)
@@ -27,7 +27,7 @@ const MiniaturkaCwiczenia = ({
         <div
           className={styles[""]}
           onClick={() => {
-            setNazwaModalu("wideo"), setIdOtwartegoCwiczenia(cwiczenie["id"]);
+            setNazwaModalu("wideo"), setOtwarteCwiczenie(cwiczenie);
           }}
         >{` [${cwiczenie["fota-miniaturki"]} ]`}</div>
         <div className={styles[""]}>{cwiczenie.nazwa}</div>

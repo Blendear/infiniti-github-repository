@@ -101,7 +101,7 @@ const WybieraczMiesni = () => {
         <PotwierdzPrzycisk
           kolorTla="zielony"
           filtr="gr-miesniowa"
-          wartosc={"Barki - Środek"}
+          wartosc={wybranyMiesien}
         >
           {wybranyMiesien}
         </PotwierdzPrzycisk>

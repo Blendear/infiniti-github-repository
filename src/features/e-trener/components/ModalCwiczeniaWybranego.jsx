@@ -10,18 +10,9 @@ import { useEffect, useState } from "react";
 const ModalCwiczeniaWybranego = ({
   setNazwaModalu,
   nazwaModalu,
-  idOtwartegoCwiczenia,
+  otwarteCwiczenie,
 }) => {
   //
-  const [cwiczenie, setCwiczenie] = useState("");
-
-  useEffect(() => {
-    const znalezioneCwiczenie = cwiczenia.filter((cwiczenie) => {
-      return cwiczenie.id === idOtwartegoCwiczenia;
-    })[0];
-    setCwiczenie(znalezioneCwiczenie);
-    console.log("cwiczenie", znalezioneCwiczenie);
-  }, []);
 
   const handleZamknijModal = () => {
     setNazwaModalu("null");
@@ -34,14 +25,12 @@ const ModalCwiczeniaWybranego = ({
         {
           {
             wideo: (
-              <WideoLinkZagniezdzony linkDoWideo={"testowy link do wideo"} />
+              <WideoLinkZagniezdzony linkDoWideo={"testowa-nazwa-linku"} />
             ),
-            szczegoly: <SzczegolyCwiczenia cwiczenie={cwiczenie} />,
+            szczegoly: <SzczegolyCwiczenia cwiczenie={otwarteCwiczenie} />,
           }[nazwaModalu]
         }
       </div>
-      <div>{nazwaModalu}</div>
-      <div>{idOtwartegoCwiczenia}</div>
     </div>
   );
 };
