@@ -1,4 +1,19 @@
-// TRAP1   -   DONT USE GLOBAL VARIABLES FOR ROW SIZES. ITS ALMOST NEVER HELPFIUL, AND V ERY DANGEROUS, BECAUSE THEY OVERWRITE STUFF ("SPECIFITY" REASONS)
+// Table of content for this file is written at the bottom
+
+//       _._. Border radius
 $border-radius-sm: 1rem;
 $border-radius-md: 4rem;
 $border-radius-lg: 6rem;
+
+//       _._. Gradient directions
+$gradient-direction-primary: 90deg;
+$gradient-direction-secondary: 60deg;
+
+//~~ _. Globally used variables - locally used variables are in their specific files, where they are used
+//
+//       _._. Border radius
+//
+//       _._. Gradient directions
+//
+
+// TRAP1   -   DONT USE GLOBAL VARIABLES FOR ROW SIZES. ITS ALMOST NEVER HELPFIUL, AND V ERY DANGEROUS, BECAUSE THEY OVERWRITE STUFF ("SPECIFITY" REASONS)

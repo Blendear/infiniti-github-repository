@@ -7,7 +7,7 @@ const cwiczenia = [
     nazwa: "aaa",
     "cwiczone-miesnie": ["Barki - Środek", "Klatka piersiowa - Dół", "Biceps"],
     "fota-lokalizacji": "lok-aaa.png",
-    maszyna: "maszyna-aaa.png",
+    idMaszynyUzywanej: "123456789",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const cwiczenia = [
     nazwa: "bbb",
     "cwiczone-miesnie": ["Uda - Przód"],
     "fota-lokalizacji": "lok-bbb.png",
-    maszyna: "maszyna-bbb.png",
+    idMaszynyUzywanej: "111111111",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const cwiczenia = [
     nazwa: "ccc",
     "cwiczone-miesnie": ["Plecy - Góra"],
     "fota-lokalizacji": "lok-ccc.png",
-    maszyna: "maszyna-ccc.png",
+    idMaszynyUzywanej: "666666666",
   },
 ];
 

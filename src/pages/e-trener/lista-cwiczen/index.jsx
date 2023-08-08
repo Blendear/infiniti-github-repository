@@ -9,14 +9,20 @@ import { TytulBezTla, TytulZTlemKolorowym } from "../../../features/e-trener";
 import ModalCwiczeniaWybranego from "../../../features/e-trener/components/ModalCwiczeniaWybranego";
 import { cwiczenia } from "../../../features/e-trener";
 
-const ListaCwiczen = ({ propA, propB }) => {
-  const [nazwaModalu, setNazwaModalu] = useState("null");
-  const [idOtwartegoCwiczenia, setIdOtwartegoCwiczenia] = useState("null");
+const ListaCwiczen = () => {
+  const [nazwaModalu, setNazwaModalu] = useState("null"); // ["wideo" || "szczegoly"]
+  const [filtr, setFiltr] = useState("null"); // ["maszyna" || "gr-miesniowa"]
+  const [wartosc, setWartosc] = useState("null"); // [number idMaszyny || string "cwiczone-miesnie"]
+  const [idOtwartegoCwiczenia, setIdOtwartegoCwiczenia] = useState("null"); // [string z id cwiczenia]
+
   const router = useRouter();
   console.log(router.query);
 
   useEffect(() => {
-    router.query !== null && setNazwaModalu(router.query["nazwa-modalu"]);
+    router.query !== null &&
+      (setNazwaModalu(router.query["nazwa-modalu"]),
+      setFiltr(router.query["filtr"]),
+      setWartosc(router.query["wartosc"]));
   }, [router.query]);
 
   return (
@@ -26,18 +32,33 @@ const ListaCwiczen = ({ propA, propB }) => {
         LUB KLIKNIJ “i”, ABY ZOBACZYĆ LOKALIZACJĘ MASZYNY ORAZ “ĆWICZONE
         MIĘŚNIE”
       </TytulBezTla>
-
+      <div>{`${filtr} ${wartosc}`}</div>
       {/* //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń */}
       <div>
         {cwiczenia.map((cwiczenie, index) => {
-          return (
-            <MiniaturkaCwiczenia
-              key={index}
-              cwiczenie={cwiczenie}
-              setNazwaModalu={setNazwaModalu}
-              setIdOtwartegoCwiczenia={setIdOtwartegoCwiczenia}
-            />
-          );
+          //       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
+          if (filtr === "maszyna" && wartosc === cwiczenie.idMaszynyUzywanej) {
+            return (
+              <MiniaturkaCwiczenia
+                key={index}
+                cwiczenie={cwiczenie}
+                setNazwaModalu={setNazwaModalu}
+                setIdOtwartegoCwiczenia={setIdOtwartegoCwiczenia}
+              />
+            );
+          } else if (
+            filtr === "gr-miesniowa" &&
+            cwiczenie["cwiczone-miesnie"].find((miesien) => miesien === wartosc)
+          ) {
+            return (
+              <MiniaturkaCwiczenia
+                key={index}
+                cwiczenie={cwiczenie}
+                setNazwaModalu={setNazwaModalu}
+                setIdOtwartegoCwiczenia={setIdOtwartegoCwiczenia}
+              />
+            );
+          }
         })}
       </div>
       {nazwaModalu !== "null" && (
@@ -54,5 +75,12 @@ export default ListaCwiczen;
 
 //~~ _. ListaCwiczen
 //
+//       _._. <TytulZTlemKolorowym> & <TytulBezTla>
+//
+//       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
+//
 //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń
 //
+//            _._._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
+//
+//       _._. <ModalCwiczeniaWybranego>

@@ -98,7 +98,13 @@ const WybieraczMiesni = () => {
       </div>
 
       {wybranyMiesien && (
-        <PotwierdzPrzycisk bgColor="green">{wybranyMiesien}</PotwierdzPrzycisk>
+        <PotwierdzPrzycisk
+          kolorTla="zielony"
+          filtr="gr-miesniowa"
+          wartosc={"Barki - Środek"}
+        >
+          {wybranyMiesien}
+        </PotwierdzPrzycisk>
       )}
     </div>
   );

@@ -10,6 +10,7 @@ import Image from "next/image";
 
 const NumerIDSzukacz = () => {
   const [fotaMaszyny, setFotaMaszyny] = useState("");
+  const [numerMaszyny, setNumerMaszyny] = useState("");
 
   const handleZmianaNumeru = (e) => {
     let nowaMaszyna;
@@ -19,7 +20,8 @@ const NumerIDSzukacz = () => {
           console.log(nowaMaszyna);
           return maszyna["nr-id"] === e.target.value;
         })
-        ? setFotaMaszyny(nowaMaszyna.fota)
+        ? (setFotaMaszyny(nowaMaszyna.fota),
+          setNumerMaszyny(nowaMaszyna["nr-id"]))
         : setFotaMaszyny("zly-numer")
       : setFotaMaszyny("");
   };
@@ -58,7 +60,11 @@ const NumerIDSzukacz = () => {
               />
             </div>
             {fotaMaszyny !== "zly-numer" && (
-              <PotwierdzPrzycisk bgColor="green">
+              <PotwierdzPrzycisk
+                kolorTla="zielony"
+                filtr="maszyna"
+                wartosc={numerMaszyny.toString()}
+              >
                 {"TAK, TO TA MASZYNA"}
               </PotwierdzPrzycisk>
             )}

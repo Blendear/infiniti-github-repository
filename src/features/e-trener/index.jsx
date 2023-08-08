@@ -10,7 +10,6 @@ export { default as PanelGrupyMiesniowej } from "./components/PanelGrupyMiesniow
 export { default as PanelZOpisemSubskrycji } from "./components/PanelZOpisemSubskrycji";
 export { default as QRSzukacz } from "./components/QRSzukacz";
 export { default as TytulBezTla } from "./components/TytulBezTla";
-export { default as TytulSamozmieniajacySie } from "./components/TytulSamozmieniajacySie";
 export { default as TytulZTlemKolorowym } from "./components/TytulZTlemKolorowym";
 export { default as WitaczImiennyZLinkami } from "./components/WitaczImiennyZLinkami";
 export { default as WybieraczMiesni } from "./components/WybieraczMiesni";

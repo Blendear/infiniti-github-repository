@@ -1,0 +1,15 @@
+@use "../../../styles/sass/6-abstracts/mixins";
+@use "../../../styles/sass/6-abstracts/colors";
+@use "../../../styles/sass/6-abstracts/variables";
+
+.lista-cwiczen {
+  &__container {
+    background-color: white;
+    color: colors.$secondary;
+    display: grid;
+    grid-auto-flow: row;
+  }
+  // &__tytul {
+
+  // }
+}

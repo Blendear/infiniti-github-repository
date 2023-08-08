@@ -1,25 +1,29 @@
 //
 // Table of content for this file is written at the bottom
 //
-
+// @use "../../../styles/sass/abstracts/variables";
 import styles from "src/styles/sass/styles-all.module.scss";
-import {
-  PanelZOpisemSubskrycji,
-  TytulSamozmieniajacySie,
-} from "../../../features/e-trener";
+import { PanelZOpisemSubskrycji } from "../../../features/e-trener";
 import {
   infoOSubskrypcji,
   tekstySamozmieniajace,
 } from "../../../features/e-trener";
+import ReactTyped from "react-typed";
 
 const InfoOSubskrypcji = ({ propA, propB }) => {
   return (
-    <div
-      style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
-      // className={styles["container__css-class-name"]}
-    >
-      <TytulSamozmieniajacySie napisy={tekstySamozmieniajace} />
-      <div>DZIELI CIĘ OD TWOJEGO E-TRENERA!</div>
+    <div className={styles["info-o-subskrypcji__container"]}>
+      <h1 className={styles["info-o-subskrypcji__tytul"]}>
+        <span>
+          <ReactTyped
+            strings={tekstySamozmieniajace}
+            typeSpeed={40}
+            backSpeed={50}
+            loop
+          />
+        </span>
+        <span>DZIELI CIĘ OD TWOJEGO E-TRENERA!</span>
+      </h1>
       <div>
         {infoOSubskrypcji.map((panel) => {
           return (
@@ -44,7 +48,7 @@ const InfoOSubskrypcji = ({ propA, propB }) => {
 export default InfoOSubskrypcji;
 
 //
-//~~ _. Rozpiska i (później) filmik, z wyjaśnieniem jaką zawartość i korzyści daje subskrypcja
+//~~ _. Rozpiska (+ filmik, w przyszłości), z wyjaśnieniem jaką zawartość daje subskrypcja
 //
 //       _._. ...
 //

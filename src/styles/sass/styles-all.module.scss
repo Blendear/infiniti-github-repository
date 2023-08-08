@@ -25,6 +25,7 @@
 @use "./3-layout/strona-glowna-infiniti/0/strona-glowna-infiniti";
 
 @use "./4-pages/e-trener";
+@use "./4-pages/info-o-subskrypcji";
 
 @use "./5-themes/fitness-variables/fitness-variables";
 @use "./5-themes/medical-variables/medical-variables";
@@ -32,3 +33,4 @@
 @use "./6-abstracts/mixin-media-queries";
 @use "./6-abstracts/colors";
 @use "./6-abstracts/variables";
+@use "./6-abstracts/mixins";

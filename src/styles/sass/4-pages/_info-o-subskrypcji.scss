@@ -1,0 +1,27 @@
+@use "../../../styles/sass/6-abstracts/mixins";
+@use "../../../styles/sass/6-abstracts/colors";
+@use "../../../styles/sass/6-abstracts/variables";
+
+.info-o-subskrypcji {
+  &__container {
+    background-color: white;
+    color: colors.$secondary;
+    display: grid;
+    grid-auto-flow: row;
+  }
+  &__tytul {
+    // margin: 15rem 0 100rem 0;
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+
+    & :first-child {
+      @include mixins.gradient-cross-browser(
+        text,
+        variables.$gradient-direction-primary,
+        colors.$etrener-gradient-primary-A,
+        colors.$etrener-gradient-primary-B
+      );
+    }
+  }
+}
