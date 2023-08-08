@@ -22,7 +22,7 @@ const SzczegolyCwiczenia = ({ cwiczenie }) => {
       <TytulZTlemKolorowym>nazwa maszyny</TytulZTlemKolorowym>
       <TytulBezTla>MIĘŚNIE ĆWICZONE</TytulBezTla>
       <ul>
-        {cwiczenie["cwiczone-miesnie"].map((miesien, i) => {
+        {cw["cwiczone-miesnie"].map((miesien, i) => {
           return (
             <PanelGrupyMiesniowej
               key={i}
