@@ -8,7 +8,7 @@
     display: grid;
     grid-auto-flow: row;
     justify-items: center;
-    row-gap: variables.$title-content-row-gap;
+    // row-gap: variables.$title-content-row-gap;
   }
   &__buttony {
     display: grid;

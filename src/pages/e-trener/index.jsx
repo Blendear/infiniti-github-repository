@@ -28,7 +28,7 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
         setActiveButton={setActiveButton}
       />
       {/* //       _._. 1 z 3 wariantów stron e-trenera (conditionally render'owane zależnie od parametru "method" parameter z query string'u) */}
-      <div className={styles["child__css-class-name"]}>
+      <div className={styles["strona-glowna__metoda-szukania"]}>
         {
           {
             qr: <QRSzukacz />,

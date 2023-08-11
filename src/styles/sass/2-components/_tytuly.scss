@@ -39,12 +39,17 @@
       colors.$etrener-gradient-secondary-A,
       colors.$etrener-gradient-secondary-B
     );
-
+    display: grid;
+    align-items: center;
     & svg {
       color: colors.$primary;
+      font-size: typography.$font-size-xl;
     }
-    & button {
+    & button,
+    a {
       all: unset;
+      display: grid;
+      align-items: center;
     }
   }
 }

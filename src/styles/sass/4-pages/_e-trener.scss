@@ -16,6 +16,8 @@ $max-content: max-content;
 
     color: colors.$secondary;
   }
+  &__metoda-szukania {
+  }
   &__wybieracz-miesni {
     display: grid;
     grid-template-rows:
@@ -26,7 +28,7 @@ $max-content: max-content;
     grid-template-columns:
       [c-1] 1fr
       [c-2];
-    row-gap: 2rem;
+    // row-gap: 2rem;
 
     @mixin rozmiar-wybieracza {
       // margin: 5rem 0 0 0;
