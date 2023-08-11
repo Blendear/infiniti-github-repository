@@ -2,7 +2,7 @@
 
 //       _._. Borders
 //              _._._. Border radius
-$border-radius-sm: 2rem;
+$border-radius-sm: 1rem;
 $border-radius-md: 4rem;
 $border-radius-lg: 6rem;
 //              _._._. Border width
@@ -15,7 +15,7 @@ $gradient-direction-secondary: 180deg;
 $title-content-row-gap: 0.8rem;
 $page-chunk-chunk-row-gap: 2rem;
 $content-content-gap: 0.8rem;
-
+$content-content-gap-md: 1.8rem;
 // TRAP1   -   DONT USE GLOBAL VARIABLES FOR ROW SIZES. ITS ALMOST NEVER HELPFIUL, AND V ERY DANGEROUS, BECAUSE THEY OVERWRITE STUFF ("SPECIFITY" REASONS)
 //
 //~~ _. Globally used variables - locally used variables are in their specific files, where they are used

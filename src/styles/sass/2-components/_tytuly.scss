@@ -4,10 +4,33 @@
 @use "../../../styles/sass/1-base/typography";
 
 .tytul {
+  &__container {
+    width: min(40rem, 80vw);
+    margin: 0 auto;
+  }
+  @mixin tytul {
+    // delete afterwards /\
+    padding: 1.5rem;
+    border-radius: variables.$border-radius-sm;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    text-align: center;
+    gap: variables.$content-content-gap;
+    font-weight: bold;
+
+    & svg {
+      font-size: min(3rem, 6vw);
+    }
+  }
   &--bez-tla {
+    @include tytul;
     font-size: typography.$font-size-md;
   }
   &--z-tlem-kolorowym {
+    margin: 7.5rem 0 0 0;
+
+    @include tytul;
     font-size: typography.$font-size-md;
     color: colors.$primary;
     @include mixins.gradient-cross-browser(
@@ -16,5 +39,12 @@
       colors.$etrener-gradient-secondary-A,
       colors.$etrener-gradient-secondary-B
     );
+
+    & svg {
+      color: colors.$primary;
+    }
+    & button {
+      all: unset;
+    }
   }
 }

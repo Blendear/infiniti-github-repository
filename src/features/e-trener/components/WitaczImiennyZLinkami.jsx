@@ -14,7 +14,8 @@ const WitaczImiennyZLinkami = ({ propA, propB }) => {
         <RiLogoutBoxLine />
       </button>
       <div className={styles["child__css-class-name"]}>
-        Hej [imie usera z Auth0]!
+        {`Hej >>>userze_moj_Auth0<<<!`.toUpperCase()}
+        {/* hook1 - utnij dlugosc imienia usera, jesli przkeroczy liczbe, ktory mi psuje css. mp. 10 */}
       </div>
       <button>
         <Link href="https://billing.stripe.com/p/login/test_cN200H2EiboBbfy7ss">
