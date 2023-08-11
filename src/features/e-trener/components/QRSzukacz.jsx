@@ -24,7 +24,6 @@ const QRSzukacz = () => {
     <div className={styles["strona-glowna__qr-szukacz__container"]}>
       {/* //       _._. AA */}
       <TytulBezTla>ZESKANUJ KOD QR MASZYNY</TytulBezTla>
-
       <QrReader
         className={styles["strona-glowna__qr-szukacz__kamera"]}
         onResult={(result, error) => {

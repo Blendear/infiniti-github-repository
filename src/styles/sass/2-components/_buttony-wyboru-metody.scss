@@ -17,7 +17,7 @@
 
     &__btn {
       padding: variables.$content-content-gap 1rem;
-      width: 21.5vw;
+      width: min(17rem, 21.5vw);
       aspect-ratio: 1/1;
 
       @include mixins.gradient-cross-browser(
@@ -78,7 +78,7 @@
       }
       &__icon {
         &--single {
-          font-size: min(7rem, 7vw);
+          font-size: min(4.75rem, 7vw);
         }
         &--tripple {
           font-size: min(3rem, 3.5vw);

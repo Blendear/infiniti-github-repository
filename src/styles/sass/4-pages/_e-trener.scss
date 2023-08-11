@@ -223,7 +223,7 @@ $max-content: max-content;
       row-gap: variables.$title-content-row-gap;
     }
     &__input-field {
-      width: 22rem;
+      width: min(35rem, 65vw);
       aspect-ratio: 4/1;
       padding: 1rem 2rem;
       @include mixins.gradient-cross-browser(
@@ -259,7 +259,8 @@ $max-content: max-content;
       // position: relative;
       // height: 25rem;
       // aspect-ratio: 1/1;
-
+      width: min(30rem, 70vw);
+      aspect-ratio: 1.5/1;
       border-radius: 2rem;
       background-color: colors.$secondary;
     }
