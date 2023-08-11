@@ -16,8 +16,8 @@
     column-gap: variables.$content-content-gap;
 
     &__btn {
-      padding: variables.$content-content-gap 0;
-      width: 27.5vw;
+      padding: variables.$content-content-gap 1rem;
+      width: 21.5vw;
       aspect-ratio: 1/1;
 
       @include mixins.gradient-cross-browser(
@@ -31,7 +31,7 @@
       border-width: variables.$border-width-sm;
       font-weight: bold;
       display: grid;
-
+      overflow: hidden;
       & h3 {
         font-size: typography.$font-size-sm;
         @include mixins.gradient-cross-browser(
@@ -52,7 +52,8 @@
         grid-auto-flow: row;
         align-items: center;
         justify-items: center;
-        row-gap: variables.$content-content-gap;
+        row-gap: variables.$content-content-gap * 0.5; //protip1 / hook1 - legitny sposób zapobiegania pisanai zbednych, kolejnych variables? Po prostu mnożyć już istniejące, lekko tylko inne?
+        grid-template-rows: 1fr 1fr;
       }
 
       & svg {
@@ -77,10 +78,10 @@
       }
       &__icon {
         &--single {
-          font-size: 3.75rem;
+          font-size: min(7rem, 7vw);
         }
         &--tripple {
-          font-size: 2rem;
+          font-size: min(3rem, 3.5vw);
           width: min-content;
           display: grid;
           grid-auto-flow: column;

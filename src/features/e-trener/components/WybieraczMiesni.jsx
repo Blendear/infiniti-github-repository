@@ -13,10 +13,10 @@ const WybieraczMiesni = () => {
   const [wybranyMiesien, setWybranyMiesien] = useState("");
 
   return (
-    <div className={styles["strona-glowna__wybieracz-miesni"]}>
+    <div>
       <TytulBezTla>KLIKNIJ W MIĘSIEŃ & ZATWIERDŹ</TytulBezTla>
       {console.log("grupyMiesniowe: ", grupyMiesniowe)}
-      <div>
+      <div className={styles["strona-glowna__wybieracz-miesni"]}>
         <div
           className={
             styles["strona-glowna__wybieracz-miesni__3d-model-z-miesniami"]

@@ -17,6 +17,7 @@ $max-content: max-content;
     color: colors.$secondary;
   }
   &__metoda-szukania {
+    margin: 0 auto;
   }
   &__wybieracz-miesni {
     display: grid;
@@ -30,20 +31,21 @@ $max-content: max-content;
       [c-2];
     // row-gap: 2rem;
 
-    @mixin rozmiar-wybieracza {
+    @mixin rozmiar-wybieracza-miesni {
       // margin: 5rem 0 0 0;
 
       position: absolute;
-      height: 45rem;
+      height: 40rem;
       aspect-ratio: 1/1.5;
+      @include mixins.next-img-border-radius(variables.$border-radius-sm);
     }
     &__3d-model-z-miesniami {
-      @include rozmiar-wybieracza();
+      @include rozmiar-wybieracza-miesni();
 
       grid-row: 1 / 2;
     }
     &__siatka-do-przyciskow {
-      @include rozmiar-wybieracza();
+      @include rozmiar-wybieracza-miesni();
 
       grid-row: 1 / 2;
 
@@ -241,6 +243,25 @@ $max-content: max-content;
         text-align: center;
         color: colors.$sixth;
       }
+    }
+    &__fota-maszyny {
+      position: relative;
+      height: 25rem;
+      aspect-ratio: 1/1;
+
+      @include mixins.next-img-border-radius(variables.$border-radius-sm);
+    }
+  }
+  &__qr-szukacz {
+    &__container {
+    }
+    &__kamera {
+      // position: relative;
+      // height: 25rem;
+      // aspect-ratio: 1/1;
+
+      border-radius: 2rem;
+      background-color: colors.$secondary;
     }
   }
 }

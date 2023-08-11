@@ -21,26 +21,25 @@ const QRSzukacz = () => {
     }
   };
   return (
-    <div className={styles["container__css-class-name"]}>
+    <div className={styles["strona-glowna__qr-szukacz__container"]}>
       {/* //       _._. AA */}
       <TytulBezTla>ZESKANUJ KOD QR MASZYNY</TytulBezTla>
 
-      <div>
-        <QrReader
-          onResult={(result, error) => {
-            if (!!result) {
-              handleScan(result);
-            }
+      <QrReader
+        className={styles["strona-glowna__qr-szukacz__kamera"]}
+        onResult={(result, error) => {
+          if (!!result) {
+            handleScan(result);
+          }
 
-            if (!!error) {
-              console.info(error);
-            }
-          }}
-          constraints={{
-            facingMode: "environment",
-          }}
-        />
-      </div>
+          if (!!error) {
+            console.info(error);
+          }
+        }}
+        constraints={{
+          facingMode: "environment",
+        }}
+      />
     </div>
   );
 };

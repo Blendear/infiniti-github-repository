@@ -40,12 +40,12 @@ const NumerIDSzukacz = () => {
         (() => (
           <>
             <div
-              // className={styles["fota-maszyny-CONTAINER"]}   // \/ is a palceholder, before I write code of <
-              style={{
-                position: "relative",
-                height: "45rem",
-                aspectRatio: "1/1.5",
-              }}
+              className={styles["strona-glowna__nr-id-szukacz__fota-maszyny"]} // \/ is a palceholder, before I write code of <
+              // style={{
+              //   position: "relative",
+              //   height: "45rem",
+              //   aspectRatio: "1/1.5",
+              // }}
             >
               <Image
                 // public/images/.dedykowane-do-strony-konkretnej/e-trener/maszyny/masz1.png
