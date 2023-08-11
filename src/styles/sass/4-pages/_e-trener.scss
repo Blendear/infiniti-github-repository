@@ -219,8 +219,9 @@ $max-content: max-content;
       row-gap: variables.$title-content-row-gap;
     }
     &__input-field {
-      width: 25rem;
-      aspect-ratio: 3/1;
+      width: 22rem;
+      aspect-ratio: 4/1;
+      padding: 1rem 2rem;
       @include mixins.gradient-cross-browser(
         "border",
         variables.$gradient-direction-secondary,
@@ -229,7 +230,10 @@ $max-content: max-content;
       );
       border-radius: variables.$border-radius-sm;
       border-width: variables.$border-width-sm;
-      font-size: typography.$font-size-xxl;
+      font-size: typography.$font-size-xl;
+      // color: white;
+      color: colors.$secondary;
+      text-align: center;
 
       &::placeholder {
         text-align: center;
