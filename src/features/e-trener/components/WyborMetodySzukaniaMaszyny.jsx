@@ -8,12 +8,14 @@ import TytulBezTla from "./TytulBezTla";
 
 const WyborMetodySzukaniaMaszyny = ({ propA, propB }) => {
   return (
-    <div className={styles["container__css-class-name"]}>
+    <div className={styles["wybor-metody__container"]}>
       {/* //       _._. AA */}
       <TytulBezTla>JAK CHCESZ ZNALEŹĆ ĆWICZENIA?</TytulBezTla>
-      <ButtonWyboruMetody metoda="qr" />
-      <ButtonWyboruMetody metoda="nr" />
-      <ButtonWyboruMetody metoda="miesien" />
+      <div className={styles["wybor-metody__buttony"]}>
+        <ButtonWyboruMetody metoda="qr" />
+        <ButtonWyboruMetody metoda="nr" />
+        <ButtonWyboruMetody metoda="miesien" />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,86 @@
+@use "../../../styles/sass/6-abstracts/mixins";
+@use "../../../styles/sass/6-abstracts/colors";
+@use "../../../styles/sass/6-abstracts/variables";
+@use "../../../styles/sass/1-base/typography";
+
+// .name{}
+// &__{}
+// &--{}
+
+.wybor-metody {
+  &__container {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    row-gap: variables.$title-content-row-gap;
+    margin: variables.$page-chunk-chunk-row-gap 0;
+  }
+  &__buttony {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: variables.$content-content-gap;
+
+    &__btn {
+      padding: variables.$content-content-gap 0;
+      width: 27.5vw;
+      aspect-ratio: 1/1;
+
+      @include mixins.gradient-cross-browser(
+        "border",
+        variables.$gradient-direction-secondary,
+        colors.$etrener-gradient-secondary-A,
+        colors.$etrener-gradient-secondary-B
+      );
+      background-color: colors.$primary;
+      border-radius: variables.$border-radius-sm;
+      border-width: variables.$border-width-sm;
+      font-weight: bold;
+      display: grid;
+
+      & h3 {
+        font-size: typography.$font-size-sm;
+      }
+
+      & div {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      }
+      & a {
+        height: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        align-items: center;
+        justify-items: center;
+        row-gap: variables.$content-content-gap;
+      }
+      &__icon {
+        &--single {
+          font-size: 3.75rem;
+        }
+        &--tripple {
+          font-size: 2rem;
+          width: min-content;
+          display: grid;
+          grid-auto-flow: column;
+        }
+      }
+      & svg {
+        // font-size: 4rem;
+
+        //   @include mixins.gradient-cross-browser(
+        //     "icon",
+        //     variables.$gradient-direction-primary,
+        //     colors.$etrener-gradient-secondary-A,
+        //     colors.$etrener-gradient-secondary-B
+        //   );
+      }
+      & :hover {
+        filter: saturate(1.5);
+      }
+      & :active {
+        filter: saturate(1);
+      }
+    }
+  }
+}

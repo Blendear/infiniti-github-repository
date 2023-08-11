@@ -3,36 +3,47 @@
 //
 
 @mixin gradient-cross-browser($target-type, $deg, $color1, $color2) {
-  //protip1 / hook1 - \/ this are all browsersyou need to add cross-browser for
-  // Old browsers
-  background: $color1;
-  // Webkit (Chrome 11+)
-  background: -webkit-linear-gradient($deg, $color1 0%, $color2 100%);
-  // Webkit (Safari/Chrome 10) - hook1 - chedkc how to make it dinamic, instead of hardcoded strings - maybe just dedicated variable sfor safari?
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0, $color1),
-    color-stop(1, $color2)
-  );
-  // IE10+
-  background: -ms-linear-gradient($deg, $color1 0%, $color2 100%);
-  // Mozilla Firefox
-  background: -moz-linear-gradient($deg, $color1 0%, $color2 100%);
-  // Opera
-  background: -o-linear-gradient($deg, $color1 0%, $color2 100%);
-  // W3C Markup
-  background: linear-gradient($deg, $color1 0%, $color2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(
-    startColorstr='#{$color1}',
-    endColorstr='#{$color2}',
-    GradientType=1
-  );
-  @if ($target-type == "background") {
-  } @else if($target-type == "text") {
+  @if not $target-type == "border" {
+    @if $target-type == "text" or $target-type == "bg" {
+      //protip1 / hook1 - \/ this are all browsersyou need to add cross-browser for
+      // Old browsers
+      background: $color1;
+      // Webkit (Chrome 11+)
+      background: -webkit-linear-gradient($deg, $color1 0%, $color2 100%);
+      // Webkit (Safari/Chrome 10) - hook1 - chedkc how to make it dinamic, instead of hardcoded strings - maybe just dedicated variable sfor safari?
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, $color1),
+        color-stop(1, $color2)
+      );
+      // IE10+
+      background: -ms-linear-gradient($deg, $color1 0%, $color2 100%);
+      // Mozilla Firefox
+      background: -moz-linear-gradient($deg, $color1 0%, $color2 100%);
+      // Opera
+      background: -o-linear-gradient($deg, $color1 0%, $color2 100%);
+      // W3C Markup
+      background: linear-gradient($deg, $color1 0%, $color2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#{$color1}',
+      endColorstr='#{$color2}',
+      GradientType=1
+    );
+    }
+  }
+  @if $target-type == "text" or $target-type == "icon" {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  @if $target-type == "border" {
+    //protip1 - \/ gradiented-borders with border radius - link : https://nikitahl.com/gradient-border-css
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient($deg, $color1, $color2) border-box;
+    border-style: solid;
+    border-color: transparent;
+    // border: 5px solid transparent;
   }
 }
 //protip1 - /\ cleaner way of writing cross-browser css - because its mostly similar, boilerplate, copy-paste lines

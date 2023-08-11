@@ -1,19 +1,31 @@
 // Table of content for this file is written at the bottom
 
-//       _._. Border radius
-$border-radius-sm: 1rem;
+//       _._. Borders
+//              _._._. Border radius
+$border-radius-sm: 2rem;
 $border-radius-md: 4rem;
 $border-radius-lg: 6rem;
-
+//              _._._. Border width
+$border-width-sm: 0.5rem;
+$border-width-md: 1.5rem;
 //       _._. Gradient directions
 $gradient-direction-primary: 90deg;
-$gradient-direction-secondary: 60deg;
+$gradient-direction-secondary: 180deg;
+//       _._. Gaps between page parts
+$title-content-row-gap: 0.8rem;
+$page-chunk-chunk-row-gap: 2rem;
+$content-content-gap: 0.8rem;
 
+// TRAP1   -   DONT USE GLOBAL VARIABLES FOR ROW SIZES. ITS ALMOST NEVER HELPFIUL, AND V ERY DANGEROUS, BECAUSE THEY OVERWRITE STUFF ("SPECIFITY" REASONS)
+//
 //~~ _. Globally used variables - locally used variables are in their specific files, where they are used
 //
-//       _._. Border radius
+//       _._. Borders
+//
+//              _._._. Border radius
+//
+//              _._._. Border width
 //
 //       _._. Gradient directions
 //
-
-// TRAP1   -   DONT USE GLOBAL VARIABLES FOR ROW SIZES. ITS ALMOST NEVER HELPFIUL, AND V ERY DANGEROUS, BECAUSE THEY OVERWRITE STUFF ("SPECIFITY" REASONS)
+//       _._. Gaps between page parts
