@@ -1,9 +1,7 @@
-//
 // Table of content for this file is written at the bottom
-//
 
 @mixin gradient-cross-browser($target-type, $deg, $color1, $color2) {
-  @if not $target-type == "border" {
+  @if $target-type != "border" {
     @if $target-type == "text" or $target-type == "bg" {
       //protip1 / hook1 - \/ this are all browsersyou need to add cross-browser for
       // Old browsers
@@ -47,3 +45,10 @@
   }
 }
 //protip1 - /\ cleaner way of writing cross-browser css - because its mostly similar, boilerplate, copy-paste lines
+@mixin next-img-border-radius($border-radius) {
+  border-radius: $border-radius; // so that the shadow of the <div> is rounded also
+
+  & img {
+    border-radius: $border-radius;
+  }
+}

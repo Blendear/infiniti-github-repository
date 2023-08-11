@@ -3,10 +3,6 @@
 @use "../../../styles/sass/6-abstracts/variables";
 @use "../../../styles/sass/1-base/typography";
 
-// .name{}
-// &__{}
-// &--{}
-
 .wybor-metody {
   &__container {
     display: grid;
@@ -39,8 +35,13 @@
 
       & h3 {
         font-size: typography.$font-size-sm;
+        @include mixins.gradient-cross-browser(
+          "text",
+          variables.$gradient-direction-secondary,
+          colors.$etrener-gradient-secondary-A,
+          colors.$etrener-gradient-secondary-B
+        );
       }
-
       & div {
         display: grid;
         align-items: center;
@@ -54,6 +55,22 @@
         justify-items: center;
         row-gap: variables.$content-content-gap;
       }
+      &--active {
+        //trap1 - lepiej zawsze rob osobny class tne pod "disabled", zeby nie bawoic sie w usuwanie class defualtowych, a tylko bawic sie w dodawanie klas
+        border-style: none;
+        border-color: none;
+        @include mixins.gradient-cross-browser(
+          "bg",
+          variables.$gradient-direction-secondary,
+          colors.$etrener-gradient-secondary-A,
+          colors.$etrener-gradient-secondary-B
+        );
+        & h3,
+        svg {
+          color: colors.$primary;
+          -webkit-text-fill-color: colors.$primary;
+        }
+      }
       &__icon {
         &--single {
           font-size: 3.75rem;
@@ -64,22 +81,6 @@
           display: grid;
           grid-auto-flow: column;
         }
-      }
-      & svg {
-        // font-size: 4rem;
-
-        //   @include mixins.gradient-cross-browser(
-        //     "icon",
-        //     variables.$gradient-direction-primary,
-        //     colors.$etrener-gradient-secondary-A,
-        //     colors.$etrener-gradient-secondary-B
-        //   );
-      }
-      & :hover {
-        filter: saturate(1.5);
-      }
-      & :active {
-        filter: saturate(1);
       }
     }
   }

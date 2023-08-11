@@ -12,9 +12,16 @@ import { PiNumberSquareTwoLight } from "react-icons/pi";
 import { BsQrCodeScan } from "react-icons/bs";
 import { GiBiceps } from "react-icons/gi";
 
-const ButtonWyboruMetody = ({ metoda }) => {
+const ButtonWyboruMetody = ({ activeButton, metoda, setActiveButton }) => {
   return (
-    <button className={styles["wybor-metody__buttony__btn"]}>
+    <button
+      className={`${styles["wybor-metody__buttony__btn"]} ${
+        activeButton === metoda && styles["wybor-metody__buttony__btn--active"]
+      } }`}
+      onClick={() => {
+        setActiveButton(metoda);
+      }}
+    >
       <Link href={`/e-trener?method=${metoda}`}>
         <a>
           {

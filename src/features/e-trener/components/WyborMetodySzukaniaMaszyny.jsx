@@ -6,15 +6,27 @@ import Link from "next/link";
 import ButtonWyboruMetody from "./ButtonWyboruMetody";
 import TytulBezTla from "./TytulBezTla";
 
-const WyborMetodySzukaniaMaszyny = ({ propA, propB }) => {
+const WyborMetodySzukaniaMaszyny = ({ activeButton, setActiveButton }) => {
   return (
     <div className={styles["wybor-metody__container"]}>
       {/* //       _._. AA */}
       <TytulBezTla>JAK CHCESZ ZNALEŹĆ ĆWICZENIA?</TytulBezTla>
       <div className={styles["wybor-metody__buttony"]}>
-        <ButtonWyboruMetody metoda="qr" />
-        <ButtonWyboruMetody metoda="nr" />
-        <ButtonWyboruMetody metoda="miesien" />
+        <ButtonWyboruMetody
+          metoda="qr"
+          activeButton={activeButton}
+          setActiveButton={setActiveButton}
+        />
+        <ButtonWyboruMetody
+          metoda="nr"
+          activeButton={activeButton}
+          setActiveButton={setActiveButton}
+        />
+        <ButtonWyboruMetody
+          metoda="miesien"
+          activeButton={activeButton}
+          setActiveButton={setActiveButton}
+        />
       </div>
     </div>
   );
