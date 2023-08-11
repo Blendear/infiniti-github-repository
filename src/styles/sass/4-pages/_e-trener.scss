@@ -1,11 +1,21 @@
-// @use "../../../styles/sass/abstracts/mixins";
-// @use "../../../styles/sass/abstracts/colors";
-// @use "../../../styles/sass/abstracts/variables";
-// @use "../../../styles/sass/base/typography";
+@use "../../../styles/sass/6-abstracts/mixins";
+@use "../../../styles/sass/6-abstracts/colors";
+@use "../../../styles/sass/6-abstracts/variables";
+@use "../../../styles/sass/1-base/typography";
 
 $rozmiar-sciany-kwadratu-siatki: 1fr; //hook2 - przerob na universal miary i wstaw do variables/ colors scss files
 $max-content: max-content;
 .strona-glowna {
+  //hook1 - zmien ten tytul /\ na "e-trener" i pozmieniaj reszcie ele,mentow nazwe
+  &__container {
+    height: 100dvh;
+    background-color: colors.$primary;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: $max-content;
+
+    color: colors.$secondary;
+  }
   &__wybieracz-miesni {
     display: grid;
     grid-template-rows:
@@ -199,6 +209,31 @@ $max-content: max-content;
         @include btn-uniwersalne-ustawienia();
         grid-row: 53 / 63;
         grid-column: 20 / 46;
+      }
+    }
+  }
+  &__nr-id-szukacz {
+    &__container {
+      display: grid;
+      justify-items: center;
+      row-gap: variables.$title-content-row-gap;
+    }
+    &__input-field {
+      width: 25rem;
+      aspect-ratio: 3/1;
+      @include mixins.gradient-cross-browser(
+        "border",
+        variables.$gradient-direction-secondary,
+        colors.$etrener-gradient-secondary-A,
+        colors.$etrener-gradient-secondary-B
+      );
+      border-radius: variables.$border-radius-sm;
+      border-width: variables.$border-width-sm;
+      font-size: typography.$font-size-xxl;
+
+      &::placeholder {
+        text-align: center;
+        color: colors.$sixth;
       }
     }
   }

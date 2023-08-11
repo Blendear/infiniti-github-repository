@@ -1,0 +1,20 @@
+@use "../../../styles/sass/6-abstracts/mixins";
+@use "../../../styles/sass/6-abstracts/colors";
+@use "../../../styles/sass/6-abstracts/variables";
+@use "../../../styles/sass/1-base/typography";
+
+.tytul {
+  &--bez-tla {
+    font-size: typography.$font-size-md;
+  }
+  &--z-tlem-kolorowym {
+    font-size: typography.$font-size-md;
+    color: colors.$primary;
+    @include mixins.gradient-cross-browser(
+      "bg",
+      variables.$gradient-direction-secondary,
+      colors.$etrener-gradient-secondary-A,
+      colors.$etrener-gradient-secondary-B
+    );
+  }
+}

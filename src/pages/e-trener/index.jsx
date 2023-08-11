@@ -19,8 +19,8 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
 
   return (
     <div
-      style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
-      // className={styles["container__css-class-name"]}
+      // style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
+      className={styles["strona-glowna__container"]}
     >
       <WitaczImiennyZLinkami />
       <WyborMetodySzukaniaMaszyny

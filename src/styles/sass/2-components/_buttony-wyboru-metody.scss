@@ -9,7 +9,6 @@
     grid-auto-flow: row;
     justify-items: center;
     row-gap: variables.$title-content-row-gap;
-    margin: variables.$page-chunk-chunk-row-gap 0;
   }
   &__buttony {
     display: grid;
@@ -55,6 +54,11 @@
         justify-items: center;
         row-gap: variables.$content-content-gap;
       }
+
+      & svg {
+        color: colors.$etrener-gradient-secondary-A;
+      }
+
       &--active {
         //trap1 - lepiej zawsze rob osobny class tne pod "disabled", zeby nie bawoic sie w usuwanie class defualtowych, a tylko bawic sie w dodawanie klas
         border-style: none;
