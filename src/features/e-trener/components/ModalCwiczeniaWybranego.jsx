@@ -6,7 +6,7 @@ import WideoLinkZagniezdzony from "./WideoLinkZagniezdzony";
 import SzczegolyCwiczenia from "./SzczegolyCwiczenia";
 import cwiczenia from "../data/cwiczenia";
 import { useEffect, useState } from "react";
-
+import { Modal, Backdrop } from "../../../components/e-trener";
 const ModalCwiczeniaWybranego = ({
   setNazwaModalu,
   nazwaModalu,
@@ -19,19 +19,21 @@ const ModalCwiczeniaWybranego = ({
   };
 
   return (
-    <div className={styles["container__css-class-name"]}>
-      <button onClick={handleZamknijModal}>X</button>
-      <div>
-        {
+    <>
+      <Modal variant="information">
+        <button onClick={handleZamknijModal}>X</button>
+        <div>
           {
-            wideo: (
-              <WideoLinkZagniezdzony linkDoWideo={"testowa-nazwa-linku"} />
-            ),
-            szczegoly: <SzczegolyCwiczenia cwiczenie={otwarteCwiczenie} />,
-          }[nazwaModalu]
-        }
-      </div>
-    </div>
+            {
+              wideo: (
+                <WideoLinkZagniezdzony linkDoWideo={"testowa-nazwa-linku"} />
+              ),
+              szczegoly: <SzczegolyCwiczenia cwiczenie={otwarteCwiczenie} />,
+            }[nazwaModalu]
+          }
+        </div>
+      </Modal>
+    </>
   );
 };
 export default ModalCwiczeniaWybranego;

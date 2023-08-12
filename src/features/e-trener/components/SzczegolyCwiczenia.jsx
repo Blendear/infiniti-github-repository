@@ -8,7 +8,10 @@ import Image from "next/image";
 
 const SzczegolyCwiczenia = ({ cwiczenie }) => {
   return (
-    <div className={styles[`container__css-class-name`]}>
+    <div
+      // className={styles[`container__css-class-name`]}
+      style={{ color: "black" }} // hook1 - zmien to pozniej na realclassname i color
+    >
       <TytulZTlemKolorowym>nazwa maszyny</TytulZTlemKolorowym>
       <TytulBezTla>MIĘŚNIE ĆWICZONE</TytulBezTla>
       <ul>

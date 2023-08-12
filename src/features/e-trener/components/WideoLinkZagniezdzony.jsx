@@ -11,8 +11,8 @@ const WideoLinkZagniezdzony = ({ linkDoWideo }) => {
   };
 
   const opts = {
-    height: "390",
-    width: "640",
+    height: "180",
+    width: "300",
     // playsinline: 1, //hook1 - tak sie robi fullscreen? czy gdzie indziej ten property dac, np.w playerVars?
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -22,10 +22,12 @@ const WideoLinkZagniezdzony = ({ linkDoWideo }) => {
 
   return (
     <div className={styles["container__css-class-name"]}>
-      {/* {cwiczenie["link-wideo"]} */}
-      {/* {"YT video"} */}
-      {"placeholder link do wideo"}
-      <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={handleReady} />
+      <YouTube
+        className={styles[""]}
+        videoId="2g811Eo7K8U"
+        opts={opts}
+        onReady={handleReady}
+      />
     </div>
   );
 };
