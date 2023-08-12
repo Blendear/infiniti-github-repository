@@ -13,7 +13,7 @@ const WybieraczMiesni = () => {
   const [wybranyMiesien, setWybranyMiesien] = useState("");
 
   return (
-    <div>
+    <>
       <TytulBezTla>KLIKNIJ W MIĘSIEŃ & ZATWIERDŹ</TytulBezTla>
       {console.log("grupyMiesniowe: ", grupyMiesniowe)}
       <div className={styles["strona-glowna__wybieracz-miesni"]}>
@@ -99,14 +99,14 @@ const WybieraczMiesni = () => {
 
       {wybranyMiesien && (
         <PotwierdzPrzycisk
-          kolorTla="zielony"
+          kolorTla="e-trener"
           filtr="gr-miesniowa"
           wartosc={wybranyMiesien}
         >
           {wybranyMiesien}
         </PotwierdzPrzycisk>
       )}
-    </div>
+    </>
   );
 };
 export default WybieraczMiesni;

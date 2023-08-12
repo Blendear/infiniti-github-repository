@@ -10,7 +10,7 @@
   }
   @mixin tytul {
     // delete afterwards /\
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: variables.$border-radius-sm;
     display: grid;
     grid-auto-flow: column;
@@ -18,20 +18,16 @@
     text-align: center;
     gap: variables.$content-content-gap;
     font-weight: bold;
-
-    & svg {
-      font-size: min(3rem, 6vw);
-    }
   }
   &--bez-tla {
     @include tytul;
-    font-size: typography.$font-size-md;
+    font-size: typography.$font-size-between-sm-and-md;
   }
   &--z-tlem-kolorowym {
-    margin: 7.5rem 0 0 0;
+    margin: 7rem 0 0 0;
 
     @include tytul;
-    font-size: typography.$font-size-md;
+    font-size: typography.$font-size-between-sm-and-md;
     color: colors.$primary;
     @include mixins.gradient-cross-browser(
       "bg",
@@ -43,7 +39,7 @@
     align-items: center;
     & svg {
       color: colors.$primary;
-      font-size: typography.$font-size-xl;
+      font-size: typography.$font-size-lg;
     }
     & button,
     a {

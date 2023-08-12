@@ -1,0 +1,55 @@
+@use "../../../styles/sass/6-abstracts/mixins";
+@use "../../../styles/sass/6-abstracts/colors";
+@use "../../../styles/sass/6-abstracts/variables";
+@use "../../../styles/sass/1-base/typography";
+
+.btn-potwierdz {
+  &__container {
+    all: unset;
+    margin: 0 auto;
+    width: 24rem;
+    aspect-ratio: 6/1;
+    transform: translateY(-130%);
+    border-radius: variables.$border-radius-sm;
+    z-index: 50;
+    & a {
+      @include mixins.grid-with-padding-and-justify-align-items;
+      grid-template-columns: 5fr 1.25fr;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: white;
+      //   filter: drop-shadow(colors.$shadow-universal);
+
+      & svg {
+        font-size: min(2rem, 7vw);
+      }
+    }
+    &--zielony {
+      background-color: colors.$succes;
+    }
+    &--e-trener {
+      //hook2 - zmien mixin gradientu tak, zeby podawac wlansy kolor do backgroundu \/ bo tu musialem recznie zroibc czarny
+      border-style: solid;
+      border-color: transparent;
+      background: linear-gradient(#000000, #000000) padding-box,
+        linear-gradient(
+            variables.$gradient-direction-secondary,
+            colors.$etrener-gradient-secondary-A,
+            colors.$etrener-gradient-secondary-B
+          )
+          border-box;
+      & svg {
+        color: colors.$etrener-gradient-secondary-A;
+      }
+    }
+    &--e-trener-light {
+      @include mixins.gradient-cross-browser(
+        "bg",
+        variables.$gradient-direction-secondary,
+        colors.$etrener-gradient-secondary-A,
+        colors.$etrener-gradient-secondary-B
+      );
+      transform: translateY(0%);
+    }
+  }
+}

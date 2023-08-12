@@ -18,18 +18,20 @@ $max-content: max-content;
   }
   &__metoda-szukania {
     margin: 0 auto;
+    display: grid;
+    grid-auto-flow: row;
   }
   &__wybieracz-miesni {
     display: grid;
     grid-template-rows:
       [r-1] $max-content //hook1 - create global sizes and import them here
-      [r-2] 45rem
+      [r-2] 40rem
       [r-3] $max-content
       [r-4];
     grid-template-columns:
       [c-1] 1fr
       [c-2];
-    // row-gap: 2rem;
+    justify-items: center;
 
     @mixin rozmiar-wybieracza-miesni {
       // margin: 5rem 0 0 0;
@@ -220,12 +222,13 @@ $max-content: max-content;
     &__container {
       display: grid;
       justify-items: center;
-      row-gap: variables.$title-content-row-gap;
+      // row-gap: variables.$title-content-row-gap;
     }
     &__input-field {
+      padding: 1rem 2rem;
       width: min(35rem, 65vw);
       aspect-ratio: 4/1;
-      padding: 1rem 2rem;
+
       @include mixins.gradient-cross-browser(
         "border",
         variables.$gradient-direction-secondary,
@@ -245,6 +248,7 @@ $max-content: max-content;
       }
     }
     &__fota-maszyny {
+      margin: variables.$content-content-gap-md 0;
       position: relative;
       height: 25rem;
       aspect-ratio: 1/1;
@@ -256,9 +260,7 @@ $max-content: max-content;
     &__container {
     }
     &__kamera {
-      // position: relative;
-      // height: 25rem;
-      // aspect-ratio: 1/1;
+      margin: 0 auto;
       width: min(30rem, 70vw);
       aspect-ratio: 1.5/1;
       border-radius: 2rem;

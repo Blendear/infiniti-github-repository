@@ -62,7 +62,7 @@ const NumerIDSzukacz = () => {
             </div>
             {fotaMaszyny !== "zly-numer" && (
               <PotwierdzPrzycisk
-                kolorTla="zielony"
+                kolorTla="e-trener-light"
                 filtr="maszyna"
                 wartosc={numerMaszyny.toString()}
               >

@@ -8,7 +8,11 @@ import Link from "next/link";
 
 const PotwierdzPrzycisk = ({ children, kolorTla, filtr, wartosc }) => {
   return (
-    <button className={styles[`btn-potwierdzajacy__container--${kolorTla}`]}>
+    <button
+      className={`${styles[`btn-potwierdz__container`]} ${
+        styles[`btn-potwierdz__container--${kolorTla}`]
+      }`}
+    >
       {/* filtr = maszyna || gr-miesniowa   &   wartosc = number idMaszyny || string "nazwa" gr. miesniowej */}
       <Link
         href={`/e-trener/lista-cwiczen?filtr=${filtr}&wartosc=${wartosc}&nazwa-modalu=null&id-cwiczenia=null`}

@@ -1,5 +1,7 @@
 // Table of content for this file is written at the bottom
 
+@use "../6-abstracts/variables";
+
 @mixin gradient-cross-browser($target-type, $deg, $color1, $color2) {
   @if $target-type != "border" {
     @if $target-type == "text" or $target-type == "bg" {
@@ -51,4 +53,18 @@
   & img {
     border-radius: $border-radius;
   }
+}
+
+// add display grid & padding & justify & align
+@mixin grid-with-padding-and-justify-align-items {
+  padding: variables.$content-content-gap;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+@mixin grid-with-justify-align-items {
+  padding: variables.$content-content-gap;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }

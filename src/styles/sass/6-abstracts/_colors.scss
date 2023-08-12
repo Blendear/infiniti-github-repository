@@ -42,7 +42,12 @@ $etrener-gradient-secondary-A: #7c33df;
 $etrener-gradient-secondary-B: #416bff;
 
 //           _._._. Shadow styles
-$shadow-universal: 0.2rem 0 0rem 0 rgba(0, 0, 0, 0.3);
+$shadow-universal: 0rem 0 0.15rem rgba(0, 0, 0, 0.495);
+
+//       _._. Colors which depend on states - disabled, error, success etc.
+$succes: #9ed176;
+$warning: #f8cc7d;
+$danger: #d17676;
 
 //
 //~~ _. Globally used colors - locally used colors are in their specific files, where they are used
@@ -65,3 +70,4 @@ $shadow-universal: 0.2rem 0 0rem 0 rgba(0, 0, 0, 0.3);
 //
 //           _._._. Shadow styles
 //
+//       _._. Colors which depend on states - disabled, error, success etc.
