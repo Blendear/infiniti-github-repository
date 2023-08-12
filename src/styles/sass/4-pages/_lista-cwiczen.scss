@@ -1,14 +1,83 @@
 @use "../../../styles/sass/6-abstracts/mixins";
 @use "../../../styles/sass/6-abstracts/colors";
 @use "../../../styles/sass/6-abstracts/variables";
+@use "../../../styles/sass/1-base/typography";
 
 .lista-cwiczen {
   &__container {
-    background-color: white;
-    color: colors.$secondary;
+    height: 100dvh;
+    background-color: colors.$primary;
     display: grid;
     grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    justify-items: center;
+    color: colors.$secondary;
   }
+  &__lista {
+    margin: 2rem 0 0 0;
+    @include mixins.grid-with-justify-align-items;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: variables.$content-content-gap-xl;
+    column-gap: variables.$content-content-gap-md * 1.4;
+
+    &__cwiczenie {
+      position: relative;
+      width: 39vw;
+      aspect-ratio: 1/1;
+      @include mixins.grid-with-justify-align-items;
+      &__panel {
+        all: unset;
+        width: inherit;
+        filter: drop-shadow(colors.$shadow-universal);
+
+        &__miniaturka {
+          position: relative;
+          width: inherit;
+          aspect-ratio: 1.33/1;
+          clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+          @include mixins.grid-with-justify-align-items;
+          &__dupni-sinek {
+            margin: auto 0;
+            font-size: min(8rem, 15vw);
+            position: absolute;
+            transform: translateY(1rem);
+            z-index: 10;
+            color: colors.$seventh;
+          }
+        }
+        &__tekst {
+          width: relative;
+          aspect-ratio: 3/1;
+          @include mixins.gradient-cross-browser(
+            "bg",
+            variables.$gradient-direction-primary,
+            colors.$etrener-gradient-primary-A,
+            colors.$etrener-gradient-primary-B
+          );
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);
+          @include mixins.grid-with-justify-align-items;
+          color: colors.$primary;
+          text-align: center;
+          font-size: typography.$font-size-between-sm-and-md;
+        }
+      }
+      &__info {
+        all: unset;
+        position: absolute;
+        z-index: 10;
+        right: -10%;
+        top: -10%;
+        width: 27%;
+        aspect-ratio: 1/1;
+        background-color: colors.$etrener-gradient-secondary-A;
+        border-radius: 100%;
+        color: colors.$primary;
+        font-size: typography.$font-size-lg;
+        @include mixins.grid-with-justify-align-items;
+      }
+    }
+  }
+
   // &__tytul {
 
   // }

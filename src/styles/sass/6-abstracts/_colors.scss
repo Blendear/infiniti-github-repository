@@ -9,7 +9,7 @@ $third: #5c1593;
 $forth: #000000;
 $fifth: rgba(0, 0, 0, 0.443);
 $sixth: rgba(0, 0, 0, 0.25);
-
+$seventh: rgba(0, 0, 0, 0.65);
 //                  _._._._. Gradients
 $gradient-primary-A: #482283;
 $gradient-primary-B: #136789;
@@ -42,7 +42,7 @@ $etrener-gradient-secondary-A: #7c33df;
 $etrener-gradient-secondary-B: #416bff;
 
 //           _._._. Shadow styles
-$shadow-universal: 0rem 0 0.15rem rgba(0, 0, 0, 0.495);
+$shadow-universal: 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.548);
 
 //       _._. Colors which depend on states - disabled, error, success etc.
 $succes: #9ed176;

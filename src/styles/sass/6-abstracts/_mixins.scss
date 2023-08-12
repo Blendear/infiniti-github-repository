@@ -63,7 +63,6 @@
   align-items: center;
 }
 @mixin grid-with-justify-align-items {
-  padding: variables.$content-content-gap;
   display: grid;
   justify-items: center;
   align-items: center;

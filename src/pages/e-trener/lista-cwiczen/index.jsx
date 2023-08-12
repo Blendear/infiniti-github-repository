@@ -26,15 +26,15 @@ const ListaCwiczen = () => {
   }, [router.query]);
 
   return (
-    <div className={styles["container__css-class-name"]}>
+    <div className={styles["lista-cwiczen__container"]}>
       <TytulZTlemKolorowym>WYBIERZ ĆWICZENIE I ZACZYNAJMY!</TytulZTlemKolorowym>
       <TytulBezTla>
         LUB KLIKNIJ “i”, ABY ZOBACZYĆ LOKALIZACJĘ MASZYNY ORAZ “ĆWICZONE
         MIĘŚNIE”
       </TytulBezTla>
-      <div>{`${filtr} ${wartosc}`}</div>
+      {/* <div>{`${filtr} ${wartosc}`}</div> */}
       {/* //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń */}
-      <div>
+      <div className={styles["lista-cwiczen__lista"]}>
         {cwiczenia.map((cwiczenie, index) => {
           //       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
           if (filtr === "maszyna" && wartosc === cwiczenie.idMaszynyUzywanej) {
