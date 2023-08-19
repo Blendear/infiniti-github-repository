@@ -20,7 +20,7 @@ const ModalCwiczeniaWybranego = ({
 
   return (
     <>
-      <Modal variant="information">
+      <Modal variant="information" hasBackdrop={false}>
         <button onClick={handleZamknijModal}>X</button>
         <div>
           {

@@ -70,6 +70,7 @@
           colors.$etrener-gradient-secondary-A,
           colors.$etrener-gradient-secondary-B
         );
+        //hook2 - zarówno te buttony, jak i buttony wylogownia, mają te same dwa warianty. warto by top przerobic w osobny mixin uniwersalny imo
         & h3,
         svg {
           color: colors.$primary;

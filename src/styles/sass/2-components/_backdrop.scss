@@ -10,14 +10,15 @@
 //hook1 - add grouping of css properties   &   get variables etc fro "base" or "abstracts"
 
 .backdrop {
-  &--black-50-opacity {
+  &--black-80-opacity {
     display: grid;
     position: fixed; // not absolute, so that it covers the whole page, not just the whole screen
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(0.4rem);
     z-index: 200;
   }
   &--blur {

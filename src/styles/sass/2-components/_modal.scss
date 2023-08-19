@@ -42,16 +42,32 @@
   }
 
   &-information {
-    &__container {
+    @mixin container() {
       @include modal-container();
-
       justify-self: center;
       align-self: center;
+      overflow-y: scroll; // allows scrolling inside the component
+      background-color: colors.$primary;
+    }
+    &__container {
+      @include container();
       height: 100vh;
       width: 100vw;
-      overflow-y: scroll; // allows scrolling inside the component
 
-      background-color: colors.$primary;
+      &--with-backdrop {
+        @include container();
+        height: max-content;
+        width: max-content;
+
+        @include mixins.gradient-cross-browser(
+          "border",
+          variables.$gradient-direction-secondary,
+          colors.$etrener-gradient-secondary-A,
+          colors.$etrener-gradient-secondary-B
+        );
+        border-radius: variables.$border-radius-sm;
+        border-width: variables.$border-width-sm;
+      }
     }
   }
   &-warning {

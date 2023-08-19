@@ -1,0 +1,71 @@
+@use "../../../styles/sass/6-abstracts/mixins";
+@use "../../../styles/sass/6-abstracts/colors";
+@use "../../../styles/sass/6-abstracts/variables";
+@use "../../../styles/sass/1-base/typography";
+
+.wylogowywanie {
+  &__container {
+    padding: variables.$content-content-gap;
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    row-gap: variables.$title-content-row-gap * 3;
+  }
+  &__tytul {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: typography.$font-size-between-sm-and-md;
+    color: colors.$secondary;
+  }
+  &__buttony {
+    width: 100%;
+    @include mixins.grid-with-justify-align-items;
+    grid-template-columns: 1fr 1fr;
+    // column-gap: variables.$content-content-gap;
+
+    &__btn {
+      padding: variables.$content-content-gap;
+      width: min(7.5rem, 21.5vw);
+      aspect-ratio: 1.5/1;
+      @include mixins.gradient-cross-browser(
+        "border",
+        variables.$gradient-direction-secondary,
+        colors.$etrener-gradient-secondary-A,
+        colors.$etrener-gradient-secondary-B
+      );
+      background-color: colors.$primary;
+      border-radius: variables.$border-radius-sm;
+      border-width: variables.$border-width-sm;
+      font-weight: bold;
+      @include mixins.grid-with-justify-align-items;
+      overflow: hidden;
+
+      & h2 {
+        font-size: typography.$font-size-md;
+        @include mixins.gradient-cross-browser(
+          "text",
+          variables.$gradient-direction-secondary,
+          colors.$etrener-gradient-secondary-A,
+          colors.$etrener-gradient-secondary-B
+        );
+      }
+
+      &--active {
+        border-style: none;
+        border-color: none;
+        @include mixins.gradient-cross-browser(
+          "bg",
+          variables.$gradient-direction-secondary,
+          colors.$etrener-gradient-secondary-A,
+          colors.$etrener-gradient-secondary-B
+        );
+        & h2 {
+          color: colors.$primary;
+          -webkit-text-fill-color: colors.$primary;
+        }
+      }
+    }
+  }
+}
