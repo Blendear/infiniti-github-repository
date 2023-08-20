@@ -10,23 +10,14 @@
 //  3.  "Layout" - pod zawartośc stronki, ktora ma być na KAŻDEJ page. Np. nawigacja górnja i footer dolny z informacjami/kontaktem etc.
 //
 import "src/styles/sass/globals.scss";
-
-import type { AppProps } from "next/app";
-
-import { Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
-
 import store from "../store/redux/store-redux";
 import { Provider } from "react-redux";
 import Script from "next/script";
 import Layout from "../components/0-layout-i-wrappers/layout/layout";
 import Head from "next/head";
-function MyApp({
-  Component,
-  pageProps,
-}: AppProps<{
-  session: Session;
-}>) {
+import { UserProvider } from "@auth0/nextjs-auth0/client";
+
+function MyApp({ Component, pageProps }: any) {
   return (
     //
     //  2.  "Redux"
@@ -35,7 +26,7 @@ function MyApp({
       {/* 
           1.  "Next-Auth", a dokładniej żeby "Session" sexownie było dostępne w całej apce
       */}
-      <SessionProvider session={pageProps.session}>
+      <UserProvider>
         {/* 
         3.  "Layout" - pod zawartośc stronki, ktora ma być na KAŻDEJ page. Np. nawigacja górnja i footer dolny z informacjami/kontaktem etc.
         */}
@@ -124,7 +115,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           ></Script>
           <Component {...pageProps} />
         </Layout>
-      </SessionProvider>
+      </UserProvider>
     </Provider>
   );
 }

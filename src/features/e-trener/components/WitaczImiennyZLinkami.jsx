@@ -14,7 +14,7 @@ const ModalWylogowywania = dynamic(() => import("./ModalWylogowywania"), {
   ssr: false,
 });
 
-const WitaczImiennyZLinkami = ({ propA, propB }) => {
+const WitaczImiennyZLinkami = ({ user }) => {
   //
   const [isModalOtwarty, setIsModalOtwarty] = useState(false);
 
@@ -33,7 +33,7 @@ const WitaczImiennyZLinkami = ({ propA, propB }) => {
       )}
 
       <div className={styles["child__css-class-name"]}>
-        {`Hej >>>userze_moj.!`.toUpperCase()}
+        {(user ? `Hej ${user.name}!` : "Hej!").toUpperCase()}
         {/* hook1 - utnij dlugosc imienia usera, jesli przkeroczy liczbe, ktory mi psuje css. mp. 10 */}
       </div>
 

@@ -7,7 +7,8 @@ import Link from "next/link";
 const AComponent = () => {
   return (
     <button className={styles[""]}>
-      <Link href="/e-trener?method=qr">
+      {/* <Link href="/e-trener?method=qr"> */}
+      <Link href="/api/auth/login">
         <a>E-trener</a>
       </Link>
     </button>

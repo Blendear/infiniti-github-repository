@@ -6,12 +6,10 @@ import WideoLinkZagniezdzony from "./WideoLinkZagniezdzony";
 import SzczegolyCwiczenia from "./SzczegolyCwiczenia";
 import { Modal, Backdrop } from "../../../components/e-trener";
 import TytulBezTla from "./TytulBezTla";
+import Link from "next/link";
 
 const ModalWylogowywania = ({ setIsModalOtwarty }) => {
   //
-  const handleWylogujSie = () => {
-    //hook1 - wylogowanie z Auth0 logic tutaj
-  };
 
   return (
     // wylogowywanie__buttony__btn / wylogowywanie__buttony__btn--active
@@ -22,11 +20,10 @@ const ModalWylogowywania = ({ setIsModalOtwarty }) => {
             CHCESZ SIĘ WYLOGOWAĆ?
           </h1>
           <div className={styles["wylogowywanie__buttony"]}>
-            <button
-              onClick={handleWylogujSie}
-              className={styles["wylogowywanie__buttony__btn"]}
-            >
-              <h2>TAK</h2>
+            <button className={styles["wylogowywanie__buttony__btn"]}>
+              <Link href="/api/auth/logout">
+                <h2>TAK</h2>
+              </Link>
             </button>
             <button
               onClick={() => setIsModalOtwarty(false)}
