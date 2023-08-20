@@ -14,7 +14,7 @@ const ModalWylogowywania = dynamic(() => import("./ModalWylogowywania"), {
   ssr: false,
 });
 
-const WitaczImiennyZLinkami = ({ user }) => {
+const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
   //
   const [isModalOtwarty, setIsModalOtwarty] = useState(false);
 
@@ -31,19 +31,20 @@ const WitaczImiennyZLinkami = ({ user }) => {
       {isModalOtwarty && (
         <ModalWylogowywania setIsModalOtwarty={setIsModalOtwarty} />
       )}
-
       <div className={styles["child__css-class-name"]}>
         {(user ? `Hej ${user.name}!` : "Hej!").toUpperCase()}
         {/* hook1 - utnij dlugosc imienia usera, jesli przkeroczy liczbe, ktory mi psuje css. mp. 10 */}
       </div>
 
       <button>
-        <Link href="https://billing.stripe.com/p/login/test_cN200H2EiboBbfy7ss">
-          {/* /\ hook1 wstaw tu link z LIVE VERSION pozniej */}
-          <a>
-            <IoSettingsSharp />
-          </a>
-        </Link>
+        {isUstawieniaDostepne && (
+          <Link href="https://billing.stripe.com/p/login/test_cN200H2EiboBbfy7ss">
+            {/* /\ hook1 wstaw tu link z LIVE VERSION pozniej */}
+            <a>
+              <IoSettingsSharp />
+            </a>
+          </Link>
+        )}
       </button>
     </TytulZTlemKolorowym>
   );
