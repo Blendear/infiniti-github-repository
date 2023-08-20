@@ -20,32 +20,26 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
   console.log(router.query);
 
   return (
-    <>
-      {isLoading && <div>Loading user...</div>}
-      {/* hook1 - /\ dodaj loader legitny. o ile w ogole potrebny w sumie. */}
-      {user && (
-        <div
-          // style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
-          className={styles["strona-glowna__container"]}
-        >
-          <WitaczImiennyZLinkami user={user} />
-          <WyborMetodySzukaniaMaszyny
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-          />
-          {/* //       _._. 1 z 3 wariantów stron e-trenera (conditionally render'owane zależnie od parametru "method" parameter z query string'u) */}
-          <div className={styles["strona-glowna__metoda-szukania"]}>
-            {
-              {
-                qr: <QRSzukacz />,
-                nr: <NumerIDSzukacz />,
-                miesien: <WybieraczMiesni />,
-              }[router.query.method]
-            }
-          </div>
-        </div>
-      )}
-    </>
+    <div
+      // style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
+      className={styles["strona-glowna__container"]}
+    >
+      <WitaczImiennyZLinkami user={user} />
+      <WyborMetodySzukaniaMaszyny
+        activeButton={activeButton}
+        setActiveButton={setActiveButton}
+      />
+      {/* //       _._. 1 z 3 wariantów stron e-trenera (conditionally render'owane zależnie od parametru "method" parameter z query string'u) */}
+      <div className={styles["strona-glowna__metoda-szukania"]}>
+        {
+          {
+            qr: <QRSzukacz />,
+            nr: <NumerIDSzukacz />,
+            miesien: <WybieraczMiesni />,
+          }[router.query.method]
+        }
+      </div>
+    </div>
   );
 };
 export default ETrenerStrGlowna;

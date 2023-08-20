@@ -1,19 +1,17 @@
-//hook1 - make this function dynamic & use it
-// - email dynamicly got (send it inside the requst body), instead of palceholder
-// - use LIVE version api key later on
-// - reidrect to "/e-trener", when a subscribed user enters the "/e-trener/info-o-subskrypcji" page, which he gets on after login:
+// hook1 - use LIVE version api key later on
 
-const handleStripeGetUserInfo = async (req, res) => {
+const stripeGetUserInfo = async (req, res) => {
+  // console.log("req.query", req.query.userEmail); //protip1 - MOŻNA zyskać dostęp do query stringa nawet w api routesach, nie tylko w react components. & protip1 - consolelognij sobie czxasem "req" - ma potezne properties, jak np. to "query" ze slugami, o ile zrobiles dynamiczne api route, które to "query" zapełni
   const stripe = require("stripe")(`${process.env.STRIPE_API_SECRET_KEY_TEST}`);
   //hook1 WILL IT ALSO WORK FOR A DOPIERO CO SYTWORZONY USER? CZY POTRZEBUJ ETO TROCHE, ŻEBY ZADZIAŁAÓŁ?
 
-  // get email of Auth0 user (placeholder user right now)
-  const placeholderEmail = "tobiascibis@gmail.com";
+  // get email of Auth0 user (placeholder example below \/, yet I'm using a dynamic email passed through "req.query", with my custom "userEmail" property)
+  // const placeholderEmail = "tobiascibis@gmail.com";
 
   // find customer object in stirpe wiht that email
   const listOfCustomers = await stripe.customers.list({
     limit: 3,
-    email: placeholderEmail,
+    email: req.query.userEmail,
   });
 
   // get his id
@@ -36,10 +34,15 @@ const handleStripeGetUserInfo = async (req, res) => {
   // if no - show the error message
 
   res.status(200).json({
-    listOfCustomers: listOfCustomers.data.length,
-    doesASubWithThisIDExist: doesASubWithThisIDExist,
-    content,
+    status: 200,
+    data: {
+      listOfCustomers: listOfCustomers.data.length,
+      doesASubWithThisIDExist: doesASubWithThisIDExist,
+      content,
+    },
+    coll: "stripe/stripe-get-user-info",
+    testMessage: "Success, response is allright!",
   });
 };
 
-export default handleStripeGetUserInfo;
+export default stripeGetUserInfo;
