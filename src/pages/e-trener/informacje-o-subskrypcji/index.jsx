@@ -33,13 +33,16 @@ const InfoOSubskrypcji = () => {
           </span>
           <span>DZIELI CIĘ OD TWOJEGO E-TRENERA!</span>
         </h1>
-        <div>
-          {infoOSubskrypcji.map((panel) => {
+        <div className={styles["info-o-subskrypcji__lista-paneli"]}>
+          {infoOSubskrypcji.map((panel, index) => {
             return (
               <PanelZOpisemSubskrycji
                 key={panel.id}
                 tekst={panel.tekst}
                 fota={panel.fota}
+                kierunekCiecia={
+                  index % 2 === 0 ? "--lewo-ciety" : "--prawo-ciety"
+                }
               />
             );
           })}
