@@ -50,7 +50,7 @@ const InfoOSubskrypcji = () => {
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
         <stripe-buy-button
-          buy-button-id="buy_btn_1NZfo5KGht8obmlk8ckROD9N"
+          buy-button-id="buy_btn_1NhV8yKGht8obmlkIWMOxfDV"
           publishable-key="pk_test_51NUuTyKGht8obmlkV6fMysPOrScxtbyfWrTIW6oV7GHVib7ejuifc6X8PyIACcW75m5H0XNSlm4158YJ55Olla4k00WkwVCODD"
         ></stripe-buy-button>
         {/* /\ hook1 wstaw tu button z LIVE VERSION pozniej */}
