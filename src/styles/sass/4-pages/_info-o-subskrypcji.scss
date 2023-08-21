@@ -26,6 +26,13 @@
         colors.$etrener-gradient-primary-B
       );
     }
+    & h1 {
+      font-size: min(4.6vw, 2.8rem);
+    }
+
+    & h2 {
+      font-size: typography.$font-size-md;
+    }
   }
   &__lista-paneli {
     @include mixins.grid-with-justify-align-items;

@@ -1,7 +1,7 @@
 const tekstySamozmieniajace = [
   "TYLKO JEDEN KROK",
-  "CENA POŁOWY PIZZY",
-  "CENA PACZKI PAPIEROSÓW",
-  "CENA CZTEROPAKU PIWA",
+  "CENA JEDNEJ PIZZY",
+  "CENA DWÓCH PACZEK FAJEK",
+  "CENA 0,5L WÓDKI",
 ];
 export default tekstySamozmieniajace;
