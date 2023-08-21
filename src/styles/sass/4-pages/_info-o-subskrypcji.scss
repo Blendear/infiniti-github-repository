@@ -1,6 +1,7 @@
 @use "../../../styles/sass/6-abstracts/mixins";
 @use "../../../styles/sass/6-abstracts/colors";
 @use "../../../styles/sass/6-abstracts/variables";
+@use "../../../styles/sass/1-base/typography";
 
 .info-o-subskrypcji {
   &__container {
@@ -29,8 +30,8 @@
   &__lista-paneli {
     @include mixins.grid-with-justify-align-items;
     row-gap: variables.$content-content-gap-md * 1.6;
-    // margin: 0 0 0
-
+    width: 80vw;
+    margin: 0 auto; // margin: 0 0 0
     &__panel {
       height: min(35vw, 15rem);
       aspect-ratio: 2.2/1;
@@ -63,6 +64,7 @@
         @mixin opis-panelu {
           padding: variables.$content-content-gap-md; //protip1 - grid-with-padding-and-justify-align-items nie moglem uzyc, bo nie stworzyem podajnika typu paddingu - gdy robisz mixin, np. pod padding, to wez zrob podajnik typu paddingu. np. mid-xl etc.
           height: inherit;
+          width: 100%;
           @include mixins.gradient-cross-browser(
             "bg",
             variables.$gradient-direction-primary,
@@ -73,6 +75,7 @@
           @include mixins.grid-with-justify-align-items;
           text-align: center;
           font-weight: bold;
+          font-size: min(2.6vw, 1.2rem);
         }
 
         &--lewo-ciety {
@@ -91,5 +94,9 @@
         // filter: drop-shadow(colors.$shadow-universal-light);
       }
     }
+  }
+  &__btn-subskrybuj {
+    @include mixins.grid-with-justify-align-items;
+    padding: 2rem 0 4rem 0;
   }
 }

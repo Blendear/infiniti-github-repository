@@ -21,7 +21,11 @@ const InfoOSubskrypcji = () => {
       {/* hook1 - /\ dodaj loader legitny. o ile w ogole potrebny w sumie. */}
 
       <div className={styles["info-o-subskrypcji__container"]}>
-        <WitaczImiennyZLinkami user={user} isUstawieniaDostepne={false} />
+        {user ? (
+          <WitaczImiennyZLinkami user={user} isUstawieniaDostepne={false} />
+        ) : (
+          <div style={{ marginTop: "6rem" }}></div>
+        )}
         <h1 className={styles["info-o-subskrypcji__tytul"]}>
           <span>
             <ReactTyped
@@ -47,13 +51,15 @@ const InfoOSubskrypcji = () => {
             );
           })}
         </div>
-        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <div className={styles["info-o-subskrypcji__btn-subskrybuj"]}>
+          <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
-        <stripe-buy-button
-          buy-button-id="buy_btn_1NhV8yKGht8obmlkIWMOxfDV"
-          publishable-key="pk_test_51NUuTyKGht8obmlkV6fMysPOrScxtbyfWrTIW6oV7GHVib7ejuifc6X8PyIACcW75m5H0XNSlm4158YJ55Olla4k00WkwVCODD"
-        ></stripe-buy-button>
-        {/* /\ hook1 wstaw tu button z LIVE VERSION pozniej */}
+          <stripe-buy-button
+            buy-button-id="buy_btn_1NhV8yKGht8obmlkIWMOxfDV"
+            publishable-key="pk_test_51NUuTyKGht8obmlkV6fMysPOrScxtbyfWrTIW6oV7GHVib7ejuifc6X8PyIACcW75m5H0XNSlm4158YJ55Olla4k00WkwVCODD"
+          ></stripe-buy-button>
+          {/* /\ hook1 wstaw tu button z LIVE VERSION pozniej */}
+        </div>
       </div>
     </>
   );
