@@ -8,18 +8,19 @@ const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
   return (
     <li
       key={key}
-      // className={styles["container__css-class-name"]}
-      style={{
-        display: "grid",
-        gridAutoFlow: "column",
-        width: "15rem",
-        columnGap: "1rem",
-      }}
+      className={
+        styles[
+          "modal-cwiczenia-wybranego__miesnie-cwiczone__lista-miesni__miesien"
+        ]
+      }
     >
       {/* //       _._. AA */}
       <div
-        // className={styles["image-styling"]}   // \/ is a palceholder, before I write code of <
-        style={{ position: "relative", height: "4rem", width: "4rem" }}
+        className={
+          styles[
+            "modal-cwiczenia-wybranego__miesnie-cwiczone__lista-miesni__miesien__fota"
+          ]
+        }
       >
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/e-trener/ikony-miesni/${fota}`}
@@ -32,7 +33,15 @@ const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
         />
       </div>
 
-      <div className={styles[""]}>{grupaMiesniowa}</div>
+      <div
+        className={
+          styles[
+            "modal-cwiczenia-wybranego__miesnie-cwiczone__lista-miesni__miesien__nazwa"
+          ]
+        }
+      >
+        {`${grupaMiesniowa}`}
+      </div>
     </li>
   );
 };

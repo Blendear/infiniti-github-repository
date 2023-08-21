@@ -14,21 +14,21 @@ const ModalCwiczeniaWybranego = ({
 }) => {
   //
 
-  const handleZamknijModal = () => {
-    setNazwaModalu("null");
-  };
-
   return (
     <>
       <Modal variant="information" hasBackdrop={false}>
-        <button onClick={handleZamknijModal}>X</button>
-        <div>
+        <div className={styles[`modal-cwiczenia-wybranego`]}>
           {
             {
               wideo: (
                 <WideoLinkZagniezdzony linkDoWideo={"testowa-nazwa-linku"} />
               ),
-              szczegoly: <SzczegolyCwiczenia cwiczenie={otwarteCwiczenie} />,
+              szczegoly: (
+                <SzczegolyCwiczenia
+                  setNazwaModalu={setNazwaModalu}
+                  cwiczenie={otwarteCwiczenie}
+                />
+              ),
             }[nazwaModalu]
           }
         </div>

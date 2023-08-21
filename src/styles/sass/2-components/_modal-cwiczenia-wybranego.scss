@@ -1,0 +1,59 @@
+@use "../../../styles/sass/6-abstracts/mixins";
+@use "../../../styles/sass/6-abstracts/colors";
+@use "../../../styles/sass/6-abstracts/variables";
+@use "../../../styles/sass/1-base/typography";
+
+.modal-cwiczenia-wybranego {
+  display: grid;
+  row-gap: variables.$content-content-gap-md;
+  &__video {
+  }
+  &__miesnie-cwiczone {
+    &__lista-miesni {
+      margin: 0 auto;
+      padding: 0 0 variables.$content-content-gap 0;
+      @include mixins.grid-with-justify-align-items;
+      grid-template-columns: repeat(2, max-content);
+      row-gap: variables.$content-content-gap-md;
+      column-gap: variables.$content-content-gap-md * 1.25; //protip1 - a template for laying out grids would be nice. i constantly use row gaps etc.
+      &__miesien {
+        @include mixins.grid-with-justify-align-items;
+        grid-auto-flow: row;
+        row-gap: variables.$content-content-gap-md;
+        &__fota {
+          position: relative;
+          width: 8rem;
+          aspect-ratio: 1/1;
+          //   border: variables.$border-width-micro solid colors.$secondary;
+        }
+        &__nazwa {
+          padding: variables.$content-content-gap;
+          width: min(35vw, 15rem);
+          aspect-ratio: 2.25/1;
+          //   height: max-content;
+          @include mixins.gradient-cross-browser(
+            "bg",
+            variables.$gradient-direction-secondary,
+            colors.$etrener-gradient-secondary-A,
+            colors.$etrener-gradient-secondary-B
+          );
+          border-radius: variables.$border-radius-sm;
+          @include mixins.grid-with-justify-align-items;
+          text-align: center;
+          font-weight: bold;
+          color: colors.$primary;
+          font-size: typography.$font-size-between-sm-and-md;
+        }
+      }
+    }
+  }
+
+  &__lokalizacja-maszyny {
+    &__fota {
+      margin: auto;
+      position: relative;
+      width: 80vw;
+      aspect-ratio: 1/1;
+    }
+  }
+}

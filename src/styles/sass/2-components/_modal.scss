@@ -14,17 +14,15 @@
     height: 100%;
     width: 100%;
     z-index: 250;
+    background-color: colors.$primary;
 
     display: grid;
   }
   @mixin modal-container() {
     padding: 2rem;
     z-index: 300;
-
     border-radius: 2rem;
-
     display: grid;
-
     grid-auto-rows: max-content;
     row-gap: 2rem;
 
@@ -47,7 +45,6 @@
       justify-self: center;
       align-self: center;
       overflow-y: scroll; // allows scrolling inside the component
-      background-color: colors.$primary;
     }
     &__container {
       @include container();
