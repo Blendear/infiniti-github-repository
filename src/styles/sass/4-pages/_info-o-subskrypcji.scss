@@ -11,6 +11,7 @@
   }
   &__tytul {
     // margin: 15rem 0 100rem 0;
+    margin: variables.$content-content-gap-md;
     display: grid;
     grid-auto-flow: row;
     text-align: center;

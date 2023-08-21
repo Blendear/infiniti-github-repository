@@ -32,7 +32,12 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
         <ModalWylogowywania setIsModalOtwarty={setIsModalOtwarty} />
       )}
       <div className={styles["child__css-class-name"]}>
-        {(user ? `Hej ${user.name}!` : "Hej!").toUpperCase()}
+        {(user
+          ? `Hej ${user.name
+              .substring(0, user.name.indexOf(" "))
+              .substr(0, 10)}!`
+          : "Hej!"
+        ).toUpperCase()}
         {/* hook1 - utnij dlugosc imienia usera, jesli przkeroczy liczbe, ktory mi psuje css. mp. 10 */}
       </div>
 
