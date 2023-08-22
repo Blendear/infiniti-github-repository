@@ -10,6 +10,9 @@ $rozmiar-rowa: minmax(0vw, 20vw);
     // grid-column: c-1 / c-12;
     // overflow: hidden;
     // background-size: 100%;
+    height: 100dvh;
+    width: 100dvw;
+    position: absolute;
     display: grid;
     grid-template-rows:
       [r-0_break] 16vw
@@ -30,6 +33,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
       [c-4] 3fr
       [c-5] 0.6fr
       [c-6];
+    background: linear-gradient(90deg, #482283 0%, #136789 100%);
     @media (orientation: landscape) {
       grid-template-rows:
         [r-1] max-content
@@ -44,7 +48,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
       margin: 0 0 0 0;
       padding: 5vw 0 0 0;
     }
-    z-index: 200;
+    z-index: 60;
 
     // hook1 - image blurred w tle or inner shadow chociaz w tle?
 

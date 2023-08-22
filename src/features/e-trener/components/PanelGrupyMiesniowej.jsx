@@ -29,7 +29,7 @@ const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
           objectFit="cover"
           priority
           loading="eager"
-          quality={1}
+          quality={5}
         />
       </div>
 
