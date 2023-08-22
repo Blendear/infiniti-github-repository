@@ -6,7 +6,47 @@
 .modal-cwiczenia-wybranego {
   display: grid;
   row-gap: variables.$content-content-gap-md;
-  &__video {
+
+  &__wideo {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    display: grid;
+    row-gap: variables.$content-content-gap-md;
+    // background-color: #000000;
+
+    & button {
+      all: unset;
+      justify-self: end;
+      margin: 9rem 0 0 0;
+      width: 3rem;
+      aspect-ratio: 1/1;
+      @include mixins.gradient-cross-browser(
+        "border",
+        variables.$gradient-direction-secondary,
+        colors.$etrener-gradient-secondary-A,
+        colors.$etrener-gradient-secondary-B
+      );
+      border-radius: variables.$border-radius-sm;
+      border-width: variables.$border-width-micro;
+
+      @include mixins.grid-with-justify-align-items;
+      font-size: typography.$font-size-sm;
+      & h1 {
+        @include mixins.gradient-cross-browser(
+          "text",
+          variables.$gradient-direction-secondary,
+          colors.$etrener-gradient-secondary-A,
+          colors.$etrener-gradient-secondary-B
+        );
+      }
+    }
+    & :nth-child(2) {
+      justify-self: center;
+      filter: drop-shadow(colors.$shadow-universal-light);
+    }
   }
   &__miesnie-cwiczone {
     &__lista-miesni {

@@ -21,7 +21,10 @@ const ModalCwiczeniaWybranego = ({
           {
             {
               wideo: (
-                <WideoLinkZagniezdzony linkDoWideo={"testowa-nazwa-linku"} />
+                <WideoLinkZagniezdzony
+                  setNazwaModalu={setNazwaModalu}
+                  linkDoWideo={"testowa-nazwa-linku"}
+                />
               ),
               szczegoly: (
                 <SzczegolyCwiczenia

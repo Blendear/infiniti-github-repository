@@ -13,10 +13,13 @@
     position: fixed; // not absolute, so that it covers the whole page, not just the whole screen
     height: 100%;
     width: 100%;
-    z-index: 250;
+    z-index: 50;
     background-color: colors.$primary;
 
     display: grid;
+    &--dark {
+      background-color: colors.$secondary;
+    }
   }
   @mixin modal-container() {
     padding: 2rem;

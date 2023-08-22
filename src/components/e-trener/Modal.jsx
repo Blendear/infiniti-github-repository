@@ -8,7 +8,7 @@ import ReactDOM from "react-dom";
 const Modal = ({ children, variant, hasBackdrop }) => {
   const modalContent = (
     //       _._. Overlay - for positioning the container in the middle (easy way)
-    <aside className={styles["modal__overlay"]}>
+    <aside className={styles[`modal__overlay`]}>
       {/* //       _._. Container (empty) & Custom body - content is taken from the parent, through the "children" prop*/}
       <div
         className={

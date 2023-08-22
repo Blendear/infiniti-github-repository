@@ -129,6 +129,7 @@ const CarouselPoziomy = () => {
         }
       >
         WYBIERZ <strong>PIĘTRO </strong> I <strong>MIEJSCE</strong> NA MAPIE,
+        <br />
         ŻEBY ZOBACZYĆ WYŻEJ JEGO ZDJĘCIA
         {/* I OPIS */}
       </div>
