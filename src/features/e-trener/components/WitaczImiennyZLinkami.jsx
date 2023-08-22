@@ -31,12 +31,18 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
       {isModalOtwarty && (
         <ModalWylogowywania setIsModalOtwarty={setIsModalOtwarty} />
       )}
+      {console.log(
+        "user",
+        user.name.substring(0, user.name.indexOf(" ")).substr(0, 10)
+      )}
       <div className={styles["child__css-class-name"]}>
         {(user
-          ? `Hej ${user.name
-              .substring(0, user.name.indexOf(" "))
-              .substr(0, 10)}!`
-          : "Hej!"
+          ? `Hej ${
+              user.name.split(" ")[0] //protip1 - wpisz w taktyki tą metoda wybierania tylko 1 slowa przed spacją
+              // .substring(0, user.name.indexOf(" "))
+              // .substr(0, 10)
+            }!`
+          : "Witaj w E-Trenerze!"
         ).toUpperCase()}
         {/* hook1 - utnij dlugosc imienia usera, jesli przkeroczy liczbe, ktory mi psuje css. mp. 10 */}
       </div>
