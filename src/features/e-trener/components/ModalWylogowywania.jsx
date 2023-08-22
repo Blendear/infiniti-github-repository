@@ -14,7 +14,7 @@ const ModalWylogowywania = ({ setIsModalOtwarty }) => {
   return (
     // wylogowywanie__buttony__btn / wylogowywanie__buttony__btn--active
     <>
-      <Modal variant="information" hasBackdrop={true}>
+      <Modal variant="information" hasBackdrop={true} bgVariant="transparent">
         <div className={styles["wylogowywanie__container"]}>
           <h1 className={styles["wylogowywanie__tytul"]}>
             CHCESZ SIĘ WYLOGOWAĆ?

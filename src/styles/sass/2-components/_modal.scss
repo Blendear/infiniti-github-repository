@@ -8,16 +8,24 @@
 @use "../1-base/typography";
 
 .modal {
-  &__overlay {
-    //necessary parent element for easily positioning the modal container in the middle of the screen
+  @mixin overlay {
     position: fixed; // not absolute, so that it covers the whole page, not just the whole screen
     height: 100%;
     width: 100%;
     z-index: 50;
     background-color: colors.$primary;
-
     display: grid;
+  }
+  &__overlay {
+    //necessary parent element for easily positioning the modal container in the middle of the screen
+    @include overlay();
+
+    &--transparent {
+      @include overlay();
+      background-color: transparent;
+    }
     &--dark {
+      @include overlay();
       background-color: colors.$secondary;
     }
   }
