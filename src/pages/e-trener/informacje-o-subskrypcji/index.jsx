@@ -17,7 +17,7 @@ const InfoOSubskrypcji = () => {
 
   return (
     <>
-      {isLoading && <div>Loading user...</div>}
+      {/* {isLoading && <div>Loading user...</div>} */}
       {/* hook1 - /\ dodaj loader legitny. o ile w ogole potrebny w sumie. */}
 
       <div className={styles["info-o-subskrypcji__container"]}>
