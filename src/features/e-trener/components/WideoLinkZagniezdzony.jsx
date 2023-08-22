@@ -11,12 +11,13 @@ const WideoLinkZagniezdzony = ({ linkDoWideo, setNazwaModalu }) => {
   };
 
   const opts = {
-    height: "180",
+    height: "100%",
     width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
       playsinline: 0,
+      // controls: 0,
     },
   };
 
@@ -30,8 +31,8 @@ const WideoLinkZagniezdzony = ({ linkDoWideo, setNazwaModalu }) => {
         <h1>X</h1>
       </button>
       <YouTube
-        className={styles[""]}
-        videoId="2g811Eo7K8U"
+        className={styles["modal-cwiczenia-wybranego__wideo__iframe"]}
+        videoId="hRBeS3ByytY"
         opts={opts}
         onReady={handleReady}
       />

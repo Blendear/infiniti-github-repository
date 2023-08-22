@@ -47,6 +47,15 @@
       justify-self: center;
       filter: drop-shadow(colors.$shadow-universal-light);
     }
+
+    &__iframe {
+      width: 95%;
+      aspect-ratio: 16/9;
+
+      @media (orientation: landscape) {
+        width: 65%;
+      }
+    }
   }
   &__miesnie-cwiczone {
     &__lista-miesni {
