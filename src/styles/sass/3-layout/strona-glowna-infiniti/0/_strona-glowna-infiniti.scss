@@ -1,4 +1,8 @@
 @use "../../../../sass/5-themes/infiniti-variables/infiniti-variables";
+@use "../../../../sass/6-abstracts/mixins";
+@use "../../../../sass/6-abstracts/colors";
+@use "../../../../sass/6-abstracts/variables";
+@use "../../../../sass/1-base/typography";
 
 $rozmiar-rowa: minmax(0rem, max-content);
 $rozmiar-rowa-siatka-btn: 1fr;
@@ -230,77 +234,24 @@ $rozmiar-column-siatka-btn: 1fr;
       &__kup-karnet-button {
         grid-row: r-2 / r-3;
         grid-column: c-5 / c-8;
-
-        width: 12rem;
-        aspect-ratio: 5/1.8;
-
-        margin: 5vw 0 3vw 0;
-        justify-content: center;
         justify-self: center;
-        align-content: center;
-        align-self: center;
+        position: relative;
+        width: min(42vw, 22rem);
+        aspect-ratio: 1.48/1;
 
-        border: none;
-        background-color: infiniti-variables.$sunny-light-violet;
-        background: -moz-linear-gradient(
-          222deg,
-          infiniti-variables.$sunny-light-blue 0%,
-          infiniti-variables.$sunny-light-violet 100%
-        );
-        background: -webkit-linear-gradient(
-          222deg,
-          infiniti-variables.$sunny-light-blue 0%,
-          infiniti-variables.$sunny-light-violet 100%
-        );
-        background: linear-gradient(
-          222deg,
-          infiniti-variables.$sunny-light-blue 0%,
-          infiniti-variables.$sunny-light-violet 100%
-        );
-        color: white;
-        font-weight: bold;
-        text-shadow: 0 0 0.3rem #000000;
-        box-shadow: 0 0 1vw 0.2vw #3f00455b;
-        // transition: all 0.5s ease-out;
-        cursor: pointer;
-        transition: all 1s;
-
-        @media (orientation: landscape) {
-          margin: 2vw 0 1vw 0;
-          width: 12vw;
-          aspect-ratio: 5/1.8;
-          font-size: 1.5vw;
-        }
-        & a {
-          color: rgb(255, 255, 255);
-        }
-        & a:link,
-        :visited,
-        :active,
-        :hover {
-          text-decoration: none;
-          color: rgb(255, 255, 255);
-        }
         &:hover {
-          background-color: infiniti-variables.$sunny-light-violet;
-          background: -moz-linear-gradient(
-            -222deg,
-            infiniti-variables.$sunny-light-blue 0%,
-            infiniti-variables.$sunny-light-violet 100%
-          );
-          background: -webkit-linear-gradient(
-            -222deg,
-            infiniti-variables.$sunny-light-blue 0%,
-            infiniti-variables.$sunny-light-violet 100%
-          );
-          background: linear-gradient(
-            -222deg,
-            infiniti-variables.$sunny-light-blue 0%,
-            infiniti-variables.$sunny-light-violet 100%
-          );
+          filter: saturate(140%);
+        }
+      }
+      &__e-trener-button {
+        grid-row: r-2 / r-3;
+        grid-column: c-8 / c-11;
+        position: relative;
+        width: min(42vw, 22rem);
+        aspect-ratio: 1.48/1;
 
-          transform: scale(1.2);
-          transition: all 0.5s ease-out;
+        &:hover {
+          filter: saturate(140%);
         }
       }
 
@@ -320,7 +271,7 @@ $rozmiar-column-siatka-btn: 1fr;
         // align-content: center;
 
         width: 100%;
-        margin: 1rem 0 0 0;
+        // margin: 1rem 0 0 0;
         @media (orientation: landscape) {
           width: 100%;
           align-items: center;

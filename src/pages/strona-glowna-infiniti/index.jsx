@@ -112,20 +112,43 @@ const StronaGlowna = () => {
           styles["layout__strona-glowna__cala-strona__tlo-nad-gallery"]
         }
       ></div>
-
-      <button
-        className={
-          styles["layout__strona-glowna__cala-strona__kup-karnet-button"]
-        }
-      >
-        <Link
-          // target="_blank"
-          download
-          href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet"
+      <Link href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet">
+        <a
+          className={
+            styles["layout__strona-glowna__cala-strona__kup-karnet-button"]
+          }
+          target="_blank"
         >
-          <a target="_blank">KUP KARNET</a>
-        </Link>
-      </button>
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/e-trener/btn-wywolywacz/kup-karnet.png`}
+            alt={`nie pyklo zdjecie`}
+            layout="fill"
+            objectFit="cover"
+            priority
+            loading="eager"
+            quality={100}
+          />
+        </a>
+      </Link>
+      {/* HOOK1 - \/ OD-KOMENTUJ & USTAW POD RESIZABLE SCREEN E-TRENER BUTTON */}
+      {/* <Link href="/api/auth/login">
+        <a
+          className={
+            styles["layout__strona-glowna__cala-strona__e-trener-button"]
+          }
+        >
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/e-trener/btn-wywolywacz/e-trener-btn.png`}
+            alt={`nie pyklo zdjecie`}
+            layout="fill"
+            objectFit="cover"
+            priority
+            loading="eager"
+            quality={100}
+          />
+        </a>
+      </Link> */}
+
       <TytulINFINITI />
       <div className={styles["layout__strona-glowna__cala-strona__fota-klubu"]}>
         <Image
