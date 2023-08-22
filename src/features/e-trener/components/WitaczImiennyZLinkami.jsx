@@ -1,12 +1,9 @@
-//
 // Table of content for this file is written at the bottom
-//
 import styles from "src/styles/sass/styles-all.module.scss";
 import Link from "next/link";
 import { IoSettingsSharp } from "react-icons/io5";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import TytulZTlemKolorowym from "./TytulZTlemKolorowym";
-// import ModalWylogowywania from "./ModalWylogowywania";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
@@ -31,16 +28,11 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
       {isModalOtwarty && (
         <ModalWylogowywania setIsModalOtwarty={setIsModalOtwarty} />
       )}
-      {console.log(
-        "user",
-        user.name.substring(0, user.name.indexOf(" ")).substr(0, 10)
-      )}
+
       <div className={styles["child__css-class-name"]}>
         {(user
           ? `Hej ${
-              user.name.split(" ")[0] //protip1 - wpisz w taktyki tą metoda wybierania tylko 1 slowa przed spacją
-              // .substring(0, user.name.indexOf(" "))
-              // .substr(0, 10)
+              user.name.split(" ")[0].substr(0, 12) //protip1 - wpisz w taktyki tą metoda wybierania tylko 1 slowa przed spacją
             }!`
           : "Witaj w E-Trenerze!"
         ).toUpperCase()}

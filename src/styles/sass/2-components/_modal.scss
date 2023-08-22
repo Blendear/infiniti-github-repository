@@ -39,7 +39,7 @@
     }
   }
 
-  &-information {
+  &--information {
     @mixin container() {
       @include modal-container();
       justify-self: center;

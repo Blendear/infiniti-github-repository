@@ -13,7 +13,9 @@ const Modal = ({ children, variant, hasBackdrop }) => {
       <div
         className={
           styles[
-            `modal-${variant}__container${hasBackdrop && "--with-backdrop"}`
+            `modal--${variant}__container${
+              hasBackdrop ? "--with-backdrop" : ""
+            }`
           ]
         }
       >
