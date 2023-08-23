@@ -9,10 +9,22 @@
   & > * {
     @include mixins.animated-appearance();
   }
+
+  @media (orientation: landscape) {
+    // grid-auto-flow: column;
+    // margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    column-gap: 3rem;
+    row-gap: variables.$content-content-gap;
+  }
   &__wideo {
     display: grid;
     row-gap: variables.$content-content-gap-md;
-
+    @media (orientation: landscape) {
+      grid-column: 1/ -1;
+      grid-rows: 1/-1;
+    }
     & button {
       all: unset;
       justify-self: end;
@@ -30,6 +42,12 @@
 
       @include mixins.grid-with-justify-align-items;
       font-size: typography.$font-size-sm;
+
+      @media (orientation: landscape) {
+        font-size: 1.2rem;
+        width: 2.5rem;
+        margin-right: 12vw;
+      }
       & h1 {
         @include mixins.gradient-cross-browser(
           "text",
@@ -62,10 +80,18 @@
       grid-template-columns: repeat(2, max-content);
       row-gap: variables.$content-content-gap-md;
       column-gap: variables.$content-content-gap-md * 1.25; //protip1 - a template for laying out grids would be nice. i constantly use row gaps etc.
+
+      @media (orientation: landscape) {
+        // grid-template-columns: repeat(3, max-content);
+        padding: 2rem;
+        grid-auto-rows: max-content;
+        width: max-content;
+      }
       &__miesien {
         @include mixins.grid-with-justify-align-items;
         grid-auto-flow: row;
         row-gap: variables.$content-content-gap-md;
+
         &__fota {
           // @include mixins.animated-loader-bg();
           opacity: 100;
@@ -90,7 +116,7 @@
           text-align: center;
           font-weight: bold;
           color: colors.$primary;
-          font-size: typography.$font-size-between-sm-and-md;
+          font-size: typography.$font-size-micro;
         }
       }
     }
@@ -103,6 +129,13 @@
       position: relative;
       width: 80vw;
       aspect-ratio: 1/1;
+      border-radius: variables.$border-radius-md;
+
+      @media (orientation: landscape) {
+        width: min(44vw, 35rem);
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
     }
   }
 }

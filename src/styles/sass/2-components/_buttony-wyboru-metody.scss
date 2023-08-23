@@ -22,7 +22,7 @@
 
     &__btn {
       padding: variables.$content-content-gap 1rem;
-      width: min(17rem, 21.5vw);
+      width: min(21.5vw, 17rem);
       aspect-ratio: 1/1;
 
       @include mixins.gradient-cross-browser(
@@ -37,6 +37,10 @@
       font-weight: bold;
       display: grid;
       overflow: hidden;
+
+      @media (orientation: landscape) {
+        width: min(21.5vw, 13rem);
+      }
       & h3 {
         font-size: typography.$font-size-sm;
         @include mixins.gradient-cross-browser(
@@ -45,6 +49,9 @@
           colors.$etrener-gradient-secondary-A,
           colors.$etrener-gradient-secondary-B
         );
+        @media (orientation: landscape) {
+          font-size: typography.$font-size-micro;
+        }
       }
       & div {
         display: grid;

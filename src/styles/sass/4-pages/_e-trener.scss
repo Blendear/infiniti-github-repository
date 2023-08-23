@@ -28,8 +28,8 @@ $max-content: max-content;
       grid-auto-flow: column;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: max-content 1fr;
-      padding: 5rem 4rem;
-      row-gap: 3rem;
+      padding: 0 4rem;
+      row-gap: 2rem;
     }
   }
   &__metoda-szukania {
@@ -39,6 +39,7 @@ $max-content: max-content;
     grid-auto-rows: max-content;
   }
   &__wybieracz-miesni {
+    margin: 0 0 3rem 0;
     display: grid;
     grid-template-rows:
       [r-1] $max-content //hook1 - create global sizes and import them here

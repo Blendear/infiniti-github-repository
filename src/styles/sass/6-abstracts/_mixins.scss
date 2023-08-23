@@ -106,3 +106,13 @@
 
   animation: pojawiaSieZNikad 0.25s linear;
 }
+
+@mixin hide-scrollbars {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    //Chrome
+    display: none;
+  }
+}

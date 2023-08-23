@@ -20,6 +20,9 @@
     & > * {
       @include mixins.animated-appearance();
     }
+    @media (orientation: landscape) {
+      row-gap: 0.75rem;
+    }
   }
   &__lista {
     margin: 2rem 0 0 0;
@@ -28,11 +31,17 @@
     row-gap: variables.$content-content-gap-xl;
     column-gap: variables.$content-content-gap-md * 1.4;
 
+    @media (orientation: landscape) {
+      // width: min(20vw, 20rem);
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 4rem;
+    }
     &__cwiczenie {
       position: relative;
-      width: 39vw;
+      width: min(39vw, 20rem);
       aspect-ratio: 1/1;
       @include mixins.grid-with-justify-align-items;
+
       &__panel {
         // @include mixins.animated-loader-bg();
 
@@ -72,7 +81,8 @@
           @include mixins.grid-with-justify-align-items;
           color: colors.$primary;
           text-align: center;
-          font-size: typography.$font-size-between-sm-and-md;
+          font-size: min(1.6rem, 2.9vw);
+          font-weight: bold;
         }
       }
       &__info {

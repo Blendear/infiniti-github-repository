@@ -7,7 +7,9 @@
   &__container {
     width: min(40rem, 80vw);
     margin: 0 auto;
-
+    @media (orientation: landscape) {
+      grid-column: 1 / -1;
+    }
     //hook2 - zmien to next time tak, zeby rozmiar byl adjustable - bo np. nie moglem go dać do modalu wylogowywania, bo szerokosc byla zbyt duza
   }
   @mixin tytul {
@@ -40,6 +42,10 @@
     );
     display: grid;
     align-items: center;
+
+    @media (orientation: landscape) {
+      margin: 8rem 0 0 0;
+    }
     & svg {
       color: colors.$primary;
       font-size: typography.$font-size-lg;

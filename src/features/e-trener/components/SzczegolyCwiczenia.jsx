@@ -19,38 +19,45 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
         <div>{cwiczenie.nazwa} </div>{" "}
         <button onClick={handleZamknijModal}>X</button>
       </TytulZTlemKolorowym>
-      <TytulBezTla>MIĘŚNIE ĆWICZONE</TytulBezTla>
-      <ul
-        className={
-          styles["modal-cwiczenia-wybranego__miesnie-cwiczone__lista-miesni"]
-        }
-      >
-        {cwiczenie["cwiczone-miesnie"].map((miesien, i) => {
-          return (
-            <PanelGrupyMiesniowej
-              key={i}
-              grupaMiesniowa={miesien}
-              fota={grupyMiesniowe.find(({ nazwa }) => nazwa === miesien).fota}
-            />
-          );
-        })}
-      </ul>
-      <TytulBezTla>LOKALIZACJA MASZYNY</TytulBezTla>
-      <div
-        className={
-          styles["modal-cwiczenia-wybranego__lokalizacja-maszyny__fota"]
-        }
-      >
-        {/* hook1 - dodaj DO DOMOWYCH CWICZEN WARIANT zdjęcia "GDZIEKOLWIEK ZECHCESZ! NIE POTRZEBUJESZ DO TEGO CWICZENAI MASZYNY" */}
-        <Image
-          src={`/images/.dedykowane-do-strony-konkretnej/e-trener/lokalizacje/${cwiczenie["fota-lokalizacji"]}`}
-          alt={`error while loading image`}
-          layout="fill"
-          objectFit="cover"
-          priority
-          loading="eager"
-          quality={100}
-        />
+      <div>
+        <TytulBezTla>MIĘŚNIE ĆWICZONE</TytulBezTla>
+        <ul
+          className={
+            styles["modal-cwiczenia-wybranego__miesnie-cwiczone__lista-miesni"]
+          }
+        >
+          {cwiczenie["cwiczone-miesnie"].map((miesien, i) => {
+            return (
+              <PanelGrupyMiesniowej
+                key={i}
+                grupaMiesniowa={miesien}
+                fota={
+                  grupyMiesniowe.find(({ nazwa }) => nazwa === miesien).fota
+                }
+              />
+            );
+          })}
+        </ul>
+      </div>
+
+      <div>
+        <TytulBezTla>LOKALIZACJA MASZYNY</TytulBezTla>
+        <div
+          className={
+            styles["modal-cwiczenia-wybranego__lokalizacja-maszyny__fota"]
+          }
+        >
+          {/* hook1 - dodaj DO DOMOWYCH CWICZEN WARIANT zdjęcia "GDZIEKOLWIEK ZECHCESZ! NIE POTRZEBUJESZ DO TEGO CWICZENAI MASZYNY" */}
+          <Image
+            src={`/images/.dedykowane-do-strony-konkretnej/e-trener/lokalizacje/${cwiczenie["fota-lokalizacji"]}`}
+            alt={`error while loading image`}
+            layout="fill"
+            objectFit="cover"
+            priority
+            loading="eager"
+            quality={100}
+          />
+        </div>
       </div>
     </>
   );
