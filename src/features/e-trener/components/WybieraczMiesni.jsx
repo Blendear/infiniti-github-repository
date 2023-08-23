@@ -3,7 +3,7 @@
 //
 import styles from "src/styles/sass/styles-all.module.scss";
 import TytulBezTla from "./TytulBezTla";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import PotwierdzPrzycisk from "./PotwierdzPrzycisk";
 import Image from "next/image";
 import { grupyMiesniowe } from "..";
@@ -11,12 +11,30 @@ import grupyMiesnioweDublowaneNaModelu3D from "../data/grupyMiesnioweDublowaneNa
 
 const WybieraczMiesni = () => {
   const [wybranyMiesien, setWybranyMiesien] = useState("");
+  const iloscZaladowanychMiesni = useRef(0);
+  const [czyPokazacMiesnie, setCzyPokazacMiesnie] = useState(false);
+
+  const handleSprawdzCzyPokazacMiesnie = () => {
+    iloscZaladowanychMiesni.current++;
+    if (iloscZaladowanychMiesni.current >= 22) {
+      setCzyPokazacMiesnie(true);
+    }
+    console.log("iloscZaladowanychMiesni: ", iloscZaladowanychMiesni.current);
+  };
 
   return (
     <>
       <TytulBezTla>KLIKNIJ W MIĘSIEŃ & ZATWIERDŹ</TytulBezTla>
       {console.log("grupyMiesniowe: ", grupyMiesniowe)}
+
       <div className={styles["strona-glowna__wybieracz-miesni"]}>
+        {!czyPokazacMiesnie && (
+          <div
+            className={
+              styles["strona-glowna__wybieracz-miesni__zakrywajacy-loader"]
+            }
+          ></div>
+        )}
         <div
           className={
             styles["strona-glowna__wybieracz-miesni__3d-model-z-miesniami"]
@@ -29,6 +47,7 @@ const WybieraczMiesni = () => {
             objectFit="cover"
             priority
             loading="eager"
+            onLoad={handleSprawdzCzyPokazacMiesnie}
             // quality={50}
           />
 
@@ -37,6 +56,11 @@ const WybieraczMiesni = () => {
           {grupyMiesniowe.map((miesien, index) => (
             <div
               key={index}
+              className={
+                styles[
+                  "strona-glowna__wybieracz-miesni__3d-model-z-miesniami__grupa-miesniowa"
+                ]
+              }
               style={{
                 opacity: `${wybranyMiesien === miesien.nazwa ? 0.5 : 0.1}`,
                 transition: "opacity 0.35s",
@@ -50,6 +74,7 @@ const WybieraczMiesni = () => {
                 priority
                 loading="eager"
                 quality={1}
+                onLoad={handleSprawdzCzyPokazacMiesnie}
               />
             </div>
           ))}

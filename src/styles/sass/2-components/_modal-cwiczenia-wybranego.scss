@@ -6,7 +6,9 @@
 .modal-cwiczenia-wybranego {
   display: grid;
   row-gap: variables.$content-content-gap-md;
-
+  & > * {
+    @include mixins.animated-appearance();
+  }
   &__wideo {
     display: grid;
     row-gap: variables.$content-content-gap-md;
@@ -43,6 +45,7 @@
     }
 
     &__iframe {
+      @include mixins.animated-loader-bg();
       width: 95%;
       aspect-ratio: 16/9;
 
@@ -64,6 +67,9 @@
         grid-auto-flow: row;
         row-gap: variables.$content-content-gap-md;
         &__fota {
+          // @include mixins.animated-loader-bg();
+          opacity: 100;
+
           position: relative;
           width: 8rem;
           aspect-ratio: 1.1/1;
@@ -92,6 +98,7 @@
 
   &__lokalizacja-maszyny {
     &__fota {
+      @include mixins.animated-loader-bg();
       margin: auto;
       position: relative;
       width: 80vw;

@@ -67,3 +67,42 @@
   justify-items: center;
   align-items: center;
 }
+
+@mixin animated-loader-bg {
+  @keyframes poruszajaSieLinia {
+    0% {
+      background-position: -20rem;
+    }
+    50% {
+      background-position: 20rem 0;
+    }
+    100% {
+      background-position: -20rem;
+    }
+  }
+  //hook1 - make the loading colors and looping prettier
+  background-color: #f6f7f8;
+  background: linear-gradient(
+    to right,
+    #ededed 30%,
+    #ececec 48%,
+    #e1e1e1 58%,
+    #e1e1e1 68%,
+    #ececec 78%,
+    #ededed 88%
+  );
+  animation: poruszajaSieLinia 5s infinite;
+}
+
+@mixin animated-appearance {
+  @keyframes pojawiaSieZNikad {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation: pojawiaSieZNikad 0.25s linear;
+}

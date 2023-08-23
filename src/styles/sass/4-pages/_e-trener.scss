@@ -10,6 +10,9 @@ $max-content: max-content;
   top: 0;
   bottom: 0;
   background-color: colors.$primary;
+  & > * {
+    @include mixins.animated-appearance();
+  }
   //hook1 - zmien ten tytul /\ na "e-trener" i pozmieniaj reszcie ele,mentow nazwe
   &__container {
     height: 100dvh;
@@ -46,10 +49,20 @@ $max-content: max-content;
       aspect-ratio: 1/1.5;
       @include mixins.next-img-border-radius(variables.$border-radius-sm);
     }
+    &__zakrywajacy-loader {
+      position: absolute;
+      grid-row: 1 / 2;
+      @include rozmiar-wybieracza-miesni();
+      z-index: 25;
+      @include mixins.animated-loader-bg();
+    }
     &__3d-model-z-miesniami {
       @include rozmiar-wybieracza-miesni();
 
       grid-row: 1 / 2;
+
+      &__grupa-miesniowa {
+      }
     }
     &__siatka-do-przyciskow {
       @include rozmiar-wybieracza-miesni();
@@ -257,32 +270,8 @@ $max-content: max-content;
       position: relative;
       height: 25rem;
       aspect-ratio: 1/1;
-      // hook1 - przerob ta animacje w universalny mixin i colors dedykowane, uniwersalne & wlej go... wszedzie
-      // protip1 - add "loaders creation" steap to javascript quick workflow ccc
-      @keyframes placeHolderShimmer {
-        0% {
-          background-position: -20rem;
-        }
-        100% {
-          background-position: 20rem 0;
-        }
-      }
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
-      animation-name: placeHolderShimmer;
-      animation-timing-function: linear;
-      background-color: #f6f7f8;
-      background: linear-gradient(
-        to right,
-        #ededed 8%,
-        #f3f3f3 18%,
-        #fcfcfc 28%,
-        #fcfcfc 48%,
-        #f3f3f3 58%,
-        #ededed 68%
-      );
-      animation: placeHolderShimmer 8s infinite;
+
+      @include mixins.animated-loader-bg();
       @include mixins.next-img-border-radius(variables.$border-radius-sm);
     }
   }
