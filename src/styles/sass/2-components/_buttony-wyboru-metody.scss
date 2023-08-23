@@ -9,6 +9,11 @@
     grid-auto-flow: row;
     justify-items: center;
     // row-gap: variables.$title-content-row-gap;
+    @media (orientation: landscape) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      grid-auto-rows: max-content;
+    }
   }
   &__buttony {
     display: grid;

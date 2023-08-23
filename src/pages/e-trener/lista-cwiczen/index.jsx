@@ -46,8 +46,9 @@ const ListaCwiczen = () => {
           WYBIERZ ĆWICZENIE I ZACZYNAJMY!
         </TytulZTlemKolorowym>
         <TytulBezTla>
-          LUB KLIKNIJ “i”, ABY ZOBACZYĆ LOKALIZACJĘ MASZYNY ORAZ “ĆWICZONE
-          MIĘŚNIE”
+          {/* LUB KLIKNIJ “i”, ABY ZOBACZYĆ LOKALIZACJĘ MASZYNY ORAZ “ĆWICZONE
+          MIĘŚNIE” */}
+          LUB ZOBACZ GDZIE ĆWICZYĆ I JAKIE MIĘŚNIE BĘDĄ AKTYWNE
         </TytulBezTla>
         {/* //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń */}
         <div className={styles["lista-cwiczen__lista"]}>

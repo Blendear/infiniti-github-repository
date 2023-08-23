@@ -15,7 +15,7 @@
     & a {
       @include mixins.grid-with-padding-and-justify-align-items;
       grid-template-columns: 5fr 1.25fr;
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       font-weight: bold;
       color: white;
       //   filter: drop-shadow(colors.$shadow-universal);

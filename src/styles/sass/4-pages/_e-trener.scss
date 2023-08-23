@@ -23,11 +23,20 @@ $max-content: max-content;
     grid-auto-rows: max-content;
 
     color: colors.$secondary;
+
+    @media (orientation: landscape) {
+      grid-auto-flow: column;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content 1fr;
+      padding: 5rem 4rem;
+      row-gap: 3rem;
+    }
   }
   &__metoda-szukania {
     margin: 0 auto;
     display: grid;
     grid-auto-flow: row;
+    grid-auto-rows: max-content;
   }
   &__wybieracz-miesni {
     display: grid;
@@ -49,6 +58,7 @@ $max-content: max-content;
       aspect-ratio: 1/1.5;
       @include mixins.next-img-border-radius(variables.$border-radius-sm);
     }
+
     &__zakrywajacy-loader {
       position: absolute;
       grid-row: 1 / 2;
