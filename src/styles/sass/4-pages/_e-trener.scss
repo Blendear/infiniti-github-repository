@@ -6,10 +6,15 @@
 $rozmiar-sciany-kwadratu-siatki: 1fr; //hook2 - przerob na universal miary i wstaw do variables/ colors scss files
 $max-content: max-content;
 .strona-glowna {
+  position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
+  top: 0;
+  bottom: 0;
+  background-color: colors.$primary;
   //hook1 - zmien ten tytul /\ na "e-trener" i pozmieniaj reszcie ele,mentow nazwe
   &__container {
     height: 100dvh;
-    background-color: colors.$primary;
+    width: 100dvw;
+    // background-color: colors.$primary;
     display: grid;
     grid-auto-flow: row;
     grid-auto-rows: max-content;
@@ -253,7 +258,7 @@ $max-content: max-content;
       height: 25rem;
       aspect-ratio: 1/1;
       // hook1 - przerob ta animacje w universalny mixin i colors dedykowane, uniwersalne & wlej go... wszedzie
-      // protip1 - add "loaders creation" steap to javascript quick workflow
+      // protip1 - add "loaders creation" steap to javascript quick workflow ccc
       @keyframes placeHolderShimmer {
         0% {
           background-position: -20rem;
