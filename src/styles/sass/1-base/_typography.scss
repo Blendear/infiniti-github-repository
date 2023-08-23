@@ -1,7 +1,12 @@
 //
 //~~ _.  Globally used fonts and font characteristics - locally used fonts and characteristics are in their specific files, where they are used
 //
-$font-family-primary: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif;
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("../../../../public/fonts/source-sans-pro/SourceSansPro-Regular.otf");
+}
+$font-secondary: "source-sans-pro", verdana, helvetica, sans-serif;
 
 $font-size-sm: min(1.8rem, 2.4vw);
 $font-size-between-sm-and-md: min(2rem, 3.45vw);

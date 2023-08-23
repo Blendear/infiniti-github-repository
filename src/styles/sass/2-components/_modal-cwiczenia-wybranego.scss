@@ -8,14 +8,8 @@
   row-gap: variables.$content-content-gap-md;
 
   &__wideo {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
     display: grid;
     row-gap: variables.$content-content-gap-md;
-    // background-color: #000000;
 
     & button {
       all: unset;
@@ -79,7 +73,6 @@
           padding: variables.$content-content-gap;
           width: min(35vw, 15rem);
           aspect-ratio: 2.25/1;
-          //   height: max-content;
           @include mixins.gradient-cross-browser(
             "bg",
             variables.$gradient-direction-secondary,

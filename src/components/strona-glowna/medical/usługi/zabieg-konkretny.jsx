@@ -105,7 +105,7 @@ const ZabiegKonkretny = (props) => {
           tresc={props.e}
           tytul="EFEKTY ZDROWOTNE"
           svgIcon={<AiFillHeart />}
-          isNowoscIMaFoty={props.isNowoscIMaFoty ? props.isNowoscIMaFoty : null}
+          // isNowoscIMaFoty={props.isNowoscIMaFoty ? props.isNowoscIMaFoty : null}
           fotaTyczySieTegoSzczegolu={
             props.fotaTyczySieTegoSzczegolu
               ? props.fotaTyczySieTegoSzczegolu

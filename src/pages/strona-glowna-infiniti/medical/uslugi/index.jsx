@@ -34,6 +34,7 @@ import SVGElektro4 from "../../../../components/strona-glowna/medical/usługi/sv
 import SVGWodor from "../../../../components/strona-glowna/medical/usługi/svg/svg-wodor";
 import SVGUltradzwiek from "../../../../components/strona-glowna/medical/usługi/svg/svg-dzwiek";
 import SVGMagnet from "../../../../components/strona-glowna/medical/usługi/svg/svg-magnet";
+import SVGFalaUderzeniowa from "../../../../components/strona-glowna/medical/usługi/svg/svg-fala-uderzeniowa";
 // hook1 - markup next tiem zrob, nie tylko divy
 const kolorSVG = "#7A1276";
 
@@ -98,6 +99,100 @@ const MedicalUslugi = () => {
         <ZabiegKonkretny
           e={
             <ul>
+              <li>
+                przeciwbólowe i przeciwzapalne działania poprzez blokowanie
+                wyzwalania i przekazywania sygnałów bólowych
+              </li>
+              <li>
+                dezintegracyjne działania (doprowadza do usunięcia zwapniałych
+                fibroblastów)
+              </li>
+              <li>regeneracja (zwiększa produkcję kolagenu)</li>
+              <li>relaksacja (zmniejsza napięcie mięśni)</li>
+              <li>poprawienie mikrokrążenie</li>
+              <li>poprawienie kondycji i wydolności organizmu</li>
+            </ul>
+          }
+          d={
+            <ul>
+              <strong>Ortopedia i medycyna sportowa:</strong>
+              <li>wzmożonego napięcia mięśni</li>
+              <li>bóli mięśniowo-powięziowych</li>
+              <li>zmian przeciążeniowych i przewlekłych stanów zapalnych</li>
+              <li>
+                entezopatii (zmiany przeciążeniowe przyczepów mięśniowych)
+              </li>
+              <li>zwapnienia w obrębie stawu barkowo-obojczykowego</li>
+              <li>zwapnienia okołobarkowego</li>
+              <li>Przykurczu Dupuytrena</li>
+              <li>zespołu mięśnia gruszkowatego</li>
+              <li>krwiaków śródmięśniowych</li>
+              <li>zespołu pasma biodrowo-piszczelowego</li>
+              <li>kolana biegacza</li>
+              <li>zespołu ciasnoty międzypowięziowej</li>
+              <li>ostrogi piętowej (hallux)</li>
+              <li></li>
+              <li></li>
+              <br />
+              <strong>Medycyna estetyczna:</strong>
+              <li>celulitu</li>
+              <li>miejscowych otyłości</li>
+              <li>w celu ujędrniania stref zwiotczałych (pośladki, ramiona)</li>
+              <li>w celu relaksacji skóry</li>
+              <li>w celu liftingu</li>
+              <li>w celu liposukcji</li>
+              <li>w celu drenażu limfatycznego</li>
+            </ul>
+          }
+          j={
+            <ul>
+              <li>
+                fala uderzeniowa to mechaniczna fala o niewielkiej
+                częstotliwości
+              </li>
+              <li>
+                wytwarzana jest pod wysokim ciśnieniem w bardzo krótkim czasie,
+                dzięki czemu tuż po przyłożeniu głowicy, fala przenika przez
+                skórę na głębokość kilku centymetrów trafiając w konkretne
+                miejsce objęte schorzeniem
+              </li>
+              <li>
+                terapia falą uderzeniowa to innowacyjna, nieinwazyjna i
+                bezpieczna metoda stosowana w rehabilitacji, w celu zniwelowania
+                przewlekłego bólu wiązadeł, mięśni, ścięgien, torebek stawowych
+                oraz kości
+              </li>
+              <li>
+                w celu zauważania efektów, należy wykonać od 3 do 10 zabiegów w
+                kilkudniowych odstępach. Jedna sesja terapeutyczna trwa ok.
+                10-15 minut
+              </li>
+              <li>
+                ilość zabiegów dobierana jest indywidualnie do każdego pacjenta
+                po konsultacji ze specjalistą.
+              </li>
+            </ul>
+          }
+          p={
+            <ul>
+              <li>ciąża lub podejrzenie ciąży</li>
+              <li>zaburzenia krzepliwości</li>
+              <li>nowotwory</li>
+              <li>chrząstka wzrostowa u dzieci</li>
+              <li>polineuropatia demielinizacyjna</li>
+              <li>zapalenie infekcyjne pochewki ścięgnistej</li>
+              <li>bliskość miąższu płucnego w obszarze stosowania</li>
+            </ul>
+          }
+          tytulZAbiegu="FALA UDERZENIOWA"
+          svgComponent={<SVGFalaUderzeniowa mojKolor={kolorSVG} />} //ccc
+          isNowoscIMaFoty={true}
+          fotaTyczySieTegoSzczegolu="efekty zdrowotne"
+          isNowoscIMaZnaczek={true}
+        />
+        {/* <ZabiegKonkretny
+          e={
+            <ul>
               <li>wzmocnienie naturalnej odporności</li>
               <li>dotlenienie i poprawienia ogólnego zdrowia organizmu</li>
               <li>poprawienie jakości snu</li>
@@ -153,7 +248,7 @@ const MedicalUslugi = () => {
           isNowoscIMaFoty={true}
           fotaTyczySieTegoSzczegolu="efekty zdrowotne"
           isNowoscIMaZnaczek={true}
-        />
+        /> */}
         {/* //herehere14.02.2023 -  dokoncz */}
         <ZabiegKonkretny
           e={
