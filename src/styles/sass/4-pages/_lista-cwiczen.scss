@@ -5,7 +5,11 @@
 
 .lista-cwiczen {
   &__container {
+    position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
+    top: 0;
+    bottom: 0;
     height: 100dvh;
+    width: 100dvw;
     background-color: colors.$primary;
     display: grid;
     grid-auto-flow: row;
