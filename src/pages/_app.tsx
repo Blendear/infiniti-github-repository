@@ -36,6 +36,11 @@ function MyApp({ Component, pageProps }: any) {
             0.  Startowy Next.js component
           */}
           <Head>
+            <title>INFINITI - Centrum Zdrowia, Siłownia & Klub Fitness</title>
+            <meta
+              name="description"
+              content="W ofercie również : Fizjoterapia & Naturoterapia I Sztuki walki (MMA) I Squash I Yoga I Sauna"
+            />
             <meta
               name="facebook-domain-verification"
               content="msjkv4nhdzxgfnlhrjp6cv0hr4wmt9"

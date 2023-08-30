@@ -8,6 +8,7 @@ export default function Document() {
     <Html>
       <Head>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <body>
         {/*//       _._. "On top of pages content" code, like Modals, Backdrops, Tooltips etc. - the id will be references by React's Portals*/}
