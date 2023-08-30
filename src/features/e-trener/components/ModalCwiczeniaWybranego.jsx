@@ -17,7 +17,7 @@ const ModalCwiczeniaWybranego = ({
   return (
     <>
       <Modal variant="information" hasBackdrop={false}>
-        <div className={styles[`modal-cwiczenia-wybranego`]}>
+        <article className={styles[`modal-cwiczenia-wybranego`]}>
           {
             {
               wideo: (
@@ -34,7 +34,7 @@ const ModalCwiczeniaWybranego = ({
               ),
             }[nazwaModalu]
           }
-        </div>
+        </article>
       </Modal>
     </>
   );

@@ -28,7 +28,9 @@ const NumerIDSzukacz = () => {
 
   return (
     <div className={styles["strona-glowna__nr-id-szukacz__container"]}>
-      <TytulBezTla>WPISZ RĘCZNIE NR MASZYNY</TytulBezTla>
+      <TytulBezTla htmlElementType="label">
+        WPISZ RĘCZNIE NR MASZYNY
+      </TytulBezTla>
       {/* //       _._. Jeśli użytkownik wpisał 9-cyfrową liczbę, która jest numerem ID maszyny, to wyświetl zdjęcie maszyny. Inaczej - wyświetl zdjęcie z napisem "zły numer"       */}
       <input
         className={styles["strona-glowna__nr-id-szukacz__input-field"]}

@@ -18,7 +18,7 @@ const PotwierdzPrzycisk = ({ children, kolorTla, filtr, wartosc }) => {
         href={`/e-trener/lista-cwiczen?filtr=${filtr}&wartosc=${wartosc}&nazwa-modalu=null&id-cwiczenia=null`}
       >
         <a>
-          <div>{children.toUpperCase()}</div>
+          <span>{children.toUpperCase()}</span>
           <FaCheck />
         </a>
       </Link>

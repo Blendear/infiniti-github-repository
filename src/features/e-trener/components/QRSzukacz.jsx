@@ -21,9 +21,9 @@ const QRSzukacz = () => {
     }
   };
   return (
-    <div className={styles["strona-glowna__qr-szukacz__container"]}>
+    <section className={styles["strona-glowna__qr-szukacz__container"]}>
       {/* //       _._. AA */}
-      <TytulBezTla>ZESKANUJ KOD QR MASZYNY</TytulBezTla>
+      <TytulBezTla htmlElementType="label">ZESKANUJ KOD QR MASZYNY</TytulBezTla>
       <QrReader
         className={styles["strona-glowna__qr-szukacz__kamera"]}
         onResult={(result, error) => {
@@ -39,7 +39,7 @@ const QRSzukacz = () => {
           facingMode: "environment",
         }}
       />
-    </div>
+    </section>
   );
 };
 // trap1 - NECESSARY to load this page dynamically, because the used QR library wont work server-side (SSR)

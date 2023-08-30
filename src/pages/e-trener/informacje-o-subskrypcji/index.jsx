@@ -26,7 +26,7 @@ const InfoOSubskrypcji = () => {
         ) : (
           <div style={{ marginTop: "6rem" }}></div>
         )}
-        <h1 className={styles["info-o-subskrypcji__tytul"]}>
+        <header className={styles["info-o-subskrypcji__tytul"]}>
           <h1>
             <ReactTyped
               strings={tekstySamozmieniajace}
@@ -36,8 +36,8 @@ const InfoOSubskrypcji = () => {
             />
           </h1>
           <h2>DZIELI CIĘ OD TWOJEGO E-TRENERA!</h2>
-        </h1>
-        <div className={styles["info-o-subskrypcji__lista-paneli"]}>
+        </header>
+        <ul className={styles["info-o-subskrypcji__lista-paneli"]}>
           {infoOSubskrypcji.map((panel, index) => {
             return (
               <PanelZOpisemSubskrycji
@@ -50,8 +50,8 @@ const InfoOSubskrypcji = () => {
               />
             );
           })}
-        </div>
-        <div className={styles["info-o-subskrypcji__btn-subskrybuj"]}>
+        </ul>
+        <section className={styles["info-o-subskrypcji__btn-subskrybuj"]}>
           <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
           <stripe-buy-button
@@ -59,7 +59,7 @@ const InfoOSubskrypcji = () => {
             publishable-key="pk_test_51NUuTyKGht8obmlkV6fMysPOrScxtbyfWrTIW6oV7GHVib7ejuifc6X8PyIACcW75m5H0XNSlm4158YJ55Olla4k00WkwVCODD"
           ></stripe-buy-button>
           {/* /\ hook1 wstaw tu button z LIVE VERSION pozniej */}
-        </div>
+        </section>
       </div>
     </>
   );

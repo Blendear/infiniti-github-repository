@@ -12,7 +12,7 @@ const MiniaturkaCwiczenia = ({
   setOtwarteCwiczenie,
 }) => {
   return (
-    <div className={styles["lista-cwiczen__lista__cwiczenie"]}>
+    <li className={styles["lista-cwiczen__lista__cwiczenie"]}>
       {/* "i" - settuje "idCwiczenia" na id tej minitaruki & settuje "nazwaModalu" na "szczegoly" */}
       <button
         className={styles["lista-cwiczen__lista__cwiczenie__info"]}
@@ -54,13 +54,13 @@ const MiniaturkaCwiczenia = ({
             quality={1}
           />
         </div>
-        <div
+        <span
           className={styles["lista-cwiczen__lista__cwiczenie__panel__tekst"]}
         >
           {cwiczenie.nazwa}
-        </div>
+        </span>
       </button>
-    </div>
+    </li>
   );
   // id={cwiczenie["id"]}
   // nazwa={cwiczenie.nazwa}

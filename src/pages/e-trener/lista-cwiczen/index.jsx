@@ -41,11 +41,11 @@ const ListaCwiczen = () => {
 
   return (
     pokazInfoNiezasubskrybowanemu && (
-      <div className={styles["lista-cwiczen__container"]}>
-        <TytulZTlemKolorowym>
+      <article className={styles["lista-cwiczen__container"]}>
+        <TytulZTlemKolorowym htmlElementType="h1">
           WYBIERZ ĆWICZENIE I ZACZYNAJMY!
         </TytulZTlemKolorowym>
-        <TytulBezTla>
+        <TytulBezTla htmlElementType="h2">
           {/* LUB KLIKNIJ “i”, ABY ZOBACZYĆ LOKALIZACJĘ MASZYNY ORAZ “ĆWICZONE
           MIĘŚNIE” */}
           LUB ZOBACZ GDZIE ĆWICZYĆ I JAKIE MIĘŚNIE BĘDĄ AKTYWNE
@@ -91,7 +91,7 @@ const ListaCwiczen = () => {
             otwarteCwiczenie={otwarteCwiczenie}
           />
         )}
-      </div>
+      </article>
     )
   );
 };

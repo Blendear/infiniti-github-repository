@@ -5,7 +5,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="pl-PL">
       <Head>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <link rel="shortcut icon" href="/favicon.ico" />

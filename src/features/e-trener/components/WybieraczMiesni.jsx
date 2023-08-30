@@ -24,7 +24,9 @@ const WybieraczMiesni = () => {
 
   return (
     <>
-      <TytulBezTla>KLIKNIJ W MIĘSIEŃ & ZATWIERDŹ</TytulBezTla>
+      <TytulBezTla htmlElementType="label">
+        KLIKNIJ W MIĘSIEŃ & ZATWIERDŹ
+      </TytulBezTla>
       {console.log("grupyMiesniowe: ", grupyMiesniowe)}
 
       <div className={styles["strona-glowna__wybieracz-miesni"]}>

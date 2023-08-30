@@ -5,9 +5,9 @@ import styles from "src/styles/sass/styles-all.module.scss";
 
 const TytulZTlemKolorowym = ({ children }) => {
   return (
-    <div className={styles["tytul__container"]}>
+    <header className={styles["tytul__container"]}>
       <h1 className={styles["tytul--z-tlem-kolorowym"]}>{children}</h1>
-    </div>
+    </header>
   );
 };
 export default TytulZTlemKolorowym;

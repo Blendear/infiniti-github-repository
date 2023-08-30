@@ -39,7 +39,7 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
       className={styles["strona-glowna"]}
     >
       {pokazInfoNiezasubskrybowanemu && (
-        <div
+        <article
           // style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
           className={styles["strona-glowna__container"]}
         >
@@ -49,7 +49,7 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
             setActiveButton={setActiveButton}
           />
           {/* //       _._. 1 z 3 wariantów stron e-trenera (conditionally render'owane zależnie od parametru "method" parameter z query string'u) */}
-          <div className={styles["strona-glowna__metoda-szukania"]}>
+          <section className={styles["strona-glowna__metoda-szukania"]}>
             {
               {
                 qr: <QRSzukacz />,
@@ -57,8 +57,8 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
                 miesien: <WybieraczMiesni />,
               }[router.query.method]
             }
-          </div>
-        </div>
+          </section>
+        </article>
       )}
     </div>
   );

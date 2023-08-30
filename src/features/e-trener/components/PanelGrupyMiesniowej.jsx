@@ -33,7 +33,7 @@ const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
         />
       </div>
 
-      <div
+      <span
         className={
           styles[
             "modal-cwiczenia-wybranego__miesnie-cwiczone__lista-miesni__miesien__nazwa"
@@ -41,7 +41,7 @@ const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
         }
       >
         {`${grupaMiesniowa}`}
-      </div>
+      </span>
     </li>
   );
 };

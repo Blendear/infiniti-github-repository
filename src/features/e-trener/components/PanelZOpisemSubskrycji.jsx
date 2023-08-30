@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const PanelZOpisemSubskrycji = ({ tekst, fota, kierunekCiecia }) => {
   return (
-    <div className={styles["info-o-subskrypcji__lista-paneli__panel"]}>
+    <li className={styles["info-o-subskrypcji__lista-paneli__panel"]}>
       {kierunekCiecia === "--prawo-ciety" && (
         <div
           className={styles["info-o-subskrypcji__lista-paneli__panel__fota"]}
@@ -22,7 +22,7 @@ const PanelZOpisemSubskrycji = ({ tekst, fota, kierunekCiecia }) => {
           />
         </div>
       )}
-      <div
+      <p
         className={
           styles[
             `info-o-subskrypcji__lista-paneli__panel__opis${kierunekCiecia}`
@@ -30,7 +30,7 @@ const PanelZOpisemSubskrycji = ({ tekst, fota, kierunekCiecia }) => {
         }
       >
         {tekst}
-      </div>
+      </p>
       {kierunekCiecia === "--lewo-ciety" && (
         <div
           className={styles["info-o-subskrypcji__lista-paneli__panel__fota"]}
@@ -46,7 +46,7 @@ const PanelZOpisemSubskrycji = ({ tekst, fota, kierunekCiecia }) => {
           />
         </div>
       )}
-    </div>
+    </li>
   );
 };
 export default PanelZOpisemSubskrycji;

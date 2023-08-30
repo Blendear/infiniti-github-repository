@@ -12,7 +12,7 @@ const MenuModal = (props) => {
 
   return (
     // <div className={styles["menu-modal__tlo"]}>
-    <div
+    <nav
       className={
         reduxStateIsMenuOpen === true
           ? `${styles["menu-modal__caly-container"]} 
@@ -41,7 +41,7 @@ const MenuModal = (props) => {
           objectFit="contain"
         />
       </div>
-      <div
+      <ul
         className={
           styles[
             "menu-modal__caly-container__klocki--container-listujacy-klocki-lewe"
@@ -74,8 +74,8 @@ const MenuModal = (props) => {
         </Link>
 
         {/* <KlocekMenu imagePathEnd="klocek-medical.png" napisTresc="CENNIK" /> */}
-      </div>
-      <div
+      </ul>
+      <ul
         className={
           styles[
             "menu-modal__caly-container__klocki--container-listujacy-klocki-prawe"
@@ -109,8 +109,8 @@ const MenuModal = (props) => {
         </Link>
 
         {/* <KlocekMenu imagePathEnd="klocek-medical.png" napisTresc="CENNIK" /> */}
-      </div>
-      <div
+      </ul>
+      <ul
         className={
           styles[
             "menu-modal__caly-container__klocki--container-listujacy-klocki-srodkowe"
@@ -141,11 +141,8 @@ const MenuModal = (props) => {
             />
           </a>
         </Link>
-
-        {/* <KlocekMenu imagePathEnd="klocek-medical.png" napisTresc="CENNIK" /> */}
-      </div>
-    </div>
-    // </div>
+      </ul>
+    </nav>
   );
 };
 export default MenuModal;

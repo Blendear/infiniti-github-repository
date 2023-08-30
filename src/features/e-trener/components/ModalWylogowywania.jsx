@@ -15,7 +15,7 @@ const ModalWylogowywania = ({ setIsModalOtwarty }) => {
     // wylogowywanie__buttony__btn / wylogowywanie__buttony__btn--active
     <>
       <Modal variant="information" hasBackdrop={true} bgVariant="transparent">
-        <div className={styles["wylogowywanie__container"]}>
+        <article className={styles["wylogowywanie__container"]}>
           <h1 className={styles["wylogowywanie__tytul"]}>
             CHCESZ SIĘ WYLOGOWAĆ?
           </h1>
@@ -32,7 +32,7 @@ const ModalWylogowywania = ({ setIsModalOtwarty }) => {
               <h2>NIE</h2>
             </button>
           </div>
-        </div>
+        </article>
       </Modal>
       <Backdrop onClose={() => {}} isStatic={true} variant="black-80-opacity" />
     </>

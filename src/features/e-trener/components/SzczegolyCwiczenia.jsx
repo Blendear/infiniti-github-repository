@@ -16,11 +16,11 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
       {/* \/ hook1 - ustaw tytul tak, zeby zawsze mial 3 kolumny, a buttony lub svg niech ustwiaja sie po bokach, a  h1 w srodku */}
       <TytulZTlemKolorowym>
         <div style={{ color: "transparent" }}>{`X`}</div>
-        <div>{cwiczenie.nazwa} </div>{" "}
+        <span>{cwiczenie.nazwa} </span>
         <button onClick={handleZamknijModal}>X</button>
       </TytulZTlemKolorowym>
-      <div>
-        <TytulBezTla>MIĘŚNIE ĆWICZONE</TytulBezTla>
+      <section>
+        <TytulBezTla htmlElementType="h2">MIĘŚNIE ĆWICZONE</TytulBezTla>
         <ul
           className={
             styles["modal-cwiczenia-wybranego__miesnie-cwiczone__lista-miesni"]
@@ -38,10 +38,10 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
             );
           })}
         </ul>
-      </div>
+      </section>
 
-      <div>
-        <TytulBezTla>LOKALIZACJA MASZYNY</TytulBezTla>
+      <section>
+        <TytulBezTla htmlElementType="h2">LOKALIZACJA MASZYNY</TytulBezTla>
         <div
           className={
             styles["modal-cwiczenia-wybranego__lokalizacja-maszyny__fota"]
@@ -58,7 +58,7 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
             quality={100}
           />
         </div>
-      </div>
+      </section>
     </>
   );
 };

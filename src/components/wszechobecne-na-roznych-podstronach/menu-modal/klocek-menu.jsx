@@ -8,7 +8,7 @@ import { menuINavbarSliceActions } from "../../../store/redux/store-redux";
 
 const KlocekMenu = (props) => {
   return (
-    <div
+    <li
       className={
         styles["menu-modal__caly-container__klocki--container-klocka-jednego"]
       }
@@ -45,7 +45,7 @@ const KlocekMenu = (props) => {
       {/* <div className={styles["menu-modal__caly-container__klocki--napis"]}>
         {props.napisTresc}
       </div> */}
-    </div>
+    </li>
   );
 };
 export default KlocekMenu;

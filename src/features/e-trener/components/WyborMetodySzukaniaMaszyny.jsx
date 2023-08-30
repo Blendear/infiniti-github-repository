@@ -8,9 +8,11 @@ import TytulBezTla from "./TytulBezTla";
 
 const WyborMetodySzukaniaMaszyny = ({ activeButton, setActiveButton }) => {
   return (
-    <div className={styles["wybor-metody__container"]}>
+    <section className={styles["wybor-metody__container"]}>
       {/* //       _._. AA */}
-      <TytulBezTla>JAK CHCESZ ZNALEŹĆ ĆWICZENIA?</TytulBezTla>
+      <TytulBezTla htmlElementType="h1">
+        JAK CHCESZ ZNALEŹĆ ĆWICZENIA?
+      </TytulBezTla>
       <div className={styles["wybor-metody__buttony"]}>
         <ButtonWyboruMetody
           metoda="qr"
@@ -28,7 +30,7 @@ const WyborMetodySzukaniaMaszyny = ({ activeButton, setActiveButton }) => {
           setActiveButton={setActiveButton}
         />
       </div>
-    </div>
+    </section>
   );
 };
 export default WyborMetodySzukaniaMaszyny;

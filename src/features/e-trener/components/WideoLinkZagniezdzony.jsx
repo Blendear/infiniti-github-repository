@@ -18,7 +18,7 @@ const WideoLinkZagniezdzony = ({ linkDoWideo, setNazwaModalu }) => {
   };
 
   return (
-    <div className={styles["modal-cwiczenia-wybranego__wideo"]}>
+    <article className={styles["modal-cwiczenia-wybranego__wideo"]}>
       <button
         onClick={() => {
           setNazwaModalu("null");
@@ -32,7 +32,7 @@ const WideoLinkZagniezdzony = ({ linkDoWideo, setNazwaModalu }) => {
         opts={opts}
         onReady={handleReady}
       />
-    </div>
+    </article>
   );
 };
 export default WideoLinkZagniezdzony;
