@@ -57,7 +57,6 @@ import { CSSProperties } from "react";
 import CircleLoader from "react-spinners/CircleLoader";
 
 import { carouselData } from "../../components/strona-glowna/0/2-carousel-foty-infiniti/Data";
-import Head from "next/head";
 //
 // Dorób classy dla każdego elementu   &   przypisz je placeholderom przedstawiajacymi fragmnenty daneo fragmentu (np. strzalki, foty i obramowki galerii carousel fot miejsc)
 //
@@ -101,12 +100,6 @@ const StronaGlowna = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <Head>
-        <meta
-          name="description"
-          content="W ofercie również : Fizjoterapia & Naturoterapia I Sztuki walki (MMA) I Squash I Yoga I Sauna"
-        />
-      </Head>
       <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
       <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
