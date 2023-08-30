@@ -95,14 +95,14 @@ const DoPobrania = () => {
       >
         {/* <bComponent /> */}
       </div>
-      <div
+      <ul
         className={
           styles[
             "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy"
           ]
         }
       >
-        <div
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item"
@@ -116,8 +116,8 @@ const DoPobrania = () => {
           >
             <a target="_blank">Regulamin INFINITI</a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item"
@@ -131,8 +131,8 @@ const DoPobrania = () => {
           >
             <a target="_blank">Polityka prywatności</a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item"
@@ -146,8 +146,8 @@ const DoPobrania = () => {
           >
             <a target="_blank">Zgoda nieletniego</a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item"
@@ -161,10 +161,10 @@ const DoPobrania = () => {
           >
             <a target="_blank">Wzór odstąpienia od umowy</a>
           </Link>
-        </div>
-      </div>
+        </li>
+      </ul>
       {/* //       _._. Loga */}
-      <div
+      <ul
         className={
           styles[
             "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow"
@@ -173,7 +173,7 @@ const DoPobrania = () => {
       >
         {/* //           _._._. INFINITI */}
 
-        <div
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--infiniti-tytul"
@@ -190,8 +190,8 @@ const DoPobrania = () => {
             priority
             loading="eager"
           />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-9"
@@ -220,8 +220,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-10"
@@ -247,8 +247,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-11"
@@ -274,8 +274,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-12"
@@ -301,9 +301,9 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
+        </li>
         {/* //           _._._. INFINITI - Medical */}
-        <div
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--fitness-tytul"
@@ -321,8 +321,8 @@ const DoPobrania = () => {
             priority
             loading="eager"
           />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-5"
@@ -350,8 +350,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-6"
@@ -377,8 +377,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-7"
@@ -404,8 +404,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-8"
@@ -431,9 +431,9 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
+        </li>
         {/* //           _._._. INFINITI - Fitness */}
-        <div
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--medical-tytul"
@@ -450,8 +450,8 @@ const DoPobrania = () => {
             priority
             loading="eager"
           />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1"
@@ -480,8 +480,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-2"
@@ -507,8 +507,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-3"
@@ -534,8 +534,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-4"
@@ -561,8 +561,8 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 };

@@ -121,7 +121,7 @@ const CarouselPoziomy = () => {
       {/* 
       //       B.2. Using buttonów i ich onClick'i
       */}
-      <div
+      <h4
         className={
           styles[
             "layout__strona-glowna__cala-strona__carousel-poziomy--tekst-tytulowy"
@@ -132,7 +132,7 @@ const CarouselPoziomy = () => {
         <br />
         ŻEBY ZOBACZYĆ WYŻEJ JEGO ZDJĘCIA
         {/* I OPIS */}
-      </div>
+      </h4>
 
       <button
         className={`${

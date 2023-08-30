@@ -336,6 +336,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 grid-column: c-3 / c-4;
 
                 font-size: 1.2rem;
+                font-weight: normal;
                 letter-spacing: 0.05rem;
                 filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
                 // font-weight: 600;
@@ -380,7 +381,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                   gap: 0.5rem;
                   filter: drop-shadow(0 0 0.15rem rgba(0, 0, 0, 0.422));
 
-                  & p {
+                  & address {
                     align-self: center;
                     font-size: 1.2rem;
                     // font-weight: 600;

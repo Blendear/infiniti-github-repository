@@ -166,12 +166,12 @@ const StronaGlowna = () => {
 
         {/* D:\Apka React JS\infiniti-stronka\public\images */}
       </div>
-      <div
+      <ul
         className={
           styles["layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz"]
         }
       >
-        <div
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-1"
@@ -179,8 +179,8 @@ const StronaGlowna = () => {
           }
         >
           <SVGCoTuZnajdziesz1 />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-1"
@@ -189,8 +189,8 @@ const StronaGlowna = () => {
         >
           FIZJOTERAPIA
           <br /> & NATUROTERAPIA
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-7"
@@ -198,8 +198,8 @@ const StronaGlowna = () => {
           }
         >
           <SVGCoTuZnajdziesz2 />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-7"
@@ -207,8 +207,8 @@ const StronaGlowna = () => {
           }
         >
           SQUASH
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-5"
@@ -216,9 +216,9 @@ const StronaGlowna = () => {
           }
         >
           <SVGCoTuZnajdziesz3 />
-        </div>
+        </li>
 
-        <div
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-5"
@@ -226,8 +226,8 @@ const StronaGlowna = () => {
           }
         >
           YOGA
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-4"
@@ -235,8 +235,8 @@ const StronaGlowna = () => {
           }
         >
           <SVGCoTuZnajdziesz4 />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-4"
@@ -244,8 +244,8 @@ const StronaGlowna = () => {
           }
         >
           SZTUKI WALKI
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-6"
@@ -253,8 +253,8 @@ const StronaGlowna = () => {
           }
         >
           <SVGCoTuZnajdziesz5 />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-6"
@@ -264,8 +264,8 @@ const StronaGlowna = () => {
           ZAJĘCIA GRUPOWE
           <br />
           DLA KAŻDEGO
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-2"
@@ -273,8 +273,8 @@ const StronaGlowna = () => {
           }
         >
           <SVGCoTuZnajdziesz6 />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-2"
@@ -282,8 +282,8 @@ const StronaGlowna = () => {
           }
         >
           SIŁOWNIA <br />& FITNESS
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-3"
@@ -291,8 +291,8 @@ const StronaGlowna = () => {
           }
         >
           <SVGCoTuZnajdziesz7 />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-3"
@@ -300,8 +300,8 @@ const StronaGlowna = () => {
           }
         >
           SAUNA <br />& WELLNESS
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--svg-icon-8"
@@ -309,8 +309,8 @@ const StronaGlowna = () => {
           }
         >
           <SVGCoTuZnajdziesz8 />
-        </div>
-        <div
+        </li>
+        <li
           className={
             styles[
               "layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz--item--tekst-8"
@@ -319,15 +319,15 @@ const StronaGlowna = () => {
         >
           DOŚWIADCZENI <br />
           DIETETYCY
-        </div>
-      </div>
+        </li>
+      </ul>
 
-      <div
+      <section
         className={
           styles["layout__strona-glowna__cala-strona__carousel-gallery"]
         }
       >
-        <div
+        <h2
           className={
             styles[
               "layout__strona-glowna__cala-strona__carousel-gallery--tekst-tytulowy"
@@ -335,7 +335,7 @@ const StronaGlowna = () => {
           }
         >
           ZOBACZ CO TUTAJ NA CIEBIE CZEKA!
-        </div>
+        </h2>
         <CarouselFotyINFINITI />
         {/* <div
           className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-carousel"]} ${styles["carousel-foty-infiniti"]} ${styles["layout__strona-glowna__cala-strona__carousel-gallery--loader"]}`}
@@ -361,7 +361,7 @@ const StronaGlowna = () => {
           }
         >
           {/* ... */}
-          <div
+          <h3
             className={
               styles[
                 "layout__strona-glowna__cala-strona__carousel-gallery--nazwa-miejsca--tekst"
@@ -381,7 +381,7 @@ const StronaGlowna = () => {
                   reduxStatePoziomIMiejsceAktualne.miejsce
               )
               .wyswietlanaNazwa.toUpperCase()}
-          </div>
+          </h3>
           <div
             className={
               styles[
@@ -392,39 +392,9 @@ const StronaGlowna = () => {
             <SVGNazwy />
           </div>
         </button>
-
-        {/* <button
-          className={
-            styles[
-              "layout__strona-glowna__cala-strona__carousel-gallery--wiecej-button"
-            ]
-          }
-        >
-          <div
-            className={
-              styles[
-                "layout__strona-glowna__cala-strona__carousel-gallery--wiecej-button--tekst"
-              ]
-            }
-          >
-            WIĘCEJ O TYM MIEJSCU
-          </div>
-          <div
-            className={
-              styles[
-                "layout__strona-glowna__cala-strona__carousel-gallery--wiecej-button--svg-wiecej"
-              ]
-            }
-          >
-            <SVGWiecejArrowRight />
-          </div>
-        </button> */}
-      </div>
-
+      </section>
       <CarouselPoziomy />
-
       <GodzinyOtwarciaKS />
-
       <Partnerzy />
       <CallButton />
     </div>

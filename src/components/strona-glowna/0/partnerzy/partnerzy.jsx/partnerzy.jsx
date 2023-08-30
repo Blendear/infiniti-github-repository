@@ -3,19 +3,21 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import CarouselPartnerzy from "../../7-carousel-partnerzy/CarouselPartnerzy";
 const Partnerzy = () => {
   return (
-    <div className={styles["layout__strona-glowna__cala-strona__partnerzy"]}>
-      <div
+    <section
+      className={styles["layout__strona-glowna__cala-strona__partnerzy"]}
+    >
+      <h6
         className={
           styles["layout__strona-glowna__cala-strona__partnerzy--tytul-tekst"]
         }
       >
         PARTNERZY
-      </div>
-      <div
+      </h6>
+      <span
         className={
           styles["layout__strona-glowna__cala-strona__partnerzy--tytul-linia"]
         }
-      ></div>
+      ></span>
       <div
         className={
           styles["layout__strona-glowna__cala-strona__partnerzy--carousel"]
@@ -23,7 +25,7 @@ const Partnerzy = () => {
       >
         <CarouselPartnerzy />
       </div>
-    </div>
+    </section>
   );
 };
 export default Partnerzy;

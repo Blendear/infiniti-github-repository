@@ -170,6 +170,7 @@
               [c-2] 1fr
               [c-3];
             grid-auto-flow: column;
+            list-style: none;
             @media (orientation: landscape) {
               justify-self: center;
               grid-template-rows:

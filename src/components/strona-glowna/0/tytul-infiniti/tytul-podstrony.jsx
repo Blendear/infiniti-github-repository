@@ -8,11 +8,11 @@ const TytulINFINITI = (props) => {
         <SVGTytulINFINITI />
       </div>
 
-      <div
+      <h1
         className={styles["layout__strona-glowna__cala-strona__tytul--tekst"]}
       >
         CENTRUM ZDROWIA
-      </div>
+      </h1>
     </div>
   );
 };

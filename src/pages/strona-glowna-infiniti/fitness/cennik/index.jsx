@@ -75,7 +75,9 @@ const FitnessCennik = () => {
           <a target="_blank">KUP KARNET</a>
         </Link>
       </button>
-      <div className={styles["layout__fitness-cennik__cala-strona__cennik"]}>
+      <article
+        className={styles["layout__fitness-cennik__cala-strona__cennik"]}
+      >
         <Link
           // target="_blank"
           download
@@ -95,7 +97,7 @@ const FitnessCennik = () => {
             />
           </a>
         </Link>
-      </div>
+      </article>
     </div>
   );
 };

@@ -292,6 +292,7 @@ $rozmiar-column-siatka-btn: 1fr;
           margin: 2% 0 0 0;
           // align-self: center;
           justify-self: center;
+          font-weight: normal;
           font-size: 3.8vw;
           filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           @media (orientation: landscape) {
@@ -329,6 +330,7 @@ $rozmiar-column-siatka-btn: 1fr;
         }
       }
       &__lista-co-tu-znajdziesz {
+        list-style-type: none;
         grid-row: r-5 / r-6;
         grid-column: c-1 / c-12;
 
@@ -662,7 +664,7 @@ $rozmiar-column-siatka-btn: 1fr;
           justify-self: center;
           margin: 4rem 0 3rem 0;
           font-size: 4.5vw;
-          // font-weight: bold;
+          font-weight: normal;
 
           @media (orientation: landscape) {
             grid-row: r-1 / r-3;
@@ -937,6 +939,7 @@ $rozmiar-column-siatka-btn: 1fr;
           grid-column: c-1 / c-7;
 
           font-size: 3.5vw;
+          font-weight: normal;
           text-align: center;
           margin: 10vw 2vw 0 2vw;
           // justify-self: center;
@@ -1548,6 +1551,7 @@ $rozmiar-column-siatka-btn: 1fr;
           justify-self: center;
 
           font-size: 5vw;
+          font-weight: normal;
           @media (orientation: landscape) {
             font-size: 2vw;
             margin: 0 0 0 0;
@@ -1970,6 +1974,7 @@ $rozmiar-column-siatka-btn: 1fr;
           margin: 7vw 0 0 0;
           color: infiniti-variables.$dark-blue;
           font-size: 5vw;
+          font-weight: normal;
           justify-self: center;
 
           @media (orientation: landscape) {

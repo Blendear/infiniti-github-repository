@@ -63,7 +63,9 @@ const OsobaKonkretna = (props) => {
 
           <TfiEmail size="2rem" color="#22c1c3" />
         );
-        socialeTejOsoby.push(<p>{props.daneOOsobie.socialMediaLinks.email}</p>);
+        socialeTejOsoby.push(
+          <address>{props.daneOOsobie.socialMediaLinks.email}</address>
+        );
         break;
       default:
         break;
@@ -82,7 +84,7 @@ const OsobaKonkretna = (props) => {
   // svg
   //z linkiem adkewtnym
   return (
-    <div
+    <li
       className={
         styles[
           "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container"
@@ -108,7 +110,7 @@ const OsobaKonkretna = (props) => {
           loading="eager"
         />
       </div>
-      <div
+      <h3
         className={
           styles[
             "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--imie-i-nazwisko"
@@ -116,8 +118,8 @@ const OsobaKonkretna = (props) => {
         }
       >
         {`${props.daneOOsobie.name} ${props.daneOOsobie.nazwisko}`}
-      </div>
-      <div
+      </h3>
+      <h4
         className={
           styles[
             "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--rola-dokladna"
@@ -125,7 +127,7 @@ const OsobaKonkretna = (props) => {
         }
       >
         {props.daneOOsobie.funkcja}
-      </div>
+      </h4>
 
       <div
         className={
@@ -139,7 +141,7 @@ const OsobaKonkretna = (props) => {
         {/* {props.daneOOsobie.opis} */}
       </div>
 
-      <div
+      <ul
         className={
           2 > 1 === true
             ? styles[
@@ -148,7 +150,7 @@ const OsobaKonkretna = (props) => {
             : styles["menu-modal__closed-variant"]
         }
       >
-        <div
+        <li
           className={
             styles[
               "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--sociale--svg-konkretny"
@@ -156,9 +158,9 @@ const OsobaKonkretna = (props) => {
           }
         >
           {socialeTejOsoby}
-        </div>
-      </div>
-    </div>
+        </li>
+      </ul>
+    </li>
   );
 };
 export default OsobaKonkretna;

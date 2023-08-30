@@ -61,7 +61,7 @@ const FitnessKadra = () => {
           styles["layout__fitness-kadra__cala-strona__tlo-calej-strony"]
         }
       ></div>
-      <div className={styles["layout__fitness-kadra__cala-strona__lista-rol"]}>
+      <ul className={styles["layout__fitness-kadra__cala-strona__lista-rol"]}>
         <RolaRozdzial
           rola={kadraFitnessDataArray.manager}
           nazwaRoli="MANAGER"
@@ -74,7 +74,7 @@ const FitnessKadra = () => {
           rola={kadraFitnessDataArray.trenerzy}
           nazwaRoli="TRENERZY"
         />
-      </div>
+      </ul>
     </div>
   );
 };

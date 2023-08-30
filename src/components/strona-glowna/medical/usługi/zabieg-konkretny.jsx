@@ -27,14 +27,14 @@ const ZabiegKonkretny = (props) => {
   };
 
   return (
-    <div
+    <li
       className={
         styles[
           "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container"
         ]
       }
     >
-      <div
+      <span
         //hook1 - trap1 - jesli cos ma byc buittonem, DAJ TEMU OSOBNY PARENT ELEMENT, inaczjer jak tutaj, musialem stworzyc 3 onlicki, co nie jest optymlane
         onClick={handlerToggleIsAktywny}
         className={
@@ -42,9 +42,9 @@ const ZabiegKonkretny = (props) => {
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--tytul-ikona-i-klocek-gradientowy"
           ]
         }
-      ></div>
+      ></span>
 
-      <div
+      <span
         onClick={handlerToggleIsAktywny}
         className={
           styles[
@@ -53,8 +53,8 @@ const ZabiegKonkretny = (props) => {
         }
       >
         {props.svgComponent}
-      </div>
-      <div
+      </span>
+      <h3
         onClick={handlerToggleIsAktywny}
         className={
           styles[
@@ -63,9 +63,9 @@ const ZabiegKonkretny = (props) => {
         }
       >
         {props.tytulZAbiegu}
-      </div>
+      </h3>
       {props.isNowoscIMaFoty && (
-        <div
+        <h6
           className={
             styles[
               "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--nowosc"
@@ -74,17 +74,17 @@ const ZabiegKonkretny = (props) => {
         >
           {/* {props.isNowoscIMaZnaczek} */}
           NOWOŚĆ
-        </div>
+        </h6>
       )}
-      <div
+      <span
         className={
           styles[
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container--linia-boczna"
           ]
         }
-      ></div>
+      ></span>
 
-      <div
+      <ul
         className={
           isAktywnyBoolean === true
             ? styles[
@@ -127,9 +127,9 @@ const ZabiegKonkretny = (props) => {
           tytul="PRZECIWSKAZANIA"
           svgIcon={<TiFlag />}
         />
-      </div>
+      </ul>
       {/* {props.isRozwiniety !== true && <div style={{ color: "white" }}>I</div>} */}
-    </div>
+    </li>
   );
 };
 export default ZabiegKonkretny;

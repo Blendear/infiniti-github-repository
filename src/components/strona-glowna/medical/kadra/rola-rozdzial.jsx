@@ -27,21 +27,21 @@ const RolaRozdzial = (props) => {
   // console.log(osobyOTejRoli);
 
   return (
-    <div
+    <li
       className={
         styles[
           "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container"
         ]
       }
     >
-      <div
+      <span
         className={
           styles[
             "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--tytul-ikona-i-klocek-gradientowy"
           ]
         }
-      ></div>
-      <div
+      ></span>
+      <h2
         className={
           styles[
             "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--tytul-nazwa"
@@ -49,15 +49,15 @@ const RolaRozdzial = (props) => {
         }
       >
         {props.nazwaRoli}
-      </div>
-      <div
+      </h2>
+      <span
         className={
           styles[
             "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container--linia-boczna"
           ]
         }
-      ></div>
-      <div
+      ></span>
+      <ul
         className={
           2 > 1 === true
             ? styles[
@@ -67,8 +67,8 @@ const RolaRozdzial = (props) => {
         }
       >
         {osobyOTejRoli}
-      </div>
-    </div>
+      </ul>
+    </li>
   );
 };
 export default RolaRozdzial;

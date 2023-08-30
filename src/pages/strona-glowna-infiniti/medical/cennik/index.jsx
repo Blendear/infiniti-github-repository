@@ -61,7 +61,9 @@ const MedicalCennik = () => {
           styles["layout__medical-cennik__cala-strona__tlo-calej-strony"]
         }
       ></div>
-      <div className={styles["layout__medical-cennik__cala-strona__cennik-1"]}>
+      <article
+        className={styles["layout__medical-cennik__cala-strona__cennik-1"]}
+      >
         <Link
           // target="_blank"
           download
@@ -80,8 +82,10 @@ const MedicalCennik = () => {
             />
           </a>
         </Link>
-      </div>
-      <div className={styles["layout__medical-cennik__cala-strona__cennik-2"]}>
+      </article>
+      <article
+        className={styles["layout__medical-cennik__cala-strona__cennik-2"]}
+      >
         <Link
           // target="_blank"
           download
@@ -100,7 +104,7 @@ const MedicalCennik = () => {
             />
           </a>
         </Link>
-      </div>
+      </article>
     </div>
   );
 };

@@ -105,7 +105,7 @@ const StronaKontakt = () => {
           loading="eager"
         />
       </div>
-      <div
+      <h2
         className={
           styles[
             "layout__infiniti-kontakt__cala-strona__mapa-dojazdu--tytul-nad-nia"
@@ -113,7 +113,7 @@ const StronaKontakt = () => {
         }
       >
         JESTEŚMY TUTAJ
-      </div>
+      </h2>
       <Link href="https://www.google.com/maps/place/INFINITI+Fitness+Club/@50.3508843,18.2200421,13z/data=!4m6!3m5!1s0x471111114b0862d9:0x44dc6b5ec4767732!8m2!3d50.3516512!4d18.2348049!16s%2Fg%2F12hptkp8w?hl=pl">
         <a
           className={
@@ -131,7 +131,7 @@ const StronaKontakt = () => {
         </a>
       </Link>
 
-      <div
+      <ul
         className={
           styles[
             "layout__infiniti-kontakt__cala-strona__dane-kontaktowe-container"
@@ -277,7 +277,7 @@ const StronaKontakt = () => {
             info@infiniti-fit.pl
           </a>
         </address>
-      </div>
+      </ul>
       <div></div>
     </div>
   );

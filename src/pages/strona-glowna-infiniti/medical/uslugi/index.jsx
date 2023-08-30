@@ -79,7 +79,7 @@ const MedicalUslugi = () => {
         }
       ></div>
 
-      <div
+      <h2
         className={
           styles[
             "layout__medical-uslugi__cala-strona__opis-korzystania-ze-strony"
@@ -88,8 +88,8 @@ const MedicalUslugi = () => {
       >
         WYBIERZ <strong>ZABIEG</strong> & <strong>SZCZEGÓŁY</strong>, KTÓRE CIĘ
         INTERESUJĄ
-      </div>
-      <div
+      </h2>
+      <ul
         className={
           styles["layout__medical-uslugi__cala-strona__lista-zabiegow"]
         }
@@ -131,8 +131,6 @@ const MedicalUslugi = () => {
               <li>kolana biegacza</li>
               <li>zespołu ciasnoty międzypowięziowej</li>
               <li>ostrogi piętowej (hallux)</li>
-              <li></li>
-              <li></li>
               <br />
               <strong>Medycyna estetyczna:</strong>
               <li>celulitu</li>
@@ -919,7 +917,7 @@ const MedicalUslugi = () => {
           tytulZAbiegu="POLE MAGNETYCZNE"
           svgComponent={<SVGMagnet mojKolor={kolorSVG} />}
         />
-      </div>
+      </ul>
     </div>
   );
 };

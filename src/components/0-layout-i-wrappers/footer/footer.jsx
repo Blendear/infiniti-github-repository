@@ -46,42 +46,42 @@ const Footer = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <div className={styles["footer__honorowane-karty"]}>
-        <div className={styles["footer__honorowane-karty--tytul"]}>
+      <ul className={styles["footer__honorowane-karty"]}>
+        <li className={styles["footer__honorowane-karty--tytul"]}>
           <BsCardChecklist color="white" />
           <div>HONOROWANE KARTY</div>
-        </div>
-        <div className={styles["footer__honorowane-karty--karta"]}>
+        </li>
+        <li className={styles["footer__honorowane-karty--karta"]}>
           <BsCircle color="white" />
           <div>LUX MED</div>
-        </div>
-        <div className={styles["footer__honorowane-karty--karta"]}>
+        </li>
+        <li className={styles["footer__honorowane-karty--karta"]}>
           <BsCircle color="white" />
           <div>Multisport</div>
-        </div>
-        <div className={styles["footer__honorowane-karty--karta"]}>
+        </li>
+        <li className={styles["footer__honorowane-karty--karta"]}>
           <BsCircle color="white" />
           <div>FitProfit</div>
-        </div>
-        <div className={styles["footer__honorowane-karty--karta"]}>
+        </li>
+        <li className={styles["footer__honorowane-karty--karta"]}>
           <BsCircle color="white" />
           <div>Medicover Sport</div>
-        </div>
-        <div className={styles["footer__honorowane-karty--karta"]}>
+        </li>
+        <li className={styles["footer__honorowane-karty--karta"]}>
           <BsCircle color="white" />
           <div>PZU Sport</div>
-        </div>
-        <div className={styles["footer__honorowane-karty--karta"]}>
+        </li>
+        <li className={styles["footer__honorowane-karty--karta"]}>
           <BsCircle color="white" />
           <div>Gymsteer</div>
-        </div>
-      </div>
-      <div className={styles["footer__dokumenty"]}>
-        <div className={styles["footer__dokumenty--tytul"]}>
+        </li>
+      </ul>
+      <ul className={styles["footer__dokumenty"]}>
+        <li className={styles["footer__dokumenty--tytul"]}>
           <CgFileDocument />
           <div>DOKUMENTY</div>
-        </div>
-        <div className={styles["footer__dokumenty--karta"]}>
+        </li>
+        <li className={styles["footer__dokumenty--karta"]}>
           <AiOutlineBorder color="white" />
           <Link
             download
@@ -89,8 +89,8 @@ const Footer = () => {
           >
             <a target="_blank">Regulamin INFINITI</a>
           </Link>
-        </div>
-        <div className={styles["footer__dokumenty--karta"]}>
+        </li>
+        <li className={styles["footer__dokumenty--karta"]}>
           <AiOutlineBorder color="white" />
           <Link
             download
@@ -98,8 +98,8 @@ const Footer = () => {
           >
             <a target="_blank">Polityka prywatności</a>
           </Link>
-        </div>
-        <div className={styles["footer__dokumenty--karta"]}>
+        </li>
+        <li className={styles["footer__dokumenty--karta"]}>
           <AiOutlineBorder color="white" />
           <Link
             download
@@ -107,8 +107,8 @@ const Footer = () => {
           >
             <a target="_blank">Zgoda nieletniego</a>
           </Link>
-        </div>
-        <div className={styles["footer__dokumenty--karta"]}>
+        </li>
+        <li className={styles["footer__dokumenty--karta"]}>
           <AiOutlineBorder color="white" />
           <Link
             download
@@ -116,13 +116,13 @@ const Footer = () => {
           >
             <a target="_blank">Wzór odstąpienia od umowy</a>
           </Link>
-        </div>
-      </div>
-      <div className={styles["footer__kontakt"]}>
-        <div className={styles["footer__kontakt--tytul"]}>
+        </li>
+      </ul>
+      <ul className={styles["footer__kontakt"]}>
+        <li className={styles["footer__kontakt--tytul"]}>
           <VscCommentDiscussion color="white" />
           <div>WIĘCEJ O NAS</div>
-        </div>
+        </li>
         <a href="tel:+48884848808" className={styles["footer__kontakt--karta"]}>
           <div>{"(+48) 88 48 48 808"}</div>
         </a>
@@ -131,11 +131,9 @@ const Footer = () => {
           href="mailto:info@infiniti-fit.pl"
           className={styles["footer__kontakt--karta"]}
         >
-          {/* <HiOutlineMail color="white" /> */}
-          {/* <div></div> */}
           info@infiniti-fit.pl{" "}
         </a>
-        <div className={styles["footer__kontakt--sociale"]}>
+        <ul className={styles["footer__kontakt--sociale"]}>
           <Link href="https://www.facebook.com/fitness.club.INFINITI">
             <a>
               <SlSocialFacebook />
@@ -151,8 +149,8 @@ const Footer = () => {
               <AiOutlineInstagram />
             </a>
           </Link>
-        </div>
-      </div>
+        </ul>
+      </ul>
       <div className={styles["footer__copyright"]}>© 2023 - INFINITI</div>
       <div className={styles["footer__link-do-tworcow"]}>
         Images and icons by Tobias Cibis & vextok, macrovectora and

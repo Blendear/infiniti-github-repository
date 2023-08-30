@@ -62,7 +62,7 @@ const MedicalKadra = () => {
           styles["layout__medical-kadra__cala-strona__tlo-calej-strony"]
         }
       ></div>
-      <div className={styles["layout__medical-kadra__cala-strona__lista-rol"]}>
+      <ul className={styles["layout__medical-kadra__cala-strona__lista-rol"]}>
         <RolaRozdzial
           rola={kadraMedicalDataArray.fizjoterapeuci}
           nazwaRoli="FIZJOTERAPEUCI"
@@ -73,7 +73,7 @@ const MedicalKadra = () => {
         />
         {/* <RolaRozdzial props={kadraMedicalDataArray.trenerzy} /> */}
         {/* <RolaRozdzial /> */}
-      </div>
+      </ul>
     </div>
   );
 };

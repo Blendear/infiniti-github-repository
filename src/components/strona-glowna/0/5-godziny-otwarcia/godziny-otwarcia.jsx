@@ -6,10 +6,10 @@ import SVGOtoczkaGodzinOtwarciaGora from "./svg-obramowka-gora";
 
 const GodzinyOtwarciaKS = () => {
   return (
-    <div
+    <section
       className={styles["layout__strona-glowna__cala-strona__godziny-otwarcia"]}
     >
-      <div
+      <h5
         className={
           styles[
             "layout__strona-glowna__cala-strona__godziny-otwarcia--tekst-tytulowy"
@@ -17,15 +17,15 @@ const GodzinyOtwarciaKS = () => {
         }
       >
         GODZINY OTWARCIA
-      </div>
+      </h5>
 
-      <div
+      <span
         className={
           styles[
             "layout__strona-glowna__cala-strona__godziny-otwarcia--podkreslnik"
           ]
         }
-      ></div>
+      ></span>
       <div
         className={
           styles[
@@ -263,7 +263,7 @@ const GodzinyOtwarciaKS = () => {
       >
         <strong>NIEDZIELA</strong> <br /> 11:00 - 17:00
       </div>
-      <div
+      <p
         className={
           styles[
             "layout__strona-glowna__cala-strona__godziny-otwarcia--dopisek-z-gwiazdka-na-dole"
@@ -271,8 +271,8 @@ const GodzinyOtwarciaKS = () => {
         }
       >
         * Sauna włączana na życzenie klienta
-      </div>
-    </div>
+      </p>
+    </section>
   );
 };
 export default GodzinyOtwarciaKS;

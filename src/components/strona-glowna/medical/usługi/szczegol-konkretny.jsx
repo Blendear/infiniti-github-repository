@@ -20,7 +20,7 @@ const SzczegolKonkretny = (props) => {
   };
 
   return (
-    <div
+    <li
       onClick={handlerToggleIsAktywny}
       className={
         styles[
@@ -28,7 +28,7 @@ const SzczegolKonkretny = (props) => {
         ]
       }
     >
-      <div
+      <span
         className={
           styles[
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--klocek"
@@ -36,8 +36,8 @@ const SzczegolKonkretny = (props) => {
         }
       >
         {/* klocek */}
-      </div>
-      <div
+      </span>
+      <span
         className={
           styles[
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--svg"
@@ -45,8 +45,8 @@ const SzczegolKonkretny = (props) => {
         }
       >
         {props.svgIcon}
-      </div>
-      <div
+      </span>
+      <h4
         className={
           styles[
             "layout__medical-uslugi__cala-strona__lista-zabiegow__konkretny-zabieg-container__lista-szczegolow-danego-zabiegu-container__konkretny-szczegol-container--tytul"
@@ -54,7 +54,7 @@ const SzczegolKonkretny = (props) => {
         }
       >
         {props.tytul}
-      </div>
+      </h4>
 
       {props.isNowoscIMaFoty ? (
         <div
@@ -139,7 +139,7 @@ const SzczegolKonkretny = (props) => {
       >
         {props.tresc}
       </div> */}
-    </div>
+    </li>
   );
 };
 export default SzczegolKonkretny;
