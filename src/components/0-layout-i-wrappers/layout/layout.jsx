@@ -12,7 +12,6 @@ export default function Layout({ children }) {
       <Navbar />
 
       <main>{children}</main>
-      {/* //protip1 - \/ condiitonally rendered footer, based on current pathname */}
       {showFooter && <Footer />}
     </div>
   );

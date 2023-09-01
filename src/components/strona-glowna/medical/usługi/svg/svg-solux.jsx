@@ -6,7 +6,6 @@ const SVGSolux = (props) => {
   // xlink:href     zamień na    xlinkHref
   //
 
-  //hook1 - protip1 - MAM SPOSOB NA DYNAMICZNE KOLORY SVG \/ - PODAJESZ "FILL" OR INNE PROPERTY POPRZEZ PROPS
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

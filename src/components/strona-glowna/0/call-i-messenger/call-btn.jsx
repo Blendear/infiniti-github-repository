@@ -15,7 +15,6 @@ const CallButton = (props) => {
       </a>
 
       <a
-        // trap1 - links - zewnetrzne sytrony = MUSISZ DAC HTTPS na start, inaczej bedzie probwac odalic URL jako sufix twojej strony , wiec nie zadzial
         href="https://m.me/182436331865457"
         className={styles["layout__strona-glowna__messenger-btn"]}
       >

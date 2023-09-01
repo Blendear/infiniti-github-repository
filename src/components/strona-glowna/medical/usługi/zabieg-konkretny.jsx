@@ -35,7 +35,6 @@ const ZabiegKonkretny = (props) => {
       }
     >
       <span
-        //hook1 - trap1 - jesli cos ma byc buittonem, DAJ TEMU OSOBNY PARENT ELEMENT, inaczjer jak tutaj, musialem stworzyc 3 onlicki, co nie jest optymlane
         onClick={handlerToggleIsAktywny}
         className={
           styles[

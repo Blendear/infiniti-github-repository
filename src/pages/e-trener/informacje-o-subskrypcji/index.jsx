@@ -10,7 +10,7 @@ import {
 } from "../../../features/e-trener";
 import ReactTyped from "react-typed";
 import { useUser } from "@auth0/nextjs-auth0/client";
-import { WitaczImiennyZLinkami } from "../../../features/e-trener"; //trap1 - when importing from index.js universalfile, musisz wrappnac imporotwane cusiek w {}, inaczej wywali importing error
+import { WitaczImiennyZLinkami } from "../../../features/e-trener";
 import dynamic from "next/dynamic";
 const InfoOSubskrypcji = () => {
   const { user, isLoading } = useUser();
@@ -64,9 +64,9 @@ const InfoOSubskrypcji = () => {
     </>
   );
 };
-// export default ;
+
 export default dynamic(() => Promise.resolve(InfoOSubskrypcji), {
-  ssr: false, //protip1 - sweet for trap1 hydration failed errors. just force everything to render lcienjtisde
+  ssr: false,
 });
 //
 //~~ _. Rozpiska (+ filmik, w przyszłości), z wyjaśnieniem jaką zawartość daje subskrypcja

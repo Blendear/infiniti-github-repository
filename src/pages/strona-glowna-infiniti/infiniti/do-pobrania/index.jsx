@@ -199,19 +199,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/jpg.jpg"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/jpg.png`}
                 alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
-                // height={200}
-                // width={200}
                 layout="fill"
                 objectFit="contain"
                 quality={20}
@@ -231,7 +225,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/png.png"
           >
             <a target="_blank">
@@ -258,7 +251,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/pdf.pdf"
           >
             <a target="_blank">
@@ -285,7 +277,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/eps.zip"
           >
             <a target="_blank">
@@ -332,7 +323,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/jpg.jpg"
           >
             <a target="_blank">
@@ -361,7 +351,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/png.png"
           >
             <a target="_blank">
@@ -388,7 +377,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/pdf.pdf"
           >
             <a target="_blank">
@@ -415,7 +403,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/eps.zip"
           >
             <a target="_blank">
@@ -461,7 +448,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/jpg.jpg"
           >
             <a target="_blank">
@@ -491,7 +477,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/png.png"
           >
             <a target="_blank">
@@ -518,7 +503,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/pdf.pdf"
           >
             <a target="_blank">
@@ -545,7 +529,6 @@ const DoPobrania = () => {
           <Link
             // target="_blank"
             download
-            //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/eps.zip"
           >
             <a target="_blank">

@@ -1,7 +1,7 @@
 // hook1 - use LIVE version api key later on
 
 const stripeGetUserInfo = async (req, res) => {
-  // console.log("req.query", req.query.userEmail); //protip1 - MOŻNA zyskać dostęp do query stringa nawet w api routesach, nie tylko w react components. & protip1 - consolelognij sobie czxasem "req" - ma potezne properties, jak np. to "query" ze slugami, o ile zrobiles dynamiczne api route, które to "query" zapełni
+  // console.log("req.query", req.query.userEmail);
   const stripe = require("stripe")(`${process.env.STRIPE_API_SECRET_KEY_TEST}`);
   //hook1 WILL IT ALSO WORK FOR A DOPIERO CO SYTWORZONY USER? CZY POTRZEBUJ ETO TROCHE, ŻEBY ZADZIAŁAÓŁ?
 

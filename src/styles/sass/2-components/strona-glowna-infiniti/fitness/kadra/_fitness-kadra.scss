@@ -223,7 +223,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             @media (orientation: landscape) {
               margin: 0.5vw 0 0.5vw 0;
               margin-right: 7rem;
-              //trap1 -
+
               grid-auto-flow: row;
               // grid-template-rows: repeat(10, minmax(0rem, max-content));
               grid-template-columns: repeat(3, 1fr);

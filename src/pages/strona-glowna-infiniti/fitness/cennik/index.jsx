@@ -81,7 +81,6 @@ const FitnessCennik = () => {
         <Link
           // target="_blank"
           download
-          //trap1 - MUSI BYĆ href \/ bez "/public/....", next js to zaklada na start
           href="/images/.dedykowane-do-strony-konkretnej/fitness/cennik/cennik-fitness.png"
         >
           <a target="_blank">

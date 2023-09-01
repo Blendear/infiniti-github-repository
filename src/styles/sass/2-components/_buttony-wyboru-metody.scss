@@ -64,8 +64,7 @@
         grid-auto-flow: row;
         align-items: center;
         justify-items: center;
-        row-gap: variables.$content-content-gap * 0.5; //protip1 / hook1 - legitny sposób zapobiegania pisanai zbednych, kolejnych variables? Po prostu mnożyć już istniejące, lekko tylko inne?
-        grid-template-rows: 1fr 1fr;
+        row-gap: variables.$content-content-gap * 0.5;
       }
 
       & svg {
@@ -73,7 +72,6 @@
       }
 
       &--active {
-        //trap1 - lepiej zawsze rob osobny class tne pod "disabled", zeby nie bawoic sie w usuwanie class defualtowych, a tylko bawic sie w dodawanie klas
         border-style: none;
         border-color: none;
         @include mixins.gradient-cross-browser(
@@ -82,7 +80,6 @@
           colors.$etrener-gradient-secondary-A,
           colors.$etrener-gradient-secondary-B
         );
-        //hook2 - zarówno te buttony, jak i buttony wylogownia, mają te same dwa warianty. warto by top przerobic w osobny mixin uniwersalny imo
         & h3,
         svg {
           color: colors.$primary;

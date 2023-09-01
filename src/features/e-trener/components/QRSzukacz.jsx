@@ -42,7 +42,7 @@ const QRSzukacz = () => {
     </section>
   );
 };
-// trap1 - NECESSARY to load this page dynamically, because the used QR library wont work server-side (SSR)
+// NECESSARY to load this page dynamically, because the used QR library wont work server-side (SSR)
 export default dynamic(() => Promise.resolve(QRSzukacz), {
   ssr: false,
 });

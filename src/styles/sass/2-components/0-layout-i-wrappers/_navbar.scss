@@ -88,7 +88,7 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
       width: 100%;
       height: 100%;
       // _______________________________ Stylizacja - Self _______________________________
-      font-size: 6.2vw; //trap1 - svg === FONT SIZE, nie widthem rozmiar określasz   &   rozmiar koniecznie classą zrob, nie inline styleami. bo szukasz pozniej 2 godiznydlaczego classa jest nadpisywana
+      font-size: 6.2vw;
 
       @include my-media-query("min", 25em) {
         font-size: min(7vw, 3.5rem);

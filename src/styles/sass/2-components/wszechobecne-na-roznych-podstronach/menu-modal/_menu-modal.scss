@@ -207,7 +207,7 @@ $rozmiar-rowa: minmax(0vw, 20vw);
           grid-template-rows:
             [r-1] max-content
             [r-2];
-          margin: 0 0 0 0; //trap1 - "none" nie zawsze dziala. bezpieczniej uzyc value typowej dla properties, np ."0 0 0 0"
+          margin: 0 0 0 0;
           width: 100%;
         }
       }

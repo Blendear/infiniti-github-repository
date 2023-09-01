@@ -313,8 +313,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 height: 2.5rem;
                 width: 19rem;
                 z-index: -5;
-                //protip1 - repsonsiveness - ZAWSZE okresl width i height, chocby height wyliczane z aspect ratio
-                //trap1- I NIE % OR VW, tylko rem. aspekty wizualne, niefontowe, moge vw, jeśli już potrzeba. Ale tedy min or max używam
+
                 background: infiniti-variables.$aktywny-fiolet;
                 background: -moz-linear-gradient(
                   90deg,

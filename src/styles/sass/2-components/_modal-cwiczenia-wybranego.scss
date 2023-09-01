@@ -11,8 +11,6 @@
   }
 
   @media (orientation: landscape) {
-    // grid-auto-flow: column;
-    // margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, max-content);
     column-gap: 3rem;
@@ -79,10 +77,9 @@
       @include mixins.grid-with-justify-align-items;
       grid-template-columns: repeat(2, max-content);
       row-gap: variables.$content-content-gap-md;
-      column-gap: variables.$content-content-gap-md * 1.25; //protip1 - a template for laying out grids would be nice. i constantly use row gaps etc.
+      column-gap: variables.$content-content-gap-md * 1.25;
 
       @media (orientation: landscape) {
-        // grid-template-columns: repeat(3, max-content);
         padding: 2rem;
         grid-auto-rows: max-content;
         width: max-content;
@@ -93,13 +90,11 @@
         row-gap: variables.$content-content-gap-md;
 
         &__fota {
-          // @include mixins.animated-loader-bg();
           opacity: 100;
 
           position: relative;
           width: 8rem;
           aspect-ratio: 1.1/1;
-          //   border: variables.$border-width-micro solid colors.$secondary;
         }
         &__nazwa {
           padding: variables.$content-content-gap;
