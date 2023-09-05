@@ -1,11 +1,11 @@
 export const kadraFitnessDataArray = {
   manager: [
     {
-      nazwisko: "Bich",
+      nazwisko: "Liminowicz",
       name: "Marta",
-      opis: "roots in a piece of classical Latin literature Sydney College in Virginia, looked up one of the more obscus of G",
+      opis: "testowy opis",
       funkcja: "Manager Klubu",
-      fotoPathKoncowka: "bich-marta",
+      fotoPathKoncowka: "liminowicz-marta",
       socialMediaLinks: { email: "manager@infiniti-fit.pl" },
     },
   ],
