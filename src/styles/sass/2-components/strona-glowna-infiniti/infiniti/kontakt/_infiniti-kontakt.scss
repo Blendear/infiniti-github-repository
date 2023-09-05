@@ -291,8 +291,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
             [c-3];
 
           align-items: center;
-
-          margin: 2.5vw 0 3vw 0;
+          row-gap: 5rem;
+          margin: 6vw 0 3vw 0;
 
           // font-size: 3.5vw;
         }
