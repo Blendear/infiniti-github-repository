@@ -168,8 +168,10 @@ const StronaKontakt = () => {
               ]
             }
           >
-            <strong>INFINITI Fitness Club</strong>
+            <strong>INFINITI Sp. z o.o.</strong>
             <br /> Al. Jana Pawła II 58, 47-232, Kędzierzyn-Koźle
+            <br /> KRS: 0001055358 <br /> NIP: 7492022079
+            <br /> REGON: 160144717
           </div>
         </address>
         <div

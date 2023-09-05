@@ -255,6 +255,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
         grid-row: r-6 / r-7;
         grid-column: c-1 / c-12;
 
+        margin: 2rem 0 0 0;
         display: grid;
 
         grid-template-rows:
@@ -291,7 +292,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
 
           align-items: center;
 
-          margin: 1vw 0 3vw 0;
+          margin: 2.5vw 0 3vw 0;
 
           // font-size: 3.5vw;
         }
