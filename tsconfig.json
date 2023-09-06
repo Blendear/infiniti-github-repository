@@ -3,7 +3,6 @@
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext", "ES6"],
     "outDir": "./dist",
-    // "noEmit": true,
     "removeComments": true,
     "noEmitOnError": true,
     "sourceMap": true,
