@@ -9,6 +9,7 @@ const nextConfig = {
         source: "/",
         destination: "/strona-glowna-infiniti",
         permanent: true,
+        // hook2 - check what the global conventions say about giving a slug to the the homepage URL
       },
     ];
   },
