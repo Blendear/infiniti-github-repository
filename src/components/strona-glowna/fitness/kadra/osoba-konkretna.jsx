@@ -101,9 +101,7 @@ const OsobaKonkretna = (props) => {
       >
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/fitness/kadra/${props.daneOOsobie.fotoPathKoncowka}.png`}
-          alt={`nie pyklo zdjecie`}
-          // height={200}
-          // width={100}
+          alt={`Zdjęcie pracownika - ${props.daneOOsobie.name} ${props.daneOOsobie.nazwisko}`}
           layout="fill"
           objectFit="contain"
           quality={50}

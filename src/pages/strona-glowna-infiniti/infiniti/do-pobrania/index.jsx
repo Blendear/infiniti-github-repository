@@ -182,9 +182,7 @@ const DoPobrania = () => {
         >
           <Image
             src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-INFINITI.jpg`}
-            alt={`nie pyklo zdjecie`}
-            // height={200}
-            // width={100}
+            alt={`Logo INFINITI`}
             layout="fill"
             objectFit="contain"
             priority
@@ -205,7 +203,7 @@ const DoPobrania = () => {
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/jpg.png`}
-                alt={`nie pyklo zdjecie`}
+                alt={`Obrazek oznaczający pobranie pliku JPG`}
                 layout="fill"
                 objectFit="contain"
                 quality={20}
@@ -223,16 +221,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/png.png"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/png.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku PNG`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -249,16 +244,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/pdf.pdf"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku PDF`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -275,16 +267,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/infiniti/eps.zip"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku EPS`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -303,9 +292,7 @@ const DoPobrania = () => {
         >
           <Image
             src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Medical.jpg`}
-            alt={`nie pyklo zdjecie`}
-            // height={200}
-            // width={100}
+            alt={`Logo INFINITI Medical`}
             layout="fill"
             objectFit="contain"
             quality={20}
@@ -328,11 +315,7 @@ const DoPobrania = () => {
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/jpg.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
-                // height={200}
-                // width={200}
+                alt={`Obrazek oznaczający pobranie pliku JPG`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -356,9 +339,7 @@ const DoPobrania = () => {
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/png.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku PNG`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -375,16 +356,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/pdf.pdf"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku PDF`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -401,16 +379,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/medical/eps.zip"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku EPS`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -429,9 +404,7 @@ const DoPobrania = () => {
         >
           <Image
             src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Fitness.jpg`}
-            alt={`nie pyklo zdjecie`}
-            // height={200}
-            // width={100}
+            alt={`Logo INFINITI Fitness`}
             layout="fill"
             objectFit="contain"
             priority
@@ -453,11 +426,7 @@ const DoPobrania = () => {
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/jpg.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
-                // height={200}
-                // width={200}
+                alt={`Obrazek oznaczający pobranie pliku JPG`}
                 layout="fill"
                 objectFit="contain"
                 quality={20}
@@ -475,16 +444,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/png.png"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/png.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku PNG`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -501,16 +467,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/pdf.pdf"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/pdf.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku PDF`}
                 layout="fill"
                 objectFit="contain"
                 priority
@@ -527,16 +490,13 @@ const DoPobrania = () => {
           }
         >
           <Link
-            // target="_blank"
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/logo/fitness/eps.zip"
           >
             <a target="_blank">
               <Image
                 src={`/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/ikony-wzorcowe/eps.png`}
-                alt={`nie pyklo zdjecie`}
-                // height={1004}
-                // width={2004}
+                alt={`Obrazek oznaczający pobranie pliku EPS`}
                 layout="fill"
                 objectFit="contain"
                 priority

@@ -626,9 +626,7 @@ const CarouselPoziomy = () => {
                   // onLoad={() => setLoading(true)}
                   // onLoadingComplete={() => setLoading(false)}
                   src={aktualnaFota.image}
-                  alt={`nie pyklo zdjecie`}
-                  // width={300}
-                  // height={300}
+                  alt={aktualnaFota.altText}
                   layout="fill"
                   objectFit="contain"
                   priority

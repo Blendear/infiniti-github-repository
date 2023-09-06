@@ -7,6 +7,7 @@ const SVGCoTuZnajdziesz1 = () => {
   //
   return (
     <svg
+      alt="Dwie skrzyżowane ze sobą rękawice bokserskie"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       id="egTuLqkUCFY1"

@@ -125,9 +125,7 @@ const CarouselPartnerzy = () => {
               >
                 <Image
                   src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${indexZdjeciaPierwszegoZTrzech}.png`}
-                  alt={`nie pyklo zdjecie`}
-                  // width={300}
-                  // height={300}
+                  alt={`Logo partnera klubu INFINITI`}
                   layout="fill"
                   objectFit="contain"
                 />
@@ -145,9 +143,7 @@ const CarouselPartnerzy = () => {
                     src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${
                       indexZdjeciaPierwszegoZTrzech + 1
                     }.png`}
-                    alt={`nie pyklo zdjecie`}
-                    // width={300}
-                    // height={300}
+                    alt={`Logo partnera klubu INFINITI`}
                     layout="fill"
                     objectFit="contain"
                   />
@@ -166,9 +162,7 @@ const CarouselPartnerzy = () => {
                     src={`/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/${
                       indexZdjeciaPierwszegoZTrzech + 2
                     }.png`}
-                    alt={`nie pyklo zdjecie`}
-                    // width={300}
-                    // height={300}
+                    alt={`Logo partnera klubu INFINITI`}
                     layout="fill"
                     objectFit="contain"
                   />

@@ -7,6 +7,7 @@ const SVGCoTuZnajdziesz8 = () => {
   //
   return (
     <svg
+      alt="Jabłko"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       id="eMk3RFNYQe21"

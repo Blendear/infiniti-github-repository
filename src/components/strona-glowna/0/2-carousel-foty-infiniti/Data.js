@@ -141,19 +141,23 @@ export const carouselData = [
     nazwaMiejsca: "crossfit-box",
     fotyTegoMiejsca: [crossfitBox1],
     wyswietlanaNazwa: "Crossfit Box",
+    altText:
+      "Pomarańczowy crossfit box, służacy do ogólnorozwojowego treningu Crossfit",
   },
 
   {
-    nazwaMiejsca: "kuznia-tytanow-1",
+    nazwaMiejsca: "kuznia-tytanow-2",
     fotyTegoMiejsca: [
       kuzniaTytanowPierwsza1,
       kuzniaTytanowPierwsza2,
       kuzniaTytanowPierwsza3,
     ],
-    wyswietlanaNazwa: "Duże Ciężary 1",
+    wyswietlanaNazwa: "Duże Ciężary 2",
+    altText:
+      "Podłużne pomieszczenie z tłumiącym podłożem, lustrami, dużymi ciężarami, sztangami, ławkami i osobami na nich ćwiczącymi",
   },
   {
-    nazwaMiejsca: "kuznia-tytanow-2",
+    nazwaMiejsca: "kuznia-tytanow-1",
     fotyTegoMiejsca: [
       kuzniaTytanowDruga1,
       kuzniaTytanowDruga2,
@@ -161,38 +165,50 @@ export const carouselData = [
       kuzniaTytanowDruga4,
       kuzniaTytanowDruga5,
     ],
-    wyswietlanaNazwa: "Duże Ciężary 2",
+    wyswietlanaNazwa: "Duże Ciężary 1",
+    altText:
+      "Pomieszczenie z tłumiącym podłożem, drabinkami, lustrami, ciężarami oraz osobami na nich ćwiczącymi",
   },
   {
     nazwaMiejsca: "mma",
     fotyTegoMiejsca: [mma1, mma2, mma3, mma4, mma5],
     wyswietlanaNazwa: "MMA",
+    altText:
+      "Obłożone czerwonymi i czarnymi matmai pomieszczenie do mieszanych sztuk walki (MMA), wraz z workami treningowymi oraz ringiem do walki wręcz",
   },
   {
     nazwaMiejsca: "szatnia-damska",
     fotyTegoMiejsca: [szatniaDamska1],
     wyswietlanaNazwa: "Szatnia Damska",
+    altText:
+      "Szatnia damskia z szafkami, ławkami, lustrem i przejściem do łazienki z prysznicami",
   },
   {
     nazwaMiejsca: "szatnia-meska",
     fotyTegoMiejsca: [szatniaMeska1],
     wyswietlanaNazwa: "Szatnia Męska",
+    altText:
+      "Szatnia męska z szafkami, ławkami, lustrem i przejściem do łazienki z prysznicami",
   },
   {
     nazwaMiejsca: "sauna",
     fotyTegoMiejsca: [sauna1],
     wyswietlanaNazwa: "Sauna",
+    altText: "Drewninana, dwupoziomowa sauna z ledowym oświetleniem",
   },
   // 0
   {
     nazwaMiejsca: "arkadia",
     fotyTegoMiejsca: [arkadia1, arkadia2, arkadia3, arkadia4, arkadia5],
     wyswietlanaNazwa: "Arkadia",
+    altText:
+      "Kolorowe pomieszczenia do zabaw dla dzieci oraz miejsce ze stolikami i fotelami dla dorosłych",
   },
   {
     nazwaMiejsca: "manager",
     fotyTegoMiejsca: [manager1],
     wyswietlanaNazwa: "Manager",
+    altText: "Przeszklone, otwarte biuro managera klubu",
   },
   {
     nazwaMiejsca: "fizjoterapia-1",
@@ -203,57 +219,77 @@ export const carouselData = [
       fizjoterapiaPierwsza4,
       fizjoterapiaPierwsza5,
     ],
-    wyswietlanaNazwa: "Fizjoterapia 1",
+    wyswietlanaNazwa: "Fizjoterapia",
+    altText:
+      "Fizjoterapeuta pomagający leżącemu pacjentowi z jego dolegliwościami. Wokół widać urządzenia do terapii oraz liczne certyfikaty.",
   },
   {
     nazwaMiejsca: "fizjoterapia-2",
     fotyTegoMiejsca: [renowacjaTemporaryInformacyjnaFota],
     wyswietlanaNazwa: "Fizjoterapia 2",
+    altText:
+      "Powiadomienie o renowacji oraz chwilowego braku zdjęć z tego powodu",
   },
   {
     nazwaMiejsca: "restauracja",
     fotyTegoMiejsca: [restauracja1, restauracja2, restauracja3],
     wyswietlanaNazwa: "Restauracja",
+    altText:
+      "Restauracja z dużymi oknami i widokiem na zewnątrz. Widać bar oraz stoliki wraz z krzesłami i kanapami.",
   },
   {
     nazwaMiejsca: "taras",
     fotyTegoMiejsca: [taras1],
     wyswietlanaNazwa: "Taras",
+    altText:
+      "Słoneczny, przestronny taras z widokiem na jezioro otoczone drzewami. Na tarasie są rosliny, stoliki i krzesła dla klientów.",
   },
   {
     nazwaMiejsca: "analiza-skladu-ciala",
     fotyTegoMiejsca: [analizaSkladuCiala1],
     wyswietlanaNazwa: "Analiza Składu Ciała",
+    altText:
+      "Pomieszczenie z biurkiem i krzesłami. Na ścianach widać zdjęcia oraz cytat.",
   },
   {
     nazwaMiejsca: "wodor",
     fotyTegoMiejsca: [wodor1],
     wyswietlanaNazwa: "Inhalacja Wodoru",
+    altText:
+      "Dwa fotele oraz przydząd do inhalacji wodoru po bokach stolika. Na przeciwko stoi telewizor i rośliny.",
   },
   {
     nazwaMiejsca: "la-ola",
     fotyTegoMiejsca: [laOla1, laOla2, laOla3],
     wyswietlanaNazwa: "La 'Ola",
+    altText:
+      "Salon kosmetyczny, z berzowo-różowo-biało paletą barw. W jednym pomieszczeniu widać urządzenia i stanowiska do manicure oraz podobnych usług.",
   },
   {
     nazwaMiejsca: "sfd",
     fotyTegoMiejsca: [sfd1],
     wyswietlanaNazwa: "SFD",
+    altText: "Zapełniony regałami sklep z suplementami diety.",
   },
   {
     nazwaMiejsca: "naturoterapia",
     fotyTegoMiejsca: [renowacjaTemporaryInformacyjnaFota],
     wyswietlanaNazwa: "Naturoterapia",
+    altText:
+      "Powiadomienie o renowacji oraz chwilowego braku zdjęć z tego powodu",
   },
   {
     nazwaMiejsca: "solarium",
     fotyTegoMiejsca: [solarium1, solarium2],
     wyswietlanaNazwa: "Solarium",
+    altText: "Solarium leżące oraz stojące",
   },
   {
     nazwaMiejsca: "recepcja",
     fotyTegoMiejsca: [recepcja1],
     wyswietlanaNazwa: "Recepcja",
+    altText:
+      "Recepcja. Widać plakaty z aktualnościami, telewizory oraz cennik rzecyz do nabycia w recepcji.",
   },
 
   // 1
@@ -266,6 +302,7 @@ export const carouselData = [
     nazwaMiejsca: "maty",
     fotyTegoMiejsca: [maty1],
     wyswietlanaNazwa: "Maty",
+    altText: "Strefa z lustrami i matami do ćwiczeń",
   },
   {
     nazwaMiejsca: "cialo-i-umysl",
@@ -279,11 +316,15 @@ export const carouselData = [
       cialoIUmysl7,
     ],
     wyswietlanaNazwa: "Ciało I Umysł",
+    altText:
+      "Pomieszczenie do ćwiczenia jogi, zdrowego kręgosłupa oraz ogólnopojętego treningu wzmacniającego ciało. Widać zrelaksowanych ćwiczących oraz trenerów.",
   },
   {
     nazwaMiejsca: "squash",
     fotyTegoMiejsca: [squash1, squash2],
     wyswietlanaNazwa: "Squash",
+    altText:
+      "Boisko do squasha wraz z dwoma osobami omawiającymi strategię gry.",
   },
   {
     nazwaMiejsca: "strefa-maszyn-1",
@@ -294,6 +335,8 @@ export const carouselData = [
       strefaMaszynPierwsza3,
     ],
     wyswietlanaNazwa: "Strefa Maszyn 1",
+    altText:
+      " Strefa z maszynami do ćwiczeń, wraz z osobami na nich ćwiczącymi.",
   },
   {
     nazwaMiejsca: "strefa-maszyn-2",
@@ -306,6 +349,8 @@ export const carouselData = [
       strefaMaszynDruga5,
     ],
     wyswietlanaNazwa: "Strefa Maszyn 2",
+    altText:
+      " Strefa z maszynami do ćwiczeń, wraz z osobami na nich ćwiczącymi.",
   },
   {
     nazwaMiejsca: "strefa-maszyn-3",
@@ -325,12 +370,15 @@ export const carouselData = [
       wolneCiezary4,
     ],
     wyswietlanaNazwa: "Wolne Ciężary",
+    altText: " Strefa z wolnymi ciężarami, wraz z osobami na nich ćwiczącymi.",
   },
 
   {
     nazwaMiejsca: "boisko",
     fotyTegoMiejsca: [boisko1, boisko2, boisko3, boisko4, boisko5, boisko6],
     wyswietlanaNazwa: "Boisko",
+    altText:
+      " Boisko z grupą osób wykonujących ćwiczenia, które pokazuje im instruktor. Dwie ze ścian zdobią wysokie okna.",
   },
 
   // 2
@@ -339,20 +387,28 @@ export const carouselData = [
     nazwaMiejsca: "masaz",
     fotyTegoMiejsca: [masaz1],
     wyswietlanaNazwa: "Masaż",
+    altText:
+      "Urządzenia do roll-masażu wraz z wygodnymi fotelami do relaksu. Jedna ze ścian przedstawia naturalny krajobraz z jeziorem i lasem",
   },
   {
     nazwaMiejsca: "sala-ic",
     fotyTegoMiejsca: [salaIC1, salaIC2, salaIC3],
     wyswietlanaNazwa: "Sala IC",
+    altText:
+      "Sala wypełniona rowerami stacjonarnymi, wraz z zaangażowanymi osobami na nich jeżdżącymi. Ściany z boków przedstawiają rowerzystów wytrwale pokonujących trudne wyzwania.",
   },
   {
     nazwaMiejsca: "sala-zolta",
     fotyTegoMiejsca: [salaZolta1, salaZolta2, salaZolta3],
     wyswietlanaNazwa: "Sala Żółta",
+    altText:
+      "Wszechstronna sala do grupowych ćwiczeń tanecznych oraz ogólnorozwojowych. Na ścianach widać malunki roztańczoncych osób.",
   },
   {
     nazwaMiejsca: "strefa-cardio",
     fotyTegoMiejsca: [strefaCardio1, strefaCardio2, strefaCardio3],
     wyswietlanaNazwa: "Strefa Cardio",
+    altText:
+      "Maszyny do ćwiczeń cardio, takie jak bierznie, rowerki stacjonarne, orbitreki i schody z napędem elektrycznym",
   },
 ];

@@ -85,7 +85,7 @@ const SzczegolKonkretny = (props) => {
           >
             <Image
               src={`/images/.dedykowane-do-strony-konkretnej/medical/usługi/wodor.png`}
-              alt={`nie pyklo zdjecie`}
+              alt={`...`}
               // height={300}
               // width={150}
               layout="fill"

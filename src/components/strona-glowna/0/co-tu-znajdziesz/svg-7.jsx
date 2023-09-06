@@ -7,6 +7,7 @@ const SVGCoTuZnajdziesz7 = () => {
   //
   return (
     <svg
+      alt="Zrelaksowana twarz kobiety z ręcznikiem oplecionym wokół mokrych włosów"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       id="edLXfp3Smwc1"

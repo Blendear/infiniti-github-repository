@@ -7,6 +7,7 @@ const SVGCoTuZnajdziesz5 = () => {
   //
   return (
     <svg
+      alt="Sylwetka kobiety ze smukłą talią oraz strzałki wskazujące na zrzucenie przez nią wagi"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       cache-id="eda87bcc44734ae0999d76bf30ed5c6c"

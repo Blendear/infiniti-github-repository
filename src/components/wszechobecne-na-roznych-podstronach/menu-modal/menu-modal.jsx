@@ -24,9 +24,7 @@ const MenuModal = (props) => {
       <div className={styles["menu-modal__caly-container__loga--medical"]}>
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Medical.jpg`}
-          alt={`nie pyklo zdjecie`}
-          // height={200}
-          // width={200}
+          alt={`Logo INFINITI Medical`}
           layout="fill"
           objectFit="contain"
         />
@@ -34,9 +32,7 @@ const MenuModal = (props) => {
       <div className={styles["menu-modal__caly-container__loga--fitness"]}>
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/logo-Fitness.jpg`}
-          alt={`nie pyklo zdjecie`}
-          // height={200}
-          // width={200}
+          alt={`Logo INFINITI Fitness`}
           layout="fill"
           objectFit="contain"
         />

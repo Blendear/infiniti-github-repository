@@ -23,9 +23,9 @@ const KlocekMenu = (props) => {
       >
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/menu-modal/${props.imagePathEnd}`}
-          alt={`nie pyklo zdjecie`}
-          // height={200}
-          // width={200}
+          alt={`Konkretna pozycja menu nawigacji : ${
+            props.imagePathEnd.slice(7).split(".")[0]
+          }`}
           layout="fill"
           objectFit="contain"
           priority

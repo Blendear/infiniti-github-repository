@@ -86,9 +86,7 @@ const FitnessCennik = () => {
           <a target="_blank">
             <Image
               src={`/images/.dedykowane-do-strony-konkretnej/fitness/cennik/cennik-fitness.png`}
-              alt={`nie pyklo zdjecie`}
-              // width={300}
-              // height={300}
+              alt={`Cennik usług fitness, jakie oferuje klub INFINITI`}
               layout="fill"
               objectFit="contain"
               loading="eager"

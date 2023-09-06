@@ -98,7 +98,7 @@ const StronaKontakt = () => {
       >
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/infiniti/kontakt/tlo.jpg`}
-          alt={`nie pyklo zdjecie`}
+          alt={`Przyciemniony widok klubu INFINITI - z zewnątrz, od strony ulicy, w słoneczny dzień. Przed klubem widać drzewa i zaparkowane pod nimi samochody.`}
           layout="fill"
           objectFit="cover"
           priority
@@ -124,7 +124,7 @@ const StronaKontakt = () => {
         >
           <Image
             src={`/images/.dedykowane-do-strony-konkretnej/infiniti/kontakt/mapa.png`}
-            alt={`nie pyklo zdjecie`}
+            alt={`Mapa dojazdu do klubu INFINITI. Zachęca do kliknięcia, aby dzięki temu przejść do aplikacji nawigacyjnej.`}
             layout="fill"
             objectFit="contain"
           />

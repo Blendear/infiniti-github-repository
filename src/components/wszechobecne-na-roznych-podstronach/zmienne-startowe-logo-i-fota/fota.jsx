@@ -16,9 +16,7 @@ const ZmienneStartoweTlo = (props) => {
     >
       <Image
         src={`/images/.dedykowane-do-strony-konkretnej/wszechobecne-na-roznych-podstronach/zmienne-startowe-logo-i-fota/zmienne-startowe-logo-i-fota/${props.tloPath}`}
-        alt={`nie pyklo zdjecie`}
-        // height={200}
-        // width={200}
+        alt={`Tłum zadowolonych, uśmiechniętych klubowiczów INFINITI, ubranych w stroje treningowe`}
         layout="fill"
         objectFit="cover"
         priority

@@ -121,7 +121,7 @@ const StronaGlowna = () => {
         >
           <Image
             src={`/images/.dedykowane-do-strony-konkretnej/e-trener/btn-wywolywacz/kup-karnet.png`}
-            alt={`nie pyklo zdjecie`}
+            alt={`Biały napis "KUP KARNET" na niebiesko-fioletowym tle`}
             layout="fill"
             objectFit="cover"
             priority
@@ -139,7 +139,7 @@ const StronaGlowna = () => {
         >
           <Image
             src={`/images/.dedykowane-do-strony-konkretnej/e-trener/btn-wywolywacz/e-trener-btn.png`}
-            alt={`nie pyklo zdjecie`}
+            alt={`Biały napis "E-TRENER Premium" na niebiesko-fioletowym tle`}
             layout="fill"
             objectFit="cover"
             priority
@@ -153,9 +153,7 @@ const StronaGlowna = () => {
       <div className={styles["layout__strona-glowna__cala-strona__fota-klubu"]}>
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/z-zewnatrz-klub/z-zewnatrz-klub.png`}
-          alt={`nie pyklo zdjecie`}
-          // height={200}
-          // width={100}
+          alt={`Widok klubu INFINITI - z zewnątrz, od strony ulicy, w słoneczny dzień. Przed klubem widać drzewa i zaparkowane pod nimi samochody.`}
           layout="fill"
           objectFit="cover"
           priority

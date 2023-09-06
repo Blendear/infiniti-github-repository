@@ -200,7 +200,6 @@ const CarouselPoziomy = () => {
               {/* 
             //       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
             */}
-
               {reduxStatePoziomIMiejsceAktualne.miejsce ===
                 aktualnyDataObject.nazwaMiejsca && (
                 <Image
@@ -217,9 +216,7 @@ const CarouselPoziomy = () => {
                     // : aktualnyDataObject.fotyTegoMiejsca[0]
                     // :
                   }
-                  alt={`nie pyklo zdjecie`}
-                  // width={300}
-                  // height={300}
+                  alt={aktualnyDataObject.altText}
                   layout="fill"
                   objectFit="contain"
                   quality={40}
