@@ -39,3 +39,5 @@ next-env.d.ts
 #template folder
 .templates
 /src/styles/X-perymenty
+
+#hook2 - check for more files that might need to be ignored
