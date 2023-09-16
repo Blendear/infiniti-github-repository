@@ -34,6 +34,14 @@ export const kadraFitnessDataArray = {
       fotoPathKoncowka: "czerska-iza",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
+    {
+      nazwisko: " Ładak",
+      name: "Emilia",
+      opis: "testowy opis",
+      funkcja: "Opiekun Recepcji",
+      fotoPathKoncowka: "ladak-emilia",
+      socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    },
   ],
   trenerzy: [
     {
@@ -76,7 +84,7 @@ export const kadraFitnessDataArray = {
       },
     },
     {
-      nazwisko: "Duma",
+      nazwisko: "Duma-Majewicz",
       name: "Ania",
       opis: "testowy opis",
       funkcja: "Instruktor fitness",
@@ -124,16 +132,16 @@ export const kadraFitnessDataArray = {
         facebook: "https://www.facebook.com/izabela.kopacz.7",
       },
     },
-    {
-      nazwisko: "Kubicka",
-      name: "Katrin",
-      opis: "testowy opis",
-      funkcja: "Instruktor fitness",
-      fotoPathKoncowka: "kubicka-katrin",
-      socialMediaLinks: {
-        facebook: "https://www.facebook.com/profile.php?id=100063105468123",
-      },
-    },
+    // {
+    //   nazwisko: "Kubicka",
+    //   name: "Katrin",
+    //   opis: "testowy opis",
+    //   funkcja: "Instruktor fitness",
+    //   fotoPathKoncowka: "kubicka-katrin",
+    //   socialMediaLinks: {
+    //     facebook: "https://www.facebook.com/profile.php?id=100063105468123",
+    //   },
+    // },
     {
       nazwisko: "Kuśnierz-Pierz",
       name: "Ania",
@@ -185,16 +193,16 @@ export const kadraFitnessDataArray = {
     //     facebook: "https://www.facebook.com/prokopiotrek",
     //   },
     // },
-    {
-      nazwisko: "Rypalla",
-      name: "Dominika",
-      opis: "testowy opis",
-      funkcja: "Instruktor fitness / Trener personalny",
-      fotoPathKoncowka: "rypalla-dominika",
-      socialMediaLinks: {
-        facebook: "https://www.facebook.com/dominika.rypalla",
-      },
-    },
+    // {
+    //   nazwisko: "Rypalla",
+    //   name: "Dominika",
+    //   opis: "testowy opis",
+    //   funkcja: "Instruktor fitness / Trener personalny",
+    //   fotoPathKoncowka: "rypalla-dominika",
+    //   socialMediaLinks: {
+    //     facebook: "https://www.facebook.com/dominika.rypalla",
+    //   },
+    // },
     // {
     //   nazwisko: "Saska",
     //   name: "Tomasz",
