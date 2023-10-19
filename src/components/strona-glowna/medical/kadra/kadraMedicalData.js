@@ -20,14 +20,14 @@ export const kadraMedicalDataArray = {
     },
   ],
   fizjoterapeuci: [
-    {
-      nazwisko: "Meisner",
-      name: "Iwona",
-      opis: "testowy opis",
-      funkcja: "Fizjoterapeutka",
-      fotoPathKoncowka: "meisner-iwona",
-      socialMediaLinks: { facebook: "https://www.facebook.com/iwona.meisner" },
-    },
+    // {
+    //   nazwisko: "Meisner",
+    //   name: "Iwona",
+    //   opis: "testowy opis",
+    //   funkcja: "Fizjoterapeutka",
+    //   fotoPathKoncowka: "meisner-iwona",
+    //   socialMediaLinks: { facebook: "https://www.facebook.com/iwona.meisner" },
+    // },
     {
       nazwisko: "Kowalczyk",
       name: "Patrycja",
