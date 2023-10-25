@@ -58,12 +58,12 @@ export const carouselData = [
   {
     image: foto9,
   },
-  {
-    image: foto10,
-  },
-  {
-    image: foto11,
-  },
+  // {
+  //   image: foto10,
+  // },
+  // {
+  //   image: foto11,
+  // },
   {
     image: foto12,
   },
