@@ -47,7 +47,7 @@ import Image from "next/image.js";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { useEffect } from "react";
 
-let cos = 1;
+// let cos = 1;
 const CarouselPartnerzy = () => {
   const [aktualnyFotoIndex, setAktualnyFotoIndex] = useState(0);
   const ilePartnerowPojedynczych = carouselData.length;
@@ -57,7 +57,7 @@ const CarouselPartnerzy = () => {
   const [indexZdjeciaPierwszegoZTrzech, setIndexZdjeciaPierwszegoZTrzech] =
     useState(1);
 
-  const xileRazy = Math.ceil(ilePartnerowPojedynczych / 3);
+  // const xileRazy = Math.ceil(ilePartnerowPojedynczych / 3);
 
   //
   //       B.3. Handler - OnClicki, treść
@@ -78,7 +78,7 @@ const CarouselPartnerzy = () => {
           return oldCount + 3;
         }
       });
-    }, 4000);
+    }, 500);
 
     return () => {
       clearInterval(intervalZmienIndex);

@@ -10,29 +10,27 @@
 //
 //       A.1. Trap1 - Staticly imported foty muszą być, żeby next.js'owy Image je załapał
 //
-import fotoDjamila from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/1.png";
+import fotoMultisport from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/1.png";
 import fotoLaOla from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/2.png";
 import fotoMargos from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/3.png";
 import fotoNaPiastach from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/4.png";
 import fotoSFD from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/5.png";
-import fotoSushiTu from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/6.png";
+import fotoArkadia from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/6.png";
 import fotoZaksa from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/7.png";
-import foto8 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/8.png";
-import foto9 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/9.png";
-import foto10 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/10.png";
-import foto11 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/11.png";
-import foto12 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/12.png";
-import foto13 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/13.png";
-import foto14 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/14.png";
-import foto15 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/15.png";
-import foto16 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/16.png";
+import fotoSerenity from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/8.png";
+import fotoMedicover from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/9.png";
+import fotoLuxmed from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/10.png";
+import fotoMzk from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/11.png";
+import fotoRes from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/12.png";
+import fotoPzu from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/13.png";
+import fotoFitProfit from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/partnerzy/14.png";
 
 //
 //       A.2. Każdy object w arrayu dostaje "staticcly imported image" jako property "image"
 //
 export const carouselData = [
   {
-    image: fotoDjamila,
+    image: fotoMultisport,
   },
   {
     image: fotoLaOla,
@@ -47,36 +45,30 @@ export const carouselData = [
     image: fotoSFD,
   },
   {
-    image: fotoSushiTu,
+    image: fotoArkadia,
   },
   {
     image: fotoZaksa,
   },
   {
-    image: foto8,
+    image: fotoSerenity,
   },
   {
-    image: foto9,
-  },
-  // {
-  //   image: foto10,
-  // },
-  // {
-  //   image: foto11,
-  // },
-  {
-    image: foto12,
+    image: fotoMedicover,
   },
   {
-    image: foto13,
+    image: fotoLuxmed,
   },
   {
-    image: foto14,
+    image: fotoMzk,
   },
   {
-    image: foto15,
+    image: fotoRes,
   },
   {
-    image: foto16,
+    image: fotoPzu,
+  },
+  {
+    image: fotoFitProfit,
   },
 ];
