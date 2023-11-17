@@ -42,6 +42,14 @@ export const kadraFitnessDataArray = {
       fotoPathKoncowka: "ladak-emilia",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
+    {
+      nazwisko: "Cholewa",
+      name: "Zuzanna",
+      opis: "testowy opis",
+      funkcja: "Opiekun Recepcji",
+      fotoPathKoncowka: "cholewa-zuzanna",
+      socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    },
   ],
   trenerzy: [
     {
@@ -111,6 +119,15 @@ export const kadraFitnessDataArray = {
         facebook: "https://www.facebook.com/profile.php?id=100000996505827",
       },
     },
+    {
+      nazwisko: "Grabowska",
+      name: "Wioletta",
+      opis: "testowy opis",
+      funkcja: "Instruktor fitness",
+      fotoPathKoncowka: "grabowska-wioletta",
+      socialMediaLinks: {},
+    },
+
     // {
     //   nazwisko: "Kaczmarczyk",
     //   name: "Sebastian",
@@ -121,7 +138,6 @@ export const kadraFitnessDataArray = {
     //     facebook: "",
     //   },
     // },
-
     {
       nazwisko: "Kopacz",
       name: "Izabela",
