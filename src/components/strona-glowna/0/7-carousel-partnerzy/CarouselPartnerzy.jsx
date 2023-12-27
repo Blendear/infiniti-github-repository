@@ -78,7 +78,7 @@ const CarouselPartnerzy = () => {
           return oldCount + 3;
         }
       });
-    }, 500);
+    }, 2000);
 
     return () => {
       clearInterval(intervalZmienIndex);
