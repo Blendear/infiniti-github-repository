@@ -475,10 +475,10 @@ const cwiczenia: Cwiczenia = [
   {
     id: 48,
     "link-wideo": "xh4ZRvvZnO0",
-    "fota-miniaturki": "mini24-1.png", // hook1 - 24 / 26?
+    "fota-miniaturki": "mini24-2.png", // hook1 - 24 / 26?
     nazwa: "Odwodzenie nóg w bok z linką",
     "cwiczone-miesnie": ["Uda - Środek"], // hook1 - albo inny partia? bo to na boki bardziej, więc uda przód/tył?
-    "fota-lokalizacji": "lok24-1.png", // 24 / 26?
+    "fota-lokalizacji": "lok24-2.png", // 24 / 26?
     idMaszynyUzywanej: "24", // 24 / 26?
   },
   {
@@ -647,9 +647,81 @@ const cwiczenia: Cwiczenia = [
     id: 67,
     "link-wideo": "__Wzw8EGU9h0s_",
     "fota-miniaturki": "mini0-11.png", // hook1 - bez nr?
-    nazwa: "Wiosłowanie ze sztangą w opadzie ",
+    nazwa: "Wiosłowanie ze sztangą w opadzie tułowia",
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok0-11.png", //bez nr?
+    idMaszynyUzywanej: "", //bez nr?
+  },
+  {
+    id: 68,
+    "link-wideo": "ONqIOc8vVe8",
+    "fota-miniaturki": "mini0-12.png", // hook1 - bez nr?
+    nazwa: "Wiosłowanie T-Bar",
+    "cwiczone-miesnie": ["Plecy - Środek"],
+    "fota-lokalizacji": "lok0-12.png", //bez nr?
+    idMaszynyUzywanej: "", //bez nr?
+  },
+  {
+    id: 69,
+    "link-wideo": "2rXwVwjSIUw",
+    "fota-miniaturki": "mini999-1.png", // hook1 - nie napisaliście numerka, jaki on jest?
+    nazwa: "Wiosłowanie z rączką wyciągu w klęku",
+    "cwiczone-miesnie": ["Plecy - Środek"],
+    "fota-lokalizacji": "lok999-1.png", // nie napisaliście numerka, jaki on jest?
+    idMaszynyUzywanej: "999", // nie napisaliście numerka, jaki on jest?
+  },
+  {
+    id: 70,
+    "link-wideo": "Ym3SpWxsc3g",
+    "fota-miniaturki": "mini25-2.png",
+    nazwa: "Pompki na poręczach z odciążeniem",
+    "cwiczone-miesnie": ["Triceps"],
+    "fota-lokalizacji": "lok25-2.png",
+    idMaszynyUzywanej: "25",
+  },
+  {
+    id: 71,
+    "link-wideo": "LmDLcrImz2Q",
+    "fota-miniaturki": "mini24-3.png",
+    nazwa: "Prostowanie ramion z linką na wyciągu górnym",
+    "cwiczone-miesnie": ["Triceps"],
+    "fota-lokalizacji": "lok24-3.png",
+    idMaszynyUzywanej: "24",
+  },
+  {
+    id: 72,
+    "link-wideo": "6DCV_p3BdFg",
+    "fota-miniaturki": "mini24-4.png",
+    nazwa: "Prostowanie ramienia z linką na wyciągu górnym",
+    "cwiczone-miesnie": ["Triceps"],
+    "fota-lokalizacji": "lok24-4.png",
+    idMaszynyUzywanej: "24",
+  },
+  {
+    id: 73,
+    "link-wideo": "p98HJ7vZyT4",
+    "fota-miniaturki": "mini44-1.png",
+    nazwa: "Prostowanie ramion na maszynie",
+    "cwiczone-miesnie": ["Triceps"],
+    "fota-lokalizacji": "lok44-1.png",
+    idMaszynyUzywanej: "44",
+  },
+  {
+    id: 74,
+    "link-wideo": "cYzDBap8-4U",
+    "fota-miniaturki": "mini0-13.png", // hook1 - bez nr?
+    nazwa: "Wyciskanie francuskie hantli leżąc na ławce",
+    "cwiczone-miesnie": ["Triceps"],
+    "fota-lokalizacji": "lok0-13.png", //bez nr?
+    idMaszynyUzywanej: "", //bez nr?
+  },
+  {
+    id: 75,
+    "link-wideo": "cYzDBap8-4U",
+    "fota-miniaturki": "mini0-14.png", // hook1 - bez nr?
+    nazwa: "Wyciskanie sztangi łamanej leżąc na ławce",
+    "cwiczone-miesnie": ["Triceps"],
+    "fota-lokalizacji": "lok0-14.png", //bez nr?
     idMaszynyUzywanej: "", //bez nr?
   },
 ];
