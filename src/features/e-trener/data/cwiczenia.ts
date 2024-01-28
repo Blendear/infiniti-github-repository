@@ -226,7 +226,7 @@ const cwiczenia: Cwiczenia = [
       "Klatka piersiowa - Góra",
     ],
     "fota-lokalizacji": "lok3-1.png",
-    idMaszynyUzywanej: "3", //hook1 - nie dać numeru też ławkom etc?
+    idMaszynyUzywanej: "3",
   },
   {
     id: 25,
@@ -240,7 +240,175 @@ const cwiczenia: Cwiczenia = [
     "fota-lokalizacji": "lok4-1.png",
     idMaszynyUzywanej: "4",
   },
-
+  {
+    id: 26,
+    "link-wideo": "Rq8FoWJpseU",
+    "fota-miniaturki": "mini5-1.png",
+    nazwa: "Wyciskanie ramion w dół na maszynie Hammer",
+    "cwiczone-miesnie": ["Klatka piersiowa - Dół", "Klatka piersiowa - Środek"],
+    "fota-lokalizacji": "lok5-1.png",
+    idMaszynyUzywanej: "5",
+  },
+  {
+    id: 27,
+    "link-wideo": "ZzYBuU3KA2E",
+    "fota-miniaturki": "mini12-1.png", //hook1 - było "12/16", a to jedna mszyna, nie?
+    nazwa: "Wyciskanie sztangi na ławce prostej",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Środek",
+      "Klatka piersiowa - Dół",
+      "Klatka piersiowa - Góra",
+    ],
+    "fota-lokalizacji": "lok12-1.png", // było "12/16", a to jedna mszyna, nie?
+    idMaszynyUzywanej: "12", // było "12/16", a to jedna mszyna, nie?
+  },
+  {
+    id: 28,
+    "link-wideo": "GSsMUTzryds",
+    "fota-miniaturki": "mini17-1.png",
+    nazwa: "Wyciskanie sztangi na ławce skośnej dodatnio",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Góra",
+      "Klatka piersiowa - Środek",
+    ],
+    "fota-lokalizacji": "lok17-1.png",
+    idMaszynyUzywanej: "17",
+  },
+  {
+    id: 29,
+    "link-wideo": "8-944Xs9HpI",
+    "fota-miniaturki": "mini19-1.png",
+    nazwa: "Wyciskanie sztangi na suwnicy Smitha",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Środek",
+      "Klatka piersiowa - Dół",
+      "Klatka piersiowa - Góra",
+    ],
+    "fota-lokalizacji": "lok19-1.png",
+    idMaszynyUzywanej: "19",
+  },
+  {
+    id: 30,
+    "link-wideo": "dWcIztQAuJg",
+    "fota-miniaturki": "mini18-1.png",
+    nazwa: "Wyciskanie sztangi na ławce skośnej ujemnie",
+    "cwiczone-miesnie": ["Klatka piersiowa - Dół", "Klatka piersiowa - Środek"],
+    "fota-lokalizacji": "lok18-1.png",
+    idMaszynyUzywanej: "18",
+  },
+  {
+    id: 31,
+    "link-wideo": "sEm51qgt7D8",
+    "fota-miniaturki": "mini46-1.png",
+    nazwa: "Wyciskanie na maszynie siedząc płasko",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Środek",
+      "Klatka piersiowa - Dół",
+      "Klatka piersiowa - Góra",
+    ],
+    "fota-lokalizacji": "lok46-1.png",
+    idMaszynyUzywanej: "46",
+  },
+  {
+    id: 32,
+    "link-wideo": "Nhodx1-gCZI",
+    "fota-miniaturki": "mini43-1.png",
+    nazwa: "Wyciskanie na maszynie siedząc skośnie dodatnio",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Góra",
+      "Klatka piersiowa - Środek",
+    ],
+    "fota-lokalizacji": "lok43-1.png",
+    idMaszynyUzywanej: "43",
+  },
+  {
+    id: 33,
+    "link-wideo": "_JFUf5BR3E4",
+    "fota-miniaturki": "mini0-7.png", //hook1 - nie dać numeru też ławkom etc?
+    nazwa: "Rozpiętki na ławce prostej",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Środek",
+      "Klatka piersiowa - Dół",
+      "Klatka piersiowa - Góra",
+    ],
+    "fota-lokalizacji": "lok0-7.png", // nie dać numeru też ławkom etc?
+    idMaszynyUzywanej: "", //nie dać numeru też ławkom etc?
+  },
+  {
+    id: 34,
+    "link-wideo": "3FmlrBhG6Mg",
+    "fota-miniaturki": "mini52-1.png",
+    nazwa: "Rozpiętki szerokie na maszynie Butterfly",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Środek",
+      "Klatka piersiowa - Dół",
+      "Klatka piersiowa - Góra",
+    ],
+    "fota-lokalizacji": "lok52-1.png",
+    idMaszynyUzywanej: "52",
+  },
+  {
+    id: 35,
+    "link-wideo": "09pyPPYTMzE",
+    "fota-miniaturki": "mini48-1.png",
+    nazwa: "Rozpiętki wąskie na maszynie Butterfly",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Środek",
+      "Klatka piersiowa - Dół",
+      "Klatka piersiowa - Góra",
+    ],
+    "fota-lokalizacji": "lok48-1.png",
+    idMaszynyUzywanej: "48",
+  },
+  {
+    id: 36,
+    "link-wideo": "Fqe1fdZU04s",
+    "fota-miniaturki": "mini30-2.png", // hook1 - 30 /24 ?
+    nazwa: "Rozpiętki stojąc w opadzie tułowia",
+    "cwiczone-miesnie": [
+      "Klatka piersiowa - Środek",
+      "Klatka piersiowa - Dół",
+      "Klatka piersiowa - Góra",
+    ],
+    "fota-lokalizacji": "lok30-2.png", //  30 /24 ?
+    idMaszynyUzywanej: "30", //  30 /24 ?
+  },
+  {
+    id: 37,
+    "link-wideo": "Lx-K2qPcWEg",
+    "fota-miniaturki": "mini10-1.png",
+    nazwa: "Wspięcia na palce na maszynie siedząc",
+    "cwiczone-miesnie": ["Łydki"],
+    "fota-lokalizacji": "lok10-1.png",
+    idMaszynyUzywanej: "10",
+  },
+  {
+    id: 38,
+    "link-wideo": "PuL19UOe-RU",
+    "fota-miniaturki": "mini9-1.png",
+    nazwa: "Wspięcia na palce na maszynie stojąc",
+    "cwiczone-miesnie": ["Łydki"],
+    "fota-lokalizacji": "lok9-1.png",
+    idMaszynyUzywanej: "9",
+  },
+  {
+    id: 39,
+    "link-wideo": "GDk-fGNhROQ",
+    "fota-miniaturki": "mini34-1.png",
+    nazwa: "Uginanie nóg leżąc na maszynie",
+    "cwiczone-miesnie": ["Łydki"],
+    "fota-lokalizacji": "lok34-1.png",
+    idMaszynyUzywanej: "34",
+  },
+  {
+    id: 40,
+    "link-wideo": "yn1aKd_kJeo",
+    "fota-miniaturki": "mini22-1.png",
+    nazwa: "Uginanie nóg na maszynie",
+    "cwiczone-miesnie": ["Łydki"],
+    "fota-lokalizacji": "lok22-1.png",
+    idMaszynyUzywanej: "22",
+  },
   // {
   //   // hook1 - change the names to camelCase, to follow convention
   //   id: 1, // pod szybsze wyszukiwanie ćwiczeń, zamiast wolniejszego wysuzkiwania po stringu "nazwa"

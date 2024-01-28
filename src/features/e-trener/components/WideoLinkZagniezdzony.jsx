@@ -28,7 +28,7 @@ const WideoLinkZagniezdzony = ({ linkDoWideo, setNazwaModalu }) => {
       </button>
       <YouTube
         className={styles["modal-cwiczenia-wybranego__wideo__iframe"]}
-        videoId="hRBeS3ByytY"
+        videoId={linkDoWideo}
         opts={opts}
         onReady={handleReady}
       />

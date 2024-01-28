@@ -35,10 +35,10 @@ export type Cwiczenia = Cwiczenie[];
 
 {
   id: 0,
-  "link-wideo": "mO3fLuAFWrs",
+  "link-wideo": "___",
   "fota-miniaturki": "mini666.png",
   nazwa: "AAAAAAA",
-  "cwiczone-miesnie": [],
+  "cwiczone-miesnie": ["Łydki"],
   "fota-lokalizacji": "lok666.png",
   idMaszynyUzywanej: "666",
 },
