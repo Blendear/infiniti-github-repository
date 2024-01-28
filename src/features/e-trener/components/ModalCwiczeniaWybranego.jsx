@@ -12,8 +12,6 @@ const ModalCwiczeniaWybranego = ({
   nazwaModalu,
   otwarteCwiczenie,
 }) => {
-  //
-
   return (
     <>
       <Modal variant="information" hasBackdrop={false}>
@@ -23,7 +21,7 @@ const ModalCwiczeniaWybranego = ({
               wideo: (
                 <WideoLinkZagniezdzony
                   setNazwaModalu={setNazwaModalu}
-                  linkDoWideo={"testowa-nazwa-linku"}
+                  linkDoWideo={otwarteCwiczenie["link-wideo"]}
                 />
               ),
               szczegoly: (
