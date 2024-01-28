@@ -24,21 +24,21 @@ export type PartiaMiesniowa =
 export type Cwiczenie = {
   id: number;
   "link-wideo": string;
-  "fota-miniaturki": `mini${number}.png`;
+  "fota-miniaturki": `mini${number}-${number}.png`;
   nazwa: string;
   "cwiczone-miesnie": PartiaMiesniowa[];
-  "fota-lokalizacji": `lok${number}.png`;
+  "fota-lokalizacji":  `lok${number}-${number}.png`;
   idMaszynyUzywanej: string;
 };
 
 export type Cwiczenia = Cwiczenie[];
 
 {
-  id: 666,
+  id: 0,
   "link-wideo": "mO3fLuAFWrs",
   "fota-miniaturki": "mini666.png",
   nazwa: "AAAAAAA",
-  "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód", "Barki - Tył"],
+  "cwiczone-miesnie": [],
   "fota-lokalizacji": "lok666.png",
   idMaszynyUzywanej: "666",
 },
