@@ -27,7 +27,7 @@ export type Cwiczenie = {
   "fota-miniaturki": `mini${number}-${number}.png`;
   nazwa: string;
   "cwiczone-miesnie": PartiaMiesniowa[];
-  "fota-lokalizacji": `lok${number}-${number}.png`;
+  "fota-lokalizacji": `lok${number}.png`;
   idMaszynyUzywanej: string;
 };
 
