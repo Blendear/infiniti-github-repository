@@ -3,21 +3,21 @@ import { Cwiczenia } from "../types";
 const cwiczenia: Cwiczenia = [
   {
     id: 1,
-    "link-wideo": "Rs4N8IGygn4",
-    "fota-miniaturki": "mini6-1.png",
-    nazwa: "Wyciskanie sztangi nad głowę",
-    "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód"],
-    "fota-lokalizacji": "lok6.png",
-    idMaszynyUzywanej: "6",
-  },
-  {
-    id: 2,
     "link-wideo": "mO3fLuAFWrs",
     "fota-miniaturki": "mini19-1.png",
     nazwa: "Wyciskanie sztangi nad głowę na suwnicy",
     "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód"],
     "fota-lokalizacji": "lok19.png",
     idMaszynyUzywanej: "19",
+  },
+  {
+    id: 2,
+    "link-wideo": "Rs4N8IGygn4",
+    "fota-miniaturki": "mini6-1.png",
+    nazwa: "Wyciskanie sztangi nad głowę",
+    "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód"],
+    "fota-lokalizacji": "lok6.png",
+    idMaszynyUzywanej: "6",
   },
   {
     id: 3,
@@ -142,7 +142,7 @@ const cwiczenia: Cwiczenia = [
     "fota-miniaturki": "mini0-4.png",
     nazwa: "Uginanie ramion ze sztangą łamaną na modlitewniku",
     "cwiczone-miesnie": ["Biceps"],
-    "fota-lokalizacji": "lok0.png",
+    "fota-lokalizacji": "lok0.png", //herehere - jaki numer - wylicz po lawce
     idMaszynyUzywanej: "", //hook1 - nie dać numeru też ławkom etc?
   },
   {
@@ -200,7 +200,7 @@ const cwiczenia: Cwiczenia = [
       "Klatka piersiowa - Dół",
       "Klatka piersiowa - Góra",
     ],
-    "fota-lokalizacji": "lok0.png",
+    "fota-lokalizacji": "lok0.png", // herehere miala numer
     idMaszynyUzywanej: "", //hook1 - nie dać numeru też ławkom etc?
   },
   {
