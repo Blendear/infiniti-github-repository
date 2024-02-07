@@ -22,7 +22,7 @@ const NumerIDSzukacz = () => {
         })
         ? (setFotaMaszyny(nowaMaszyna.fota),
           setNumerMaszyny(nowaMaszyna["nr-id"]))
-        : setFotaMaszyny("zly-numer")
+        : setFotaMaszyny("masz0")
       : setFotaMaszyny("");
   };
 
@@ -52,7 +52,7 @@ const NumerIDSzukacz = () => {
               <Image
                 // public/images/.dedykowane-do-strony-konkretnej/e-trener/maszyny/masz1.png
                 src={`/images/.dedykowane-do-strony-konkretnej/e-trener/maszyny/${
-                  fotaMaszyny !== "zly-numer" ? fotaMaszyny : "zly-numer.png"
+                  fotaMaszyny !== "masz0" ? fotaMaszyny : "masz0.jpg"
                 }`}
                 alt={`error while loading image`}
                 layout="fill"
@@ -62,7 +62,7 @@ const NumerIDSzukacz = () => {
                 // quality={50}
               />
             </div>
-            {fotaMaszyny !== "zly-numer" && (
+            {fotaMaszyny !== "masz0" && (
               <PotwierdzPrzycisk
                 kolorTla="e-trener-light"
                 filtr="maszyna"
