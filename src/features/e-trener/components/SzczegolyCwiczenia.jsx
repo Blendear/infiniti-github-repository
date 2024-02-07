@@ -50,6 +50,7 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
           {/* hook1 - dodaj DO DOMOWYCH CWICZEN WARIANT zdjęcia "GDZIEKOLWIEK ZECHCESZ! NIE POTRZEBUJESZ DO TEGO CWICZENAI MASZYNY" */}
           <Image
             src={`/images/.dedykowane-do-strony-konkretnej/e-trener/lokalizacje/${cwiczenie["fota-lokalizacji"]}`}
+            // public/images/.dedykowane-do-strony-konkretnej/e-trener/lokalizacje/lok24.png
             alt={`error while loading image`}
             layout="fill"
             objectFit="cover"
