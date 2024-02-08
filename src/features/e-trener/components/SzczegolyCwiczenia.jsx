@@ -19,7 +19,7 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
         <span>{cwiczenie.nazwa} </span>
         <button onClick={handleZamknijModal}>X</button>
       </TytulZTlemKolorowym>
-      <section>
+      <section style={{ display: "grid" }}>
         <TytulBezTla htmlElementType="h2">MIĘŚNIE ĆWICZONE</TytulBezTla>
         <ul
           className={

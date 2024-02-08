@@ -72,7 +72,7 @@
   }
   &__miesnie-cwiczone {
     &__lista-miesni {
-      margin: 0 auto;
+      justify-self: center;
       padding: 0 0 variables.$content-content-gap 0;
       @include mixins.grid-with-justify-align-items;
       grid-template-columns: repeat(2, max-content);
