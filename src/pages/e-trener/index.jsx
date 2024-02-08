@@ -15,13 +15,12 @@ import { useUser } from "@auth0/nextjs-auth0/client";
 import stripeGetUserInfo from "../../utils/stripeGetUserInfo"; //hook2 - przerob na export z index.js pliku uniwersalnego
 
 const ETrenerStrGlowna = ({ propA, propB }) => {
+  const router = useRouter();
+
   const { user, isLoading } = useUser();
-  const [activeButton, setActiveButton] = useState("qr");
+  const [activeButton, setActiveButton] = useState(router.query.method || "qr");
   const [pokazInfoNiezasubskrybowanemu, setPokazInfoNiezasubskrybowanemu] =
     useState(false);
-
-  const router = useRouter();
-  // console.log("router", router);
 
   useEffect(() => {
     const checkSubscriptionStatus = async () => {
