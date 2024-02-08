@@ -112,3 +112,9 @@ html {
     scroll-behavior: auto !important;
   }
 }
+
+* {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
