@@ -142,7 +142,7 @@ const cwiczenia: Cwiczenia = [
     "fota-miniaturki": "mini01-1.png",
     nazwa: "Uginanie ramion ze sztangą łamaną na modlitewniku",
     "cwiczone-miesnie": ["Biceps"],
-    "fota-lokalizacji": "lok0-1.png", //herehere - jaki numer - wylicz po lawce
+    "fota-lokalizacji": "lok0-1.png",
     idMaszynyUzywanej: "0-1",
   },
   {
@@ -200,7 +200,7 @@ const cwiczenia: Cwiczenia = [
       "Klatka piersiowa - Dół",
       "Klatka piersiowa - Góra",
     ],
-    "fota-lokalizacji": "lok24.png", // hook1 - herehere miala numer
+    "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
   },
   {
@@ -331,8 +331,8 @@ const cwiczenia: Cwiczenia = [
       "Klatka piersiowa - Dół",
       "Klatka piersiowa - Góra",
     ],
-    "fota-lokalizacji": "lok0-2.png", // nie dać numeru też ławkom etc?
-    idMaszynyUzywanej: "0-2", //nie dać numeru też ławkom etc?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 34,
@@ -592,7 +592,7 @@ const cwiczenia: Cwiczenia = [
   {
     id: 61,
     "link-wideo": "M0-NLwavrwI",
-    "fota-miniaturki": "mini0-8.png", // hook1 - bez numeru?
+    "fota-miniaturki": "mini0-8.png",
     nazwa: "Wiosłowanie hantlami w oparciu o ławkę",
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok0-2.png",
@@ -709,20 +709,20 @@ const cwiczenia: Cwiczenia = [
   {
     id: 74,
     "link-wideo": "cYzDBap8-4U",
-    "fota-miniaturki": "mini0-13.png", // hook1 - bez nr?
+    "fota-miniaturki": "mini0-12.png",
     nazwa: "Wyciskanie francuskie hantli leżąc na ławce",
     "cwiczone-miesnie": ["Triceps"],
-    "fota-lokalizacji": "lok0-2.png", //bez nr?
-    idMaszynyUzywanej: "0-2", //bez nr?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 75,
     "link-wideo": "cYzDBap8-4U",
-    "fota-miniaturki": "mini0-14.png", // hook1 - bez nr?
+    "fota-miniaturki": "mini0-13.png",
     nazwa: "Wyciskanie sztangi łamanej leżąc na ławce",
     "cwiczone-miesnie": ["Triceps"],
-    "fota-lokalizacji": "lok0-2.png", //bez nr?
-    idMaszynyUzywanej: "0-2", //bez nr?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
 ];
 
