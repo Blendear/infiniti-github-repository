@@ -39,7 +39,11 @@
       border-width: variables.$border-width-micro;
 
       @include mixins.grid-with-justify-align-items;
-      font-size: typography.$font-size-sm;
+      font-size: typography.$font-size-md;
+
+      @media (max-width: 380px) {
+        font-size: typography.$font-size-lg;
+      }
 
       @media (orientation: landscape) {
         font-size: 1.2rem;
