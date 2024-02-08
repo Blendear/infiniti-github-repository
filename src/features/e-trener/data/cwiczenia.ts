@@ -22,16 +22,16 @@ const cwiczenia: Cwiczenia = [
   {
     id: 3,
     "link-wideo": "-6yi_LL4wwY",
-    "fota-miniaturki": "mini26-1.png",
+    "fota-miniaturki": "mini26-2.png",
     nazwa: "Wzniosy drążka wyciągu przed siebie",
     "cwiczone-miesnie": ["Barki - Przód", "Barki - Środek"],
     "fota-lokalizacji": "lok26.png",
-    idMaszynyUzywanej: "26",
+    idMaszynyUzywanej: "26", // hook1 - + 32
   },
   {
     id: 4,
     "link-wideo": "ASrXSoTMKds",
-    "fota-miniaturki": "mini32-1.png",
+    "fota-miniaturki": "mini32-3.png",
     nazwa: "Wzniosy ramion na linkach wyciągu",
     "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód"],
     "fota-lokalizacji": "lok32.png",
@@ -70,8 +70,8 @@ const cwiczenia: Cwiczenia = [
     "fota-miniaturki": "mini0-1.png",
     nazwa: "Trap T Raise",
     "cwiczone-miesnie": ["Barki - Tył", "Barki - Środek"],
-    "fota-lokalizacji": "lok56.png",
-    idMaszynyUzywanej: "56", //hook1 - nie dać numeru też ławkom etc?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 9,
@@ -79,8 +79,8 @@ const cwiczenia: Cwiczenia = [
     "fota-miniaturki": "mini0-2.png",
     nazwa: "Wyciskanie hantli nad głowę",
     "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód"],
-    "fota-lokalizacji": "lok56.png",
-    idMaszynyUzywanej: "56", //hook1 - nie dać numeru też ławkom etc?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 10,
@@ -97,13 +97,13 @@ const cwiczenia: Cwiczenia = [
     "fota-miniaturki": "mini0-3.png",
     nazwa: "Uginanie ramion z hantlami",
     "cwiczone-miesnie": ["Biceps"],
-    "fota-lokalizacji": "lok56.png",
-    idMaszynyUzywanej: "56", //hook1 - nie dać numeru też ławkom etc?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 12,
     "link-wideo": "NPIzEAjrb3o",
-    "fota-miniaturki": "mini24-1.png",
+    "fota-miniaturki": "mini24-5.png",
     nazwa: "Uginanie ramion z linkami",
     "cwiczone-miesnie": ["Biceps"],
     "fota-lokalizacji": "lok24.png",
@@ -139,11 +139,11 @@ const cwiczenia: Cwiczenia = [
   {
     id: 16,
     "link-wideo": "Jt8_E-EpyXA",
-    "fota-miniaturki": "mini0-4.png",
+    "fota-miniaturki": "mini01-1.png",
     nazwa: "Uginanie ramion ze sztangą łamaną na modlitewniku",
     "cwiczone-miesnie": ["Biceps"],
-    "fota-lokalizacji": "lok55.png", //herehere - jaki numer - wylicz po lawce
-    idMaszynyUzywanej: "55", //hook1 - nie dać numeru też ławkom etc?
+    "fota-lokalizacji": "lok0-1.png", //herehere - jaki numer - wylicz po lawce
+    idMaszynyUzywanej: "0-1",
   },
   {
     id: 17,
@@ -193,27 +193,27 @@ const cwiczenia: Cwiczenia = [
   {
     id: 22,
     "link-wideo": "Ar4haM9ttss",
-    "fota-miniaturki": "mini0-5.png",
+    "fota-miniaturki": "mini24-6.png",
     nazwa: "Rozpiętki z linkami na ławce",
     "cwiczone-miesnie": [
       "Klatka piersiowa - Środek",
       "Klatka piersiowa - Dół",
       "Klatka piersiowa - Góra",
     ],
-    "fota-lokalizacji": "lok0.png", // herehere miala numer
-    idMaszynyUzywanej: "", //hook1 - nie dać numeru też ławkom etc?
+    "fota-lokalizacji": "lok24.png", // hook1 - herehere miala numer
+    idMaszynyUzywanej: "24",
   },
   {
     id: 23,
     "link-wideo": "Ydkw1x9b_4k",
-    "fota-miniaturki": "mini0-6.png",
+    "fota-miniaturki": "mini0-4.png",
     nazwa: "Wyciskanie hantli na ławce skośnej dodatniej",
     "cwiczone-miesnie": [
       "Klatka piersiowa - Góra",
       "Klatka piersiowa - Środek",
     ],
-    "fota-lokalizacji": "lok56.png",
-    idMaszynyUzywanej: "56", //hook1 - nie dać numeru też ławkom etc?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 24,
@@ -324,15 +324,15 @@ const cwiczenia: Cwiczenia = [
   {
     id: 33,
     "link-wideo": "_JFUf5BR3E4",
-    "fota-miniaturki": "mini0-7.png", //hook1 - nie dać numeru też ławkom etc?
+    "fota-miniaturki": "mini0-5.png",
     nazwa: "Rozpiętki na ławce prostej",
     "cwiczone-miesnie": [
       "Klatka piersiowa - Środek",
       "Klatka piersiowa - Dół",
       "Klatka piersiowa - Góra",
     ],
-    "fota-lokalizacji": "lok56.png", // nie dać numeru też ławkom etc?
-    idMaszynyUzywanej: "56", //nie dać numeru też ławkom etc?
+    "fota-lokalizacji": "lok0-2.png", // nie dać numeru też ławkom etc?
+    idMaszynyUzywanej: "0-2", //nie dać numeru też ławkom etc?
   },
   {
     id: 34,
@@ -363,15 +363,15 @@ const cwiczenia: Cwiczenia = [
   {
     id: 36,
     "link-wideo": "Fqe1fdZU04s",
-    "fota-miniaturki": "mini30-2.png", // hook1 - 30 /24 ?
+    "fota-miniaturki": "mini24-7.png",
     nazwa: "Rozpiętki stojąc w opadzie tułowia",
     "cwiczone-miesnie": [
       "Klatka piersiowa - Środek",
       "Klatka piersiowa - Dół",
       "Klatka piersiowa - Góra",
     ],
-    "fota-lokalizacji": "lok30.png", //  30 /24 ?
-    idMaszynyUzywanej: "30", //  30 /24 ?
+    "fota-lokalizacji": "lok30.png",
+    idMaszynyUzywanej: "24", //  hook1 +30 /24 ?
   },
   {
     id: 37,
@@ -457,7 +457,7 @@ const cwiczenia: Cwiczenia = [
   {
     id: 46,
     "link-wideo": "Kjs8WkfNqwM",
-    "fota-miniaturki": "mini26-2.png",
+    "fota-miniaturki": "mini26-1.png",
     nazwa: "Cable Kick Back",
     "cwiczone-miesnie": ["Uda - Tył"],
     "fota-lokalizacji": "lok26.png",
@@ -475,7 +475,7 @@ const cwiczenia: Cwiczenia = [
   {
     id: 48,
     "link-wideo": "xh4ZRvvZnO0",
-    "fota-miniaturki": "mini24-2.png", // hook1 - 24 / 26?
+    "fota-miniaturki": "mini24-1.png", // hook1 - 24 / 26?
     nazwa: "Odwodzenie nóg w bok z linką",
     "cwiczone-miesnie": ["Uda - Środek"], // hook1 - albo inny partia? bo to na boki bardziej, więc uda przód/tył?
     "fota-lokalizacji": "lok24.png", // 24 / 26?
@@ -485,7 +485,7 @@ const cwiczenia: Cwiczenia = [
     id: 49,
     "link-wideo": "wrkx-0ANcgs",
     "fota-miniaturki": "mini36-1.png",
-    nazwa: "AAAAAAA",
+    nazwa: "Odwodzenie nóg na maszynie",
     "cwiczone-miesnie": ["Uda - Środek"], // hook1 - albo inny partia? bo to na boki bardziej, więc uda przód/tył?
     "fota-lokalizacji": "lok36.png",
     idMaszynyUzywanej: "36",
@@ -545,7 +545,7 @@ const cwiczenia: Cwiczenia = [
     idMaszynyUzywanej: "2",
   },
   {
-    id: 56,
+    id: 0 - 2,
     "link-wideo": "c7HLfbFgLnQ",
     "fota-miniaturki": "mini53-1.png",
     nazwa: "Ściąganie ramion wąskim chwytem na maszynie",
@@ -565,7 +565,7 @@ const cwiczenia: Cwiczenia = [
   {
     id: 58,
     "link-wideo": "50Z-BuuMl08",
-    "fota-miniaturki": "mini32-3.png",
+    "fota-miniaturki": "mini32-1.png",
     nazwa: "Ściąganie chwytu jednorącz w klęku",
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok32.png",
@@ -574,29 +574,29 @@ const cwiczenia: Cwiczenia = [
   {
     id: 59,
     "link-wideo": "HwgPjOdwETc",
-    "fota-miniaturki": "mini0-8.png", // hook1 - bez numeru?
+    "fota-miniaturki": "mini0-8.png",
     nazwa: "Trap Y Rise",
     "cwiczone-miesnie": ["Plecy - Góra", "Barki - Tył"],
-    "fota-lokalizacji": "lok56.png", // bez numeru?
-    idMaszynyUzywanej: "56", //  bez numeru?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 60,
     "link-wideo": "e9k3R_4lyXA",
-    "fota-miniaturki": "mini0-9.png", // hook1 - bez numeru?
+    "fota-miniaturki": "mini0-7.png",
     nazwa: "Wiosłowanie hantlami leżąc przodem",
     "cwiczone-miesnie": ["Plecy - Środek"],
-    "fota-lokalizacji": "lok56.png", // bez numeru?
-    idMaszynyUzywanej: "56", //  bez numeru?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 61,
     "link-wideo": "M0-NLwavrwI",
-    "fota-miniaturki": "mini0-10.png", // hook1 - bez numeru?
+    "fota-miniaturki": "mini0-8.png", // hook1 - bez numeru?
     nazwa: "Wiosłowanie hantlami w oparciu o ławkę",
     "cwiczone-miesnie": ["Plecy - Środek"],
-    "fota-lokalizacji": "lok56.png", // bez numeru?
-    idMaszynyUzywanej: "56", //  bez numeru?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 62,
@@ -646,29 +646,29 @@ const cwiczenia: Cwiczenia = [
   {
     id: 67,
     "link-wideo": "__Wzw8EGU9h0s_",
-    "fota-miniaturki": "mini0-11.png", // hook1 - bez nr?
+    "fota-miniaturki": "mini0-9.png",
     nazwa: "Wiosłowanie ze sztangą w opadzie tułowia",
     "cwiczone-miesnie": ["Plecy - Środek"],
-    "fota-lokalizacji": "lok0.png", //bez nr?
-    idMaszynyUzywanej: "", //bez nr?
+    "fota-lokalizacji": "lok0.png",
+    idMaszynyUzywanej: "0", // bez maszyny
   },
   {
     id: 68,
     "link-wideo": "ONqIOc8vVe8",
-    "fota-miniaturki": "mini0-12.png", // hook1 - bez nr?
+    "fota-miniaturki": "mini0-10.png",
     nazwa: "Wiosłowanie T-Bar",
     "cwiczone-miesnie": ["Plecy - Środek"],
-    "fota-lokalizacji": "lok56.png", //bez nr?
-    idMaszynyUzywanej: "56", //bez nr?
+    "fota-lokalizacji": "lok0-2.png",
+    idMaszynyUzywanej: "0-2",
   },
   {
     id: 69,
     "link-wideo": "2rXwVwjSIUw",
-    "fota-miniaturki": "mini999-1.png", // hook1 - nie napisaliście numerka, jaki on jest?
+    "fota-miniaturki": "mini28-1.png", // hook1 - nie napisaliście numerka, jaki on jest?
     nazwa: "Wiosłowanie z rączką wyciągu w klęku",
     "cwiczone-miesnie": ["Plecy - Środek"],
-    "fota-lokalizacji": "lok999.png", // nie napisaliście numerka, jaki on jest?
-    idMaszynyUzywanej: "999", // nie napisaliście numerka, jaki on jest?
+    "fota-lokalizacji": "lok28.png", // nie napisaliście numerka, jaki on jest?
+    idMaszynyUzywanej: "28", // hook1 + 24,32
   },
   {
     id: 70,
@@ -712,8 +712,8 @@ const cwiczenia: Cwiczenia = [
     "fota-miniaturki": "mini0-13.png", // hook1 - bez nr?
     nazwa: "Wyciskanie francuskie hantli leżąc na ławce",
     "cwiczone-miesnie": ["Triceps"],
-    "fota-lokalizacji": "lok56.png", //bez nr?
-    idMaszynyUzywanej: "56", //bez nr?
+    "fota-lokalizacji": "lok0-2.png", //bez nr?
+    idMaszynyUzywanej: "0-2", //bez nr?
   },
   {
     id: 75,
@@ -721,8 +721,8 @@ const cwiczenia: Cwiczenia = [
     "fota-miniaturki": "mini0-14.png", // hook1 - bez nr?
     nazwa: "Wyciskanie sztangi łamanej leżąc na ławce",
     "cwiczone-miesnie": ["Triceps"],
-    "fota-lokalizacji": "lok56.png", //bez nr?
-    idMaszynyUzywanej: "56", //bez nr?
+    "fota-lokalizacji": "lok0-2.png", //bez nr?
+    idMaszynyUzywanej: "0-2", //bez nr?
   },
 ];
 

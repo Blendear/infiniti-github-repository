@@ -14,10 +14,12 @@ const NumerIDSzukacz = () => {
 
   const handleZmianaNumeru = (e) => {
     let nowaMaszyna;
-    e.target.value.length === 9
+    setFotaMaszyny("masz-loader.jpg");
+
+    e.target.value.length > 0
       ? maszyny.find((maszyna) => {
           nowaMaszyna = maszyna;
-          console.log(nowaMaszyna);
+
           return maszyna["nr-id"] === e.target.value;
         })
         ? (setFotaMaszyny(nowaMaszyna.fota),
@@ -35,22 +37,16 @@ const NumerIDSzukacz = () => {
       <input
         className={styles["strona-glowna__nr-id-szukacz__input-field"]}
         onChange={handleZmianaNumeru}
-        placeholder="123456789"
-        maxLength="9" //hook1 - sprawdz jak dlugi bedzie ten numer i zmien ten max length
+        placeholder="24"
+        maxLength="2"
       ></input>
       {fotaMaszyny !== "" &&
         (() => (
           <>
             <div
               className={styles["strona-glowna__nr-id-szukacz__fota-maszyny"]} // \/ is a palceholder, before I write code of <
-              // style={{
-              //   position: "relative",
-              //   height: "45rem",
-              //   aspectRatio: "1/1.5",
-              // }}
             >
               <Image
-                // public/images/.dedykowane-do-strony-konkretnej/e-trener/maszyny/masz1.png
                 src={`/images/.dedykowane-do-strony-konkretnej/e-trener/maszyny/${
                   fotaMaszyny !== "masz0" ? fotaMaszyny : "masz0.jpg"
                 }`}
@@ -59,7 +55,6 @@ const NumerIDSzukacz = () => {
                 objectFit="cover"
                 priority
                 loading="eager"
-                // quality={50}
               />
             </div>
             {fotaMaszyny !== "masz0" && (
