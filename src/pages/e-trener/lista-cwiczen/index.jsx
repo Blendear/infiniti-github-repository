@@ -10,6 +10,7 @@ import ModalCwiczeniaWybranego from "../../../features/e-trener/components/Modal
 import { cwiczenia } from "../../../features/e-trener";
 import stripeGetUserInfo from "../../../utils/stripeGetUserInfo";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import Image from "next/image";
 
 const ListaCwiczen = () => {
   const [nazwaModalu, setNazwaModalu] = useState("null");
@@ -19,6 +20,7 @@ const ListaCwiczen = () => {
   const { user, isLoading } = useUser();
   const [pokazInfoNiezasubskrybowanemu, setPokazInfoNiezasubskrybowanemu] =
     useState(false);
+  const [iloscCwiczen, setIloscCwiczen] = useState(0);
 
   const router = useRouter();
 
@@ -54,10 +56,12 @@ const ListaCwiczen = () => {
         <div className={styles["lista-cwiczen__lista"]}>
           {cwiczenia.map((cwiczenie, index) => {
             //       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
+
             if (
               filtr === "maszyna" &&
               wartosc === cwiczenie.idMaszynyUzywanej
             ) {
+              setIloscCwiczen((prev) => prev + 1);
               return (
                 <MiniaturkaCwiczenia
                   key={index}
@@ -72,7 +76,7 @@ const ListaCwiczen = () => {
                 (miesien) => miesien === wartosc
               )
             ) {
-              console.log("OTO ITEM Z LISTY CWICZEN: ", cwiczenie);
+              setIloscCwiczen((prev) => prev + 1);
               return (
                 <MiniaturkaCwiczenia
                   key={index}
@@ -82,7 +86,29 @@ const ListaCwiczen = () => {
                 />
               );
             }
+            console.log("iloscCwiczen", iloscCwiczen);
           })}
+          {iloscCwiczen === 0 && (
+            <div
+              style={{
+                gridColumn: "1 / -1",
+                position: "relative",
+                width: "min(25rem, 60vw)",
+                aspectRatio: "1/1",
+                borderRadius: "1rem",
+                overflow: "hidden",
+              }}
+            >
+              <Image
+                src="/images/.dedykowane-do-strony-konkretnej/e-trener/informacja/work-in-progress.png"
+                alt={`error while loading image`}
+                layout="fill"
+                objectFit="cover"
+                priority
+                loading="eager"
+              />
+            </div>
+          )}
         </div>
         {nazwaModalu !== "null" && (
           <ModalCwiczeniaWybranego
