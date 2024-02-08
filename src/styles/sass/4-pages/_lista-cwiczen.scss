@@ -55,6 +55,7 @@
           width: inherit;
           aspect-ratio: 1.33/1;
           clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+          background-color: rgb(239, 239, 239);
           // @include mixins.animated-appearance();
           @include mixins.grid-with-justify-align-items;
           &__dupni-sinek {
@@ -68,8 +69,9 @@
           }
         }
         &__tekst {
+          padding: 0.5rem 0.85rem;
           width: relative;
-          aspect-ratio: 3/1;
+          aspect-ratio: 2/1;
           @include mixins.gradient-cross-browser(
             "bg",
             variables.$gradient-direction-primary,
