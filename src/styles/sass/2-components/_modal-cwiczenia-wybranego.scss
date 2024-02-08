@@ -95,6 +95,10 @@
           position: relative;
           width: 8rem;
           aspect-ratio: 1.1/1;
+
+          @media (orientation: landscape) {
+            width: 14rem;
+          }
         }
         &__nazwa {
           padding: variables.$content-content-gap;
@@ -112,6 +116,10 @@
           font-weight: bold;
           color: colors.$primary;
           font-size: typography.$font-size-micro;
+
+          @media (orientation: landscape) {
+            font-size: 1.75rem;
+          }
         }
       }
     }
@@ -126,8 +134,9 @@
       aspect-ratio: 1/1;
       border-radius: variables.$border-radius-md;
       overflow: hidden;
+
       @media (orientation: landscape) {
-        width: min(44vw, 35rem);
+        width: min(44vw, 55rem);
         grid-column: 2/3;
         grid-row: 3/4;
       }
