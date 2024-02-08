@@ -4,7 +4,7 @@
 import styles from "src/styles/sass/styles-all.module.scss";
 import { useRouter } from "next/router";
 import { MiniaturkaCwiczenia } from "../../../features/e-trener";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { TytulBezTla, TytulZTlemKolorowym } from "../../../features/e-trener";
 import ModalCwiczeniaWybranego from "../../../features/e-trener/components/ModalCwiczeniaWybranego";
 import { cwiczenia } from "../../../features/e-trener";
@@ -20,10 +20,11 @@ const ListaCwiczen = () => {
   const { user, isLoading } = useUser();
   const [pokazInfoNiezasubskrybowanemu, setPokazInfoNiezasubskrybowanemu] =
     useState(false);
-  const [iloscCwiczen, setIloscCwiczen] = useState(0);
+  const iloscCwiczen = useRef(0);
+  const [forceRerender, setForceRerender] = useState(false);
 
   const router = useRouter();
-
+  console.log("rerender");
   useEffect(() => {
     router.query !== null &&
       (setNazwaModalu(router.query["nazwa-modalu"]),
@@ -40,6 +41,12 @@ const ListaCwiczen = () => {
     };
     user && checkSubscriptionStatus();
   }, [user]);
+
+  useEffect(() => {
+    console.log("useeffect");
+    console.log("iloscCwiczen.current", iloscCwiczen.current === -1);
+    iloscCwiczen.current === -1 && setForceRerender((prev) => !prev);
+  }, [iloscCwiczen]);
 
   return (
     pokazInfoNiezasubskrybowanemu && (
@@ -61,7 +68,7 @@ const ListaCwiczen = () => {
               filtr === "maszyna" &&
               wartosc === cwiczenie.idMaszynyUzywanej
             ) {
-              setIloscCwiczen((prev) => prev + 1);
+              iloscCwiczen.current += 1;
               return (
                 <MiniaturkaCwiczenia
                   key={index}
@@ -76,7 +83,7 @@ const ListaCwiczen = () => {
                 (miesien) => miesien === wartosc
               )
             ) {
-              setIloscCwiczen((prev) => prev + 1);
+              iloscCwiczen.current += 1;
               return (
                 <MiniaturkaCwiczenia
                   key={index}
@@ -85,10 +92,14 @@ const ListaCwiczen = () => {
                   setOtwarteCwiczenie={setOtwarteCwiczenie}
                 />
               );
+            } else {
+              cwiczenia.length - 1 === index &&
+                iloscCwiczen.current === 0 &&
+                ((iloscCwiczen.current = -1),
+                console.log("iloscCwiczen", iloscCwiczen.current));
             }
-            console.log("iloscCwiczen", iloscCwiczen);
           })}
-          {iloscCwiczen === 0 && (
+          {iloscCwiczen.current === -1 && (
             <div
               style={{
                 gridColumn: "1 / -1",
@@ -97,6 +108,7 @@ const ListaCwiczen = () => {
                 aspectRatio: "1/1",
                 borderRadius: "1rem",
                 overflow: "hidden",
+                backgroundColor: "rgb(239, 239, 239)",
               }}
             >
               <Image
