@@ -91,6 +91,7 @@ const ListaCwiczen = () => {
             otwarteCwiczenie={otwarteCwiczenie}
           />
         )}
+        <div style={{ height: "5rem", color: "transparent" }}>_</div>
       </article>
     )
   );
