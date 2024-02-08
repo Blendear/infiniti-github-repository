@@ -97,6 +97,7 @@
         aspect-ratio: 1/1;
         background-color: colors.$etrener-gradient-secondary-A;
         border-radius: 100%;
+        border: 0.5rem solid white;
         // @include mixins.animated-appearance();
         color: colors.$primary;
         font-size: typography.$font-size-lg;
