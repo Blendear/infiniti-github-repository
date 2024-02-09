@@ -6,7 +6,9 @@ import Link from "next/link";
 
 const AComponent = () => {
   return (
-    <button style={{ width: "15rem", aspectRatio: "3/1" }}>
+    <button
+      style={{ margin: "10rem 0 0 0", width: "15rem", aspectRatio: "3/1" }}
+    >
       {/* <Link href="/e-trener?method=qr"> */}
       <Link href="/api/auth/login">
         <a>Infiniti App</a>
