@@ -26,7 +26,7 @@ const InfoOSubskrypcji = () => {
         ) : (
           <div style={{ marginTop: "6rem" }}></div>
         )}
-        <header className={styles["info-o-subskrypcji__tytul"]}>
+        {/* <header className={styles["info-o-subskrypcji__tytul"]}>
           <h1>
             <ReactTyped
               strings={tekstySamozmieniajace}
@@ -36,7 +36,7 @@ const InfoOSubskrypcji = () => {
             />
           </h1>
           <h2>DZIELI CIĘ OD TWOJEGO E-TRENERA!</h2>
-        </header>
+        </header> */}
         <ul className={styles["info-o-subskrypcji__lista-paneli"]}>
           {infoOSubskrypcji.map((panel, index) => {
             return (
