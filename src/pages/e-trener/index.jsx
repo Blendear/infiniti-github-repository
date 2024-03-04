@@ -12,8 +12,6 @@ import {
 } from "../../features/e-trener";
 import { useState, useEffect } from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
-import stripeGetUserInfo from "../../utils/stripeGetUserInfo"; //hook2 - przerob na export z index.js pliku uniwersalnego
-import { useCheckSubscriptionStatus } from "../../features/e-trener/subscription-status-checking/hooks/useCheckSubscriptionStatus";
 
 const ETrenerStrGlowna = ({ propA, propB }) => {
   const router = useRouter();
@@ -28,15 +26,9 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
   // useCheckSubscriptionStatus(setPokazInfoNiezasubskrybowanemu);
 
   return (
-    <div
-      // style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
-      className={styles["strona-glowna"]}
-    >
+    <div className={styles["strona-glowna"]}>
       {pokazInfoNiezasubskrybowanemu && (
-        <article
-          // style={{ height: "100dvh", backgroundColor: "white", color: "black" }}
-          className={styles["strona-glowna__container"]}
-        >
+        <article className={styles["strona-glowna__container"]}>
           <WitaczImiennyZLinkami user={user} isUstawieniaDostepne={true} />
           <WyborMetodySzukaniaMaszyny
             activeButton={activeButton}

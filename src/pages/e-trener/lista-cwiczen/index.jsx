@@ -1,6 +1,3 @@
-//
-// Table of content for this file is written at the bottom
-//
 import styles from "src/styles/sass/styles-all.module.scss";
 import { useRouter } from "next/router";
 import { MiniaturkaCwiczenia } from "../../../features/e-trener";
@@ -9,7 +6,6 @@ import { TytulBezTla, TytulZTlemKolorowym } from "../../../features/e-trener";
 import ModalCwiczeniaWybranego from "../../../features/e-trener/components/ModalCwiczeniaWybranego";
 import { cwiczenia } from "../../../features/e-trener";
 import Image from "next/image";
-import { useCheckSubscriptionStatus } from "../../../features/e-trener/subscription-status-checking/hooks/useCheckSubscriptionStatus";
 
 const ListaCwiczen = () => {
   const [nazwaModalu, setNazwaModalu] = useState("null");
@@ -37,8 +33,6 @@ const ListaCwiczen = () => {
   // useCheckSubscriptionStatus(setPokazInfoNiezasubskrybowanemu);
 
   useEffect(() => {
-    console.log("useeffect");
-    console.log("iloscCwiczen.current", iloscCwiczen.current === -1);
     iloscCwiczen.current === -1 && setForceRerender((prev) => !prev);
   }, [iloscCwiczen]);
 
@@ -129,15 +123,3 @@ const ListaCwiczen = () => {
   );
 };
 export default ListaCwiczen;
-
-//~~ _. ListaCwiczen
-//
-//       _._. <TytulZTlemKolorowym> & <TytulBezTla>
-//
-//       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
-//
-//       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń
-//
-//            _._._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
-//
-//       _._. <ModalCwiczeniaWybranego>
