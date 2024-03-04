@@ -20,8 +20,9 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
 
   const { user, isLoading } = useUser();
   const [activeButton, setActiveButton] = useState(router.query.method || "qr");
+  // Hardcoded to true, since the basic service is free for every account
   const [pokazInfoNiezasubskrybowanemu, setPokazInfoNiezasubskrybowanemu] =
-    useState(false);
+    useState(true);
 
   // Disabled, since the basic service is free for every account
   // useCheckSubscriptionStatus(setPokazInfoNiezasubskrybowanemu);

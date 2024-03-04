@@ -16,9 +16,12 @@ const ListaCwiczen = () => {
   const [filtr, setFiltr] = useState("null");
   const [wartosc, setWartosc] = useState("null");
   const [otwarteCwiczenie, setOtwarteCwiczenie] = useState({});
+  // Hardcoded to true, since the basic service is free for every account
   const [pokazInfoNiezasubskrybowanemu, setPokazInfoNiezasubskrybowanemu] =
-    useState(false);
+    useState(true);
+
   const iloscCwiczen = useRef(0);
+
   const [forceRerender, setForceRerender] = useState(false);
 
   const router = useRouter();
