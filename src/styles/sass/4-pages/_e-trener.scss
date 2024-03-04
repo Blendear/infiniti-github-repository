@@ -9,7 +9,13 @@ $max-content: max-content;
   position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
   top: 0;
   bottom: 0;
-  background-color: colors.$primary;
+  // background-color: #3b99a1;
+  background-image: linear-gradient(
+    to right,
+    #482283,
+    #136689
+  ); /* Change direction and colors as needed */
+
   & > * {
     @include mixins.animated-appearance();
   }

@@ -37,7 +37,7 @@ const NumerIDSzukacz = () => {
       <input
         className={styles["strona-glowna__nr-id-szukacz__input-field"]}
         onChange={handleZmianaNumeru}
-        placeholder="24"
+        placeholder="numer"
         maxLength="2"
       ></input>
       {fotaMaszyny !== "" &&

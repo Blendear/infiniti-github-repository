@@ -42,7 +42,7 @@ const MiniaturkaCwiczenia = ({
               ]
             }
           >
-            <BsFillPlayCircleFill />
+            {/* <BsFillPlayCircleFill /> */}
           </div>
           <Image
             src={`/images/.dedykowane-do-strony-konkretnej/e-trener/miniaturki-cwiczen-wideo/${cwiczenie["fota-miniaturki"]}`}

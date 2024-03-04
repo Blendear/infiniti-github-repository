@@ -13,6 +13,7 @@ import {
 import { useState, useEffect } from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import stripeGetUserInfo from "../../utils/stripeGetUserInfo"; //hook2 - przerob na export z index.js pliku uniwersalnego
+import { useCheckSubscriptionStatus } from "../../features/e-trener/subscription-status-checking/hooks/useCheckSubscriptionStatus";
 
 const ETrenerStrGlowna = ({ propA, propB }) => {
   const router = useRouter();
@@ -22,15 +23,8 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
   const [pokazInfoNiezasubskrybowanemu, setPokazInfoNiezasubskrybowanemu] =
     useState(false);
 
-  useEffect(() => {
-    const checkSubscriptionStatus = async () => {
-      const subInfo = await stripeGetUserInfo(user.email);
-      subInfo.data.doesASubWithThisIDExist
-        ? setPokazInfoNiezasubskrybowanemu(true)
-        : router.push("/e-trener/informacje-o-subskrypcji");
-    };
-    user && checkSubscriptionStatus();
-  }, [user]);
+  // Disabled, since the basic service is free for every account
+  // useCheckSubscriptionStatus(setPokazInfoNiezasubskrybowanemu);
 
   return (
     <div

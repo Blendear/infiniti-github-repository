@@ -8,16 +8,14 @@ import { useState, useEffect, useRef } from "react";
 import { TytulBezTla, TytulZTlemKolorowym } from "../../../features/e-trener";
 import ModalCwiczeniaWybranego from "../../../features/e-trener/components/ModalCwiczeniaWybranego";
 import { cwiczenia } from "../../../features/e-trener";
-import stripeGetUserInfo from "../../../utils/stripeGetUserInfo";
-import { useUser } from "@auth0/nextjs-auth0/client";
 import Image from "next/image";
+import { useCheckSubscriptionStatus } from "../../../features/e-trener/subscription-status-checking/hooks/useCheckSubscriptionStatus";
 
 const ListaCwiczen = () => {
   const [nazwaModalu, setNazwaModalu] = useState("null");
   const [filtr, setFiltr] = useState("null");
   const [wartosc, setWartosc] = useState("null");
   const [otwarteCwiczenie, setOtwarteCwiczenie] = useState({});
-  const { user, isLoading } = useUser();
   const [pokazInfoNiezasubskrybowanemu, setPokazInfoNiezasubskrybowanemu] =
     useState(false);
   const iloscCwiczen = useRef(0);
@@ -31,16 +29,9 @@ const ListaCwiczen = () => {
       setFiltr(router.query["filtr"]),
       setWartosc(router.query["wartosc"]));
   }, [router.query]);
-  //HOOK2 - \/ Sprawdzanie subskrypocji robmy reduxem, a tylko raz sprawdzajmy, gdy zaciagnijecie stanu zalogowania z reduxa nie istneije? - PRZERÓB tego use effecta  w osobna funkcje || reduxem zalstw ta kwestie - bo powtarzam ten kod juz 3ci raz
-  useEffect(() => {
-    const checkSubscriptionStatus = async () => {
-      const subInfo = await stripeGetUserInfo(user.email);
-      subInfo.data.doesASubWithThisIDExist
-        ? setPokazInfoNiezasubskrybowanemu(true)
-        : router.push("/e-trener/informacje-o-subskrypcji");
-    };
-    user && checkSubscriptionStatus();
-  }, [user]);
+
+  // Disabled, since the basic service is free for every account
+  // useCheckSubscriptionStatus(setPokazInfoNiezasubskrybowanemu);
 
   useEffect(() => {
     console.log("useeffect");
