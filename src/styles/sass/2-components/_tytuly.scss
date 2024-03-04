@@ -26,7 +26,7 @@
   &--bez-tla {
     @include tytul;
     font-size: typography.$font-size-between-sm-and-md;
-    color: colors.$secondary;
+    color: colors.$primary;
   }
   &--z-tlem-kolorowym {
     margin: 7rem 0 0 0;

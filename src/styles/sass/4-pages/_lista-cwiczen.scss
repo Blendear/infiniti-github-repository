@@ -8,9 +8,14 @@
     position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
     top: 0;
     bottom: 0;
-    height: 100dvh;
+    height: 110vh;
     width: 100dvw;
-    background-color: colors.$primary;
+    @include mixins.gradient-cross-browser(
+      "bg",
+      variables.$gradient-direction-primary,
+      colors.$gradient-primary-A,
+      colors.$gradient-primary-B
+    );
     display: grid;
     grid-auto-flow: row;
     grid-auto-rows: max-content;
@@ -25,14 +30,16 @@
     }
   }
   &__lista {
-    margin: 2rem 0;
+    padding: 3rem 2rem;
+    height: 70vh;
+    overflow-y: scroll;
+
     @include mixins.grid-with-justify-align-items;
     grid-template-columns: repeat(2, 1fr);
     row-gap: variables.$content-content-gap-xl;
     column-gap: variables.$content-content-gap-md * 1.4;
 
     @media (orientation: landscape) {
-      // width: min(20vw, 20rem);
       grid-template-columns: repeat(3, 1fr);
       padding: 0 4rem;
     }
@@ -75,8 +82,8 @@
           @include mixins.gradient-cross-browser(
             "bg",
             variables.$gradient-direction-primary,
-            colors.$etrener-gradient-primary-A,
-            colors.$etrener-gradient-primary-B
+            colors.$gradient-third-A,
+            colors.$gradient-third-B
           );
           clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);
           // @include mixins.animated-appearance();
@@ -85,6 +92,7 @@
           text-align: center;
           font-size: min(1.6rem, 2.9vw);
           font-weight: bold;
+          filter: drop-shadow(0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.548));
         }
       }
       &__info {
@@ -95,11 +103,11 @@
         top: -10%;
         width: 27%;
         aspect-ratio: 1/1;
-        background-color: colors.$etrener-gradient-secondary-A;
+        background-color: colors.$primary;
         border-radius: 100%;
-        border: 0.5rem solid white;
+        // border: 0.5rem solid white;
         // @include mixins.animated-appearance();
-        color: colors.$primary;
+        color: colors.$secondary;
         font-size: typography.$font-size-lg;
         @include mixins.grid-with-justify-align-items;
       }
