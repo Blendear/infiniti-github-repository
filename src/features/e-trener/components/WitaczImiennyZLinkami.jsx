@@ -31,8 +31,8 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
 
       <span className={styles["child__css-class-name"]}>
         {(user
-          ? `Hej ${user.name.split(" ")[0].substr(0, 12)}!`
-          : "Witaj w E-Trenerze!"
+          ? `Hej ${user.name.split(" ")[0].substr(0, 12)}`
+          : "Witaj w Infiniti App!"
         ).toUpperCase()}
         {/* hook1 - utnij dlugosc imienia usera, jesli przkeroczy liczbe, ktory mi psuje css. mp. 10 */}
       </span>
