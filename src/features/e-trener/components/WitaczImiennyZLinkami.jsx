@@ -37,16 +37,17 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
         {/* hook1 - utnij dlugosc imienia usera, jesli przkeroczy liczbe, ktory mi psuje css. mp. 10 */}
       </span>
 
-      <button>
+      {/* <button>
         {isUstawieniaDostepne && (
           <Link href="https://billing.stripe.com/p/login/test_cN200H2EiboBbfy7ss">
-            {/* /\ hook1 wstaw tu link z LIVE VERSION pozniej */}
+          
             <a>
               <IoSettingsSharp />
             </a>
           </Link>
         )}
-      </button>
+      </button> */}
+      <div></div>
     </TytulZTlemKolorowym>
   );
 };
