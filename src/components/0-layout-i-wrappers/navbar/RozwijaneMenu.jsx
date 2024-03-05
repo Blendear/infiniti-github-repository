@@ -15,7 +15,7 @@ import Link from "next/link";
 const RozwijaneMenu = ({ pozycjaMenuProperty }) => {
   const [showRozwijaneMenu, setShowRozwijaneMenu] = useState(false);
 
-  console.log(pozycjaMenuProperty);
+  // console.log(pozycjaMenuProperty);
   const showSubnav = () => setShowRozwijaneMenu(!showRozwijaneMenu);
 
   return (

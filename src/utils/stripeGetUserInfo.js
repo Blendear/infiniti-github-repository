@@ -10,7 +10,7 @@ const stripeGetUserInfo = async (userEmail) => {
     );
 
     const data = await response.json();
-    console.log("status data", data);
+    // console.log("status data", data);
     if (data.status !== 200) {
       throw data;
     } else {

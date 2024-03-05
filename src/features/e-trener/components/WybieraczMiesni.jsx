@@ -19,7 +19,7 @@ const WybieraczMiesni = () => {
     if (iloscZaladowanychMiesni.current >= 22) {
       setCzyPokazacMiesnie(true);
     }
-    console.log("iloscZaladowanychMiesni: ", iloscZaladowanychMiesni.current);
+    // console.log("iloscZaladowanychMiesni: ", iloscZaladowanychMiesni.current);
   };
 
   return (
@@ -27,7 +27,7 @@ const WybieraczMiesni = () => {
       <TytulBezTla htmlElementType="label">
         KLIKNIJ W MIĘSIEŃ I ZATWIERDŹ
       </TytulBezTla>
-      {console.log("grupyMiesniowe: ", grupyMiesniowe)}
+      {/* {console.log("grupyMiesniowe: ", grupyMiesniowe)} */}
 
       <div className={styles["strona-glowna__wybieracz-miesni"]}>
         {!czyPokazacMiesnie && (

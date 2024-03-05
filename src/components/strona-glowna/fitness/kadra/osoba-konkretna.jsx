@@ -18,7 +18,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 
 const OsobaKonkretna = (props) => {
-  console.log(props.daneOOsobie.fotoPathKoncowka);
+  // console.log(props.daneOOsobie.fotoPathKoncowka);
 
   const socialeTejOsoby = [];
   for (let socialKonkretny in props.daneOOsobie.socialMediaLinks) {

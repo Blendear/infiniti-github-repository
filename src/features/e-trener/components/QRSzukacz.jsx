@@ -14,7 +14,7 @@ const QRSzukacz = () => {
   const router = useRouter();
 
   const handleScan = (data) => {
-    console.log(data.text);
+    // console.log(data.text);
 
     if (data !== null) {
       router.push(`${data.text}`);

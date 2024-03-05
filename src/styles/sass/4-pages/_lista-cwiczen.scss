@@ -35,6 +35,7 @@
     overflow-y: scroll;
 
     @include mixins.grid-with-justify-align-items;
+    align-items: start;
     grid-template-columns: repeat(2, 1fr);
     row-gap: variables.$content-content-gap-xl;
     column-gap: variables.$content-content-gap-md * 1.4;

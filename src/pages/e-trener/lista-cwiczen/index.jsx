@@ -18,10 +18,10 @@ const ListaCwiczen = () => {
 
   const iloscCwiczen = useRef(0);
 
-  const [forceRerender, setForceRerender] = useState(false);
+  const [_, setForceRerender] = useState(false);
 
   const router = useRouter();
-  console.log("rerender");
+
   useEffect(() => {
     router.query !== null &&
       (setNazwaModalu(router.query["nazwa-modalu"]),
@@ -36,6 +36,7 @@ const ListaCwiczen = () => {
     iloscCwiczen.current === -1 && setForceRerender((prev) => !prev);
   }, [iloscCwiczen]);
 
+  // console.log("iloscCwiczen", iloscCwiczen.current);
   return (
     pokazInfoNiezasubskrybowanemu && (
       <article className={styles["lista-cwiczen__container"]}>
@@ -43,12 +44,15 @@ const ListaCwiczen = () => {
           WYBIERZ ĆWICZENIE I ZACZYNAJMY!
         </TytulZTlemKolorowym>
         <TytulBezTla htmlElementType="h2">
-          {/* LUB KLIKNIJ “i”, ABY ZOBACZYĆ LOKALIZACJĘ MASZYNY ORAZ “ĆWICZONE
-          MIĘŚNIE” */}
           LUB ZOBACZ GDZIE ĆWICZYĆ I JAKIE MIĘŚNIE BĘDĄ AKTYWNE
         </TytulBezTla>
         {/* //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń */}
-        <div className={styles["lista-cwiczen__lista"]}>
+        <div
+          className={styles["lista-cwiczen__lista"]}
+          style={
+            iloscCwiczen.current === 1 ? { gridTemplateColumns: "1fr" } : {}
+          }
+        >
           {cwiczenia.map((cwiczenie, index) => {
             //       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
 
@@ -80,14 +84,9 @@ const ListaCwiczen = () => {
                   setOtwarteCwiczenie={setOtwarteCwiczenie}
                 />
               );
-            } else {
-              cwiczenia.length - 1 === index &&
-                iloscCwiczen.current === 0 &&
-                ((iloscCwiczen.current = -1),
-                console.log("iloscCwiczen", iloscCwiczen.current));
             }
           })}
-          {iloscCwiczen.current === -1 && (
+          {iloscCwiczen.current === 0 && (
             <div
               style={{
                 gridColumn: "1 / -1",

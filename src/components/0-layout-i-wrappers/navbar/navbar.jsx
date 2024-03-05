@@ -18,7 +18,7 @@ const Navbar = () => {
   const handlerToggleMenuIsOpen = (event) => {
     event.preventDefault();
 
-    console.log(`state reduxowy : ${reduxStateIsMenuOpen}`);
+    // console.log(`state reduxowy : ${reduxStateIsMenuOpen}`);
 
     dispatch(
       menuINavbarSliceActions.ustawWidocznoscMenu({

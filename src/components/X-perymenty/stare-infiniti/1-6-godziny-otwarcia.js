@@ -21,21 +21,21 @@ const GodzinyOtwarcia = () => {
   const handleClick = (ktoryAccordion) => {
     switch (ktoryAccordion) {
       case "M":
-        console.log("M");
+        // console.log("M");
         setIsOpenM(!isOpenM);
-        console.log(isOpenM);
+        // console.log(isOpenM);
 
         break;
       case "K":
-        console.log("K");
+        // console.log("K");
         setIsOpenK(!isOpenK);
-        console.log(isOpenK);
+        // console.log(isOpenK);
 
         break;
       case "Koedu":
-        console.log("Koedu");
+        // console.log("Koedu");
         setIsOpenKoedu(!isOpenKoedu);
-        console.log(isOpenKoedu);
+        // console.log(isOpenKoedu);
         break;
     }
   };
