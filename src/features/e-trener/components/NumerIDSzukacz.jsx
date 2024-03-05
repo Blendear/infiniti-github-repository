@@ -35,6 +35,7 @@ const NumerIDSzukacz = () => {
       </TytulBezTla>
       {/* //       _._. Jeśli użytkownik wpisał 9-cyfrową liczbę, która jest numerem ID maszyny, to wyświetl zdjęcie maszyny. Inaczej - wyświetl zdjęcie z napisem "zły numer"       */}
       <input
+        type="number"
         className={styles["strona-glowna__nr-id-szukacz__input-field"]}
         onChange={handleZmianaNumeru}
         placeholder="numer"

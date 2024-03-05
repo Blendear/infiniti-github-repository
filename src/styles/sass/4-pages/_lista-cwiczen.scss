@@ -50,14 +50,14 @@
       width: min(39vw, 20rem);
       aspect-ratio: 1/1;
       @include mixins.grid-with-justify-align-items;
-
+      filter: drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.8));
       &__panel {
         // @include mixins.animated-loader-bg();
 
         all: unset;
         //
         width: inherit;
-        filter: drop-shadow(colors.$shadow-universal);
+        // filter: drop-shadow(colors.$shadow-universal);
 
         &__miniaturka {
           position: relative;

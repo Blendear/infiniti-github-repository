@@ -81,15 +81,16 @@
     }
   }
   //hook1 - make the loading colors and looping prettier
-  background-color: #f6f7f8;
+  background-color: #181818;
+
   background: linear-gradient(
     to right,
-    #ededed 30%,
-    #ececec 48%,
-    #e1e1e1 58%,
-    #e1e1e1 68%,
-    #ececec 78%,
-    #ededed 88%
+    #181818 30%,
+    #1d1d1d 48%,
+    #212121 58%,
+    #212121 68%,
+    #1d1d1d 78%,
+    #181818 88%
   );
   animation: poruszajaSieLinia 5s infinite;
 }

@@ -13,6 +13,8 @@
     transform: translateY(-130%);
     border-radius: variables.$border-radius-sm;
     z-index: 50;
+    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.3));
+
     & a {
       @include mixins.grid-with-padding-and-justify-align-items;
       grid-template-columns: 5fr 1.25fr;
@@ -21,12 +23,10 @@
       color: white;
       //   filter: drop-shadow(colors.$shadow-universal);
 
-      & > div {
-      }
-
       & > span {
         justify-self: center;
         text-align: center;
+        filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
       }
       & svg {
         font-size: min(2rem, 7vw);

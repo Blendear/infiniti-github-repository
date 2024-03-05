@@ -6,6 +6,7 @@
 $rozmiar-sciany-kwadratu-siatki: 1fr; //hook2 - przerob na universal miary i wstaw do variables/ colors scss files
 $max-content: max-content;
 .strona-glowna {
+  overflow: hidden;
   position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
   top: 0;
   bottom: 0;
@@ -29,6 +30,7 @@ $max-content: max-content;
     grid-auto-rows: max-content;
 
     color: colors.$secondary;
+    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
 
     @media (orientation: landscape) {
       grid-auto-flow: column;
@@ -275,10 +277,15 @@ $max-content: max-content;
       font-size: typography.$font-size-xl;
       color: rgb(0, 0, 0, 0.8);
       text-align: center;
+      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
 
       &::placeholder {
         text-align: center;
         color: colors.$sixth;
+      }
+
+      &:focus {
+        outline: none;
       }
     }
     &__fota-maszyny {
@@ -289,17 +296,19 @@ $max-content: max-content;
 
       @include mixins.animated-loader-bg();
       @include mixins.next-img-border-radius(variables.$border-radius-sm);
+      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
     }
   }
   &__qr-szukacz {
     &__container {
+      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
     }
     &__kamera {
       margin: 0 auto;
       width: min(30rem, 70vw);
       aspect-ratio: 1.5/1;
       border-radius: 2rem;
-      background-color: colors.$secondary;
+      background-color: rgb(16, 16, 16);
     }
   }
 }
