@@ -57,7 +57,14 @@ const MiniaturkaCwiczenia = ({
         <span
           className={styles["lista-cwiczen__lista__cwiczenie__panel__tekst"]}
         >
-          {cwiczenie.nazwa}
+          <div
+            className={
+              styles["lista-cwiczen__lista__cwiczenie__panel__tekst__napis"]
+            }
+          >
+            {" "}
+            {cwiczenie.nazwa}
+          </div>
         </span>
       </button>
     </li>

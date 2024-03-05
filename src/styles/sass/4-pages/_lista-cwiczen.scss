@@ -83,7 +83,7 @@
           aspect-ratio: 2/1;
           @include mixins.gradient-cross-browser(
             "bg",
-            variables.$gradient-direction-primary,
+            variables.$gradient-direction-secondary,
             colors.$gradient-third-A,
             colors.$gradient-third-B
           );
@@ -94,7 +94,10 @@
           text-align: center;
           font-size: min(1.6rem, 2.9vw);
           font-weight: bold;
-          filter: drop-shadow(0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.548));
+
+          &__napis {
+            filter: drop-shadow(0rem 0rem 0.5rem rgba(0, 0, 0, 0.548));
+          }
         }
       }
       &__info {
