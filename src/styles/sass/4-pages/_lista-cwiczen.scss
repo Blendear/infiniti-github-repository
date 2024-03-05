@@ -5,6 +5,7 @@
 
 .lista-cwiczen {
   &__container {
+    padding: 0 0 3rem 0;
     overflow: "hidden";
     position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
     top: 0;
@@ -40,6 +41,10 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: variables.$content-content-gap-xl;
     column-gap: variables.$content-content-gap-md * 1.4;
+
+    @media (max-height: 585px) {
+      height: 60vh;
+    }
 
     @media (orientation: landscape) {
       grid-template-columns: repeat(3, 1fr);
