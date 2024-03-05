@@ -45,6 +45,8 @@ $max-content: max-content;
     grid-auto-rows: max-content;
   }
   &__wybieracz-miesni {
+    grid-row: 2;
+    grid-column: 1;
     margin: 0 0 3rem 0;
     display: grid;
     grid-template-rows:
@@ -257,13 +259,11 @@ $max-content: max-content;
     &__container {
       display: grid;
       justify-items: center;
-      // row-gap: variables.$title-content-row-gap;
     }
     &__input-field {
       padding: 1rem 2rem;
       width: min(35rem, 65vw);
       aspect-ratio: 4/1;
-
       @include mixins.gradient-cross-browser(
         "border",
         variables.$gradient-direction-secondary,
@@ -273,8 +273,7 @@ $max-content: max-content;
       border-radius: variables.$border-radius-sm;
       border-width: variables.$border-width-sm;
       font-size: typography.$font-size-xl;
-      // color: white;
-      color: colors.$secondary;
+      color: colors.$gradient-third-B;
       text-align: center;
 
       &::placeholder {
