@@ -37,8 +37,8 @@
     @include mixins.gradient-cross-browser(
       "bg",
       variables.$gradient-direction-secondary,
-      colors.$etrener-gradient-secondary-A,
-      colors.$etrener-gradient-secondary-B
+      colors.$gradient-third-A,
+      colors.$gradient-third-B
     );
     display: grid;
     align-items: center;

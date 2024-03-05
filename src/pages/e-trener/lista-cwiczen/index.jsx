@@ -6,6 +6,7 @@ import { TytulBezTla, TytulZTlemKolorowym } from "../../../features/e-trener";
 import ModalCwiczeniaWybranego from "../../../features/e-trener/components/ModalCwiczeniaWybranego";
 import { cwiczenia } from "../../../features/e-trener";
 import Image from "next/image";
+import { IoCaretBack } from "react-icons/io5";
 
 const ListaCwiczen = () => {
   const [nazwaModalu, setNazwaModalu] = useState("null");
@@ -36,16 +37,25 @@ const ListaCwiczen = () => {
     iloscCwiczen.current === -1 && setForceRerender((prev) => !prev);
   }, [iloscCwiczen]);
 
-  // console.log("iloscCwiczen", iloscCwiczen.current);
+  const handlebackButton = () => {
+    router.back();
+  };
+
   return (
     pokazInfoNiezasubskrybowanemu && (
       <article className={styles["lista-cwiczen__container"]}>
         <TytulZTlemKolorowym htmlElementType="h1">
-          WYBIERZ ĆWICZENIE I ZACZYNAJMY!
+          <button onClick={handlebackButton}>
+            <IoCaretBack />
+          </button>
+          <span>WYBIERZ ĆWICZENIE</span>
+          <div style={{ color: "transparent" }}>{`X`}</div>
         </TytulZTlemKolorowym>
+
         <TytulBezTla htmlElementType="h2">
           LUB ZOBACZ GDZIE ĆWICZYĆ I JAKIE MIĘŚNIE BĘDĄ AKTYWNE
         </TytulBezTla>
+
         {/* //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń */}
         <div
           className={styles["lista-cwiczen__lista"]}
