@@ -267,13 +267,13 @@ $max-content: max-content;
       @include mixins.gradient-cross-browser(
         "border",
         variables.$gradient-direction-secondary,
-        colors.$etrener-gradient-secondary-A,
-        colors.$etrener-gradient-secondary-B
+        colors.$gradient-third-A,
+        colors.$gradient-third-B
       );
       border-radius: variables.$border-radius-sm;
       border-width: variables.$border-width-sm;
       font-size: typography.$font-size-xl;
-      color: colors.$gradient-third-B;
+      color: rgb(0, 0, 0, 0.8);
       text-align: center;
 
       &::placeholder {

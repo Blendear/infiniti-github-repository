@@ -6,13 +6,11 @@
 .btn-potwierdz {
   &__container {
     all: unset;
-    grid-row: 2;
-    grid-column: 1;
+
     margin: 0 auto 3rem auto;
     width: 24rem;
     aspect-ratio: 6/1;
-    align-self: end;
-    transform: translateY(-25%);
+    transform: translateY(-130%);
     border-radius: variables.$border-radius-sm;
     z-index: 50;
     & a {
@@ -23,6 +21,13 @@
       color: white;
       //   filter: drop-shadow(colors.$shadow-universal);
 
+      & > div {
+      }
+
+      & > span {
+        justify-self: center;
+        text-align: center;
+      }
       & svg {
         font-size: min(2rem, 7vw);
       }
@@ -31,18 +36,24 @@
       background-color: colors.$succes;
     }
     &--e-trener {
-      //hook2 - zmien mixin gradientu tak, zeby podawac wlansy kolor do backgroundu \/ bo tu musialem recznie zroibc czarny
-      border-style: solid;
-      border-color: transparent;
-      background: linear-gradient(#000000, #000000) padding-box,
-        linear-gradient(
-            variables.$gradient-direction-secondary,
-            colors.$gradient-third-A,
-            colors.$gradient-third-B
-          )
-          border-box;
+      // border-style: solid;
+      // border-color: transparent;
+      // background: linear-gradient(#000000, #000000) padding-box,
+      //   linear-gradient(
+      //       variables.$gradient-direction-secondary,
+      //       colors.$gradient-third-A,
+      //       colors.$gradient-third-B
+      //     )
+      //     border-box;
+      @include mixins.gradient-cross-browser(
+        "bg",
+        variables.$gradient-direction-secondary,
+        colors.$gradient-third-A,
+        colors.$gradient-third-B
+      );
+
       & svg {
-        color: colors.$etrener-gradient-secondary-A;
+        color: colors.$primary;
       }
     }
     &--e-trener-light {
