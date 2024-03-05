@@ -25,7 +25,7 @@ const PotwierdzPrzycisk = ({ children, kolorTla, filtr, wartosc }) => {
     >
       {/* filtr = maszyna || gr-miesniowa   &   wartosc = number idMaszyny || string "nazwa" gr. miesniowej */}
       <Link
-        href={`/e-trener/lista-cwiczen?filtr=${filtr}&wartosc=${wartosc}&nazwa-modalu=null&id-cwiczenia=null`}
+        href={`/infiniti-app/lista-cwiczen?filtr=${filtr}&wartosc=${wartosc}&nazwa-modalu=null&id-cwiczenia=null`}
       >
         <a
           style={

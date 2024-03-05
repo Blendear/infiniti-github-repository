@@ -15,7 +15,7 @@ export const useCheckSubscriptionStatus = (
       const subInfo = await stripeGetUserInfo(user.email);
       subInfo.data.doesASubWithThisIDExist
         ? setPokazInfoNiezasubskrybowanemu(true)
-        : router.push("/e-trener/informacje-o-subskrypcji");
+        : router.push("/infiniti-app/informacje-o-subskrypcji");
     };
     user && checkSubscriptionStatus();
   }, [user]);

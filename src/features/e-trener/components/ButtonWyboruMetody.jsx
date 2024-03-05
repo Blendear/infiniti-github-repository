@@ -22,7 +22,7 @@ const ButtonWyboruMetody = ({ activeButton, metoda, setActiveButton }) => {
         setActiveButton(metoda);
       }}
     >
-      <Link href={`/e-trener?method=${metoda}`}>
+      <Link href={`/infiniti-app?method=${metoda}`}>
         <a>
           {
             {

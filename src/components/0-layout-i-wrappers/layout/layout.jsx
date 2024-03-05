@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
   const router = useRouter();
-  const showFooter = router.pathname.includes("/e-trener") ? false : true;
+  const showFooter = router.pathname.includes("/infiniti-app") ? false : true;
 
   return (
     <div>

@@ -20,7 +20,7 @@ const MenuModal = (props) => {
       top: 0,
     });
   };
-  console.log("reduxStateIsMenuOpen: ", reduxStateIsMenuOpen);
+  // console.log("reduxStateIsMenuOpen: ", reduxStateIsMenuOpen);
   useEffect(() => {
     if (reduxStateIsMenuOpen === true) {
       disableBodyOverflow();
