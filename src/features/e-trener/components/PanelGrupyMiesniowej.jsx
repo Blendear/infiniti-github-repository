@@ -3,6 +3,7 @@
 //
 import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
+import { LoaderIcon } from "../../../components/e-trener/LoaderIcon";
 
 const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
   return (
@@ -22,6 +23,8 @@ const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
           ]
         }
       >
+        <LoaderIcon fontSize="3rem" />
+
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/e-trener/ikony-miesni/${fota}`}
           alt={`error while loading image`}

@@ -7,6 +7,7 @@ import ModalCwiczeniaWybranego from "../../../features/e-trener/components/Modal
 import { cwiczenia } from "../../../features/e-trener";
 import Image from "next/image";
 import { IoCaretBack } from "react-icons/io5";
+import { LoaderIcon } from "../../../components/e-trener/LoaderIcon";
 
 const ListaCwiczen = () => {
   const [nazwaModalu, setNazwaModalu] = useState("null");
@@ -57,69 +58,83 @@ const ListaCwiczen = () => {
         </TytulBezTla>
 
         {/* //       _._. MiniaturkaCwiczenia dla każdego z przefiltrowanych ćwiczeń */}
-        <div
-          className={styles["lista-cwiczen__lista"]}
-          style={
-            iloscCwiczen.current === 1 ? { gridTemplateColumns: "1fr" } : {}
-          }
-        >
-          {cwiczenia.map((cwiczenie, index) => {
-            //       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
-
-            if (
-              filtr === "maszyna" &&
-              wartosc === cwiczenie.idMaszynyUzywanej
-            ) {
-              iloscCwiczen.current += 1;
-              return (
-                <MiniaturkaCwiczenia
-                  key={index}
-                  cwiczenie={cwiczenie}
-                  setNazwaModalu={setNazwaModalu}
-                  setOtwarteCwiczenie={setOtwarteCwiczenie}
-                />
-              );
-            } else if (
-              filtr === "gr-miesniowa" &&
-              cwiczenie["cwiczone-miesnie"].find(
-                (miesien) => miesien === wartosc
-              )
-            ) {
-              iloscCwiczen.current += 1;
-              return (
-                <MiniaturkaCwiczenia
-                  key={index}
-                  cwiczenie={cwiczenie}
-                  setNazwaModalu={setNazwaModalu}
-                  setOtwarteCwiczenie={setOtwarteCwiczenie}
-                />
-              );
+        {(
+          <div
+            className={styles["lista-cwiczen__lista"]}
+            style={
+              iloscCwiczen.current === 1 ? { gridTemplateColumns: "1fr" } : {}
             }
-          })}
-          {iloscCwiczen.current === 0 && (
-            <div
-              style={{
-                gridColumn: "1 / -1",
-                position: "relative",
-                width: "min(25rem, 60vw)",
-                aspectRatio: "1/1",
-                borderRadius: "1rem",
-                overflow: "hidden",
-                backgroundColor: "rgb(239, 239, 239)",
-                filter: "drop-shadow(0px 0px 0.2rem rgb(0,0,0, 0.6))",
-              }}
-            >
-              <Image
-                src="/images/.dedykowane-do-strony-konkretnej/e-trener/informacja/work-in-progress.png"
-                alt={`error while loading image`}
-                layout="fill"
-                objectFit="cover"
-                priority
-                loading="eager"
-              />
-            </div>
-          )}
-        </div>
+          >
+            {cwiczenia.map((cwiczenie, index) => {
+              //       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
+
+              if (
+                filtr === "maszyna" &&
+                wartosc === cwiczenie.idMaszynyUzywanej
+              ) {
+                iloscCwiczen.current += 1;
+                return (
+                  <MiniaturkaCwiczenia
+                    key={index}
+                    cwiczenie={cwiczenie}
+                    setNazwaModalu={setNazwaModalu}
+                    setOtwarteCwiczenie={setOtwarteCwiczenie}
+                  />
+                );
+              } else if (
+                filtr === "gr-miesniowa" &&
+                cwiczenie["cwiczone-miesnie"].find(
+                  (miesien) => miesien === wartosc
+                )
+              ) {
+                iloscCwiczen.current += 1;
+                return (
+                  <MiniaturkaCwiczenia
+                    key={index}
+                    cwiczenie={cwiczenie}
+                    setNazwaModalu={setNazwaModalu}
+                    setOtwarteCwiczenie={setOtwarteCwiczenie}
+                  />
+                );
+              }
+            })}
+            {iloscCwiczen.current === 0 && (
+              <div
+                style={{
+                  gridColumn: "1 / -1",
+                  position: "relative",
+                  width: "min(25rem, 60vw)",
+                  aspectRatio: "1/1",
+                  borderRadius: "1rem",
+                  overflow: "hidden",
+                  backgroundColor: "rgb(239, 239, 239)",
+                  filter: "drop-shadow(0px 0px 0.2rem rgb(0,0,0, 0.6))",
+                }}
+              >
+                <Image
+                  src="/images/.dedykowane-do-strony-konkretnej/e-trener/informacja/work-in-progress.png"
+                  alt={`error while loading image`}
+                  layout="fill"
+                  objectFit="cover"
+                  priority
+                  loading="eager"
+                />
+              </div>
+            )}
+          </div>
+        ) || (
+          <div
+            style={{
+              height: "40vh",
+              width: "100%",
+              display: "grid",
+              justifyItems: "center",
+              alignItems: "center",
+            }}
+          >
+            <LoaderIcon fontSize="10rem" />
+          </div>
+        )}
         {nazwaModalu !== "null" && (
           <ModalCwiczeniaWybranego
             setNazwaModalu={setNazwaModalu}

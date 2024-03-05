@@ -1,0 +1,17 @@
+@use "../6-abstracts/mixins";
+@use "../6-abstracts/colors";
+@use "../6-abstracts/variables";
+@use "../1-base/base";
+@use "../1-base/typography";
+
+.loader-icon {
+  &__container {
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

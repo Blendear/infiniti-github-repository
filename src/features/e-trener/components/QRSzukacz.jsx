@@ -9,6 +9,7 @@ import { useState } from "react";
 import { QrReader } from "react-qr-reader";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import { LoaderIcon } from "../../../components/e-trener/LoaderIcon";
 
 const QRSzukacz = () => {
   const router = useRouter();
@@ -24,21 +25,35 @@ const QRSzukacz = () => {
     <section className={styles["strona-glowna__qr-szukacz__container"]}>
       {/* //       _._. AA */}
       <TytulBezTla htmlElementType="label">ZESKANUJ KOD QR MASZYNY</TytulBezTla>
-      <QrReader
-        className={styles["strona-glowna__qr-szukacz__kamera"]}
-        onResult={(result, error) => {
-          if (!!result) {
-            handleScan(result);
-          }
+      {(
+        <QrReader
+          className={styles["strona-glowna__qr-szukacz__kamera"]}
+          onResult={(result, error) => {
+            if (!!result) {
+              handleScan(result);
+            }
 
-          if (!!error) {
-            console.info(error);
-          }
-        }}
-        constraints={{
-          facingMode: "environment",
-        }}
-      />
+            if (!!error) {
+              console.info(error);
+            }
+          }}
+          constraints={{
+            facingMode: "environment",
+          }}
+        />
+      ) || (
+        <div
+          style={{
+            height: "40vh",
+            width: "100%",
+            display: "grid",
+            justifyItems: "center",
+            alignItems: "center",
+          }}
+        >
+          <LoaderIcon fontSize="10rem" />
+        </div>
+      )}
     </section>
   );
 };
