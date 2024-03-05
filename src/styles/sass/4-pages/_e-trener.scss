@@ -6,29 +6,28 @@
 $rozmiar-sciany-kwadratu-siatki: 1fr; //hook2 - przerob na universal miary i wstaw do variables/ colors scss files
 $max-content: max-content;
 .strona-glowna {
-  overflow: hidden;
   position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
   top: 0;
   bottom: 0;
   // background-color: #3b99a1;
-  @include mixins.gradient-cross-browser(
-    "bg",
-    variables.$gradient-direction-primary,
-    colors.$gradient-primary-A,
-    colors.$gradient-primary-B
-  );
+
   & > * {
     @include mixins.animated-appearance();
   }
   //hook1 - zmien ten tytul /\ na "e-trener" i pozmieniaj reszcie ele,mentow nazwe
   &__container {
-    height: 100dvh;
+    // overflow: hidden;
+    padding: 0 0 3rem 0;
     width: 100dvw;
-    // background-color: colors.$primary;
     display: grid;
     grid-auto-flow: row;
     grid-auto-rows: max-content;
-
+    @include mixins.gradient-cross-browser(
+      "bg",
+      variables.$gradient-direction-primary,
+      colors.$gradient-primary-A,
+      colors.$gradient-primary-B
+    );
     color: colors.$secondary;
 
     @media (orientation: landscape) {
