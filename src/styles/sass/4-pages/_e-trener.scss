@@ -30,7 +30,6 @@ $max-content: max-content;
     grid-auto-rows: max-content;
 
     color: colors.$secondary;
-    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
 
     @media (orientation: landscape) {
       grid-auto-flow: column;

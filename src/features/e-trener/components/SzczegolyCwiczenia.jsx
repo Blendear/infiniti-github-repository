@@ -5,6 +5,7 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import { TytulZTlemKolorowym, TytulBezTla, PanelGrupyMiesniowej } from "..";
 import grupyMiesniowe from "../data/grupyMiesniowe"; //hook1 - dlaczego tak dziala, a nie dziala, gdy importuje z "index.js", czyli po przez ".." ?- reszta plikow przeicez dziala takim importem
 import Image from "next/image";
+import { IoCaretBack } from "react-icons/io5";
 
 const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
   const handleZamknijModal = () => {
@@ -15,9 +16,11 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
     <>
       {/* \/ hook1 - ustaw tytul tak, zeby zawsze mial 3 kolumny, a buttony lub svg niech ustwiaja sie po bokach, a  h1 w srodku */}
       <TytulZTlemKolorowym>
-        <div style={{ color: "transparent" }}>{`X`}</div>
+        <button onClick={handleZamknijModal}>
+          <IoCaretBack />
+        </button>
         <span>{cwiczenie.nazwa} </span>
-        <button onClick={handleZamknijModal}>X</button>
+        <div style={{ color: "transparent" }}>{`X`}</div>
       </TytulZTlemKolorowym>
       <section style={{ display: "grid" }}>
         <TytulBezTla htmlElementType="h2">MIĘŚNIE ĆWICZONE</TytulBezTla>

@@ -13,7 +13,13 @@
     height: 100%;
     width: 100%;
     z-index: 50;
-    background-color: colors.$primary;
+    // background-color: colors.$primary;
+    @include mixins.gradient-cross-browser(
+      "bg",
+      variables.$gradient-direction-primary,
+      colors.$gradient-primary-A,
+      colors.$gradient-primary-B
+    );
     display: grid;
   }
   &__overlay {

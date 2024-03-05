@@ -21,7 +21,7 @@
     column-gap: variables.$content-content-gap;
 
     &__btn {
-      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.3));
+      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
       padding: variables.$content-content-gap 0.5rem;
       width: min(21.5vw, 17rem);
       aspect-ratio: 1/1;

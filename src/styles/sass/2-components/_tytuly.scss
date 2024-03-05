@@ -7,7 +7,7 @@
   &__container {
     width: min(40rem, 80vw);
     margin: 0 auto;
-    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
 
     @media (orientation: landscape) {
       grid-column: 1 / -1;
@@ -54,7 +54,7 @@
     }
 
     & > span {
-      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
+      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
     }
 
     & button,

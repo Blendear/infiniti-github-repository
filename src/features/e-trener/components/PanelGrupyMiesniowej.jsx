@@ -40,7 +40,7 @@ const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
           ]
         }
       >
-        {`${grupaMiesniowa}`}
+        <span> {`${grupaMiesniowa}`}</span>
       </span>
     </li>
   );

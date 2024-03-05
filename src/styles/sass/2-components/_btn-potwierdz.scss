@@ -13,7 +13,7 @@
     transform: translateY(-130%);
     border-radius: variables.$border-radius-sm;
     z-index: 50;
-    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
 
     & a {
       @include mixins.grid-with-padding-and-justify-align-items;
