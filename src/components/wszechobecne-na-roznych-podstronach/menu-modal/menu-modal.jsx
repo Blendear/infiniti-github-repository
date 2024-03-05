@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "src/styles/sass/styles-all.module.scss";
 import KlocekMenu from "./klocek-menu";
+import React, { useState, useEffect } from "react";
 
 import { useAppSelector, useAppDispatch } from "../../../store/redux/hooks";
 import Link from "next/link";
@@ -9,6 +10,23 @@ const MenuModal = (props) => {
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
   );
+
+  const disableBodyOverflow = () => {
+    document.body.classList.add(styles["modal-open"]);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+  console.log("reduxStateIsMenuOpen: ", reduxStateIsMenuOpen);
+  useEffect(() => {
+    if (reduxStateIsMenuOpen === true) {
+      disableBodyOverflow();
+      scrollToTop();
+    }
+  }, [reduxStateIsMenuOpen]);
 
   return (
     // <div className={styles["menu-modal__tlo"]}>

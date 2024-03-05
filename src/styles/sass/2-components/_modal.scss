@@ -7,6 +7,11 @@
 @use "../1-base/base";
 @use "../1-base/typography";
 
+.modal-open {
+  overflow: hidden !important;
+  color: white;
+}
+
 .modal {
   @mixin overlay {
     position: fixed; // not absolute, so that it covers the whole page, not just the whole screen

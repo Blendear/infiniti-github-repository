@@ -15,9 +15,14 @@ const Navbar = () => {
     (state) => state.menuINavbarReducer.menuIsOpen
   );
 
+  const handleCloseDialogModal = () => {
+    document.body.classList.remove(styles["modal-open"]);
+  };
+
   const handlerToggleMenuIsOpen = (event) => {
     event.preventDefault();
 
+    handleCloseDialogModal();
     // console.log(`state reduxowy : ${reduxStateIsMenuOpen}`);
 
     dispatch(
