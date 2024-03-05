@@ -106,6 +106,7 @@ const ListaCwiczen = () => {
                 borderRadius: "1rem",
                 overflow: "hidden",
                 backgroundColor: "rgb(239, 239, 239)",
+                filter: "drop-shadow(0px 0px 0.2rem rgb(0,0,0, 0.6))",
               }}
             >
               <Image
