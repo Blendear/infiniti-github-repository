@@ -19,12 +19,7 @@
     width: 100%;
     z-index: 50;
     // background-color: colors.$primary;
-    @include mixins.gradient-cross-browser(
-      "bg",
-      variables.$gradient-direction-primary,
-      colors.$gradient-primary-A,
-      colors.$gradient-primary-B
-    );
+
     display: grid;
   }
   &__overlay {
@@ -33,7 +28,7 @@
 
     &--transparent {
       @include overlay();
-      background-color: transparent;
+      // background-color: transparent;
     }
     &--dark {
       @include overlay();
@@ -54,15 +49,18 @@
       aspect-ratio: 1/1;
       justify-self: end;
       z-index: 350;
-
       border-radius: 1.25rem;
-      // font-size: typography.$font-size-xl;
-      // background-color: colors.$secondary-light;
     }
   }
 
   &--information {
     @mixin container() {
+      @include mixins.gradient-cross-browser(
+        "bg",
+        variables.$gradient-direction-primary,
+        colors.$gradient-primary-A,
+        colors.$gradient-primary-B
+      );
       @include modal-container();
       justify-self: center;
       align-self: center;

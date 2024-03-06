@@ -12,7 +12,7 @@
     aspect-ratio: 6/1;
     transform: translateY(-130%);
     border-radius: variables.$border-radius-sm;
-    z-index: 50;
+    z-index: 10;
     filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
 
     & a {

@@ -9,10 +9,7 @@ import TytulBezTla from "./TytulBezTla";
 import Link from "next/link";
 
 const ModalWylogowywania = ({ setIsModalOtwarty }) => {
-  //
-
   return (
-    // wylogowywanie__buttony__btn / wylogowywanie__buttony__btn--active
     <>
       <Modal variant="information" hasBackdrop={true} bgVariant="transparent">
         <article className={styles["wylogowywanie__container"]}>

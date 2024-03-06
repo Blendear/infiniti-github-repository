@@ -267,6 +267,7 @@ $max-content: max-content;
     &__input-field {
       padding: 1rem 2rem;
       width: min(35rem, 65vw);
+      max-width: 25rem;
       aspect-ratio: 4/1;
       @include mixins.gradient-cross-browser(
         "border",
