@@ -71,15 +71,14 @@ body {
   );
 }
 
-button {
-  cursor: pointer !important;
-  &:hover {
-    filter: brightness(0.8);
-  }
-}
-
 a {
   text-decoration: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* Remove default margin */

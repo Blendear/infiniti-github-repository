@@ -6,6 +6,18 @@
 $rozmiar-sciany-kwadratu-siatki: 1fr; //hook2 - przerob na universal miary i wstaw do variables/ colors scss files
 $max-content: max-content;
 .strona-glowna {
+  box-sizing: border-box;
+  @media (orientation: landscape) {
+    display: grid;
+  }
+
+  button {
+    cursor: pointer !important;
+    &:hover {
+      filter: brightness(1.05) !important;
+    }
+  }
+
   & > * {
     @include mixins.animated-appearance();
   }
@@ -16,17 +28,13 @@ $max-content: max-content;
     display: grid;
     grid-auto-flow: row;
     grid-auto-rows: max-content;
-    @include mixins.gradient-cross-browser(
-      "bg",
-      variables.$gradient-direction-primary,
-      colors.$gradient-primary-A,
-      colors.$gradient-primary-B
-    );
+
     color: colors.$secondary;
 
     @media (orientation: landscape) {
+      justify-self: center;
       grid-auto-flow: column;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, max-content);
       grid-template-rows: max-content 1fr;
       padding: 0 4rem;
       row-gap: 2rem;
@@ -52,6 +60,7 @@ $max-content: max-content;
       [c-1] 1fr
       [c-2];
     justify-items: center;
+    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
 
     @mixin rozmiar-wybieracza-miesni {
       // margin: 5rem 0 0 0;
@@ -60,6 +69,10 @@ $max-content: max-content;
       height: 40rem;
       aspect-ratio: 1/1.5;
       @include mixins.next-img-border-radius(variables.$border-radius-sm);
+
+      @media screen and (orientation: landscape) {
+        height: 45rem;
+      }
     }
 
     &__zakrywajacy-loader {
