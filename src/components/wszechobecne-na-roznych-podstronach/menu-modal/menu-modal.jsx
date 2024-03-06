@@ -2,10 +2,9 @@ import Image from "next/image";
 import styles from "src/styles/sass/styles-all.module.scss";
 import KlocekMenu from "./klocek-menu";
 import React, { useState, useEffect } from "react";
-
 import { useAppSelector, useAppDispatch } from "../../../store/redux/hooks";
 import Link from "next/link";
-//hook1 - gdzie (w navbarze?) i jak (usestate?) włożyć modal? herehere07.02.2023
+
 const MenuModal = (props) => {
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
@@ -20,7 +19,6 @@ const MenuModal = (props) => {
       top: 0,
     });
   };
-  // console.log("reduxStateIsMenuOpen: ", reduxStateIsMenuOpen);
   useEffect(() => {
     if (reduxStateIsMenuOpen === true) {
       disableBodyOverflow();
@@ -28,8 +26,11 @@ const MenuModal = (props) => {
     }
   }, [reduxStateIsMenuOpen]);
 
+  const handleCloseDialogModal = () => {
+    document.body.classList.remove(styles["modal-open"]);
+  };
+
   return (
-    // <div className={styles["menu-modal__tlo"]}>
     <nav
       className={
         reduxStateIsMenuOpen === true
@@ -62,6 +63,7 @@ const MenuModal = (props) => {
             "menu-modal__caly-container__klocki--container-listujacy-klocki-lewe"
           ]
         }
+        onClick={handleCloseDialogModal}
       >
         <Link href="/strona-glowna-infiniti/medical/uslugi">
           <a>
@@ -96,6 +98,7 @@ const MenuModal = (props) => {
             "menu-modal__caly-container__klocki--container-listujacy-klocki-prawe"
           ]
         }
+        onClick={handleCloseDialogModal}
       >
         {/* <KlocekMenu imagePathEnd="klocki/fitness-grafik.png" /> */}
         <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
@@ -131,6 +134,7 @@ const MenuModal = (props) => {
             "menu-modal__caly-container__klocki--container-listujacy-klocki-srodkowe"
           ]
         }
+        onClick={handleCloseDialogModal}
       >
         <Link href="/strona-glowna-infiniti">
           <a>
