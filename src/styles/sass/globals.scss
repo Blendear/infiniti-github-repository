@@ -69,8 +69,10 @@ body {
     infiniti-variables.$dark-violet 0%,
     infiniti-variables.$dark-blue 100%
   );
-  // //hide scroollbars \/
-  // overflow: hidden;
+}
+
+button {
+  cursor: pointer !important;
 }
 
 a {
