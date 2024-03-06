@@ -6,19 +6,13 @@
 $rozmiar-sciany-kwadratu-siatki: 1fr; //hook2 - przerob na universal miary i wstaw do variables/ colors scss files
 $max-content: max-content;
 .strona-glowna {
-  position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
-  top: 0;
-  bottom: 0;
-  // background-color: #3b99a1;
-
   & > * {
     @include mixins.animated-appearance();
   }
-  //hook1 - zmien ten tytul /\ na "e-trener" i pozmieniaj reszcie ele,mentow nazwe
   &__container {
-    // overflow: hidden;
     padding: 0 0 3rem 0;
-    width: 100dvw;
+
+    overflow: scroll;
     display: grid;
     grid-auto-flow: row;
     grid-auto-rows: max-content;

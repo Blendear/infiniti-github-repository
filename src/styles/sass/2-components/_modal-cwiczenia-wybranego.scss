@@ -41,7 +41,6 @@
       );
       border-radius: variables.$border-radius-sm;
       border-width: variables.$border-width-micro;
-
       @include mixins.grid-with-justify-align-items;
       font-size: typography.$font-size-md;
 
@@ -50,10 +49,10 @@
       }
 
       @media (orientation: landscape) {
-        font-size: 1.2rem;
-        width: 2.5rem;
+        width: 3.5rem;
         margin-right: 12vw;
       }
+
       & h1 {
         color: colors.$primary;
       }
@@ -94,15 +93,11 @@
 
         &__fota {
           opacity: 100;
-
           position: relative;
           width: 8rem;
           aspect-ratio: 1.1/1;
-
-          // @media (orientation: landscape) {
-          //   width: 14rem;
-          // }
         }
+
         &__nazwa {
           padding: variables.$content-content-gap;
           width: min(35vw, 15rem);
