@@ -19,10 +19,11 @@
   }
 
   @media (orientation: landscape) {
-    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+    grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3, max-content);
     column-gap: 3rem;
-    row-gap: variables.$content-content-gap;
+    row-gap: 2rem;
   }
   &__wideo {
     display: grid;
