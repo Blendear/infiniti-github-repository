@@ -56,7 +56,6 @@ const NumerIDSzukacz = () => {
                 style={najnowszaMaszynaJestJuZZaladowana ? {} : { opacity: 0 }}
                 onLoadingComplete={() => {
                   setNajnowszaMaszynaJestJuZZaladowana(true);
-                  console.log("zaladowany");
                 }}
                 src={`/images/.dedykowane-do-strony-konkretnej/e-trener/maszyny/${
                   fotaMaszyny !== "masz0" ? fotaMaszyny : "masz0.jpg"
