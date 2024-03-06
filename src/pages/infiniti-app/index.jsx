@@ -25,6 +25,12 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
   // Disabled, since the basic service is free for every account
   // useCheckSubscriptionStatus(setPokazInfoNiezasubskrybowanemu);
 
+  useEffect(() => {
+    if (router.query.method) {
+      setActiveButton(router.query.method);
+    }
+  }, [router.query.method]);
+
   return (
     <div className={styles["strona-glowna"]}>
       {pokazInfoNiezasubskrybowanemu && (
