@@ -160,10 +160,10 @@
               [r-5] 1fr
               [r-6] 1fr
               [r-7] 7rem
-              [r-8] 1fr
-              [r-9] 1fr
-              [r-10] 1fr
-              [r-11];
+              // [r-8] 1fr
+              // [r-9] 1fr
+              // [r-10] 1fr
+              [r-8];
 
             grid-template-columns:
               [c-1] 1fr
@@ -180,8 +180,8 @@
                 [r-4] 8vw //tytul
                 [r-5] 1fr
                 [r-6] 1fr
-                [r-7] 8vw
-                [r-8];
+                // [r-7] 8vw
+                [r-7];
               grid-template-columns:
                 [c-1] 10vw
                 [c-2] 10vw

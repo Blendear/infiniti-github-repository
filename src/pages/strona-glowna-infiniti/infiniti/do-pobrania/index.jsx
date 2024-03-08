@@ -395,7 +395,7 @@ const DoPobrania = () => {
           </Link>
         </li>
         {/* //           _._._. INFINITI - Fitness */}
-        <li
+        {/* <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--medical-tytul"
@@ -410,8 +410,8 @@ const DoPobrania = () => {
             priority
             loading="eager"
           />
-        </li>
-        <li
+        </li> */}
+        {/* <li
           className={
             styles[
               "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--logo--content-typy-plikow--item-1"
@@ -504,7 +504,7 @@ const DoPobrania = () => {
               />
             </a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
