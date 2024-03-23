@@ -69,7 +69,7 @@ const ListaCwiczen = () => {
               //       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
 
               if (
-                filtr === "maszyna" &&
+                (filtr === "maszyna" || filtr === "qr") &&
                 wartosc === cwiczenie.idMaszynyUzywanej
               ) {
                 iloscCwiczen.current += 1;

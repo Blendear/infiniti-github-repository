@@ -18,7 +18,10 @@ const QRSzukacz = () => {
     // console.log(data.text);
 
     if (data !== null) {
-      router.push(`${data.text}`);
+      // router.push(`${data.text}`);
+      router.push(
+        `/infiniti-app/lista-cwiczen?filtr=qr&wartosc=${data.text}&nazwa-modalu=null&id-cwiczenia=null`
+      );
     }
   };
   return (
