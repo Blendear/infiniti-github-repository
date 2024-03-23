@@ -4,8 +4,11 @@
 import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
 import { LoaderIcon } from "../../../components/e-trener/LoaderIcon";
+import { useState } from "react";
 
 const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   return (
     <li
       key={key}
@@ -23,11 +26,14 @@ const PanelGrupyMiesniowej = ({ grupaMiesniowa, fota, key }) => {
           ]
         }
       >
-        <LoaderIcon fontSize="3rem" />
+        {!isImageLoaded && <LoaderIcon fontSize="3rem" />}
 
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/e-trener/ikony-miesni/${fota}`}
           alt={`error while loading image`}
+          onLoadingComplete={() => {
+            setIsImageLoaded(true);
+          }}
           layout="fill"
           objectFit="cover"
           priority
