@@ -44,7 +44,7 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
       </section>
 
       <section>
-        <TytulBezTla htmlElementType="h2">LOKALIZACJA MASZYNY</TytulBezTla>
+        <TytulBezTla htmlElementType="h2">{`LOKALIZACJA MASZYNY NR ${cwiczenie["idMaszynyUzywanej"]}`}</TytulBezTla>
         <div
           className={
             styles["modal-cwiczenia-wybranego__lokalizacja-maszyny__fota"]
