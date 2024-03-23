@@ -48,36 +48,23 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
 
         {cwiczenie["idMaszynAlternatywnych"] && (
           <div
-            style={{
-              display: "grid",
-              gridAutoFlow: "column",
-              backgroundColor: "#222222",
-              borderRadius: "1rem",
-              marginBottom: "2rem",
-            }}
+            className={
+              styles[
+                "modal-cwiczenia-wybranego__lokalizacja-maszyny__info-o-alternatywnych-maszynach"
+              ]
+            }
           >
-            <div
-              style={{
-                width: "100%",
-                height: "100%",
-                backgroundColor: "#8a27d8",
-                borderRadius: "1rem 0 0 1rem",
-              }}
-            >
-              <p
-                style={{
-                  height: "100%",
-                  display: "grid",
-                  justifyItems: "center",
-                  alignItems: "center",
-                }}
-              >
-                <FaExclamation />
-              </p>
-            </div>
-            <TytulBezTla htmlElementType="h2">{`Zajęta? Możesz też użyć:  ${cwiczenie[
-              "idMaszynAlternatywnych"
-            ].join(", ")}`}</TytulBezTla>
+            <TytulBezTla htmlElementType="h2">
+              <div>
+                <p>
+                  <FaExclamation />
+                </p>
+              </div>
+
+              <p>{`Zajęta? Możesz też użyć:  ${cwiczenie[
+                "idMaszynAlternatywnych"
+              ].join(", ")}`}</p>
+            </TytulBezTla>
           </div>
         )}
 
