@@ -26,7 +26,8 @@ const cwiczenia: Cwiczenia = [
     nazwa: "Wzniosy drążka wyciągu przed siebie",
     "cwiczone-miesnie": ["Barki - Przód", "Barki - Środek"],
     "fota-lokalizacji": "lok26.png",
-    idMaszynyUzywanej: "26", // hook1 - + 32
+    idMaszynyUzywanej: "26",
+    idMaszynAlternatywnych: ["32"],
   },
   {
     id: 4,
@@ -58,11 +59,12 @@ const cwiczenia: Cwiczenia = [
   {
     id: 7,
     "link-wideo": "2ch6rLEPuGE",
-    "fota-miniaturki": "mini30-1.png", //hook1 - + "24"?
+    "fota-miniaturki": "mini30-1.png",
     nazwa: "Odwodzenie linek w tył",
     "cwiczone-miesnie": ["Barki - Tył", "Barki - Tył"],
-    "fota-lokalizacji": "lok30.png", // + "24"?
+    "fota-lokalizacji": "lok30.png",
     idMaszynyUzywanej: "30",
+    idMaszynAlternatywnych: ["24"],
   },
   {
     id: 8,
@@ -252,15 +254,16 @@ const cwiczenia: Cwiczenia = [
   {
     id: 27,
     "link-wideo": "ZzYBuU3KA2E",
-    "fota-miniaturki": "mini12-1.png", //hook1 - było "12/16", a to jedna mszyna, nie?
+    "fota-miniaturki": "mini12-1.png",
     nazwa: "Wyciskanie sztangi na ławce prostej",
     "cwiczone-miesnie": [
       "Klatka piersiowa - Środek",
       "Klatka piersiowa - Dół",
       "Klatka piersiowa - Góra",
     ],
-    "fota-lokalizacji": "lok12.png", // było "12/16", a to jedna mszyna, nie?
-    idMaszynyUzywanej: "12", // było "12/16", a to jedna mszyna, nie?
+    "fota-lokalizacji": "lok12.png",
+    idMaszynyUzywanej: "12",
+    idMaszynAlternatywnych: ["16"],
   },
   {
     id: 28,
@@ -371,7 +374,8 @@ const cwiczenia: Cwiczenia = [
       "Klatka piersiowa - Góra",
     ],
     "fota-lokalizacji": "lok30.png",
-    idMaszynyUzywanej: "24", //  hook1 +30 /24 ?
+    idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["30"],
   },
   {
     id: 37,
@@ -439,11 +443,12 @@ const cwiczenia: Cwiczenia = [
   {
     id: 44,
     "link-wideo": "bs7_zG8xOvQ",
-    "fota-miniaturki": "mini40-1.png", // hook1 - 40 / 41 ?
+    "fota-miniaturki": "mini40-1.png",
     nazwa: "Wyprosty nóg na maszynie siedząc",
     "cwiczone-miesnie": ["Uda - Przód"],
-    "fota-lokalizacji": "lok40.png", // 40 / 41 ?
-    idMaszynyUzywanej: "40", // 40 / 41 ?
+    "fota-lokalizacji": "lok40.png",
+    idMaszynyUzywanej: "40",
+    idMaszynAlternatywnych: ["41"],
   },
   {
     id: 45,
@@ -475,11 +480,12 @@ const cwiczenia: Cwiczenia = [
   {
     id: 48,
     "link-wideo": "xh4ZRvvZnO0",
-    "fota-miniaturki": "mini24-1.png", // hook1 - 24 / 26?
+    "fota-miniaturki": "mini24-1.png",
     nazwa: "Odwodzenie nóg w bok z linką",
     "cwiczone-miesnie": ["Uda - Środek"], // hook1 - albo inny partia? bo to na boki bardziej, więc uda przód/tył?
-    "fota-lokalizacji": "lok24.png", // 24 / 26?
-    idMaszynyUzywanej: "24", // 24 / 26?
+    "fota-lokalizacji": "lok24.png",
+    idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["26"],
   },
   {
     id: 49,
@@ -609,12 +615,13 @@ const cwiczenia: Cwiczenia = [
   },
   {
     id: 63,
-    "link-wideo": "ZlzibLymTOE", //hook1 - 31 /24?
+    "link-wideo": "ZlzibLymTOE",
     "fota-miniaturki": "mini31-1.png",
     nazwa: "Wiosłowanie szerokim chwytem na wyciągu dolnym",
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok31.png",
     idMaszynyUzywanej: "31",
+    idMaszynAlternatywnych: ["24"],
   },
   {
     id: 64,
@@ -664,11 +671,12 @@ const cwiczenia: Cwiczenia = [
   {
     id: 69,
     "link-wideo": "2rXwVwjSIUw",
-    "fota-miniaturki": "mini28-1.png", // hook1 - nie napisaliście numerka, jaki on jest?
+    "fota-miniaturki": "mini28-1.png",
     nazwa: "Wiosłowanie z rączką wyciągu w klęku",
     "cwiczone-miesnie": ["Plecy - Środek"],
-    "fota-lokalizacji": "lok28.png", // nie napisaliście numerka, jaki on jest?
-    idMaszynyUzywanej: "28", // hook1 + 24,32
+    "fota-lokalizacji": "lok28.png",
+    idMaszynyUzywanej: "28",
+    idMaszynAlternatywnych: ["24", "32"],
   },
   {
     id: 70,

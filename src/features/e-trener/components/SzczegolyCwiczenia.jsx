@@ -1,6 +1,6 @@
 //
 // Table of content for this file is written at the bottom
-//
+import { FaExclamation } from "react-icons/fa";
 import styles from "src/styles/sass/styles-all.module.scss";
 import { TytulZTlemKolorowym, TytulBezTla, PanelGrupyMiesniowej } from "..";
 import grupyMiesniowe from "../data/grupyMiesniowe"; //hook1 - dlaczego tak dziala, a nie dziala, gdy importuje z "index.js", czyli po przez ".." ?- reszta plikow przeicez dziala takim importem
@@ -45,6 +45,42 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
 
       <section>
         <TytulBezTla htmlElementType="h2">{`LOKALIZACJA MASZYNY NR ${cwiczenie["idMaszynyUzywanej"]}`}</TytulBezTla>
+
+        {cwiczenie["idMaszynAlternatywnych"] && (
+          <div
+            style={{
+              display: "grid",
+              gridAutoFlow: "column",
+              backgroundColor: "#222222",
+              borderRadius: "1rem",
+              marginBottom: "2rem",
+            }}
+          >
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                backgroundColor: "#8a27d8",
+                borderRadius: "1rem 0 0 1rem",
+              }}
+            >
+              <p
+                style={{
+                  height: "100%",
+                  display: "grid",
+                  justifyItems: "center",
+                  alignItems: "center",
+                }}
+              >
+                <FaExclamation />
+              </p>
+            </div>
+            <TytulBezTla htmlElementType="h2">{`Zajęta? Możesz też użyć:  ${cwiczenie[
+              "idMaszynAlternatywnych"
+            ].join(", ")}`}</TytulBezTla>
+          </div>
+        )}
+
         <div
           className={
             styles["modal-cwiczenia-wybranego__lokalizacja-maszyny__fota"]

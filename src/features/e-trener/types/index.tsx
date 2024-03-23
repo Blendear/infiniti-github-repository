@@ -29,6 +29,7 @@ export type Cwiczenie = {
   "cwiczone-miesnie": PartiaMiesniowa[];
   "fota-lokalizacji": `lok${number}.png` | `lok${number}-${number}.png`;
   idMaszynyUzywanej: string;
+  idMaszynAlternatywnych?: string[];
 };
 
 export type Cwiczenia = Cwiczenie[];
