@@ -10,7 +10,7 @@
     position: absolute; //protip1 - div that takes ALL the background size, dyanmically. just force it to be tpop0 and bottom 0 , so posiiton absoluite needed
     top: 0;
     bottom: 0;
-    height: 100vh;
+
     width: 100dvw;
     @include mixins.gradient-cross-browser(
       "bg",
