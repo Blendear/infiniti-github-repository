@@ -6,6 +6,9 @@
 .modal-cwiczenia-wybranego {
   display: grid;
   row-gap: variables.$content-content-gap-md;
+  overflow-y: scroll;
+  height: 100vh;
+  padding: 0 0 5rem 0;
 
   button {
     cursor: pointer !important;
