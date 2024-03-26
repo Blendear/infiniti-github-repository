@@ -1,19 +1,20 @@
 @use "../../../../sass/5-themes/infiniti-variables/infiniti-variables";
-$rozmiar-rowa: 6.5rem;
+$rozmiar-rowa: 7.55rem;
 
 .menu-modal {
   &__closed-variant {
     display: none;
   }
   &__caly-container {
-    padding: 10px 0 3rem 0;
+    padding: 7rem 0 3rem 0;
     height: 100vh;
     width: 100vw;
     overflow-y: scroll;
     position: absolute;
     display: grid;
     grid-template-rows:
-      [r-0_break] 16vw
+      // [r-0_break] 16vw
+
       [r-1] $rozmiar-rowa
       [r-2] $rozmiar-rowa
       [r-3] $rozmiar-rowa
@@ -32,6 +33,10 @@ $rozmiar-rowa: 6.5rem;
       [c-5] 0.6fr
       [c-6];
     background: linear-gradient(90deg, #482283 0%, #136789 100%);
+
+    @media (min-width: 600px) {
+      padding: 9rem 0 3rem 0;
+    }
 
     @media (orientation: landscape) {
       padding: 100px 0 3rem 0;
@@ -59,6 +64,7 @@ $rozmiar-rowa: 6.5rem;
         justify-self: center;
         position: relative;
         width: 50%;
+        min-height: 6rem;
         margin: 0 0 3vw 0;
         animation: fadeInAnimation ease 0.6s;
         animation-iteration-count: 1;
@@ -134,6 +140,11 @@ $rozmiar-rowa: 6.5rem;
       &--container-listujacy-klocki-srodkowe {
         grid-row: r-6 / r-7;
         grid-column: c-2 / c-5;
+
+        @media (min-width: 575px) {
+          padding: 2rem 0 0 0;
+        }
+
         @media (orientation: landscape) {
           grid-row: r-2 / r-3;
           grid-column: c-2 / c-3;
