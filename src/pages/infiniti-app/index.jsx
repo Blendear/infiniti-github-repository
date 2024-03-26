@@ -12,6 +12,8 @@ import {
 } from "../../features/e-trener";
 import { useState, useEffect } from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import { ModalPotwierdzajacyAkceptacjeRegulaminow } from "../../features/e-trener";
+import dynamic from "next/dynamic";
 
 const ETrenerStrGlowna = ({ propA, propB }) => {
   const router = useRouter();
@@ -50,12 +52,16 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
               }[router.query.method]
             }
           </section>
+          {2 > 1 && <ModalPotwierdzajacyAkceptacjeRegulaminow />}
         </article>
       )}
     </div>
   );
 };
-export default ETrenerStrGlowna;
+// export default ETrenerStrGlowna;
+export default dynamic(() => Promise.resolve(ETrenerStrGlowna), {
+  ssr: false,
+});
 
 //
 //~~ _. E-Trener stronga główna
