@@ -35,8 +35,8 @@ const MenuModal = (props) => {
       className={
         reduxStateIsMenuOpen === true
           ? `${styles["menu-modal__caly-container"]} 
-            
-            `
+          
+          `
           : styles["menu-modal__closed-variant"]
       }
     >
