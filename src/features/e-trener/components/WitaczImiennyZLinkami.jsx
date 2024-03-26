@@ -1,4 +1,3 @@
-// Table of content for this file is written at the bottom
 import styles from "src/styles/sass/styles-all.module.scss";
 import Link from "next/link";
 import { IoSettingsSharp } from "react-icons/io5";
@@ -7,9 +6,10 @@ import TytulZTlemKolorowym from "./TytulZTlemKolorowym";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
-const ModalWylogowywania = dynamic(() => import("./ModalWylogowywania"), {
-  ssr: false,
-});
+/* Wylogowywanie modalem jest wykomentowane, dopóki wstrzymane jest logowanie Auth0 */
+// const ModalWylogowywania = dynamic(() => import("./ModalWylogowywania"), {
+//   ssr: false,
+// });
 
 const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
   //
@@ -17,17 +17,22 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
 
   return (
     <TytulZTlemKolorowym>
-      {/* //       _._. AA */}
-      <button
+      <Link href="/strona-glowna-infiniti">
+        <a>
+          <RiLogoutBoxLine />
+        </a>
+      </Link>
+      {/* Wylogowywanie modalem jest wykomentowane, dopóki wstrzymane jest logowanie Auth0 */}
+      {/* <button
         onClick={() => {
           setIsModalOtwarty(true);
         }}
       >
-        <RiLogoutBoxLine />
-      </button>
-      {isModalOtwarty && (
+          <RiLogoutBoxLine />
+      </button> */}
+      {/* {isModalOtwarty && (
         <ModalWylogowywania setIsModalOtwarty={setIsModalOtwarty} />
-      )}
+      )} */}
 
       <span className={styles["child__css-class-name"]}>
         {(user
@@ -53,12 +58,3 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
   );
 };
 export default WitaczImiennyZLinkami;
-
-//~~ _. WitaczImiennyZLinkami
-//
-//       _._. AA
-//
-//           _._._. AAA
-//
-//                  _._._._. AAAA
-//
