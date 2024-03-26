@@ -9,7 +9,7 @@ const AComponent = () => {
     <button
       style={{ margin: "10rem 0 0 0", width: "15rem", aspectRatio: "3/1" }}
     >
-      <Link href="/api/auth/login">
+      <Link href="/infiniti-app?method=qr">
         <a>Infiniti App</a>
       </Link>
     </button>
