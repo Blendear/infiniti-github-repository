@@ -1,6 +1,73 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+import { universalCss } from "src/styles/emotion/abstracts/universal";
 import { useState } from "react";
 import { Modal } from "../../../components/e-trener";
 import Link from "next/link";
+import { DialogModal } from "../../dialog-modals/components/DialogModal";
+
+const modal = {
+  containerBackdropAndContent: css({
+    height: "100%",
+    display: "grid",
+    justifyItems: "center",
+    alignItems: "center",
+  }),
+
+  containerContent: css({
+    justifySelf: "center",
+    padding: "2rem",
+    width: "80vw",
+    maxWidth: "40rem",
+    backgroundColor: `rgb(255,255,255)`,
+    borderRadius: "1rem",
+    display: "grid",
+    justifyItems: "start",
+    gridAutoRows: "max-content",
+    rowGap: "3rem",
+    border: "5px solid purple",
+
+    "@media (min-width: 450px)": {
+      padding: "3rem",
+    },
+  }),
+
+  title: css({
+    color: "black",
+    fontWeight: "bold",
+    fontSize: "min(2rem, 3.45vw)",
+  }),
+
+  checkboxWithText: css({
+    display: "grid",
+    gridAutoFlow: "column",
+    columnGap: "5px",
+    fontSize: "min(2rem, 3.45vw)",
+
+    "& *": {
+      color: "black",
+      fontWeight: "bold",
+    },
+
+    "& input": {
+      alignSelf: "center",
+      width: "min(2rem, 3.45vw)",
+      height: "min(2rem, 3.45vw)",
+      cursor: "pointer",
+    },
+
+    "& a": {
+      color: "purple",
+      textDecoration: "none",
+    },
+  }),
+
+  buttonAccept: css([
+    {
+      justifySelf: "center",
+    },
+  ]),
+};
 
 const ModalPotwierdzajacyAkceptacjeRegulaminow = ({}) => {
   const [isTermsAndConditionsAccepted, setIsTermsAndConditionsAccepted] =
@@ -10,6 +77,7 @@ const ModalPotwierdzajacyAkceptacjeRegulaminow = ({}) => {
 
   const [isEverythingAccepted, setIsEverythingAccepted] = useState(() => {
     return localStorage.getItem("isEverythingAccepted") || false;
+    // return false;
   });
 
   const saveAcceptance = () => {
@@ -18,57 +86,75 @@ const ModalPotwierdzajacyAkceptacjeRegulaminow = ({}) => {
 
   return (
     <>
-      {!isEverythingAccepted && (
-        <Modal variant="information" hasBackdrop={true}>
-          <article style={{}}>
-            <p>Używając aplikacji INFINITI App akceptujesz:</p>
-            <div>
+      <DialogModal isOpen={!isEverythingAccepted}>
+        <div css={modal.containerBackdropAndContent}>
+          <article css={modal.containerContent}>
+            <p css={modal.title}>
+              Używając aplikacji INFINITI App akceptujesz:
+            </p>
+            <div css={modal.checkboxWithText}>
               <input
                 type="checkbox"
                 name="regulamin"
+                css={{
+                  accentColor: "purple",
+                }}
                 onChange={(e) => {
                   setIsTermsAndConditionsAccepted(e.target.checked);
                 }}
               />
-              <p>Regulamin -</p>
+              <p>Regulamin</p>
               <Link
                 download
                 href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Regulamin_Infiniti_Fitness_Club_2023.pdf"
               >
-                <a target="_blank">Link</a>
+                <a target="_blank">{"(Link)"}</a>
               </Link>
             </div>
-            <div>
+            <div css={modal.checkboxWithText}>
               <input
                 type="checkbox"
                 name="polityka-prywatnosci"
+                css={{
+                  accentColor: "purple",
+                }}
                 onChange={(e) => {
                   setIsPrivacyPolicyAccepted(e.target.checked);
                 }}
               />
-              <p>Polityka Prywatności -</p>
+              <p>Polityka Prywatności</p>
               <Link
                 download
                 href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Polityka_Prywatności_Fit-Food-Group_01.2023.pdf"
               >
-                <a target="_blank">Link</a>
+                <a target="_blank">{"(Link)"}</a>
               </Link>
             </div>
             <button
+              css={[
+                universalCss.button(
+                  isTermsAndConditionsAccepted && isPrivacyPolicyAccepted,
+                  "white",
+                  "purple"
+                ),
+                modal.buttonAccept,
+              ]}
+              disabled={
+                !isTermsAndConditionsAccepted || !isPrivacyPolicyAccepted
+              }
               onClick={() => {
-                saveAcceptance();
                 isTermsAndConditionsAccepted &&
                   isPrivacyPolicyAccepted &&
-                  setIsEverythingAccepted(true);
+                  (saveAcceptance(), setIsEverythingAccepted(true));
               }}
             >
               {isTermsAndConditionsAccepted && isPrivacyPolicyAccepted
                 ? "Akceptuję"
-                : "Zatwierdź przeczytanie obydwu dokumentów, aby przejść dalej"}
+                : "Zaznacz wszystkie zgody"}
             </button>
           </article>
-        </Modal>
-      )}
+        </div>
+      </DialogModal>
     </>
   );
 };

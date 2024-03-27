@@ -3,6 +3,13 @@
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext", "ES6"],
     "outDir": "./dist",
+    //
+    // CHANGE "src" in all paths in the app before uncommenting this \/ to use the "@" alias
+    //
+    // "baseUrl": "./src",
+    //     "paths": {
+    //       "@/*": ["*"]
+    //     },
     "removeComments": true,
     "noEmitOnError": true,
     "sourceMap": true,
