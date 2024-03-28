@@ -1,23 +1,5 @@
-//
-//
-//~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
-//
-//       A.1. parent rozdział nr 1
-//
-//           A.1.1. child rozdział nr 1
-//
-//~~ B.  Historyjka druga ...
-//
-
-//herehere03.01.2022--Velocity_2--PierwszaSesja--Hook1--Piszmy--Historyjkuję
-//
-//
-//    2. Gromię i pieszczę - puste, kolorowe główne gridy ustal i ustaw, w tym dla image i svg's,
-//    3. Gromię i pieszczę - upozycjoniuj w x,y i z images i svg's
-//    4. Pieszczę - Poślij gońca o latest data do stronki   &    czy visual jest git, czy nie
-//    5. Gromię - Prototype programuj
-//    6. Pieszczę - Detale wizualne i data'owe programuj
-
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import styles from "src/styles/sass/styles-all.module.scss";
 import CallButton from "../../components/strona-glowna/0/call-i-messenger/call-btn";
 import CarouselFotyINFINITI from "../../components/strona-glowna/0/2-carousel-foty-infiniti/CarouselFotyINFINITI";
@@ -57,11 +39,16 @@ import { CSSProperties } from "react";
 import CircleLoader from "react-spinners/CircleLoader";
 
 import { carouselData } from "../../components/strona-glowna/0/2-carousel-foty-infiniti/Data";
-//
-// Dorób classy dla każdego elementu   &   przypisz je placeholderom przedstawiajacymi fragmnenty daneo fragmentu (np. strzalki, foty i obramowki galerii carousel fot miejsc)
-//
-//
-//
+
+const stronaGlownaCss = {
+  container: css({}),
+  buttonInfinitiApp: css({
+    width: "12rem",
+    aspectRatio: "5/1.8",
+    /* use this class as a template   ->   layout__fitness-cennik__cala-strona__kup-karnet-button-cennik-fitness */
+    // backgroundColor: "purple",
+  }),
+};
 
 const StronaGlowna = () => {
   // const [showMenuModal, setShowMenuModal] = useState(false);
@@ -130,22 +117,12 @@ const StronaGlowna = () => {
           />
         </a>
       </Link>
-      {/* HOOK1 - \/ OD-KOMENTUJ & USTAW POD RESIZABLE SCREEN E-TRENER BUTTON */}
-      {/* <Link href="/api/auth/login">
-        <a
-          className={
-            styles["layout__strona-glowna__cala-strona__e-trener-button"]
-          }
-        >
-          <Image
-            src={`/images/.dedykowane-do-strony-konkretnej/e-trener/btn-wywolywacz/e-trener-btn.png`}
-            alt={`Biały napis "E-TRENER Premium" na niebiesko-fioletowym tle`}
-            layout="fill"
-            objectFit="cover"
-            priority
-            loading="eager"
-            quality={100}
-          />
+
+      {/* Uncomment \/ after INFINITI App goes live */}
+
+      {/* <Link href="/infiniti-app?method=qr">
+        <a css={stronaGlownaCss.buttonInfinitiApp}>
+          <p>INFINITI APP</p>
         </a>
       </Link> */}
 
@@ -159,10 +136,6 @@ const StronaGlowna = () => {
           priority
           loading="eager"
         />
-        {/* /\ TYLKO GDY samo zdjecie zmienias,z np. koło robisz, dzikei "border-radiu:50%;, 
-          wtedy "className i Image'owi dodasz. ale inaczje, nic nie dodawaj */}
-
-        {/* D:\Apka React JS\infiniti-stronka\public\images */}
       </div>
       <ul
         className={
