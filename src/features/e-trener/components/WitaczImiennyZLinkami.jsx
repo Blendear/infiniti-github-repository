@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import styles from "src/styles/sass/styles-all.module.scss";
 import Link from "next/link";
 import { IoSettingsSharp } from "react-icons/io5";
@@ -11,6 +13,15 @@ import { useState } from "react";
 //   ssr: false,
 // });
 
+const witaczCss = {
+  container: css({}),
+  buttonBack: css({
+    "&:hover": {
+      cursor: "pointer",
+    },
+  }),
+};
+
 const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
   //
   const [isModalOtwarty, setIsModalOtwarty] = useState(false);
@@ -18,7 +29,7 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
   return (
     <TytulZTlemKolorowym>
       <Link href="/strona-glowna-infiniti">
-        <a>
+        <a css={witaczCss.buttonBack}>
           <RiLogoutBoxLine />
         </a>
       </Link>

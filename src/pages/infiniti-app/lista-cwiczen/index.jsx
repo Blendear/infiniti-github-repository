@@ -39,7 +39,7 @@ const ListaCwiczen = () => {
   }, [iloscCwiczen]);
 
   const handlebackButton = () => {
-    router.back();
+    router.push("/infiniti-app?method=qr");
   };
 
   return (
