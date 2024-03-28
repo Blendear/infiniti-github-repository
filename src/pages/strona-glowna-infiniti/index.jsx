@@ -40,14 +40,58 @@ import CircleLoader from "react-spinners/CircleLoader";
 
 import { carouselData } from "../../components/strona-glowna/0/2-carousel-foty-infiniti/Data";
 
+const colorPurple = "#a22cff";
+const colorBlue = "#22c1c3";
+
+const gradientCrossbrowser = (backupColor, gradientData) => {
+  return {
+    backgroundColor: `${backupColor}`,
+    background: `-moz-linear-gradient(${gradientData})`,
+    background: `-webkit-linear-gradient(${gradientData})`,
+    background: `linear-gradient(${gradientData})`,
+  };
+};
+
 const stronaGlownaCss = {
   container: css({}),
-  buttonInfinitiApp: css({
-    width: "12rem",
-    aspectRatio: "5/1.8",
-    /* use this class as a template   ->   layout__fitness-cennik__cala-strona__kup-karnet-button-cennik-fitness */
-    // backgroundColor: "purple",
-  }),
+
+  buttonSpecial: (firstColor, secondColor) =>
+    css([
+      gradientCrossbrowser(
+        firstColor,
+        `222deg, ${firstColor} 0%, ${secondColor} 100%`
+      ),
+      {
+        gridRow: "r-2 / r-3",
+        width: "12rem",
+        aspectRatio: "5/1.8",
+        margin: "0vw 0 3vw 0",
+        display: "grid",
+        justifyItems: "center",
+        alignItems: "center",
+        border: "none",
+        backgroundColor: "#09adca",
+        fontSize: "1.25rem",
+        fontWeight: "bold",
+        textShadow: "0 0 0.3rem #381b00",
+        boxShadow: "0 0 5px 1px rgb(0,0,0,0.35)",
+        transition: "all 1s",
+        cursor: "pointer",
+        textDecoration: "none",
+
+        "&:hover": {
+          ...gradientCrossbrowser(
+            secondColor,
+            `222deg, ${secondColor} 0%, ${firstColor} 100%`
+          ),
+          transition: "all 0.5s ease-out",
+        },
+
+        "& > p": {
+          filter: "drop-shadow(0 0 0.3rem rgb(0,0,0,0.35))",
+        },
+      },
+    ]),
 };
 
 const StronaGlowna = () => {
@@ -121,10 +165,27 @@ const StronaGlowna = () => {
       {/* Uncomment \/ after INFINITI App goes live */}
 
       {/* <Link href="/infiniti-app?method=qr">
-        <a css={stronaGlownaCss.buttonInfinitiApp}>
+        <a
+          css={[
+            stronaGlownaCss.buttonSpecial(colorPurple, colorBlue),
+            { gridColumn: "1" },
+          ]}
+        >
           <p>INFINITI APP</p>
         </a>
+      </Link>
+      <Link href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet">
+        <a
+          css={[
+            stronaGlownaCss.buttonSpecial(colorBlue, colorPurple),
+            { gridColumn: "3" },
+          ]}
+        >
+          <p>KUP KARNET</p>
+        </a>
       </Link> */}
+
+      {/*  */}
 
       <TytulINFINITI />
       <div className={styles["layout__strona-glowna__cala-strona__fota-klubu"]}>
