@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useAppSelector, useAppDispatch } from "../../../store/redux/hooks";
 import { menuINavbarSliceActions } from "../../../store/redux/store-redux";
 import MenuModal from "../../wszechobecne-na-roznych-podstronach/menu-modal/menu-modal";
+import { LuDumbbell } from "react-icons/lu";
 
 const Navbar = () => {
   const dispatch = useAppDispatch();
@@ -33,13 +34,41 @@ const Navbar = () => {
   };
 
   return (
-    // hook2 - WHY THE FUCK nie dziala to z position absoulute jako parent? chodzi
-    // o jakas dziką zależnośc child-parent przy "positon:sticky" pewnie, ale jprl
-    // <div className={styles["navbar-gorny__absolute-positioning"]}>
-    <div className={styles[""]}>
-      {/* https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec */}
-
+    <div>
       <nav className={styles["navbar-gorny__caly-container"]}>
+        {/* (3) Uncomment \/, style it accordingly and delete old "Zaloguj się" after going live with INFINITI App */}
+
+        {/* <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+          <a
+            className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
+          >
+            <HiOutlineUserCircle />
+          </a>
+        </Link>
+
+        <div
+          className={styles["navbar-gorny__caly-container__linia-dzielaca--0"]}
+        ></div>
+
+        <Link href="/infiniti-app?method=qr">
+          <a
+            className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
+          >
+            <LuDumbbell />
+          </a>
+        </Link>
+        <Link href="/infiniti-app?method=qr">
+          <a
+            className={
+              styles["navbar-gorny__caly-container__btn-zaloguj--tekst"]
+            }
+          >
+            INFINITI APP
+          </a>
+        </Link> */}
+
+        {/*  */}
+
         <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
           <a
             className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
