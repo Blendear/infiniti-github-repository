@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
+import { css, keyframes } from "@emotion/react";
 import styles from "src/styles/sass/styles-all.module.scss";
 import CallButton from "../../components/strona-glowna/0/call-i-messenger/call-btn";
 import CarouselFotyINFINITI from "../../components/strona-glowna/0/2-carousel-foty-infiniti/CarouselFotyINFINITI";
@@ -52,6 +52,24 @@ const gradientCrossbrowser = (backupColor, gradientData) => {
   };
 };
 
+const glowAnimationPortrait = keyframes({
+  "0%": {
+    boxShadow: "0 0 0 0 rgba(255,255,255,0.7)",
+  },
+  "100%": {
+    boxShadow: "0 0 20px 5px rgba(255,255,255,0)",
+  },
+});
+
+const glowAnimationLandscape = keyframes({
+  "0%": {
+    boxShadow: "0 0 0 0 rgba(255,255,255,0.7)",
+  },
+  "100%": {
+    boxShadow: "0 0 2.5vw 5px rgba(255,255,255,0)",
+  },
+});
+
 const stronaGlownaCss = {
   container: css({}),
 
@@ -63,21 +81,30 @@ const stronaGlownaCss = {
       ),
       {
         gridRow: "r-2 / r-3",
-        width: "12rem",
+        width: "33vw",
+        maxWidth: "18rem",
         aspectRatio: "5/1.8",
-        margin: "0vw 0 3vw 0",
+        margin: "40px 0",
         display: "grid",
         justifyItems: "center",
         alignItems: "center",
         border: "none",
         backgroundColor: "#09adca",
-        fontSize: "1.25rem",
+        fontSize: "clamp(1.25rem, 3.5vw, 2rem)",
         fontWeight: "bold",
         textShadow: "0 0 0.3rem #381b00",
         boxShadow: "0 0 5px 1px rgb(0,0,0,0.35)",
         transition: "all 1s",
         cursor: "pointer",
         textDecoration: "none",
+
+        "@media (max-width: 320px)": {
+          width: "36vw",
+        },
+
+        "@media (max-width: 450px)": {
+          margin: "25px 0",
+        },
 
         "&:hover": {
           ...gradientCrossbrowser(
@@ -92,6 +119,26 @@ const stronaGlownaCss = {
         },
       },
     ]),
+
+  newLabel: css({
+    position: "absolute",
+    zIndex: "1",
+    transform: "translate(60%, -120%)",
+    padding: "0.25rem 0.75rem",
+    backgroundColor: "white",
+    fontSize: "clamp(0.9rem, 2.75vw, 1.4rem)",
+    color: "black",
+    textShadow: "none",
+    animation: `${glowAnimationPortrait} 1s ease-in-out infinite alternate`,
+
+    "@media (min-width: 500px)": {
+      transform: "translate(70%, -120%)",
+    },
+
+    "@media (orientation: landscape)": {
+      animation: `${glowAnimationLandscape} 1s ease-in-out infinite alternate`,
+    },
+  }),
 };
 
 const StronaGlowna = () => {
@@ -143,6 +190,7 @@ const StronaGlowna = () => {
           styles["layout__strona-glowna__cala-strona__tlo-nad-gallery"]
         }
       ></div>
+
       <Link href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet">
         <a
           className={
@@ -168,9 +216,15 @@ const StronaGlowna = () => {
         <a
           css={[
             stronaGlownaCss.buttonSpecial(colorPurple, colorBlue),
-            { gridColumn: "1" },
+            {
+              gridColumn: "4",
+              "@media (orientation: landscape)": {
+                gridColumn: "5",
+              },
+            },
           ]}
         >
+          <span css={stronaGlownaCss.newLabel}>NOWOŚĆ</span>
           <p>INFINITI APP</p>
         </a>
       </Link>
@@ -178,7 +232,12 @@ const StronaGlowna = () => {
         <a
           css={[
             stronaGlownaCss.buttonSpecial(colorBlue, colorPurple),
-            { gridColumn: "3" },
+            {
+              gridColumn: "8",
+              "@media (orientation: landscape)": {
+                gridColumn: "7",
+              },
+            },
           ]}
         >
           <p>KUP KARNET</p>
