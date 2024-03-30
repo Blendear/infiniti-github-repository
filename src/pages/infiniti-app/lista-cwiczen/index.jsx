@@ -69,8 +69,13 @@ const ListaCwiczen = () => {
               //       _._. Filtr ćwiczeń - sprawdza czy wywoływaczem szukania była maszyna czy grupa miesniowa & czy wartosc id maszyny lub nazwa grupy miesniowej widnieje w properties danego cwiczenia
 
               if (
+                // If the filter is anything but "gr-miesniowa", then check if the
+                // machine of this exercise is listed as the main or alternative
+                // machine on any exercise. List all of the legitimate exercises
                 (filtr === "maszyna" || filtr === "qr") &&
-                wartosc === cwiczenie.idMaszynyUzywanej
+                (wartosc === cwiczenie.idMaszynyUzywanej ||
+                  (cwiczenie.idMaszynAlternatywnych &&
+                    cwiczenie.idMaszynAlternatywnych.includes(wartosc)))
               ) {
                 iloscCwiczen.current += 1;
                 return (
@@ -113,7 +118,7 @@ const ListaCwiczen = () => {
               >
                 <Image
                   src="/images/.dedykowane-do-strony-konkretnej/e-trener/informacja/work-in-progress.png"
-                  alt={`error while loading image`}
+                  alt={`Notatka visuala mówiąca, że szukane ćwiczenia są w trakcie przygotowań`}
                   layout="fill"
                   objectFit="cover"
                   priority

@@ -9,6 +9,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód", "Barki - Tył"],
     "fota-lokalizacji": "lok19.png",
     idMaszynyUzywanej: "19",
+    idMaszynAlternatywnych: ["57"],
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód", "Barki - Tył"],
     "fota-lokalizacji": "lok6.png",
     idMaszynyUzywanej: "6",
+    idMaszynAlternatywnych: ["57"],
   },
   {
     id: 3,
@@ -83,6 +85,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód"],
     "fota-lokalizacji": "lok61.png",
     idMaszynyUzywanej: "61",
+    idMaszynAlternatywnych: ["57"],
   },
   {
     id: 10,
@@ -92,6 +95,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Barki - Środek", "Barki - Przód"],
     "fota-lokalizacji": "lok7.png",
     idMaszynyUzywanej: "7",
+    idMaszynAlternatywnych: ["57"],
   },
   {
     id: 11,
@@ -216,6 +220,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok61.png",
     idMaszynyUzywanej: "61",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 24,
@@ -229,6 +234,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok3.png",
     idMaszynyUzywanej: "3",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 25,
@@ -241,6 +247,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok4.png",
     idMaszynyUzywanej: "4",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 26,
@@ -250,6 +257,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Klatka piersiowa - Dół", "Klatka piersiowa - Środek"],
     "fota-lokalizacji": "lok5.png",
     idMaszynyUzywanej: "5",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 27,
@@ -263,7 +271,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok12.png",
     idMaszynyUzywanej: "12",
-    idMaszynAlternatywnych: ["16"],
+    idMaszynAlternatywnych: ["16", "55"],
   },
   {
     id: 28,
@@ -276,6 +284,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok17.png",
     idMaszynyUzywanej: "17",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 29,
@@ -289,6 +298,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok19.png",
     idMaszynyUzywanej: "19",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 30,
@@ -298,6 +308,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Klatka piersiowa - Dół", "Klatka piersiowa - Środek"],
     "fota-lokalizacji": "lok18.png",
     idMaszynyUzywanej: "18",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 31,
@@ -311,6 +322,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok46.png",
     idMaszynyUzywanej: "46",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 32,
@@ -323,6 +335,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok43.png",
     idMaszynyUzywanej: "43",
+    idMaszynAlternatywnych: ["55"],
   },
   {
     id: 33,
@@ -458,6 +471,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Dół", "Uda - Tył"],
     "fota-lokalizacji": "lok13.png",
     idMaszynyUzywanej: "13",
+    idMaszynAlternatywnych: ["59"],
   },
   {
     id: 46,
@@ -467,6 +481,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Uda - Tył"],
     "fota-lokalizacji": "lok26.png",
     idMaszynyUzywanej: "26",
+    idMaszynAlternatywnych: ["23"],
   },
   {
     id: 47,
@@ -540,6 +555,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok49.png",
     idMaszynyUzywanej: "49",
+    idMaszynAlternatywnych: ["56"],
   },
   {
     id: 55,
@@ -549,15 +565,17 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok2.png",
     idMaszynyUzywanej: "2",
+    idMaszynAlternatywnych: ["56"],
   },
   {
-    id: 0 - 2,
+    id: 56,
     "link-wideo": "c7HLfbFgLnQ",
     "fota-miniaturki": "mini53-1.png",
     nazwa: "Ściąganie ramion wąskim chwytem na maszynie",
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok53.png",
     idMaszynyUzywanej: "53",
+    idMaszynAlternatywnych: ["56"],
   },
   {
     id: 57,
@@ -567,6 +585,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok33.png",
     idMaszynyUzywanej: "33",
+    idMaszynAlternatywnych: ["56", "29"],
   },
   {
     id: 58,
@@ -576,6 +595,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok32.png",
     idMaszynyUzywanej: "32",
+    idMaszynAlternatywnych: ["56", "27", "29"],
   },
   {
     id: 59,
@@ -612,6 +632,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok14.png",
     idMaszynyUzywanej: "14",
+    idMaszynAlternatywnych: ["58"],
   },
   {
     id: 63,
@@ -621,7 +642,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok31.png",
     idMaszynyUzywanej: "31",
-    idMaszynAlternatywnych: ["24"],
+    idMaszynAlternatywnych: ["24", "58"],
   },
   {
     id: 64,
@@ -631,6 +652,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok31.png",
     idMaszynyUzywanej: "31",
+    idMaszynAlternatywnych: ["58"],
   },
   {
     id: 65,
@@ -640,6 +662,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok1.png",
     idMaszynyUzywanej: "1",
+    idMaszynAlternatywnych: ["58"],
   },
   {
     id: 66,
@@ -649,6 +672,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok8.png",
     idMaszynyUzywanej: "8",
+    idMaszynAlternatywnych: ["58"],
   },
   {
     id: 67,
@@ -676,7 +700,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok28.png",
     idMaszynyUzywanej: "28",
-    idMaszynAlternatywnych: ["24", "32"],
+    idMaszynAlternatywnych: ["24", "32", "58"],
   },
   {
     id: 70,
@@ -695,6 +719,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Triceps"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["27"],
   },
   {
     id: 72,
@@ -704,6 +729,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Triceps"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["27"],
   },
   {
     id: 73,
