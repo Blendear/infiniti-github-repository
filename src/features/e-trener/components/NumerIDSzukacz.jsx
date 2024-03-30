@@ -37,7 +37,7 @@ const NumerIDSzukacz = () => {
   return (
     <div className={styles["strona-glowna__nr-id-szukacz__container"]}>
       <TytulBezTla htmlElementType="label">
-        WPISZ RĘCZNIE NR MASZYNY
+        WPISZ RĘCZNIE NR MASZYNY I ZATWIERDŹ
       </TytulBezTla>
       <input
         type="number"
