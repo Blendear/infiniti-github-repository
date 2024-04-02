@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import styles from "src/styles/sass/styles-all.module.scss";
 import { useRouter } from "next/router";
 import { MiniaturkaCwiczenia } from "../../../features/e-trener";
@@ -11,6 +13,25 @@ import { LoaderIcon } from "../../../components/e-trener/LoaderIcon";
 import { FaExclamation } from "react-icons/fa";
 import { GiBiceps } from "react-icons/gi";
 import { TbReplaceFilled } from "react-icons/tb";
+
+const listOfExercisesCss = {
+  container: css({}),
+  infoBox: css({
+    // animation: "fadeOut 6s forwards",
+    // "@keyframes fadeOut": {
+    //   "0%": {
+    //     opacity: 1,
+    //   },
+    //   "75%": {
+    //     opacity: 1,
+    //   },
+    //   "100%": {
+    //     opacity: 0,
+    //     display: "none",
+    //   },
+    // },
+  }),
+};
 
 const ListaCwiczen = () => {
   const [nazwaModalu, setNazwaModalu] = useState("null");
@@ -115,6 +136,7 @@ const ListaCwiczen = () => {
             ]
           }
           style={{ gridColumn: "1/-1" }}
+          css={listOfExercisesCss.infoBox}
         >
           {/* TODO - Refactor this info box and the info box on "exercise details" into a separate component */}
           <TytulBezTla htmlElementType="h2">
