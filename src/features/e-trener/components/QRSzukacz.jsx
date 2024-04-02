@@ -37,7 +37,7 @@ const QRSzukacz = () => {
             }
 
             if (!!error) {
-              console.info(error);
+              // console.info(error);
             }
           }}
           constraints={{

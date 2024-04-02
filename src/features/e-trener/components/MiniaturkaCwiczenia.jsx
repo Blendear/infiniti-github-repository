@@ -5,14 +5,32 @@ import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
 import { BsInfoLg } from "react-icons/bs";
 import { BsFillPlayCircleFill } from "react-icons/bs";
+import { GiBiceps } from "react-icons/gi";
+import { TbReplaceFilled } from "react-icons/tb";
 
 const MiniaturkaCwiczenia = ({
+  variant, // classic || alt-machine || sub-muscle
   cwiczenie,
   setNazwaModalu,
   setOtwarteCwiczenie,
 }) => {
   return (
     <li className={styles["lista-cwiczen__lista__cwiczenie"]}>
+      {(variant === "sub-muscle" || variant === "alt-machine") && (
+        <div
+          className={
+            styles[
+              "lista-cwiczen__lista__cwiczenie__non-classic-variant-marker"
+            ]
+          }
+        >
+          <div>
+            {variant === "sub-muscle" && <GiBiceps />}
+            {variant === "alt-machine" && <TbReplaceFilled />}
+          </div>
+        </div>
+      )}
+
       {/* "i" - settuje "idCwiczenia" na id tej minitaruki & settuje "nazwaModalu" na "szczegoly" */}
       <button
         className={styles["lista-cwiczen__lista__cwiczenie__info"]}
@@ -22,6 +40,7 @@ const MiniaturkaCwiczenia = ({
       >
         <BsInfoLg />
       </button>
+
       {/* fota i nazwa - - I I - & settuje "nazwaModalu" na "wideo" */}
 
       <button

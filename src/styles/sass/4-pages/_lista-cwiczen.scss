@@ -39,13 +39,14 @@
     }
   }
   &__lista {
-    padding: 3rem 2rem;
+    padding: 3rem 2.5rem;
     height: 70vh;
     overflow-y: scroll;
 
     @include mixins.grid-with-justify-align-items;
     align-items: start;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: max-content;
     row-gap: variables.$content-content-gap-xl;
     column-gap: variables.$content-content-gap-md * 1.4;
 
@@ -113,21 +114,39 @@
           }
         }
       }
-      &__info {
+
+      @mixin floating-corner-icons {
         all: unset;
         position: absolute;
         z-index: 10;
-        right: -10%;
+        background-color: colors.$primary;
+        font-size: typography.$font-size-lg;
+        border-radius: 100px;
+        @include mixins.grid-with-justify-align-items;
+      }
+
+      &__non-classic-variant-marker {
+        @include floating-corner-icons();
+
         top: -10%;
+        right: -11%;
+        width: 27%;
+        aspect-ratio: 1/2;
+        border: 2px solid colors.$primary;
+        background-color: colors.$gradient-third-A;
+        color: colors.$primary;
+        align-items: end;
+      }
+
+      &__info {
+        @include floating-corner-icons();
+
+        top: -10%;
+        right: -10%;
         width: 27%;
         aspect-ratio: 1/1;
         background-color: colors.$primary;
-        border-radius: 100%;
-        // border: 0.5rem solid white;
-        // @include mixins.animated-appearance();
         color: colors.$secondary;
-        font-size: typography.$font-size-lg;
-        @include mixins.grid-with-justify-align-items;
       }
     }
   }

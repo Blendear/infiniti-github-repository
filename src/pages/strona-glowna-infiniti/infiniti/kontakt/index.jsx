@@ -51,7 +51,7 @@ const StronaKontakt = () => {
       method: "POST",
       body: JSON.stringify(formData),
     });
-    console.log(formData);
+    // console.log(formData);
   }
   const reduxStateIsMenuOpen = useAppSelector(
     (state) => state.menuINavbarReducer.menuIsOpen
