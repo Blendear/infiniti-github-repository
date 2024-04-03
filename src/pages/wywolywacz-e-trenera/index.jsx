@@ -33,7 +33,9 @@ const glowAnimationLandscape = keyframes({
 });
 
 const stronaGlownaCss = {
-  container: css({}),
+  container: css({
+    margin: "25rem auto",
+  }),
 
   buttonSpecial: (firstColor, secondColor) =>
     css([
