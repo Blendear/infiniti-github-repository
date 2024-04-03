@@ -66,7 +66,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Barki - Tył", "Barki - Tył"],
     "fota-lokalizacji": "lok30.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["30"],
+    idMaszynAlternatywnych: ["30", "32"],
   },
   {
     id: 8,
@@ -114,7 +114,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Biceps", "Przedramie - Dół", "Przedramie - Góra"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["30", "26"],
+    idMaszynAlternatywnych: ["30", "26", "32"],
   },
   {
     id: 13,
@@ -124,7 +124,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Biceps", "Przedramie - Dół", "Przedramie - Góra"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["30", "26"],
+    idMaszynAlternatywnych: ["30", "26", "32"],
   },
   {
     id: 14,
@@ -210,7 +210,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["30"],
+    idMaszynAlternatywnych: ["30", "32"],
   },
   {
     id: 23,
@@ -391,7 +391,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok30.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["30"],
+    idMaszynAlternatywnych: ["30", "32"],
   },
   {
     id: 37,
@@ -484,7 +484,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Uda - Tył"],
     "fota-lokalizacji": "lok26.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["30", "26", "23"],
+    idMaszynAlternatywnych: ["30", "26", "23", "32"],
   },
   {
     id: 47,
@@ -503,7 +503,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Uda - Środek"], // hook1 - albo inny partia? bo to na boki bardziej, więc uda przód/tył?
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["26", "30"],
+    idMaszynAlternatywnych: ["26", "30", "32"],
   },
   {
     id: 49,
@@ -645,7 +645,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok31.png",
     idMaszynyUzywanej: "31",
-    idMaszynAlternatywnych: ["24", "58"],
+    idMaszynAlternatywnych: ["28", "58"],
   },
   {
     id: 64,
@@ -655,7 +655,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Plecy - Środek"],
     "fota-lokalizacji": "lok31.png",
     idMaszynyUzywanej: "31",
-    idMaszynAlternatywnych: ["58"],
+    idMaszynAlternatywnych: ["28", "58"],
   },
   {
     id: 65,
@@ -722,7 +722,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Triceps"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["27"],
+    idMaszynAlternatywnych: ["27", "32"],
   },
   {
     id: 72,
