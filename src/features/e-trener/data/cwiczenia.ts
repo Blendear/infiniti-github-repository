@@ -65,8 +65,8 @@ const cwiczenia: Cwiczenia = [
     nazwa: "Odwodzenie linek w tył",
     "cwiczone-miesnie": ["Barki - Tył", "Barki - Tył"],
     "fota-lokalizacji": "lok30.png",
-    idMaszynyUzywanej: "30",
-    idMaszynAlternatywnych: ["24"],
+    idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["30"],
   },
   {
     id: 8,
@@ -114,6 +114,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Biceps", "Przedramie - Dół", "Przedramie - Góra"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["30"],
   },
   {
     id: 13,
@@ -123,6 +124,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Biceps", "Przedramie - Dół", "Przedramie - Góra"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["30"],
   },
   {
     id: 14,
@@ -208,6 +210,7 @@ const cwiczenia: Cwiczenia = [
     ],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["30"],
   },
   {
     id: 23,
@@ -500,7 +503,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Uda - Środek"], // hook1 - albo inny partia? bo to na boki bardziej, więc uda przód/tył?
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["26"],
+    idMaszynAlternatywnych: ["26", "30"],
   },
   {
     id: 49,
