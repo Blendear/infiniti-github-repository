@@ -66,12 +66,14 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
       [r-1] 1fr
       [r-2];
     grid-template-columns:
+      [c-minus1] 1fr
+      [c-0] 0.3fr
       [c-1] 1fr
       [c-2] 2fr
-      [c-3] 0.6fr
+      [c-3] 0.3fr
       [c-4] 1fr
       [c-5] 2fr
-      [c-6] 0.6fr
+      [c-6] 0.3fr
       [c-7] 1fr
       [c-8];
 
@@ -88,11 +90,11 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
       width: 100%;
       height: 100%;
       // _______________________________ Stylizacja - Self _______________________________
-      font-size: 6.2vw;
+      font-size: 22px;
 
-      @include my-media-query("min", 25em) {
-        font-size: min(7vw, 3.5rem);
-      }
+      // @include my-media-query("min", 25em) {
+      //   font-size: min(7vw, 3.5rem);
+      // }
       // [~~~[~~~[~~~[~~~[~~~[ Layout & Pozycjonowanie - Children ]~~~]~~~]~~~]~~~]~~~]
       display: grid;
       justify-items: center;
@@ -120,9 +122,25 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
       }
     }
     &__btn-zaloguj {
-      // NIEUŻYTY /\
-      //hook1 - tarp1 -  markuj nieuzyte classy, zeby nie ylo "dlaczego ta classa nie dziala" - czesto uzywam to tylko jako pisowniowe pogrupownaie podklas
-
+      &--svg {
+        // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rozmiary & Pozycjonowanie - Self ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+        @include wyglad-svg();
+        @include menu-elements();
+        grid-row: r-1 / r-2;
+        grid-column: c-minus1 / c-0;
+        padding: 0 0 0 5px;
+      }
+      &--tekst {
+        // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rozmiary & Pozycjonowanie - Self ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+        @include wyglad-tekstu();
+        @include menu-elements();
+        grid-row: r-1 / r-2;
+        grid-column: c-2 / c-3;
+        width: 100%;
+        text-align: start;
+      }
+    }
+    &__infiniti-app {
       &--svg {
         // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rozmiary & Pozycjonowanie - Self ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
         @include wyglad-svg();
@@ -155,6 +173,8 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
         @include menu-elements();
         grid-row: r-1 / r-2;
         grid-column: c-5 / c-6;
+        width: 100%;
+        text-align: start;
       }
     }
     &__btn-menu {
@@ -165,7 +185,7 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
         @include menu-elements();
         grid-row: r-1 / r-2;
         grid-column: c-7 / c-8;
-
+        padding: 0 0 0 3px;
         display: grid;
         justify-items: start;
       }
@@ -173,12 +193,19 @@ $kolor-buttow-on-click: rgb(68, 33, 149);
 
     @mixin linia {
       // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rozmiary & Pozycjonowanie - Self ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-      width: 0.15rem;
-      aspect-ratio: 1/18;
+      width: 1px;
+      height: 50%;
       // _______________________________ Stylizacja - Self _______________________________
       background-color: $kolor-svg-nawigacji;
     }
     &__linia-dzielaca {
+      &--0 {
+        // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rozmiary & Pozycjonowanie - Self ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+        @include menu-elements();
+        @include linia();
+        grid-row: r-1 / r-2;
+        grid-column: c-0 / c-1;
+      }
       &--1 {
         // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rozmiary & Pozycjonowanie - Self ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
         @include menu-elements();

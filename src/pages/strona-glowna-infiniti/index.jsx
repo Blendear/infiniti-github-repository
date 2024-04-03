@@ -137,6 +137,7 @@ const stronaGlownaCss = {
 
     "@media (orientation: landscape)": {
       animation: `${glowAnimationLandscape} 1s ease-in-out infinite alternate`,
+      "-webkit-animation": `${glowAnimationLandscape} 1s ease-in-out infinite alternate`, // Adding -webkit- prefix
     },
   }),
 };
@@ -191,7 +192,7 @@ const StronaGlowna = () => {
         }
       ></div>
 
-      <Link href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet">
+      {/* <Link href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet">
         <a
           className={
             styles["layout__strona-glowna__cala-strona__kup-karnet-button"]
@@ -208,11 +209,9 @@ const StronaGlowna = () => {
             quality={100}
           />
         </a>
-      </Link>
+      </Link> */}
 
-      {/* Uncomment \/ after INFINITI App goes live */}
-
-      {/* <Link href="/infiniti-app?method=qr">
+      <Link href="/infiniti-app?method=qr">
         <a
           css={[
             stronaGlownaCss.buttonSpecial(colorPurple, colorBlue),
@@ -242,9 +241,7 @@ const StronaGlowna = () => {
         >
           <p>KUP KARNET</p>
         </a>
-      </Link> */}
-
-      {/*  */}
+      </Link>
 
       <TytulINFINITI />
       <div className={styles["layout__strona-glowna__cala-strona__fota-klubu"]}>

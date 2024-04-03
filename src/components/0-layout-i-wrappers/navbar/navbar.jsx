@@ -36,9 +36,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className={styles["navbar-gorny__caly-container"]}>
-        {/* (3) Uncomment \/, style it accordingly and delete old "Zaloguj się" after going live with INFINITI App */}
-
-        {/* <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+        <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
           <a
             className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
           >
@@ -52,7 +50,9 @@ const Navbar = () => {
 
         <Link href="/infiniti-app?method=qr">
           <a
-            className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
+            className={
+              styles["navbar-gorny__caly-container__infiniti-app--svg"]
+            }
           >
             <LuDumbbell />
           </a>
@@ -64,25 +64,6 @@ const Navbar = () => {
             }
           >
             INFINITI APP
-          </a>
-        </Link> */}
-
-        {/*  */}
-
-        <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-          <a
-            className={styles["navbar-gorny__caly-container__btn-zaloguj--svg"]}
-          >
-            <HiOutlineUserCircle />
-          </a>
-        </Link>
-        <Link href="https://infiniti-kk-cms.efitness.com.pl/Login/SystemLogin?returnurl=https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-          <a
-            className={
-              styles["navbar-gorny__caly-container__btn-zaloguj--tekst"]
-            }
-          >
-            ZALOGUJ SIĘ
           </a>
         </Link>
 
