@@ -132,6 +132,7 @@ const stronaGlownaCss = {
     animation: `${glowAnimationPortrait} 1s ease-in-out infinite alternate`,
 
     "@media (min-width: 500px)": {
+      "-webkit-transform": "translate(-50%, -50%)",
       transform: "translate(70%, -120%)",
     },
 
