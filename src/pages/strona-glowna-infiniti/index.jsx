@@ -123,6 +123,7 @@ const stronaGlownaCss = {
   newLabel: css({
     position: "absolute",
     zIndex: "1",
+    "-webkit-transform": "translate(60%, -120%)",
     transform: "translate(60%, -120%)",
     padding: "0.25rem 0.75rem",
     backgroundColor: "white",
@@ -132,7 +133,7 @@ const stronaGlownaCss = {
     animation: `${glowAnimationPortrait} 1s ease-in-out infinite alternate`,
 
     "@media (min-width: 500px)": {
-      "-webkit-transform": "translate(-50%, -50%)",
+      "-webkit-transform": "translate(70%, -120%)",
       transform: "translate(70%, -120%)",
     },
 
