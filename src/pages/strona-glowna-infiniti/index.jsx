@@ -239,7 +239,7 @@ const StronaGlowna = () => {
             },
           ]}
         >
-          <span css={stronaGlownaCss.newLabel}>NOWOŚĆ</span>
+          {/* <span css={stronaGlownaCss.newLabel}>NOWOŚĆ</span> */}
           <p>INFINITI APP</p>
         </a>
       </Link>
