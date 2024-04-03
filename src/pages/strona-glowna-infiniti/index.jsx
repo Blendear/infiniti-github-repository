@@ -138,8 +138,8 @@ const stronaGlownaCss = {
     },
 
     "@media (min-width: 500px)": {
-      "-webkit-transform": "translate(55px, -30px)",
-      transform: "translate(55px, -30px)",
+      "-webkit-transform": "translate(62px, -35px)",
+      transform: "translate(62px, -35px)",
     },
 
     "@media (orientation: landscape)": {
