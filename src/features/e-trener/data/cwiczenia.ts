@@ -28,8 +28,8 @@ const cwiczenia: Cwiczenia = [
     nazwa: "Wzniosy drążka wyciągu przed siebie",
     "cwiczone-miesnie": ["Barki - Przód", "Barki - Środek"],
     "fota-lokalizacji": "lok26.png",
-    idMaszynyUzywanej: "26",
-    idMaszynAlternatywnych: ["32"],
+    idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["26", "30", "32"],
   },
   {
     id: 4,
@@ -114,7 +114,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Biceps", "Przedramie - Dół", "Przedramie - Góra"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["30"],
+    idMaszynAlternatywnych: ["30", "26"],
   },
   {
     id: 13,
@@ -124,7 +124,7 @@ const cwiczenia: Cwiczenia = [
     "cwiczone-miesnie": ["Biceps", "Przedramie - Dół", "Przedramie - Góra"],
     "fota-lokalizacji": "lok24.png",
     idMaszynyUzywanej: "24",
-    idMaszynAlternatywnych: ["30"],
+    idMaszynAlternatywnych: ["30", "26"],
   },
   {
     id: 14,
@@ -483,8 +483,8 @@ const cwiczenia: Cwiczenia = [
     nazwa: "Cable Kick Back",
     "cwiczone-miesnie": ["Uda - Tył"],
     "fota-lokalizacji": "lok26.png",
-    idMaszynyUzywanej: "26",
-    idMaszynAlternatywnych: ["23"],
+    idMaszynyUzywanej: "24",
+    idMaszynAlternatywnych: ["30", "26", "23"],
   },
   {
     id: 47,
