@@ -123,8 +123,8 @@ const stronaGlownaCss = {
   newLabel: css({
     position: "absolute",
     zIndex: "1",
-    "-webkit-transform": "translate(60%, -120%)",
-    transform: "translate(60%, -120%)",
+    "-webkit-transform": "translate(40px, -30px)",
+    transform: "translate(40px, -30px)",
     padding: "0.25rem 0.75rem",
     backgroundColor: "white",
     fontSize: "clamp(0.9rem, 2.75vw, 1.4rem)",
@@ -132,9 +132,14 @@ const stronaGlownaCss = {
     textShadow: "none",
     animation: `${glowAnimationPortrait} 1s ease-in-out infinite alternate`,
 
+    "@media (max-width: 390px)": {
+      "-webkit-transform": "translate(33px, -25px)",
+      transform: "translate(33px, -25px)",
+    },
+
     "@media (min-width: 500px)": {
-      "-webkit-transform": "translate(70%, -120%)",
-      transform: "translate(70%, -120%)",
+      "-webkit-transform": "translate(55px, -30px)",
+      transform: "translate(55px, -30px)",
     },
 
     "@media (orientation: landscape)": {
