@@ -308,7 +308,7 @@ const cwiczenia: Cwiczenia = [
   {
     id: 30,
     "link-wideo": "dWcIztQAuJg",
-    "fota-miniaturki": "mini18-1.png",
+    "fota-miniaturki": "mini18-2.png",
     nazwa: "Wyciskanie sztangi na ławce skośnej ujemnie",
     "cwiczone-miesnie": ["Klatka piersiowa - Dół", "Klatka piersiowa - Środek"],
     "fota-lokalizacji": "lok18.png",
@@ -694,8 +694,8 @@ const cwiczenia: Cwiczenia = [
     "fota-miniaturki": "mini0-10.png",
     nazwa: "Wiosłowanie T-Bar",
     "cwiczone-miesnie": ["Plecy - Środek"],
-    "fota-lokalizacji": "lok61.png",
-    idMaszynyUzywanej: "61",
+    "fota-lokalizacji": "lok62.png",
+    idMaszynyUzywanej: "62",
   },
   {
     id: 69,

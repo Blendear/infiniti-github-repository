@@ -25,7 +25,7 @@ const NumerIDSzukacz = () => {
     e.target.value.length > 0
       ? maszyny.find((maszyna) => {
           nowaMaszyna = maszyna;
-
+          console.log(maszyna["nr-id"], e.target.value);
           return maszyna["nr-id"] === e.target.value;
         })
         ? (setFotaMaszyny(nowaMaszyna.fota),

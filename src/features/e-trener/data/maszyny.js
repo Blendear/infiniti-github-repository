@@ -309,5 +309,10 @@ const maszyny = [
     nazwa: "AAA",
     fota: "masz60.jpg",
   },
+  {
+    "nr-id": "61",
+    nazwa: "AAA",
+    fota: "masz61.jpg",
+  },
 ];
 export default maszyny;
