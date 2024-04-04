@@ -35,6 +35,7 @@
     @media (orientation: landscape) {
       grid-column: 1/ -1;
       grid-rows: 1/-1;
+      width: 80vw;
     }
 
     & button {
