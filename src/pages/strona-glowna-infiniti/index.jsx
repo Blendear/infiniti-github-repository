@@ -262,7 +262,7 @@ const StronaGlowna = () => {
       <TytulINFINITI />
       <div className={styles["layout__strona-glowna__cala-strona__fota-klubu"]}>
         <Image
-          src={`/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/z-zewnatrz-klub/z-zewnatrz-klub.png`}
+          src={`/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/z-zewnatrz-klub/caly-klub.png`}
           alt={`Widok klubu INFINITI - z zewnątrz, od strony ulicy, w słoneczny dzień. Przed klubem widać drzewa i zaparkowane pod nimi samochody.`}
           layout="fill"
           objectFit="cover"
