@@ -215,7 +215,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             grid-row: r-2/ r-3;
             grid-column: c-2 / c-3;
             z-index: 5;
-            margin: 3vw 0 3vw 0;
+            margin: 3vw 20px 3vw 0;
 
             //hook1 - nawet gry dynamicnza lista, zeby zrobisz rowne gapsy, musisz dac doispaly grid
             display: grid;
@@ -252,7 +252,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
               // color: #1f5c91;
 
               // height: 16rem;
-              aspect-ratio: 4/1;
+              // aspect-ratio: 4/1;
 
               @media (orientation: landscape) {
                 width: 28vw;
