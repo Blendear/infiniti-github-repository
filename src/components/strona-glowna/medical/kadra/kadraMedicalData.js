@@ -44,5 +44,13 @@ export const kadraMedicalDataArray = {
       fotoPathKoncowka: "bruzdzinska-adriana",
       socialMediaLinks: {},
     },
+    {
+      nazwisko: "Horbijczuk",
+      name: "Ania",
+      opis: "testowy opis",
+      funkcja: "Fizjoterapeutka",
+      fotoPathKoncowka: "horbijczuk-ania",
+      socialMediaLinks: {},
+    },
   ],
 };

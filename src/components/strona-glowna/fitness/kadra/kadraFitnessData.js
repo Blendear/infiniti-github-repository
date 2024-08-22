@@ -52,14 +52,14 @@ export const kadraFitnessDataArray = {
     },
   ],
   trenerzy: [
-    {
-      nazwisko: "Agarkova",
-      name: "Alina",
-      opis: "testowy opis",
-      funkcja: "Instruktor Fitness",
-      fotoPathKoncowka: "agarkova-alina",
-      socialMediaLinks: { facebook: "https://www.facebook.com/agarkova.alina" },
-    },
+    // {
+    //   nazwisko: "Agarkova",
+    //   name: "Alina",
+    //   opis: "testowy opis",
+    //   funkcja: "Instruktor Fitness",
+    //   fotoPathKoncowka: "agarkova-alina",
+    //   socialMediaLinks: { facebook: "https://www.facebook.com/agarkova.alina" },
+    // },
     {
       nazwisko: "Bizoń",
       name: "Adam",
