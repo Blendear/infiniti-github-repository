@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import styles from "src/styles/sass/styles-all.module.scss";
 import { ModalWrapperProps } from "../types/types";
 import { useEffect } from "react";
 import { enableBodyOverflow } from "../utils/enableBodyOverflow";
@@ -33,7 +34,7 @@ const modalWrapperCss = {
 
 export const ModalWrapper = (props: ModalWrapperProps) => {
   const disableBodyOverflow = () => {
-    document.body.classList.add("dialog-modal-open");
+    document.body.classList.add(styles["modal-open"]);
   };
 
   const scrollToTop = () => {

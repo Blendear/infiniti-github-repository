@@ -39,6 +39,7 @@ import { CSSProperties } from "react";
 import CircleLoader from "react-spinners/CircleLoader";
 
 import { carouselData } from "../../components/strona-glowna/0/2-carousel-foty-infiniti/Data";
+import { ModalPotwierdzajacyAkceptacjeCookies } from "../../features/e-trener";
 
 const colorPurple = "#a22cff";
 const colorBlue = "#22c1c3";
@@ -501,6 +502,7 @@ const StronaGlowna = () => {
       <GodzinyOtwarciaKS />
       <Partnerzy />
       <CallButton />
+      <ModalPotwierdzajacyAkceptacjeCookies />
     </div>
   );
 };

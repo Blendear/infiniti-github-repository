@@ -12,7 +12,6 @@ import {
 } from "../../features/e-trener";
 import { useState, useEffect } from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
-import { ModalPotwierdzajacyAkceptacjeRegulaminow } from "../../features/e-trener";
 import dynamic from "next/dynamic";
 
 const ETrenerStrGlowna = ({ propA, propB }) => {
@@ -52,7 +51,6 @@ const ETrenerStrGlowna = ({ propA, propB }) => {
               }[router.query.method]
             }
           </section>
-          {2 > 1 && <ModalPotwierdzajacyAkceptacjeRegulaminow />}
         </article>
       )}
     </div>

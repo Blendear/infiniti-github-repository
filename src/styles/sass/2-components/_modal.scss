@@ -85,9 +85,9 @@
         border-radius: variables.$border-radius-sm;
         border-width: variables.$border-width-sm;
 
-        @include mixins.hide-scrollbars();
+        // @include mixins.hide-scrollbars();
       }
-      @include mixins.hide-scrollbars();
+      // @include mixins.hide-scrollbars();
     }
   }
   &-warning {
