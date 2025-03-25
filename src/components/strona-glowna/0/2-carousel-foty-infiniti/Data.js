@@ -253,17 +253,17 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "wodor",
-    fotyTegoMiejsca: [wodor1],
-    wyswietlanaNazwa: "Inhalacja Wodoru",
+    fotyTegoMiejsca: [renowacjaTemporaryInformacyjnaFota],
+    wyswietlanaNazwa: "Skin.Art.Tattoo",
     altText:
-      "Dwa fotele oraz przydząd do inhalacji wodoru po bokach stolika. Na przeciwko stoi telewizor i rośliny.",
+      "Studio tatuażu. Tatuowanie realistyczne oraz wykonywanie projektów",
   },
   {
     nazwaMiejsca: "la-ola",
-    fotyTegoMiejsca: [laOla1, laOla2, laOla3],
-    wyswietlanaNazwa: "La 'Ola",
+    fotyTegoMiejsca: [renowacjaTemporaryInformacyjnaFota],
+    wyswietlanaNazwa: "Fizjoterapia",
     altText:
-      "Salon kosmetyczny, z berzowo-różowo-biało paletą barw. W jednym pomieszczeniu widać urządzenia i stanowiska do manicure oraz podobnych usług.",
+      "Powiadomienie o renowacji oraz chwilowego braku zdjęć z tego powodu",
   },
   {
     nazwaMiejsca: "sfd",
@@ -274,7 +274,7 @@ export const carouselData = [
   {
     nazwaMiejsca: "naturoterapia",
     fotyTegoMiejsca: [renowacjaTemporaryInformacyjnaFota],
-    wyswietlanaNazwa: "Naturoterapia",
+    wyswietlanaNazwa: "Gabinet Masażu",
     altText:
       "Powiadomienie o renowacji oraz chwilowego braku zdjęć z tego powodu",
   },
