@@ -6,42 +6,51 @@ import Link from "next/link";
 import TytulBezTla from "./TytulBezTla";
 import { useState } from "react";
 
-import { QrReader } from "react-qr-reader";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { LoaderIcon } from "../../../components/e-trener/LoaderIcon";
+
+import { Scanner } from "@yudiel/react-qr-scanner";
 
 const QRSzukacz = () => {
   const router = useRouter();
 
   const handleScan = (data) => {
-    // console.log(data.text);
-
-    if (data !== null) {
-      // router.push(`${data.text}`);
+    if (data && data[0] && data[0].rawValue) {
+      // Wyciągamy rawValue z pierwszego elementu w tablicy
+      const qrCodeValue = data[0].rawValue;
       router.push(
-        `/infiniti-app/lista-cwiczen?filtr=qr&wartosc=${data.text}&nazwa-modalu=null&id-cwiczenia=null`
+        `/infiniti-app/lista-cwiczen?filtr=qr&wartosc=${qrCodeValue}&nazwa-modalu=null&id-cwiczenia=null`
       );
     }
   };
+
   return (
     <section className={styles["strona-glowna__qr-szukacz__container"]}>
       {/* //       _._. AA */}
       <TytulBezTla htmlElementType="label">ZESKANUJ KOD QR MASZYNY</TytulBezTla>
       {(
-        <QrReader
-          className={styles["strona-glowna__qr-szukacz__kamera"]}
-          onResult={(result, error) => {
-            if (!!result) {
-              handleScan(result);
-            }
+        // <QrReader
+        //   className={styles["strona-glowna__qr-szukacz__kamera"]}
+        //   onResult={(result, error) => {
+        //     if (!!result) {
+        //       handleScan(result);
+        //     }
 
-            if (!!error) {
-              // console.info(error);
-            }
+        //     if (!!error) {
+        //       // console.info(error);
+        //     }
+        //   }}
+        //   constraints={{
+        //     facingMode: "environment",
+        //   }}
+        // />
+        <Scanner
+          onScan={(result) => {
+            console.log(result), handleScan(result);
           }}
-          constraints={{
-            facingMode: "environment",
+          classNames={{
+            container: styles["strona-glowna__qr-szukacz__kamera"],
           }}
         />
       ) || (
