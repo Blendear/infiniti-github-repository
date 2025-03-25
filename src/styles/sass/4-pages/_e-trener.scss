@@ -304,14 +304,17 @@ $max-content: max-content;
   }
   &__qr-szukacz {
     &__container {
-      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
     }
     &__kamera {
       margin: 0 auto;
-      width: min(30rem, 70vw);
-      aspect-ratio: 1.5/1;
+      width: min(30rem, 70vw) !important;
+      aspect-ratio: 1.2/1;
       border-radius: 2rem;
-      background-color: rgb(16, 16, 16);
+      overflow: hidden;
+
+      & path {
+        stroke: rgb(255, 255, 255, 0.5);
+      }
     }
   }
 }
