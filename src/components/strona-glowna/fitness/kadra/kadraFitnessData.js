@@ -50,6 +50,22 @@ export const kadraFitnessDataArray = {
       fotoPathKoncowka: "cholewa-zuzanna",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
+    {
+      nazwisko: "Klama",
+      name: "Anna",
+      opis: "testowy opis",
+      funkcja: "Opiekun Recepcji",
+      fotoPathKoncowka: "no-image",
+      socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    },
+    {
+      nazwisko: "Kołtun",
+      name: "India",
+      opis: "testowy opis",
+      funkcja: "Opiekun Recepcji",
+      fotoPathKoncowka: "no-image",
+      socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    },
   ],
   trenerzy: [
     // {
@@ -199,14 +215,7 @@ export const kadraFitnessDataArray = {
         facebook: "https://www.facebook.com/ramonatrenerzdrowia",
       },
     },
-    {
-      nazwisko: "Klama",
-      name: "Anna",
-      opis: "testowy opis",
-      funkcja: "Instruktor fitness",
-      fotoPathKoncowka: "no-image",
-      socialMediaLinks: {},
-    },
+
     // {
     //   nazwisko: "Prokop",
     //   name: "Piotrek",
