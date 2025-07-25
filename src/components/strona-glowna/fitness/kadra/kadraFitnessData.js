@@ -34,14 +34,14 @@ export const kadraFitnessDataArray = {
       fotoPathKoncowka: "czerska-iza",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
-    {
-      nazwisko: " Ładak",
-      name: "Emilia",
-      opis: "testowy opis",
-      funkcja: "Opiekun Recepcji",
-      fotoPathKoncowka: "ladak-emilia",
-      socialMediaLinks: { email: "info@infiniti-fit.pl" },
-    },
+    // {
+    //   nazwisko: " Ładak",
+    //   name: "Emilia",
+    //   opis: "testowy opis",
+    //   funkcja: "Opiekun Recepcji",
+    //   fotoPathKoncowka: "ladak-emilia",
+    //   socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    // },
     {
       nazwisko: "Cholewa",
       name: "Zuzanna",
@@ -70,16 +70,16 @@ export const kadraFitnessDataArray = {
         facebook: "https://www.facebook.com/profile.php?id=100057168981507",
       },
     },
-    {
-      nazwisko: "Blak",
-      name: "Julita",
-      opis: "testowy opis",
-      funkcja: "Instruktor Fitness",
-      fotoPathKoncowka: "blak-julita",
-      socialMediaLinks: {
-        facebook: "https://www.facebook.com/julita.blak",
-      },
-    },
+    // {
+    //   nazwisko: "Blak",
+    //   name: "Julita",
+    //   opis: "testowy opis",
+    //   funkcja: "Instruktor Fitness",
+    //   fotoPathKoncowka: "blak-julita",
+    //   socialMediaLinks: {
+    //     facebook: "https://www.facebook.com/julita.blak",
+    //   },
+    // },
     {
       nazwisko: "Deierling",
       name: "Arek",
@@ -198,6 +198,14 @@ export const kadraFitnessDataArray = {
       socialMediaLinks: {
         facebook: "https://www.facebook.com/ramonatrenerzdrowia",
       },
+    },
+    {
+      nazwisko: "Klama",
+      name: "Anna",
+      opis: "testowy opis",
+      funkcja: "Instruktor fitness",
+      fotoPathKoncowka: "no-image",
+      socialMediaLinks: {},
     },
     // {
     //   nazwisko: "Prokop",
