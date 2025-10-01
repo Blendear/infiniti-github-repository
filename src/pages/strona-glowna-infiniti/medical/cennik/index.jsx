@@ -62,6 +62,25 @@ const MedicalCennik = () => {
         }
       ></div>
       <article
+        className={styles["layout__medical-cennik__cala-strona__cennik-dzieci"]}
+      >
+        <Link
+          download
+          href="/images/.dedykowane-do-strony-konkretnej/medical/cennik/cennik-dzieci.png"
+        >
+          <a target="_blank">
+            <Image
+              src={`/images/.dedykowane-do-strony-konkretnej/medical/cennik/cennik-dzieci.png`}
+              alt={`Cennik usług medycznych dla dzieci`}
+              layout="fill"
+              objectFit="contain"
+              priority
+              loading="eager"
+            />
+          </a>
+        </Link>
+      </article>
+      <article
         className={styles["layout__medical-cennik__cala-strona__cennik-1"]}
       >
         <Link
