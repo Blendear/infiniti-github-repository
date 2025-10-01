@@ -53,4 +53,30 @@ export const kadraMedicalDataArray = {
       socialMediaLinks: {},
     },
   ],
+  lekarze: [
+    {
+      nazwisko: "Ciekalski",
+      name: "Wiktor",
+      opis: "testowy opis",
+      funkcja: "Ortopeda",
+      fotoPathKoncowka: "ciekalski-wiktor",
+      socialMediaLinks: {},
+    },
+    {
+      nazwisko: "Gadecki",
+      name: "Kamil",
+      opis: "testowy opis",
+      funkcja: "Ortopeda",
+      fotoPathKoncowka: "no-image", //"gadecki-kamil",
+      socialMediaLinks: {},
+    },
+    {
+      nazwisko: "Rogowski",
+      name: "Jakub",
+      opis: "testowy opis",
+      funkcja: "Ortopeda",
+      fotoPathKoncowka: "no-image", // "rogowski-jakub",
+      socialMediaLinks: {},
+    },
+  ],
 };
