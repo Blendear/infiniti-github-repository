@@ -75,7 +75,7 @@ export const kadraMedicalDataArray = {
       name: "Kamil",
       opis: "testowy opis",
       funkcja: "Ortopeda",
-      fotoPathKoncowka: "no-image", //"gadecki-kamil",
+      fotoPathKoncowka: "gadecki-kamil",
       socialMediaLinks: {},
     },
   ],
