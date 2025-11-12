@@ -3,7 +3,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Liminowicz",
       name: "Marta",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Manager Klubu",
       fotoPathKoncowka: "liminowicz-marta",
       socialMediaLinks: { email: "manager@infiniti-fit.pl" },
@@ -13,7 +13,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Rosa",
       name: "Sandra",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Kierownik Recepcji",
       fotoPathKoncowka: "rosa-sandra",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
@@ -21,7 +21,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Bator",
       name: "Monika",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Opiekun Recepcji",
       fotoPathKoncowka: "bator-monika",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
@@ -29,7 +29,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Czerska",
       name: "Iza",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Opiekun Recepcji",
       fotoPathKoncowka: "czerska-iza",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
@@ -37,7 +37,7 @@ export const kadraFitnessDataArray = {
     // {
     //   nazwisko: " Ładak",
     //   name: "Emilia",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Opiekun Recepcji",
     //   fotoPathKoncowka: "ladak-emilia",
     //   socialMediaLinks: { email: "info@infiniti-fit.pl" },
@@ -45,7 +45,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Cholewa",
       name: "Zuzanna",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Opiekun Recepcji",
       fotoPathKoncowka: "cholewa-zuzanna",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
@@ -53,7 +53,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Klama",
       name: "Anna",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Opiekun Recepcji",
       fotoPathKoncowka: "no-image",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
@@ -61,7 +61,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Kołtun",
       name: "India",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Opiekun Recepcji",
       fotoPathKoncowka: "no-image",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
@@ -71,7 +71,7 @@ export const kadraFitnessDataArray = {
     // {
     //   nazwisko: "Agarkova",
     //   name: "Alina",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Instruktor Fitness",
     //   fotoPathKoncowka: "agarkova-alina",
     //   socialMediaLinks: { facebook: "https://www.facebook.com/agarkova.alina" },
@@ -79,7 +79,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Bizoń",
       name: "Adam",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Trener MMA i BJJ",
       fotoPathKoncowka: "bizon-adam",
       socialMediaLinks: {
@@ -89,7 +89,7 @@ export const kadraFitnessDataArray = {
     // {
     //   nazwisko: "Blak",
     //   name: "Julita",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Instruktor Fitness",
     //   fotoPathKoncowka: "blak-julita",
     //   socialMediaLinks: {
@@ -99,7 +99,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Deierling",
       name: "Arek",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness / Trener personalny",
       fotoPathKoncowka: "deierling-arek",
       socialMediaLinks: {
@@ -110,7 +110,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Duma-Majewicz",
       name: "Ania",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "duma-ania",
       socialMediaLinks: { facebook: "https://www.facebook.com/ania.wn.9" },
@@ -118,7 +118,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Gidel",
       name: "Ela",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "gidel-ela",
       socialMediaLinks: {
@@ -128,7 +128,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Gołębiowski",
       name: "Romek",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "golebiowski-roman",
       socialMediaLinks: {
@@ -138,7 +138,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Grabowska",
       name: "Wioletta",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "grabowska-wioletta",
       socialMediaLinks: {},
@@ -147,7 +147,7 @@ export const kadraFitnessDataArray = {
     // {
     //   nazwisko: "Kaczmarczyk",
     //   name: "Sebastian",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Instruktor fitness / Trener personalny",
     //   fotoPathKoncowka: "kaczmarczyk-sebastian",
     //   socialMediaLinks: {
@@ -157,7 +157,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Kopacz",
       name: "Izabela",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "kopacz-izabela",
       socialMediaLinks: {
@@ -167,7 +167,7 @@ export const kadraFitnessDataArray = {
     // {
     //   nazwisko: "Kubicka",
     //   name: "Katrin",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Instruktor fitness",
     //   fotoPathKoncowka: "kubicka-katrin",
     //   socialMediaLinks: {
@@ -177,7 +177,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Kuśnierz-Pierz",
       name: "Ania",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "kusnierz-pierz-anna",
       socialMediaLinks: {
@@ -188,7 +188,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Kwaśnik Czernicka",
       name: "Agnieszka",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "kwasnik-czernicka-agnieszka",
       socialMediaLinks: {
@@ -198,7 +198,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Mróz",
       name: "Maciej",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "mroz-maciej",
       socialMediaLinks: {
@@ -208,7 +208,7 @@ export const kadraFitnessDataArray = {
     {
       nazwisko: "Piotrowicz-Kurelowska",
       name: "Ramona",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Instruktor fitness",
       fotoPathKoncowka: "piotrowicz-kurelowska-ramona",
       socialMediaLinks: {
@@ -219,7 +219,7 @@ export const kadraFitnessDataArray = {
     // {
     //   nazwisko: "Prokop",
     //   name: "Piotrek",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Instruktor fitness",
     //   fotoPathKoncowka: "prokop-piotr",
     //   socialMediaLinks: {
@@ -229,7 +229,7 @@ export const kadraFitnessDataArray = {
     // {
     //   nazwisko: "Rypalla",
     //   name: "Dominika",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Instruktor fitness / Trener personalny",
     //   fotoPathKoncowka: "rypalla-dominika",
     //   socialMediaLinks: {
@@ -239,7 +239,7 @@ export const kadraFitnessDataArray = {
     // {
     //   nazwisko: "Saska",
     //   name: "Tomasz",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Instruktor fitness / Trener personalny / Dietetyk",
     //   fotoPathKoncowka: "saska-tomasz",
     //   socialMediaLinks: {

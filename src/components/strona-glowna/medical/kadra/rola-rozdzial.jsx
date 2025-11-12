@@ -20,7 +20,7 @@ const RolaRozdzial = (props) => {
   // of componentow (np. divow, or custom componentow)
 
   const osobyOTejRoli = props.rola.map((dane, index) => (
-    <OsobaKonkretna key={index} daneOOsobie={dane}>
+    <OsobaKonkretna key={index} daneOOsobie={dane} text={dane.opis || ""}>
       {/* osobaData.nazwisko */}
     </OsobaKonkretna>
   ));

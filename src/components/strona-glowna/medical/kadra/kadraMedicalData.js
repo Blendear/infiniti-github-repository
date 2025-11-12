@@ -3,7 +3,7 @@ export const kadraMedicalDataArray = {
     // {
     //   nazwisko: "Rypalla",
     //   name: "Dominika",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Masażystka",
     //   fotoPathKoncowka: "rypalla-dominika",
     //   socialMediaLinks: {
@@ -13,7 +13,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Judycka",
       name: "Kamila",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Masażystka",
       fotoPathKoncowka: "judycka-kamila",
       socialMediaLinks: {},
@@ -23,7 +23,7 @@ export const kadraMedicalDataArray = {
     // {
     //   nazwisko: "Meisner",
     //   name: "Iwona",
-    //   opis: "testowy opis",
+    //   opis: "",
     //   funkcja: "Fizjoterapeutka",
     //   fotoPathKoncowka: "meisner-iwona",
     //   socialMediaLinks: { facebook: "https://www.facebook.com/iwona.meisner" },
@@ -31,7 +31,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Kowalczyk",
       name: "Patrycja",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Fizjoterapeutka",
       fotoPathKoncowka: "kowalczyk-patrycja",
       socialMediaLinks: {},
@@ -39,7 +39,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Bruździńska",
       name: "Adrianna",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Fizjoterapeutka",
       fotoPathKoncowka: "bruzdzinska-adriana",
       socialMediaLinks: {},
@@ -47,7 +47,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Horbijczuk",
       name: "Ania",
-      opis: "testowy opis",
+      opis: "",
       funkcja: "Fizjoterapeutka",
       fotoPathKoncowka: "horbijczuk-ania",
       socialMediaLinks: {},
@@ -57,7 +57,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Rogowski",
       name: "Jakub",
-      opis: "testowy opis",
+      opis: "psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub",
       funkcja: "Lekarz specjalista Traumatologii & ortopedii narządu ruchu",
       fotoPathKoncowka: "rogowski-jakub",
       socialMediaLinks: {},
@@ -65,7 +65,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Ciekalski",
       name: "Wiktor",
-      opis: "testowy opis",
+      opis: "psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub",
       funkcja: "Lekarz",
       fotoPathKoncowka: "ciekalski-wiktor",
       socialMediaLinks: {},
@@ -73,7 +73,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Gadecki",
       name: "Kamil",
-      opis: "testowy opis",
+      opis: "psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub",
       funkcja: "Lekarz",
       fotoPathKoncowka: "gadecki-kamil",
       socialMediaLinks: {},

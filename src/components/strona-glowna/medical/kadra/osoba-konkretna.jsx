@@ -158,6 +158,22 @@ const OsobaKonkretna = (props) => {
           {socialeTejOsoby}
         </li>
       </ul>
+      {props.text && props.text.trim() !== "" && (
+        <p
+          style={{
+            //       grid-row: r-4 / r-5;
+            // grid-column: c-3 / c-3;
+
+            fontSize: "",
+
+            marginTop: "50px",
+            gridRow: "r-6 / r-7",
+            gridColumn: "c-1 / c-4",
+          }}
+        >
+          {props.text}
+        </p>
+      )}
     </li>
   );
 };
