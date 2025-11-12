@@ -85,7 +85,7 @@ const Footer = () => {
           <AiOutlineBorder color="white" />
           <Link
             download
-            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Regulamin_Infiniti_2024.pdf"
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Regulamin_Infiniti_Centrum Zdrowia 2024.pdf"
           >
             <a target="_blank">Regulamin INFINITI</a>
           </Link>
