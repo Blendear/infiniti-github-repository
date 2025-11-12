@@ -160,16 +160,11 @@ const OsobaKonkretna = (props) => {
       </ul>
       {props.text && props.text.trim() !== "" && (
         <p
-          style={{
-            //       grid-row: r-4 / r-5;
-            // grid-column: c-3 / c-3;
-
-            fontSize: "",
-
-            marginTop: "50px",
-            gridRow: "r-6 / r-7",
-            gridColumn: "c-1 / c-4",
-          }}
+          className={
+            styles[
+              "layout__medical-kadra__cala-strona__lista-rol__konkretna-rola-container__lista-osob-o-tej-roli-container__konkretna-osoba-container--tresc-tekst"
+            ]
+          }
         >
           {props.text}
         </p>

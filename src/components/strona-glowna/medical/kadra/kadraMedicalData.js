@@ -57,7 +57,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Rogowski",
       name: "Jakub",
-      opis: "psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub",
+      opis: "Absolwent Wydziału Wojskowo-Lekarskiego Uniwersytetu Medycznego w Łodzi. Współpracuje z zespołem Zachar Trening Grup, zapewniając opiekę medyczną i konsultacje dla zawodników wyższych grup treningowych. Swoje doświadczenie rozwija poprzez pracę w różnych środowiskach medycznych, uczestnictwo w kursach i konferencjach naukowych.",
       funkcja: "Lekarz specjalista Traumatologii & ortopedii narządu ruchu",
       fotoPathKoncowka: "rogowski-jakub",
       socialMediaLinks: {},
@@ -65,7 +65,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Ciekalski",
       name: "Wiktor",
-      opis: "psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub",
+      opis: "Ortopeda, absolwent Śląskiego Uniwersytetu Medycznego w Zabrzu. Specjalizuje się w diagnostyce i leczeniu schorzeń układu ruchu. Prywatnie pasjonat sportu i aktywnego trybu życia, co przekłada się na jego holistyczne podejście do pacjentów i zrozumienie potrzeb osób trenujących.",
       funkcja: "Lekarz",
       fotoPathKoncowka: "ciekalski-wiktor",
       socialMediaLinks: {},
@@ -73,7 +73,7 @@ export const kadraMedicalDataArray = {
     {
       nazwisko: "Gadecki",
       name: "Kamil",
-      opis: "psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pub",
+      opis: "Lekarz w trakcie specjalizacji z ortopedii i traumatologii narządu ruchu. Absolwent Śląskiego Uniwersytetu Medycznego. W swojej pracy koncentruje się na diagnostyce i leczeniu urazów oraz schorzeń narządu ruchu, łącząc wiedzę kliniczną z nowoczesnym podejściem do rehabilitacji i profilaktyki urazów.",
       funkcja: "Lekarz",
       fotoPathKoncowka: "gadecki-kamil",
       socialMediaLinks: {},

@@ -196,7 +196,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
               grid-auto-flow: row;
 
               // grid-template-columns: repeat(3, 1fr);
-              grid-template-columns: 1.8fr 1fr 1fr; //hook2 - na sile zwiekszylem, zeby nimie i nazwisko sie
+              grid-template-columns: 1fr 1fr 1fr; //hook2 - na sile zwiekszylem, zeby nimie i nazwisko sie
               //rozciagalo na maksa, skoro i tak tylko 1 masazystka
 
               column-gap: 2rem;
@@ -241,7 +241,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                   [c-4];
               }
               &--fota {
-                grid-row: r-1/ r-5;
+                grid-row: r-1/ r-6;
                 grid-column: c-1 / c-2;
 
                 //hook1-- DUŻO PROSTSZY SPOSOB KONTROLI KSZTALTU image'u
@@ -316,12 +316,15 @@ $rozmiar-rowa: minmax(0rem, max-content);
               }
 
               &--tresc-tekst {
-                grid-row: r-3/ r-4;
-                grid-column: c-3/ c-3;
+                font-size: 1.2rem;
+                margin-top: 40px;
+                padding: 0 10px 0 10px;
+                grid-row: r-6 / r-7;
+                grid-column: c-1 / c-4;
 
-                font-size: clamp(1vw, 1.2rem, 5vw);
-                // color: #4c4c4c;
-                color: #4c4c4c;
+                @media (orientation: landscape) {
+                  font-size: min(2rem, 1.7vw);
+                }
               }
               &--sociale {
                 margin: 0.5rem 0 0 0;
