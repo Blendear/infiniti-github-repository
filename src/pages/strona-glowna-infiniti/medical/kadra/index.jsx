@@ -71,10 +71,10 @@ const MedicalKadra = () => {
           rola={kadraMedicalDataArray.masazysci}
           nazwaRoli="MASAŻYŚCI"
         />
-        <RolaRozdzial
+        {/* <RolaRozdzial
           rola={kadraMedicalDataArray.lekarze}
           nazwaRoli="ORTOPEDZI"
-        />
+        /> */}
         {/* <RolaRozdzial props={kadraMedicalDataArray.trenerzy} /> */}
         {/* <RolaRozdzial /> */}
       </ul>
