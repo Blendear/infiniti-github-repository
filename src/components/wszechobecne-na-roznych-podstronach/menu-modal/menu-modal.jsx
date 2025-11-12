@@ -65,14 +65,15 @@ const MenuModal = (props) => {
         }
         onClick={handleCloseDialogModal}
       >
-        <Link href="/strona-glowna-infiniti/medical/uslugi">
+        <Link href="/strona-glowna-infiniti/medical/kadra-ortopedzi">
           <a>
             <KlocekMenu
-              imagePathEnd="klocki/medical-uslugi.png"
+              imagePathEnd="klocki/medical-kadra-ortopedzi.png"
               typKlockaNormalCzyDlugi="normal"
             />
           </a>
         </Link>
+
         <Link href="/strona-glowna-infiniti/medical/cennik">
           <a>
             <KlocekMenu
@@ -84,7 +85,15 @@ const MenuModal = (props) => {
         <Link href="/strona-glowna-infiniti/medical/kadra">
           <a>
             <KlocekMenu
-              imagePathEnd="klocki/medical-kadra.png"
+              imagePathEnd="klocki/medical-kadra-fizjo.png"
+              typKlockaNormalCzyDlugi="normal"
+            />
+          </a>
+        </Link>
+        <Link href="/strona-glowna-infiniti/medical/uslugi">
+          <a>
+            <KlocekMenu
+              imagePathEnd="klocki/medical-uslugi.png"
               typKlockaNormalCzyDlugi="normal"
             />
           </a>

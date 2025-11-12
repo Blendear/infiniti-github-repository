@@ -138,11 +138,27 @@ $rozmiar-rowa: 7.55rem;
         @include m-q-landscape-lewe-prawe-klocki();
       }
       &--container-listujacy-klocki-srodkowe {
-        grid-row: r-6 / r-7;
+        grid-row: r-7 / r-7;
         grid-column: c-2 / c-5;
 
-        @media (min-width: 575px) {
+        @media (min-width: 350px) {
           padding: 2rem 0 0 0;
+        }
+
+        @media (min-width: 500px) {
+          padding: 3rem 0 0 0;
+        }
+
+        @media (min-width: 650px) {
+          padding: 4rem 0 0 0;
+        }
+
+        @media (min-width: 730px) {
+          padding: 5rem 0 0 0;
+        }
+
+        @media (min-width: 830px) {
+          padding: 6rem 0 0 0;
         }
 
         @media (orientation: landscape) {
