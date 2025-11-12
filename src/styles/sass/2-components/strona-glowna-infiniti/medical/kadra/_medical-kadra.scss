@@ -317,7 +317,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
 
               &--tresc-tekst {
                 font-size: 1.2rem;
-                margin-top: 40px;
+                margin: 40px 0 40px 0;
                 padding: 0 10px 0 10px;
                 grid-row: r-6 / r-7;
                 grid-column: c-1 / c-4;
