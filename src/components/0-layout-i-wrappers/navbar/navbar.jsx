@@ -78,7 +78,10 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+        <Link
+          // href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec"
+          href="https://infiniticentrumzdrowia.gymmanager.io/"
+        >
           <a
             className={
               styles["navbar-gorny__caly-container__btn-zapisz--tekst"]
