@@ -128,12 +128,12 @@ const CarouselPoziomy = () => {
           ]
         }
       >
-        WYBIERZ <strong>PIĘTRO </strong> I <strong>MIEJSCE</strong> NA MAPIE,
+        WYBIERZ <strong>PIETRO </strong> I <strong>MIEJSCE</strong> NA MAPIE,
         <br />
         ŻEBY ZOBACZYĆ WYŻEJ JEGO ZDJĘCIA
         {/* I OPIS */}
       </h4>
-
+      <div>test</div>
       <button
         className={`${
           styles[
