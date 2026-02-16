@@ -133,7 +133,6 @@ const CarouselPoziomy = () => {
         ŻEBY ZOBACZYĆ WYŻEJ JEGO ZDJĘCIA
         {/* I OPIS */}
       </h4>
-      <div>test</div>
       <button
         className={`${
           styles[
