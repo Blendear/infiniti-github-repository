@@ -301,13 +301,27 @@ const StronaGlowna = () => {
     >
       <section css={heroCss.wrapper}>
         <div css={heroCss.backgroundImage}>
-          <Image
+          {/* <Image
             src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/z-zewnatrz-klub/2026-klub.png"
             alt="Widok klubu INFINITI z zewnątrz"
             layout="fill"
             objectFit="cover"
             priority
-            quality={100}
+            // quality={100}
+          /> */}
+          <img
+            src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/z-zewnatrz-klub/2026-klub.png"
+            alt="Widok klubu INFINITI z zewnątrz"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            css={css({
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            })}
           />
         </div>
 
