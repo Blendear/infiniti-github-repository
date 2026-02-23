@@ -23,7 +23,7 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
         <div style={{ color: "transparent" }}>{`X`}</div>
       </TytulZTlemKolorowym>
       <section style={{ display: "grid" }}>
-        <TytulBezTla htmlElementType="h2">MIĘŚNIE ĆWICZONE</TytulBezTla>
+        <TytulBezTla htmlElementType="h2">Mięśnie ćwiczone</TytulBezTla>
         <ul
           className={
             styles["modal-cwiczenia-wybranego__miesnie-cwiczone__lista-miesni"]
@@ -44,7 +44,7 @@ const SzczegolyCwiczenia = ({ cwiczenie, setNazwaModalu }) => {
       </section>
 
       <section>
-        <TytulBezTla htmlElementType="h2">{`LOKALIZACJA MASZYNY NR ${cwiczenie["idMaszynyUzywanej"]}`}</TytulBezTla>
+        <TytulBezTla htmlElementType="h2">{`Lokalizacja maszyny nr ${cwiczenie["idMaszynyUzywanej"]}`}</TytulBezTla>
 
         {cwiczenie["idMaszynAlternatywnych"] && (
           <div

@@ -11,7 +11,7 @@ const WyborMetodySzukaniaMaszyny = ({ activeButton, setActiveButton }) => {
     <section className={styles["wybor-metody__container"]}>
       {/* //       _._. AA */}
       <TytulBezTla htmlElementType="h1">
-        JAK CHCESZ ZNALEŹĆ ĆWICZENIA?
+        Jak chcesz znaleźć ćwiczenia?
       </TytulBezTla>
       <div className={styles["wybor-metody__buttony"]}>
         <ButtonWyboruMetody

@@ -22,7 +22,7 @@ import Link from "next/link";
 import Image from "next/image";
 const FitnessCennik = () => {
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
 
   const dispatch = useAppDispatch();
@@ -31,7 +31,7 @@ const FitnessCennik = () => {
     dispatch(
       menuINavbarSliceActions.ustawWidocznoscMenu({
         toggleWidocznoscMenu: false,
-      })
+      }),
     );
   };
   useEffect(() => {
@@ -67,13 +67,14 @@ const FitnessCennik = () => {
           ]
         }
       >
-        <Link
-          // target="_blank"
-          download
+        <a
+          target="_blank"
+          rel="noreferrer"
           href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet"
+          download
         >
-          <a target="_blank">KUP KARNET</a>
-        </Link>
+          KUP KARNET
+        </a>
       </button>
       <article
         className={styles["layout__fitness-cennik__cala-strona__cennik"]}

@@ -30,7 +30,8 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
     <TytulZTlemKolorowym>
       <Link href="/strona-glowna-infiniti">
         <a css={witaczCss.buttonBack}>
-          <RiLogoutBoxLine />
+          {" "}
+          <RiLogoutBoxLine />{" "}
         </a>
       </Link>
       {/* Wylogowywanie modalem jest wykomentowane, dopóki wstrzymane jest logowanie Auth0 */}
@@ -46,11 +47,13 @@ const WitaczImiennyZLinkami = ({ user, isUstawieniaDostepne }) => {
       )} */}
 
       <span className={styles["child__css-class-name"]}>
-        {(user
-          ? "Witaj w Infiniti App !"
-          : // `Hej ${user.name.split(" ")[0].substr(0, 12)}`
-            "Witaj w Infiniti App!"
-        ).toUpperCase()}
+        {
+          user
+            ? "Witaj w INFINITI App !"
+            : // `Hej ${user.name.split(" ")[0].substr(0, 12)}`
+              "Witaj w INFINITI App!"
+          // .toUpperCase()
+        }
         {/* hook1 - utnij dlugosc imienia usera, jesli przkeroczy liczbe, ktory mi psuje css. mp. 10 */}
       </span>
 

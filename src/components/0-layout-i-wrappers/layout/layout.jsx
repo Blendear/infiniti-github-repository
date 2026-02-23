@@ -1,6 +1,7 @@
 import Navbar from "../navbar/navbar";
 import Footer from "../../0-layout-i-wrappers/footer/footer";
 import { useRouter } from "next/router";
+import NavbarNew from "../navbar/navbar-2026";
 
 export default function Layout({ children }) {
   const router = useRouter();
@@ -8,7 +9,8 @@ export default function Layout({ children }) {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarNew />
 
       <main>{children}</main>
       {showFooter && <Footer />}

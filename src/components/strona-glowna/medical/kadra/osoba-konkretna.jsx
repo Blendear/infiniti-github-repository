@@ -33,7 +33,7 @@ const OsobaKonkretna = (props) => {
             <a>
               <FaFacebookF size="2rem" color="#22c1c3" />
             </a>
-          </Link>
+          </Link>,
         );
         break;
       case "instagram":
@@ -45,12 +45,13 @@ const OsobaKonkretna = (props) => {
             <a>
               <BsInstagram size="2rem" color="#22c1c3" />
             </a>
-          </Link>
+          </Link>,
         );
         break;
       case "email":
         // console.log("email-ccc", props.daneOOsobie.socialMediaLinks.email),
-        socialeTejOsoby.push(
+        socialeTejOsoby
+          .push
           // <Link
           //   href={``}
           //   key={socialKonkretny}
@@ -61,10 +62,15 @@ const OsobaKonkretna = (props) => {
           //   </a>
           // </Link>
 
-          <TfiEmail size="2rem" color="#22c1c3" />
-        );
+          // <TfiEmail size="2rem" color="#22c1c3" />,
+          ();
         socialeTejOsoby.push(
-          <address>{props.daneOOsobie.socialMediaLinks.email}</address>
+          <Link
+            style={{ all: "text" }}
+            href={`mailto:${props.daneOOsobie.socialMediaLinks.email}`}
+          >
+            <a>{props.daneOOsobie.socialMediaLinks.email}</a>
+          </Link>,
         );
         break;
       default:

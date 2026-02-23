@@ -78,7 +78,7 @@ const stronaGlownaCss = {
     css([
       gradientCrossbrowser(
         firstColor,
-        `222deg, ${firstColor} 0%, ${secondColor} 100%`
+        `222deg, ${firstColor} 0%, ${secondColor} 100%`,
       ),
       {
         gridRow: "r-2 / r-3",
@@ -110,7 +110,7 @@ const stronaGlownaCss = {
         "&:hover": {
           ...gradientCrossbrowser(
             secondColor,
-            `222deg, ${secondColor} 0%, ${firstColor} 100%`
+            `222deg, ${secondColor} 0%, ${firstColor} 100%`,
           ),
           transition: "all 0.5s ease-out",
         },
@@ -159,6 +159,109 @@ const stronaGlownaCss = {
   }),
 };
 
+const heroCss = {
+  wrapper: css({
+    position: "relative",
+    width: "100vw",
+    height: "100vh",
+    overflow: "hidden",
+    gridRow: "r-4 / r-5",
+    gridColumn: "c-1 / c-12",
+  }),
+
+  backgroundImage: css({
+    position: "absolute",
+    inset: 0,
+    zIndex: 0,
+  }),
+
+  overlay: css({
+    position: "absolute",
+    inset: 0,
+    zIndex: 1,
+  }),
+
+  content: css({
+    position: "relative",
+    zIndex: 2,
+    height: "100%",
+    display: "grid",
+    gridTemplateRows: "1fr auto auto 1fr",
+    justifyItems: "center",
+    textAlign: "center",
+    color: "white",
+  }),
+
+  titleContainer: css({
+    gridRow: 2,
+    width: "clamp(150px, 40vw, 600px)",
+    position: "relative",
+    aspectRatio: "2.5314254484/1",
+
+    "@media (max-width: 600px)": {
+      width: "70vw",
+      filter: "drop-shadow(0 0 0.3rem rgb(0,0,0,0.5))",
+    },
+  }),
+
+  buttonsContainer: css({
+    gridRow: 3,
+    display: "grid",
+    gridAutoFlow: "column",
+    columnGap: "5rem",
+    marginTop: "8rem",
+
+    "@media (max-width: 600px)": {
+      display: "unset",
+
+      "& > a:first-of-type": {
+        marginBottom: "2rem",
+      },
+    },
+  }),
+
+  buttonSpecial: (variant) => {
+    const firstColor = "#3C9FDB";
+    const secondColor = "#ffffffff";
+
+    const isA = variant === "A";
+
+    return css([
+      {
+        userSelect: "none",
+        gridRow: "r-2 / r-3",
+        width: "clamp(200px, 20vw, 15rem)",
+        maxWidth: "18rem",
+        aspectRatio: "5/1.8",
+        display: "grid",
+        justifyItems: "center",
+        alignItems: "center",
+        border: `2px solid ${firstColor}`,
+        borderRadius: "50px",
+        backgroundColor: isA ? secondColor : firstColor,
+        color: isA ? firstColor : secondColor,
+        fontSize: "clamp(1.75rem, 3.5vw, 2.1rem)",
+        transition: "all 0.3s ease",
+        cursor: "pointer",
+        textDecoration: "none",
+
+        "@media (max-width: 600px)": {
+          // width: "max-content",
+          // maxWidth: "none",
+          // aspectRatio: "initial",
+          // padding: "1.5rem 0",
+          fontSize: "clamp(1.7rem, 3.5vw, 2.1rem)",
+        },
+
+        "&:hover": {
+          backgroundColor: isA ? firstColor : secondColor,
+          color: isA ? secondColor : firstColor,
+        },
+      },
+    ]);
+  },
+};
+
 const StronaGlowna = () => {
   // const [showMenuModal, setShowMenuModal] = useState(false);
 
@@ -168,10 +271,10 @@ const StronaGlowna = () => {
 
   //
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
   const reduxStatePoziomIMiejsceAktualne = useAppSelector(
-    (state) => state.wybranyPoziomIMiejsceReducer
+    (state) => state.wybranyPoziomIMiejsceReducer,
   );
   // let slowoWyswietlane = reduxStatePoziomIMiejsceAktualne.miejsce;
   // console.log(slowoWyswietlane);
@@ -181,7 +284,7 @@ const StronaGlowna = () => {
     dispatch(
       menuINavbarSliceActions.ustawWidocznoscMenu({
         toggleWidocznoscMenu: false,
-      })
+      }),
     );
   };
   useEffect(() => {
@@ -196,81 +299,47 @@ const StronaGlowna = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
-      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
-      <div
-        className={
-          styles["layout__strona-glowna__cala-strona__tlo-nad-co-ty-znajdziesz"]
-        }
-      ></div>
-      <div
-        className={
-          styles["layout__strona-glowna__cala-strona__tlo-nad-gallery"]
-        }
-      ></div>
-
-      {/* <Link href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet">
-        <a
-          className={
-            styles["layout__strona-glowna__cala-strona__kup-karnet-button"]
-          }
-          target="_blank"
-        >
+      <section css={heroCss.wrapper}>
+        <div css={heroCss.backgroundImage}>
           <Image
-            src={`/images/.dedykowane-do-strony-konkretnej/e-trener/btn-wywolywacz/kup-karnet.png`}
-            alt={`Biały napis "KUP KARNET" na niebiesko-fioletowym tle`}
+            src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/z-zewnatrz-klub/2026-klub.png"
+            alt="Widok klubu INFINITI z zewnątrz"
             layout="fill"
             objectFit="cover"
             priority
-            loading="eager"
-            quality={100}
           />
-        </a>
-      </Link> */}
+        </div>
 
-      <Link href="/infiniti-app?method=qr">
-        <a
-          css={[
-            stronaGlownaCss.buttonSpecial(colorPurple, colorBlue),
-            {
-              gridColumn: "4",
-              "@media (orientation: landscape)": {
-                gridColumn: "5",
-              },
-            },
-          ]}
-        >
-          {/* <span css={stronaGlownaCss.newLabel}>NOWOŚĆ</span> */}
-          <p>INFINITI APP</p>
-        </a>
-      </Link>
-      <Link href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet">
-        <a
-          css={[
-            stronaGlownaCss.buttonSpecial(colorBlue, colorPurple),
-            {
-              gridColumn: "8",
-              "@media (orientation: landscape)": {
-                gridColumn: "7",
-              },
-            },
-          ]}
-        >
-          <p>KUP KARNET</p>
-        </a>
-      </Link>
+        <div css={heroCss.overlay} />
 
-      <TytulINFINITI />
-      <div className={styles["layout__strona-glowna__cala-strona__fota-klubu"]}>
-        <Image
-          src={`/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/z-zewnatrz-klub/caly-klub.png`}
-          alt={`Widok klubu INFINITI - z zewnątrz, od strony ulicy, w słoneczny dzień. Przed klubem widać drzewa i zaparkowane pod nimi samochody.`}
-          layout="fill"
-          objectFit="cover"
-          priority
-          loading="eager"
-        />
-      </div>
+        <div css={heroCss.content}>
+          <div css={heroCss.titleContainer}>
+            <Image
+              src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/z-zewnatrz-klub/2026-title.png"
+              alt="INFINITI Centrum Zdrowia"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+
+          <div css={heroCss.buttonsContainer}>
+            <a
+              css={heroCss.buttonSpecial("B")}
+              href="https://infiniti-kk-cms.efitness.com.pl/kup-karnet"
+            >
+              <p>Kup karnet</p>
+            </a>
+
+            <Link href="/infiniti-app?method=qr">
+              <a css={heroCss.buttonSpecial("A")}>
+                <p>INFINITI App</p>
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <ul
         className={
           styles["layout__strona-glowna__cala-strona__lista-co-tu-znajdziesz"]
@@ -283,8 +352,13 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <SVGCoTuZnajdziesz1 />
+          <Link href="/cennik/fizjoterapia">
+            <a>
+              <SVGCoTuZnajdziesz1 />
+            </a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -292,9 +366,11 @@ const StronaGlowna = () => {
             ]
           }
         >
-          FIZJOTERAPIA
-          <br /> & NATUROTERAPIA
+          <Link href="/cennik/fizjoterapia">
+            <a>Fizjoterapia</a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -302,8 +378,19 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <SVGCoTuZnajdziesz2 />
+          <Link href="/cennik/fitness">
+            <a>
+              <Image
+                src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/squash-tra.png"
+                alt="Squash"
+                layout="responsive"
+                width={100}
+                height={100}
+              />
+            </a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -311,8 +398,11 @@ const StronaGlowna = () => {
             ]
           }
         >
-          SQUASH
+          <Link href="/cennik/fitness">
+            <a>Squash</a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -320,7 +410,17 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <SVGCoTuZnajdziesz3 />
+          <Link href="/cennik/masaze">
+            <a>
+              <Image
+                src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/masaze-tra.png"
+                alt="Masaże"
+                layout="responsive"
+                width={100}
+                height={100}
+              />
+            </a>
+          </Link>
         </li>
 
         <li
@@ -330,8 +430,11 @@ const StronaGlowna = () => {
             ]
           }
         >
-          YOGA
+          <Link href="/cennik/masaze">
+            <a>Masaże</a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -339,8 +442,19 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <SVGCoTuZnajdziesz4 />
+          <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+            <a>
+              <Image
+                src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/sztuki-walki-tra.png"
+                alt="Sztuki walki"
+                layout="responsive"
+                width={100}
+                height={100}
+              />
+            </a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -348,8 +462,11 @@ const StronaGlowna = () => {
             ]
           }
         >
-          SZTUKI WALKI
+          <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+            <a>Sztuki walki</a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -357,8 +474,19 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <SVGCoTuZnajdziesz5 />
+          <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+            <a>
+              <Image
+                src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/z-grupowe-tra.png"
+                alt="Zajęcia grupowe"
+                layout="responsive"
+                width={100}
+                height={100}
+              />
+            </a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -366,10 +494,11 @@ const StronaGlowna = () => {
             ]
           }
         >
-          ZAJĘCIA GRUPOWE
-          <br />
-          DLA KAŻDEGO
+          <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+            <a>Zajęcia grupowe</a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -377,8 +506,19 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <SVGCoTuZnajdziesz6 />
+          <Link href="/cennik/fitness">
+            <a>
+              <Image
+                src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/silownia-tra.png"
+                alt="Siłownia"
+                layout="responsive"
+                width={100}
+                height={100}
+              />
+            </a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -386,8 +526,11 @@ const StronaGlowna = () => {
             ]
           }
         >
-          SIŁOWNIA <br />& FITNESS
+          <Link href="/cennik/fitness">
+            <a>Siłownia</a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -395,8 +538,19 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <SVGCoTuZnajdziesz7 />
+          <Link href="/cennik/fitness">
+            <a>
+              <Image
+                src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/sauna-tra.png"
+                alt="Sauna i solarium"
+                layout="responsive"
+                width={100}
+                height={100}
+              />
+            </a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -404,8 +558,11 @@ const StronaGlowna = () => {
             ]
           }
         >
-          SAUNA <br />& WELLNESS
+          <Link href="/cennik/fitness">
+            <a>Sauna i solarium</a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -413,8 +570,19 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <SVGCoTuZnajdziesz8 />
+          <Link href="/cennik/ortopedia">
+            <a>
+              <Image
+                src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/ortopedzi-tra.png"
+                alt="Ortopedia"
+                layout="responsive"
+                width={100}
+                height={100}
+              />
+            </a>
+          </Link>
         </li>
+
         <li
           className={
             styles[
@@ -422,10 +590,13 @@ const StronaGlowna = () => {
             ]
           }
         >
-          DOŚWIADCZENI <br />
-          DIETETYCY
+          <Link href="/cennik/ortopedia">
+            <a>Ortopedia</a>
+          </Link>
         </li>
       </ul>
+
+      <CarouselPoziomy />
 
       <section
         className={
@@ -439,25 +610,10 @@ const StronaGlowna = () => {
             ]
           }
         >
-          ZOBACZ CO TUTAJ NA CIEBIE CZEKA!
+          Zobacz co tutaj na Ciebie czeka!
         </h2>
         <CarouselFotyINFINITI />
-        {/* <div
-          className={`${styles["layout__strona-glowna__cala-strona__carousel-gallery--pozycja-carousel"]} ${styles["carousel-foty-infiniti"]} ${styles["layout__strona-glowna__cala-strona__carousel-gallery--loader"]}`}
-        >
-          <CircleLoader
-            color="#09adca"
-            loading={loading}
-            cssOverride={{
-              display: "block",
-              margin: "0 auto",
-              borderColor: "red",
-            }}
-            size={"20vw"}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
-        </div> */}
+
         <button
           className={
             styles[
@@ -465,7 +621,6 @@ const StronaGlowna = () => {
             ]
           }
         >
-          {/* ... */}
           <h3
             className={
               styles[
@@ -483,25 +638,16 @@ const StronaGlowna = () => {
               .find(
                 (miejsce) =>
                   miejsce.nazwaMiejsca ===
-                  reduxStatePoziomIMiejsceAktualne.miejsce
+                  reduxStatePoziomIMiejsceAktualne.miejsce,
               )
               .wyswietlanaNazwa.toUpperCase()}
           </h3>
-          <div
-            className={
-              styles[
-                "layout__strona-glowna__cala-strona__carousel-gallery--nazwa-miejsca--svg-nazwy"
-              ]
-            }
-          >
-            <SVGNazwy />
-          </div>
         </button>
       </section>
-      <CarouselPoziomy />
+
       <GodzinyOtwarciaKS />
       <Partnerzy />
-      <CallButton />
+      {/* <CallButton /> */}
       <ModalPotwierdzajacyAkceptacjeCookies />
     </div>
   );

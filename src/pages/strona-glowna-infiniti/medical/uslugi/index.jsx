@@ -40,7 +40,7 @@ const kolorSVG = "#7A1276";
 
 const MedicalUslugi = () => {
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
 
   const dispatch = useAppDispatch();
@@ -49,7 +49,7 @@ const MedicalUslugi = () => {
     dispatch(
       menuINavbarSliceActions.ustawWidocznoscMenu({
         toggleWidocznoscMenu: false,
-      })
+      }),
     );
   };
   useEffect(() => {
@@ -64,7 +64,7 @@ const MedicalUslugi = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      {/* <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
       <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
@@ -77,7 +77,7 @@ const MedicalUslugi = () => {
         className={
           styles["layout__medical-kadra__cala-strona__tlo-calej-strony"]
         }
-      ></div>
+      ></div> */}
 
       <h2
         className={
@@ -86,16 +86,13 @@ const MedicalUslugi = () => {
           ]
         }
       >
-        WYBIERZ <strong>ZABIEG</strong> & <strong>SZCZEGÓŁY</strong>, KTÓRE CIĘ
-        INTERESUJĄ
+        Wybierz zabieg i szczegóły, które Cię interesują
       </h2>
       <ul
         className={
           styles["layout__medical-uslugi__cala-strona__lista-zabiegow"]
         }
       >
-        {/* //hook1 - daloby sie to zrobisz szycbiej, robic plik z danymi i mapujac renderujaco, prawda? \/*/}
-        {/* NIE BYLOBY JEBANIA SIE z dopasowywaniem tytulow etc. mhmmm */}
         <ZabiegKonkretny
           e={
             <ul>
@@ -182,73 +179,87 @@ const MedicalUslugi = () => {
               <li>bliskość miąższu płucnego w obszarze stosowania</li>
             </ul>
           }
-          tytulZAbiegu="FALA UDERZENIOWA"
+          tytulZAbiegu="Fala uderzeniowa"
           svgComponent={<SVGFalaUderzeniowa mojKolor={kolorSVG} />} //ccc
-          isNowoscIMaFoty={true}
+          isNowoscIMaFoty={false}
           fotaTyczySieTegoSzczegolu="efekty zdrowotne"
           isNowoscIMaZnaczek={true}
         />
-        {/* <ZabiegKonkretny
+        <ZabiegKonkretny
           e={
             <ul>
-              <li>wzmocnienie naturalnej odporności</li>
-              <li>dotlenienie i poprawienia ogólnego zdrowia organizmu</li>
-              <li>poprawienie jakości snu</li>
-              <li>przywrócenie witalności i zregenerowanie organizmu</li>
-              <li>opóźnienie procesu starzenia</li>
-              <li>poprawienie kondycji i wydolności organizmu</li>
+              <li>działanie przeciwbólowe</li>
+              <li>redukcja problemów z poruszaniem kończynami</li>
+              <li>zmniejszenie uczucia nadmiernego ciężaru kończyn,</li>
+              <li>redukcja obrzęków</li>
             </ul>
           }
           d={
             <ul>
-              <li>chęci spowolnienia efektów starzenia organizmu</li>
-              <li>osłabionej odporności</li>
+              <strong>
+                Obrzęków limfatycznych, powstających np. w stanach:
+              </strong>
+              <li>pourazowych</li>
               <li>
-                potrzeby poprawy jakości życia w chorobach przewlekłych,
-                opóźnianie procesów starzenia
+                w cukrzycy, gdy następuje zaburzenie transportu płynów w
+                organizmie
               </li>
               <li>
-                chęci wzmocnienia naturalnej odporności, wydolności i ogólnego
-                zdrowia organizmu
+                w stanach pozapalnych wyzwolonych różnymi przyczynami: ukąszenia
+                owadów, owrzodzeniach, drobnych urazach
               </li>
-              <li>chorób sercowo-naczyniowych</li>
-              <li>chorób mózgowo-naczyniowych</li>
-              <li>nowotworów</li>
-              <li>chorób metabolizmu</li>
-              <li>chorób i zaburzeń układu oddechowego</li>
+              <li>w nowotworach</li>
+              <li>
+                poza rakiem węzłów chłonnych guzy mogą wyzwalać niedrożność
+                naczyń limfatycznych
+              </li>
+              <li>
+                w powikłaniach pourazowych nawet po wielu latach od choroby
+              </li>
+              <li>
+                np. po skomplikowanym złamaniu nogi obrzęki mogą się ujawniać do
+                końca życia po przeciążeniu nogi
+              </li>
+              <li>pasożytniczych</li>
+              <li>w chorobach tkanki łącznej, m.in. zwyrodnieniowych</li>
+              <li>
+                w przewlekłej niewydolności krążenia, a także innych chorobach,
+                jak m.in.: zespole Turnera, Proteusza, czy chorobie Milroya
+              </li>
             </ul>
           }
           j={
             <ul>
               <li>
-                wodór podaje się do organizmu poprzez przewód nosowy. Inhalacja
-                wodoru jest najskuteczniejszym sposobem na wprowadzenie wodoru
-                do organizmu
+                podczas zabiegu pacjent może odczuwać ucisk o określonej sile
               </li>
-              <li>wodór podaje się do organizmu poprzez przewód nosowy</li>
-
+              <li>średni czas trwania zabiegu wynosi ok. 30-60 min.</li>
               <li>
-                wdychanie wodoru osiąga maksymalny poziom w osoczu w około 30
-                minut
-              </li>
-              <li>
-                wodór utrzymuje się w organizmie do 30 godzin po inhalacji.
+                {
+                  "dokładnie rzecz biorąc - Drenaż limfatyczny jest formą masażu manualnego lub mechanicznego, który ma na celu odprowadzenie zbierającej się w organizmie limfy i krwi oraz usprawnienie ich przepływu. Metodę tę stosuje się najczęściej w stanach pourazowych, a poddawane są jej ręce oraz nogi. Drenaż przynosi spuchniętym kończynom ulgę i przyśpiesza gojenie się uszkodzonych tkanek (poprzez przyśpieszenie transportu limfocytów)."
+                }
               </li>
             </ul>
           }
           p={
             <ul>
-              <li>brak. Nie posiada skutków ubocznych</li>
+              <li>nowotwory</li>
+              <li>nadciśnienie tętnicze</li>
+              <li>zakrzepowe zapalenie żył</li>
+              <li>stany zapalne stawów</li>
+              <li>twierdzone krwiaki w kończynach</li>
+              <li>niewydolność nerek lub serca</li>
+              <li>miażdżycę</li>
+              <li>{"zmiany naczyń krwionośnych (żylaki)"}</li>
+              <li>stany zapalne naczyń limfatycznych</li>
+              <li>choroby skóry</li>
             </ul>
           }
-          tytulZAbiegu="INHALACJA AKT. WODORU"
-          svgComponent={<SVGWodor mojKolor={kolorSVG} />}
-          isNowoscIMaFoty={true}
-          fotaTyczySieTegoSzczegolu="efekty zdrowotne"
-          isNowoscIMaZnaczek={true}
-        /> */}
-        {/* //herehere14.02.2023 -  dokoncz */}
-        <ZabiegKonkretny
+          tytulZAbiegu="Drenaż limfatyczny"
+          svgComponent={<SVGDrenaz mojKolor={kolorSVG} />}
+        />
+
+        {/* <ZabiegKonkretny
           e={
             <ul>
               <li>obniżenie napięcia mięśniowego</li>
@@ -361,145 +372,13 @@ const MedicalUslugi = () => {
           }
           tytulZAbiegu="LASEROTERAPIA"
           svgComponent={<SVGLaser mojKolor={kolorSVG} />}
-        />
-        <ZabiegKonkretny
-          e={
-            <ul>
-              <li>działanie przeciwbólowe</li>
-              <li>redukcja problemów z poruszaniem kończynami</li>
-              <li>zmniejszenie uczucia nadmiernego ciężaru kończyn,</li>
-              <li>redukcja obrzęków</li>
-            </ul>
-          }
-          d={
-            <ul>
-              Obrzęków limfatycznych, powstających np. w stanach:
-              <li>pourazowych</li>
-              <li>
-                w cukrzycy, gdy następuje zaburzenie transportu płynów w
-                organizmie
-              </li>
-              <li>
-                w stanach pozapalnych wyzwolonych różnymi przyczynami: ukąszenia
-                owadów, owrzodzeniach, drobnych urazach
-              </li>
-              <li>w nowotworach</li>
-              <li>
-                poza rakiem węzłów chłonnych guzy mogą wyzwalać niedrożność
-                naczyń limfatycznych
-              </li>
-              <li>
-                w powikłaniach pourazowych nawet po wielu latach od choroby
-              </li>
-              <li>
-                np. po skomplikowanym złamaniu nogi obrzęki mogą się ujawniać do
-                końca życia po przeciążeniu nogi
-              </li>
-              <li>pasożytniczych</li>
-              <li>w chorobach tkanki łącznej, m.in. zwyrodnieniowych</li>
-              <li>
-                w przewlekłej niewydolności krążenia, a także innych chorobach,
-                jak m.in.: zespole Turnera, Proteusza, czy chorobie Milroya
-              </li>
-            </ul>
-          }
-          j={
-            <ul>
-              <li>
-                podczas zabiegu pacjent może odczuwać ucisk o określonej sile
-              </li>
-              <li>średni czas trwania zabiegu wynosi ok. 30-60 min.</li>
-              <li>
-                {
-                  "dokładnie rzecz biorąc - Drenaż limfatyczny jest formą masażu manualnego lub mechanicznego, który ma na celu odprowadzenie zbierającej się w organizmie limfy i krwi oraz usprawnienie ich przepływu. Metodę tę stosuje się najczęściej w stanach pourazowych, a poddawane są jej ręce oraz nogi. Drenaż przynosi spuchniętym kończynom ulgę i przyśpiesza gojenie się uszkodzonych tkanek (poprzez przyśpieszenie transportu limfocytów)."
-                }
-              </li>
-            </ul>
-          }
-          p={
-            <ul>
-              <li>nowotwory</li>
-              <li>nadciśnienie tętnicze</li>
-              <li>zakrzepowe zapalenie żył</li>
-              <li>stany zapalne stawów</li>
-              <li>twierdzone krwiaki w kończynach</li>
-              <li>niewydolność nerek lub serca</li>
-              <li>miażdżycę</li>
-              <li>{"zmiany naczyń krwionośnych (żylaki)"}</li>
-              <li>stany zapalne naczyń limfatycznych</li>
-              <li>choroby skóry</li>
-            </ul>
-          }
-          tytulZAbiegu="DRENAŻ LIMFATYCZNY"
-          svgComponent={<SVGDrenaz mojKolor={kolorSVG} />}
-        />
-        <ZabiegKonkretny
-          e={
-            <ul>
-              <li>zmniejszenie bólu, np. kręgosłupa</li>
-              <li>zwiększanie sprawności mięśniu</li>
-              <li>podniesienie ogólnej odporności</li>
-              <li>
-                rehabilitacyjne korzyści, w szczególności wspierające
-                fizykoterapię, np. aby zregenerować uszkodzony nerw obwodowy
-              </li>
-              <li>
-                modelowanie sylwetki, poprzez zmniejszenie obwodu tkanki
-                tłuszczowej, przyspieszenie produkcji kolagenu i elastyny
-              </li>
-            </ul>
-          }
-          d={
-            <ul>
-              <li>
-                uszkodzonego mięśnia, wymagającego rehabilitacji i/lub
-                fizykoterapii
-              </li>
-              <li>porażenia</li>
-              <li>niedowładu typu wiodkiego</li>
-              <li>
-                potrzeby niedopuszczenia do degeneracji odnerwionego mięśnia
-              </li>
-              <li>bólu kręgosłupa</li>
-              <li>zmniejszonej odporności ogólnej</li>
-              <li>celulitu</li>
-              <li>nadmiernej, niechcianej tkanki tłuszczowej</li>
-            </ul>
-          }
-          j={
-            <ul>
-              <li>
-                pacjent w trakcie zabiegu może odczuwać ból. Inne odczucia
-                towarzyszące to ukłucia i mrowienie, charakterystyczne dla
-                zabiegów z zakresu elektroterapii
-              </li>
-              <li>
-                podczas zabiegu powinno dojść do widocznego skurczu
-                stymulowanych mięśni, może to powodować także ruch kończyn
-              </li>
-              <li>średni czas zabiegu wynosi ok. 20-30 minut</li>
-              <li>
-                {
-                  "dokładnie rzecz biorąc - Elektrostymulacja jest zabiegiem wykorzystującym prąd impulsowy w celu pobudzenia i wzmocnienia nerwów lub uszkodzonych mięśni. Do przeprowadzenia zabiegu wykorzystuje się prąd niskiej i średniej częstotliwości, który przyczynia się do zmniejszania bólu, redukcji obrzęków, rozluźnienia mięśni oraz poprawy przewodnictwa chemiczno-nerwowego. Zadaniem zabiegu jest utrzymanie zdolności odnerwionego mięśnia do skurczu, zapobieganie zanikom mięśniowym a także przywracanie siły i rozbudowa masy mięśnia."
-                }
-              </li>
-              {/* //herehere14.02.2023 - dopisz /\ */}
-            </ul>
-          }
-          p={
-            <ul>
-              <li>choroby serca</li>
-              <li>epilepsja</li>
-              <li>stany zpalane skóry</li>
-              <li>spastyczne porażenia mięśni</li>
-              <li>żyki</li>
-              <li>guzki i nowotwory o niewiadomym pochodzeniu</li>
-            </ul>
-          }
-          tytulZAbiegu="ELEKTROSTYMULACJA"
-          svgComponent={<SVGElektro1 mojKolor={kolorSVG} />}
-        />
-        <ZabiegKonkretny
+        /> */}
+
+        {/* 
+        
+        */}
+
+        {/* <ZabiegKonkretny
           e={
             <ul>
               <li>
@@ -627,8 +506,8 @@ const MedicalUslugi = () => {
           }
           tytulZAbiegu="ELEKTROTERAPIA"
           svgComponent={<SVGElektro2 mojKolor={kolorSVG} />}
-        />
-        <ZabiegKonkretny
+        /> */}
+        {/* <ZabiegKonkretny
           e={
             <ul>
               <li>działanie przeciwbólowe</li>
@@ -652,7 +531,8 @@ const MedicalUslugi = () => {
                 nietrzymanie moczu)
               </li>
               <li>
-                ból pleców, krzyża, kręgosłupa lub zespoły bólowe narządu ruchu{" "}
+                ból pleców, krzyża, kręgosłupa lub zespoły bólowe narządu
+                ruchu{" "}
               </li>
               <li>obrzęki</li>
               <li>zaparć</li>
@@ -701,8 +581,8 @@ const MedicalUslugi = () => {
           }
           tytulZAbiegu="INTERFERENCJA"
           svgComponent={<SVGElektro3 mojKolor={kolorSVG} />}
-        />
-        <ZabiegKonkretny
+        /> */}
+        {/* <ZabiegKonkretny
           e={
             <ul>
               <li>działanie przeciwbólowe</li>
@@ -781,8 +661,8 @@ const MedicalUslugi = () => {
           }
           tytulZAbiegu="DIADYNAMIKA"
           svgComponent={<SVGElektro4 mojKolor={kolorSVG} />}
-        />
-        <ZabiegKonkretny
+        /> */}
+        {/* <ZabiegKonkretny
           e={
             <ul>
               <li>działanie przeciwbólowe</li>
@@ -844,8 +724,8 @@ const MedicalUslugi = () => {
           }
           tytulZAbiegu="ULTRADŹWIĘKI"
           svgComponent={<SVGUltradzwiek mojKolor={kolorSVG} />}
-        />
-        <ZabiegKonkretny
+        /> */}
+        {/* <ZabiegKonkretny
           e={
             <ul>
               <li>złagodzenie obrzęków</li>
@@ -916,9 +796,76 @@ const MedicalUslugi = () => {
           }
           tytulZAbiegu="POLE MAGNETYCZNE"
           svgComponent={<SVGMagnet mojKolor={kolorSVG} />}
-        />
+        /> */}
       </ul>
     </div>
   );
 };
 export default MedicalUslugi;
+
+//  <ZabiegKonkretny
+//           e={
+//             <ul>
+//               <li>zmniejszenie bólu, np. kręgosłupa</li>
+//               <li>zwiększanie sprawności mięśniu</li>
+//               <li>podniesienie ogólnej odporności</li>
+//               <li>
+//                 rehabilitacyjne korzyści, w szczególności wspierające
+//                 fizykoterapię, np. aby zregenerować uszkodzony nerw obwodowy
+//               </li>
+//               <li>
+//                 modelowanie sylwetki, poprzez zmniejszenie obwodu tkanki
+//                 tłuszczowej, przyspieszenie produkcji kolagenu i elastyny
+//               </li>
+//             </ul>
+//           }
+//           d={
+//             <ul>
+//               <li>
+//                 uszkodzonego mięśnia, wymagającego rehabilitacji i/lub
+//                 fizykoterapii
+//               </li>
+//               <li>porażenia</li>
+//               <li>niedowładu typu wiodkiego</li>
+//               <li>
+//                 potrzeby niedopuszczenia do degeneracji odnerwionego mięśnia
+//               </li>
+//               <li>bólu kręgosłupa</li>
+//               <li>zmniejszonej odporności ogólnej</li>
+//               <li>celulitu</li>
+//               <li>nadmiernej, niechcianej tkanki tłuszczowej</li>
+//             </ul>
+//           }
+//           j={
+//             <ul>
+//               <li>
+//                 pacjent w trakcie zabiegu może odczuwać ból. Inne odczucia
+//                 towarzyszące to ukłucia i mrowienie, charakterystyczne dla
+//                 zabiegów z zakresu elektroterapii
+//               </li>
+//               <li>
+//                 podczas zabiegu powinno dojść do widocznego skurczu
+//                 stymulowanych mięśni, może to powodować także ruch kończyn
+//               </li>
+//               <li>średni czas zabiegu wynosi ok. 20-30 minut</li>
+//               <li>
+//                 {
+//                   "dokładnie rzecz biorąc - Elektrostymulacja jest zabiegiem wykorzystującym prąd impulsowy w celu pobudzenia i wzmocnienia nerwów lub uszkodzonych mięśni. Do przeprowadzenia zabiegu wykorzystuje się prąd niskiej i średniej częstotliwości, który przyczynia się do zmniejszania bólu, redukcji obrzęków, rozluźnienia mięśni oraz poprawy przewodnictwa chemiczno-nerwowego. Zadaniem zabiegu jest utrzymanie zdolności odnerwionego mięśnia do skurczu, zapobieganie zanikom mięśniowym a także przywracanie siły i rozbudowa masy mięśnia."
+//                 }
+//               </li>
+//               {/* //herehere14.02.2023 - dopisz /\ */}
+//             </ul>
+//           }
+//           p={
+//             <ul>
+//               <li>choroby serca</li>
+//               <li>epilepsja</li>
+//               <li>stany zpalane skóry</li>
+//               <li>spastyczne porażenia mięśni</li>
+//               <li>żyki</li>
+//               <li>guzki i nowotwory o niewiadomym pochodzeniu</li>
+//             </ul>
+//           }
+//           tytulZAbiegu="ELEKTROSTYMULACJA"
+//           svgComponent={<SVGElektro1 mojKolor={kolorSVG} />}
+//         />

@@ -78,7 +78,7 @@ const CarouselPoziomy = () => {
 
   // \/ zaciangiete dla sprawdzajacych coinsole logow głównie
   const reduxStatePoziomIMiejsceAktualne = useAppSelector(
-    (state) => state.wybranyPoziomIMiejsceReducer
+    (state) => state.wybranyPoziomIMiejsceReducer,
   );
 
   const dispatch = useAppDispatch();
@@ -89,7 +89,7 @@ const CarouselPoziomy = () => {
     dispatch(
       wybranyPoziomIMiejsceActions.ustawPoziom({
         nowyPoziom: poziomNumber,
-      })
+      }),
       // console.log(reduxStatePoziomIMiejsceAktualne)
     );
   };
@@ -100,7 +100,7 @@ const CarouselPoziomy = () => {
     dispatch(
       wybranyPoziomIMiejsceActions.ustawMiejsce({
         noweMiejsce: miejsceString,
-      })
+      }),
       // console.log(reduxStatePoziomIMiejsceAktualne)
     );
     //trap1 - redux dispatch - SETOWANIE WYAMGA PODANIA OF AN OBJECT WITH PROPERTY/IES NAME/S, N IE "0", TYLKO {PROPERTYNAME : 0}
@@ -128,10 +128,9 @@ const CarouselPoziomy = () => {
           ]
         }
       >
-        WYBIERZ <strong>PIETRO </strong> I <strong>MIEJSCE</strong> NA MAPIE,
+        Wybierz <strong>piętro </strong> i <strong>miejsce</strong> na mapie,
         <br />
-        ŻEBY ZOBACZYĆ WYŻEJ JEGO ZDJĘCIA
-        {/* I OPIS */}
+        żeby zobaczyć poniżej jego zdjęcia
       </h4>
       <button
         className={`${
@@ -145,7 +144,7 @@ const CarouselPoziomy = () => {
           ]
         }`}
         onClick={() => {
-          handlerSetPoziomAktywny(2), handlerSetPoziomFotoNumber(2);
+          (handlerSetPoziomAktywny(2), handlerSetPoziomFotoNumber(2));
         }}
       >
         2
@@ -162,7 +161,7 @@ const CarouselPoziomy = () => {
           ]
         }`}
         onClick={() => {
-          handlerSetPoziomAktywny(1), handlerSetPoziomFotoNumber(1);
+          (handlerSetPoziomAktywny(1), handlerSetPoziomFotoNumber(1));
         }}
       >
         1
@@ -180,14 +179,14 @@ const CarouselPoziomy = () => {
         }`}
         // onMouseEnter={() => setBgColour("#c83f49")}
         onClick={() => {
-          handlerSetPoziomAktywny(0), handlerSetPoziomFotoNumber(0);
+          (handlerSetPoziomAktywny(0), handlerSetPoziomFotoNumber(0));
         }}
       >
         0
       </button>
       <button
         onClick={() => {
-          handlerSetPoziomAktywny(-1), handlerSetPoziomFotoNumber(-1);
+          (handlerSetPoziomAktywny(-1), handlerSetPoziomFotoNumber(-1));
         }}
         className={`${
           styles[
@@ -433,6 +432,26 @@ const CarouselPoziomy = () => {
             className={
               styles[
                 "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--solarium"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("serenity");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--serenity"
+              ]
+            }
+          ></button>
+          <button
+            onClick={() => {
+              handlerSetMiejsceAktywne("rejestracja-medical");
+            }}
+            className={
+              styles[
+                "layout__strona-glowna__cala-strona__carousel-poziomy--mapa--container--siatka-buttonow-container--0--rejestracja-medical"
               ]
             }
           ></button>

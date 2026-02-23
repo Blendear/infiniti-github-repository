@@ -25,7 +25,7 @@ const WybieraczMiesni = () => {
   return (
     <>
       <TytulBezTla htmlElementType="label">
-        KLIKNIJ W MIĘSIEŃ I ZATWIERDŹ
+        Kliknij w mięsień i zatwierdź
       </TytulBezTla>
       {/* {console.log("grupyMiesniowe: ", grupyMiesniowe)} */}
 
@@ -95,7 +95,7 @@ const WybieraczMiesni = () => {
                 styles[
                   `strona-glowna__wybieracz-miesni__siatka-do-przyciskow--${miesien.fota.slice(
                     0,
-                    -4
+                    -4,
                   )}`
                 ]
               }
@@ -112,7 +112,7 @@ const WybieraczMiesni = () => {
                 styles[
                   `strona-glowna__wybieracz-miesni__siatka-do-przyciskow--${miesien.fota.slice(
                     0,
-                    -4
+                    -4,
                   )}`
                 ]
               }

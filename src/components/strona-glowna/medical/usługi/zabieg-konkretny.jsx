@@ -21,9 +21,9 @@ import { RiZoomInLine } from "react-icons/ri";
 import { TiFlag } from "react-icons/ti";
 import Image from "next/image";
 const ZabiegKonkretny = (props) => {
-  const [isAktywnyBoolean, setIsAktywnyBoolean] = useState(false);
+  const [isAktywnyBoolean, setIsAktywnyBoolean] = useState(true);
   const handlerToggleIsAktywny = () => {
-    setIsAktywnyBoolean(!isAktywnyBoolean);
+    // setIsAktywnyBoolean(!isAktywnyBoolean);
   };
 
   return (
@@ -102,7 +102,7 @@ const ZabiegKonkretny = (props) => {
 
         <SzczegolKonkretny
           tresc={props.e}
-          tytul="EFEKTY ZDROWOTNE"
+          tytul="Działanie zabiegu"
           svgIcon={<AiFillHeart />}
           // isNowoscIMaFoty={props.isNowoscIMaFoty ? props.isNowoscIMaFoty : null}
           fotaTyczySieTegoSzczegolu={
@@ -113,17 +113,17 @@ const ZabiegKonkretny = (props) => {
         />
         <SzczegolKonkretny
           tresc={props.d}
-          tytul="ZALECANE W PRZYPADKU"
+          tytul="Zalecane w przypadku"
           svgIcon={<IoMdPerson />}
         />
         <SzczegolKonkretny
           tresc={props.j}
-          tytul="JAK WYGLĄDA"
+          tytul="Jak wygląda"
           svgIcon={<RiZoomInLine />}
         />
         <SzczegolKonkretny
           tresc={props.p}
-          tytul="PRZECIWSKAZANIA"
+          tytul="Przeciwskazania"
           svgIcon={<TiFlag />}
         />
       </ul>

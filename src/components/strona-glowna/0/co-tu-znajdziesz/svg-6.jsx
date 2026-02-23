@@ -15,7 +15,7 @@ const SVGCoTuZnajdziesz6 = () => {
       shape-rendering="geometricPrecision"
       text-rendering="geometricPrecision"
     >
-      <defs>
+      {/* <defs>
         <linearGradient
           id="edRSUejvaTp2-fill"
           x1="0.499989"
@@ -29,7 +29,7 @@ const SVGCoTuZnajdziesz6 = () => {
           <stop id="edRSUejvaTp2-fill-0" offset="0%" stop-color="#3bb4ff" />
           <stop id="edRSUejvaTp2-fill-1" offset="100%" stop-color="#9f30ff" />
         </linearGradient>
-      </defs>
+      </defs> */}
       <ellipse
         rx="105"
         ry="105"

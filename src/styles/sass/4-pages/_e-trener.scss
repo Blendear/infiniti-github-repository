@@ -9,6 +9,8 @@ $max-content: max-content;
   @media (orientation: landscape) {
     display: grid;
   }
+  // background-color: #f5f5f7;
+  // height: 100vh;
 
   button {
     cursor: pointer !important;
@@ -59,7 +61,7 @@ $max-content: max-content;
       [c-1] 1fr
       [c-2];
     justify-items: center;
-    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.4));
 
     @mixin rozmiar-wybieracza-miesni {
       position: absolute;
@@ -272,15 +274,16 @@ $max-content: max-content;
       @include mixins.gradient-cross-browser(
         "border",
         variables.$gradient-direction-secondary,
-        colors.$gradient-third-A,
-        colors.$gradient-third-B
+        #6e3e93,
+        #6e3e93
       );
+
       border-radius: variables.$border-radius-sm;
       border-width: variables.$border-width-sm;
       font-size: typography.$font-size-xl;
       color: rgb(0, 0, 0, 0.8);
       text-align: center;
-      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
+      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.4));
 
       &::placeholder {
         text-align: center;

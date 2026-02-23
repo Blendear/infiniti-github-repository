@@ -24,7 +24,7 @@ import RolaRozdzial from "../../../../components/strona-glowna/fitness/kadra/rol
 
 const FitnessKadra = () => {
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
 
   const dispatch = useAppDispatch();
@@ -33,7 +33,7 @@ const FitnessKadra = () => {
     dispatch(
       menuINavbarSliceActions.ustawWidocznoscMenu({
         toggleWidocznoscMenu: false,
-      })
+      }),
     );
   };
   useEffect(() => {
@@ -47,32 +47,32 @@ const FitnessKadra = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
-      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
-      <div
+      {/* <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" /> */}
+      {/* <div
         className={
           styles["layout__fitness-kadra__cala-strona__0-nazwa-podstrony"]
         }
       >
         <TytulPodstronyFitness nazwaPodstrony="KADRA" />
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className={
           styles["layout__fitness-kadra__cala-strona__tlo-calej-strony"]
         }
-      ></div>
+      ></div> */}
       <ul className={styles["layout__fitness-kadra__cala-strona__lista-rol"]}>
         <RolaRozdzial
           rola={kadraFitnessDataArray.manager}
-          nazwaRoli="MANAGER"
+          nazwaRoli="Manager"
         />
         <RolaRozdzial
           rola={kadraFitnessDataArray.recepcja}
-          nazwaRoli="RECEPCJA"
+          nazwaRoli="Recepcja"
         />
         <RolaRozdzial
           rola={kadraFitnessDataArray.trenerzy}
-          nazwaRoli="TRENERZY"
+          nazwaRoli="Trenerzy"
         />
       </ul>
     </div>

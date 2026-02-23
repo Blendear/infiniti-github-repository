@@ -35,7 +35,7 @@ import { SlSocialFacebook, SlSocialYoutube } from "react-icons/sl";
 
 const Footer = () => {
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
 
   return (
@@ -48,41 +48,42 @@ const Footer = () => {
     >
       <ul className={styles["footer__honorowane-karty"]}>
         <li className={styles["footer__honorowane-karty--tytul"]}>
-          <BsCardChecklist color="white" />
-          <div>HONOROWANE KARTY</div>
+          <div>Honorowane karty</div>
+          {/* <BsCardChecklist /> */}
         </li>
         <li className={styles["footer__honorowane-karty--karta"]}>
-          <BsCircle color="white" />
-          <div>LUX MED</div>
-        </li>
-        <li className={styles["footer__honorowane-karty--karta"]}>
-          <BsCircle color="white" />
           <div>Multisport</div>
         </li>
         <li className={styles["footer__honorowane-karty--karta"]}>
-          <BsCircle color="white" />
           <div>FitProfit</div>
         </li>
         <li className={styles["footer__honorowane-karty--karta"]}>
-          <BsCircle color="white" />
           <div>Medicover Sport</div>
         </li>
         <li className={styles["footer__honorowane-karty--karta"]}>
-          <BsCircle color="white" />
           <div>PZU Sport</div>
         </li>
         <li className={styles["footer__honorowane-karty--karta"]}>
-          <BsCircle color="white" />
-          <div>Gymsteer</div>
+          <div>LUX MED</div>
+        </li>
+        <li className={styles["footer__honorowane-karty--karta"]}>
+          <div>Medicover Zdrowie</div>
         </li>
       </ul>
       <ul className={styles["footer__dokumenty"]}>
         <li className={styles["footer__dokumenty--tytul"]}>
-          <CgFileDocument />
-          <div>DOKUMENTY</div>
+          <div>Dokumenty</div>
+          {/* <CgFileDocument /> */}
         </li>
         <li className={styles["footer__dokumenty--karta"]}>
-          <AiOutlineBorder color="white" />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/grafik-fitness/grafik-fitness.png"
+          >
+            <a target="_blank">Grafik fitness</a>
+          </Link>
+        </li>
+        <li className={styles["footer__dokumenty--karta"]}>
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Regulamin_Infiniti_Centrum Zdrowia 2024.pdf"
@@ -91,7 +92,6 @@ const Footer = () => {
           </Link>
         </li>
         <li className={styles["footer__dokumenty--karta"]}>
-          <AiOutlineBorder color="white" />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Polityka_Prywatności_Fit-Food-Group_01.2023.pdf"
@@ -100,7 +100,6 @@ const Footer = () => {
           </Link>
         </li>
         <li className={styles["footer__dokumenty--karta"]}>
-          <AiOutlineBorder color="white" />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/OSWIADCZENIE_RODZICA_OPIEKUNA.pdf"
@@ -109,7 +108,6 @@ const Footer = () => {
           </Link>
         </li>
         <li className={styles["footer__dokumenty--karta"]}>
-          <AiOutlineBorder color="white" />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Wzor-oswiadczenia-o-odstapieniu-od-umowy-zawartej-na-odleglosc.pdf"
@@ -120,8 +118,8 @@ const Footer = () => {
       </ul>
       <ul className={styles["footer__kontakt"]}>
         <li className={styles["footer__kontakt--tytul"]}>
-          <VscCommentDiscussion color="white" />
-          <div>WIĘCEJ O NAS</div>
+          <div>Kontakt</div>
+          {/* <VscCommentDiscussion /> */}
         </li>
         <a href="tel:+48884848808" className={styles["footer__kontakt--karta"]}>
           <div>{"(+48) 88 48 48 808"}</div>
@@ -133,6 +131,7 @@ const Footer = () => {
         >
           info@infiniti-fit.pl{" "}
         </a>
+        <div></div>
         <ul className={styles["footer__kontakt--sociale"]}>
           <Link href="https://www.facebook.com/fitness.club.INFINITI">
             <a>
@@ -151,11 +150,7 @@ const Footer = () => {
           </Link>
         </ul>
       </ul>
-      <div className={styles["footer__copyright"]}>© 2023 - INFINITI</div>
-      <div className={styles["footer__link-do-tworcow"]}>
-        Images and icons by Tobias Cibis & vextok, macrovectora and
-        imaginationlol on Freepik
-      </div>
+      <div className={styles["footer__copyright"]}>© 2026 - INFINITI</div>
     </div>
   );
 };

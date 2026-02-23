@@ -16,16 +16,9 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        GODZINY OTWARCIA
+        Godziny otwarcia
       </h5>
 
-      <span
-        className={
-          styles[
-            "layout__strona-glowna__cala-strona__godziny-otwarcia--podkreslnik"
-          ]
-        }
-      ></span>
       <div
         className={
           styles[
@@ -67,7 +60,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>PON. - PT.</strong> <br /> 06:30 - 22:00
+        <strong>Pon. - Pt.</strong> <br /> 06:30 - 22:00
       </div>
       <div
         className={
@@ -83,7 +76,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>SOBOTA</strong> <br /> 08:00 - 20:00
+        <strong>Sobota</strong> <br /> 08:00 - 20:00
       </div>
       <div
         className={
@@ -99,7 +92,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>NIEDZIELA</strong> <br /> 08:00 - 18:00
+        <strong>Niedziela</strong> <br /> 08:00 - 18:00
       </div>
       {/* 
       
@@ -169,7 +162,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>PON. & ŚR.</strong> <br /> 09:00 - 12:00
+        <strong>Pon. i Śr.</strong> <br /> 09:00 - 12:00
       </div>
       <div
         className={
@@ -178,7 +171,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>WT. & CZW.</strong> <br /> 17:00 - 21:00
+        <strong>Wt. i Czw.</strong> <br /> 17:00 - 21:00
       </div>
       <div
         className={
@@ -210,7 +203,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>PN. & ŚR.</strong> <br /> 17:00 - 21:00
+        <strong>Pon. i Śr.</strong> <br /> 17:00 - 21:00
       </div>
       <div
         className={
@@ -219,7 +212,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>WT. & CZW.</strong> <br /> 09:00 - 12:00
+        <strong>Wt. i Czw.</strong> <br /> 09:00 - 12:00
       </div>
 
       <div
@@ -252,7 +245,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>SOBOTA</strong> <br /> 09:00 - 12:00 <br /> 16:00 - 19:00
+        <strong>Sobota</strong> <br /> 09:00 - 12:00 <br /> 16:00 - 19:00
       </div>
       <div
         className={
@@ -261,7 +254,7 @@ const GodzinyOtwarciaKS = () => {
           ]
         }
       >
-        <strong>NIEDZIELA</strong> <br /> 11:00 - 17:00
+        <strong>Niedziela</strong> <br /> 11:00 - 17:00
       </div>
       <p
         className={

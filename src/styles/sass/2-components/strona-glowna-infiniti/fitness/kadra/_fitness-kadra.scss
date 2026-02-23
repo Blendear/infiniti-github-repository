@@ -111,6 +111,8 @@ $rozmiar-rowa: minmax(0rem, max-content);
         );
       }
       &__lista-rol {
+        background-color: #f5f5f7;
+        padding-top: 10rem;
         grid-row: r-3/ r-4;
         grid-column: c-1 / c-12;
         display: grid;
@@ -161,23 +163,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
 
             width: max(20rem, 30vw);
 
-            background: infiniti-variables.$aktywny-fiolet;
-            background: -moz-linear-gradient(
-              90deg,
-              infiniti-variables.$kafelkowy-fiolet 0%,
-              infiniti-variables.$kafelkowy-niebieski 100%
-            );
-            background: -webkit-linear-gradient(
-              90deg,
-              infiniti-variables.$kafelkowy-fiolet 0%,
-              infiniti-variables.$kafelkowy-niebieski 100%
-            );
-            background: linear-gradient(
-              90deg,
-              infiniti-variables.$kafelkowy-fiolet 0%,
-              infiniti-variables.$kafelkowy-niebieski 100%
-            );
-            filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
+            background: infiniti-variables.$brand-violet;
           }
           &--tytul-nazwa {
             grid-row: r-1/ r-empty;
@@ -190,12 +176,12 @@ $rozmiar-rowa: minmax(0rem, max-content);
             margin: 0rem 0 0rem 3rem;
             align-self: center;
             font-size: 1.7rem;
-            letter-spacing: 0.15rem;
+            // letter-spacing: 0.15rem;
             // text-shadow: 0px 0px fitness-variables.$fitness--bordowy;
             // filter: drop-shadow(
             //   0 0 0.15rem fitness-variables.$fitness--tytul-roli-drop-shadow
             // );
-            font-weight: bold;
+            font-weight: normal;
             filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           }
           &--linia-boczna {
@@ -208,7 +194,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
             justify-self: center;
             align-self: center;
             // margin: 0 0 0 2rem;
-            background-color: infiniti-variables.$linia-boczna;
+            background-color: infiniti-variables.$brand-violet;
             // filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
           }
           &__lista-osob-o-tej-roli-container {
@@ -306,45 +292,32 @@ $rozmiar-rowa: minmax(0rem, max-content);
                   }
                 }
 
-                &:hover {
-                  transform: scale(1.2);
-                  transition: all 0.5s;
-                }
+                // &:hover {
+                //   transform: scale(1.2);
+                //   transition: all 0.5s;
+                // }
               }
               &--imie-i-nazwisko {
                 grid-row: r-1/ r-2;
                 grid-column: c-3/ c-5;
-                // height: 50%;
-                // padding: 1vw 0 1vw 0;
-                // margin: 2vw 0 2vw 0;
-                // white-space: nowrap;
-                // overflow: visible;
-                // height: 4vh;
-                // aspect-ratio: 10/1;
-                //hook1 - ZAWSZE rm lepszy? ob vw wyjebuje repsonsywnosc w kosmos gdy rozszerzasz
                 font-size: 2rem;
-                letter-spacing: 0.1rem;
-                filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
                 @media (orientation: landscape) {
                   font-size: min(2.5rem, 2vw);
                 }
-                color: white;
-                font-weight: bold;
+                color: infiniti-variables.$black;
+
+                font-weight: normal;
               }
               &--rola-dokladna {
                 grid-row: r-2/ r-3;
                 grid-column: c-3 / c-4;
+                opacity: 0.6;
 
                 font-size: 1.2rem;
                 font-weight: normal;
-                letter-spacing: 0.05rem;
-                filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.422));
-                // font-weight: 600;
                 @media (orientation: landscape) {
-                  font-size: min(2rem, 1.7vw);
+                  font-size: min(2rem, 1.5vw);
                 }
-
-                color: white;
               }
 
               &--tresc-tekst {
@@ -359,6 +332,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
                 margin: 0.5rem 0 0 0;
                 grid-row: r-4/ r-5;
                 grid-column: c-3 / c-3;
+                opacity: 0.6;
 
                 display: grid;
                 grid-template-rows:
@@ -379,22 +353,22 @@ $rozmiar-rowa: minmax(0rem, max-content);
                   grid-auto-flow: column;
 
                   gap: 0.5rem;
-                  filter: drop-shadow(0 0 0.15rem rgba(0, 0, 0, 0.422));
+                  // filter: drop-shadow(0 0 0.15rem rgba(0, 0, 0, 0.422));
 
-                  & address {
+                  & a {
                     align-self: center;
                     font-size: 1.2rem;
                     // font-weight: 600;
                     @media (orientation: landscape) {
                       font-size: min(1.7rem, 1.2vw);
                     }
-                    color: #ffffff;
+                    color: infiniti-variables.$black;
                   }
 
-                  & svg:hover {
-                    transform: scale(1.2);
-                    transition: all 0.5s;
-                  }
+                  // & svg:hover {
+                  //   transform: scale(1.2);
+                  //   transition: all 0.5s;
+                  // }
                 }
               }
             }

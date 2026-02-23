@@ -11,7 +11,7 @@ const Partnerzy = () => {
           styles["layout__strona-glowna__cala-strona__partnerzy--tytul-tekst"]
         }
       >
-        PARTNERZY
+        Partnerzy
       </h6>
       <span
         className={

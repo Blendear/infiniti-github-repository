@@ -21,7 +21,7 @@ const SVGOtoczkaGodzinOtwarciaGora = () => {
           rx="0"
           ry="0"
           transform="matrix(0-1.064516 1 0 160 40)"
-          fill="#482283"
+          fill="#3C9FDB"
           stroke-width="0"
         />
         <rect
@@ -30,7 +30,7 @@ const SVGOtoczkaGodzinOtwarciaGora = () => {
           rx="0"
           ry="0"
           transform="matrix(0-1.064516 1 0 0 40)"
-          fill="#482283"
+          fill="#3C9FDB"
           stroke-width="0"
         />
         <rect
@@ -38,7 +38,7 @@ const SVGOtoczkaGodzinOtwarciaGora = () => {
           height="2"
           rx="0"
           ry="0"
-          fill="#482283"
+          fill="#3C9FDB"
           stroke-width="0"
         />
       </g>

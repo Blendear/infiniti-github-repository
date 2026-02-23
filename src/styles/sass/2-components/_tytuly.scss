@@ -7,7 +7,7 @@
   &__container {
     width: min(40rem, 80vw);
     margin: 0 auto;
-    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
+    // filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
 
     @media (orientation: landscape) {
       grid-column: 1 / -1;
@@ -23,12 +23,12 @@
     justify-items: center;
     text-align: center;
     gap: variables.$content-content-gap;
-    font-weight: bold;
+    font-weight: normal;
   }
   &--bez-tla {
     @include tytul;
     font-size: typography.$font-size-between-sm-and-md;
-    color: colors.$primary;
+    // color: colors.$primary;
   }
   &--z-tlem-kolorowym {
     margin: 7rem 0 0 0;
@@ -39,8 +39,8 @@
     @include mixins.gradient-cross-browser(
       "bg",
       variables.$gradient-direction-secondary,
-      colors.$gradient-third-A,
-      colors.$gradient-third-B
+      #6e3e93,
+      #6e3e93
     );
     display: grid;
     align-items: center;

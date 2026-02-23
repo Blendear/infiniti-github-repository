@@ -19,7 +19,7 @@
       @include mixins.grid-with-padding-and-justify-align-items;
       grid-template-columns: 5fr 1.25fr;
       font-size: 1.1rem;
-      font-weight: bold;
+      // font-weight: bold;
       color: white;
       //   filter: drop-shadow(colors.$shadow-universal);
 
@@ -48,9 +48,11 @@
       @include mixins.gradient-cross-browser(
         "bg",
         variables.$gradient-direction-secondary,
-        colors.$gradient-third-A,
-        colors.$gradient-third-B
+        #6e3e92,
+        #6e3e92
       );
+
+      // filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 1));
 
       & svg {
         color: colors.$primary;
@@ -60,8 +62,8 @@
       @include mixins.gradient-cross-browser(
         "bg",
         variables.$gradient-direction-secondary,
-        colors.$gradient-third-A,
-        colors.$gradient-third-B
+        #6e3e92,
+        #6e3e92
       );
       transform: translateY(0%);
     }

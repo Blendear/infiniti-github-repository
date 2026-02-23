@@ -19,7 +19,7 @@
     display: grid;
     grid-auto-flow: column;
     column-gap: variables.$content-content-gap;
-    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.4));
 
     &__btn {
       padding: variables.$content-content-gap 0.5rem;
@@ -29,13 +29,13 @@
       @include mixins.gradient-cross-browser(
         "border",
         variables.$gradient-direction-secondary,
-        colors.$gradient-third-A,
-        colors.$gradient-third-B
+        #6e3e93,
+        #6e3e93
       );
       background-color: colors.$primary;
       border-radius: variables.$border-radius-sm;
       border-width: variables.$border-width-sm;
-      font-weight: bold;
+      font-weight: normal;
       display: grid;
       overflow: hidden;
 
@@ -47,9 +47,10 @@
         @include mixins.gradient-cross-browser(
           "text",
           variables.$gradient-direction-secondary,
-          colors.$gradient-third-A,
-          colors.$gradient-third-B
+          #6e3e93,
+          #6e3e93
         );
+        font-weight: normal;
         @media (orientation: landscape) {
           font-size: typography.$font-size-micro;
         }
@@ -69,7 +70,7 @@
       }
 
       & svg {
-        color: colors.$gradient-third-A;
+        color: #6e3e93;
       }
 
       &--active {
@@ -78,15 +79,15 @@
         @include mixins.gradient-cross-browser(
           "bg",
           variables.$gradient-direction-secondary,
-          colors.$gradient-third-A,
-          colors.$gradient-third-B
+          #6e3e93,
+          #6e3e93
         );
 
         & h3,
         svg {
           color: colors.$primary;
           -webkit-text-fill-color: colors.$primary;
-          filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.8));
+          filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.4));
         }
       }
       &__icon {

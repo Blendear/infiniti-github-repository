@@ -29,9 +29,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
         [c-9] 1fr
         [c-10] 1fr
         [c-11] 1fr
-        [c-12]
-        //
-;
+        [c-12]; //
       // grid-auto-flow: rows;
       // Trap1 - COMPONENTY ( np. "fota w tle" || "tytuł podstrony") MAJĄ SWOJ SCSS W SWOIM DEDYKOWANUM PLIKU. bez sensu powielac kod np.
       // dla foty w tle, ktora jest na kazdej stronie
@@ -213,6 +211,7 @@ $rozmiar-rowa: minmax(0rem, max-content);
       }
       &__mapa-dojazdu {
         &--tytul-nad-nia {
+          padding-top: 5rem;
           grid-row: r-4 / r-5;
           grid-column: c-1 / c-12;
           color: white;

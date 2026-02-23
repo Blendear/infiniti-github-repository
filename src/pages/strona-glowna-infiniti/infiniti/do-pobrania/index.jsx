@@ -12,6 +12,7 @@
 // 1.A. Importujesz componenty       -    Z którego zbudujesz kod tej stornki. NIE piszesz tu całego oryginalnego kodu
 // 2. Containeruję                   -    Tworzę 1 <div> główny i 1 dla każdego fragmentu danej strony
 // 3. Style'uję containery           -    Po kolei copy pastujac classy z bliźniaczo nazwanego pliku CSS'owskiego
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
@@ -28,7 +29,7 @@ import { GrDocumentText } from "react-icons/gr";
 import { CgFileDocument } from "react-icons/cg";
 const DoPobrania = () => {
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
 
   const dispatch = useAppDispatch();
@@ -37,7 +38,7 @@ const DoPobrania = () => {
     dispatch(
       menuINavbarSliceActions.ustawWidocznoscMenu({
         toggleWidocznoscMenu: false,
-      })
+      }),
     );
   };
   useEffect(() => {
@@ -52,7 +53,7 @@ const DoPobrania = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      {/* <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
       <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
@@ -65,7 +66,7 @@ const DoPobrania = () => {
         className={
           styles["layout__fitness-kadra__cala-strona__tlo-calej-strony"]
         }
-      ></div>
+      ></div> */}
       <div
         className={
           styles[
@@ -73,7 +74,7 @@ const DoPobrania = () => {
           ]
         }
       >
-        LOGO
+        Logo
         {/* <bComponent /> */}
       </div>
       <div
@@ -83,7 +84,7 @@ const DoPobrania = () => {
           ]
         }
       >
-        DOKUMENTY
+        Dokumenty
         {/* <bComponent /> */}
       </div>
       <div
@@ -109,7 +110,24 @@ const DoPobrania = () => {
             ]
           }
         >
-          <CgFileDocument />
+          <IoDocumentTextOutline />
+          <Link
+            download
+            href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/grafik-fitness/grafik-fitness.png"
+          >
+            <a target="_blank">
+              <p>Grafik fitness</p>
+            </a>
+          </Link>
+        </li>
+        <li
+          className={
+            styles[
+              "layout__infiniti-do-pobrania__cala-strona__tytuly-i-content-do-pobrania--dokumenty--content-umowy-i-regulaminy--item"
+            ]
+          }
+        >
+          <IoDocumentTextOutline />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Regulamin_Infiniti_Centrum Zdrowia 2024.pdf"
@@ -124,7 +142,7 @@ const DoPobrania = () => {
             ]
           }
         >
-          <CgFileDocument />
+          <IoDocumentTextOutline />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Polityka_Prywatności_Fit-Food-Group_01.2023.pdf"
@@ -139,7 +157,7 @@ const DoPobrania = () => {
             ]
           }
         >
-          <CgFileDocument />
+          <IoDocumentTextOutline />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/OSWIADCZENIE_RODZICA_OPIEKUNA.pdf"
@@ -154,7 +172,7 @@ const DoPobrania = () => {
             ]
           }
         >
-          <CgFileDocument />
+          <IoDocumentTextOutline />
           <Link
             download
             href="/images/.dedykowane-do-strony-konkretnej/infiniti/do-pobrania/dokumenty/Wzor-oswiadczenia-o-odstapieniu-od-umowy-zawartej-na-odleglosc.pdf"

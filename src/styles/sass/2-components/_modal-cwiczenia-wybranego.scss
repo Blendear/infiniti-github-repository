@@ -42,21 +42,22 @@
       all: unset;
       justify-self: end;
       margin: 9rem 0 0 0;
-      width: 3rem;
+      width: 5rem;
       aspect-ratio: 1/1;
       @include mixins.gradient-cross-browser(
         "bg",
         variables.$gradient-direction-secondary,
-        colors.$gradient-third-A,
-        colors.$gradient-third-B
+        #6e3e93,
+        #6e3e93
       );
       border-radius: variables.$border-radius-sm;
       border-width: variables.$border-width-micro;
       @include mixins.grid-with-justify-align-items;
-      font-size: typography.$font-size-md;
+      // font-size: typography.$font-size-sm;
 
-      @media (max-width: 380px) {
-        font-size: typography.$font-size-lg;
+      @media (max-width: 650px) {
+        // font-size: typography.$font-size-lg;
+        width: 3.5rem;
       }
 
       @media (orientation: landscape) {
@@ -90,7 +91,7 @@
       grid-template-columns: repeat(2, max-content);
       row-gap: variables.$content-content-gap-md;
       column-gap: variables.$content-content-gap-md * 1.25;
-      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.6));
+      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.4));
 
       @media (orientation: landscape) {
         padding: 2rem;
@@ -116,13 +117,13 @@
           @include mixins.gradient-cross-browser(
             "bg",
             variables.$gradient-direction-secondary,
-            colors.$gradient-third-A,
-            colors.$gradient-third-B
+            #6e3e93,
+            #6e3e93
           );
           border-radius: variables.$border-radius-sm;
           @include mixins.grid-with-justify-align-items;
           text-align: center;
-          font-weight: bold;
+          // font-weight: bold;
           color: colors.$primary;
           font-size: typography.$font-size-micro;
 
@@ -142,9 +143,15 @@
       & > div:first-of-type {
         width: 80vw;
         max-width: 50rem;
-        background-color: #222222;
+        background-color: #ffffff;
+        box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.6);
+
         border-radius: 1rem;
         margin-bottom: 2rem;
+
+        & svg {
+          color: #ffffff;
+        }
 
         @media (min-width: 410px) {
           & > * {
@@ -170,7 +177,7 @@
 
           & > div:nth-of-type(1) {
             padding: 0.75rem;
-            background-color: #8a27d8;
+            background-color: #6e3e92;
             border-radius: 1rem 0 0 1rem;
 
             & > p:nth-last-of-type(1) {

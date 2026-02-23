@@ -2,29 +2,15 @@
 
 .footer {
   &__caly-container {
+    position: relative;
+    z-index: 100;
+    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.15);
     display: grid;
     grid-template-rows: 1fr;
 
-    margin: 0 auto 0 auto;
-    padding: 3rem 0 0 0;
-    row-gap: 3rem;
-
-    background: infiniti-variables.$dark-violet;
-    background: -moz-linear-gradient(
-      0deg,
-      infiniti-variables.$dark-violet 0%,
-      infiniti-variables.$dark-blue 100%
-    );
-    background: -webkit-linear-gradient(
-      0deg,
-      infiniti-variables.$dark-violet 0%,
-      infiniti-variables.$dark-blue 100%
-    );
-    background: linear-gradient(
-      0deg,
-      infiniti-variables.$dark-violet 0%,
-      infiniti-variables.$dark-blue 100%
-    );
+    // margin: 2vw auto 0 auto;
+    padding: 5rem 0 0 0;
+    row-gap: 6rem;
 
     @media (orientation: landscape) {
       grid-auto-flow: column;
@@ -44,13 +30,14 @@
     }
   }
   @mixin tytul-kazdy {
-    background-color: grey;
     display: grid;
 
     grid-template-columns:
       [c-1] 1fr
-      [c-2] 5fr
+      [c-2] max-content
       [c-3];
+
+    // column-gap: 1rem;
 
     width: max(25vw, 25rem);
     aspect-ratio: 5/1;
@@ -58,70 +45,75 @@
     justify-self: center;
 
     align-items: center;
-    justify-items: start;
-    font-size: 1.6rem;
-    font-weight: bold;
-    letter-spacing: 0.07rem;
-    color: white;
-    background: infiniti-variables.$dark-violet;
-    background: -moz-linear-gradient(
-      0deg,
-      infiniti-variables.$dark-violet 0%,
-      infiniti-variables.$dark-blue 100%
-    );
-    background: -webkit-linear-gradient(
-      0deg,
-      infiniti-variables.$dark-violet 0%,
-      infiniti-variables.$dark-blue 100%
-    );
-    background: linear-gradient(
-      0deg,
-      infiniti-variables.$dark-violet 0%,
-      infiniti-variables.$dark-blue 100%
-    );
+    justify-items: center;
+    font-size: max(2rem, 5vw);
+    // font-weight: bold;
+    // letter-spacing: 0.03rem;
+    color: black;
+
     // box-shadow: 0px 0px 0.2rem 0.2rem #53249078;
     @media (orientation: landscape) {
+      justify-items: start;
       width: 80%;
       // aspect-ratio: 4/1;
       height: 85%;
       // aspect-ratio: none;
-      font-size: 1.1vw;
+      font-size: max(1.8rem, 2vw);
     }
     & svg {
       justify-self: center;
       font-size: 2rem;
       align-self: center;
     }
+
+    & div {
+      border-bottom: 3px solid infiniti-variables.$brand-blue-2; // 3px niebieska linia
+      padding-bottom: 0.3rem; // odstęp między tekstem a linią
+    }
   }
   @mixin lista-rzeczy-grid-container {
     display: grid;
-    grid-auto-rows: 5rem;
+    row-gap: 5vw;
+    // grid-auto-rows: 4vw;
     // width: 80%;
     // align-items: end;
+    @media (orientation: landscape) {
+      grid-auto-rows: 5.5vw;
+      row-gap: 0;
+    }
+    @media (min-width: 800px) {
+      grid-auto-rows: 4vw;
+    }
   }
   @mixin karta-kazda {
     display: grid;
     grid-template-columns:
       [c-1] 1fr
-      [c-2] 5fr
-      [c-3];
+      [c-2];
     // grid-auto-flow: column;
     // grid-auto-columns: minmax(1rem, 10rem);
     // column-gap: 1rem;
 
     align-self: end;
-    // justify-self: start;
-    font-size: 1.6rem;
+
+    font-size: max(1.6rem, 4vw);
+
     font-weight: normal;
     line-height: 2rem;
-    text-shadow: 0rem 0.2rem #5e286278;
-    color: white;
+
     width: 80%;
     justify-self: center;
+
+    justify-items: center;
+
+    transition: all 0.1s;
+
     @media (orientation: landscape) {
-      width: 60%;
-      font-size: 1.3vw;
+      // width: 71%;
+      font-size: max(1.3rem, 1.4vw);
+      justify-items: start;
     }
+
     & a {
       color: rgb(71, 71, 71);
     }
@@ -130,7 +122,6 @@
     :active,
     :hover {
       text-decoration: none;
-      color: rgb(255, 255, 255);
     }
     & svg {
       justify-self: center;
@@ -165,6 +156,10 @@
     }
     &--karta {
       @include karta-kazda();
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.1s;
+      }
     }
   }
   &__kontakt {
@@ -186,7 +181,13 @@
     }
     &--karta {
       @include karta-kazda();
-      justify-items: center;
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.1s;
+      }
+
+      color: infiniti-variables.$black;
+      text-decoration: none;
       // margin: auto;
       display: grid;
       grid-template-columns:
@@ -210,6 +211,10 @@
       // font-size: 4rem;
       & svg {
         font-size: 2.5rem;
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.1s;
+        }
       }
     }
   }

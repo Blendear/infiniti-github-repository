@@ -26,14 +26,7 @@ export const kadraFitnessDataArray = {
       fotoPathKoncowka: "bator-monika",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
-    {
-      nazwisko: "Czerska",
-      name: "Iza",
-      opis: "",
-      funkcja: "Opiekun Recepcji",
-      fotoPathKoncowka: "czerska-iza",
-      socialMediaLinks: { email: "info@infiniti-fit.pl" },
-    },
+
     // {
     //   nazwisko: " Ładak",
     //   name: "Emilia",
@@ -51,6 +44,14 @@ export const kadraFitnessDataArray = {
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
     {
+      nazwisko: "Czerska",
+      name: "Iza",
+      opis: "",
+      funkcja: "Opiekun Recepcji",
+      fotoPathKoncowka: "czerska-iza",
+      socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    },
+    {
       nazwisko: "Klama",
       name: "Anna",
       opis: "",
@@ -59,13 +60,30 @@ export const kadraFitnessDataArray = {
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
     {
-      nazwisko: "Kołtun",
-      name: "India",
+      nazwisko: "Bieńko",
+      name: "Julia",
       opis: "",
       funkcja: "Opiekun Recepcji",
       fotoPathKoncowka: "no-image",
       socialMediaLinks: { email: "info@infiniti-fit.pl" },
     },
+    {
+      nazwisko: "Szeląg",
+      name: "Oliwia",
+      opis: "",
+      funkcja: "Opiekun Recepcji",
+      fotoPathKoncowka: "no-image",
+      socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    },
+
+    // {
+    //   nazwisko: "Kołtun",
+    //   name: "India",
+    //   opis: "",
+    //   funkcja: "Opiekun Recepcji",
+    //   fotoPathKoncowka: "no-image",
+    //   socialMediaLinks: { email: "info@infiniti-fit.pl" },
+    // },
   ],
   trenerzy: [
     // {

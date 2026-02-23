@@ -43,7 +43,7 @@ const ListaCwiczen = () => {
     useState(true);
 
   const [filteredAndSortedExercises, setFilteredAndSortedExercises] = useState(
-    []
+    [],
   );
 
   const [hasExercisesBecauseOfAltMachine, setHasExercisesBecauseOfAltMachine] =
@@ -149,8 +149,8 @@ const ListaCwiczen = () => {
             <p style={{ padding: "1.5rem 2rem" }}>
               {`${
                 variant === "sub-muscle"
-                  ? "Ta ikona oznacza, że wybrany mięsień pracuje w ćwiczeniu jako dodatkowy (słabiej)"
-                  : "Ta ikona oznacza, że wybrana maszyna służy jako alternatywa dla tej z nagrania"
+                  ? "W filmie z tą ikoną - wybrany mięsień pracuje słabiej"
+                  : "W filmie z tą ikoną - wybrany mięsień pracuje słabiej"
               }`}
             </p>
           </TytulBezTla>
@@ -206,13 +206,13 @@ const ListaCwiczen = () => {
           <button onClick={handlebackButton}>
             <IoCaretBack />
           </button>
-          <span>WYBIERZ ĆWICZENIE</span>
+          <span>Zobacz film lub szczegóły {`(i)`}</span>
           <div style={{ color: "transparent" }}>{`X`}</div>
         </TytulZTlemKolorowym>
 
-        <TytulBezTla htmlElementType="h2">
-          LUB ZOBACZ GDZIE ĆWICZYĆ I JAKIE MIĘŚNIE BĘDĄ AKTYWNE
-        </TytulBezTla>
+        {/* <TytulBezTla htmlElementType="h2">
+          Lub zobacz gdzie ćwiczyć i jakie mięśnie będą aktywne
+        </TytulBezTla> */}
 
         {(
           <div

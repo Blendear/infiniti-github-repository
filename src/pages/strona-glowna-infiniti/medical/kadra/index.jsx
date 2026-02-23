@@ -24,7 +24,7 @@ import { kadraMedicalDataArray } from "../../../../components/strona-glowna/medi
 
 const MedicalKadra = () => {
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
 
   const dispatch = useAppDispatch();
@@ -33,7 +33,7 @@ const MedicalKadra = () => {
     dispatch(
       menuINavbarSliceActions.ustawWidocznoscMenu({
         toggleWidocznoscMenu: false,
-      })
+      }),
     );
   };
   useEffect(() => {
@@ -48,7 +48,7 @@ const MedicalKadra = () => {
           : styles["menu-modal__closed-variant"]
       }
     >
-      <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
+      {/* <ZmienneStartoweTlo tloPath="tlo-INFINITI.png" />
       <ZmienneStartoweLogo logoPath="logo-INFINITI.jpg" />
       <div
         className={
@@ -61,15 +61,15 @@ const MedicalKadra = () => {
         className={
           styles["layout__medical-kadra__cala-strona__tlo-calej-strony"]
         }
-      ></div>
+      ></div> */}
       <ul className={styles["layout__medical-kadra__cala-strona__lista-rol"]}>
         <RolaRozdzial
           rola={kadraMedicalDataArray.fizjoterapeuci}
-          nazwaRoli="FIZJOTERAPEUCI"
+          nazwaRoli="Fizjoterapeuci"
         />
         <RolaRozdzial
           rola={kadraMedicalDataArray.masazysci}
-          nazwaRoli="MASAŻYŚCI"
+          nazwaRoli="Masażyści"
         />
         {/* <RolaRozdzial
           rola={kadraMedicalDataArray.lekarze}

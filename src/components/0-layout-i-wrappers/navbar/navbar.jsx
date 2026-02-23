@@ -13,7 +13,7 @@ const Navbar = () => {
   const dispatch = useAppDispatch();
 
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
 
   const handleCloseDialogModal = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
     dispatch(
       menuINavbarSliceActions.ustawWidocznoscMenu({
         toggleWidocznoscMenu: !reduxStateIsMenuOpen,
-      })
+      }),
     );
   };
 

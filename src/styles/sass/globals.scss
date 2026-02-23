@@ -18,7 +18,8 @@
 }
 //hook2 - /\ - remake it into universal import from typography
 
-$font-primary: "gothic", verdana, helvetica, sans-serif;
+// $font-primary: "gothic", verdana, helvetica, sans-serif;
+$font-primary: "Montserrat", sans-serif;
 //
 //      1.3. Breakpointy - graniczne momenty pod zmianę rozmiarów, pod np. 4 wielkości ekranów
 //
@@ -47,32 +48,19 @@ body {
   font-family: $font-primary;
   // font-family: typography.$font-secondary;
   // color: $color-grey-dark-2;
-  color: white;
+  color: infiniti-variables.$black;
   font-weight: 400;
   line-height: 1.6;
-  letter-spacing: 0.06rem;
+  // letter-spacing: 0.06rem;
   margin: 0;
   padding: 0;
   background-color: infiniti-variables.$dark-violet;
-  background: -moz-linear-gradient(
-    90deg,
-    infiniti-variables.$dark-violet 0%,
-    infiniti-variables.$dark-blue 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    infiniti-variables.$dark-violet 0%,
-    infiniti-variables.$dark-blue 100%
-  );
-  background: linear-gradient(
-    90deg,
-    infiniti-variables.$dark-violet 0%,
-    infiniti-variables.$dark-blue 100%
-  );
+  background: infiniti-variables.$white;
 }
 
 a {
   text-decoration: none;
+  color: infiniti-variables.$black;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

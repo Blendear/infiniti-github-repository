@@ -12,18 +12,18 @@ const QRSzukacz = () => {
     if (data && data[0] && data[0].rawValue) {
       const qrCodeValue = data[0].rawValue;
       router.push(
-        `/infiniti-app/lista-cwiczen?filtr=qr&wartosc=${qrCodeValue}&nazwa-modalu=null&id-cwiczenia=null`
+        `/infiniti-app/lista-cwiczen?filtr=qr&wartosc=${qrCodeValue}&nazwa-modalu=null&id-cwiczenia=null`,
       );
     }
   };
 
   return (
     <section className={styles["strona-glowna__qr-szukacz__container"]}>
-      <TytulBezTla htmlElementType="label">ZESKANUJ KOD QR MASZYNY</TytulBezTla>
+      <TytulBezTla htmlElementType="label">Zeskanuj kod QR maszyny</TytulBezTla>
       {(
         <Scanner
           onScan={(result) => {
-            console.log(result), handleScan(result);
+            (console.log(result), handleScan(result));
           }}
           classNames={{
             container: styles["strona-glowna__qr-szukacz__kamera"],
