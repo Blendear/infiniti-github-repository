@@ -1,14 +1,5 @@
-//
-//
-//~~ A.  Historyjka - co rozwiązuję tutaj? - Word'owski rozdział name wklejony
-//
-//       A.1. parent rozdział nr 1
-//
-//           A.1.1. child rozdział nr 1
-//
-//~~ B.  Historyjka druga ...
-//
-
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import styles from "src/styles/sass/styles-all.module.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,6 +7,7 @@ import Link from "next/link";
 import { TfiEmail } from "react-icons/tfi";
 import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import CircleLoader from "react-spinners/CircleLoader";
 
 const OsobaKonkretna = (props) => {
   // console.log(props.daneOOsobie.fotoPathKoncowka);
@@ -104,6 +96,20 @@ const OsobaKonkretna = (props) => {
           ]
         }
       >
+        <div css={loader}>
+          <CircleLoader
+            color="#5c1593"
+            loading={true}
+            cssOverride={{
+              display: "block",
+              margin: "0 auto",
+              borderColor: "red",
+            }}
+            size={"6vw"}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
         <Image
           src={`/images/.dedykowane-do-strony-konkretnej/medical/kadra/${props.daneOOsobie.fotoPathKoncowka}.png`}
           alt={`Zdjęcie pracownika - ${props.daneOOsobie.name} ${props.daneOOsobie.nazwisko}`}
@@ -196,3 +202,20 @@ export default OsobaKonkretna;
 //   fotoPathKoncowka: "deierling-arek",
 //   socialMediaLinks: { instagram: "sdssd@gmail.com" },
 // },
+const loader = css({
+  zIndex: 0,
+  position: "absolute",
+  // top: "40%",
+  justifySelf: "center",
+
+  "@media (orientation: landscape)": {
+    padding: 0,
+    justifySelf: "center",
+    // top: "30%",
+    fontSize: "2rem",
+  },
+
+  "& span": {
+    justifySelf: "center",
+  },
+});

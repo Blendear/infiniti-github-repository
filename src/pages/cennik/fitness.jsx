@@ -2,6 +2,7 @@
 import { css } from "@emotion/react";
 import Image from "next/image";
 import Link from "next/link";
+import CircleLoader from "react-spinners/CircleLoader";
 
 const cennikImagePath =
   "/images/.dedykowane-do-strony-konkretnej/fitness/cennik/cennik-fitness.png";
@@ -12,6 +13,21 @@ export default function Cennik() {
       <Link href={cennikImagePath} passHref>
         <a target="_blank" css={imageLink}>
           <div css={imageBox}>
+            {" "}
+            <div css={loader}>
+              <CircleLoader
+                color="#5c1593"
+                loading={true}
+                cssOverride={{
+                  display: "block",
+                  margin: "0 auto",
+                  borderColor: "red",
+                }}
+                size={"10vw"}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            </div>
             <Image
               src={cennikImagePath}
               alt="Cennik Fitness"
@@ -27,6 +43,24 @@ export default function Cennik() {
 }
 
 /* ===== EMOTION ===== */
+
+const loader = css({
+  zIndex: 0,
+  position: "absolute",
+  top: "40%",
+  justifySelf: "center",
+
+  "@media (orientation: landscape)": {
+    padding: 0,
+    justifySelf: "center",
+    top: "30%",
+    fontSize: "2rem",
+  },
+
+  "& span": {
+    justifySelf: "center",
+  },
+});
 
 const wrapper = css({
   padding: "10rem 0",

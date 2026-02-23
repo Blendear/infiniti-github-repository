@@ -1,49 +1,5 @@
-//
-//~~ A.  Widok = 1 wybrana, aktualna fota
-//   Nieubity
-//
-//       A.1. Wyświetlamy tylko fotę, która ma index równy numerowi aktualnej foty (numer settowany strzałkami)
-//
-//
-//       A.2. Guard clause - if no data, nic nie wyświetlaj.
-//
-//
-//~~ B.  Strzałki = zmiana index wybranego
-//  Nieubity
-//
-//       B.1. Import ikonek
-//
-//
-//       B.2. Using buttonów i ich onClick'i
-//
-//
-//       B.3. Handler - OnClicki, treść
-//       Nieubity
-//
-//           B.3.0. Settujemy numer (w tablicy) aktualnej foty - na ten od konkretnego kliknietego poziomu
-//
-//
-//       B.4. Visual - ustawienie i wygląd
-//       Nieubity
-//
-//           B.4.1. Pozycjonuję
-//
-//
-//           B.4.2. Wygląd
-//
-//
-//~~ C.  Data = zaciągane z componentu w "dedykowane", podawane tutaj i używane dynamicznie tutaj
-//
-//       C.0. Import danych i next image
-//
-//       C.1. Map - Dla każdego object w liście/object'cie danych, return Image (next.jsowy)
-//
-//           C.1.1. jask dokladnie wie ktory image zmienia??? - hook2
-//           C.1.2. ???
-//           C.1.3. ???
-//~~ D.  Animacja = Snap scroll po strzałk'nięciu
-//
-
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import { useState } from "react";
 import styles from "src/styles/sass/styles-all.module.scss";
 //       C.0. Import danych i next image
@@ -132,6 +88,7 @@ const CarouselPoziomy = () => {
         <br />
         żeby zobaczyć poniżej jego zdjęcia
       </h4>
+
       <button
         className={`${
           styles[
@@ -214,6 +171,20 @@ const CarouselPoziomy = () => {
           ]
         }
       >
+        <div css={loader}>
+          <CircleLoader
+            color="#5c1593"
+            loading={true}
+            cssOverride={{
+              display: "block",
+              margin: "0 auto",
+              borderColor: "red",
+            }}
+            size={"6.5vw"}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
         <div
           className={
             aktywnyPoziom === -1
@@ -659,3 +630,21 @@ const CarouselPoziomy = () => {
   );
 };
 export default CarouselPoziomy;
+
+const loader = css({
+  zIndex: 0,
+  position: "absolute",
+  top: "40%",
+  justifySelf: "center",
+
+  "@media (orientation: landscape)": {
+    padding: 0,
+    justifySelf: "center",
+    top: "30%",
+    fontSize: "2rem",
+  },
+
+  "& span": {
+    justifySelf: "center",
+  },
+});
