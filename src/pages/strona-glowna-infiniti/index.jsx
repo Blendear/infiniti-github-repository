@@ -307,6 +307,7 @@ const StronaGlowna = () => {
             layout="fill"
             objectFit="cover"
             priority
+            quality={100}
           />
         </div>
 
