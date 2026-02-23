@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const MenuModal = (props) => {
   const reduxStateIsMenuOpen = useAppSelector(
-    (state) => state.menuINavbarReducer.menuIsOpen
+    (state) => state.menuINavbarReducer.menuIsOpen,
   );
 
   const disableBodyOverflow = () => {
@@ -110,14 +110,14 @@ const MenuModal = (props) => {
         onClick={handleCloseDialogModal}
       >
         {/* <KlocekMenu imagePathEnd="klocki/fitness-grafik.png" /> */}
-        <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-          <a>
-            <KlocekMenu
-              imagePathEnd="klocki/fitness-grafik.png"
-              typKlockaNormalCzyDlugi="normal"
-            />
-          </a>
-        </Link>
+        {/* <Link > */}
+        <a href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+          <KlocekMenu
+            imagePathEnd="klocki/fitness-grafik.png"
+            typKlockaNormalCzyDlugi="normal"
+          />
+        </a>
+        {/* </Link> */}
         <Link href="/strona-glowna-infiniti/fitness/cennik">
           <a>
             <KlocekMenu
