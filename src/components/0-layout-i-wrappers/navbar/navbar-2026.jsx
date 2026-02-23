@@ -12,6 +12,7 @@ const menuData = [
   {
     label: "Grafik / Zapisz się",
     href: "https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec",
+    external: true,
   },
   { label: "Usługi medyczne", href: "/strona-glowna-infiniti/medical/uslugi" },
   {
@@ -73,10 +74,8 @@ export default function Navbar() {
           {menuData.map((item, index) => (
             <li key={item.label} css={desktopItem}>
               {item.href &&
-                (item.href.startsWith("http") ? (
-                  <a href={item.href} target="_blank" rel="noopener noreferrer">
-                    {item.label}
-                  </a>
+                (item.external ? (
+                  <a href={item.href}>{item.label}</a>
                 ) : (
                   <Link href={item.href}>
                     <a>{item.label}</a>

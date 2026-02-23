@@ -457,17 +457,17 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-            <a>
-              <Image
-                src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/sztuki-walki-tra.png"
-                alt="Sztuki walki"
-                layout="responsive"
-                width={100}
-                height={100}
-              />
-            </a>
-          </Link>
+          {/* <Link > */}
+          <a href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+            <Image
+              src="/images/.dedykowane-do-strony-konkretnej/1-strona-glowna-infiniti/co-tu-znajdziesz/sztuki-walki-tra.png"
+              alt="Sztuki walki"
+              layout="responsive"
+              width={100}
+              height={100}
+            />
+          </a>
+          {/* </Link> */}
         </li>
 
         <li
@@ -477,9 +477,11 @@ const StronaGlowna = () => {
             ]
           }
         >
-          <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
-            <a>Sztuki walki</a>
-          </Link>
+          {/* <Link href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec"> */}
+          <a href="https://infiniti-kk-cms.efitness.com.pl/kalendarz-zajec">
+            Sztuki walki
+          </a>
+          {/* </Link> */}
         </li>
 
         <li
