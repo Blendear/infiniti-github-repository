@@ -126,6 +126,14 @@ export default function Navbar() {
                   >
                     {item.label}
                   </button>
+                ) : item.external ? (
+                  <a
+                    href={item.href}
+                    css={mobileTitle}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
                 ) : (
                   <Link href={item.href}>
                     <a css={mobileTitle} onClick={() => setMenuOpen(false)}>
