@@ -133,21 +133,17 @@ const Footer = () => {
         </a>
         <div></div>
         <ul className={styles["footer__kontakt--sociale"]}>
-          <Link href="https://www.facebook.com/fitness.club.INFINITI">
-            <a>
-              <SlSocialFacebook />
-            </a>
-          </Link>
-          <Link href="https://www.youtube.com/watch?v=rhuTosgeXok&ab_channel=INFINITIRecepcja">
-            <a>
-              <SlSocialYoutube />
-            </a>
-          </Link>
-          <Link href="https://instagram.com/infiniti.fitness.club ">
-            <a>
-              <AiOutlineInstagram />
-            </a>
-          </Link>
+          <a href="https://www.facebook.com/INFINITI.centrum.zdrowia">
+            <SlSocialFacebook />
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=ImJcKkQZWX4">
+            <SlSocialYoutube />
+          </a>
+
+          <a href="https://www.instagram.com/infiniti.centrum.zdrowia/">
+            <AiOutlineInstagram />
+          </a>
         </ul>
       </ul>
       <div className={styles["footer__copyright"]}>© 2026 - INFINITI</div>

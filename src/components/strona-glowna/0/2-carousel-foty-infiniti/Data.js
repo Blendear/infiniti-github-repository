@@ -36,6 +36,10 @@ import szatniaDamska1 from "../../../../../public/images/.dedykowane-do-strony-k
 import szatniaMeska1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/.minus-1/szatnia-meska/szatnia-meska-1.png";
 
 // 0
+
+import tatuaz1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/studio-tatuazu/tatuaz1.png";
+import tatuaz2 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/studio-tatuazu/tatuaz2.png";
+
 import rejestracjaMedical1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/rejestracja-medical/rejestracja-1.png";
 
 import gabinetMasaz1 from "../../../../../public/images/.dedykowane-do-strony-konkretnej/infiniti/o-nas/galeria-INFINITI/0/masaz/masaz-1.png";
@@ -300,7 +304,7 @@ export const carouselData = [
   },
   {
     nazwaMiejsca: "wodor",
-    fotyTegoMiejsca: [renowacjaTemporaryInformacyjnaFota],
+    fotyTegoMiejsca: [tatuaz1, tatuaz2],
     wyswietlanaNazwa: "Studio Tatuażu",
     altText:
       "Studio tatuażu. Tatuowanie realistyczne oraz wykonywanie projektów",
