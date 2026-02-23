@@ -72,11 +72,16 @@ export default function Navbar() {
         <ul css={desktopMenu}>
           {menuData.map((item, index) => (
             <li key={item.label} css={desktopItem}>
-              {item.href && (
-                <Link href={item.href}>
-                  <a>{item.label}</a>
-                </Link>
-              )}
+              {item.href &&
+                (item.href.startsWith("http") ? (
+                  <a href={item.href} target="_blank" rel="noopener noreferrer">
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link href={item.href}>
+                    <a>{item.label}</a>
+                  </Link>
+                ))}
               {!item.href && <span>{item.label}</span>}
 
               {item.children && (
