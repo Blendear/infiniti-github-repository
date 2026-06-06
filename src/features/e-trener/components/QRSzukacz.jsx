@@ -12,7 +12,10 @@ const QRSzukacz = () => {
     if (data && data[0] && data[0].rawValue) {
       const qrCodeValue = data[0].rawValue;
       router.push(
-        `/infiniti-app/lista-cwiczen?filtr=qr&wartosc=${qrCodeValue}&nazwa-modalu=null&id-cwiczenia=null`,
+        // `/infiniti-app/lista-cwiczen?filtr=qr&wartosc=${qrCodeValue}&nazwa-modalu=null&id-cwiczenia=null`,
+        qrCodeValue,
+        // now the whole url will be given through 'qrCodeValue', so it also works when scannig directly
+        // through the phone camea
       );
     }
   };
