@@ -28,6 +28,9 @@ const QRSzukacz = () => {
           onScan={(result) => {
             (console.log(result), handleScan(result));
           }}
+          components={{
+            audio: false,
+          }}
           classNames={{
             container: styles["strona-glowna__qr-szukacz__kamera"],
           }}
