@@ -10,7 +10,7 @@ const cennikImagePath =
 export default function Cennik() {
   return (
     <div css={wrapper}>
-      <Link href={cennikImagePath} passHref>
+      {/* <Link href={cennikImagePath} passHref>
         <a target="_blank" css={imageLink}>
           <div css={imageBox}>
             {" "}
@@ -28,16 +28,16 @@ export default function Cennik() {
                 data-testid="loader"
               />
             </div>
-            {/* <Image
+            <Image
             src="placeholderr"
               alt="Cennik Fitness"
               layout="fill"
               objectFit="contain"
               priority
-            /> */}
+            />
           </div>
         </a>
-      </Link>
+      </Link> */}
     </div>
   );
 }
