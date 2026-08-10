@@ -28,13 +28,13 @@ export default function Cennik() {
                 data-testid="loader"
               />
             </div>
-            <Image
-              src={cennikImagePath}
+            {/* <Image
+            src="placeholderr"
               alt="Cennik Fitness"
               layout="fill"
               objectFit="contain"
               priority
-            />
+            /> */}
           </div>
         </a>
       </Link>
