@@ -20,7 +20,7 @@ const menuData = [
     href: null, // brak href -> tylko pokazuje submenu
     children: [
       { label: "Fitness / Squash / Sauna / Solarium", href: "/cennik/fitness" },
-      { label: "Masaż", href: "/cennik/masaze" },
+      // { label: "Masaż", href: "/cennik/masaze" },
       { label: "Fizjoterapia", href: "/cennik/fizjoterapia" },
       { label: "Fizjoterapia dziecięca", href: "/cennik/fizjoterapia-dzieci" },
       { label: "Ortopedia", href: "/cennik/ortopedia" },
