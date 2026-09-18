@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import Image from "next/image";
 import Link from "next/link";
 import CircleLoader from "react-spinners/CircleLoader";
+import ButtonUniversal from "../../components/wszechobecne-na-roznych-podstronach/buttons/button-universal";
 
 const cennikImagePath =
   "/images/.dedykowane-do-strony-konkretnej/medical/cennik/cennik-fizjo-dzieci.png";
@@ -10,10 +11,16 @@ const cennikImagePath =
 export default function Cennik() {
   return (
     <div css={wrapper}>
+      <ButtonUniversal
+        variant="B"
+        href="https://booksy.com/pl-pl/114052_infiniti-medical_fizjoterapia_13567_kedzierzyn-kozle"
+      >
+        Umów wizytę
+      </ButtonUniversal>
+
       <Link href={cennikImagePath} passHref>
         <a target="_blank" css={imageLink}>
           <div css={imageBox}>
-            {" "}
             <div css={loader}>
               <CircleLoader
                 color="#5c1593"
@@ -43,6 +50,21 @@ export default function Cennik() {
 }
 
 /* ===== EMOTION ===== */
+const wrapper = css({
+  paddingTop: "9rem", // Zwiększony padding od góry, żeby przycisk zszedł poniżej nawigacji
+  paddingBottom: "4rem",
+  paddingLeft: 0,
+  paddingRight: 0,
+  width: "100%",
+  minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "flex-start", // Ustawienie od góry (zamiast center), żeby pozycjonowanie było stabilne
+  gap: "3rem",
+  backgroundColor: "#F5F5F7",
+});
+
 const loader = css({
   zIndex: 0,
   position: "absolute",
@@ -59,15 +81,6 @@ const loader = css({
   "& span": {
     justifySelf: "center",
   },
-});
-const wrapper = css({
-  padding: "10rem 0",
-  width: "100%",
-  minHeight: "100vh",
-  display: "flex",
-  backgroundColor: "#F5F5F7",
-  justifyContent: "center",
-  alignItems: "center",
 });
 
 const imageLink = css({
