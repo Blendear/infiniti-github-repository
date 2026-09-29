@@ -35,6 +35,7 @@ import SVGWodor from "../../../../components/strona-glowna/medical/usługi/svg/s
 import SVGUltradzwiek from "../../../../components/strona-glowna/medical/usługi/svg/svg-dzwiek";
 import SVGMagnet from "../../../../components/strona-glowna/medical/usługi/svg/svg-magnet";
 import SVGFalaUderzeniowa from "../../../../components/strona-glowna/medical/usługi/svg/svg-fala-uderzeniowa";
+import ButtonUniversal from "../../../../components/wszechobecne-na-roznych-podstronach/buttons/button-universal";
 // hook1 - markup next tiem zrob, nie tylko divy
 const kolorSVG = "#7A1276";
 
@@ -86,8 +87,23 @@ const MedicalUslugi = () => {
           ]
         }
       >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "3rem",
+          }}
+        >
+          <ButtonUniversal
+            variant="B"
+            href="https://booksy.com/pl-pl/114052_infiniti-medical_fizjoterapia_13567_kedzierzyn-kozle"
+          >
+            Umów wizytę
+          </ButtonUniversal>
+        </div>
         Wybierz zabieg i szczegóły, które Cię interesują
       </h2>
+
       <ul
         className={
           styles["layout__medical-uslugi__cala-strona__lista-zabiegow"]
